@@ -1,5 +1,12 @@
-[role="Isolated Danger Beacon"]
-== Isolated Danger Beacon
+= 02-Isolated Danger Beacon
+:doctype: standard
+:docnumber: S-101-FTR-02
+:edition: 1.0
+:status: draft
+:language: ko
+:script: Hans
+:date: 2025-05-08
+:imagesdir: ../images
 
 ---
 
