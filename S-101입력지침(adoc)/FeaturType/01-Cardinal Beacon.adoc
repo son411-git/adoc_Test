@@ -1,8 +1,6 @@
 
-[[sec-Cardinal-Beacon]]
+[[Fea-Cardinal-Beacon]]
 == Cardinal Beacon
-
----
 
 === ○일반기준
 
