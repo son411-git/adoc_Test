@@ -1,14 +1,5 @@
-= 03-Beacon Lateral
-:doctype: standard
-:docnumber: S-101-FTR-03
-:edition: 1.0
-:status: draft
-:language: ko
-:script: Hans
-:date: 2025-05-08
-:imagesdir: ../images
-
----
+[[Fea-Beacon-Lateral]]
+== Beacon Lateral
 
 === ○ 일반기준
 
