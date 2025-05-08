@@ -25,36 +25,14 @@
   ※ Relation 페이지 참조
 - 입표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
 
-[cols="1,4,2,3",options="header"]
+[cols="1,4,2,3", options="header"]
 |===
+| 방위 | 등화 리듬 | 등색 | 도색
 
-^| 방위 ^| 등화리듬 ^| 등색 ^| 도색
-
-
-^| 동
-^| VQ(3)5s +
-Q(3)10s
-^| 백색
-^| 흑황흑
-
-^| 서
-^| VQ(9)10s +
-Q(9)15s
-^| 백색
-^| 황흑
-
-^| 남
-^| VQ(6)+LFl10s +
-Q(6)+LFl15s
-^| 백색
-^| 황흑황
-
-^| 북
-^| VQ +
-Q
-^| 백색
-^| 흑황
-
+| 동 | VQ(3)5s + Q(3)10s | 백색 | 흑황흑
+| 서 | VQ(9)10s + Q(9)15s | 백색 | 황흑
+| 남 | VQ(6)+LFl10s + Q(6)+LFl15s | 백색 | 황흑황
+| 북 | VQ + Q | 백색 | 흑황
 |===
 
 image::../images/01-Cardinal Beacon_image.png[Cardinal Beacon, width=400,align=center]
