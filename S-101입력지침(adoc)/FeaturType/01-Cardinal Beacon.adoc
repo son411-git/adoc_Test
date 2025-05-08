@@ -1,12 +1,6 @@
-= 01-Cardinal Beacon
-:doctype: standard
-:docnumber: S-101-FTR-01
-:edition: 1.0
-:status: draft
-:language: ko
-:script: Hans
-:date: 2025-05-08
-:imagesdir: ../images
+
+[[sec-Cardinal-Beacon]]
+== Cardinal Beacon
 
 ---
 
