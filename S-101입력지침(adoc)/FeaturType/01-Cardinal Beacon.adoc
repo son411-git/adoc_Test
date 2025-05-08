@@ -1,0 +1,86 @@
+[role="Cardinal Beacon"]
+== Cardinal Beacon
+
+---
+
+=== ○일반기준
+
+- 입표모양은 망대형 또는 원주형만 존재하며, 두표모양은 2개의 원추형 형태로만 구성됨 (그림 1 참조)
+- 몸체는 검정색과 노란색의 조합으로 구성되며 방위에 따라 색의 패턴과 두표 모양이 다름 (표 1참조)
+- 방위등화는 백색등으로 Q 또는 VQ 등광을 가지나 [Signal group] 및 [Signal period]은 방위별로 다름(표 1 참조)
+- [Height]는 평균해수면에서 구조물 최상단의 높이입력 (등대표상 없는 정보임)
+  ([Height]가 S-57전자해도에 존재한다면 확인필요)
+- [Vertical Length]는 지면상 높이에서 구조물 최상단의 높이를 입력 (구조물 자체만의 높이 – 등대표에 제시됨)
+- [Colour]이 2개 이상(예: 흑색,황색,흑색)입력된 경우 [Colour Pattern]을 입력
+- 방위입표가 Light 객체와 함께 입력되어 등표로 표현되는 경우 해당 등대번호는 Light객체에 입력
+   (등표로 형성된 경우 등대번호가 방위입표의 [INFORM] 등에 입력되어 있으면 수정필요)
+- 입표와 등화 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 {Structure/Equipment} 관계 설정 
+  ※ Relation 페이지 참조
+- 입표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
+|===
+
+^| 방위 ^| 등화리듬 ^| 등색 ^| 도색
+
+
+^| 동
+^| VQ(3)5s +
+Q(3)10s
+^| 백색
+^| 흑황흑
+
+^| 서
+^| VQ(9)10s +
+Q(9)15s
+^| 백색
+^| 황흑
+
+^| 남
+^| VQ(6)+LFl10s +
+Q(6)+LFl15s
+^| 백색
+^| 황흑황
+
+^| 북
+^| VQ +
+Q
+^| 백색
+^| 흑황
+
+|===
+
+image::../images/01-Cardinal Beacon_image.png[Cardinal Beacon, width=400,align=center]
+
+---
+
+=== ○입력예시
+
+|===
+
+2+^|Attribute ^|Mult. ^|Type ^|Value
+
+2+|Beacon shape ^|1.1 ^|EN |5:pile beacon
+2+|Category of cardinal mark ^| 1.* ^|EN | 4:west cardinal mark
+2+|Colour ^| 1.* ^|EN | 6:yellow
+2+|Colour ^| 1.* ^|EN | 2:black
+2+|Colour ^| 1.* ^|EN | 5:yellow
+2+|Colour pattern ^|0.1 ^|EN | 1:horizontal stripes
+2+|Radar conspicuous ^|0.1 ^|BO | false
+2+|Visual prominence ^|0.1 ^|EN | 1:visual prominence
+2+|Height ^|0.1 ^|RE | 삭제
+2+|Nature of construction ^|0.* ^|EN |2:concreted
+.3+|Feature name ^|Name usage .3+^|0.* ^|EN |1: default name display
+^|Language ^|TE |eng
+^|Name ^|TE |Janghong
+.3+|Feature name ^|Name usage .3+^|0.* ^|EN |2: alternate name display
+^|Language ^|TE |kor
+^|Name ^|TE |장항
+2+|Vertical length ^|0.1 ^|RE|5m
+.2+|Information ^|Language .2+^|0.* ^|TE |eng
+^|Text ^|TE |추가정보(영문)
+.2+|Information ^|Language .2+^|0.* ^|TE |kor
+^|Text ^|TE |추가정보(국문)
+.2+|Topmark ^|Colour ^|0.* ^|EN |2:Black
+^|Topmark/day mark shape ^|1.1 ^|EN | 10:2 cones, point to point
+
+|===
+
