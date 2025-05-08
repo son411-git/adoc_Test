@@ -8,9 +8,6 @@
 :date: 2025-05-08
 :imagesdir: ../images
 
-[role="Cardinal Beacon"]
-== Cardinal Beacon
-
 ---
 
 === ○일반기준
