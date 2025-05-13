@@ -5,7 +5,7 @@
 A cardinal beacon is used in conjunction with the compass to indicate where the mariner may find the best navigable water.  
 It is placed in one of the four quadrants (North, East, South and West), bounded by inter-cardinal bearings from the point marked.
 
-*코드*: link:Cardinal_Beacon.adoc[CardinalBeacon]  
+*코드*: link:01-Cardinal_Beacon.adoc[CardinalBeacon]  
 *별칭 (Alias)*: `BCNCAR`  
 *정의 출처*: IHOREG (ID: 705)  
 *Feature Use Type*: `geographic`  
