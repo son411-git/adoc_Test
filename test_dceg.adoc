@@ -1,0 +1,27 @@
+== Cardinal Beacon
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|`beaconShape`|BCNSHP||0,1
+|`categoryOfCardinalMark`|CATCAM||0,1
+|`colour`|COLOUR||0,1
+|`colourPattern`|COLPAT||0,1
+|`condition`|CONDTN||0,1
+|`elevation`|ELEVAT||0,1
+|`featureName`|||0,1|   (S) `language`|||0,1| (S) `name`|OBJNAM/NOBJNM||0,1| (S) `nameUsage`|||0,1|`fixedDateRange`|||0,1| (S) `dateEnd`|DATEND/PEREND/SUREND||0,1| (S) `dateStart`|DATSTA/PERSTA/SURSTA||0,1|`height`|HEIGHT||0,1
+|`interoperabilityIdentifier`|||0,1
+|`marksNavigationalSystemOf`|MARSYS||0,1
+|`natureOfConstruction`|NATCON||0,1
+|`periodicDateRange`|||0,1| (S) `dateEnd`|DATEND/PEREND/SUREND||0,1| (S) `dateStart`|DATSTA/PERSTA/SURSTA||0,1|`radarConspicuous`|CONRAD||0,1
+|`reportedDate`|SORDAT||0,1
+|`status`|STATUS||0,1
+|`topmark`|TOPMAR||0,1| (S) `colour`|COLOUR||0,1| (S) `colourPattern`|COLPAT||0,1| (S) `topmarkDaymarkShape`|TOPSHP||0,1|↳ (S) `shapeInformation`|||0,1|`verticalLength`|VERLEN||0,1
+|`visualProminence`|CONVIS||0,1
+|`scaleMinimum`|SCAMIN||0,1
+|`information`|INFORM||0,1| (S) `fileLocator`|||0,1| (S) `fileReference`|TXTDSC/NTXTDS||0,1| (S) `headline`|||0,1| (S) `language`|||0,1| (S) `text`|INFORM/NINFOM||0,1|`pictorialRepresentation`|PICREP||0,1
+|===
+
