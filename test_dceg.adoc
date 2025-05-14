@@ -12,7 +12,7 @@
 |`colourPattern`|COLPAT||0,1
 |`condition`|CONDTN||0,1
 |`elevation`|ELEVAT||0,1
-|`featureName`|||0,1|&#160;&#160;&#160;`language`|||0,1| (S) `name`|OBJNAM/NOBJNM||0,1| (S) `nameUsage`|||0,1|`fixedDateRange`|||0,1| (S) `dateEnd`|DATEND/PEREND/SUREND||0,1| (S) `dateStart`|DATSTA/PERSTA/SURSTA||0,1|`height`|HEIGHT||0,1
+|`featureName`|||0,1|&#160;&#160;&#160;&#160;language|||0,1| (S) `name`|OBJNAM/NOBJNM||0,1| (S) `nameUsage`|||0,1|`fixedDateRange`|||0,1| (S) `dateEnd`|DATEND/PEREND/SUREND||0,1| (S) `dateStart`|DATSTA/PERSTA/SURSTA||0,1|`height`|HEIGHT||0,1
 |`interoperabilityIdentifier`|||0,1
 |`marksNavigationalSystemOf`|MARSYS||0,1
 |`natureOfConstruction`|NATCON||0,1
