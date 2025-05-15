@@ -20,9 +20,9 @@ A defined area within which a jurisdiction applies. It may or may not be named.
 |===
 | 속성명 | 설명 | 카드널리티 | 비고
 
-| inDispute                | (정의 없음, 추후 매핑 필요)     | 0..1 |  
-| jurisdiction             | (정의 없음, 추후 매핑 필요)     | 1..1 | 값: 1, 2, 3  
-| featureName              | (정의 없음, 추후 매핑 필요)     | 0..* |  
+| {sp1}inDispute                | (정의 없음, 추후 매핑 필요)     | 0..1 |  
+| {sp1}jurisdiction             | (정의 없음, 추후 매핑 필요)     | 1..1 | 값: 1, 2, 3  
+| {sp2}featureName              | (정의 없음, 추후 매핑 필요)     | 0..* |  
 | interoperabilityIdentifier | (정의 없음, 추후 매핑 필요)  | 0..1 | visibility: private  
 | nationality              | (정의 없음, 추후 매핑 필요)     | 0..* |  
 | scaleMinimum             | (정의 없음, 추후 매핑 필요)     | 0..1 |  
