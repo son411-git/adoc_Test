@@ -1,0 +1,52 @@
+= Administration Area (ADMARE)
+:sectnums:
+:toc:
+
+== 정의
+A defined area within which a jurisdiction applies. It may or may not be named.
+
+== 코드
+`AdministrationArea`
+
+== Geometry
+- curve
+- surface
+
+== 속성(Attribute)
+
+[cols="1,2,1,1", options="header"]
+|===
+| 속성명 | 설명 | 카드널리티 | 비고
+
+| inDispute                | (정의 없음, 추후 매핑 필요)     | 0..1 |  
+| jurisdiction             | (정의 없음, 추후 매핑 필요)     | 1..1 | 값: 1, 2, 3  
+| featureName              | (정의 없음, 추후 매핑 필요)     | 0..* |  
+| interoperabilityIdentifier | (정의 없음, 추후 매핑 필요)  | 0..1 | visibility: private  
+| nationality              | (정의 없음, 추후 매핑 필요)     | 0..* |  
+| scaleMinimum             | (정의 없음, 추후 매핑 필요)     | 0..1 |  
+| information              | (정의 없음, 추후 매핑 필요)     | 0..* |  
+| pictorialRepresentation  | (정의 없음, 추후 매핑 필요)    | 0..1 |  
+|===
+
+== 연관 정보 (Information Binding)
+
+[cols="1,2,2", options="header"]
+|===
+| 연관 | 역할 | 타입
+
+| AdditionalInformation | theInformation | ContactDetails, NauticalInformation  
+|===
+
+== 연관 객체 (Feature Binding)
+
+[cols="1,2,2", options="header"]
+|===
+| 연관 | 역할 | 대상 Feature
+
+| UpdatedInformation | theUpdate | UpdateInformation (0..*)  
+| TextAssociation | theCartographicText | TextPlacement (0..2)  
+|===
+
+== 기타
+- Feature Use Type: `geographic`
+- 정의 출처: IHO Register (ID: 312)
