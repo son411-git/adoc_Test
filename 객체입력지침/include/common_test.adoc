@@ -1,51 +1,8 @@
-include::../include/common_test.adoc[]
+////
+이이 파일은 공통 속성을 정의한 AsciDoc 파일입니다.
+객체 문서에서 include::common_test.adoc[]로 호출하여 사용합니다.
+////
 
-= Administration Area (ADMARE)
-:sectnums:
-:toc:
-
-== 정의
-A defined area within which a jurisdiction applies. It may or may not be named.
-
-== Geometry
-* Curve
-* Surface
-
-== 속성 (Attributes)
-
-[cols="1,1,1,1,1,1", options="header"]
-|===
-| S-101 Attribute | S-57 Acronym | Allowable Encoding Value | Type | Multiplicity | 설명
-
-| in dispute |  |  | BO | 0..1 | 
-| jurisdiction | JRSDTN | 1: international, 2: national, 3: national sub-division | EN | 1..1 | 
-| feature name |  | See clause 2.5.8 | C | 0..* |  
-| language |  | ISO 639-2/T | (S) TE | 1..1 |  
-| name | OBJNAM, NOBJNM |  | (S) TE | 1..1 |  
-| name usage |  | 1: default, 2: alternate | (S) EN | 0..1 |  
-| interoperability identifier |  | MRN (see clause 27.114) | URN | 0..1 |  
-| nationality | NATION |  | TE | 0..* |  
-| scale minimum | SCAMIN | See clause 2.5.9 | IN | 0..1 |  
-| information |  | See clause 2.4.6 | C | 0..* |  
-| file locator |  |  | (S) TE | 0..1 |  
-| file reference | TXTDSC, NTXTDS |  | (S) TE | 0..1 |  
-| headline |  |  | (S) TE | 0..1 |  
-| language |  | ISO 639-2/T | (S) TE | 1..1 |  
-| text | INFORM, NINFOM |  | (S) TE | 0..1 |  
-| pictorial representation | PICREP | See clause 2.4.12.2 | TE | 0..1 |  
-|===
-
-== 연관 객체 (Feature Associations)
-
-[cols="1,1,1,1,1", options="header"]
-|===
-| S-101 Role | Association Type | Associated to | Type | Multiplicity
-
-| The Updated Object | Updated Information (25.21) | Update Information | Association | 0..*
-| The Position Provider | Text Association (25.17) | Text Placement | Composition | 0..2
-|  | Additional Information (25.1) | Contact Details, Nautical Information | Association | 0..*
-|  | Spatial Association (25.15) | Spatial Quality | Association | 0..*
-|===
-
-
-
+:sp1: &#160;&#160;&#160;&#160;
+:sp2: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+:sp3: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
