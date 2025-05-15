@@ -1,4 +1,3 @@
-include::../include/common_test.adoc[]
 
 = Administration Area (ADMARE)
 :sectnums:
@@ -13,6 +12,8 @@ A defined area within which a jurisdiction applies. It may or may not be named.
 == Geometry
 - curve
 - surface
+
+include::../include/common_test.adoc[]
 
 == 속성(Attribute)
 
