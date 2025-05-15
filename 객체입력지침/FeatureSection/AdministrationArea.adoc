@@ -1,3 +1,5 @@
+include::../include/common_test.adoc[]
+
 = Administration Area (ADMARE)
 :sectnums:
 :toc:
