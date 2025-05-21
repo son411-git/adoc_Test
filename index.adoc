@@ -1,0 +1,56 @@
+= S-101 객체 입력 지침서 테스팅
+:toc: left
+:sectnums:
+:toclevels: 4
+:doctype: book
+:icons: font
+
+// 이미지  폴더 경로 지정
+:imagesdir: version/3.0.0/images
+
+////
+************************************************************************************************
+////
+
+// 목차
+== Features 
+
+=== PipelineOverhead
+
+==== Attributes
+include::version/3.0.0/Docs/Feature_Attribute/PipelineOverhead.adoc[]
+==== 객체 설명
+include::version/3.0.0/Docs/Feature_Rule/RuleFile.adoc[tag=PipelineOverhead,leveloffset=+2]
+
+=== CardinalBeacon
+
+==== Attributes
+include::version/3.0.0/Docs/Feature_Attribute/CardinalBeacon.adoc[]
+
+==== 객체 설명
+include::version/3.0.0/Docs/Feature_Rule/RuleFile.adoc[tag=CardinalBeacon,leveloffset=+2]
+
+=== LightSectored
+
+==== Attributes
+include::version/3.0.0/Docs/Feature_Attribute/LightSectored.adoc[]
+
+==== 객체 설명
+include::version/3.0.0/Docs/Feature_Rule/RuleFile.adoc[tag=LightSectored,leveloffset=+2]
+
+=== Conveyoer
+
+==== Attributes
+include::version/3.0.0/Docs/Feature_Attribute/Conveyor.adoc[]
+
+==== 객체 설명
+include::version/3.0.0/Docs/Feature_Rule/RuleFile.adoc[tag=Conveyor,leveloffset=+2]
+
+=== QuaityOfBathmerticData
+
+==== Attributes
+include::version/3.0.0/Docs/Feature_Attribute/QualityOfBathymetricData.adoc[]
+
+==== 객체 설명
+include::version/3.0.0/Docs/Feature_Rule/RuleFile.adoc[tag=QualityOfBathymetricData,leveloffset=+2]
+
