@@ -4,7 +4,7 @@
 
 <div align="center">
 
-## 🌐 GitHub Pages
+## 🌐 Web Pages
 
 <img src="Feature_images/cway7_logo.png" alt="CWAY7 로고" width="300"/>
 
