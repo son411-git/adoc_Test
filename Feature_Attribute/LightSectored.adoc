@@ -1,0 +1,48 @@
+include::../Feature_common/common_attr.adoc[tag=spacing]
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|categoryOfLight ||EN|0,1
+|exhibitionConditionOfLight ||EN|0,1
+include::../Feature_common/common_attr.adoc[tag=featureNameRow]
+include::../Feature_common/common_attr.adoc[tag=fixedDateRangeRow]
+|height ||RE|0,1
+|interoperabilityIdentifier ||URN|0,1
+|marksNavigationalSystemOf ||EN|0,1
+|multiplicityOfFeatures ||C|0,1
+|{sp1}multiplicity known ||(S) BO|0,1
+|{sp1}number of features ||(S) IN|0,1
+include::../Feature_common/common_attr.adoc[tag=periodicDateRangeRow]
+|sectorCharacteristics ||C|0,1
+|{sp1}lightCharacteristic ||(S) EN|0,1
+|{sp1}lightSector ||(S) C|0,1
+|{sp2}colour ||(S) EN|0,1
+|{sp2}directionalCharacter ||(S) C|0,1
+|{sp3}moireEffect ||(S) BQ|0,1
+|{sp3}orientation ||(S) C|0,1
+|{sp4}orientationUncertainty ||(S) RE|0,1
+|{sp4}orientationValue ||(S) C|0,1
+|{sp2}lightVisibility ||(S) EN|0,1
+|{sp2}sectorLimit ||(S) C|0,1
+|{sp3}sectorLimitOne ||(S) C|0,1
+|{sp4}sectorBearing ||(S) RE|0,1
+|{sp4}sectorLineLength ||(S) RE|0,1
+|{sp3}sectorLimitTwo ||(S) C|0,1
+|{sp4}sectorBearing ||(S) RE|0,1
+|{sp4}sectorLineLength ||(S) RE|0,1
+|{sp2}valueOfNominalRange ||(S) RE|0,1
+|{sp2}sectorInformation ||(S) C|0,1
+|{sp3}language ||(S) TE|0,1
+|{sp3}text ||(S) TE|0,1
+|{sp2}sectorArcExtension ||(S) BQ|0,1
+|{sp1}signalGroup ||(S) TE|0,1
+|{sp1}signalPeriod ||(S) RE|0,1
+|{sp1}signalSequence ||(S) C|0,1
+|{sp2}signalDuration ||(S) RE|0,1
+|{sp2}signalStatus ||(S) EN|0,1
+|signalGeneration ||EN|0,1
+|status ||EN|0,1
+|verticalDatum ||EN|0,1
+|scaleMinimum ||IN|0,1
+include::../Feature_common/common_attr.adoc[tag=informationRow]
+|===
