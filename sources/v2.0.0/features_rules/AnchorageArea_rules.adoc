@@ -7,4 +7,4 @@
 - 각 속성이 S-57에서 두 개 이상으로 입력될 경우 S-101에서 [Category of anchorage]를 두 개 이상으로 입력
 - 임시정박지의 경우 [Category of anchorage = 1(unrestricted anchorage)]로 입력하고 [Status = 7(temporary)]로 입력
 
-image::../image/AnchorageArea_image-1.png[width=600,align=center]
+image::../images/AnchorageArea_image-1.png[width=600,align=center]
