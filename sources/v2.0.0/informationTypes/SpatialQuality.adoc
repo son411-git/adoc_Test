@@ -1,0 +1,20 @@
+== Spatial Quality
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|qualityOfHorizontalMeasurement|QUAPOS|EN|0,1
+|spatialAccuracy||C|0,*
+|    fixedDateRange||(S)C|0,1
+|        dateEnd|DATEND|(S)TD|0,1
+|        dateStart|DATSTA|(S)TD|0,1
+|    horizontalPositionUncertainty||(S)C|0,1
+|        uncertaintyFixed||(S)RE|1,1
+|        uncertaintyVariableFactor||(S)RE|0,1
+|    verticalUncertainty|SOUACC|(S)C|0,1
+|        uncertaintyFixed||(S)RE|1,1
+|        uncertaintyVariableFactor||(S)RE|0,1
+|===

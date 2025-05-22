@@ -1,0 +1,27 @@
+== Contact Details
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|callSign|CALSGN|TE|0,1
+|communicationChannel|COMCHA|TE|0,*
+|contactInstructions||TE|0,1
+|fixedDateRange||C|0,1
+|    dateEnd|DATEND|(S)TD|0,1
+|    dateStart|DATSTA|(S)TD|0,1
+|frequencyPair||C|0,*
+|    frequencyShoreStationReceives||(S)IN|0,1
+|    frequencyShoreStationTransmits|SIGFRQ|(S)IN|1,1
+|mMSICode||TE|0,1
+|onlineResource||C|0,*
+|    headline||(S)TE|0,1
+|    linkage||(S)URI|1,1
+|    nameOfResource||(S)TE|0,1
+|telecommunications||C|0,*
+|    contactInstructions||(S)TE|0,1
+|    telecommunicationIdentifier||(S)TE|1,1
+|    telecommunicationService||(S)EN|0,1
+|===

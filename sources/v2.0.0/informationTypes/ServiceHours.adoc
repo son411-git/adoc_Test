@@ -1,0 +1,28 @@
+== Service Hours
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|fixedDateRange||C|0,1
+|    dateEnd|DATEND|(S)TD|0,1
+|    dateStart|DATSTA|(S)TD|0,1
+|periodicDateRange||C|0,*
+|    dateEnd|DATEND|(S)TD|1,1
+|    dateStart|DATSTA|(S)TD|1,1
+|scheduleByDayOfWeek||C|1,*
+|    categoryOfSchedule||(S)EN|0,1
+|    timeIntervalsByDayOfWeek||(S)C|1,*
+|        dayOfWeek||(S)EN|0,7
+|        dayOfWeekIsRange||(S)BO|0,1
+|        timeOfDayStart||(S)TI|0,*
+|        timeOfDayEnd||(S)TI|0,*
+|information|INFORM|C|0,*
+|    fileLocator||(S)TE|0,1
+|    fileReference|TXTDSC|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    language||(S)TE|1,1
+|    text|INFORM|(S)TE|0,1
+|===
