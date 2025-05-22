@@ -512,9 +512,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_bridge">6.2. Bridge</a>
 <ul class="sectlevel3">
 <li><a href="#_attributes_6">6.2.1. Attributes</a></li>
-<li><a href="#_객체_설명_6">6.2.2. 객체 설명</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href="#_bridge_2">7. Bridge</a>
+<ul class="sectlevel3">
+<li><a href="#_객체_설명_6">7.1. 객체 설명</a></li>
 </ul>
 </li>
 </ul>
@@ -2028,15 +2032,216 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h3 id="_bridge">6.2. Bridge</h3>
 <div class="sect3">
 <h4 id="_attributes_6">6.2.1. Attributes</h4>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bridge_2">7. Bridge</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Unresolved directive in index.adoc - include::sources/v2.0.0/features/Bridge_General.adoc[]</p>
+<p><strong>&lt;Definition&gt;</strong></p>
 </div>
+<div class="paragraph">
+<p>A structure erected over a depression or an obstacle such as a body of water, railroad, etc., to provide a roadway for vehicles or pedestrians.</p>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">S-101 Attribute</th>
+<th class="tableblock halign-left valign-top">S-57 Acronym</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Multiplicity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bridgeConstruction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CATBRG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bridgeFunction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CATBRG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">categoryOfOpeningBridge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CATBRG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">colour</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COLOUR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">colourPattern</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COLPAT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">condition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CONDTN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">featureName</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">    language</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(S)TE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">    name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OBJNAM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(S)TE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">    nameUsage</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(S)EN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fixedDateRange</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">    dateEnd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATEND</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(S)TD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">    dateStart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATSTA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(S)TD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">height</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HEIGHT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">interoperabilityIdentifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">natureOfConstruction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NATCON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">openingBridge</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">radarConspicuous</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CONRAD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">reportedDate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SORDAT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">STATUS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">visualProminence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CONVIS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">scaleMinimum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SCAMIN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">information</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INFORM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">    fileLocator</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(S)TE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">    fileReference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TXTDSC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(S)TE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">    headline</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(S)TE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">    language</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(S)TE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">    text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INFORM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(S)TE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pictorialRepresentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PICREP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0,1</p></td>
+</tr>
+</tbody>
+</table>
 <div class="sect3">
-<h4 id="_객체_설명_6">6.2.2. 객체 설명</h4>
+<h4 id="_객체_설명_6">7.1. 객체 설명</h4>
 <div class="paragraph">
-<p>Unresolved directive in index.adoc - include::sources/v2.0.0/features_rules/Bridge[tag=Bridge,leveloffset=+2]</p>
-</div>
+<p>Unresolved directive in index.adoc - include::sources/v2.0.0/features_rules/Bridge_General[leveloffset=+2]</p>
 </div>
 </div>
 </div>
@@ -2044,7 +2249,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-05-22 17:09:09 +0900
+Last updated 2025-05-22 17:14:36 +0900
 </div>
 </div>
 </body>
