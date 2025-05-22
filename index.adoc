@@ -60,5 +60,5 @@ include::sources/v2.0.0/features_rules/rules.adoc[tag=QualityOfBathymetricData,l
 include::sources/v2.0.0/features/Bridge.adoc[]
 
 ==== 객체 설명
-include::sources/v2.0.0/features_rules/Bridge_General[tag=Bridge,leveloffset=+2]
+include::sources/v2.0.0/features_rules/Bridge_General[leveloffset=+2]
 
