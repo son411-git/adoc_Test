@@ -1,6 +1,8 @@
 == Depth Contour
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A line connecting points of equal water depth which is sometimes significantly displaced outside of soundings, symbols, and other chart detail for clarity as well as generalization. Depth contours therefore often represent an approximate location of the line of equal depth as related to the surveyed line delineated on the source.
 
 [cols="1,1,1,1", options="header"]
 |===

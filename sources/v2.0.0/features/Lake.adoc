@@ -1,6 +1,8 @@
 == Lake
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A large body of water entirely surrounded by land.
 
 [cols="1,1,1,1", options="header"]
 |===

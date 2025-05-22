@@ -1,6 +1,8 @@
 == Harbour Area (Administrative)
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The area over which a harbour authority has jurisdiction.
 
 [cols="1,1,1,1", options="header"]
 |===

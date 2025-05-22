@@ -1,6 +1,8 @@
 == Wind Turbine
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A tower and associated equipment that generates electrical power from wind. They can be sited offshore and may be either fixed or floating.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Contiguous Zone
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A zone contiguous to a coastal State's Territorial Sea, which may not extend beyond 24 nautical miles from the baselines from which the breadth of the Territorial Sea is measured. The coastal State may exercise certain control in this zone subject to the provisions of International Law.
 
 [cols="1,1,1,1", options="header"]
 |===

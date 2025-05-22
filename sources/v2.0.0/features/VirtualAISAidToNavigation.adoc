@@ -1,6 +1,8 @@
 == Virtual AIS Aid to Navigation
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An Automatic Identification System (AIS) message 21 transmitted from an AIS station to simulate on navigation systems an Aid to Navigation which does not physically exist.
 
 [cols="1,1,1,1", options="header"]
 |===

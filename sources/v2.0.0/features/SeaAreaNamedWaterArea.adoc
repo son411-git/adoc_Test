@@ -1,6 +1,8 @@
 == Sea Area/Named Water Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A geographically defined part of the sea or other navigable waters. It may be specified within its limits by its proper name.
 
 [cols="1,1,1,1", options="header"]
 |===

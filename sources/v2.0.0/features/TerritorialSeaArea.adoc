@@ -1,6 +1,8 @@
 == Territorial Sea Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A belt of water of a defined breadth but not exceeding 12 nautical miles measured seaward from the territorial sea baseline.
 
 [cols="1,1,1,1", options="header"]
 |===

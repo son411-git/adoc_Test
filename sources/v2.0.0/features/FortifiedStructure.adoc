@@ -1,6 +1,8 @@
 == Fortified Structure
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A structure that is specifically designed or reinforced to provide for defence from armed attack.
 
 [cols="1,1,1,1", options="header"]
 |===

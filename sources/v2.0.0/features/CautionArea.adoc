@@ -1,6 +1,8 @@
 == Caution Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Generally, an area where the mariner has to be made aware of circumstances influencing the safety of navigation.
 
 [cols="1,1,1,1", options="header"]
 |===

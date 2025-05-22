@@ -1,6 +1,8 @@
 == Cargo Transhipment Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area designated for transfer of cargo from one vessel to another sometimes in order to reduce a vessel's draught.
 
 [cols="1,1,1,1", options="header"]
 |===

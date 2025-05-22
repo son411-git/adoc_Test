@@ -1,6 +1,8 @@
 == Bollard
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Small shaped post, mounted on a wharf or dolphin used to secure ship's lines.
 
 [cols="1,1,1,1", options="header"]
 |===

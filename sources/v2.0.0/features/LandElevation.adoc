@@ -1,6 +1,8 @@
 == Land Elevation
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An elevation is the vertical distance of a point or a level, on, or affixed to, the surface of the earth, measured from a specified vertical datum.
 
 [cols="1,1,1,1", options="header"]
 |===

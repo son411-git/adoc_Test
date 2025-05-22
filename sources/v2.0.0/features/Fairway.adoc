@@ -1,6 +1,8 @@
 == Fairway
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+That part of a river, harbour and so on, where the main navigable channel for vessels of larger size lies. It is also the usual course followed by vessels entering or leaving harbours, called 'ship channel'.
 
 [cols="1,1,1,1", options="header"]
 |===

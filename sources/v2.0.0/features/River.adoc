@@ -1,6 +1,8 @@
 == River
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A relatively large natural stream of water.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Lateral Beacon
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A lateral beacon is used to indicate the port or starboard hand side of the route to be followed. They are generally used for well defined channels and are used in conjunction with a conventional direction of buoyage.
 
 [cols="1,1,1,1", options="header"]
 |===

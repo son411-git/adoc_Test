@@ -1,6 +1,8 @@
 == Fog Signal
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A warning signal transmitted by a vessel, or aid to navigation, during periods of low visibility. Also, the device producing such a signal.
 
 [cols="1,1,1,1", options="header"]
 |===

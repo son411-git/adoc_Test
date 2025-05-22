@@ -1,6 +1,8 @@
 == Deep Water Route Part
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area of a deep water route within which ships proceed in the same direction.
 
 [cols="1,1,1,1", options="header"]
 |===

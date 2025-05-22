@@ -1,6 +1,8 @@
 == Depth Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A water area whose depth is within a defined range of values.
 
 [cols="1,1,1,1", options="header"]
 |===

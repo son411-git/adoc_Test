@@ -1,6 +1,8 @@
 == Chart 1 Feature
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A feature which exists to support the rendering of graphics or text in order to provide additional information that cannot be encoded using other features.
 
 [cols="1,1,1,1", options="header"]
 |===

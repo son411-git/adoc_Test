@@ -1,6 +1,8 @@
 == Railway
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A rail or set of parallel rails on which a train, tram, or rail wagon runs.
 
 [cols="1,1,1,1", options="header"]
 |===

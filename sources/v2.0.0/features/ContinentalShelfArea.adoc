@@ -1,6 +1,8 @@
 == Continental Shelf Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The Continental Shelf of a coastal State comprises the seabed and subsoil of the submarine areas that extend beyond its Territorial Sea throughout the natural prolongation of its land territory to the outer edge of the continental margin, or to a distance of 200 nautical miles from the baselines from which the breadth of the Territorial Sea is measured where the outer edge of the continental margin does not extend up to that distance.
 
 [cols="1,1,1,1", options="header"]
 |===

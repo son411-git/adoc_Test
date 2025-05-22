@@ -1,6 +1,8 @@
 == Spring
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A natural issue of water or other substances from the earth. One on the bottom of the sea is called a submarine spring.
 
 [cols="1,1,1,1", options="header"]
 |===

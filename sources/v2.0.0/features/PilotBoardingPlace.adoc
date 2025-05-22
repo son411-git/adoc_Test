@@ -1,6 +1,8 @@
 == Pilot Boarding Place
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A location offshore where a pilot may board a vessel in preparation to piloting it through local waters.
 
 [cols="1,1,1,1", options="header"]
 |===

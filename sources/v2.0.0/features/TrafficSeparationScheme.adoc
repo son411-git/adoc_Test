@@ -1,6 +1,8 @@
 == Traffic Separation Scheme
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A routeing measure aimed at the separation of opposing streams of traffic by appropriate means and by the establishment of traffic lanes.
 
 [cols="1,1,1,1", options="header"]
 |===

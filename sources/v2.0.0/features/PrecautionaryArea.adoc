@@ -1,6 +1,8 @@
 == Precautionary Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A routeing measure comprising an area within defined limits where ships must navigate with particular caution and within which the direction of traffic flow may be recommended.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Physical AIS Aid to Navigation
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An Automatic Identification System (AIS) message 21 transmitted from a physical Aid to Navigation, or transmitted from an AIS station for an Aid to Navigation which physically exists.
 
 [cols="1,1,1,1", options="header"]
 |===

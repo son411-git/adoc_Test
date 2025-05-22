@@ -1,6 +1,8 @@
 == Underwater/Awash Rock
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A concreted mass of stony material or coral which dries, is awash or is below the water surface.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Fence/Wall
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A man-made barrier used as an enclosure or boundary or for protection.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Swept Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area that has been determined to be clear of navigational dangers to a specified depth.
 
 [cols="1,1,1,1", options="header"]
 |===

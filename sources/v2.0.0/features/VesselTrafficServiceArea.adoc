@@ -1,6 +1,8 @@
 == Vessel Traffic Service Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The area of any service implemented by a relevant authority primarily designed to improve safety and efficiency of traffic flow and the protection of the environment. It may range from simple information messages, to extensive organisation of the traffic involving national or regional schemes.
 
 [cols="1,1,1,1", options="header"]
 |===

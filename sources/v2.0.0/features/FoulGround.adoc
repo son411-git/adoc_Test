@@ -1,6 +1,8 @@
 == Foul Ground
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Areas over which it is safe to navigate but which should be avoided for anchoring, taking the ground or ground fishing.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Harbour Facility
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A harbour installation with a service or commercial operation of public interest.
 
 [cols="1,1,1,1", options="header"]
 |===

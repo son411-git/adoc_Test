@@ -1,6 +1,8 @@
 == Wreck
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The ruined remains of a stranded or sunken vessel which has been rendered useless.
 
 [cols="1,1,1,1", options="header"]
 |===

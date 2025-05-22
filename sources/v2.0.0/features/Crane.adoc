@@ -1,6 +1,8 @@
 == Crane
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A machine for lifting, shifting and lowering objects or materials by means of a swinging boom or with a lifting apparatus supported on an overhead track.
 
 [cols="1,1,1,1", options="header"]
 |===

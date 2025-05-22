@@ -1,6 +1,8 @@
 == Shoreline Construction
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A fixed artificial structure in the water and/or adjoining the land. It may also refer to features such as training walls, which are not necessarily connected to, nor form part of the shoreline.
 
 [cols="1,1,1,1", options="header"]
 |===

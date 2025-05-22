@@ -1,6 +1,8 @@
 == Canal
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An artificial waterway with no flow, or a controlled flow, used for navigation, or for draining or irrigating land (ditch).
 
 [cols="1,1,1,1", options="header"]
 |===

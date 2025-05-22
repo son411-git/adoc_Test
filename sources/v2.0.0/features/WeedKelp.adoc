@@ -1,6 +1,8 @@
 == Weed/Kelp
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Any macroscopic marine alga.
 
 [cols="1,1,1,1", options="header"]
 |===

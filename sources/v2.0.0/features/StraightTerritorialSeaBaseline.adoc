@@ -1,6 +1,8 @@
 == Straight Territorial Sea Baseline
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Straight baselines are a system of straight lines joining specified or discrete points on the low-water line, usually known as straight baseline turning points. Straight baselines are used in delimitation.
 
 [cols="1,1,1,1", options="header"]
 |===

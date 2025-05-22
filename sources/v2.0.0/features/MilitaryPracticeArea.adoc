@@ -1,6 +1,8 @@
 == Military Practice Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area within which naval, military or aerial exercises are carried out.
 
 [cols="1,1,1,1", options="header"]
 |===

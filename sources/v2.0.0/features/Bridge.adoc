@@ -1,6 +1,8 @@
 == Bridge
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A structure erected over a depression or an obstacle such as a body of water, railroad, etc., to provide a roadway for vehicles or pedestrians.
 
 [cols="1,1,1,1", options="header"]
 |===

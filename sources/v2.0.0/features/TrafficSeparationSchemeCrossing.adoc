@@ -1,6 +1,8 @@
 == Traffic Separation Scheme Crossing
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A defined area where traffic lanes cross.
 
 [cols="1,1,1,1", options="header"]
 |===

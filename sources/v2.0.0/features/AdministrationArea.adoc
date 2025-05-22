@@ -1,6 +1,8 @@
 == Administration Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A defined area within which a jurisdiction applies. It may or may not be named.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Light Sectored
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A light presenting different appearances (in particular, different colours) over various parts of the horizon of interest to maritime navigation.
 
 [cols="1,1,1,1", options="header"]
 |===

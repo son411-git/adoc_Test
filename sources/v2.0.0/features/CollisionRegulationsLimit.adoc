@@ -1,6 +1,8 @@
 == Collision Regulations Limit
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Convention on the International Regulations for Preventing Collisions at Sea, 1972 (COLREGs). The demarcation line between inland navigation rules and international navigation rules.
 
 [cols="1,1,1,1", options="header"]
 |===

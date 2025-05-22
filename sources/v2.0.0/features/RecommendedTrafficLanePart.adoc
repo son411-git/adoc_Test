@@ -1,6 +1,8 @@
 == Recommended Traffic Lane Part
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A traffic flow pattern indicating a recommended directional movement of traffic where it is impractical or unnecessary to adopt an established direction of traffic flow.
 
 [cols="1,1,1,1", options="header"]
 |===

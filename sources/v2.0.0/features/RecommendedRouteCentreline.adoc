@@ -1,6 +1,8 @@
 == Recommended Route Centreline
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The recommended route centreline indicates the 'centreline' of a recommended route.
 
 [cols="1,1,1,1", options="header"]
 |===

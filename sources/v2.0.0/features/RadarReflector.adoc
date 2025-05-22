@@ -1,6 +1,8 @@
 == Radar Reflector
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A device capable of, or intended for, reflecting radar signals.
 
 [cols="1,1,1,1", options="header"]
 |===

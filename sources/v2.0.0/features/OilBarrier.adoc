@@ -1,6 +1,8 @@
 == Oil Barrier
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A floating barrier to stop and contain the spread of oil on a water body surface.
 
 [cols="1,1,1,1", options="header"]
 |===

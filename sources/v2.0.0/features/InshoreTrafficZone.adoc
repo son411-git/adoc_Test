@@ -1,6 +1,8 @@
 == Inshore Traffic Zone
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A routeing measure comprising a designated area between the landward boundary of a traffic separation scheme and the adjacent coast, to be used in accordance with the provisions of the International Regulations for Preventing Collisions at Sea.
 
 [cols="1,1,1,1", options="header"]
 |===

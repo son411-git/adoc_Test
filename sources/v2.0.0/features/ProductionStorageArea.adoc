@@ -1,6 +1,8 @@
 == Production/Storage Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area on land for the exploitation or storage of natural resources.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Cable Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area which contains one or more submarine cables.
 
 [cols="1,1,1,1", options="header"]
 |===

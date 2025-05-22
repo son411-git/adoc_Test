@@ -1,6 +1,8 @@
 == Update Information
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The Update Information metadata feature is used to represent a change to the information shown.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Lock Basin
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A wet dock in a waterway, permitting a ship to pass from one level to another.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Water Turbulence
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The disturbance of water caused by the interaction of any combination of waves, currents, tidal streams, wind, shoal patches and obstructions.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Dry Dock
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An artificial basin fitted with a gate or caisson, into which vessels can be floated and the water pumped out to expose the vessel's bottom. Also called graving dock.
 
 [cols="1,1,1,1", options="header"]
 |===

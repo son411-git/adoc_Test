@@ -1,6 +1,8 @@
 == Anchor Berth
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A designated area of water where a vessel, seaplane, etc., may anchor.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Road
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A route with a specially prepared surface that is intended for use by wheeled vehicles or pedestrians.
 
 [cols="1,1,1,1", options="header"]
 |===

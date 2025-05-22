@@ -1,6 +1,8 @@
 == Dumping Ground
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A sea area where dredged material or other potentially more harmful material, for example explosives, chemical waste, is deliberately deposited.
 
 [cols="1,1,1,1", options="header"]
 |===

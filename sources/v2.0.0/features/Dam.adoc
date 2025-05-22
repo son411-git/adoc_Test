@@ -1,6 +1,8 @@
 == Dam
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A barrier to check or confine anything in motion; particularly one constructed to hold back water and raise its level to form a reservoir, or to prevent flooding.
 
 [cols="1,1,1,1", options="header"]
 |===

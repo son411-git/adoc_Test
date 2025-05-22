@@ -1,6 +1,8 @@
 == Tunnel
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A passage that is open to the atmosphere at both ends, buried under the seabed or laid over the seafloor or bored under the ground or through mountains.
 
 [cols="1,1,1,1", options="header"]
 |===

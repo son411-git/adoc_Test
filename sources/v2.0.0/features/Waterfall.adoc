@@ -1,6 +1,8 @@
 == Waterfall
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A vertically descending part of a watercourse where it falls from a height (for example: over a rock or a precipice). In place names, commonly shortened to fall or falls, for example Niagara Falls.
 
 [cols="1,1,1,1", options="header"]
 |===

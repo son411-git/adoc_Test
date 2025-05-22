@@ -1,6 +1,8 @@
 == Pile
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A long heavy timber or section of steel, wood, concrete, etc., forced into the earth or seafloor to serve as a support, as for a pier, or to resist lateral pressure; or as a free standing pole within a marine environment.
 
 [cols="1,1,1,1", options="header"]
 |===

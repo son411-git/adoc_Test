@@ -1,6 +1,8 @@
 == Light Fog Detector
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A fog detector light is a light used to automatically determine conditions of visibility which warrant the turning on or off of a sound signal.
 
 [cols="1,1,1,1", options="header"]
 |===

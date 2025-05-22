@@ -1,6 +1,8 @@
 == Conveyor
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A mechanical device for conveying bulk material or people using an endless moving belt or series of rollers.
 
 [cols="1,1,1,1", options="header"]
 |===

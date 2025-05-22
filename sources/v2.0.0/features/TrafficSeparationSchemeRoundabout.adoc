@@ -1,6 +1,8 @@
 == Traffic Separation Scheme Roundabout
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A routeing measure comprising a separation point or circular separation zone and a circular traffic lane within defined limits. Traffic within the roundabout is separated by moving in a counter-clockwise direction around the separation point or zone.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Coastline
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The line where shore and water meet. Shoreline and coastline are generally used synonymously.
 
 [cols="1,1,1,1", options="header"]
 |===

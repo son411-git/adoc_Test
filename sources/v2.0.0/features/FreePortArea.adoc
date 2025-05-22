@@ -1,6 +1,8 @@
 == Free Port Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A port where certain import and export duties are waived (unless goods pass into the country) to facilitate reshipment to other countries.
 
 [cols="1,1,1,1", options="header"]
 |===

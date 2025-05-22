@@ -1,6 +1,8 @@
 == Vegetation
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Plants collectively or individually, especially those dominating a particular area or habitat.
 
 [cols="1,1,1,1", options="header"]
 |===

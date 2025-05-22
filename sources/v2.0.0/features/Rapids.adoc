@@ -1,6 +1,8 @@
 == Rapids
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Portions of a stream with accelerated current where it descends rapidly but without a break in the slope of the bed sufficient to form a waterfall. Usually used in the plural.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Radio Station
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A place equipped to transmit radio waves. Such a station may be either stationary or mobile, and may also be provided with a radio receiver.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Dredged Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area of the bottom of a body of water which has been deepened by dredging.
 
 [cols="1,1,1,1", options="header"]
 |===

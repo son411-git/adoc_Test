@@ -1,6 +1,8 @@
 == Submarine Transit Lane
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A lane where submarines may navigate under water or at the surface.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Local Direction of Buoyage
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area within which the navigational system of marks has been established in relation to a specific direction.
 
 [cols="1,1,1,1", options="header"]
 |===

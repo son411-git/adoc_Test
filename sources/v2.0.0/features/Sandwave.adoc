@@ -1,6 +1,8 @@
 == Sandwave
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Large mobile wave-like sediment feature in shallow water and composed of sand. The wavelength may reach 100 metres, the amplitude may be up to 20 metres.
 
 [cols="1,1,1,1", options="header"]
 |===

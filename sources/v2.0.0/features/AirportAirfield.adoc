@@ -1,6 +1,8 @@
 == Airport/Airfield
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A defined area on land (including any buildings, installations and equipment) intended to be used either wholly or in part for the arrival, departure and surface movement of aircraft.
 
 [cols="1,1,1,1", options="header"]
 |===

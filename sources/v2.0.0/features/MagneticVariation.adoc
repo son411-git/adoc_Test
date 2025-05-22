@@ -1,6 +1,8 @@
 == Magnetic Variation
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The angle between the magnetic and geographic meridians at any place, expressed in degrees east or west to indicate the direction of magnetic north from true north. Also called magnetic declination.
 
 [cols="1,1,1,1", options="header"]
 |===

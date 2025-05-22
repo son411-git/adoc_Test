@@ -1,6 +1,8 @@
 == Slope Topline
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The upper marking of a slope, for example the ridge line or the separation line between two different gradients.
 
 [cols="1,1,1,1", options="header"]
 |===

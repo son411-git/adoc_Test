@@ -1,6 +1,8 @@
 == Cardinal Beacon
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A cardinal beacon is used in conjunction with the compass to indicate where the mariner may find the best navigable water. It is placed in one of the four quadrants (North, East, South and West), bounded by inter-cardinal bearings from the point marked.
 
 [cols="1,1,1,1", options="header"]
 |===

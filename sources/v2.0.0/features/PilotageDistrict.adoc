@@ -1,6 +1,8 @@
 == Pilotage District
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area within which a pilotage direction exists. Such directions are regulated by a competent harbour authority which dictates circumstances under which they apply.
 
 [cols="1,1,1,1", options="header"]
 |===

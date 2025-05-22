@@ -1,6 +1,8 @@
 == Separation Zone or Line
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A zone or line separating the traffic lanes in which ships are proceeding in opposite, or nearly opposite directions; or separating a traffic lane from the adjacent sea area; or separating traffic lanes designated for particular classes of ships proceeding in the same direction.
 
 [cols="1,1,1,1", options="header"]
 |===

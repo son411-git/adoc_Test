@@ -1,6 +1,8 @@
 == Radar Range
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Indicates the coverage of a sea area by a radar surveillance station. Inside this area a vessel may request shore-based radar assistance, particularly in poor visibility.
 
 [cols="1,1,1,1", options="header"]
 |===

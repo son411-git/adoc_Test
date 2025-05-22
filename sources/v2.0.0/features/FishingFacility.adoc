@@ -1,6 +1,8 @@
 == Fishing Facility
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A structure for fishing purposes which can be an obstruction to ships in general. The position of these structures may vary frequently over time.
 
 [cols="1,1,1,1", options="header"]
 |===

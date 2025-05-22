@@ -1,6 +1,8 @@
 == Archipelagic Sea Lane Axis
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The reference line used to determine the maximum extents of an Archipelagic Sea Lane. It may not indicate the deepest water nor any recommended route or track.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Seagrass
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Any of various submerged monocotyledonous plants (such as eelgrass, tape grass, and turtle grass) of tropical to temperate usually shallow coastal waters that have narrow grass-like leaves and often form dense underwater meadows.
 
 [cols="1,1,1,1", options="header"]
 |===

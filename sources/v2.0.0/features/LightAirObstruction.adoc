@@ -1,6 +1,8 @@
 == Light Air Obstruction
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An air obstruction light is a light marking an obstacle which constitutes a danger to air navigation.
 
 [cols="1,1,1,1", options="header"]
 |===

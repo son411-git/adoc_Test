@@ -1,6 +1,8 @@
 == Tideway
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A channel through which a tidal current runs.
 
 [cols="1,1,1,1", options="header"]
 |===

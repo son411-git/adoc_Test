@@ -1,6 +1,8 @@
 == Emergency Wreck Marking Buoy
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An emergency wreck marking buoy is a buoy moored on or above a new wreck, designed to provide a prominent (both visual and radio) and easily identifiable temporary first response.
 
 [cols="1,1,1,1", options="header"]
 |===

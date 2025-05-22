@@ -1,6 +1,8 @@
 == Log Pond
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A maritime area enclosed with connected floating timbers used as a staging area for sawn logs.
 
 [cols="1,1,1,1", options="header"]
 |===

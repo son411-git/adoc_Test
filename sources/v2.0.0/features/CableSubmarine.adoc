@@ -1,6 +1,8 @@
 == Cable Submarine
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An assembly of wires or fibres, or a wire rope or chain, which has been laid underwater or buried beneath the seafloor.
 
 [cols="1,1,1,1", options="header"]
 |===

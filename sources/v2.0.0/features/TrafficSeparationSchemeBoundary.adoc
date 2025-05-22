@@ -1,6 +1,8 @@
 == Traffic Separation Scheme Boundary
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The outer limit of a traffic lane part or a traffic separation scheme roundabout.
 
 [cols="1,1,1,1", options="header"]
 |===

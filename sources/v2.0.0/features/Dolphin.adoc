@@ -1,6 +1,8 @@
 == Dolphin
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A post or group of posts, used for mooring or warping a vessel, or as an aid to navigation. The dolphin may be in the water, on a wharf or on the beach.
 
 [cols="1,1,1,1", options="header"]
 |===

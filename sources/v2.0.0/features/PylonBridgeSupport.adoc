@@ -1,6 +1,8 @@
 == Pylon/Bridge Support
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A vertical construction consisting, for example, of a steel framework or pre-stressed concrete to carry cables, a bridge, etc.
 
 [cols="1,1,1,1", options="header"]
 |===

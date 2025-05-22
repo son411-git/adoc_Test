@@ -1,6 +1,8 @@
 == Installation Buoy
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An installation buoy is a buoy used for loading tankers with gas or oil.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Traffic Separation Scheme Lane Part
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area within defined limits in which one-way traffic is established. Natural obstacles, including those forming separation zones, may constitute a boundary.
 
 [cols="1,1,1,1", options="header"]
 |===

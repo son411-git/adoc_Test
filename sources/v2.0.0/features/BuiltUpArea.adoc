@@ -1,6 +1,8 @@
 == Built-Up Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area of land or construction over the water containing a concentration of buildings and/or other structures.
 
 [cols="1,1,1,1", options="header"]
 |===

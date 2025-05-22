@@ -1,6 +1,8 @@
 == Safe Water Buoy
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A safe water buoy is used to indicate that there is navigable water around the mark.
 
 [cols="1,1,1,1", options="header"]
 |===

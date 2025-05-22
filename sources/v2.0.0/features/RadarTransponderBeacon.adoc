@@ -1,6 +1,8 @@
 == Radar Transponder Beacon
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A transponder beacon transmitting a coded signal on radar frequency, permitting an interrogating craft to determine the bearing and range of the transponder.
 
 [cols="1,1,1,1", options="header"]
 |===

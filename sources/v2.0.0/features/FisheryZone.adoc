@@ -1,6 +1,8 @@
 == Fishery Zone
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The offshore zone in which exclusive fishing rights and management are held by the coastal nation.
 
 [cols="1,1,1,1", options="header"]
 |===

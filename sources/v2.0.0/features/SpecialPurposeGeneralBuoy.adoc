@@ -1,6 +1,8 @@
 == Special Purpose/General Buoy
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A special purpose buoy is primarily used to indicate an area or feature, the nature of which is apparent from reference to a chart, Sailing Directions or Notices to Mariners.
 
 [cols="1,1,1,1", options="header"]
 |===

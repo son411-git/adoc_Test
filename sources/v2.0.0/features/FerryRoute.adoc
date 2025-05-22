@@ -1,6 +1,8 @@
 == Ferry Route
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A route in a body of water where a ferry crosses from one shoreline to another.
 
 [cols="1,1,1,1", options="header"]
 |===

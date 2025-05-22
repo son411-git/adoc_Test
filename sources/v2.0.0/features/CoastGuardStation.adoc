@@ -1,6 +1,8 @@
 == Coast Guard Station
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A station at which a visual/radio/radar marine watch is kept either continuously or at certain times only.
 
 [cols="1,1,1,1", options="header"]
 |===

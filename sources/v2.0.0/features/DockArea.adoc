@@ -1,6 +1,8 @@
 == Dock Area
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An artificially enclosed area within which ships may moor and which may have gates to regulate water level.
 
 [cols="1,1,1,1", options="header"]
 |===

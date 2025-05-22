@@ -1,6 +1,8 @@
 == Depth - No Bottom Found
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+Upon investigation the bottom was not found at this depth.
 
 [cols="1,1,1,1", options="header"]
 |===

@@ -1,6 +1,8 @@
 == Daymark
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+The identifying characteristics of an aid to navigation which serve to facilitate its recognition against a daylight viewing background. On those structures that do not by themselves present an adequate viewing area to be seen at the required distance, the aid is made more visible by affixing a daymark to the structure. A daymark so affixed has a distinctive colour and shape depending on the purpose of the aid.
 
 [cols="1,1,1,1", options="header"]
 |===

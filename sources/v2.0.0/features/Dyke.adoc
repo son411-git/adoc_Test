@@ -1,6 +1,8 @@
 == Dyke
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A dyke (or dike) is an artificial embankment to contain or hold back water.
 
 [cols="1,1,1,1", options="header"]
 |===

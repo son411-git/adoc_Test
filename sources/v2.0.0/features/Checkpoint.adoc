@@ -1,6 +1,8 @@
 == Checkpoint
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An official location at which to register, declare and/or inspect goods and/or people.
 
 [cols="1,1,1,1", options="header"]
 |===

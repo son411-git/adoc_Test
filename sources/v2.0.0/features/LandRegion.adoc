@@ -1,6 +1,8 @@
 == Land Region
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+An area of natural or cultivated scenery defined by its geographical characteristics and may be known by its proper name.
 
 [cols="1,1,1,1", options="header"]
 |===

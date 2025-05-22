@@ -1,6 +1,8 @@
 == Two-Way Route
 
-=== 속성 바인딩 (Attribute Bindings)
+**<Definition>**
+
+A route within defined limits inside which two way traffic is established, aimed at providing safe passage of ships through waters where navigation is difficult or dangerous.
 
 [cols="1,1,1,1", options="header"]
 |===
