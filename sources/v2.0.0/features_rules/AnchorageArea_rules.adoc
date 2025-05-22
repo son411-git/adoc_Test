@@ -1,0 +1,10 @@
+=== 일반기준
+
+- 정박구역의 이름이나 숫자는 복합속성 [Feature name]에 입력하고 정박 종류 및 제한사항 등 부가정보(외부 참조 및 그림파일 포함)는 [Information] 속성으로 입력
+- 명확한 경계가 없는 개별 추천 정박지는 Point type의 “Anchorage Area”로 입력하고 속성 [Category of anchorage] = 1(제한되지 않은 정박), [Status] = 3(추천)으로 인코딩
+- 관계기관에 의해 정의되지 않았으나 정박지로 보고된 곳은 surface 타입으로 인코딩해서는 안 되며, [Category of anchorage] = 15(보고된 정박지)로 입력 
+- 다수의 소형선이 정박하는 구역의 경우 Surface타입의 “Anchorage Area”로 입력하고 [Category of anchorage] = 8(Small Craft mooring area)로 입력
+- 각 속성이 S-57에서 두 개 이상으로 입력될 경우 S-101에서 [Category of anchorage]를 두 개 이상으로 입력
+- 임시정박지의 경우 [Category of anchorage = 1(unrestricted anchorage)]로 입력하고 [Status = 7(temporary)]로 입력
+
+image::../image/AnchorageArea_image-1.png[width=600,align=center]
