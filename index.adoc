@@ -20,7 +20,7 @@
 ==== Attributes
 include::sources/v2.0.0/features/PipelineOverhead.adoc[]
 ==== 객체 설명
-include::sources/v2.0.0/common/rules.adoc[tag=PipelineOverhead,leveloffset=+2]
+include::sources/v2.0.0/features_rules/rules.adoc[tag=PipelineOverhead,leveloffset=+2]
 
 === CardinalBeacon
 
@@ -28,7 +28,7 @@ include::sources/v2.0.0/common/rules.adoc[tag=PipelineOverhead,leveloffset=+2]
 include::sources/v2.0.0/features/CardinalBeacon.adoc[]
 
 ==== 객체 설명
-include::sources/v2.0.0/common/rules.adoc[tag=CardinalBeacon,leveloffset=+2]
+include::sources/v2.0.0/features_rules/rules.adoc[tag=CardinalBeacon,leveloffset=+2]
 
 === LightSectored
 
@@ -36,7 +36,7 @@ include::sources/v2.0.0/common/rules.adoc[tag=CardinalBeacon,leveloffset=+2]
 include::sources/v2.0.0/features/LightSectored.adoc[]
 
 ==== 객체 설명
-include::sources/v2.0.0/common/rules.adoc[tag=LightSectored,leveloffset=+2]
+include::sources/v2.0.0/features_rules/rules.adoc[tag=LightSectored,leveloffset=+2]
 sources/v2.0.0
 === Conveyoer
 
@@ -44,7 +44,7 @@ sources/v2.0.0
 include::sources/v2.0.0/features/Conveyor.adoc[]
 
 ==== 객체 설명
-include::sources/v2.0.0/common/rules.adoc[tag=Conveyor,leveloffset=+2]
+include::sources/v2.0.0/features_rules/rules.adoc[tag=Conveyor,leveloffset=+2]
 
 === QuaityOfBathmerticData
 
@@ -52,5 +52,5 @@ include::sources/v2.0.0/common/rules.adoc[tag=Conveyor,leveloffset=+2]
 include::sources/v2.0.0/features/QualityOfBathymetricData.adoc[]
 
 ==== 객체 설명
-include::sources/v2.0.0/common/rules.adoc[tag=QualityOfBathymetricData,leveloffset=+2]
+include::sources/v2.0.0/features_rules/rules.adoc[tag=QualityOfBathymetricData,leveloffset=+2]
 
