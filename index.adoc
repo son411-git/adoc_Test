@@ -57,8 +57,8 @@ include::sources/v2.0.0/features_rules/rules.adoc[tag=QualityOfBathymetricData,l
 === Bridge
 
 ==== Attributes
-include::sources/v2.0.0/features/Bridge_General.adoc[]
+include::sources/v2.0.0/features/Bridge.adoc[]
 
 ==== 객체 설명
-include::sources/v2.0.0/features_rules/Bridge[tag=Bridge,leveloffset=+2]
+include::sources/v2.0.0/features_rules/Bridge_General[tag=Bridge,leveloffset=+2]
 
