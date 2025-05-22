@@ -1,0 +1,28 @@
+== Quality of Non-Bathymetric Data
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|categoryOfTemporalVariation||EN|0,1
+|horizontalDistanceUncertainty|HORACC|RE|0,1
+|horizontalPositionUncertainty||C|1,1
+|    uncertaintyFixed||(S)RE|1,1
+|    uncertaintyVariableFactor||(S)RE|0,1
+|interoperabilityIdentifier||URN|0,1
+|orientationUncertainty||RE|0,1
+|surveyDateRange||C|0,1
+|    dateEnd|DATEND|(S)TD|1,1
+|    dateStart|DATSTA|(S)TD|0,1
+|verticalUncertainty|SOUACC|C|0,1
+|    uncertaintyFixed||(S)RE|1,1
+|    uncertaintyVariableFactor||(S)RE|0,1
+|information|INFORM|C|0,*
+|    fileLocator||(S)TE|0,1
+|    fileReference|TXTDSC|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    language||(S)TE|1,1
+|    text|INFORM|(S)TE|0,1
+|===

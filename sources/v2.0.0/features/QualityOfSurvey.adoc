@@ -1,0 +1,37 @@
+== Quality of Survey
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|depthRangeMaximumValue|DRVAL2|RE|0,1
+|depthRangeMinimumValue|DRVAL1|RE|0,1
+|featuresDetected||C|0,1
+|    leastDepthOfDetectedFeaturesMeasured||(S)BO|1,1
+|    significantFeaturesDetected||(S)BO|1,1
+|    sizeOfFeaturesDetected||(S)RE|0,1
+|fullSeafloorCoverageAchieved||BO|0,1
+|interoperabilityIdentifier||URN|0,1
+|lineSpacingMaximum||IN|0,1
+|lineSpacingMinimum||IN|0,1
+|measurementDistanceMaximum|SDISMX|IN|0,1
+|measurementDistanceMinimum|SDISMN|IN|0,1
+|qualityOfHorizontalMeasurement|QUAPOS|EN|0,1
+|qualityOfVerticalMeasurement|QUASOU|EN|0,*
+|scaleValueMaximum|SCVAL1|IN|0,1
+|scaleValueMinimum|SCVAL2|IN|0,1
+|surveyAuthority|SURATH|TE|1,1
+|surveyDateRange||C|1,1
+|    dateEnd|DATEND|(S)TD|1,1
+|    dateStart|DATSTA|(S)TD|0,1
+|surveyType|SURTYP|EN|1,*
+|techniqueOfVerticalMeasurement|TECSOU|EN|0,*
+|information|INFORM|C|0,*
+|    fileLocator||(S)TE|0,1
+|    fileReference|TXTDSC|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    language||(S)TE|1,1
+|    text|INFORM|(S)TE|0,1
+|===

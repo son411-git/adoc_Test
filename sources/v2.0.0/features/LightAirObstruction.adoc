@@ -1,0 +1,45 @@
+== Light Air Obstruction
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|colour|COLOUR|EN|0,*
+|exhibitionConditionOfLight|EXCLIT|EN|0,1
+|featureName||C|0,*
+|    language||(S)TE|1,1
+|    name|OBJNAM|(S)TE|1,1
+|    nameUsage||(S)EN|0,1
+|fixedDateRange||C|0,1
+|    dateEnd|DATEND|(S)TD|0,1
+|    dateStart|DATSTA|(S)TD|0,1
+|flareBearing||IN|0,1
+|interoperabilityIdentifier||URN|0,1
+|height|HEIGHT|RE|0,1
+|lightVisibility|LITVIS|EN|0,*
+|multiplicityOfFeatures||C|0,1
+|    multiplicityKnown||(S)BO|1,1
+|    numberOfFeatures||(S)IN|0,1
+|periodicDateRange||C|0,*
+|    dateEnd|DATEND|(S)TD|1,1
+|    dateStart|DATSTA|(S)TD|1,1
+|rhythmOfLight||C|0,1
+|    lightCharacteristic|LITCHR|(S)EN|1,1
+|    signalGroup|SIGGRP|(S)TE|0,*
+|    signalPeriod|SIGPER|(S)RE|0,1
+|    signalSequence|SIGSEQ|(S)C|0,*
+|        signalDuration||(S)RE|1,1
+|        signalStatus||(S)EN|1,1
+|status|STATUS|EN|0,*
+|valueOfNominalRange|VALNMR|RE|0,1
+|verticalDatum|VERDAT|EN|0,1
+|scaleMinimum|SCAMIN|IN|0,1
+|information|INFORM|C|0,*
+|    fileLocator||(S)TE|0,1
+|    fileReference|TXTDSC|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    language||(S)TE|1,1
+|    text|INFORM|(S)TE|0,1
+|===

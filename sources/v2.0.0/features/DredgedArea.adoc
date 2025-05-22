@@ -1,0 +1,34 @@
+== Dredged Area
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|depthRangeMinimumValue|DRVAL1|RE|1,1
+|depthRangeMaximumValue|DRVAL2|RE|0,1
+|dredgedDate||TD|0,1
+|featureName||C|0,*
+|    language||(S)TE|1,1
+|    name|OBJNAM|(S)TE|1,1
+|    nameUsage||(S)EN|0,1
+|interoperabilityIdentifier||URN|0,1
+|maximumPermittedDraught||RE|0,1
+|qualityOfVerticalMeasurement|QUASOU|EN|0,1
+|restriction|RESTRN|EN|0,*
+|techniqueOfVerticalMeasurement|TECSOU|EN|0,*
+|verticalUncertainty|SOUACC|C|0,1
+|    uncertaintyFixed||(S)RE|1,1
+|    uncertaintyVariableFactor||(S)RE|0,1
+|vesselSpeedLimit||C|0,*
+|    speedLimit||(S)RE|1,1
+|    speedUnits||(S)EN|1,1
+|    vesselClass||(S)TE|0,1
+|information|INFORM|C|0,*
+|    fileLocator||(S)TE|0,1
+|    fileReference|TXTDSC|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    language||(S)TE|1,1
+|    text|INFORM|(S)TE|0,1
+|===

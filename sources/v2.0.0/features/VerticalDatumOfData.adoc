@@ -1,0 +1,17 @@
+== Vertical Datum of Data
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|interoperabilityIdentifier||URN|0,1
+|verticalDatum|VERDAT|EN|1,1
+|information|INFORM|C|0,*
+|    fileLocator||(S)TE|0,1
+|    fileReference|TXTDSC|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    language||(S)TE|1,1
+|    text|INFORM|(S)TE|0,1
+|===

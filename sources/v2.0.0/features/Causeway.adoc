@@ -1,0 +1,26 @@
+== Causeway
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|condition|CONDTN|EN|0,1
+|featureName||C|0,*
+|    language||(S)TE|1,1
+|    name|OBJNAM|(S)TE|1,1
+|    nameUsage||(S)EN|0,1
+|interoperabilityIdentifier||URN|0,1
+|natureOfConstruction|NATCON|EN|0,*
+|reportedDate|SORDAT|TD|0,1
+|status|STATUS|EN|0,*
+|waterLevelEffect|WATLEV|EN|0,1
+|scaleMinimum|SCAMIN|IN|0,1
+|information|INFORM|C|0,*
+|    fileLocator||(S)TE|0,1
+|    fileReference|TXTDSC|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    language||(S)TE|1,1
+|    text|INFORM|(S)TE|0,1
+|===

@@ -1,0 +1,10 @@
+== Quality of Bathymetry Coverage
+
+=== 속성 바인딩 (Attribute Bindings)
+
+[cols="1,1,1,1", options="header"]
+|===
+|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+
+|iD|ID|IN|1,1
+|===
