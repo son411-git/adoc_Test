@@ -519,6 +519,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_bridge_2">7. Bridge</a>
 <ul class="sectlevel3">
 <li><a href="#_객체_설명_6">7.1. 객체 설명</a></li>
+<li><a href="#_일반기준_3">7.2. 일반기준</a></li>
 </ul>
 </li>
 </ul>
@@ -2240,8 +2241,46 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 <div class="sect3">
 <h4 id="_객체_설명_6">7.1. 객체 설명</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_일반기준_3">7.2. 일반기준</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>교량은 항해 불가능한 지역(Land area)과 항해가능지역(Depth area, Dredged Area, Unsurveyed area)에 모두 입력 가능</p>
+</li>
+<li>
+<p>S-57 전자해도의 속성 [CATBRG]의 1(fixed bridge), 2(opening bridge)는 “Span Fixed”와 “Span Opening”으로 구분하여 인코딩하고 아래의 표를 참조하여 속성입력</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="sources/v2.0.0/images/Bridge_image-1.png" alt="Bridge image 1" width="400">
+</div>
+</div>
 <div class="paragraph">
-<p>Unresolved directive in index.adoc - include::sources/v2.0.0/features_rules/Bridge_General[leveloffset=+2]</p>
+<p>항해 가능 지역의 교량
+- 항해 가능한 지역의 고정형(Span Fixed), 개방형(Span Opening) 교량은 교량의 모든 구성요소를 포함하는 Surface type의 “Bridge”를 생성하고 관련된 Feature는 {Bridge Aggregation} 관계 설정
+    (교량에 대한 명칭이나 정보는 “Bridge”에 입력)
+    ※ Relation 페이지 참조
+- “Span Opening”을 포함하는 {Bridge Aggregation}은 속성 [Opening bridge], [Category of opening bridge] 필수 입력
+- 교량 수직높이는 “Span Fixed”와 “Span Opening”의 [Vertical clearance]에 필수 입력하며, 아래 그림과 같이 높이 값에 따른 각각의 피처를 생성</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="sources/v2.0.0/images/Bridge_image-2.png" alt="Bridge image 2" width="400">
+</div>
+</div>
+<div class="paragraph">
+<p>항해 불가능한 지역의 교량
+- 항해 불가능한 지역(Land area, Pontoon Bridge등)의 교량은 Curve / Surface type의 “Bridge”로 인코딩하며 별도의 교량 관련 {Bridge Aggregation} 설정은 생략</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="sources/v2.0.0/images/Bridge_image-3.png" alt="Bridge image 3" width="400">
+</div>
 </div>
 </div>
 </div>
@@ -2249,7 +2288,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-05-22 17:14:36 +0900
+Last updated 2025-05-22 17:29:11 +0900
 </div>
 </div>
 </body>

@@ -1,4 +1,4 @@
-// tag::Bridge[]
+// tag::Bridge_General[]
 === 일반기준
 - 교량은 항해 불가능한 지역(Land area)과 항해가능지역(Depth area, Dredged Area, Unsurveyed area)에 모두 입력 가능
 - S-57 전자해도의 속성 [CATBRG]의 1(fixed bridge), 2(opening bridge)는 “Span Fixed”와 “Span Opening”으로 구분하여 인코딩하고 아래의 표를 참조하여 속성입력
@@ -18,4 +18,5 @@ image::../images/Bridge_image-2.png[width=400,align=center]
 - 항해 불가능한 지역(Land area, Pontoon Bridge등)의 교량은 Curve / Surface type의 “Bridge”로 인코딩하며 별도의 교량 관련 {Bridge Aggregation} 설정은 생략
 
 image::../images/Bridge_image-3.png[width=400,align=center]
-// end::Bridge[]
+// end::Bridge_General[]
+---
