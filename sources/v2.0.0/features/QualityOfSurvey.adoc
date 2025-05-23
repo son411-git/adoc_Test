@@ -1,5 +1,3 @@
-== Quality of Survey
-
 **<Definition>**
 
 An area within which a uniform assessment of the reliability of source survey information exists.
@@ -37,3 +35,5 @@ An area within which a uniform assessment of the reliability of source survey in
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/QualityOfSurvey_rules.adoc[tag=QualityOfSurvey]

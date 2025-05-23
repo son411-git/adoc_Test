@@ -1,5 +1,5 @@
 // tag::LightSectored[]
-=== 일반 기준
+.일반 기준
 
 - 등화의 분류에 따라 “Light Fog Detector” (안개탐지등), “Light Air Obstruction” (항공장애등), “Light Sectored” (분호등화), “Light All Around (일반등화) 피처로 구분하여 입력
 - “Light All Around” 피처 중 주요등대*는 속성 [Major light] = true로 설정

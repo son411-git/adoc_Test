@@ -1,4 +1,4 @@
-== Quality of Bathymetric Data
+
 
 **<Definition>**
 
@@ -39,3 +39,5 @@ An area within which a uniform assessment of the quality of the bathymetric data
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/QualityOfBathymetricData_rules.adoc[tag=QualityOfBathymetricData]

@@ -1,5 +1,3 @@
-== Light Sectored
-
 **<Definition>**
 
 A light presenting different appearances (in particular, different colours) over various parts of the horizon of interest to maritime navigation.
@@ -64,3 +62,6 @@ A light presenting different appearances (in particular, different colours) over
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+
+include::../features_rules/LightSectored_rules.adoc[tag=LightSectored]

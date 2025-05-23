@@ -1,5 +1,3 @@
-== Pipeline Submarine/On Land
-
 **<Definition>**
 
 A connected set of pipes for conveying liquids, slurries, or gases.

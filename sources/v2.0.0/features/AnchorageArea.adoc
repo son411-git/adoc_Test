@@ -1,4 +1,3 @@
-== Anchorage Area
 
 **<Definition>**
 
@@ -35,3 +34,6 @@ An area in which vessels or seaplanes anchor or may anchor.
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+
+include::../features_rules/AnchorageArea_rules.adoc[tag=AnchorageArea]
