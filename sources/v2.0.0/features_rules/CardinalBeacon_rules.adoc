@@ -14,5 +14,5 @@
   → ※ Relation 페이지 참조
 * 입표와 두표의 항행통보 번호가 서로 다르면, **최신 항행통보 하나만 입력**
 
-image::../image/CardinalBeacon_image-1.png[width=400,align=center]
+image::../images/CardinalBeacon_image-1.png[width=400,align=center]
 // end::CardinalBeacon[]
