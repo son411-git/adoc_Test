@@ -7,7 +7,7 @@
 image::../images/Conveyor_image-1.png[width=400,align=center]
 
 
-=== 입력예시
+.입력예시
 
 [cols="1,2", options="header"]
 |===
