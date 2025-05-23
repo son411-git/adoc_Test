@@ -1,5 +1,6 @@
 = S-101 객체 입력 지침서 테스팅
 :toc: left
+:safe: unsafe      // ← 이 한 줄만 추가해도 inline HTML 이 살아납니다.
 :sectnums:
 :toclevels: 2
 :doctype: book
@@ -7,7 +8,11 @@
 
 // 이미지  폴더 경로 지정
 :imagesdir: sources/v2.0.0/images
-:docinfo: shared
+:linkcss:
+:stylesdir: .
+:stylesheet: custom.css
+// 공용 속성 경로 지정
+include::sources/v2.0.0/common_attr.adoc[tag=requiredAttr]
 
 ////
 ************************************************************************************************

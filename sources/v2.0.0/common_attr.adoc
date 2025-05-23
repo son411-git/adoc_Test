@@ -11,6 +11,13 @@
 :sp4: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
 // end::spacing[]
 
+// 필수속성값 ?? -> 조정할수도
+// tag::requiredAttr[]
+:required-start: +++<span style="color:red;font-weight:bold">
+:required-end:   </span>+++
+// end::requiredAttr[]
+
+
 // tag::featureNameRow[]
 |*featureName*||C|0,1
 |{sp1}language||(S) TE|0,1
