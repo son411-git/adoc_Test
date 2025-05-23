@@ -22,7 +22,8 @@ image::../images/Conveyor_image-1.png[width=400,align=center]
 |    language|kor
 |    name|해상케이블카
 |    nameUsage|1 : default name display
-|verticalClearanceFixed|33
+|**verticalClearanceFixed**|
+|    verticalClearancevalue|33
 |===
 
 
