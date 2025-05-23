@@ -7,5 +7,5 @@
   (추후 측량성과에 대해 불확실도 값이 주어진다면 각각의 값 변경)
   ※ S-57에 존재하는 “M_QUAL”의 [CATZOC]와 아래 테이블의 Depth Accuracy의 매칭으로 입력
 
-image::../image/QualityOfBathmetricData_image-1.png[width=500,align=center]
+image::../images/QualityOfBathmetricData_image-1.png[width=500,align=center]
 // end::QualityOfBathymetricData[]
