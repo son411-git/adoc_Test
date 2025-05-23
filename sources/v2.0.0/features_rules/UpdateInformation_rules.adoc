@@ -1,0 +1,12 @@
+// tag::UpdateInformation[]
+=== 일반 기준
+
+* 기존 전자해도 내용이 변경(업데이트) 되었을 경우 변경된 부분을 표시하기 위한 용도로 사용되며, 변경된 부분에만 입력하는 것이 원칙이고, 업데이트 유형에 따라 적절한 형태(Point, Curve, Surface)로 사용  
+* insert(기재), delete(삭제), modify(수정)인 경우 피처 형태에 따라 변경된 부분에만 “Update Information”을 입력하고 {Update Information} 관계 설정 ※ Relation 페이지 참조  
+* move(이동)인 경우 예시 4를 참조하여 3개의 “Update Information” 피처를 만들고 관계 설정  
+* “Update Information” 사용 시 더 많은 추가정보 입력이 필요하다면 [Information]을 사용하여 입력  
+* 항행통보 등으로 기존에 존재하는 Feature가 삭제되었다면 “Update Information”을 사용하여 삭제 정보를 표기  
+* 데이터셋 개정 시 더 이상 업데이트 정보를 표기할 필요가 없어지면 “Update Information”을 삭제  
+* 이전 버전과 동일한 피처가 업데이트되는 경우, 개정이 아니어도 기존의 “Update Information”을 삭제  
+* 기존 Feature가 삭제되었다는 정보를 표현하기 위해 “Update Information”을 사용한 경우, 관련된 Feature가 이미 삭제되었으므로 {Updated Information} 관계 설정 하지 않음  
+// end::UpdateInformation[]

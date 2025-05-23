@@ -1,0 +1,6 @@
+// tag::MagneticVariation[]
+=== 일반 기준
+
+* 우리나라 전자해도구역이 포함된 자침편차도를 이용하여 각 Cell에 해당되는 구역의 편차 값을 입력
+* 자침편차 산정일과 산정기준 정보는 [Information]에 입력
+// end::MagneticVariation[]

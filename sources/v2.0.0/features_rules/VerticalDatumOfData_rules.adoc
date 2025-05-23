@@ -1,0 +1,7 @@
+// tag::VerticalDatumOfData[]
+=== 일반 기준
+
+* 국내 S-57 전자해도에서 기본 수직기준면(평균해수면)을 메타정보로 입력했으나, S-101은 “Vertical Datum of Data” 피처의 속성 [Vertical datum] = 3(평균해수면) 으로 필수 인코딩
+* 데이터가 포함된 모든 부분은 “Vertical Datum of Data”로 덮여야 하며, “Vertical Datum of Data” 피처는 서로 중첩불가
+* 메타 피처인 “Sounding Datum”과 중첩 가능
+// end::VerticalDatumOfData[]
