@@ -1,0 +1,8 @@
+// tag::Conveyor[]
+=== 일반기준
+- 지상 시설물로부터 수면에 고정된 구조물까지 짐을 싣거나, 짐을 하역하는 목적으로 사용
+- 공중케이블카 입력 시 [Category of conveyor] = 1(공중케이블)로 속성입력
+- 가항수역에서 컨베이어 지지대는 Pylon/Bridge Support 객체를 사용하며 [Category of pylon] = 3(공중케이블 철탑)으로 속성입력
+
+image::../image/Conveyor_image-1.png[width=400,align=center]
+// end::Conveyor[]

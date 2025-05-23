@@ -1,0 +1,11 @@
+// tag::QualityOfBathymetricData[]
+
+=== 일반 기준
+- 최대표시 축척 1:700,000 이상 대축척의 수심영역에 사용(수심 및 측량 데이터가 없는 경우 인코딩 불필요)
+- CATZOC의 측량등급을 [Category of zone of confidence IN data]에 입력
+- 현재 각각의 측량성과에 대한 수심의 위치 및 불확실도 값이 주어지지 않았으므로 S-57에서 제시하는 값 입력
+  (추후 측량성과에 대해 불확실도 값이 주어진다면 각각의 값 변경)
+  ※ S-57에 존재하는 “M_QUAL”의 [CATZOC]와 아래 테이블의 Depth Accuracy의 매칭으로 입력
+
+image::../image/QualityOfBathmetricData_image-1.png[width=500,align=center]
+// end::QualityOfBathymetricData[]
