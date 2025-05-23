@@ -4,9 +4,9 @@
 
 A fixed component of the deck of a bridge spanning successive bridge piers.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |fixedDateRange||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
@@ -30,3 +30,5 @@ A fixed component of the deck of a bridge spanning successive bridge piers.
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/SpanFixed_rules.adoc[tag=SpanFixed]

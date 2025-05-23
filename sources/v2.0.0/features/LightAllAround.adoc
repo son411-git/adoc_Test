@@ -4,9 +4,9 @@
 
 An all around light is a light that is visible over the whole horizon of interest to marine navigation and having no change in the characteristics of the light.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfLight|CATLIT|EN|0,*
 |colour|COLOUR|EN|1,*
@@ -50,3 +50,5 @@ An all around light is a light that is visible over the whole horizon of interes
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/LightAllAround_rules.adoc[tag=LightAllAround]

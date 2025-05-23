@@ -1,10 +1,12 @@
+== Pipeline Submarine/On Land
+
 **<Definition>**
 
 A connected set of pipes for conveying liquids, slurries, or gases.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |buriedDepth|BURDEP|RE|0,1
 |categoryOfPipelinePipe|CATPIP|EN|0,*
@@ -35,3 +37,5 @@ A connected set of pipes for conveying liquids, slurries, or gases.
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/PipelineSubmarineOnLand_rules.adoc[tag=PipelineSubmarineOnLand]

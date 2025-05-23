@@ -4,9 +4,9 @@
 
 An area of a two-way route within which traffic flow is generally along one bearing (and possibly its reciprocal).
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |basedOnFixedMarks|CATTRK|BO|0,1
 |depthRangeMinimumValue|DRVAL1|RE|0,1
@@ -30,3 +30,5 @@ An area of a two-way route within which traffic flow is generally along one bear
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/TwoWayRoutePart_rules.adoc[tag=TwoWayRoutePart]

@@ -4,9 +4,9 @@
 
 A zone contiguous to a coastal State's Territorial Sea, which may not extend beyond 24 nautical miles from the baselines from which the breadth of the Territorial Sea is measured. The coastal State may exercise certain control in this zone subject to the provisions of International Law.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |fixedDateRange||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
@@ -22,3 +22,5 @@ A zone contiguous to a coastal State's Territorial Sea, which may not extend bey
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/ContiguousZone_rules.adoc[tag=ContiguousZone]

@@ -4,9 +4,9 @@
 
 A line connecting points of equal water depth which is sometimes significantly displaced outside of soundings, symbols, and other chart detail for clarity as well as generalization. Depth contours therefore often represent an approximate location of the line of equal depth as related to the surveyed line delineated on the source.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |interoperabilityIdentifier||URN|0,1
 |valueOfDepthContour|VALDCO|RE|1,1
@@ -18,3 +18,5 @@ A line connecting points of equal water depth which is sometimes significantly d
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/DepthContour_rules.adoc[tag=DepthContour]

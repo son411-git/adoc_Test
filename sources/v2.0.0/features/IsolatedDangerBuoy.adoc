@@ -4,9 +4,9 @@
 
 An isolated danger buoy is a buoy moored on or above an isolated danger of limited extent, which has navigable water all around it.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |buoyShape|BOYSHP|EN|1,1
 |colour|COLOUR|EN|1,*
@@ -43,3 +43,5 @@ An isolated danger buoy is a buoy moored on or above an isolated danger of limit
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/IsolatedDangerBuoy_rules.adoc[tag=IsolatedDangerBuoy]

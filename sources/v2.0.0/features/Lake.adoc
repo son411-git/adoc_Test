@@ -4,9 +4,9 @@
 
 A large body of water entirely surrounded by land.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |elevation|ELEVAT|RE|0,1
 |featureName||C|0,*
@@ -23,3 +23,5 @@ A large body of water entirely surrounded by land.
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/Lake_rules.adoc[tag=Lake]

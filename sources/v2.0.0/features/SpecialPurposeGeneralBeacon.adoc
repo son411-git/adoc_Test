@@ -4,9 +4,9 @@
 
 A special purpose beacon is primarily used to indicate an area or feature, the nature of which is apparent from reference to a chart, Sailing Directions or Notices to Mariners.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |beaconShape|BCNSHP|EN|1,1
 |categoryOfSpecialPurposeMark|CATSPM|EN|1,*
@@ -49,3 +49,5 @@ A special purpose beacon is primarily used to indicate an area or feature, the n
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/SpecialPurposeGeneralBeacon_rules.adoc[tag=SpecialPurposeGeneralBeacon]

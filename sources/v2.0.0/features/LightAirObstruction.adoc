@@ -4,9 +4,9 @@
 
 An air obstruction light is a light marking an obstacle which constitutes a danger to air navigation.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |colour|COLOUR|EN|0,*
 |exhibitionConditionOfLight|EXCLIT|EN|0,1
@@ -45,3 +45,5 @@ An air obstruction light is a light marking an obstacle which constitutes a dang
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/LightAirObstruction_rules.adoc[tag=LightAirObstruction]

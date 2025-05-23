@@ -4,9 +4,9 @@
 
 A defined area where traffic lanes cross.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |fixedDateRange||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
@@ -26,3 +26,5 @@ A defined area where traffic lanes cross.
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/TrafficSeparationSchemeCrossing_rules.adoc[tag=TrafficSeparationSchemeCrossing]

@@ -4,9 +4,9 @@
 
 Straight baselines are a system of straight lines joining specified or discrete points on the low-water line, usually known as straight baseline turning points. Straight baselines are used in delimitation.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |interoperabilityIdentifier||URN|0,1
 |nationality|NATION|TE|1,1
@@ -18,3 +18,5 @@ Straight baselines are a system of straight lines joining specified or discrete 
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/StraightTerritorialSeaBaseline_rules.adoc[tag=StraightTerritorialSeaBaseline]

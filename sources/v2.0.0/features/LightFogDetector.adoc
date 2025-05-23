@@ -4,9 +4,9 @@
 
 A fog detector light is a light used to automatically determine conditions of visibility which warrant the turning on or off of a sound signal.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |colour|COLOUR|EN|0,*
 |featureName||C|0,*
@@ -41,3 +41,5 @@ A fog detector light is a light used to automatically determine conditions of vi
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/LightFogDetector_rules.adoc[tag=LightFogDetector]

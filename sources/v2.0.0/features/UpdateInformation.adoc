@@ -1,11 +1,12 @@
+== Update Information
 
 **<Definition>**
 
 The Update Information metadata feature is used to represent a change to the information shown.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |fixedDateRange||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
@@ -23,5 +24,4 @@ The Update Information metadata feature is used to represent a change to the inf
 |    text|INFORM|(S)TE|0,1
 |===
 
-
-include::../features_rules/UpdateInformation_rules.adoc[[tag=UpdateInformation]
+include::../features_rules/UpdateInformation_rules.adoc[tag=UpdateInformation]

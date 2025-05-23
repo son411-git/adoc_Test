@@ -4,9 +4,9 @@
 
 A structure that may be swung, drawn, or lowered to block an entrance or passageway on a watercourse.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfGate|CATGAT|EN|0,1
 |condition|CONDTN|EN|0,1
@@ -40,3 +40,5 @@ A structure that may be swung, drawn, or lowered to block an entrance or passage
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/Gate_rules.adoc[tag=Gate]

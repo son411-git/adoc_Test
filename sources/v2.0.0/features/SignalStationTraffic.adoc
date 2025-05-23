@@ -4,9 +4,9 @@
 
 A traffic signal station is a place on shore from which signals are made to regulate the movement of traffic.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfSignalStationTraffic|CATSIT|EN|1,*
 |communicationChannel|COMCHA|TE|0,*
@@ -30,3 +30,5 @@ A traffic signal station is a place on shore from which signals are made to regu
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/SignalStationTraffic_rules.adoc[tag=SignalStationTraffic]

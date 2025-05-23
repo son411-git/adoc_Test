@@ -4,9 +4,9 @@
 
 A distinctively marked vessel anchored or moored at a charted point, to serve as an aid to navigation. By night, it displays a characteristic light(s) and is usually equipped with other devices, such as fog signal, submarine sound signal, and radio-beacon, to assist navigation.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |colour|COLOUR|EN|1,*
 |colourPattern|COLPAT|EN|0,1
@@ -37,3 +37,5 @@ A distinctively marked vessel anchored or moored at a charted point, to serve as
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/LightVessel_rules.adoc[tag=LightVessel]

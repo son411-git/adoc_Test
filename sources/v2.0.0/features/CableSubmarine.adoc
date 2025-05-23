@@ -4,9 +4,9 @@
 
 An assembly of wires or fibres, or a wire rope or chain, which has been laid underwater or buried beneath the seafloor.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |buriedDepth|BURDEP|RE|0,1
 |categoryOfCable|CATCBL|EN|0,1
@@ -28,3 +28,5 @@ An assembly of wires or fibres, or a wire rope or chain, which has been laid und
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/CableSubmarine_rules.adoc[tag=CableSubmarine]

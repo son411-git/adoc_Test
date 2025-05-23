@@ -4,9 +4,9 @@
 
 The Text Placement feature is used in association with the Feature Name attribute or a light description to optimize text positioning in ECDIS.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |textOffsetBearing||IN|1,1
 |textOffsetDistance||IN|1,1
@@ -14,3 +14,5 @@ The Text Placement feature is used in association with the Feature Name attribut
 |textType||EN|1,2
 |scaleMinimum|SCAMIN|IN|0,1
 |===
+
+include::../features_rules/TextPlacement_rules.adoc[tag=TextPlacement]

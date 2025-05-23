@@ -1,11 +1,12 @@
+== Conveyor
 
 **<Definition>**
 
 A mechanical device for conveying bulk material or people using an endless moving belt or series of rollers.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfConveyor|CATCON|EN|0,1
 |colour|COLOUR|EN|0,*

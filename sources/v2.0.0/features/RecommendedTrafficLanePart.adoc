@@ -4,9 +4,9 @@
 
 A traffic flow pattern indicating a recommended directional movement of traffic where it is impractical or unnecessary to adopt an established direction of traffic flow.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |fixedDateRange||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
@@ -22,3 +22,5 @@ A traffic flow pattern indicating a recommended directional movement of traffic 
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/RecommendedTrafficLanePart_rules.adoc[tag=RecommendedTrafficLanePart]

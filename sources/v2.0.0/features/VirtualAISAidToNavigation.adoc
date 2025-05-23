@@ -4,9 +4,9 @@
 
 An Automatic Identification System (AIS) message 21 transmitted from an AIS station to simulate on navigation systems an Aid to Navigation which does not physically exist.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |estimatedRangeOfTransmission|ESTRNG|RE|0,1
 |featureName||C|0,*
@@ -31,3 +31,5 @@ An Automatic Identification System (AIS) message 21 transmitted from an AIS stat
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/VirtualAISAidToNavigation_rules.adoc[tag=VirtualAISAidToNavigation]

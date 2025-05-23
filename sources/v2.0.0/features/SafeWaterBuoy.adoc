@@ -4,9 +4,9 @@
 
 A safe water buoy is used to indicate that there is navigable water around the mark.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |buoyShape|BOYSHP|EN|1,1
 |colour|COLOUR|EN|1,*
@@ -43,3 +43,5 @@ A safe water buoy is used to indicate that there is navigable water around the m
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/SafeWaterBuoy_rules.adoc[tag=SafeWaterBuoy]

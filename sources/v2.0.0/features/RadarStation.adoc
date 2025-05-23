@@ -4,9 +4,9 @@
 
 A station with a transmitter emitting pulses of ultra-high frequency radio waves which are reflected by solid objects and are detected upon their return to the sending station.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |callSign|CALSGN|TE|0,1
 |categoryOfRadarStation|CATRAS|EN|0,*
@@ -30,3 +30,5 @@ A station with a transmitter emitting pulses of ultra-high frequency radio waves
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/RadarStation_rules.adoc[tag=RadarStation]

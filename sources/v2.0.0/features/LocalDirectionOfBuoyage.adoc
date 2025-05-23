@@ -4,9 +4,9 @@
 
 An area within which the navigational system of marks has been established in relation to a specific direction.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |interoperabilityIdentifier||URN|0,1
 |marksNavigationalSystemOf|MARSYS|EN|1,1
@@ -19,3 +19,5 @@ An area within which the navigational system of marks has been established in re
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/LocalDirectionOfBuoyage_rules.adoc[tag=LocalDirectionOfBuoyage]

@@ -4,9 +4,9 @@
 
 An assemblage of cages, nets, rafts and floats or posts where fish, including shellfish, are artificially cultivated.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfMarineFarmCulture|CATMFA|EN|0,1
 |expositionOfSounding|EXPSOU|EN|0,1
@@ -43,3 +43,5 @@ An assemblage of cages, nets, rafts and floats or posts where fish, including sh
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/MarineFarmCulture_rules.adoc[tag=MarineFarmCulture]

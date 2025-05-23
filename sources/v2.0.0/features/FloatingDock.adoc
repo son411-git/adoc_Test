@@ -4,9 +4,9 @@
 
 A form of dry dock consisting of a floating structure of one or more sections which can be partly submerged by controlled flooding to receive a vessel, then raised by pumping out the water so that the vessel's bottom can be exposed.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |colour|COLOUR|EN|0,*
 |colourPattern|COLPAT|EN|0,1
@@ -39,3 +39,5 @@ A form of dry dock consisting of a floating structure of one or more sections wh
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/FloatingDock_rules.adoc[tag=FloatingDock]

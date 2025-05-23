@@ -4,9 +4,9 @@
 
 A roofed structure erected, or partly erected, over a body of water, to provide protection for a vessel or its cargo.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfStructure||EN|0,*
 |colour|COLOUR|EN|0,*
@@ -51,3 +51,5 @@ A roofed structure erected, or partly erected, over a body of water, to provide 
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/StructureOverNavigableWater_rules.adoc[tag=StructureOverNavigableWater]

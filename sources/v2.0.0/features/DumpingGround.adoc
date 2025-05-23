@@ -4,9 +4,9 @@
 
 A sea area where dredged material or other potentially more harmful material, for example explosives, chemical waste, is deliberately deposited.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfDumpingGround|CATDPG|EN|0,*
 |dateDisused||TD|0,1
@@ -29,3 +29,5 @@ A sea area where dredged material or other potentially more harmful material, fo
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/DumpingGround_rules.adoc[tag=DumpingGround]

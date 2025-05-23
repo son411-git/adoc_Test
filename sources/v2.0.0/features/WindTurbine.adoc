@@ -4,9 +4,9 @@
 
 A tower and associated equipment that generates electrical power from wind. They can be sited offshore and may be either fixed or floating.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |colour|COLOUR|EN|0,*
 |colourPattern|COLPAT|EN|0,1
@@ -47,3 +47,5 @@ A tower and associated equipment that generates electrical power from wind. They
 |pictorialRepresentation|PICREP|TE|0,1
 |inTheWater||BO|0,1
 |===
+
+include::../features_rules/WindTurbine_rules.adoc[tag=WindTurbine]

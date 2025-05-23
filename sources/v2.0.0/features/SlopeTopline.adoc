@@ -4,9 +4,9 @@
 
 The upper marking of a slope, for example the ridge line or the separation line between two different gradients.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfSlope|CATSLO|EN|0,1
 |colour|COLOUR|EN|0,*
@@ -27,3 +27,5 @@ The upper marking of a slope, for example the ridge line or the separation line 
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/SlopeTopline_rules.adoc[tag=SlopeTopline]

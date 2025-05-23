@@ -1,10 +1,12 @@
+== Cardinal Beacon
+
 **<Definition>**
 
 A cardinal beacon is used in conjunction with the compass to indicate where the mariner may find the best navigable water. It is placed in one of the four quadrants (North, East, South and West), bounded by inter-cardinal bearings from the point marked.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |beaconShape|BCNSHP|EN|1,1
 |categoryOfCardinalMark|CATCAM|EN|1,1

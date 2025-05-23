@@ -4,9 +4,9 @@
 
 A harbour installation with a service or commercial operation of public interest.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfHarbourFacility|CATHAF|EN|1,*
 |communicationChannel|COMCHA|TE|0,*
@@ -40,3 +40,5 @@ A harbour installation with a service or commercial operation of public interest
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/HarbourFacility_rules.adoc[tag=HarbourFacility]

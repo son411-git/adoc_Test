@@ -4,9 +4,9 @@
 
 An artificially enclosed area within which ships may moor and which may have gates to regulate water level.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfDock|CATDOC|EN|0,1
 |condition|CONDTN|EN|0,1
@@ -36,3 +36,5 @@ An artificially enclosed area within which ships may moor and which may have gat
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/DockArea_rules.adoc[tag=DockArea]

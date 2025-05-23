@@ -4,9 +4,9 @@
 
 A post or group of posts, used for mooring or warping a vessel, or as an aid to navigation. The dolphin may be in the water, on a wharf or on the beach.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfDolphin||EN|1,*
 |colour|COLOUR|EN|0,*
@@ -40,3 +40,5 @@ A post or group of posts, used for mooring or warping a vessel, or as an aid to 
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/Dolphin_rules.adoc[tag=Dolphin]

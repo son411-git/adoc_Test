@@ -4,9 +4,9 @@
 
 Large mobile wave-like sediment feature in shallow water and composed of sand. The wavelength may reach 100 metres, the amplitude may be up to 20 metres.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |interoperabilityIdentifier||URN|0,1
 |verticalLength|VERLEN|RE|0,1
@@ -18,3 +18,5 @@ Large mobile wave-like sediment feature in shallow water and composed of sand. T
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/Sandwave_rules.adoc[tag=Sandwave]

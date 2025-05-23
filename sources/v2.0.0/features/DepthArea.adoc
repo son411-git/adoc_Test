@@ -4,9 +4,9 @@
 
 A water area whose depth is within a defined range of values.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |depthRangeMinimumValue|DRVAL1|RE|1,1
 |depthRangeMaximumValue|DRVAL2|RE|1,1
@@ -18,3 +18,5 @@ A water area whose depth is within a defined range of values.
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/DepthArea_rules.adoc[tag=DepthArea]

@@ -4,9 +4,9 @@
 
 A structure for fishing purposes which can be an obstruction to ships in general. The position of these structures may vary frequently over time.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfFishingFacility|CATFIF|EN|0,1
 |condition|CONDTN|EN|0,1
@@ -29,3 +29,5 @@ A structure for fishing purposes which can be an obstruction to ships in general
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/FishingFacility_rules.adoc[tag=FishingFacility]

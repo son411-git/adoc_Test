@@ -4,9 +4,9 @@
 
 A location offshore where a pilot may board a vessel in preparation to piloting it through local waters.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfPilotBoardingPlace|CATPIL|EN|0,1
 |categoryOfPreference||EN|0,1
@@ -33,3 +33,5 @@ A location offshore where a pilot may board a vessel in preparation to piloting 
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/PilotBoardingPlace_rules.adoc[tag=PilotBoardingPlace]

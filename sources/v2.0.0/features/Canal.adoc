@@ -4,9 +4,9 @@
 
 An artificial waterway with no flow, or a controlled flow, used for navigation, or for draining or irrigating land (ditch).
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfCanal|CATCAN|EN|0,1
 |condition|CONDTN|EN|0,1
@@ -32,3 +32,5 @@ An artificial waterway with no flow, or a controlled flow, used for navigation, 
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/Canal_rules.adoc[tag=Canal]

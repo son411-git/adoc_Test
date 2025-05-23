@@ -4,9 +4,9 @@
 
 The identifying characteristics of an aid to navigation which serve to facilitate its recognition against a daylight viewing background. On those structures that do not by themselves present an adequate viewing area to be seen at the required distance, the aid is made more visible by affixing a daymark to the structure. A daymark so affixed has a distinctive colour and shape depending on the purpose of the aid.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfSpecialPurposeMark|CATSPM|EN|0,*
 |colour|COLOUR|EN|1,*
@@ -41,3 +41,5 @@ The identifying characteristics of an aid to navigation which serve to facilitat
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/Daymark_rules.adoc[tag=Daymark]

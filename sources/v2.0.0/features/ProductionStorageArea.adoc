@@ -4,9 +4,9 @@
 
 An area on land for the exploitation or storage of natural resources.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfProductionArea|CATPRA|EN|1,1
 |condition|CONDTN|EN|0,1
@@ -35,3 +35,5 @@ An area on land for the exploitation or storage of natural resources.
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/ProductionStorageArea_rules.adoc[tag=ProductionStorageArea]

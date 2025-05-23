@@ -4,9 +4,9 @@
 
 A route which has been specially examined to ensure so far as possible that it is free of dangers and along which ships are advised to navigate.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |basedOnFixedMarks|CATTRK|BO|1,1
 |depthRangeMinimumValue|DRVAL1|RE|0,1
@@ -38,3 +38,5 @@ A route which has been specially examined to ensure so far as possible that it i
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/RecommendedTrack_rules.adoc[tag=RecommendedTrack]

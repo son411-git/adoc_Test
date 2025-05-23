@@ -1,11 +1,12 @@
+== Anchorage Area
 
 **<Definition>**
 
 An area in which vessels or seaplanes anchor or may anchor.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfAnchorage|CATACH|EN|0,*
 |categoryOfCargo||EN|0,*
@@ -34,6 +35,5 @@ An area in which vessels or seaplanes anchor or may anchor.
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
-
 
 include::../features_rules/AnchorageArea_rules.adoc[tag=AnchorageArea]

@@ -4,9 +4,9 @@
 
 A structure that is specifically designed or reinforced to provide for defence from armed attack.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfFortifiedStructure|CATFOR|EN|0,1
 |condition|CONDTN|EN|0,1
@@ -32,3 +32,5 @@ A structure that is specifically designed or reinforced to provide for defence f
 |pictorialRepresentation|PICREP|TE|0,1
 |inTheWater||BO|0,1
 |===
+
+include::../features_rules/FortifiedStructure_rules.adoc[tag=FortifiedStructure]

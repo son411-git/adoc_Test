@@ -4,9 +4,9 @@
 
 A distance mark indicates the distance measured from an origin and consists of either a solid visible structure or a distinct location without special installation. Usually found on canals.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |distanceMarkVisible|CATDIS|BO|1,1
 |featureName||C|0,*
@@ -29,3 +29,5 @@ A distance mark indicates the distance measured from an origin and consists of e
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/DistanceMark_rules.adoc[tag=DistanceMark]

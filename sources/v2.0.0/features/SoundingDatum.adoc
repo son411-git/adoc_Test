@@ -1,10 +1,12 @@
+== Sounding Datum
+
 **<Definition>**
 
 The horizontal plane or tidal datum to which soundings have been reduced. Also called datum for sounding reduction.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |interoperabilityIdentifier||URN|0,1
 |verticalDatum|VERDAT|EN|1,1

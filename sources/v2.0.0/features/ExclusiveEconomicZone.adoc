@@ -4,9 +4,9 @@
 
 An area, not exceeding 200 nautical miles from the baselines from which the breadth of the territorial sea is measured, subject to a specific legal regime established in the United Nations Convention on the Law of the Sea under which the coastal state has certain rights and jurisdiction.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |inDispute||BO|0,1
 |interoperabilityIdentifier||URN|0,1
@@ -19,3 +19,5 @@ An area, not exceeding 200 nautical miles from the baselines from which the brea
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/ExclusiveEconomicZone_rules.adoc[tag=ExclusiveEconomicZone]

@@ -4,9 +4,9 @@
 
 A single continuous rope-like bundle consisting of multiple strands of fiber, plastic, metal, and/or glass, which is supported by structures such as poles or pylons and passing over or nearby navigable waters.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfCable|CATCBL|EN|0,1
 |condition|CONDTN|EN|0,1
@@ -45,3 +45,5 @@ A single continuous rope-like bundle consisting of multiple strands of fiber, pl
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/CableOverhead_rules.adoc[tag=CableOverhead]

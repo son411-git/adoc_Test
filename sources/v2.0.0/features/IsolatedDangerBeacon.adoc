@@ -4,9 +4,9 @@
 
 An isolated danger beacon is a beacon erected on an isolated danger of limited extent, which has navigable water all around it.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |beaconShape|BCNSHP|EN|1,1
 |colour|COLOUR|EN|1,*
@@ -48,3 +48,5 @@ An isolated danger beacon is a beacon erected on an isolated danger of limited e
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/IsolatedDangerBeacon_rules.adoc[tag=IsolatedDangerBeacon]

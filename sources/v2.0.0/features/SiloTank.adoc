@@ -4,9 +4,9 @@
 
 A large storage structure used for storing loose materials, liquids and/or gases.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |buildingShape|BUISHP|EN|0,1
 |categoryOfSiloTank|CATSIL|EN|0,1
@@ -40,3 +40,5 @@ A large storage structure used for storing loose materials, liquids and/or gases
 |pictorialRepresentation|PICREP|TE|0,1
 |inTheWater||BO|0,1
 |===
+
+include::../features_rules/SiloTank_rules.adoc[tag=SiloTank]

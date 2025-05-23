@@ -4,9 +4,9 @@
 
 Plants collectively or individually, especially those dominating a particular area or habitat.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfVegetation|CATVEG|EN|1,1
 |elevation|ELEVAT|RE|0,1
@@ -26,3 +26,5 @@ Plants collectively or individually, especially those dominating a particular ar
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/Vegetation_rules.adoc[tag=Vegetation]

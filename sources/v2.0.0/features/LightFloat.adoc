@@ -4,9 +4,9 @@
 
 A boat-like structure used instead of a light buoy in waters where strong streams or currents are experienced, or when a greater elevation than that of a light buoy is necessary.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |colour|COLOUR|EN|1,*
 |colourPattern|COLPAT|EN|0,1
@@ -44,3 +44,5 @@ A boat-like structure used instead of a light buoy in waters where strong stream
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/LightFloat_rules.adoc[tag=LightFloat]

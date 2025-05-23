@@ -4,9 +4,9 @@
 
 A route with a specially prepared surface that is intended for use by wheeled vehicles or pedestrians.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfRoad|CATROD|EN|0,1
 |condition|CONDTN|EN|0,1
@@ -26,3 +26,5 @@ A route with a specially prepared surface that is intended for use by wheeled ve
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/Road_rules.adoc[tag=Road]

@@ -1,10 +1,12 @@
+== Quality of Survey
+
 **<Definition>**
 
 An area within which a uniform assessment of the reliability of source survey information exists.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |depthRangeMaximumValue|DRVAL2|RE|0,1
 |depthRangeMinimumValue|DRVAL1|RE|0,1

@@ -4,9 +4,9 @@
 
 A special purpose buoy is primarily used to indicate an area or feature, the nature of which is apparent from reference to a chart, Sailing Directions or Notices to Mariners.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |buoyShape|BOYSHP|EN|1,1
 |categoryOfSpecialPurposeMark|CATSPM|EN|1,*
@@ -44,3 +44,5 @@ A special purpose buoy is primarily used to indicate an area or feature, the nat
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/SpecialPurposeGeneralBuoy_rules.adoc[tag=SpecialPurposeGeneralBuoy]

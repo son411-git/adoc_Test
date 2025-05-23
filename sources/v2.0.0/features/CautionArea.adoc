@@ -4,9 +4,9 @@
 
 Generally, an area where the mariner has to be made aware of circumstances influencing the safety of navigation.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |condition|CONDTN|EN|0,1
 |fixedDateRange||C|0,1
@@ -27,3 +27,5 @@ Generally, an area where the mariner has to be made aware of circumstances influ
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/CautionArea_rules.adoc[tag=CautionArea]

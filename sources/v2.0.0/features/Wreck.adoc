@@ -4,9 +4,9 @@
 
 The ruined remains of a stranded or sunken vessel which has been rendered useless.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfWreck|CATWRK|EN|0,1
 |expositionOfSounding|EXPSOU|EN|0,1
@@ -35,3 +35,5 @@ The ruined remains of a stranded or sunken vessel which has been rendered useles
 |defaultClearanceDepth||RE|0,1
 |surroundingDepth||RE|1,1
 |===
+
+include::../features_rules/Wreck_rules.adoc[tag=Wreck]

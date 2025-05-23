@@ -4,9 +4,9 @@
 
 A structure in the intertidal zone serving as a support for vessels at low stages of the tide to permit work on the exposed portion of the vessel's hull.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |featureName||C|0,*
 |    language||(S)TE|1,1
@@ -27,3 +27,5 @@ A structure in the intertidal zone serving as a support for vessels at low stage
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/Gridiron_rules.adoc[tag=Gridiron]

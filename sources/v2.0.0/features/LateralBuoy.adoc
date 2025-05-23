@@ -4,9 +4,9 @@
 
 A lateral buoy is used to indicate the port or starboard hand side of the route to be followed. They are generally used for well-defined channels and are used in conjunction with a conventional direction of buoyage.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |buoyShape|BOYSHP|EN|1,1
 |categoryOfLateralMark|CATLAM|EN|1,1
@@ -44,3 +44,5 @@ A lateral buoy is used to indicate the port or starboard hand side of the route 
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/LateralBuoy_rules.adoc[tag=LateralBuoy]

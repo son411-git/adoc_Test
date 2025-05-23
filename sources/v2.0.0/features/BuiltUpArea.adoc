@@ -4,9 +4,9 @@
 
 An area of land or construction over the water containing a concentration of buildings and/or other structures.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfBuiltUpArea|CATBUA|EN|0,1
 |condition|CONDTN|EN|0,1
@@ -29,3 +29,5 @@ An area of land or construction over the water containing a concentration of bui
 |pictorialRepresentation|PICREP|TE|0,1
 |inTheWater||BO|0,1
 |===
+
+include::../features_rules/BuiltUpArea_rules.adoc[tag=BuiltUpArea]

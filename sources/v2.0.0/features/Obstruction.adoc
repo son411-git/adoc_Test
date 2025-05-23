@@ -4,9 +4,9 @@
 
 In marine navigation, anything that hinders or prevents movement, particularly anything that endangers or prevents passage of a vessel. The term is usually used to refer to an isolated danger to navigation, such as a sunken rock or pinnacle.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfObstruction|CATOBS|EN|0,1
 |condition|CONDTN|EN|0,1
@@ -37,3 +37,5 @@ In marine navigation, anything that hinders or prevents movement, particularly a
 |defaultClearanceDepth||RE|0,1
 |surroundingDepth||RE|1,1
 |===
+
+include::../features_rules/Obstruction_rules.adoc[tag=Obstruction]

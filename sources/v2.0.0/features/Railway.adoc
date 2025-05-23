@@ -4,9 +4,9 @@
 
 A rail or set of parallel rails on which a train, tram, or rail wagon runs.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |condition|CONDTN|EN|0,1
 |featureName||C|0,*
@@ -25,3 +25,5 @@ A rail or set of parallel rails on which a train, tram, or rail wagon runs.
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/Railway_rules.adoc[tag=Railway]

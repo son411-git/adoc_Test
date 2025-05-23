@@ -1,10 +1,12 @@
+== Magnetic Variation
+
 **<Definition>**
 
 The angle between the magnetic and geographic meridians at any place, expressed in degrees east or west to indicate the direction of magnetic north from true north. Also called magnetic declination.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |interoperabilityIdentifier||URN|0,1
 |referenceYearForMagneticVariation|RYRMGV|TD|1,1
@@ -18,6 +20,5 @@ The angle between the magnetic and geographic meridians at any place, expressed 
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
-
 
 include::../features_rules/MagneticVariation_rules.adoc[tag=MagneticVariation]

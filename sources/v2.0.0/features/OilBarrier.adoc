@@ -4,9 +4,9 @@
 
 A floating barrier to stop and contain the spread of oil on a water body surface.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfOilBarrier|CATOLB|EN|0,1
 |condition|CONDTN|EN|0,1
@@ -28,3 +28,5 @@ A floating barrier to stop and contain the spread of oil on a water body surface
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/OilBarrier_rules.adoc[tag=OilBarrier]

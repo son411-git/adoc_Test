@@ -4,9 +4,9 @@
 
 The line where shore and water meet. Shoreline and coastline are generally used synonymously.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfCoastline|CATCOA|EN|0,1
 |colour|COLOUR|EN|0,*
@@ -27,3 +27,5 @@ The line where shore and water meet. Shoreline and coastline are generally used 
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/Coastline_rules.adoc[tag=Coastline]

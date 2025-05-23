@@ -4,9 +4,9 @@
 
 A barrier to check or confine anything in motion; particularly one constructed to hold back water and raise its level to form a reservoir, or to prevent flooding.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfDam|CATDAM|EN|0,1
 |colour|COLOUR|EN|0,*
@@ -35,3 +35,5 @@ A barrier to check or confine anything in motion; particularly one constructed t
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/Dam_rules.adoc[tag=Dam]

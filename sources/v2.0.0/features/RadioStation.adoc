@@ -4,9 +4,9 @@
 
 A place equipped to transmit radio waves. Such a station may be either stationary or mobile, and may also be provided with a radio receiver.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |callSign|CALSGN|TE|0,1
 |categoryOfRadioStation|CATROS|EN|0,*
@@ -35,3 +35,5 @@ A place equipped to transmit radio waves. Such a station may be either stationar
 |    language||(S)TE|1,1
 |    text|INFORM|(S)TE|0,1
 |===
+
+include::../features_rules/RadioStation_rules.adoc[tag=RadioStation]

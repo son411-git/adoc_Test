@@ -4,9 +4,9 @@
 
 The hull of a wrecked or condemned ship, from which the fittings and superstructure have usually been removed, which is moored in a permanent position or grounded. It may be abandoned or put to some other use.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfHulk|CATHLK|EN|0,*
 |colour|COLOUR|EN|0,*
@@ -38,3 +38,5 @@ The hull of a wrecked or condemned ship, from which the fittings and superstruct
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/Hulk_rules.adoc[tag=Hulk]

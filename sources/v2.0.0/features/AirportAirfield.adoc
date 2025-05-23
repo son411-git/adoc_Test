@@ -4,9 +4,9 @@
 
 A defined area on land (including any buildings, installations and equipment) intended to be used either wholly or in part for the arrival, departure and surface movement of aircraft.
 
-[cols="1,1,1,1", options="header"]
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+|Attribute |Acronym |Type |Multi.
 
 |categoryOfAirportAirfield|CATAIR|EN|0,*
 |condition|CONDTN|EN|0,1
@@ -26,3 +26,5 @@ A defined area on land (including any buildings, installations and equipment) in
 |    text|INFORM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
+
+include::../features_rules/AirportAirfield_rules.adoc[tag=AirportAirfield]
