@@ -1,5 +1,3 @@
-== Tidal Stream - Flood/Ebb
-
 **<Definition>**
 
 Approximate tidal stream rates given as discrete rate values for flood and ebb flow during springs.

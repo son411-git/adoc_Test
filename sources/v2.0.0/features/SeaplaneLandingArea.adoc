@@ -1,5 +1,3 @@
-== Seaplane Landing Area
-
 **<Definition>**
 
 A designated portion of water for the landing and take-off of seaplanes.

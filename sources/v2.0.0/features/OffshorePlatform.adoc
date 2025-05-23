@@ -1,5 +1,3 @@
-== Offshore Platform
-
 **<Definition>**
 
 A permanent offshore structure, either fixed or floating.

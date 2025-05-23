@@ -1,5 +1,3 @@
-== Free Port Area
-
 **<Definition>**
 
 A port where certain import and export duties are waived (unless goods pass into the country) to facilitate reshipment to other countries.

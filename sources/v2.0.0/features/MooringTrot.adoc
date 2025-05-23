@@ -1,5 +1,3 @@
-== Mooring Trot
-
 **<Definition>**
 
 A mooring is a place where a vessel may be secured. A mooring trot is a mooring that is composed of ground tackle, mooring cables, buoys and mooring berths on junction cables.

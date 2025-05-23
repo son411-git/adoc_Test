@@ -1,5 +1,3 @@
-== Radio Calling-In Point
-
 **<Definition>**
 
 A designated position at which vessels are required to report to a traffic control centre. Also called reporting point or radio reporting point.

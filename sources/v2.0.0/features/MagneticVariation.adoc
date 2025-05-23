@@ -1,5 +1,3 @@
-== Magnetic Variation
-
 **<Definition>**
 
 The angle between the magnetic and geographic meridians at any place, expressed in degrees east or west to indicate the direction of magnetic north from true north. Also called magnetic declination.

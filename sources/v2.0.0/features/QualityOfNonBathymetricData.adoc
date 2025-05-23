@@ -1,5 +1,3 @@
-== Quality of Non-Bathymetric Data
-
 **<Definition>**
 
 An area within which a uniform assessment of the quality of the non-bathymetric data exists.

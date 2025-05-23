@@ -1,5 +1,3 @@
-== Fortified Structure
-
 **<Definition>**
 
 A structure that is specifically designed or reinforced to provide for defence from armed attack.

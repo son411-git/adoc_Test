@@ -1,5 +1,3 @@
-== Physical AIS Aid to Navigation
-
 **<Definition>**
 
 An Automatic Identification System (AIS) message 21 transmitted from a physical Aid to Navigation, or transmitted from an AIS station for an Aid to Navigation which physically exists.

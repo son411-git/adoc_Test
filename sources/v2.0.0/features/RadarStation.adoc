@@ -1,5 +1,3 @@
-== Radar Station
-
 **<Definition>**
 
 A station with a transmitter emitting pulses of ultra-high frequency radio waves which are reflected by solid objects and are detected upon their return to the sending station.

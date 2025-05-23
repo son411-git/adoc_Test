@@ -1,5 +1,3 @@
-== Chart 1 Feature
-
 **<Definition>**
 
 A feature which exists to support the rendering of graphics or text in order to provide additional information that cannot be encoded using other features.

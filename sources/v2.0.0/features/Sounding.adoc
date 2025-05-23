@@ -1,5 +1,3 @@
-== Sounding
-
 **<Definition>**
 
 Measured or charted depth of water (may be a drying height), or the measurement of such a depth, which has been reduced to a vertical datum.

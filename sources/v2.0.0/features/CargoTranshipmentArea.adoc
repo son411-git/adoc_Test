@@ -1,5 +1,3 @@
-== Cargo Transhipment Area
-
 **<Definition>**
 
 An area designated for transfer of cargo from one vessel to another sometimes in order to reduce a vessel's draught.

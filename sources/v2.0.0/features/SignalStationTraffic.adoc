@@ -1,5 +1,3 @@
-== Signal Station Traffic
-
 **<Definition>**
 
 A traffic signal station is a place on shore from which signals are made to regulate the movement of traffic.

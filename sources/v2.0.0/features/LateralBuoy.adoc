@@ -1,5 +1,3 @@
-== Lateral Buoy
-
 **<Definition>**
 
 A lateral buoy is used to indicate the port or starboard hand side of the route to be followed. They are generally used for well-defined channels and are used in conjunction with a conventional direction of buoyage.

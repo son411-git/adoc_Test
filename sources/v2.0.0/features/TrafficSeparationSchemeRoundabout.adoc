@@ -1,5 +1,3 @@
-== Traffic Separation Scheme Roundabout
-
 **<Definition>**
 
 A routeing measure comprising a separation point or circular separation zone and a circular traffic lane within defined limits. Traffic within the roundabout is separated by moving in a counter-clockwise direction around the separation point or zone.

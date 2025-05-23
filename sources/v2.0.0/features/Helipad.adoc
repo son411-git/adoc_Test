@@ -1,5 +1,3 @@
-== Helipad
-
 **<Definition>**
 
 A site on which helicopters may land and take off.

@@ -1,5 +1,3 @@
-== Coast Guard Station
-
 **<Definition>**
 
 A station at which a visual/radio/radar marine watch is kept either continuously or at certain times only.

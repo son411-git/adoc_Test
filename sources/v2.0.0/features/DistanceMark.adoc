@@ -1,5 +1,3 @@
-== Distance Mark
-
 **<Definition>**
 
 A distance mark indicates the distance measured from an origin and consists of either a solid visible structure or a distinct location without special installation. Usually found on canals.

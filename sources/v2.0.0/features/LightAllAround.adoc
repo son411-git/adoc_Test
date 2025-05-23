@@ -1,5 +1,3 @@
-== Light All Around
-
 **<Definition>**
 
 An all around light is a light that is visible over the whole horizon of interest to marine navigation and having no change in the characteristics of the light.

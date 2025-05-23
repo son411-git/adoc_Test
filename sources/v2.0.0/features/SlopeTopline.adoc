@@ -1,5 +1,3 @@
-== Slope Topline
-
 **<Definition>**
 
 The upper marking of a slope, for example the ridge line or the separation line between two different gradients.

@@ -1,5 +1,3 @@
-== Swept Area
-
 **<Definition>**
 
 An area that has been determined to be clear of navigational dangers to a specified depth.

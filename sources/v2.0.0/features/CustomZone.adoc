@@ -1,5 +1,3 @@
-== Custom Zone
-
 **<Definition>**
 
 The area within which national custom regulations are in force.

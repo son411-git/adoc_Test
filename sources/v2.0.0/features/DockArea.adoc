@@ -1,5 +1,3 @@
-== Dock Area
-
 **<Definition>**
 
 An artificially enclosed area within which ships may moor and which may have gates to regulate water level.

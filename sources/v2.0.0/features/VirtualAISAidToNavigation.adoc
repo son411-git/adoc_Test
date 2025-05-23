@@ -1,5 +1,3 @@
-== Virtual AIS Aid to Navigation
-
 **<Definition>**
 
 An Automatic Identification System (AIS) message 21 transmitted from an AIS station to simulate on navigation systems an Aid to Navigation which does not physically exist.

@@ -1,5 +1,3 @@
-== Installation Buoy
-
 **<Definition>**
 
 An installation buoy is a buoy used for loading tankers with gas or oil.

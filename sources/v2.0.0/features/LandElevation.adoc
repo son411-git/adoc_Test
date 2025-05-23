@@ -1,5 +1,3 @@
-== Land Elevation
-
 **<Definition>**
 
 An elevation is the vertical distance of a point or a level, on, or affixed to, the surface of the earth, measured from a specified vertical datum.

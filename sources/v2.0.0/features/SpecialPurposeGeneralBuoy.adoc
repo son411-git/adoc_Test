@@ -1,5 +1,3 @@
-== Special Purpose/General Buoy
-
 **<Definition>**
 
 A special purpose buoy is primarily used to indicate an area or feature, the nature of which is apparent from reference to a chart, Sailing Directions or Notices to Mariners.

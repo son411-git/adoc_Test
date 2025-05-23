@@ -1,5 +1,3 @@
-== Precautionary Area
-
 **<Definition>**
 
 A routeing measure comprising an area within defined limits where ships must navigate with particular caution and within which the direction of traffic flow may be recommended.

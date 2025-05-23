@@ -1,5 +1,3 @@
-== Seabed Area
-
 **<Definition>**
 
 A region of the seabed including the material of which it is composed and its physical characteristics. Also called nature of bottom, character (or characteristics) of the bottom, or quality of the bottom.

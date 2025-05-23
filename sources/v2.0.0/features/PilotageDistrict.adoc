@@ -1,5 +1,3 @@
-== Pilotage District
-
 **<Definition>**
 
 An area within which a pilotage direction exists. Such directions are regulated by a competent harbour authority which dictates circumstances under which they apply.

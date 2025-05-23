@@ -1,5 +1,3 @@
-== Archipelagic Sea Lane Axis
-
 **<Definition>**
 
 The reference line used to determine the maximum extents of an Archipelagic Sea Lane. It may not indicate the deepest water nor any recommended route or track.

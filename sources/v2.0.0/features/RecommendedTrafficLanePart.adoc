@@ -1,5 +1,3 @@
-== Recommended Traffic Lane Part
-
 **<Definition>**
 
 A traffic flow pattern indicating a recommended directional movement of traffic where it is impractical or unnecessary to adopt an established direction of traffic flow.

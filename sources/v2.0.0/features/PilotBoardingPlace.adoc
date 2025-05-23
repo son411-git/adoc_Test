@@ -1,5 +1,3 @@
-== Pilot Boarding Place
-
 **<Definition>**
 
 A location offshore where a pilot may board a vessel in preparation to piloting it through local waters.

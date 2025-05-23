@@ -1,5 +1,3 @@
-== Depth Area
-
 **<Definition>**
 
 A water area whose depth is within a defined range of values.

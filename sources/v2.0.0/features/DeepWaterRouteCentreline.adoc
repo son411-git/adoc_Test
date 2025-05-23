@@ -1,5 +1,3 @@
-== Deep Water Route Centreline
-
 **<Definition>**
 
 The Deep Water route centreline indicates the centreline of a route, the width of which is not explicitly defined.

@@ -1,5 +1,3 @@
-== Light Air Obstruction
-
 **<Definition>**
 
 An air obstruction light is a light marking an obstacle which constitutes a danger to air navigation.

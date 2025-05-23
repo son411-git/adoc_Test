@@ -1,5 +1,3 @@
-== Update Information
-
 **<Definition>**
 
 The Update Information metadata feature is used to represent a change to the information shown.

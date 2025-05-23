@@ -1,5 +1,3 @@
-== Recommended Route Centreline
-
 **<Definition>**
 
 The recommended route centreline indicates the 'centreline' of a recommended route.

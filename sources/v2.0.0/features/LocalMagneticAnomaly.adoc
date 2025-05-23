@@ -1,5 +1,3 @@
-== Local Magnetic Anomaly
-
 **<Definition>**
 
 An anomaly of the magnetic field of the Earth, extending over a relatively small area, due to local magnetic influences. Also called local attraction or magnetic anomaly.

@@ -1,5 +1,3 @@
-== Railway
-
 **<Definition>**
 
 A rail or set of parallel rails on which a train, tram, or rail wagon runs.

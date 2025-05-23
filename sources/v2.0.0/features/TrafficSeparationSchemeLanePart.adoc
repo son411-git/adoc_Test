@@ -1,5 +1,3 @@
-== Traffic Separation Scheme Lane Part
-
 **<Definition>**
 
 An area within defined limits in which one-way traffic is established. Natural obstacles, including those forming separation zones, may constitute a boundary.

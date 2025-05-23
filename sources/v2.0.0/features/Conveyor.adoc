@@ -1,5 +1,3 @@
-== Conveyor
-
 **<Definition>**
 
 A mechanical device for conveying bulk material or people using an endless moving belt or series of rollers.

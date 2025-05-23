@@ -1,5 +1,3 @@
-== Water Turbulence
-
 **<Definition>**
 
 The disturbance of water caused by the interaction of any combination of waves, currents, tidal streams, wind, shoal patches and obstructions.

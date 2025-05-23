@@ -1,5 +1,3 @@
-== Mooring Buoy
-
 **<Definition>**
 
 A buoy secured to the bottom by permanent moorings with means for mooring a vessel by use of its anchor chain or mooring lines.

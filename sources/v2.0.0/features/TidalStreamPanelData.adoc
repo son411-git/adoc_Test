@@ -1,5 +1,3 @@
-== Tidal Stream Panel Data
-
 **<Definition>**
 
 Approximate tidal stream characteristics given as discrete value sets at a specified interval before and/or after a high or low water.

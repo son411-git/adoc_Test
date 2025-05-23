@@ -1,5 +1,3 @@
-== Isolated Danger Buoy
-
 **<Definition>**
 
 An isolated danger buoy is a buoy moored on or above an isolated danger of limited extent, which has navigable water all around it.

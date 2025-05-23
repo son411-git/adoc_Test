@@ -1,5 +1,3 @@
-== Mooring Area
-
 **<Definition>**
 
 An area in which vessels may be secured to mooring buoys

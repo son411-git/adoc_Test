@@ -1,5 +1,3 @@
-== Radio Station
-
 **<Definition>**
 
 A place equipped to transmit radio waves. Such a station may be either stationary or mobile, and may also be provided with a radio receiver.

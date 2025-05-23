@@ -1,5 +1,3 @@
-== Vessel Traffic Service Area
-
 **<Definition>**
 
 The area of any service implemented by a relevant authority primarily designed to improve safety and efficiency of traffic flow and the protection of the environment. It may range from simple information messages, to extensive organisation of the traffic involving national or regional schemes.

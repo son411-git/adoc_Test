@@ -1,5 +1,3 @@
-== Submarine Pipeline Area
-
 **<Definition>**
 
 An area containing one or more submarine pipelines.

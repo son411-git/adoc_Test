@@ -1,5 +1,3 @@
-== Text Placement
-
 **<Definition>**
 
 The Text Placement feature is used in association with the Feature Name attribute or a light description to optimize text positioning in ECDIS.

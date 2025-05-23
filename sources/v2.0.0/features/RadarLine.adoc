@@ -1,5 +1,3 @@
-== Radar Line
-
 **<Definition>**
 
 Recommended tracks along which ships can be guided by coastal radar stations in the event of bad visibility.

@@ -1,5 +1,3 @@
-== Collision Regulations Limit
-
 **<Definition>**
 
 Convention on the International Regulations for Preventing Collisions at Sea, 1972 (COLREGs). The demarcation line between inland navigation rules and international navigation rules.

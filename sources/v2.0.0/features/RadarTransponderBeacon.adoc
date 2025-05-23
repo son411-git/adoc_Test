@@ -1,5 +1,3 @@
-== Radar Transponder Beacon
-
 **<Definition>**
 
 A transponder beacon transmitting a coded signal on radar frequency, permitting an interrogating craft to determine the bearing and range of the transponder.

@@ -1,5 +1,3 @@
-== Rescue Station
-
 **<Definition>**
 
 A place where equipment for saving life at sea is maintained.

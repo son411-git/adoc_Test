@@ -1,5 +1,3 @@
-== Light Float
-
 **<Definition>**
 
 A boat-like structure used instead of a light buoy in waters where strong streams or currents are experienced, or when a greater elevation than that of a light buoy is necessary.

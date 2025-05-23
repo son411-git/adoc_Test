@@ -1,5 +1,3 @@
-== Traffic Separation Scheme
-
 **<Definition>**
 
 A routeing measure aimed at the separation of opposing streams of traffic by appropriate means and by the establishment of traffic lanes.

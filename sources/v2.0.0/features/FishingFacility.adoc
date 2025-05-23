@@ -1,5 +1,3 @@
-== Fishing Facility
-
 **<Definition>**
 
 A structure for fishing purposes which can be an obstruction to ships in general. The position of these structures may vary frequently over time.

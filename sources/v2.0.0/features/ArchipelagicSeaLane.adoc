@@ -1,5 +1,3 @@
-== Archipelagic Sea Lane
-
 **<Definition>**
 
 Sea lanes designated by an archipelagic State for the passage of ships and aircraft. The Archipelagic Sea Lane aggregates all component parts of an Archipelagic Sea Lane system.

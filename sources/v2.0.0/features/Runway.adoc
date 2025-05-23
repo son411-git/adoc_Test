@@ -1,5 +1,3 @@
-== Runway
-
 **<Definition>**
 
 A defined area, on a land aerodrome, prepared for the landing and take-off run of aircraft.

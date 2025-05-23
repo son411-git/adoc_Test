@@ -1,5 +1,3 @@
-== Pipeline Overhead
-
 **<Definition>**
 
 A string of interconnected pipes, supported by pylons and passing over or nearby navigable waters, used for the transport of matter, nowadays mainly oil or gas.

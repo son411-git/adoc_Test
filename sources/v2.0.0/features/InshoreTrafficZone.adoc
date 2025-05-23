@@ -1,5 +1,3 @@
-== Inshore Traffic Zone
-
 **<Definition>**
 
 A routeing measure comprising a designated area between the landward boundary of a traffic separation scheme and the adjacent coast, to be used in accordance with the provisions of the International Regulations for Preventing Collisions at Sea.

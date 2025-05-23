@@ -1,5 +1,3 @@
-== Vertical Datum of Data
-
 **<Definition>**
 
 Any level surface (for example Mean Sea Level) taken as a surface of reference to which the elevations within a data set are reduced. Also called datum level, reference level, reference plane, levelling datum, datum for heights.

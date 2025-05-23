@@ -1,5 +1,3 @@
-== Unsurveyed Area
-
 **<Definition>**
 
 An area where hydrographic survey data is non-existent.

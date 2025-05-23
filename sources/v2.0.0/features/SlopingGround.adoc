@@ -1,5 +1,3 @@
-== Sloping Ground
-
 **<Definition>**
 
 An inclined surface.

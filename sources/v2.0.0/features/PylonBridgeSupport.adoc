@@ -1,5 +1,3 @@
-== Pylon/Bridge Support
-
 **<Definition>**
 
 A vertical construction consisting, for example, of a steel framework or pre-stressed concrete to carry cables, a bridge, etc.

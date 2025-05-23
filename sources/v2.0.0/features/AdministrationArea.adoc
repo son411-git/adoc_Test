@@ -1,5 +1,3 @@
-== Administration Area
-
 **<Definition>**
 
 A defined area within which a jurisdiction applies. It may or may not be named.

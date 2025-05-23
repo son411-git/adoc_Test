@@ -1,5 +1,3 @@
-== Range System
-
 **<Definition>**
 
 Two or more features in the same horizontal direction, particularly those features so placed as navigational aids to mark any line of importance to vessels, as a channel. The one nearest the observer is the front mark and the one farthest from the observer is the rear mark.

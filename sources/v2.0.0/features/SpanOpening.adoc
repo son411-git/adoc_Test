@@ -1,5 +1,3 @@
-== Span Opening
-
 **<Definition>**
 
 An opening component of the deck of a bridge spanning successive bridge piers.

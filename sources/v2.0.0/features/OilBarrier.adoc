@@ -1,5 +1,3 @@
-== Oil Barrier
-
 **<Definition>**
 
 A floating barrier to stop and contain the spread of oil on a water body surface.

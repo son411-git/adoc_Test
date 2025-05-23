@@ -1,5 +1,3 @@
-== Submarine Transit Lane
-
 **<Definition>**
 
 A lane where submarines may navigate under water or at the surface.

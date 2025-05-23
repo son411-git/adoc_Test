@@ -1,5 +1,3 @@
-== Silo/Tank
-
 **<Definition>**
 
 A large storage structure used for storing loose materials, liquids and/or gases.

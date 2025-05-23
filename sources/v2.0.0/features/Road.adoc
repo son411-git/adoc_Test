@@ -1,5 +1,3 @@
-== Road
-
 **<Definition>**
 
 A route with a specially prepared surface that is intended for use by wheeled vehicles or pedestrians.

@@ -1,5 +1,3 @@
-== Berth
-
 **<Definition>**
 
 A place, generally named or numbered, where a vessel may moor or anchor.

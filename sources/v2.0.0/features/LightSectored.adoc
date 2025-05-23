@@ -1,5 +1,3 @@
-== Light Sectored
-
 **<Definition>**
 
 A light presenting different appearances (in particular, different colours) over various parts of the horizon of interest to maritime navigation.

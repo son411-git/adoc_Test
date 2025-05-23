@@ -1,5 +1,3 @@
-== Two-Way Route Part
-
 **<Definition>**
 
 An area of a two-way route within which traffic flow is generally along one bearing (and possibly its reciprocal).

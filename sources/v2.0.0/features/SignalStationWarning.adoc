@@ -1,5 +1,3 @@
-== Signal Station Warning
-
 **<Definition>**
 
 A warning signal station is a place on shore from which warning signals are made to ships at sea.

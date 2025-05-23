@@ -1,5 +1,3 @@
-== Island Group
-
 **<Definition>**
 
 A named group of islands, including archipelagos.

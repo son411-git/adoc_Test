@@ -1,5 +1,3 @@
-== Landmark
-
 **<Definition>**
 
 Any prominent object at a fixed location on land which can be used in determining a location or a direction.

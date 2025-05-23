@@ -1,5 +1,3 @@
-== Deep Water Route
-
 **<Definition>**
 
 A route within defined limits which has been accurately surveyed for clearance of sea bottom and submerged obstacles as indicated on the chart.

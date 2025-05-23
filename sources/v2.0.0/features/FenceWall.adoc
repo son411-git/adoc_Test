@@ -1,5 +1,3 @@
-== Fence/Wall
-
 **<Definition>**
 
 A man-made barrier used as an enclosure or boundary or for protection.

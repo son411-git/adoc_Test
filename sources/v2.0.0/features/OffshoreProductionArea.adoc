@@ -1,5 +1,3 @@
-== Offshore Production Area
-
 **<Definition>**
 
 An area at sea within which there are production facilities.

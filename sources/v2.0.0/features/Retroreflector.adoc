@@ -1,5 +1,3 @@
-== Retroreflector
-
 **<Definition>**
 
 A means of distinguishing unlighted marks at night. Retroreflective material is secured to the mark in a particular pattern to reflect back light.

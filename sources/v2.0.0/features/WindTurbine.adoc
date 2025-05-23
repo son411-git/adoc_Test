@@ -1,5 +1,3 @@
-== Wind Turbine
-
 **<Definition>**
 
 A tower and associated equipment that generates electrical power from wind. They can be sited offshore and may be either fixed or floating.

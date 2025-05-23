@@ -1,5 +1,3 @@
-== Data Coverage
-
 **<Definition>**
 
 A geographical area that describes the coverage and extent of spatial objects.

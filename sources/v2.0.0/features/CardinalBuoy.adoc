@@ -1,5 +1,3 @@
-== Cardinal Buoy
-
 **<Definition>**
 
 A cardinal buoy is used in conjunction with the compass to indicate where the mariner may find the best navigable water. It is placed in one of the four quadrants (North, East, South and West), bounded by inter-cardinal bearings from the point marked.

@@ -1,5 +1,3 @@
-== Light Fog Detector
-
 **<Definition>**
 
 A fog detector light is a light used to automatically determine conditions of visibility which warrant the turning on or off of a sound signal.

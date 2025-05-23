@@ -1,5 +1,3 @@
-== Traffic Separation Scheme Boundary
-
 **<Definition>**
 
 The outer limit of a traffic lane part or a traffic separation scheme roundabout.

@@ -1,5 +1,3 @@
-== Gate
-
 **<Definition>**
 
 A structure that may be swung, drawn, or lowered to block an entrance or passageway on a watercourse.
