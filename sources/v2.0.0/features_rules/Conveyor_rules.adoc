@@ -14,7 +14,7 @@ image::../images/Conveyor_image-1.png[width=400,align=center]
 |Attribute |Value
 
 |categoryOfConveyor|1: aerial cableway (telepheric)
-|**featureName**|
+|[a2.] **featureName**|
 |    language|eng
 |    name|Marine cable car
 |    nameUsage|1 : default name display
