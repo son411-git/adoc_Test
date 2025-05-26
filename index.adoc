@@ -8,9 +8,7 @@
 
 // 이미지  폴더 경로 지정
 :imagesdir: sources/v2.0.0/images
-:linkcss:
-:stylesdir: .
-:stylesheet: custom.css
+:coverpage-logo: image::cway7_logo.png[]
 // 공용 속성 경로 지정
 include::sources/v2.0.0/common_attr.adoc[tag=requiredAttr]
 
