@@ -1,0 +1,9 @@
+---
+metanorma:
+  source:
+    files:
+      - sources/v2.0.0/index.adoc
+      
+  collection:
+    organization: "KHOA: Korea Hydrographic and Oceanographic Agency"
+    name: "S-101 Product Specification"
