@@ -7,8 +7,8 @@ Areas over which it is safe to navigate but which should be avoided for anchorin
 |Attribute |Acronym |Type |Mult.
 
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |interoperabilityIdentifier||URN|0,1
 |qualityOfVerticalMeasurement|QUASOU|EN|0,*
@@ -17,14 +17,14 @@ Areas over which it is safe to navigate but which should be avoided for anchorin
 |techniqueOfVerticalMeasurement|TECSOU|EN|0,*
 |valueOfSounding|VALSOU|RE|0,1
 |**verticalUncertainty**|SOUACC/VERACC|C|0,1
-|    uncertaintyFixed||(S)RE|**1,1**
+|    [.red]#uncertaintyFixed#||(S)RE|1,1
 |    uncertaintyVariableFactor||(S)RE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

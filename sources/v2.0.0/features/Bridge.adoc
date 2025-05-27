@@ -13,8 +13,8 @@ A structure erected over a depression or an obstacle such as a body of water, ra
 |colourPattern|COLPAT|EN|0,1
 |condition|CONDTN|EN|0,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
@@ -32,7 +32,7 @@ A structure erected over a depression or an obstacle such as a body of water, ra
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===

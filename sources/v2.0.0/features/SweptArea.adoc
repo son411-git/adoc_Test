@@ -6,7 +6,7 @@ An area that has been determined to be clear of navigational dangers to a specif
 |===
 |Attribute |Acronym |Type |Mult.
 
-|depthRangeMinimumValue|DRVAL1|RE|**1,1**
+|[.red]#depthRangeMinimumValue#|DRVAL1|RE|1,1
 |interoperabilityIdentifier||URN|0,1
 |sweptDate||TD|0,1
 |scaleMinimum|SCAMIN|IN|0,1
@@ -14,7 +14,7 @@ An area that has been determined to be clear of navigational dangers to a specif
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

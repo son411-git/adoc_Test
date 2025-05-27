@@ -7,10 +7,10 @@ A defined area within which a jurisdiction applies. It may or may not be named.
 |Attribute |Acronym |Type |Mult.
 
 |inDispute||BO|0,1
-|jurisdiction|JRSDTN|EN|**1,1**
+|[.red]#jurisdiction#|JRSDTN|EN|1,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |interoperabilityIdentifier||URN|0,1
 |nationality|NATION|TE|0,*
@@ -19,7 +19,7 @@ A defined area within which a jurisdiction applies. It may or may not be named.
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===

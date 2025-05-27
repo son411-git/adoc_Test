@@ -12,8 +12,8 @@ Generally, an area where the mariner has to be made aware of circumstances influ
 |    dateStart|DATSTA|(S)TD|0,1
 |interoperabilityIdentifier||URN|0,1
 |**periodicDateRange**||C|0,*
-|    dateEnd|DATEND|(S)TD|**1,1**
-|    dateStart|DATSTA|(S)TD|**1,1**
+|    [.red]#dateEnd#|DATEND|(S)TD|1,1
+|    [.red]#dateStart#|DATSTA|(S)TD|1,1
 |reportedDate|SORDAT|TD|0,1
 |status|STATUS|EN|0,1
 |scaleMinimum|SCAMIN|IN|0,1
@@ -21,7 +21,7 @@ Generally, an area where the mariner has to be made aware of circumstances influ
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===

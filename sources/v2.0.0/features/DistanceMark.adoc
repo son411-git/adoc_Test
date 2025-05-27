@@ -6,25 +6,25 @@ A distance mark indicates the distance measured from an origin and consists of e
 |===
 |Attribute |Acronym |Type |Mult.
 
-|distanceMarkVisible|CATDIS|BO|**1,1**
+|[.red]#distanceMarkVisible#|CATDIS|BO|1,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |interoperabilityIdentifier||URN|0,1
-|**measuredDistanceValue**||C|**1,1**
-|    distanceUnitOfMeasurement||(S)EN|**1,1**
+|**[.red]#measuredDistanceValue#**||C|1,1
+|    [.red]#distanceUnitOfMeasurement#||(S)EN|1,1
 |    referenceLocation||(S)TE|0,1
-|    waterwayDistance||(S)RE|**1,1**
+|    [.red]#waterwayDistance#||(S)RE|1,1
 |scaleMinimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

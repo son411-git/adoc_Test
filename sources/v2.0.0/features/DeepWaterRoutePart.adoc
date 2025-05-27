@@ -6,35 +6,35 @@ An area of a deep water route within which ships proceed in the same direction.
 |===
 |Attribute |Acronym |Type |Mult.
 
-|depthRangeMinimumValue|DRVAL1|RE|**1,1**
+|[.red]#depthRangeMinimumValue#|DRVAL1|RE|1,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |iMOAdopted|CATTSS|BO|0,1
 |interoperabilityIdentifier||URN|0,1
-|orientationValue|ORIENT|RE|**1,1**
+|[.red]#orientationValue#|ORIENT|RE|1,1
 |qualityOfVerticalMeasurement|QUASOU|EN|0,*
 |restriction|RESTRN|EN|0,*
 |status|STATUS|EN|0,*
 |techniqueOfVerticalMeasurement|TECSOU|EN|0,*
-|trafficFlow|TRAFIC|EN|**1,1**
+|[.red]#trafficFlow#|TRAFIC|EN|1,1
 |**verticalUncertainty**|SOUACC/VERACC|C|0,1
-|    uncertaintyFixed||(S)RE|**1,1**
+|    [.red]#uncertaintyFixed#||(S)RE|1,1
 |    uncertaintyVariableFactor||(S)RE|0,1
 |**vesselSpeedLimit**||C|0,*
-|    speedLimit||(S)RE|**1,1**
-|    speedUnits||(S)EN|**1,1**
+|    [.red]#speedLimit#||(S)RE|1,1
+|    [.red]#speedUnits#||(S)EN|1,1
 |    vesselClass||(S)TE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

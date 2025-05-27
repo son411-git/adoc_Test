@@ -8,8 +8,8 @@ An area of natural or cultivated scenery defined by its geographical characteris
 
 |categoryOfLandRegion|CATLND|EN|0,*
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |interoperabilityIdentifier||URN|0,1
 |natureOfSurface|NATSUR|EN|0,*
@@ -19,7 +19,7 @@ An area of natural or cultivated scenery defined by its geographical characteris
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

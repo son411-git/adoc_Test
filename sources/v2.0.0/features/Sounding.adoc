@@ -7,8 +7,8 @@ Measured or charted depth of water (may be a drying height), or the measurement 
 |Attribute |Acronym |Type |Mult.
 
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |interoperabilityIdentifier||URN|0,1
 |qualityOfVerticalMeasurement|QUASOU|EN|0,*
@@ -20,7 +20,7 @@ Measured or charted depth of water (may be a drying height), or the measurement 
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

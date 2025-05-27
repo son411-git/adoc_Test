@@ -9,8 +9,8 @@ A structure that is specifically designed or reinforced to provide for defence f
 |categoryOfFortifiedStructure|CATFOR|EN|0,1
 |condition|CONDTN|EN|0,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |height|HEIGHT|RE|0,1
 |interoperabilityIdentifier||URN|0,1
@@ -25,7 +25,7 @@ A structure that is specifically designed or reinforced to provide for defence f
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |inTheWater||BO|0,1

@@ -11,16 +11,16 @@ A location offshore where a pilot may board a vessel in preparation to piloting 
 |communicationChannel|COMCHA|TE|0,*
 |destination||TE|0,*
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |interoperabilityIdentifier||URN|0,1
 |**periodicDateRange**||C|0,*
-|    dateEnd|DATEND|(S)TD|**1,1**
-|    dateStart|DATSTA|(S)TD|**1,1**
+|    [.red]#dateEnd#|DATEND|(S)TD|1,1
+|    [.red]#dateStart#|DATSTA|(S)TD|1,1
 |pilotMovement||EN|0,*
 |status|STATUS|EN|0,*
 |scaleMinimum|SCAMIN|IN|0,1
@@ -28,7 +28,7 @@ A location offshore where a pilot may board a vessel in preparation to piloting 
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

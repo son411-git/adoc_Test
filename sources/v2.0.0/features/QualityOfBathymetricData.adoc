@@ -6,35 +6,35 @@ An area within which a uniform assessment of the quality of the bathymetric data
 |===
 |Attribute |Acronym |Type |Mult.
 
-|categoryOfTemporalVariation||EN|**1,1**
-|dataAssessment||EN|**1,1**
+|[.red]#categoryOfTemporalVariation#||EN|1,1
+|[.red]#dataAssessment#||EN|1,1
 |depthRangeMaximumValue|DRVAL2|RE|0,1
 |depthRangeMinimumValue|DRVAL1|RE|0,1
-|**featuresDetected**||C|**1,1**
-|    leastDepthOfDetectedFeaturesMeasured||(S)BO|**1,1**
-|    significantFeaturesDetected||(S)BO|**1,1**
+|**[.red]#featuresDetected#**||C|1,1
+|    [.red]#leastDepthOfDetectedFeaturesMeasured#||(S)BO|1,1
+|    [.red]#significantFeaturesDetected#||(S)BO|1,1
 |    sizeOfFeaturesDetected||(S)RE|0,1
-|fullSeafloorCoverageAchieved||BO|**1,1**
+|[.red]#fullSeafloorCoverageAchieved#||BO|1,1
 |interoperabilityIdentifier||URN|0,1
 |**surveyDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|**1,1**
+|    [.red]#dateEnd#|DATEND|(S)TD|1,1
 |    dateStart|DATSTA|(S)TD|0,1
-|**zoneOfConfidence**||C|**1,***
-|    categoryOfZoneOfConfidenceInData|CATZOC/ZOC|(S)EN|**1,1**
-|**    fixedDateRange**||(S)C|0,1
+|**[.red]#zoneOfConfidence#**||C|1,*
+|    [.red]#categoryOfZoneOfConfidenceInData#|CATZOC/ZOC|(S)EN|1,1
+|    **fixedDateRange**||(S)C|0,1
 |        dateEnd|DATEND|(S)TD|0,1
 |        dateStart|DATSTA|(S)TD|0,1
-|**    horizontalPositionUncertainty**||(S)C|0,1
-|        uncertaintyFixed||(S)RE|**1,1**
+|    **horizontalPositionUncertainty**||(S)C|0,1
+|        [.red]#uncertaintyFixed#||(S)RE|1,1
 |        uncertaintyVariableFactor||(S)RE|0,1
-|**    verticalUncertainty**|SOUACC/VERACC|(S)C|0,1
-|        uncertaintyFixed||(S)RE|**1,1**
+|    **verticalUncertainty**|SOUACC/VERACC|(S)C|0,1
+|        [.red]#uncertaintyFixed#||(S)RE|1,1
 |        uncertaintyVariableFactor||(S)RE|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

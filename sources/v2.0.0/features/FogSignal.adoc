@@ -6,25 +6,25 @@ A warning signal transmitted by a vessel, or aid to navigation, during periods o
 |===
 |Attribute |Acronym |Type |Mult.
 
-|categoryOfFogSignal|CATFOG|EN|**1,1**
+|[.red]#categoryOfFogSignal#|CATFOG|EN|1,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |interoperabilityIdentifier||URN|0,1
 |**periodicDateRange**||C|0,*
-|    dateEnd|DATEND|(S)TD|**1,1**
-|    dateStart|DATSTA|(S)TD|**1,1**
+|    [.red]#dateEnd#|DATEND|(S)TD|1,1
+|    [.red]#dateStart#|DATSTA|(S)TD|1,1
 |signalFrequency|SIGFRQ|IN|0,1
 |signalGeneration|SIGGEN|EN|0,1
 |signalGroup|SIGGRP|TE|0,1
 |signalPeriod|SIGPER|RE|0,1
 |**signalSequence**|SIGSEQ|C|0,*
-|    signalDuration||(S)RE|**1,1**
-|    signalStatus||(S)EN|**1,1**
+|    [.red]#signalDuration#||(S)RE|1,1
+|    [.red]#signalStatus#||(S)EN|1,1
 |status|STATUS|EN|0,*
 |valueOfMaximumRange|VALMXR|RE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
@@ -32,7 +32,7 @@ A warning signal transmitted by a vessel, or aid to navigation, during periods o
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

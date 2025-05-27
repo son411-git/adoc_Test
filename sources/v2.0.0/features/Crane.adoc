@@ -11,22 +11,22 @@ A machine for lifting, shifting and lowering objects or materials by means of a 
 |colourPattern|COLPAT|EN|0,1
 |condition|CONDTN|EN|0,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |height|HEIGHT|RE|0,1
 |interoperabilityIdentifier||URN|0,1
 |liftingCapacity|LIFCAP|RE|0,1
 |**orientation**||C|0,1
 |    orientationUncertainty||(S)RE|0,1
-|    orientationValue|ORIENT|(S)RE|**1,1**
+|    [.red]#orientationValue#|ORIENT|(S)RE|1,1
 |radarConspicuous|CONRAD|BO|0,1
 |radius|RADIUS|RE|0,1
 |status|STATUS|EN|0,*
 |**verticalClearanceFixed**|VERCLR|C|0,1
-|    verticalClearanceValue|VERCLR|(S)RE|**1,1**
-|**    verticalUncertainty**|SOUACC/VERACC|(S)C|0,1
-|        uncertaintyFixed||(S)RE|**1,1**
+|    [.red]#verticalClearanceValue#|VERCLR|(S)RE|1,1
+|    **verticalUncertainty**|SOUACC/VERACC|(S)C|0,1
+|        [.red]#uncertaintyFixed#||(S)RE|1,1
 |        uncertaintyVariableFactor||(S)RE|0,1
 |verticalDatum|VERDAT|EN|0,1
 |verticalLength|VERLEN|RE|0,1
@@ -36,7 +36,7 @@ A machine for lifting, shifting and lowering objects or materials by means of a 
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |inTheWater||BO|0,1

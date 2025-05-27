@@ -8,8 +8,8 @@ A rail or set of parallel rails on which a train, tram, or rail wagon runs.
 
 |condition|CONDTN|EN|0,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |height|HEIGHT|RE|0,1
 |interoperabilityIdentifier||URN|0,1
@@ -20,7 +20,7 @@ A rail or set of parallel rails on which a train, tram, or rail wagon runs.
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

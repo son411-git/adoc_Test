@@ -8,8 +8,8 @@ A concreted mass of stony material or coral which dries, is awash or is below th
 
 |expositionOfSounding|EXPSOU|EN|0,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |interoperabilityIdentifier||URN|0,1
 |natureOfSurface|NATSUR|EN|0,1
@@ -17,17 +17,17 @@ A concreted mass of stony material or coral which dries, is awash or is below th
 |reportedDate|SORDAT|TD|0,1
 |status|STATUS|EN|0,1
 |techniqueOfVerticalMeasurement|TECSOU|EN|0,*
-|valueOfSounding|VALSOU|RE|**1,1**
-|waterLevelEffect|WATLEV|EN|**1,1**
+|[.red]#valueOfSounding#|VALSOU|RE|1,1
+|[.red]#waterLevelEffect#|WATLEV|EN|1,1
 |scaleMinimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |defaultClearanceDepth||RE|0,1
-|surroundingDepth||RE|**1,1**
+|[.red]#surroundingDepth#||RE|1,1
 |===
 
 // include::../features_rules/UnderwaterAwashRock_rules.adoc[tag=UnderwaterAwashRock]

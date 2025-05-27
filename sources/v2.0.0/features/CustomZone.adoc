@@ -7,13 +7,13 @@ The area within which national custom regulations are in force.
 |Attribute |Acronym |Type |Mult.
 
 |interoperabilityIdentifier||URN|0,1
-|nationality|NATION|TE|**1,1**
+|[.red]#nationality#|NATION|TE|1,1
 |scaleMinimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

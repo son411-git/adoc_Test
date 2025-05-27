@@ -7,8 +7,8 @@ A routeing measure comprising an area within defined limits where ships must nav
 |Attribute |Acronym |Type |Mult.
 
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
@@ -18,15 +18,15 @@ A routeing measure comprising an area within defined limits where ships must nav
 |restriction|RESTRN|EN|0,*
 |status|STATUS|EN|0,*
 |**vesselSpeedLimit**||C|0,*
-|    speedLimit||(S)RE|**1,1**
-|    speedUnits||(S)EN|**1,1**
+|    [.red]#speedLimit#||(S)RE|1,1
+|    [.red]#speedUnits#||(S)EN|1,1
 |    vesselClass||(S)TE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|**1,***
+|**[.red]#information#**|INFORM|C|1,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

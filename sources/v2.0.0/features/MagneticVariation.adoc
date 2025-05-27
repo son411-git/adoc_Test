@@ -7,15 +7,15 @@ The angle between the magnetic and geographic meridians at any place, expressed 
 |Attribute |Acronym |Type |Mult.
 
 |interoperabilityIdentifier||URN|0,1
-|referenceYearForMagneticVariation|RYRMGV|TD|**1,1**
-|valueOfAnnualChangeInMagneticVariation|VALACM|RE|**1,1**
-|valueOfMagneticVariation|VALMAG|RE|**1,1**
+|[.red]#referenceYearForMagneticVariation#|RYRMGV|TD|1,1
+|[.red]#valueOfAnnualChangeInMagneticVariation#|VALACM|RE|1,1
+|[.red]#valueOfMagneticVariation#|VALMAG|RE|1,1
 |scaleMinimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

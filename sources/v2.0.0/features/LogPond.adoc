@@ -7,20 +7,20 @@ A maritime area enclosed with connected floating timbers used as a staging area 
 |Attribute |Acronym |Type |Mult.
 
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |interoperabilityIdentifier||URN|0,1
 |**periodicDateRange**||C|0,*
-|    dateEnd|DATEND|(S)TD|**1,1**
-|    dateStart|DATSTA|(S)TD|**1,1**
+|    [.red]#dateEnd#|DATEND|(S)TD|1,1
+|    [.red]#dateStart#|DATSTA|(S)TD|1,1
 |status|STATUS|EN|0,*
 |scaleMinimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

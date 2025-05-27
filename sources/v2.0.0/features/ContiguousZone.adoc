@@ -11,13 +11,13 @@ A zone contiguous to a coastal State's Territorial Sea, which may not extend bey
 |    dateStart|DATSTA|(S)TD|0,1
 |inDispute||BO|0,1
 |interoperabilityIdentifier||URN|0,1
-|nationality|NATION|TE|**1,***
+|[.red]#nationality#|NATION|TE|1,*
 |scaleMinimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -7,11 +7,11 @@ A region of the seabed including the material of which it is composed and its ph
 |Attribute |Acronym |Type |Mult.
 
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |interoperabilityIdentifier||URN|0,1
-|**surfaceCharacteristics**||C|**1,***
+|**[.red]#surfaceCharacteristics#**||C|1,*
 |    natureOfSurface|NATSUR|(S)EN|0,1
 |    natureOfSurfaceQualifyingTerms|NATQUA|(S)EN|0,3
 |    underlyingLayer||(S)IN|0,1
@@ -21,7 +21,7 @@ A region of the seabed including the material of which it is composed and its ph
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

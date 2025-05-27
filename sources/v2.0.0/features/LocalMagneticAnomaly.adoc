@@ -7,20 +7,20 @@ An anomaly of the magnetic field of the Earth, extending over a relatively small
 |Attribute |Acronym |Type |Mult.
 
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |interoperabilityIdentifier||URN|0,1
 |reportedDate|SORDAT|TD|0,1
 |**valueOfLocalMagneticAnomaly**||C|1,2
-|    magneticAnomalyValue|VALLMA|(S)RE|**1,1**
+|    [.red]#magneticAnomalyValue#|VALLMA|(S)RE|1,1
 |    referenceDirection||(S)EN|0,1
 |scaleMinimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

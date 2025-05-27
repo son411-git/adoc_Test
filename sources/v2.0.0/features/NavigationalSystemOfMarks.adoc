@@ -6,13 +6,13 @@ An area within which the navigational system of marks has been established in re
 |===
 |Attribute |Acronym |Type |Mult.
 
-|marksNavigationalSystemOf|MARSYS|EN|**1,1**
+|[.red]#marksNavigationalSystemOf#|MARSYS|EN|1,1
 |interoperabilityIdentifier||URN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

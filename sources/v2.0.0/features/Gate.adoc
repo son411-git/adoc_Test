@@ -10,32 +10,32 @@ A structure that may be swung, drawn, or lowered to block an entrance or passage
 |condition|CONDTN|EN|0,1
 |depthRangeMinimumValue|DRVAL1|RE|0,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |**horizontalClearanceOpen**||C|0,1
-|    horizontalClearanceValue|HORCLR|(S)RE|**1,1**
+|    [.red]#horizontalClearanceValue#|HORCLR|(S)RE|1,1
 |    horizontalDistanceUncertainty|HORACC|(S)RE|0,1
 |interoperabilityIdentifier||URN|0,1
 |natureOfConstruction|NATCON|EN|0,*
 |qualityOfVerticalMeasurement|QUASOU|EN|0,*
 |status|STATUS|EN|0,*
 |**verticalClearanceOpen**|VERCOP|C|0,1
-|    verticalClearanceUnlimited||(S)BO|**1,1**
+|    [.red]#verticalClearanceUnlimited#||(S)BO|1,1
 |    verticalClearanceValue|VERCLR|(S)RE|0,1
-|**    verticalUncertainty**|SOUACC/VERACC|(S)C|0,1
-|        uncertaintyFixed||(S)RE|**1,1**
+|    **verticalUncertainty**|SOUACC/VERACC|(S)C|0,1
+|        [.red]#uncertaintyFixed#||(S)RE|1,1
 |        uncertaintyVariableFactor||(S)RE|0,1
 |verticalDatum|VERDAT|EN|0,1
 |**verticalUncertainty**|SOUACC/VERACC|C|0,1
-|    uncertaintyFixed||(S)RE|**1,1**
+|    [.red]#uncertaintyFixed#||(S)RE|1,1
 |    uncertaintyVariableFactor||(S)RE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -8,14 +8,14 @@ A geographical area that describes the coverage and extent of spatial objects.
 
 |drawingIndex||IN|0,1
 |interoperabilityIdentifier||URN|0,1
-|maximumDisplayScale|CSCALE|IN|**1,1**
-|minimumDisplayScale||IN|**1,1**
-|optimumDisplayScale|CSCALE|IN|**1,1**
+|[.red]#maximumDisplayScale#|CSCALE|IN|1,1
+|[.red]#minimumDisplayScale#||IN|1,1
+|[.red]#optimumDisplayScale#|CSCALE|IN|1,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

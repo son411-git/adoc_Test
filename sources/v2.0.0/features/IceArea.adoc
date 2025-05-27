@@ -6,17 +6,17 @@ An area of ice over land or water.
 |===
 |Attribute |Acronym |Type |Mult.
 
-|categoryOfIce|CATICE|EN|**1,1**
+|[.red]#categoryOfIce#|CATICE|EN|1,1
 |elevation|ELEVAT|RE|0,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |height|HEIGHT|RE|0,1
 |interoperabilityIdentifier||URN|0,1
 |**periodicDateRange**||C|0,*
-|    dateEnd|DATEND|(S)TD|**1,1**
-|    dateStart|DATSTA|(S)TD|**1,1**
+|    [.red]#dateEnd#|DATEND|(S)TD|1,1
+|    [.red]#dateStart#|DATSTA|(S)TD|1,1
 |reportedDate|SORDAT|TD|0,1
 |status|STATUS|EN|0,*
 |verticalLength|VERLEN|RE|0,1
@@ -26,7 +26,7 @@ An area of ice over land or water.
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

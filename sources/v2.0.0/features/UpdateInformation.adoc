@@ -10,15 +10,15 @@ The Update Information metadata feature is used to represent a change to the inf
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |interoperabilityIdentifier||URN|0,1
-|updateNumber||IN|**1,1**
-|updateType||EN|**1,1**
+|[.red]#updateNumber#||IN|1,1
+|[.red]#updateType#||EN|1,1
 |scaleMinimum|SCAMIN|IN|0,1
 |source||TE|0,1
 |**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -11,15 +11,15 @@ A fixed artificial structure in the water and/or adjoining the land. It may also
 |colourPattern|COLPAT|EN|0,1
 |condition|CONDTN|EN|0,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |height|HEIGHT|RE|0,1
 |**horizontalClearanceFixed**||C|0,1
-|    horizontalClearanceValue|HORCLR|(S)RE|**1,1**
+|    [.red]#horizontalClearanceValue#|HORCLR|(S)RE|1,1
 |    horizontalDistanceUncertainty|HORACC|(S)RE|0,1
 |horizontalLength|HORLEN|RE|0,1
 |horizontalWidth|HORWID|RE|0,1
@@ -36,7 +36,7 @@ A fixed artificial structure in the water and/or adjoining the land. It may also
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

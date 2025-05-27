@@ -6,15 +6,15 @@ A cardinal beacon is used in conjunction with the compass to indicate where the 
 |===
 |Attribute |Acronym |Type |Mult.
 
-|beaconShape|BCNSHP|EN|**1,1**
-|categoryOfCardinalMark|CATCAM|EN|**1,1**
-|colour|COLOUR|EN|**1,***
+|[.red]#beaconShape#|BCNSHP|EN|1,1
+|[.red]#categoryOfCardinalMark#|CATCAM|EN|1,1
+|[.red]#colour#|COLOUR|EN|1,*
 |colourPattern|COLPAT|EN|0,1
 |condition|CONDTN|EN|0,1
 |elevation|ELEVAT|RE|0,1
 |**featureName**||C|0,*
-|    language||(S)TE|**1,1**
-|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
+|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
 |    nameUsage||(S)EN|0,1
 |**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
@@ -24,18 +24,18 @@ A cardinal beacon is used in conjunction with the compass to indicate where the 
 |marksNavigationalSystemOf|MARSYS|EN|0,1
 |natureOfConstruction|NATCON|EN|0,*
 |**periodicDateRange**||C|0,*
-|    dateEnd|DATEND|(S)TD|**1,1**
-|    dateStart|DATSTA|(S)TD|**1,1**
+|    [.red]#dateEnd#|DATEND|(S)TD|1,1
+|    [.red]#dateStart#|DATSTA|(S)TD|1,1
 |radarConspicuous|CONRAD|BO|0,1
 |reportedDate|SORDAT|TD|0,1
 |status|STATUS|EN|0,*
 |**topmark**|TOPMAR|C|0,1
 |    colour|COLOUR|(S)EN|0,*
 |    colourPattern|COLPAT|(S)EN|0,1
-|    topmarkDaymarkShape|TOPSHP|(S)EN|**1,1**
-|**    shapeInformation**||(S)C|0,*
+|    [.red]#topmarkDaymarkShape#|TOPSHP|(S)EN|1,1
+|    **shapeInformation**||(S)C|0,*
 |        language||(S)TE|0,1
-|        text|INFORM/NINFOM|(S)TE|**1,1**
+|        [.red]#text#|INFORM/NINFOM|(S)TE|1,1
 |verticalLength|VERLEN|RE|0,1
 |visualProminence|CONVIS|EN|0,1
 |scaleMinimum|SCAMIN|IN|0,1
@@ -43,7 +43,7 @@ A cardinal beacon is used in conjunction with the compass to indicate where the 
 |    fileLocator||(S)TE|0,1
 |    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|**1,1**
+|    [.red]#language#||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
