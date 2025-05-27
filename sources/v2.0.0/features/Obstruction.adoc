@@ -4,14 +4,14 @@ In marine navigation, anything that hinders or prevents movement, particularly a
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |categoryOfObstruction|CATOBS|EN|0,1
 |condition|CONDTN|EN|0,1
 |expositionOfSounding|EXPSOU|EN|0,1
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
 |height|HEIGHT|RE|0,1
 |interoperabilityIdentifier||URN|0,1
@@ -24,16 +24,16 @@ In marine navigation, anything that hinders or prevents movement, particularly a
 |techniqueOfVerticalMeasurement|TECSOU|EN|0,*
 |valueOfSounding|VALSOU|RE|0,1
 |verticalLength|VERLEN|RE|0,1
-|waterLevelEffect|WATLEV|EN|1,1
+|waterLevelEffect|WATLEV|EN|**1,1**
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |defaultClearanceDepth||RE|0,1
-|surroundingDepth||RE|1,1
+|surroundingDepth||RE|**1,1**
 |===
 
-include::../features_rules/Obstruction_rules.adoc[tag=Obstruction]
+// include::../features_rules/Obstruction_rules.adoc[tag=Obstruction]

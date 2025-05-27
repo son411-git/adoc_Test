@@ -4,19 +4,19 @@ The angle between the magnetic and geographic meridians at any place, expressed 
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |interoperabilityIdentifier||URN|0,1
-|referenceYearForMagneticVariation|RYRMGV|TD|1,1
-|valueOfAnnualChangeInMagneticVariation|VALACM|RE|1,1
-|valueOfMagneticVariation|VALMAG|RE|1,1
+|referenceYearForMagneticVariation|RYRMGV|TD|**1,1**
+|valueOfAnnualChangeInMagneticVariation|VALACM|RE|**1,1**
+|valueOfMagneticVariation|VALMAG|RE|**1,1**
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/MagneticVariation_rules.adoc[tag=MagneticVariation]
+// include::../features_rules/MagneticVariation_rules.adoc[tag=MagneticVariation]

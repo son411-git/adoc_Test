@@ -4,16 +4,16 @@ Any level surface (for example Mean Sea Level) taken as a surface of reference t
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |interoperabilityIdentifier||URN|0,1
-|verticalDatum|VERDAT|EN|1,1
-|information|INFORM|C|0,*
+|verticalDatum|VERDAT|EN|**1,1**
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/VerticalDatumOfData_rules.adoc[tag=VerticalDatumOfData]
+// include::../features_rules/VerticalDatumOfData_rules.adoc[tag=VerticalDatumOfData]

@@ -4,13 +4,13 @@ The Text Placement feature is used in association with the Feature Name attribut
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
-|textOffsetBearing||IN|1,1
-|textOffsetDistance||IN|1,1
+|textOffsetBearing||IN|**1,1**
+|textOffsetDistance||IN|**1,1**
 |textRotation||BO|0,1
 |textType||EN|1,2
 |scaleMinimum|SCAMIN|IN|0,1
 |===
 
-include::../features_rules/TextPlacement_rules.adoc[tag=TextPlacement]
+// include::../features_rules/TextPlacement_rules.adoc[tag=TextPlacement]

@@ -4,30 +4,30 @@ Approximate tidal stream rates given as discrete rate values for flood and ebb f
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
-|categoryOfTidalStream|CAT_TS|EN|1,1
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|categoryOfTidalStream|CAT_TS|EN|**1,1**
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
-|fixedDateRange||C|0,1
+|**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |interoperabilityIdentifier||URN|0,1
-|orientation||C|1,1
+|**orientation**||C|**1,1**
 |    orientationUncertainty||(S)RE|0,1
-|    orientationValue|ORIENT|(S)RE|1,1
-|speed||C|1,1
-|    speedMaximum|CURVEL|(S)RE|1,1
+|    orientationValue|ORIENT|(S)RE|**1,1**
+|**speed**||C|**1,1**
+|    speedMaximum|CURVEL|(S)RE|**1,1**
 |    speedMinimum||(S)RE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/TidalStreamFloodEbb_rules.adoc[tag=TidalStreamFloodEbb]
+// include::../features_rules/TidalStreamFloodEbb_rules.adoc[tag=TidalStreamFloodEbb]

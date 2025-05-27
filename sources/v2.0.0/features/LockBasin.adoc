@@ -4,32 +4,32 @@ A wet dock in a waterway, permitting a ship to pass from one level to another.
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
-|fixedDateRange||C|0,1
+|**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
-|periodicDateRange||C|0,*
-|    dateEnd|DATEND|(S)TD|1,1
-|    dateStart|DATSTA|(S)TD|1,1
-|horizontalClearanceFixed||C|0,1
-|    horizontalClearanceValue|HORCLR|(S)RE|1,1
+|**periodicDateRange**||C|0,*
+|    dateEnd|DATEND|(S)TD|**1,1**
+|    dateStart|DATSTA|(S)TD|**1,1**
+|**horizontalClearanceFixed**||C|0,1
+|    horizontalClearanceValue|HORCLR|(S)RE|**1,1**
 |    horizontalDistanceUncertainty|HORACC|(S)RE|0,1
 |horizontalLength|HORLEN|RE|0,1
 |horizontalWidth|HORWID|RE|0,1
 |interoperabilityIdentifier||URN|0,1
 |status|STATUS|EN|0,*
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/LockBasin_rules.adoc[tag=LockBasin]
+// include::../features_rules/LockBasin_rules.adoc[tag=LockBasin]

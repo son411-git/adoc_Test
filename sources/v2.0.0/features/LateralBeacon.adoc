@@ -4,48 +4,48 @@ A lateral beacon is used to indicate the port or starboard hand side of the rout
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
-|beaconShape|BCNSHP|EN|1,1
-|categoryOfLateralMark|CATLAM|EN|1,1
-|colour|COLOUR|EN|1,*
+|beaconShape|BCNSHP|EN|**1,1**
+|categoryOfLateralMark|CATLAM|EN|**1,1**
+|colour|COLOUR|EN|**1,***
 |colourPattern|COLPAT|EN|0,1
 |condition|CONDTN|EN|0,1
 |elevation|ELEVAT|RE|0,1
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
-|fixedDateRange||C|0,1
+|**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |interoperabilityIdentifier||URN|0,1
 |height|HEIGHT|RE|0,1
 |marksNavigationalSystemOf|MARSYS|EN|0,1
 |natureOfConstruction|NATCON|EN|0,*
-|periodicDateRange||C|0,*
-|    dateEnd|DATEND|(S)TD|1,1
-|    dateStart|DATSTA|(S)TD|1,1
+|**periodicDateRange**||C|0,*
+|    dateEnd|DATEND|(S)TD|**1,1**
+|    dateStart|DATSTA|(S)TD|**1,1**
 |radarConspicuous|CONRAD|BO|0,1
 |reportedDate|SORDAT|TD|0,1
 |status|STATUS|EN|0,*
-|topmark|TOPMAR|C|0,1
+|**topmark**|TOPMAR|C|0,1
 |    colour|COLOUR|(S)EN|0,*
 |    colourPattern|COLPAT|(S)EN|0,1
-|    topmarkDaymarkShape|TOPSHP|(S)EN|1,1
-|    shapeInformation||(S)C|0,*
+|    topmarkDaymarkShape|TOPSHP|(S)EN|**1,1**
+|**    shapeInformation**||(S)C|0,*
 |        language||(S)TE|0,1
-|        text|INFORM|(S)TE|1,1
+|        text|INFORM/NINFOM|(S)TE|**1,1**
 |verticalLength|VERLEN|RE|0,1
 |visualProminence|CONVIS|EN|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
 
-include::../features_rules/LateralBeacon_rules.adoc[tag=LateralBeacon]
+// include::../features_rules/LateralBeacon_rules.adoc[tag=LateralBeacon]

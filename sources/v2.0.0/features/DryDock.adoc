@@ -4,16 +4,16 @@ An artificial basin fitted with a gate or caisson, into which vessels can be flo
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |condition|CONDTN|EN|0,1
 |depthRangeMinimumValue|DRVAL1|RE|0,1
 |elevation|ELEVAT|RE|0,1
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
-|fixedDateRange||C|0,1
+|**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |horizontalClearanceLength||RE|0,1
@@ -24,16 +24,16 @@ An artificial basin fitted with a gate or caisson, into which vessels can be flo
 |maximumPermittedDraught||RE|0,1
 |qualityOfVerticalMeasurement|QUASOU|EN|0,*
 |status|STATUS|EN|0,*
-|verticalUncertainty|SOUACC|C|0,1
-|    uncertaintyFixed||(S)RE|1,1
+|**verticalUncertainty**|SOUACC/VERACC|C|0,1
+|    uncertaintyFixed||(S)RE|**1,1**
 |    uncertaintyVariableFactor||(S)RE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/DryDock_rules.adoc[tag=DryDock]
+// include::../features_rules/DryDock_rules.adoc[tag=DryDock]

@@ -4,7 +4,7 @@ A large storage structure used for storing loose materials, liquids and/or gases
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |buildingShape|BUISHP|EN|0,1
 |categoryOfSiloTank|CATSIL|EN|0,1
@@ -12,14 +12,14 @@ A large storage structure used for storing loose materials, liquids and/or gases
 |colourPattern|COLPAT|EN|0,1
 |condition|CONDTN|EN|0,1
 |elevation|ELEVAT|RE|0,1
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
 |height|HEIGHT|RE|0,1
 |interoperabilityIdentifier||URN|0,1
-|multiplicityOfFeatures||C|0,1
-|    multiplicityKnown||(S)BO|1,1
+|**multiplicityOfFeatures**||C|0,1
+|    multiplicityKnown||(S)BO|**1,1**
 |    numberOfFeatures||(S)IN|0,1
 |natureOfConstruction|NATCON|EN|0,*
 |product|PRODCT|EN|0,*
@@ -29,14 +29,14 @@ A large storage structure used for storing loose materials, liquids and/or gases
 |verticalLength|VERLEN|RE|0,1
 |visualProminence|CONVIS|EN|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |inTheWater||BO|0,1
 |===
 
-include::../features_rules/SiloTank_rules.adoc[tag=SiloTank]
+// include::../features_rules/SiloTank_rules.adoc[tag=SiloTank]

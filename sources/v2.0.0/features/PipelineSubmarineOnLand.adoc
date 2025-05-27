@@ -4,36 +4,36 @@ A connected set of pipes for conveying liquids, slurries, or gases.
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |buriedDepth|BURDEP|RE|0,1
 |categoryOfPipelinePipe|CATPIP|EN|0,*
 |condition|CONDTN|EN|0,1
 |depthRangeMinimumValue|DRVAL1|RE|0,1
 |depthRangeMaximumValue|DRVAL2|RE|0,1
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
-|fixedDateRange||C|0,1
+|**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |interoperabilityIdentifier||URN|0,1
-|multiplicityOfFeatures||C|0,1
-|    multiplicityKnown||(S)BO|1,1
+|**multiplicityOfFeatures**||C|0,1
+|    multiplicityKnown||(S)BO|**1,1**
 |    numberOfFeatures||(S)IN|0,1
 |product|PRODCT|EN|0,*
 |reportedDate|SORDAT|TD|0,1
 |restriction|RESTRN|EN|0,*
 |status|STATUS|EN|0,*
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
 
-include::../features_rules/PipelineSubmarineOnLand_rules.adoc[tag=PipelineSubmarineOnLand]
+// include::../features_rules/PipelineSubmarineOnLand_rules.adoc[tag=PipelineSubmarineOnLand]

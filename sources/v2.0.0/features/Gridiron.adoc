@@ -4,11 +4,11 @@ A structure in the intertidal zone serving as a support for vessels at low stage
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
 |horizontalLength|HORLEN|RE|0,1
 |horizontalWidth|HORWID|RE|0,1
@@ -18,12 +18,12 @@ A structure in the intertidal zone serving as a support for vessels at low stage
 |verticalLength|VERLEN|RE|0,1
 |waterLevelEffect|WATLEV|EN|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/Gridiron_rules.adoc[tag=Gridiron]
+// include::../features_rules/Gridiron_rules.adoc[tag=Gridiron]

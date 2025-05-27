@@ -4,16 +4,16 @@ An all around light is a light that is visible over the whole horizon of interes
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |categoryOfLight|CATLIT|EN|0,*
-|colour|COLOUR|EN|1,*
+|colour|COLOUR|EN|**1,***
 |exhibitionConditionOfLight|EXCLIT|EN|0,1
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
-|fixedDateRange||C|0,1
+|**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |flareBearing||IN|0,1
@@ -22,31 +22,31 @@ An all around light is a light that is visible over the whole horizon of interes
 |lightVisibility|LITVIS|EN|0,1
 |majorLight||BO|0,1
 |marksNavigationalSystemOf|MARSYS|EN|0,1
-|multiplicityOfFeatures||C|0,1
-|    multiplicityKnown||(S)BO|1,1
+|**multiplicityOfFeatures**||C|0,1
+|    multiplicityKnown||(S)BO|**1,1**
 |    numberOfFeatures||(S)IN|0,1
-|periodicDateRange||C|0,*
-|    dateEnd|DATEND|(S)TD|1,1
-|    dateStart|DATSTA|(S)TD|1,1
-|rhythmOfLight||C|1,1
-|    lightCharacteristic|LITCHR|(S)EN|1,1
+|**periodicDateRange**||C|0,*
+|    dateEnd|DATEND|(S)TD|**1,1**
+|    dateStart|DATSTA|(S)TD|**1,1**
+|**rhythmOfLight**||C|**1,1**
+|    lightCharacteristic|LITCHR|(S)EN|**1,1**
 |    signalGroup|SIGGRP|(S)TE|0,*
 |    signalPeriod|SIGPER|(S)RE|0,1
-|    signalSequence|SIGSEQ|(S)C|0,*
-|        signalDuration||(S)RE|1,1
-|        signalStatus||(S)EN|1,1
+|**    signalSequence**|SIGSEQ|(S)C|0,*
+|        signalDuration||(S)RE|**1,1**
+|        signalStatus||(S)EN|**1,1**
 |signalGeneration|SIGGEN|EN|0,1
 |status|STATUS|EN|0,*
 |valueOfNominalRange|VALNMR|RE|0,1
 |verticalDatum|VERDAT|EN|0,1
 |verticalLength|VERLEN|RE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/LightAllAround_rules.adoc[tag=LightAllAround]
+// include::../features_rules/LightAllAround_rules.adoc[tag=LightAllAround]

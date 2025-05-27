@@ -4,43 +4,43 @@ A transponder beacon transmitting a coded signal on radar frequency, permitting 
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
-|categoryOfRadarTransponderBeacon|CATRTB|EN|1,1
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|categoryOfRadarTransponderBeacon|CATRTB|EN|**1,1**
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
-|fixedDateRange||C|0,1
+|**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |interoperabilityIdentifier||URN|0,1
-|periodicDateRange||C|0,*
-|    dateEnd|DATEND|(S)TD|1,1
-|    dateStart|DATSTA|(S)TD|1,1
-|radarWaveLength||C|0,2
-|    radarBand||(S)TE|1,1
-|    waveLengthValue|Radar Wave Length|(S)RE|1,1
-|sectorLimit||C|0,1
-|    sectorLimitOne|SECTR1|(S)C|1,1
-|        sectorBearing|SECTR1|(S)RE|1,1
+|**periodicDateRange**||C|0,*
+|    dateEnd|DATEND|(S)TD|**1,1**
+|    dateStart|DATSTA|(S)TD|**1,1**
+|**radarWaveLength**||C|0,2
+|    radarBand||(S)TE|**1,1**
+|    waveLengthValue|Radar Wave Length|(S)RE|**1,1**
+|**sectorLimit**||C|0,1
+|**    sectorLimitOne**|SECTR1|(S)C|**1,1**
+|        sectorBearing|SECTR1/SECTR2|(S)RE|**1,1**
 |        sectorLineLength||(S)RE|0,1
-|    sectorLimitTwo|SECTR2|(S)C|1,1
-|        sectorBearing|SECTR1|(S)RE|1,1
+|**    sectorLimitTwo**|SECTR2|(S)C|**1,1**
+|        sectorBearing|SECTR1/SECTR2|(S)RE|**1,1**
 |        sectorLineLength||(S)RE|0,1
 |signalGroup|SIGGRP|TE|0,1
-|signalSequence|SIGSEQ|C|0,*
-|    signalDuration||(S)RE|1,1
-|    signalStatus||(S)EN|1,1
+|**signalSequence**|SIGSEQ|C|0,*
+|    signalDuration||(S)RE|**1,1**
+|    signalStatus||(S)EN|**1,1**
 |status|STATUS|EN|0,*
 |valueOfMaximumRange|VALMXR|RE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/RadarTransponderBeacon_rules.adoc[tag=RadarTransponderBeacon]
+// include::../features_rules/RadarTransponderBeacon_rules.adoc[tag=RadarTransponderBeacon]

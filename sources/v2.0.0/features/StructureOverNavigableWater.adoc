@@ -4,50 +4,50 @@ A roofed structure erected, or partly erected, over a body of water, to provide 
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |categoryOfStructure||EN|0,*
 |colour|COLOUR|EN|0,*
 |colourPattern|COLPAT|EN|0,1
 |condition|CONDTN|EN|0,1
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
-|fixedDateRange||C|0,1
+|**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |height|HEIGHT|RE|0,1
-|horizontalClearanceFixed||C|1,1
-|    horizontalClearanceValue|HORCLR|(S)RE|1,1
+|**horizontalClearanceFixed**||C|**1,1**
+|    horizontalClearanceValue|HORCLR|(S)RE|**1,1**
 |    horizontalDistanceUncertainty|HORACC|(S)RE|0,1
 |horizontalLength|HORLEN|RE|0,1
 |horizontalWidth|HORWID|RE|0,1
 |interoperabilityIdentifier||URN|0,1
 |natureOfConstruction|NATCON|EN|0,*
-|periodicDateRange||C|0,*
-|    dateEnd|DATEND|(S)TD|1,1
-|    dateStart|DATSTA|(S)TD|1,1
+|**periodicDateRange**||C|0,*
+|    dateEnd|DATEND|(S)TD|**1,1**
+|    dateStart|DATSTA|(S)TD|**1,1**
 |product|PRODCT|EN|0,1
 |radarConspicuous|CONRAD|BO|0,1
 |reportedDate|SORDAT|TD|0,1
 |status|STATUS|EN|0,*
-|verticalClearanceFixed|VERCLR|C|1,1
-|    verticalClearanceValue|VERCLR|(S)RE|1,1
-|    verticalUncertainty|SOUACC|(S)C|0,1
-|        uncertaintyFixed||(S)RE|1,1
+|**verticalClearanceFixed**|VERCLR|C|**1,1**
+|    verticalClearanceValue|VERCLR|(S)RE|**1,1**
+|**    verticalUncertainty**|SOUACC/VERACC|(S)C|0,1
+|        uncertaintyFixed||(S)RE|**1,1**
 |        uncertaintyVariableFactor||(S)RE|0,1
 |verticalDatum|VERDAT|EN|0,1
 |verticalLength|VERLEN|RE|0,1
 |visualProminence|CONVIS|EN|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
 
-include::../features_rules/StructureOverNavigableWater_rules.adoc[tag=StructureOverNavigableWater]
+// include::../features_rules/StructureOverNavigableWater_rules.adoc[tag=StructureOverNavigableWater]

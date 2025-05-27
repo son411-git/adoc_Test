@@ -4,32 +4,32 @@ Approximate tidal stream characteristics given as discrete value sets at a speci
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
 |interoperabilityIdentifier||URN|0,1
-|stationName||TE|1,1
+|stationName||TE|**1,1**
 |stationNumber||TE|0,1
-|tidalStreamPanelValues||C|1,*
-|    referenceTide||(S)EN|1,1
-|    referenceTideType||(S)EN|1,1
+|**tidalStreamPanelValues**||C|**1,***
+|    referenceTide||(S)EN|**1,1**
+|    referenceTideType||(S)EN|**1,1**
 |    streamDepth||(S)RE|0,1
-|    tidalStreamValue||(S)C|1,*
-|        orientation||(S)C|1,1
+|**    tidalStreamValue**||(S)C|**1,***
+|**        orientation**||(S)C|**1,1**
 |            orientationUncertainty||(S)RE|0,1
-|            orientationValue|ORIENT|(S)RE|1,1
-|        speedMaximum|CURVEL|(S)RE|1,1
-|        timeRelativeToTide||(S)RE|1,1
+|            orientationValue|ORIENT|(S)RE|**1,1**
+|        speedMaximum|CURVEL|(S)RE|**1,1**
+|        timeRelativeToTide||(S)RE|**1,1**
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/TidalStreamPanelData_rules.adoc[tag=TidalStreamPanelData]
+// include::../features_rules/TidalStreamPanelData_rules.adoc[tag=TidalStreamPanelData]

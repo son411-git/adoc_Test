@@ -17,50 +17,766 @@ include::sources/v2.0.0/common_attr.adoc[tag=requiredAttr]
 ////
 
 // 목차
-== Features 
+== Features
+
+// 객체별 include
+=== AdministrationArea
+.Attributes
+include::sources/v2.0.0/features/AdministrationArea.adoc[]
+
+=== AirportAirfield
+.Attributes
+include::sources/v2.0.0/features/AirportAirfield.adoc[]
+
+=== AnchorBerth
+.Attributes
+include::sources/v2.0.0/features/AnchorBerth.adoc[]
+
 === AnchorageArea
 .Attributes
 include::sources/v2.0.0/features/AnchorageArea.adoc[]
 
-=== MagneticVariation
+=== ArchipelagicSeaLane
 .Attributes
-include::sources/v2.0.0/features/MagneticVariation.adoc[]
+include::sources/v2.0.0/features/ArchipelagicSeaLane.adoc[]
 
-=== QualityOfSurvey
+=== ArchipelagicSeaLaneArea
 .Attributes
-include::sources/v2.0.0/features/QualityOfSurvey.adoc[]
+include::sources/v2.0.0/features/ArchipelagicSeaLaneArea.adoc[]
 
-=== SoundingDatum
+=== ArchipelagicSeaLaneAxis
 .Attributes
-include::sources/v2.0.0/features/SoundingDatum.adoc[]
+include::sources/v2.0.0/features/ArchipelagicSeaLaneAxis.adoc[]
 
-=== UpdateInformation
+=== Berth
 .Attributes
-include::sources/v2.0.0/features/UpdateInformation.adoc[]
+include::sources/v2.0.0/features/Berth.adoc[]
 
-=== VerticalDatumOfData
+=== Bollard
 .Attributes
-include::sources/v2.0.0/features/VerticalDatumOfData.adoc[]
+include::sources/v2.0.0/features/Bollard.adoc[]
 
-=== PipelineOverhead
+=== Bridge
 .Attributes
-include::sources/v2.0.0/features/PipelineOverhead.adoc[]
+include::sources/v2.0.0/features/Bridge.adoc[]
+
+=== Building
+.Attributes
+include::sources/v2.0.0/features/Building.adoc[]
+
+=== BuiltUpArea
+.Attributes
+include::sources/v2.0.0/features/BuiltUpArea.adoc[]
+
+=== CableArea
+.Attributes
+include::sources/v2.0.0/features/CableArea.adoc[]
+
+=== CableOverhead
+.Attributes
+include::sources/v2.0.0/features/CableOverhead.adoc[]
+
+=== CableSubmarine
+.Attributes
+include::sources/v2.0.0/features/CableSubmarine.adoc[]
+
+=== Canal
+.Attributes
+include::sources/v2.0.0/features/Canal.adoc[]
 
 === CardinalBeacon
 .Attributes
 include::sources/v2.0.0/features/CardinalBeacon.adoc[]
 
+=== CardinalBuoy
+.Attributes
+include::sources/v2.0.0/features/CardinalBuoy.adoc[]
+
+=== CargoTranshipmentArea
+.Attributes
+include::sources/v2.0.0/features/CargoTranshipmentArea.adoc[]
+
+=== Causeway
+.Attributes
+include::sources/v2.0.0/features/Causeway.adoc[]
+
+=== CautionArea
+.Attributes
+include::sources/v2.0.0/features/CautionArea.adoc[]
+
+=== Chart1Feature
+.Attributes
+include::sources/v2.0.0/features/Chart1Feature.adoc[]
+
+=== Checkpoint
+.Attributes
+include::sources/v2.0.0/features/Checkpoint.adoc[]
+
+=== CoastGuardStation
+.Attributes
+include::sources/v2.0.0/features/CoastGuardStation.adoc[]
+
+=== Coastline
+.Attributes
+include::sources/v2.0.0/features/Coastline.adoc[]
+
+=== CollisionRegulationsLimit
+.Attributes
+include::sources/v2.0.0/features/CollisionRegulationsLimit.adoc[]
+
+=== ContiguousZone
+.Attributes
+include::sources/v2.0.0/features/ContiguousZone.adoc[]
+
+=== ContinentalShelfArea
+.Attributes
+include::sources/v2.0.0/features/ContinentalShelfArea.adoc[]
+
+=== Conveyor
+.Attributes
+include::sources/v2.0.0/features/Conveyor.adoc[]
+
+=== Crane
+.Attributes
+include::sources/v2.0.0/features/Crane.adoc[]
+
+=== CurrentNonGravitational
+.Attributes
+include::sources/v2.0.0/features/CurrentNonGravitational.adoc[]
+
+=== CustomZone
+.Attributes
+include::sources/v2.0.0/features/CustomZone.adoc[]
+
+=== Dam
+.Attributes
+include::sources/v2.0.0/features/Dam.adoc[]
+
+=== DataCoverage
+.Attributes
+include::sources/v2.0.0/features/DataCoverage.adoc[]
+
+=== Daymark
+.Attributes
+include::sources/v2.0.0/features/Daymark.adoc[]
+
+=== DeepWaterRoute
+.Attributes
+include::sources/v2.0.0/features/DeepWaterRoute.adoc[]
+
+=== DeepWaterRouteCentreline
+.Attributes
+include::sources/v2.0.0/features/DeepWaterRouteCentreline.adoc[]
+
+=== DeepWaterRoutePart
+.Attributes
+include::sources/v2.0.0/features/DeepWaterRoutePart.adoc[]
+
+=== DepthArea
+.Attributes
+include::sources/v2.0.0/features/DepthArea.adoc[]
+
+=== DepthContour
+.Attributes
+include::sources/v2.0.0/features/DepthContour.adoc[]
+
+=== DepthNoBottomFound
+.Attributes
+include::sources/v2.0.0/features/DepthNoBottomFound.adoc[]
+
+=== DiscolouredWater
+.Attributes
+include::sources/v2.0.0/features/DiscolouredWater.adoc[]
+
+=== DistanceMark
+.Attributes
+include::sources/v2.0.0/features/DistanceMark.adoc[]
+
+=== DockArea
+.Attributes
+include::sources/v2.0.0/features/DockArea.adoc[]
+
+=== Dolphin
+.Attributes
+include::sources/v2.0.0/features/Dolphin.adoc[]
+
+=== DredgedArea
+.Attributes
+include::sources/v2.0.0/features/DredgedArea.adoc[]
+
+=== DryDock
+.Attributes
+include::sources/v2.0.0/features/DryDock.adoc[]
+
+=== DumpingGround
+.Attributes
+include::sources/v2.0.0/features/DumpingGround.adoc[]
+
+=== Dyke
+.Attributes
+include::sources/v2.0.0/features/Dyke.adoc[]
+
+=== EmergencyWreckMarkingBuoy
+.Attributes
+include::sources/v2.0.0/features/EmergencyWreckMarkingBuoy.adoc[]
+
+=== ExclusiveEconomicZone
+.Attributes
+include::sources/v2.0.0/features/ExclusiveEconomicZone.adoc[]
+
+=== Fairway
+.Attributes
+include::sources/v2.0.0/features/Fairway.adoc[]
+
+=== FairwaySystem
+.Attributes
+include::sources/v2.0.0/features/FairwaySystem.adoc[]
+
+=== FenceWall
+.Attributes
+include::sources/v2.0.0/features/FenceWall.adoc[]
+
+=== FerryRoute
+.Attributes
+include::sources/v2.0.0/features/FerryRoute.adoc[]
+
+=== FisheryZone
+.Attributes
+include::sources/v2.0.0/features/FisheryZone.adoc[]
+
+=== FishingFacility
+.Attributes
+include::sources/v2.0.0/features/FishingFacility.adoc[]
+
+=== FishingGround
+.Attributes
+include::sources/v2.0.0/features/FishingGround.adoc[]
+
+=== FloatingDock
+.Attributes
+include::sources/v2.0.0/features/FloatingDock.adoc[]
+
+=== FogSignal
+.Attributes
+include::sources/v2.0.0/features/FogSignal.adoc[]
+
+=== FortifiedStructure
+.Attributes
+include::sources/v2.0.0/features/FortifiedStructure.adoc[]
+
+=== FoulGround
+.Attributes
+include::sources/v2.0.0/features/FoulGround.adoc[]
+
+=== FreePortArea
+.Attributes
+include::sources/v2.0.0/features/FreePortArea.adoc[]
+
+=== Gate
+.Attributes
+include::sources/v2.0.0/features/Gate.adoc[]
+
+=== Gridiron
+.Attributes
+include::sources/v2.0.0/features/Gridiron.adoc[]
+
+=== HarbourAreaAdministrative
+.Attributes
+include::sources/v2.0.0/features/HarbourAreaAdministrative.adoc[]
+
+=== HarbourFacility
+.Attributes
+include::sources/v2.0.0/features/HarbourFacility.adoc[]
+
+=== Helipad
+.Attributes
+include::sources/v2.0.0/features/Helipad.adoc[]
+
+=== Hulk
+.Attributes
+include::sources/v2.0.0/features/Hulk.adoc[]
+
+=== IceArea
+.Attributes
+include::sources/v2.0.0/features/IceArea.adoc[]
+
+=== InformationArea
+.Attributes
+include::sources/v2.0.0/features/InformationArea.adoc[]
+
+=== InshoreTrafficZone
+.Attributes
+include::sources/v2.0.0/features/InshoreTrafficZone.adoc[]
+
+=== InstallationBuoy
+.Attributes
+include::sources/v2.0.0/features/InstallationBuoy.adoc[]
+
+=== IslandGroup
+.Attributes
+include::sources/v2.0.0/features/IslandGroup.adoc[]
+
+=== IsolatedDangerBeacon
+.Attributes
+include::sources/v2.0.0/features/IsolatedDangerBeacon.adoc[]
+
+=== IsolatedDangerBuoy
+.Attributes
+include::sources/v2.0.0/features/IsolatedDangerBuoy.adoc[]
+
+=== Lake
+.Attributes
+include::sources/v2.0.0/features/Lake.adoc[]
+
+=== LandArea
+.Attributes
+include::sources/v2.0.0/features/LandArea.adoc[]
+
+=== LandElevation
+.Attributes
+include::sources/v2.0.0/features/LandElevation.adoc[]
+
+=== LandRegion
+.Attributes
+include::sources/v2.0.0/features/LandRegion.adoc[]
+
+=== Landmark
+.Attributes
+include::sources/v2.0.0/features/Landmark.adoc[]
+
+=== LateralBeacon
+.Attributes
+include::sources/v2.0.0/features/LateralBeacon.adoc[]
+
+=== LateralBuoy
+.Attributes
+include::sources/v2.0.0/features/LateralBuoy.adoc[]
+
+=== LightAirObstruction
+.Attributes
+include::sources/v2.0.0/features/LightAirObstruction.adoc[]
+
+=== LightAllAround
+.Attributes
+include::sources/v2.0.0/features/LightAllAround.adoc[]
+
+=== LightFloat
+.Attributes
+include::sources/v2.0.0/features/LightFloat.adoc[]
+
+=== LightFogDetector
+.Attributes
+include::sources/v2.0.0/features/LightFogDetector.adoc[]
+
 === LightSectored
 .Attributes
 include::sources/v2.0.0/features/LightSectored.adoc[]
 
-=== Conveyoer
+=== LightVessel
 .Attributes
-include::sources/v2.0.0/features/Conveyor.adoc[]
+include::sources/v2.0.0/features/LightVessel.adoc[]
 
+=== LocalDirectionOfBuoyage
+.Attributes
+include::sources/v2.0.0/features/LocalDirectionOfBuoyage.adoc[]
 
-=== QuaityOfBathmerticData
+=== LocalMagneticAnomaly
+.Attributes
+include::sources/v2.0.0/features/LocalMagneticAnomaly.adoc[]
+
+=== LockBasin
+.Attributes
+include::sources/v2.0.0/features/LockBasin.adoc[]
+
+=== LogPond
+.Attributes
+include::sources/v2.0.0/features/LogPond.adoc[]
+
+=== MagneticVariation
+.Attributes
+include::sources/v2.0.0/features/MagneticVariation.adoc[]
+
+=== MarineFarmCulture
+.Attributes
+include::sources/v2.0.0/features/MarineFarmCulture.adoc[]
+
+=== MarinePollutionRegulationsArea
+.Attributes
+include::sources/v2.0.0/features/MarinePollutionRegulationsArea.adoc[]
+
+=== MilitaryPracticeArea
+.Attributes
+include::sources/v2.0.0/features/MilitaryPracticeArea.adoc[]
+
+=== MooringArea
+.Attributes
+include::sources/v2.0.0/features/MooringArea.adoc[]
+
+=== MooringBuoy
+.Attributes
+include::sources/v2.0.0/features/MooringBuoy.adoc[]
+
+=== MooringTrot
+.Attributes
+include::sources/v2.0.0/features/MooringTrot.adoc[]
+
+=== NavigationLine
+.Attributes
+include::sources/v2.0.0/features/NavigationLine.adoc[]
+
+=== NavigationalSystemOfMarks
+.Attributes
+include::sources/v2.0.0/features/NavigationalSystemOfMarks.adoc[]
+
+=== Obstruction
+.Attributes
+include::sources/v2.0.0/features/Obstruction.adoc[]
+
+=== OffshorePlatform
+.Attributes
+include::sources/v2.0.0/features/OffshorePlatform.adoc[]
+
+=== OffshoreProductionArea
+.Attributes
+include::sources/v2.0.0/features/OffshoreProductionArea.adoc[]
+
+=== OilBarrier
+.Attributes
+include::sources/v2.0.0/features/OilBarrier.adoc[]
+
+=== PhysicalAISAidToNavigation
+.Attributes
+include::sources/v2.0.0/features/PhysicalAISAidToNavigation.adoc[]
+
+=== Pile
+.Attributes
+include::sources/v2.0.0/features/Pile.adoc[]
+
+=== PilotBoardingPlace
+.Attributes
+include::sources/v2.0.0/features/PilotBoardingPlace.adoc[]
+
+=== PilotageDistrict
+.Attributes
+include::sources/v2.0.0/features/PilotageDistrict.adoc[]
+
+=== PipelineOverhead
+.Attributes
+include::sources/v2.0.0/features/PipelineOverhead.adoc[]
+
+=== PipelineSubmarineOnLand
+.Attributes
+include::sources/v2.0.0/features/PipelineSubmarineOnLand.adoc[]
+
+=== Pontoon
+.Attributes
+include::sources/v2.0.0/features/Pontoon.adoc[]
+
+=== PrecautionaryArea
+.Attributes
+include::sources/v2.0.0/features/PrecautionaryArea.adoc[]
+
+=== ProductionStorageArea
+.Attributes
+include::sources/v2.0.0/features/ProductionStorageArea.adoc[]
+
+=== PylonBridgeSupport
+.Attributes
+include::sources/v2.0.0/features/PylonBridgeSupport.adoc[]
+
+=== QualityOfBathymetricData
 .Attributes
 include::sources/v2.0.0/features/QualityOfBathymetricData.adoc[]
 
+=== QualityOfNonBathymetricData
+.Attributes
+include::sources/v2.0.0/features/QualityOfNonBathymetricData.adoc[]
+
+=== QualityOfSurvey
+.Attributes
+include::sources/v2.0.0/features/QualityOfSurvey.adoc[]
+
+=== RadarLine
+.Attributes
+include::sources/v2.0.0/features/RadarLine.adoc[]
+
+=== RadarRange
+.Attributes
+include::sources/v2.0.0/features/RadarRange.adoc[]
+
+=== RadarReflector
+.Attributes
+include::sources/v2.0.0/features/RadarReflector.adoc[]
+
+=== RadarStation
+.Attributes
+include::sources/v2.0.0/features/RadarStation.adoc[]
+
+=== RadarTransponderBeacon
+.Attributes
+include::sources/v2.0.0/features/RadarTransponderBeacon.adoc[]
+
+=== RadioCallingInPoint
+.Attributes
+include::sources/v2.0.0/features/RadioCallingInPoint.adoc[]
+
+=== RadioStation
+.Attributes
+include::sources/v2.0.0/features/RadioStation.adoc[]
+
+=== Railway
+.Attributes
+include::sources/v2.0.0/features/Railway.adoc[]
+
+=== RangeSystem
+.Attributes
+include::sources/v2.0.0/features/RangeSystem.adoc[]
+
+=== Rapids
+.Attributes
+include::sources/v2.0.0/features/Rapids.adoc[]
+
+=== RecommendedRouteCentreline
+.Attributes
+include::sources/v2.0.0/features/RecommendedRouteCentreline.adoc[]
+
+=== RecommendedTrack
+.Attributes
+include::sources/v2.0.0/features/RecommendedTrack.adoc[]
+
+=== RecommendedTrafficLanePart
+.Attributes
+include::sources/v2.0.0/features/RecommendedTrafficLanePart.adoc[]
+
+=== RescueStation
+.Attributes
+include::sources/v2.0.0/features/RescueStation.adoc[]
+
+=== RestrictedArea
+.Attributes
+include::sources/v2.0.0/features/RestrictedArea.adoc[]
+
+=== Retroreflector
+.Attributes
+include::sources/v2.0.0/features/Retroreflector.adoc[]
+
+=== River
+.Attributes
+include::sources/v2.0.0/features/River.adoc[]
+
+=== Road
+.Attributes
+include::sources/v2.0.0/features/Road.adoc[]
+
+=== Runway
+.Attributes
+include::sources/v2.0.0/features/Runway.adoc[]
+
+=== SafeWaterBeacon
+.Attributes
+include::sources/v2.0.0/features/SafeWaterBeacon.adoc[]
+
+=== SafeWaterBuoy
+.Attributes
+include::sources/v2.0.0/features/SafeWaterBuoy.adoc[]
+
+=== Sandwave
+.Attributes
+include::sources/v2.0.0/features/Sandwave.adoc[]
+
+=== SeaAreaNamedWaterArea
+.Attributes
+include::sources/v2.0.0/features/SeaAreaNamedWaterArea.adoc[]
+
+=== SeabedArea
+.Attributes
+include::sources/v2.0.0/features/SeabedArea.adoc[]
+
+=== Seagrass
+.Attributes
+include::sources/v2.0.0/features/Seagrass.adoc[]
+
+=== SeaplaneLandingArea
+.Attributes
+include::sources/v2.0.0/features/SeaplaneLandingArea.adoc[]
+
+=== SeparationZoneOrLine
+.Attributes
+include::sources/v2.0.0/features/SeparationZoneOrLine.adoc[]
+
+=== ShorelineConstruction
+.Attributes
+include::sources/v2.0.0/features/ShorelineConstruction.adoc[]
+
+=== SignalStationTraffic
+.Attributes
+include::sources/v2.0.0/features/SignalStationTraffic.adoc[]
+
+=== SignalStationWarning
+.Attributes
+include::sources/v2.0.0/features/SignalStationWarning.adoc[]
+
+=== SiloTank
+.Attributes
+include::sources/v2.0.0/features/SiloTank.adoc[]
+
+=== SlopeTopline
+.Attributes
+include::sources/v2.0.0/features/SlopeTopline.adoc[]
+
+=== SlopingGround
+.Attributes
+include::sources/v2.0.0/features/SlopingGround.adoc[]
+
+=== SmallCraftFacility
+.Attributes
+include::sources/v2.0.0/features/SmallCraftFacility.adoc[]
+
+=== Sounding
+.Attributes
+include::sources/v2.0.0/features/Sounding.adoc[]
+
+=== SoundingDatum
+.Attributes
+include::sources/v2.0.0/features/SoundingDatum.adoc[]
+
+=== SpanFixed
+.Attributes
+include::sources/v2.0.0/features/SpanFixed.adoc[]
+
+=== SpanOpening
+.Attributes
+include::sources/v2.0.0/features/SpanOpening.adoc[]
+
+=== SpecialPurposeGeneralBeacon
+.Attributes
+include::sources/v2.0.0/features/SpecialPurposeGeneralBeacon.adoc[]
+
+=== SpecialPurposeGeneralBuoy
+.Attributes
+include::sources/v2.0.0/features/SpecialPurposeGeneralBuoy.adoc[]
+
+=== Spring
+.Attributes
+include::sources/v2.0.0/features/Spring.adoc[]
+
+=== StraightTerritorialSeaBaseline
+.Attributes
+include::sources/v2.0.0/features/StraightTerritorialSeaBaseline.adoc[]
+
+=== StructureOverNavigableWater
+.Attributes
+include::sources/v2.0.0/features/StructureOverNavigableWater.adoc[]
+
+=== SubmarinePipelineArea
+.Attributes
+include::sources/v2.0.0/features/SubmarinePipelineArea.adoc[]
+
+=== SubmarineTransitLane
+.Attributes
+include::sources/v2.0.0/features/SubmarineTransitLane.adoc[]
+
+=== SweptArea
+.Attributes
+include::sources/v2.0.0/features/SweptArea.adoc[]
+
+=== TerritorialSeaArea
+.Attributes
+include::sources/v2.0.0/features/TerritorialSeaArea.adoc[]
+
+=== TextPlacement
+.Attributes
+include::sources/v2.0.0/features/TextPlacement.adoc[]
+
+=== TidalStreamFloodEbb
+.Attributes
+include::sources/v2.0.0/features/TidalStreamFloodEbb.adoc[]
+
+=== TidalStreamPanelData
+.Attributes
+include::sources/v2.0.0/features/TidalStreamPanelData.adoc[]
+
+=== Tideway
+.Attributes
+include::sources/v2.0.0/features/Tideway.adoc[]
+
+=== TrafficSeparationScheme
+.Attributes
+include::sources/v2.0.0/features/TrafficSeparationScheme.adoc[]
+
+=== TrafficSeparationSchemeBoundary
+.Attributes
+include::sources/v2.0.0/features/TrafficSeparationSchemeBoundary.adoc[]
+
+=== TrafficSeparationSchemeCrossing
+.Attributes
+include::sources/v2.0.0/features/TrafficSeparationSchemeCrossing.adoc[]
+
+=== TrafficSeparationSchemeLanePart
+.Attributes
+include::sources/v2.0.0/features/TrafficSeparationSchemeLanePart.adoc[]
+
+=== TrafficSeparationSchemeRoundabout
+.Attributes
+include::sources/v2.0.0/features/TrafficSeparationSchemeRoundabout.adoc[]
+
+=== Tunnel
+.Attributes
+include::sources/v2.0.0/features/Tunnel.adoc[]
+
+=== TwoWayRoute
+.Attributes
+include::sources/v2.0.0/features/TwoWayRoute.adoc[]
+
+=== TwoWayRoutePart
+.Attributes
+include::sources/v2.0.0/features/TwoWayRoutePart.adoc[]
+
+=== UnderwaterAwashRock
+.Attributes
+include::sources/v2.0.0/features/UnderwaterAwashRock.adoc[]
+
+=== UnsurveyedArea
+.Attributes
+include::sources/v2.0.0/features/UnsurveyedArea.adoc[]
+
+=== UpdateInformation
+.Attributes
+include::sources/v2.0.0/features/UpdateInformation.adoc[]
+
+=== Vegetation
+.Attributes
+include::sources/v2.0.0/features/Vegetation.adoc[]
+
+=== VerticalDatumOfData
+.Attributes
+include::sources/v2.0.0/features/VerticalDatumOfData.adoc[]
+
+=== VesselTrafficServiceArea
+.Attributes
+include::sources/v2.0.0/features/VesselTrafficServiceArea.adoc[]
+
+=== VirtualAISAidToNavigation
+.Attributes
+include::sources/v2.0.0/features/VirtualAISAidToNavigation.adoc[]
+
+=== WaterTurbulence
+.Attributes
+include::sources/v2.0.0/features/WaterTurbulence.adoc[]
+
+=== Waterfall
+.Attributes
+include::sources/v2.0.0/features/Waterfall.adoc[]
+
+=== WeedKelp
+.Attributes
+include::sources/v2.0.0/features/WeedKelp.adoc[]
+
+=== WindTurbine
+.Attributes
+include::sources/v2.0.0/features/WindTurbine.adoc[]
+
+=== Wreck
+.Attributes
+include::sources/v2.0.0/features/Wreck.adoc[]
 

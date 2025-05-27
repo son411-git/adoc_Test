@@ -4,18 +4,18 @@ An area, not exceeding 200 nautical miles from the baselines from which the brea
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |inDispute||BO|0,1
 |interoperabilityIdentifier||URN|0,1
-|nationality|NATION|TE|1,*
+|nationality|NATION|TE|**1,***
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/ExclusiveEconomicZone_rules.adoc[tag=ExclusiveEconomicZone]
+// include::../features_rules/ExclusiveEconomicZone_rules.adoc[tag=ExclusiveEconomicZone]

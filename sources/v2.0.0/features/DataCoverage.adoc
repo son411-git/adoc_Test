@@ -4,19 +4,19 @@ A geographical area that describes the coverage and extent of spatial objects.
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |drawingIndex||IN|0,1
 |interoperabilityIdentifier||URN|0,1
-|maximumDisplayScale|CSCALE|IN|1,1
-|minimumDisplayScale||IN|1,1
-|optimumDisplayScale|CSCALE|IN|1,1
-|information|INFORM|C|0,*
+|maximumDisplayScale|CSCALE|IN|**1,1**
+|minimumDisplayScale||IN|**1,1**
+|optimumDisplayScale|CSCALE|IN|**1,1**
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/DataCoverage_rules.adoc[tag=DataCoverage]
+// include::../features_rules/DataCoverage_rules.adoc[tag=DataCoverage]

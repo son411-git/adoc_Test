@@ -4,39 +4,39 @@ A harbour installation with a service or commercial operation of public interest
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
-|categoryOfHarbourFacility|CATHAF|EN|1,*
+|categoryOfHarbourFacility|CATHAF|EN|**1,***
 |communicationChannel|COMCHA|TE|0,*
 |condition|CONDTN|EN|0,1
-|featureName||C|0,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|0,*
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
-|fixedDateRange||C|0,1
+|**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |interoperabilityIdentifier||URN|0,1
 |natureOfConstruction|NATCON|EN|0,*
-|periodicDateRange||C|0,*
-|    dateEnd|DATEND|(S)TD|1,1
-|    dateStart|DATSTA|(S)TD|1,1
+|**periodicDateRange**||C|0,*
+|    dateEnd|DATEND|(S)TD|**1,1**
+|    dateStart|DATSTA|(S)TD|**1,1**
 |product|PRODCT|EN|0,1
 |reportedDate|SORDAT|TD|0,1
 |restriction|RESTRN|EN|0,*
 |status|STATUS|EN|0,*
-|vesselSpeedLimit||C|0,*
-|    speedLimit||(S)RE|1,1
-|    speedUnits||(S)EN|1,1
+|**vesselSpeedLimit**||C|0,*
+|    speedLimit||(S)RE|**1,1**
+|    speedUnits||(S)EN|**1,1**
 |    vesselClass||(S)TE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |pictorialRepresentation|PICREP|TE|0,1
 |===
 
-include::../features_rules/HarbourFacility_rules.adoc[tag=HarbourFacility]
+// include::../features_rules/HarbourFacility_rules.adoc[tag=HarbourFacility]

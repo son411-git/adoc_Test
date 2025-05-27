@@ -4,14 +4,14 @@ A place, generally named or numbered, where a vessel may moor or anchor.
 
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Multi.
+|Attribute |Acronym |Type |Mult.
 
 |categoryOfCargo||EN|0,*
-|featureName||C|1,*
-|    language||(S)TE|1,1
-|    name|OBJNAM|(S)TE|1,1
+|**featureName**||C|**1,***
+|    language||(S)TE|**1,1**
+|    name|OBJNAM/NOBJNM|(S)TE|**1,1**
 |    nameUsage||(S)EN|0,1
-|fixedDateRange||C|0,1
+|**fixedDateRange**||C|0,1
 |    dateEnd|DATEND|(S)TD|0,1
 |    dateStart|DATSTA|(S)TD|0,1
 |horizontalClearanceLength||RE|0,1
@@ -19,21 +19,21 @@ A place, generally named or numbered, where a vessel may moor or anchor.
 |interoperabilityIdentifier||URN|0,1
 |maximumPermittedDraught||RE|0,1
 |minimumBerthDepth||RE|0,1
-|periodicDateRange||C|0,*
-|    dateEnd|DATEND|(S)TD|1,1
-|    dateStart|DATSTA|(S)TD|1,1
+|**periodicDateRange**||C|0,*
+|    dateEnd|DATEND|(S)TD|**1,1**
+|    dateStart|DATSTA|(S)TD|**1,1**
 |qualityOfVerticalMeasurement|QUASOU|EN|0,*
 |status|STATUS|EN|0,*
-|verticalUncertainty|SOUACC|C|0,1
-|    uncertaintyFixed||(S)RE|1,1
+|**verticalUncertainty**|SOUACC/VERACC|C|0,1
+|    uncertaintyFixed||(S)RE|**1,1**
 |    uncertaintyVariableFactor||(S)RE|0,1
 |scaleMinimum|SCAMIN|IN|0,1
-|information|INFORM|C|0,*
+|**information**|INFORM|C|0,*
 |    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    language||(S)TE|**1,1**
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/Berth_rules.adoc[tag=Berth]
+// include::../features_rules/Berth_rules.adoc[tag=Berth]
