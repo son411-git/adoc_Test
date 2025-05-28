@@ -48,4 +48,4 @@ A cardinal beacon is used in conjunction with the compass to indicate where the 
 |pictorialRepresentation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/CardinalBeacon_rules.adoc[tag=CardinalBeacon]
+include::../features_rules/CardinalBeacon_rules.adoc[tag=CardinalBeacon]

@@ -8,4 +8,45 @@
   ※ S-57에 존재하는 “M_QUAL”의 [CATZOC]와 아래 테이블의 Depth Accuracy의 매칭으로 입력
 
 image::../images/QualityOfBathmetricData_image-1.png[width=500,align=center]
+- 필수 속성인 Category of temporal variation 설정 기준
+  ※ 기본적으로 5: unlikely to change로 변환
+[cols="1,1" option=header]
+|===
+|값 | 기준
+|1 : extreme event|허리케인, 지진 등이 발생된 이후 해저를 크게 변화시킨 경우
+|2 : likely to change and significant shoaling expected|변화는 있고 중요한 영향을 미치는 경우
+|3 : likely to change but significant shoaling not expected|변화는 있지만 중요한 영향을 미치지 않는 경우
+|5 : unlikely to change|해저의 변화 가능성이 낮음
+|6 : unassessed|일시적 변동 없음
+|===
+
+.입력예시
+[cols="1,2", options="header"]
+
+|===
+
+|Attribute |Value
+|CategoryOfTemporalVariation | 5: unlikely to change
+|DataAssessment | 3: unssessed
+2+h|**featuresDetected**
+|    leastDepthOfDetectedFeaturesMeasured| true
+|    significantFeaturesDetected| true
+|    sizeOfFeaturesDetected| true
+2+h|**SurveyDateRange**
+|    DateEnd| 20121106
+|    DateStart| 20120312
+2+h|**ZoomOfCofidence**
+|    CategoryOfZoneOfConfidence| 20121106
+2+h|    HorizontalPositionUncertainty
+|        UncertaintyFixed|5
+|        UncertaintyVariableFactor|0.05
+2+h|    VerticalUncertainty
+|        UncertaintyFixed|0.5
+|        UncertaintyVariableFactor|0.01
+2+h|**Information**
+|    Language| eng
+|    Text| From ROK KHOA surveys in 2012(Scale 1:5,000)
+
+
+|===
 // end::QualityOfBathymetricData[]

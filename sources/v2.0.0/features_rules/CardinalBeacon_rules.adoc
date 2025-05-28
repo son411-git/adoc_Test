@@ -15,4 +15,41 @@
 * 입표와 두표의 항행통보 번호가 서로 다르면, **최신 항행통보 하나만 입력**
 
 image::../images/CardinalBeacon_image-1.png[width=400,align=center]
+
+.입력예시
+[cols="1,2", options="header"]
+|===
+|Attribute |Value
+
+|BeaconShape|5: pile beacon
+|CategoryOfCardinalBeaon | 4: west cradinal mark
+|Coluor | 6: yellow
+|Coluor | 2: black
+|Coluor | 5: yellow
+|ColuorPattern | 1: horizontal stripes
+|RadarConspicuous | false
+|VisualProminence | 1: visual prominence
+|Height | (삭제)
+|NatureOfConstrution | 2: concreated
+2+h|**featureName**
+|    NameUsage|1 : default name display
+|    Language|eng
+|    Name|Janghang
+2+h|**featureName**
+|    NameUsage|2 : alternate name display
+|    Language|kor
+|    Name|장항항
+|VerticalLangth | 5m
+2+h|**Information**
+|    Language| eng
+|    Text| 추가정보(영문)
+2+h|**Information**
+|    Language| kor
+|    Text| 추가정보(국문)
+2+h|**Topmark**
+|    Colour| 2:Black
+|    TopmarkDaymarkShape| 10:2 cones, point to point
+
+|===
+
 // end::CardinalBeacon[]

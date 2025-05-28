@@ -781,3 +781,17 @@ include::sources/v2.0.0/features/WindTurbine.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Wreck.adoc[]
 
+
+== associationNames
+
+=== Additional information
+=== Aids to navigation association
+
+== informationTypes
+=== ContactDetails
+=== NauticalInformation
+=== NonStandardWorkingDay
+=== ServiceHours
+=== SpatialQuality
+
+

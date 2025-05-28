@@ -45,4 +45,4 @@ A mechanical device for conveying bulk material or people using an endless movin
 |pictorialRepresentation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/Conveyor_rules.adoc[tag=Conveyor]
+include::../features_rules/Conveyor_rules.adoc[tag=Conveyor]

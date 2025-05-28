@@ -14,4 +14,110 @@
   ([DATEND]는 객체가 존재하는 마지막 날짜를 표기하는 것으로 이후에는 삭제됨을 의미함)
 - 각 속성입력에 있어 정보가 충분하지 않을 경우 Multiplicity는 (unknown)으로 입력가능
 
+image::../images/LightSectored_image-1.png[width=1000,align=center]
+
+.Light All Around
+[cols="1,1", options="header"]
+|===
+|Attribute |Value
+
+|categoryOfLight| 4: leading light
+|colour| 4: green
+|height| 12m
+
+2+h|**rhythmOfLight** 
+|    lightCharacteristic|2:flashing
+|    signalGroup| (1)
+|    signalPeriod| 4
+|lightVisibility|2: low intensity 
+
+2+h|**featureName**
+|    nameUsage| 1: default name
+|    language| eng
+|    name| Haedogyo C
+
+2+h|**featureName**
+|    nameUsage| 2: alternate name
+|    language| kor
+|    name| 해도교 교량 중앙등
+
+2+h|**featureName**
+|    nameUsage| 1: default name
+|    language| eng
+|    name| M4337.2
+
+2+h|**featureName**
+|    nameUsage| 2: alternate name
+|    language| kor
+|    name| 2161.5
+
+|majorLight| true
+|status| 7: temporary
+|valueOfNominalRange| 15
+
+|===
+
+.Light Sectored
+[cols="1,1", options="header"]
+|===
+|Attribute |Value
+
+|categoryOfLight| (unknown)
+|height| 65m
+
+2+h|**SectorCharacteristic** 
+|    lightCharacteristic|7: isophased
+|    lightsector| 하단표 참조
+|    signalgroup| (1)
+|    signalPeriod| 4
+|lightVisibility|2: low intensity 
+
+2+h|**featureName**
+|    nameUsage| 1: default name display
+|    language| eng
+|    name| KR2008.1
+
+2+h|**featureName**
+|    nameUsage| 2: alternate name display
+|    language| kor
+|    name|  2008.1
+
+|Status | 7: temporary
+
+|===
+
+.Light Sector
+[cols="1,1", options="header"]
+|===
+|Attribute |Value
+
+|colour | 4:green
+|light visibility | 8: partially obscured
+2+h|**SectorLimit**
+2+h|    SectorLimitOne
+|        SectorBearing|74
+2+h|    SectorLimitTwo
+|        SectorBearing|140
+|value of nominal range |7
+
+|===
+
+.Light Air Obstruction
+[cols="1,1", options="header"]
+|===
+|Attribute |Value
+
+|colour |3:red
+2+h|**RythmOfLight**
+|    LightCharacteristic|1:fixed
+|LightVisibility | 2: low intensity
+|===
+
+.Light Fog Dectector
+|===
+|Attribute |Value
+
+|colour |3:red
+|===
+
 // end::LightSectored[]
