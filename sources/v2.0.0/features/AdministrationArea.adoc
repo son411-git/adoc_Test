@@ -24,4 +24,4 @@ A defined area within which a jurisdiction applies. It may or may not be named.
 |pictorialRepresentation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/AdministrationArea_rules.adoc[tag=AdministrationArea]
+include::../features_rules/AdministrationArea_rules.adoc[tag=AdministrationArea]
