@@ -24,4 +24,4 @@ A route within defined limits which has been accurately surveyed for clearance o
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/DeepWaterRoute_rules.adoc[tag=DeepWaterRoute]
+include::../features_rules/DeepWaterRoute_rules.adoc[tag=DeepWaterRoute]

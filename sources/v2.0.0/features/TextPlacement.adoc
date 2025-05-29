@@ -13,4 +13,4 @@ The Text Placement feature is used in association with the Feature Name attribut
 |Scale Minimum|SCAMIN|IN|0,1
 |===
 
-// include::../features_rules/TextPlacement_rules.adoc[tag=TextPlacement]
+include::../features_rules/TextPlacement_rules.adoc[tag=TextPlacement]

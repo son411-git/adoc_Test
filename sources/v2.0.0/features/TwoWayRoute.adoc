@@ -24,4 +24,4 @@ A route within defined limits inside which two way traffic is established, aimed
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/TwoWayRoute_rules.adoc[tag=TwoWayRoute]
+include::../features_rules/TwoWayRoute_rules.adoc[tag=TwoWayRoute]

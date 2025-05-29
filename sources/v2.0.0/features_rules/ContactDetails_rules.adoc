@@ -1,0 +1,36 @@
+// tag::ContactDetails[]
+.일반기준
+- 입력된 Feature와 관련하여 연락 가능한 정보를 입력할 경우 사용하며 각 담당기관의 특성에 따라 필요한 속성만 선택하여 입력
+
+
+
+.Contact Details
+[cols="1,2", option=header]
+
+|===
+|Attribute |Value
+|Call sign|[VHF0016]
+|Communication channel|Cheju (MRCC)
+|Contact instructions|Distress, Urgency, Safety traffic reports only
+|MMSI code|004401005
+2+h|**Fixed DateRange**
+|    DateEnd|20180101
+|    DateStart|20190101
+2+h|**Frequency pair**
+|    Frequency shore station receives|2182000
+|    Frequency shore station transmits|2182000
+2+h|**Onlineresource**                     
+|    Headline|KHOA
+|    Linkage| http://www.khoa.go.kr
+|    Name of resource| Maritime Authrity
+2+h|**Telecommunications**                     
+|    Contact instructions|
+|    Telecommunication identifier| +82 64 7510112
+|    Telecommunication service| voice
+|===
+
+
+
+
+
+// end::ContactDetails[]

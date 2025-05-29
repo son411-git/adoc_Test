@@ -25,4 +25,4 @@ A routeing measure aimed at the separation of opposing streams of traffic by app
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/TrafficSeparationScheme_rules.adoc[tag=TrafficSeparationScheme]
+include::../features_rules/TrafficSeparationScheme_rules.adoc[tag=TrafficSeparationScheme]

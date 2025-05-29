@@ -1,0 +1,29 @@
+// tag::DeepWaterRoute[]
+.일반기준
+
+- 항로의 각도에 따라 별도의 피처를 생성하여 두 개 이상의 깊은수심 항로부가 하나의 항로를 나타낼 경우,
+  `Deep Water Route` 와 {Deep Water Route Aggregation} 관계 설정 +
+  ※ Relation 페이지 참조 + 
+- 이에 따른 항로명은 “Two Way Route”에 입력
+
+
+.Deep Water Route
+[cols="1,2", option=header]
+
+|===
+|Attribute |Value
+|IMO adopted | false
+2+h|**FeatureName**                     
+|    Name Usage| 1 : default name display
+|    Language| eng
+|    Name| Masan Fairway
+2+h|**FeatureName**                     
+|    Name Usage| 2: alternate name display
+|    Language| kor
+|    Name| 마산항로
+|===
+//image::../images/DeepWaterRoute_image-1.png[width=600,align=center]
+
+// end::DeepWaterRoute[]
+
+

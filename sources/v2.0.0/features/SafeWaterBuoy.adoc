@@ -42,4 +42,4 @@ A safe water buoy is used to indicate that there is navigable water around the m
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/SafeWaterBuoy_rules.adoc[tag=SafeWaterBuoy]
+include::../features_rules/SafeWaterBuoy_rules.adoc[tag=SafeWaterBuoy]

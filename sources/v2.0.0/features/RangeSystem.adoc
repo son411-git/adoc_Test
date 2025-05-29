@@ -24,4 +24,4 @@ Two or more features in the same horizontal direction, particularly those featur
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RangeSystem_rules.adoc[tag=RangeSystem]
+include::../features_rules/RangeSystem_rules.adoc[tag=RangeSystem]

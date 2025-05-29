@@ -1,0 +1,29 @@
+// tag::NauticalInformation[]
+.일반기준
+
+- 여러 피처가 동일한 정보 공유하는 경우 사용하며, 관련 피처들과 {Additional Imformation} 관계 설정(단일 피처의 고유한 정보는 각 피처의 속성에 입력)
+- [Fixed date range], [Periodic date range] 속성에 입력된 정보는 관계 설정된 개별 피처에는 적용되지 않음
+- [Information] 정보가 입력된 경우 특정 ECDIS에서 “information” 기호가 표시되므로 속성 사용을 신중히 고려해야 함
+- 필요한 경우 관련 국내기준 협의
+
+
+.Nautical Information (Additional Information Association)
+[cols="1,2", option=header]
+
+|===
+|Attribute |Value
+|IMO adopted | false
+2+h|**Information**
+|    language|eng
+|    text|See Current Tables.
+|    File Reference|101KR000010E100.TXT
+2+h|**Information**
+|    language|kor
+|    text|부근 조류예보표를 참조할 것.
+|    File Reference|101KR000010E100.TXT
+|===
+
+
+// end::NauticalInformation[]
+
+

@@ -1,12 +1,63 @@
 // tag::UpdateInformation[]
-.일반 기준
+.일반기준
 
-* 기존 전자해도 내용이 변경(업데이트) 되었을 경우 변경된 부분을 표시하기 위한 용도로 사용되며, 변경된 부분에만 입력하는 것이 원칙이고, 업데이트 유형에 따라 적절한 형태(Point, Curve, Surface)로 사용  
-* insert(기재), delete(삭제), modify(수정)인 경우 피처 형태에 따라 변경된 부분에만 “Update Information”을 입력하고 {Update Information} 관계 설정 ※ Relation 페이지 참조  
-* move(이동)인 경우 예시 4를 참조하여 3개의 “Update Information” 피처를 만들고 관계 설정  
-* “Update Information” 사용 시 더 많은 추가정보 입력이 필요하다면 [Information]을 사용하여 입력  
-* 항행통보 등으로 기존에 존재하는 Feature가 삭제되었다면 “Update Information”을 사용하여 삭제 정보를 표기  
-* 데이터셋 개정 시 더 이상 업데이트 정보를 표기할 필요가 없어지면 “Update Information”을 삭제  
-* 이전 버전과 동일한 피처가 업데이트되는 경우, 개정이 아니어도 기존의 “Update Information”을 삭제  
-* 기존 Feature가 삭제되었다는 정보를 표현하기 위해 “Update Information”을 사용한 경우, 관련된 Feature가 이미 삭제되었으므로 {Updated Information} 관계 설정 하지 않음  
+- 기존 전자해도 내용이 변경(업데이트) 되었을 경우 변경된 부분을 표시하기 위한 용도로 사용되며 변경된 부분에만 입력하는 것을 원칙으로 하며 업데이트 내용에 따라 적절한 형태(Point, Curve, Surface)로 사용 
+- insert(기재), delete(삭제), modify(수정)인 경우 피처 형태에 따라 변경된 부분에만 “Update Information”을 입력하고 {Update Information} 관계 설정  +
+  ※ Relation 페이지 참조 
+- move(이동)인 경우 example 4를 참조하여 3개의 “Update Information” 피처를 만들고 관계 설정
+
+
+[cols="1,1,1" , frame=none , grid=none]
+|===
+a|
+//image:../images/UpdateInformation_image-1.png[width=400]
+example 1 Curve +
+ - 붉은색 라인이 기재, 삭제 또는 수정된 경우, 변경된 부분(붉은색)에만 Curve 형태로 “Update Information” 입력
+a|
+//image:../images/UpdateInformation_image-2.png[width=400]
+example 2 Surface +
+ - 붉은색 영역이 기재, 삭제 또는 수정된 경우, 변경된 부분(붉은색)에만 Surface 형태로 “Update Information” 입력
+a|
+//image:../images/UpdateInformation_image-3.png[width=400]
+example 3 Point +
+ - 붉은색 포인트가 기재, 삭제 또는 수정된 경우(등질변경 포함), 변경된 부분(붉은색)에만 Point 형태로 “Update Information” 입력
+// 3+h| image::../images/UpdateInformation_image-4.png[width=400]
+3+h| example 4 Move +
+ - 원래 위치에서 삭제된 피처의 지오메트리를 사용하여 [Update type] = 2(delete) 인 “Update Informatin 생성 +
+ - 새 위치에 기재된 피처에 연결된 [Update type] = 1(insert) 인 “Update Information 생성 +
+ - no geometry 이고 [Update type] = 4(move) 인 “Update Information” 피처는 {Update Aggregation} 설정으로 위의 “삭제” 및 “삽입” “Update Information” 피처에 연결 
+|===
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Deep Water Route
+[cols="1,2", option=header]
+
+|===
+|Attribute |Value
+|IMO adopted | false
+2+h|**FeatureName**                     
+|    Name Usage| 1 : default name display
+|    Language| eng
+|    Name| Masan Fairway
+2+h|**FeatureName**                     
+|    Name Usage| 2: alternate name display
+|    Language| kor
+|    Name| 마산항로
+|===
+//image::../images/UpdateInformation_image-1.png[width=600,align=center]
+
 // end::UpdateInformation[]
+
+

@@ -1,0 +1,17 @@
+// tag::SpatialQuality[]
+.일반기준
+- 국내 전자해도에서는 개략 등심선 표현, 의심스러운 수심 표현에 사용 +
+- `Spatial Quality` 를 사용하여 Feature의 공간적인 품질을 표현할 우 해당 피처와 {Spatial Association} 관계 설정 +
+   ※ Relation 페이지 참조 
+
+.Spatial Quality
+[cols="1,2", option=header]
+
+|===
+|Attribute |Value
+|Quality of horizontal measurement|4: approximate
+|===
+
+//image::../images/SpatialQuality_image-1.png[width=600,align=center] +
+
+// end::SpatialQuality[]
