@@ -1,0 +1,17 @@
+// tag::Berth[]
+.일반기준
+- 선석은 반드시 인공해안선과 인접하여 선박이 계류할 수 있는 장소가 되어야 함
+- `Berth` 의 [Feature name]은 필수입력 속성이므로 선석 명칭 또는 번호를 필수로 입력
+
+image:../images/Berth_image-1.png[]
+
+.입력예시
+[cols="1,1" options="header"]
+|===
+|Attribute |Value
+2+h|**Feature Name**                     
+|    Name Usage| 1: default name display
+|    Language| eng
+|    Name| 2
+|===
+// end::Berth[]

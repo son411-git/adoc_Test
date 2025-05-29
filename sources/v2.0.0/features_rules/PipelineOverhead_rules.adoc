@@ -4,17 +4,17 @@
 - 대축척 해도이면서 항해 가능한 구역인 경우, [Vertical clearance fixed]를 반드시 입력
 - [Vertical clearance fixed]는 최고고조면(Highest astronomical tide) 기준으로 입력하고 조석 범위를 측정할 수 없는 지역은 평균해수면(Mean sea level)기준으로 입력 
 - [Vertical clearance fixed] 값은 meter 단위로 입력하며 10m 미만은 소수 첫째 자리까지 입력하고 이상은 소수 첫째 자리에서 반올림 
-- 사용하지 않는 “Pipeline overhead”는 [Status] = 4(미사용)으로 인코딩
+- 사용하지 않는 `Pipeline overhead` 는 [Status] = 4(미사용)으로 인코딩
 
 .입력예시
 [cols="1,2", options="header"]
 |===
 
 |Attribute |Value
-|CartegoryOfPipeline/pipe | 2: supply pipe
+|Cartegory of Pipeline/pipe | 2: supply pipe
 |Product | 3: water
-2+h|**VerticalClearanceFixed**
-|    VerticalClearance | (unknown)
+2+h|**Vertical Clearance Fixed**
+|    Vertical Clearance | (unknown)
 
 |===
 // end::PipelineOverhead[]

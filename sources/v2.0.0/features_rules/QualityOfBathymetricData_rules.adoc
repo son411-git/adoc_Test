@@ -8,8 +8,9 @@
   ※ S-57에 존재하는 “M_QUAL”의 [CATZOC]와 아래 테이블의 Depth Accuracy의 매칭으로 입력
 
 image::../images/QualityOfBathmetricData_image-1.png[width=500,align=center]
-- 필수 속성인 Category of temporal variation 설정 기준
+- 필수 속성인 [Category of temporal variation] 설정 기준 +
   ※ 기본적으로 5: unlikely to change로 변환
+  
 [cols="1,1" option=header]
 |===
 |값 | 기준
@@ -21,32 +22,29 @@ image::../images/QualityOfBathmetricData_image-1.png[width=500,align=center]
 |===
 
 .입력예시
-[cols="1,2", options="header"]
+[cols="2,2", options="header"]
 
 |===
-
 |Attribute |Value
-|CategoryOfTemporalVariation | 5: unlikely to change
+|Category of Temporal Variation | 5: unlikely to change
 |DataAssessment | 3: unssessed
-2+h|**featuresDetected**
-|    leastDepthOfDetectedFeaturesMeasured| true
-|    significantFeaturesDetected| true
-|    sizeOfFeaturesDetected| true
-2+h|**SurveyDateRange**
-|    DateEnd| 20121106
-|    DateStart| 20120312
-2+h|**ZoomOfCofidence**
-|    CategoryOfZoneOfConfidence| 20121106
-2+h|    HorizontalPositionUncertainty
-|        UncertaintyFixed|5
-|        UncertaintyVariableFactor|0.05
-2+h|    VerticalUncertainty
-|        UncertaintyFixed|0.5
-|        UncertaintyVariableFactor|0.01
+2+h|**Features Detected**
+|    Least Depth of Detected Features Measured| true
+|    Significant Features Detected| true
+|    Size of Features Detected| true
+2+h|**Survey Date Range**
+|    Date End| 20121106
+|    Date Start| 20120312
+2+h|**Zoom of Cofidence**
+|    Category of Zone of Confidence| 20121106
+2+h|    Horizontal Position Uncertainty
+|        Uncertainty Fixed|5
+|        Uncertainty Variable Factor|0.05
+2+h|    Vertical Uncertainty
+|        Uncertainty Fixed|0.5
+|        Uncertainty VariableFactor|0.01
 2+h|**Information**
 |    Language| eng
 |    Text| From ROK KHOA surveys in 2012(Scale 1:5,000)
-
-
 |===
 // end::QualityOfBathymetricData[]

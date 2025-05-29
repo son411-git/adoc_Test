@@ -1,0 +1,58 @@
+// tag LateralBuoy[]
+.일반기준
+- 측방부표는 선박이 운항하는 항로가 좌현 또는 우현을 지시하는 용도로 사용
+- 부표모양은 망대형 또는 원주형만 존재하며, 두표모양은 2개의 구체형태로만 구성됨.
+- 부표의 목적에 따라 몸체의 색상구성이 다르며, 두표 또한 좌현, 우현에 따라 색상이 구분됨.(그림 1참조) 
+- 측방부표에 설치되는 등화는 목적에 따라 구분됨.(표 1참조)
+- 측방부표가 Light객체와 함께 입력되어 등부표로 표현되는 경우 해당 등대번호는 Light객체에 입력 +
+   (등부표로 형성된 경우 등대번호가 측방부표에 입력되어 있을 경우 수정필요)
+- 부표와 등화, 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 {Structure/Equipment} 관계 설정 +
+  ※ Relation 페이지 참조
+- 부표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
+
+[cols="1,1" , frame=none , grid=none]
+|===
+a|
+[cols="2,3,1,1", options="header"]
+!===
+!구분 ! 등화리듬 !등색 ! 도색
+!좌현 ! Fl(2+1)제외한 모든 것 !녹색 !녹색 
+!좌항로 우선 !F(2+1) !홍색 !홍녹홍 
+!우현 !Fl(2+1)제외한 모든 것 !홍색 !홍색
+!우항로 우선 ! F(2+1) !녹색 !녹홍녹
+!===
+a|
+image:../images/LateralBeacon_image-1.png[width=400]
+|===
+
+.입력예시
+[cols="1,1", options="header"]
+|===
+|Attribute | Value
+|Buoy Shape | 4: pillar
+|Category of Lateral Mark | 1: port-hand lateral mark
+|Colour | 4: green
+|Colour | 3: red
+|Colour | 4: green
+|Colour Pattern | 1:horizontal stripes(필요한 경우 입력)
+|Radar Conspicuous | false
+2+h|**Feature Name**                     
+|    Name Usage| 1: default name display
+|    Language| eng
+|    Name| Busan New Port No11
+2+h|**Feature Name**                     
+|    Name Usage| 2: alternate name display
+|    Language| kor
+|    Name|부산항신항11호
+|Status |7: temporary
+2+h|**Information**
+|    Language|eng
+|    Text|추가정보(영문)
+2+h|**Information**
+|    Language|kor
+|    Text|추가정보(국문)
+2+h|**Topmark**
+|    Colour|4:green
+|    Topmark/Daymark Shape|5:cylinder
+|===
+// end LateralBuoy[]

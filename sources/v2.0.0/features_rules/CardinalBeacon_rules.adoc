@@ -1,45 +1,62 @@
 // tag::CardinalBeacon[]
 .일반기준
 
-* 입표 모양은 **망대형** 또는 **원주형**만 존재하며, 두 표 모양은 2개의 원추형 형태로만 구성됨 (그림 1 참조)
-* 몸체는 검정색과 노란색의 조합으로 구성되며, **방위에 따라 색 패턴 및 두표 모양이 다름** (표 1 참조)
-* 방위 등화는 **백색등(Q 또는 VQ 등광)**이며, [Signal group] 및 [Signal period]는 **방위별로 다름** (표 1 참조)
-* [Height]는 평균해수면에서 구조물 최상단의 높이.  
-  → 등대표상이 없는 정보이며, **S-57 전자해도에 존재하는 경우 확인 필요**
+* 입표 모양은 망대형 또는 원주형만 존재하며, 두 표 모양은 2개의 원추형 형태로만 구성됨 (그림 1 참조)
+* 몸체는 검정색과 노란색의 조합으로 구성되며, 방위에 따라 색 패턴 및 두표 모양이 다름 (표 1 참조)
+* 방위 등화는 백색등(Q 또는 VQ 등광)이며, [Signal group] 및 [Signal period]는 방위별로 다름 (표 1 참조)
+* [Height]는 평균해수면에서 구조물 최상단의 높이. +  
+  → 등대표상이 없는 정보이며, S-57 전자해도에 존재하는 경우 확인 필요
 * [Vertical Length]는 지면 기준 구조물 최상단 높이 (등대표상 포함됨)
-* [Colour]가 2개 이상 (예: 흑색, 황색, 흑색)인 경우 **[Colour Pattern] 필수 입력**
-* 방위입표가 Light 객체와 함께 입력된 경우, 등대번호는 Light 객체에 입력해야 함  
-  → 등표에 [INFORM]으로 입력된 경우라면 **수정 필요**
-* 입표와 무신호등/레이더비콘/라디오비콘 등 피처가 있을 경우 → `{Structure/Equipment}` 관계 설정  
+* [Colour]가 2개 이상 (예: 흑색, 황색, 흑색)인 경우 [Colour Pattern] 필수 입력
+* 방위입표가 Light 객체와 함께 입력된 경우, 등대번호는 Light 객체에 입력해야 함 +  
+  → 등표에 [Information]으로 입력된 경우라면 수정 필요
+* 입표와 무신호등/레이더비콘/라디오비콘 등 피처가 있을 경우 +
+  → {Structure/Equipment} 관계 설정 +
   → ※ Relation 페이지 참조
-* 입표와 두표의 항행통보 번호가 서로 다르면, **최신 항행통보 하나만 입력**
+* 입표와 두표의 항행통보 번호가 서로 다르면, 최신 항행통보 하나만 입력
 
-image::../images/CardinalBeacon_image-1.png[width=400,align=center]
+[cols="1,1" , frame=none , grid=none]
+|===
+a|
+[cols="1,1,1,1", options="header"]
+!===
+!방위 ! 등화리듬 !등색 ! 도색
+!동 ! VQ(3)5s ! 백색 ! 흑황흑 
+!서 ! VQ(9)10s +
+      Q(9)15S ! 백색 ! 흑황흑 
+!남 ! VQ(6)+LFl10s +
+      Q(6)+LFl15s ! 백색 ! 흑황흑 
+!북 ! VQ +
+      Q ! 백색 ! 흑황흑 
+!===
+a|
+image:../images/CardinalBeacon_image-1.png[width=400]
+|===
 
 .입력예시
 [cols="1,2", options="header"]
 |===
 |Attribute |Value
 
-|BeaconShape|5: pile beacon
-|CategoryOfCardinalBeaon | 4: west cradinal mark
+|Beacon Shape|5: pile beacon
+|Category Of Cardinal Beaon | 4: west cradinal mark
 |Coluor | 6: yellow
 |Coluor | 2: black
 |Coluor | 5: yellow
-|ColuorPattern | 1: horizontal stripes
-|RadarConspicuous | false
-|VisualProminence | 1: visual prominence
+|Coluor Pattern | 1: horizontal stripes
+|Radar Conspicuous | false
+|Visual Prominence | 1: visual prominence
 |Height | (삭제)
-|NatureOfConstrution | 2: concreated
-2+h|**featureName**
-|    NameUsage|1 : default name display
+|Nature Of Constrution | 2: concreated
+2+h|**Feature Name**
+|    Name Usage|1 : default name display
 |    Language|eng
 |    Name|Janghang
-2+h|**featureName**
-|    NameUsage|2 : alternate name display
+2+h|**Feature Name**
+|    Name Usage|2 : alternate name display
 |    Language|kor
-|    Name|장항항
-|VerticalLangth | 5m
+|    Name|장항
+|Vertical Langth | 5m
 2+h|**Information**
 |    Language| eng
 |    Text| 추가정보(영문)
@@ -48,7 +65,7 @@ image::../images/CardinalBeacon_image-1.png[width=400,align=center]
 |    Text| 추가정보(국문)
 2+h|**Topmark**
 |    Colour| 2:Black
-|    TopmarkDaymarkShape| 10:2 cones, point to point
+|    Topmark/Daymark Shape| 10:2 cones, point to point
 
 |===
 
