@@ -6,24 +6,24 @@ Generally, an area where the mariner has to be made aware of circumstances influ
 |===
 |Attribute |Acronym |Type |Mult.
 
-|condition|CONDTN|EN|0,1
-|**fixedDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|interoperabilityIdentifier||URN|0,1
-|**periodicDateRange**||C|0,*
-|    [.red]#dateEnd#|DATEND|(S)TD|1,1
-|    [.red]#dateStart#|DATSTA|(S)TD|1,1
-|reportedDate|SORDAT|TD|0,1
-|status|STATUS|EN|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
-|pictorialRepresentation|PICREP|TE|0,1
+|Condition|CONDTN|EN|0,1
+|**Fixed Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|0,1
+|    Date Start|DATSTA|(S)TD|0,1
+|Interoperability Identifier||URN|0,1
+|**Periodic Date Range**||C|0,*
+|    Date End|DATEND|(S)TD|1,1
+|    Date Start|DATSTA|(S)TD|1,1
+|Reported Date|SORDAT|TD|0,1
+|Status|STATUS|EN|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
+|Pictorial Representation|PICREP|TE|0,1
 |===
 
 // include::../features_rules/CautionArea_rules.adoc[tag=CautionArea]

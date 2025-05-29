@@ -6,35 +6,35 @@ A route which has been specially examined to ensure so far as possible that it i
 |===
 |Attribute |Acronym |Type |Mult.
 
-|[.red]#basedOnFixedMarks#|CATTRK|BO|1,1
-|depthRangeMinimumValue|DRVAL1|RE|0,1
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|**fixedDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|interoperabilityIdentifier||URN|0,1
-|maximumPermittedDraught||RE|0,1
-|[.red]#orientationValue#|ORIENT|RE|1,1
-|**periodicDateRange**||C|0,*
-|    [.red]#dateEnd#|DATEND|(S)TD|1,1
-|    [.red]#dateStart#|DATSTA|(S)TD|1,1
-|qualityOfVerticalMeasurement|QUASOU|EN|0,*
-|status|STATUS|EN|0,*
-|techniqueOfVerticalMeasurement|TECSOU|EN|0,*
-|[.red]#trafficFlow#|TRAFIC|EN|1,1
-|**verticalUncertainty**|SOUACC/VERACC|C|0,1
-|    [.red]#uncertaintyFixed#||(S)RE|1,1
-|    uncertaintyVariableFactor||(S)RE|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|Based On Fixed Marks|CATTRK|BO|1,1
+|Depth Range Minimum Value|DRVAL1|RE|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|**Fixed Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|0,1
+|    Date Start|DATSTA|(S)TD|0,1
+|Interoperability Identifier||URN|0,1
+|Maximum Permitted Draught||RE|0,1
+|Orientation Value|ORIENT|RE|1,1
+|**Periodic Date Range**||C|0,*
+|    Date End|DATEND|(S)TD|1,1
+|    Date Start|DATSTA|(S)TD|1,1
+|Quality of Vertical Measurement|QUASOU|EN|0,*
+|Status|STATUS|EN|0,*
+|Technique of Vertical Measurement|TECSOU|EN|0,*
+|Traffic Flow|TRAFIC|EN|1,1
+|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1
+|    Uncertainty Fixed||(S)RE|1,1
+|    Uncertainty Variable Factor||(S)RE|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/RecommendedTrack_rules.adoc[tag=RecommendedTrack]

@@ -6,37 +6,37 @@ A structure that may be swung, drawn, or lowered to block an entrance or passage
 |===
 |Attribute |Acronym |Type |Mult.
 
-|categoryOfGate|CATGAT|EN|0,1
-|condition|CONDTN|EN|0,1
-|depthRangeMinimumValue|DRVAL1|RE|0,1
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|**horizontalClearanceOpen**||C|0,1
-|    [.red]#horizontalClearanceValue#|HORCLR|(S)RE|1,1
-|    horizontalDistanceUncertainty|HORACC|(S)RE|0,1
-|interoperabilityIdentifier||URN|0,1
-|natureOfConstruction|NATCON|EN|0,*
-|qualityOfVerticalMeasurement|QUASOU|EN|0,*
-|status|STATUS|EN|0,*
-|**verticalClearanceOpen**|VERCOP|C|0,1
-|    [.red]#verticalClearanceUnlimited#||(S)BO|1,1
-|    verticalClearanceValue|VERCLR|(S)RE|0,1
-|    **verticalUncertainty**|SOUACC/VERACC|(S)C|0,1
-|        [.red]#uncertaintyFixed#||(S)RE|1,1
-|        uncertaintyVariableFactor||(S)RE|0,1
-|verticalDatum|VERDAT|EN|0,1
-|**verticalUncertainty**|SOUACC/VERACC|C|0,1
-|    [.red]#uncertaintyFixed#||(S)RE|1,1
-|    uncertaintyVariableFactor||(S)RE|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|Category of Gate|CATGAT|EN|0,1
+|Condition|CONDTN|EN|0,1
+|Depth Range Minimum Value|DRVAL1|RE|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|**Horizontal Clearance Open**||C|0,1
+|    Horizontal Clearance Value|HORCLR|(S)RE|1,1
+|    Horizontal Distance Uncertainty|HORACC|(S)RE|0,1
+|Interoperability Identifier||URN|0,1
+|Nature of Construction|NATCON|EN|0,*
+|Quality of Vertical Measurement|QUASOU|EN|0,*
+|Status|STATUS|EN|0,*
+|**Vertical Clearance Open**|VERCOP|C|0,1
+|    Vertical Clearance Unlimited||(S)BO|1,1
+|    Vertical Clearance Value|VERCLR|(S)RE|0,1
+|    **Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
+|        Uncertainty Fixed||(S)RE|1,1
+|        Uncertainty Variable Factor||(S)RE|0,1
+|Vertical Datum|VERDAT|EN|0,1
+|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1
+|    Uncertainty Fixed||(S)RE|1,1
+|    Uncertainty Variable Factor||(S)RE|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/Gate_rules.adoc[tag=Gate]

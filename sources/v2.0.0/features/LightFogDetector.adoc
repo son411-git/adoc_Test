@@ -6,38 +6,38 @@ A fog detector light is a light used to automatically determine conditions of vi
 |===
 |Attribute |Acronym |Type |Mult.
 
-|colour|COLOUR|EN|0,*
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|**fixedDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|flareBearing||IN|0,1
-|height|HEIGHT|RE|0,1
-|interoperabilityIdentifier||URN|0,1
-|**periodicDateRange**||C|0,*
-|    [.red]#dateEnd#|DATEND|(S)TD|1,1
-|    [.red]#dateStart#|DATSTA|(S)TD|1,1
-|**rhythmOfLight**||C|0,1
-|    [.red]#lightCharacteristic#|LITCHR|(S)EN|1,1
-|    signalGroup|SIGGRP|(S)TE|0,*
-|    signalPeriod|SIGPER|(S)RE|0,1
-|    **signalSequence**|SIGSEQ|(S)C|0,*
-|        [.red]#signalDuration#||(S)RE|1,1
-|        [.red]#signalStatus#||(S)EN|1,1
-|signalGeneration|SIGGEN|EN|0,1
-|status|STATUS|EN|0,*
-|verticalDatum|VERDAT|EN|0,1
-|verticalLength|VERLEN|RE|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|Colour|COLOUR|EN|0,*
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|**Fixed Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|0,1
+|    Date Start|DATSTA|(S)TD|0,1
+|Flare Bearing||IN|0,1
+|Height|HEIGHT|RE|0,1
+|Interoperability Identifier||URN|0,1
+|**Periodic Date Range**||C|0,*
+|    Date End|DATEND|(S)TD|1,1
+|    Date Start|DATSTA|(S)TD|1,1
+|**Rhythm of Light**||C|0,1
+|    Light Characteristic|LITCHR|(S)EN|1,1
+|    Signal Group|SIGGRP|(S)TE|0,*
+|    Signal Period|SIGPER|(S)RE|0,1
+|    **Signal Sequence**|SIGSEQ|(S)C|0,*
+|        Signal Duration||(S)RE|1,1
+|        Signal Status||(S)EN|1,1
+|Signal Generation|SIGGEN|EN|0,1
+|Status|STATUS|EN|0,*
+|Vertical Datum|VERDAT|EN|0,1
+|Vertical Length|VERLEN|RE|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/LightFogDetector_rules.adoc[tag=LightFogDetector]

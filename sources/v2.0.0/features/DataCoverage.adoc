@@ -6,17 +6,17 @@ A geographical area that describes the coverage and extent of spatial objects.
 |===
 |Attribute |Acronym |Type |Mult.
 
-|drawingIndex||IN|0,1
-|interoperabilityIdentifier||URN|0,1
-|[.red]#maximumDisplayScale#|CSCALE|IN|1,1
-|[.red]#minimumDisplayScale#||IN|1,1
-|[.red]#optimumDisplayScale#|CSCALE|IN|1,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|Drawing Index||IN|0,1
+|Interoperability Identifier||URN|0,1
+|Maximum Display Scale|CSCALE|IN|1,1
+|Minimum Display Scale||IN|1,1
+|Optimum Display Scale|CSCALE|IN|1,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/DataCoverage_rules.adoc[tag=DataCoverage]

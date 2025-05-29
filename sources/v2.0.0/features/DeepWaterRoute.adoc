@@ -6,22 +6,22 @@ A route within defined limits which has been accurately surveyed for clearance o
 |===
 |Attribute |Acronym |Type |Mult.
 
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|**fixedDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|iMOAdopted|CATTSS|BO|0,1
-|interoperabilityIdentifier||URN|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|**Fixed Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|0,1
+|    Date Start|DATSTA|(S)TD|0,1
+|IMO Adopted|CATTSS|BO|0,1
+|Interoperability Identifier||URN|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/DeepWaterRoute_rules.adoc[tag=DeepWaterRoute]

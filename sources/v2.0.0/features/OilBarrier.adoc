@@ -6,25 +6,25 @@ A floating barrier to stop and contain the spread of oil on a water body surface
 |===
 |Attribute |Acronym |Type |Mult.
 
-|categoryOfOilBarrier|CATOLB|EN|0,1
-|condition|CONDTN|EN|0,1
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|**fixedDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|interoperabilityIdentifier||URN|0,1
-|reportedDate|SORDAT|TD|0,1
-|status|STATUS|EN|0,*
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|Category of Oil Barrier|CATOLB|EN|0,1
+|Condition|CONDTN|EN|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|**Fixed Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|0,1
+|    Date Start|DATSTA|(S)TD|0,1
+|Interoperability Identifier||URN|0,1
+|Reported Date|SORDAT|TD|0,1
+|Status|STATUS|EN|0,*
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/OilBarrier_rules.adoc[tag=OilBarrier]

@@ -6,11 +6,11 @@ A feature which exists to support the rendering of graphics or text in order to 
 |===
 |Attribute |Acronym |Type |Mult.
 
-|drawingInstruction||TE|0,*
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
+|Drawing Instruction||TE|0,*
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
 |===
 
 // include::../features_rules/Chart1Feature_rules.adoc[tag=Chart1Feature]

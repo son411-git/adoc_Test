@@ -6,20 +6,20 @@ The Update Information metadata feature is used to represent a change to the inf
 |===
 |Attribute |Acronym |Type |Mult.
 
-|**fixedDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|interoperabilityIdentifier||URN|0,1
-|[.red]#updateNumber#||IN|1,1
-|[.red]#updateType#||EN|1,1
-|scaleMinimum|SCAMIN|IN|0,1
-|source||TE|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|**Fixed Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|0,1
+|    Date Start|DATSTA|(S)TD|0,1
+|Interoperability Identifier||URN|0,1
+|Update Number||IN|1,1
+|Update Type||EN|1,1
+|Scale Minimum|SCAMIN|IN|0,1
+|Source||TE|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/UpdateInformation_rules.adoc[tag=UpdateInformation]

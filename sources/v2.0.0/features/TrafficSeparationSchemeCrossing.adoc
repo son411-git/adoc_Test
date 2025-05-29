@@ -6,23 +6,23 @@ A defined area where traffic lanes cross.
 |===
 |Attribute |Acronym |Type |Mult.
 
-|**fixedDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|interoperabilityIdentifier||URN|0,1
-|restriction|RESTRN|EN|0,*
-|status|STATUS|EN|0,*
-|**vesselSpeedLimit**||C|0,*
-|    [.red]#speedLimit#||(S)RE|1,1
-|    [.red]#speedUnits#||(S)EN|1,1
-|    vesselClass||(S)TE|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|**Fixed Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|0,1
+|    Date Start|DATSTA|(S)TD|0,1
+|Interoperability Identifier||URN|0,1
+|Restriction|RESTRN|EN|0,*
+|Status|STATUS|EN|0,*
+|**Vessel Speed Limit**||C|0,*
+|    Speed Limit||(S)RE|1,1
+|    Speed Units||(S)EN|1,1
+|    Vessel Class||(S)TE|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/TrafficSeparationSchemeCrossing_rules.adoc[tag=TrafficSeparationSchemeCrossing]

@@ -6,40 +6,40 @@ A machine for lifting, shifting and lowering objects or materials by means of a 
 |===
 |Attribute |Acronym |Type |Mult.
 
-|categoryOfCrane|CATCRN|EN|0,1
-|colour|COLOUR|EN|0,*
-|colourPattern|COLPAT|EN|0,1
-|condition|CONDTN|EN|0,1
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|height|HEIGHT|RE|0,1
-|interoperabilityIdentifier||URN|0,1
-|liftingCapacity|LIFCAP|RE|0,1
-|**orientation**||C|0,1
-|    orientationUncertainty||(S)RE|0,1
-|    [.red]#orientationValue#|ORIENT|(S)RE|1,1
-|radarConspicuous|CONRAD|BO|0,1
-|radius|RADIUS|RE|0,1
-|status|STATUS|EN|0,*
-|**verticalClearanceFixed**|VERCLR|C|0,1
-|    [.red]#verticalClearanceValue#|VERCLR|(S)RE|1,1
-|    **verticalUncertainty**|SOUACC/VERACC|(S)C|0,1
-|        [.red]#uncertaintyFixed#||(S)RE|1,1
-|        uncertaintyVariableFactor||(S)RE|0,1
-|verticalDatum|VERDAT|EN|0,1
-|verticalLength|VERLEN|RE|0,1
-|visualProminence|CONVIS|EN|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
-|pictorialRepresentation|PICREP|TE|0,1
-|inTheWater||BO|0,1
+|Category of Crane|CATCRN|EN|0,1
+|Colour|COLOUR|EN|0,*
+|Colour Pattern|COLPAT|EN|0,1
+|Condition|CONDTN|EN|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|Height|HEIGHT|RE|0,1
+|Interoperability Identifier||URN|0,1
+|Lifting Capacity|LIFCAP|RE|0,1
+|**Orientation**||C|0,1
+|    Orientation Uncertainty||(S)RE|0,1
+|    Orientation Value|ORIENT|(S)RE|1,1
+|Radar Conspicuous|CONRAD|BO|0,1
+|Radius|RADIUS|RE|0,1
+|Status|STATUS|EN|0,*
+|**Vertical Clearance Fixed**|VERCLR|C|0,1
+|    Vertical Clearance Value|VERCLR|(S)RE|1,1
+|    **Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
+|        Uncertainty Fixed||(S)RE|1,1
+|        Uncertainty Variable Factor||(S)RE|0,1
+|Vertical Datum|VERDAT|EN|0,1
+|Vertical Length|VERLEN|RE|0,1
+|Visual Prominence|CONVIS|EN|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
+|Pictorial Representation|PICREP|TE|0,1
+|In the Water||BO|0,1
 |===
 
 // include::../features_rules/Crane_rules.adoc[tag=Crane]

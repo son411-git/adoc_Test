@@ -6,30 +6,30 @@ Approximate tidal stream characteristics given as discrete value sets at a speci
 |===
 |Attribute |Acronym |Type |Mult.
 
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|interoperabilityIdentifier||URN|0,1
-|[.red]#stationName#||TE|1,1
-|stationNumber||TE|0,1
-|**[.red]#tidalStreamPanelValues#**||C|1,*
-|    [.red]#referenceTide#||(S)EN|1,1
-|    [.red]#referenceTideType#||(S)EN|1,1
-|    streamDepth||(S)RE|0,1
-|    **[.red]#tidalStreamValue#**||(S)C|1,*
-|        **[.red]#orientation#**||(S)C|1,1
-|            orientationUncertainty||(S)RE|0,1
-|            [.red]#orientationValue#|ORIENT|(S)RE|1,1
-|        [.red]#speedMaximum#|CURVEL|(S)RE|1,1
-|        [.red]#timeRelativeToTide#||(S)RE|1,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|Interoperability Identifier||URN|0,1
+|Station Name||TE|1,1
+|Station Number||TE|0,1
+|**Tidal Stream Panel Values**||C|1,*
+|    Reference Tide||(S)EN|1,1
+|    Reference Tide Type||(S)EN|1,1
+|    Stream Depth||(S)RE|0,1
+|    **Tidal Stream Value**||(S)C|1,*
+|        **Orientation**||(S)C|1,1
+|            Orientation Uncertainty||(S)RE|0,1
+|            Orientation Value|ORIENT|(S)RE|1,1
+|        Speed Maximum|CURVEL|(S)RE|1,1
+|        Time Relative to Tide||(S)RE|1,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/TidalStreamPanelData_rules.adoc[tag=TidalStreamPanelData]

@@ -6,27 +6,27 @@ An area of a two-way route within which traffic flow is generally along one bear
 |===
 |Attribute |Acronym |Type |Mult.
 
-|basedOnFixedMarks|CATTRK|BO|0,1
-|depthRangeMinimumValue|DRVAL1|RE|0,1
-|**fixedDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|interoperabilityIdentifier||URN|0,1
-|[.red]#orientationValue#|ORIENT|RE|1,1
-|qualityOfVerticalMeasurement|QUASOU|EN|0,*
-|status|STATUS|EN|0,*
-|techniqueOfVerticalMeasurement|TECSOU|EN|0,*
-|[.red]#trafficFlow#|TRAFIC|EN|1,1
-|**verticalUncertainty**|SOUACC/VERACC|C|0,1
-|    [.red]#uncertaintyFixed#||(S)RE|1,1
-|    uncertaintyVariableFactor||(S)RE|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|Based On Fixed Marks|CATTRK|BO|0,1
+|Depth Range Minimum Value|DRVAL1|RE|0,1
+|**Fixed Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|0,1
+|    Date Start|DATSTA|(S)TD|0,1
+|Interoperability Identifier||URN|0,1
+|Orientation Value|ORIENT|RE|1,1
+|Quality of Vertical Measurement|QUASOU|EN|0,*
+|Status|STATUS|EN|0,*
+|Technique of Vertical Measurement|TECSOU|EN|0,*
+|Traffic Flow|TRAFIC|EN|1,1
+|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1
+|    Uncertainty Fixed||(S)RE|1,1
+|    Uncertainty Variable Factor||(S)RE|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/TwoWayRoutePart_rules.adoc[tag=TwoWayRoutePart]

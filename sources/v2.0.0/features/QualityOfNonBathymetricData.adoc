@@ -6,25 +6,25 @@ An area within which a uniform assessment of the quality of the non-bathymetric 
 |===
 |Attribute |Acronym |Type |Mult.
 
-|categoryOfTemporalVariation||EN|0,1
-|horizontalDistanceUncertainty|HORACC|RE|0,1
-|**[.red]#horizontalPositionUncertainty#**||C|1,1
-|    [.red]#uncertaintyFixed#||(S)RE|1,1
-|    uncertaintyVariableFactor||(S)RE|0,1
-|interoperabilityIdentifier||URN|0,1
-|orientationUncertainty||RE|0,1
-|**surveyDateRange**||C|0,1
-|    [.red]#dateEnd#|DATEND|(S)TD|1,1
-|    dateStart|DATSTA|(S)TD|0,1
-|**verticalUncertainty**|SOUACC/VERACC|C|0,1
-|    [.red]#uncertaintyFixed#||(S)RE|1,1
-|    uncertaintyVariableFactor||(S)RE|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|Category of Temporal Variation||EN|0,1
+|Horizontal Distance Uncertainty|HORACC|RE|0,1
+|**Horizontal Position Uncertainty**||C|1,1
+|    Uncertainty Fixed||(S)RE|1,1
+|    Uncertainty Variable Factor||(S)RE|0,1
+|Interoperability Identifier||URN|0,1
+|Orientation Uncertainty||RE|0,1
+|**Survey Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|1,1
+|    Date Start|DATSTA|(S)TD|0,1
+|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1
+|    Uncertainty Fixed||(S)RE|1,1
+|    Uncertainty Variable Factor||(S)RE|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/QualityOfNonBathymetricData_rules.adoc[tag=QualityOfNonBathymetricData]

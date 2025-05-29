@@ -6,28 +6,28 @@ A dyke (or dike) is an artificial embankment to contain or hold back water.
 |===
 |Attribute |Acronym |Type |Mult.
 
-|condition|CONDTN|EN|0,1
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|**fixedDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|height|HEIGHT|RE|0,1
-|interoperabilityIdentifier||URN|0,1
-|natureOfConstruction|NATCON|EN|0,*
-|radarConspicuous|CONRAD|BO|0,1
-|reportedDate|SORDAT|TD|0,1
-|verticalLength|VERLEN|RE|0,1
-|visualProminence|CONVIS|EN|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|Condition|CONDTN|EN|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|**Fixed Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|0,1
+|    Date Start|DATSTA|(S)TD|0,1
+|Height|HEIGHT|RE|0,1
+|Interoperability Identifier||URN|0,1
+|Nature of Construction|NATCON|EN|0,*
+|Radar Conspicuous|CONRAD|BO|0,1
+|Reported Date|SORDAT|TD|0,1
+|Vertical Length|VERLEN|RE|0,1
+|Visual Prominence|CONVIS|EN|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/Dyke_rules.adoc[tag=Dyke]

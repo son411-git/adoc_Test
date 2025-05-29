@@ -6,11 +6,11 @@ The Text Placement feature is used in association with the Feature Name attribut
 |===
 |Attribute |Acronym |Type |Mult.
 
-|[.red]#textOffsetBearing#||IN|1,1
-|[.red]#textOffsetDistance#||IN|1,1
-|textRotation||BO|0,1
-|textType||EN|1,2
-|scaleMinimum|SCAMIN|IN|0,1
+|Text Offset Bearing||IN|1,1
+|Text Offset Distance||IN|1,1
+|Text Rotation||BO|0,1
+|Text Type||EN|1,2
+|Scale Minimum|SCAMIN|IN|0,1
 |===
 
 // include::../features_rules/TextPlacement_rules.adoc[tag=TextPlacement]

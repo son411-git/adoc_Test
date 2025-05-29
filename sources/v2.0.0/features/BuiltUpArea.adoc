@@ -6,26 +6,26 @@ An area of land or construction over the water containing a concentration of bui
 |===
 |Attribute |Acronym |Type |Mult.
 
-|categoryOfBuiltUpArea|CATBUA|EN|0,1
-|condition|CONDTN|EN|0,1
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|height|HEIGHT|RE|0,1
-|interoperabilityIdentifier||URN|0,1
-|radarConspicuous|CONRAD|BO|0,1
-|reportedDate|SORDAT|TD|0,1
-|visualProminence|CONVIS|EN|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
-|pictorialRepresentation|PICREP|TE|0,1
-|inTheWater||BO|0,1
+|Category of Built-Up Area|CATBUA|EN|0,1
+|Condition|CONDTN|EN|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|Height|HEIGHT|RE|0,1
+|Interoperability Identifier||URN|0,1
+|Radar Conspicuous|CONRAD|BO|0,1
+|Reported Date|SORDAT|TD|0,1
+|Visual Prominence|CONVIS|EN|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
+|Pictorial Representation|PICREP|TE|0,1
+|In the Water||BO|0,1
 |===
 
 // include::../features_rules/BuiltUpArea_rules.adoc[tag=BuiltUpArea]

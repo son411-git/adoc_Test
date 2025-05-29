@@ -6,45 +6,45 @@ A safe water beacon is used to indicate that there is navigable water around the
 |===
 |Attribute |Acronym |Type |Mult.
 
-|[.red]#beaconShape#|BCNSHP|EN|1,1
-|[.red]#colour#|COLOUR|EN|1,*
-|colourPattern|COLPAT|EN|0,1
-|condition|CONDTN|EN|0,1
-|elevation|ELEVAT|RE|0,1
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|**fixedDateRange**||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|height|HEIGHT|RE|0,1
-|interoperabilityIdentifier||URN|0,1
-|marksNavigationalSystemOf|MARSYS|EN|0,1
-|natureOfConstruction|NATCON|EN|0,*
-|**periodicDateRange**||C|0,*
-|    [.red]#dateEnd#|DATEND|(S)TD|1,1
-|    [.red]#dateStart#|DATSTA|(S)TD|1,1
-|radarConspicuous|CONRAD|BO|0,1
-|reportedDate|SORDAT|TD|0,1
-|status|STATUS|EN|0,*
-|**topmark**|TOPMAR|C|0,1
-|    colour|COLOUR|(S)EN|0,*
-|    colourPattern|COLPAT|(S)EN|0,1
-|    [.red]#topmarkDaymarkShape#|TOPSHP|(S)EN|1,1
-|    **shapeInformation**||(S)C|0,*
-|        language||(S)TE|0,1
-|        [.red]#text#|INFORM/NINFOM|(S)TE|1,1
-|verticalLength|VERLEN|RE|0,1
-|visualProminence|CONVIS|EN|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
-|pictorialRepresentation|PICREP|TE|0,1
+|Beacon Shape|BCNSHP|EN|1,1
+|Colour|COLOUR|EN|1,*
+|Colour Pattern|COLPAT|EN|0,1
+|Condition|CONDTN|EN|0,1
+|Elevation|ELEVAT|RE|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|**Fixed Date Range**||C|0,1
+|    Date End|DATEND|(S)TD|0,1
+|    Date Start|DATSTA|(S)TD|0,1
+|Height|HEIGHT|RE|0,1
+|Interoperability Identifier||URN|0,1
+|Marks Navigational - System Of|MARSYS|EN|0,1
+|Nature of Construction|NATCON|EN|0,*
+|**Periodic Date Range**||C|0,*
+|    Date End|DATEND|(S)TD|1,1
+|    Date Start|DATSTA|(S)TD|1,1
+|Radar Conspicuous|CONRAD|BO|0,1
+|Reported Date|SORDAT|TD|0,1
+|Status|STATUS|EN|0,*
+|**Topmark**|TOPMAR|C|0,1
+|    Colour|COLOUR|(S)EN|0,*
+|    Colour Pattern|COLPAT|(S)EN|0,1
+|    Topmark/Daymark Shape|TOPSHP|(S)EN|1,1
+|    **Shape Information**||(S)C|0,*
+|        Language||(S)TE|0,1
+|        Text|INFORM/NINFOM|(S)TE|1,1
+|Vertical Length|VERLEN|RE|0,1
+|Visual Prominence|CONVIS|EN|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
+|Pictorial Representation|PICREP|TE|0,1
 |===
 
 // include::../features_rules/SafeWaterBeacon_rules.adoc[tag=SafeWaterBeacon]

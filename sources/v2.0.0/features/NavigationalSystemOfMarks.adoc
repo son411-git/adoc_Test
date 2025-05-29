@@ -6,14 +6,14 @@ An area within which the navigational system of marks has been established in re
 |===
 |Attribute |Acronym |Type |Mult.
 
-|[.red]#marksNavigationalSystemOf#|MARSYS|EN|1,1
-|interoperabilityIdentifier||URN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|Marks Navigational - System Of|MARSYS|EN|1,1
+|Interoperability Identifier||URN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/NavigationalSystemOfMarks_rules.adoc[tag=NavigationalSystemOfMarks]

@@ -1270,7 +1270,14 @@ h2 p, .h2 p {
   padding: 2em 0;      /* 기존 패딩으로, 너무 넓으면 1.5em 정도로 조정 */
   width: 100%;
 }
-
+/* .wrapper-top 안에 있는 모든 텍스트(직계, 자식 포함)에 적용 */
+.wrapper-top,
+.wrapper-top * {
+  color: #fff !important;
+  text-shadow: 0 2px 8px #17477288, 0 1px 0 #174772;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
 
 
 

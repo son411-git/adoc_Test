@@ -6,16 +6,16 @@ An area, not exceeding 200 nautical miles from the baselines from which the brea
 |===
 |Attribute |Acronym |Type |Mult.
 
-|inDispute||BO|0,1
-|interoperabilityIdentifier||URN|0,1
-|[.red]#nationality#|NATION|TE|1,*
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|In Dispute||BO|0,1
+|Interoperability Identifier||URN|0,1
+|Nationality|NATION|TE|1,*
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/ExclusiveEconomicZone_rules.adoc[tag=ExclusiveEconomicZone]

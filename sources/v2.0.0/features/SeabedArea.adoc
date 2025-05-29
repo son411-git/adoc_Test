@@ -6,23 +6,23 @@ A region of the seabed including the material of which it is composed and its ph
 |===
 |Attribute |Acronym |Type |Mult.
 
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|interoperabilityIdentifier||URN|0,1
-|**[.red]#surfaceCharacteristics#**||C|1,*
-|    natureOfSurface|NATSUR|(S)EN|0,1
-|    natureOfSurfaceQualifyingTerms|NATQUA|(S)EN|0,3
-|    underlyingLayer||(S)IN|0,1
-|waterLevelEffect|WATLEV|EN|0,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|Interoperability Identifier||URN|0,1
+|**Surface Characteristics**||C|1,*
+|    Nature of Surface|NATSUR|(S)EN|0,1
+|    Nature of Surface - Qualifying Terms|NATQUA|(S)EN|0,3
+|    Underlying Layer||(S)IN|0,1
+|Water Level Effect|WATLEV|EN|0,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 // include::../features_rules/SeabedArea_rules.adoc[tag=SeabedArea]

@@ -6,34 +6,34 @@ In marine navigation, anything that hinders or prevents movement, particularly a
 |===
 |Attribute |Acronym |Type |Mult.
 
-|categoryOfObstruction|CATOBS|EN|0,1
-|condition|CONDTN|EN|0,1
-|expositionOfSounding|EXPSOU|EN|0,1
-|**featureName**||C|0,*
-|    [.red]#language#||(S)TE|1,1
-|    [.red]#name#|OBJNAM/NOBJNM|(S)TE|1,1
-|    nameUsage||(S)EN|0,1
-|height|HEIGHT|RE|0,1
-|interoperabilityIdentifier||URN|0,1
-|maximumPermittedDraught||RE|0,1
-|natureOfSurface|NATSUR|EN|0,*
-|product|PRODCT|EN|0,*
-|qualityOfVerticalMeasurement|QUASOU|EN|0,*
-|reportedDate|SORDAT|TD|0,1
-|status|STATUS|EN|0,*
-|techniqueOfVerticalMeasurement|TECSOU|EN|0,*
-|valueOfSounding|VALSOU|RE|0,1
-|verticalLength|VERLEN|RE|0,1
-|[.red]#waterLevelEffect#|WATLEV|EN|1,1
-|scaleMinimum|SCAMIN|IN|0,1
-|**information**|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
-|    [.red]#language#||(S)TE|1,1
-|    text|INFORM/NINFOM|(S)TE|0,1
-|defaultClearanceDepth||RE|0,1
-|[.red]#surroundingDepth#||RE|1,1
+|Category of Obstruction|CATOBS|EN|0,1
+|Condition|CONDTN|EN|0,1
+|Exposition of Sounding|EXPSOU|EN|0,1
+|**Feature Name**||C|0,*
+|    Language||(S)TE|1,1
+|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    Name Usage||(S)EN|0,1
+|Height|HEIGHT|RE|0,1
+|Interoperability Identifier||URN|0,1
+|Maximum Permitted Draught||RE|0,1
+|Nature of Surface|NATSUR|EN|0,*
+|Product|PRODCT|EN|0,*
+|Quality of Vertical Measurement|QUASOU|EN|0,*
+|Reported Date|SORDAT|TD|0,1
+|Status|STATUS|EN|0,*
+|Technique of Vertical Measurement|TECSOU|EN|0,*
+|Value of Sounding|VALSOU|RE|0,1
+|Vertical Length|VERLEN|RE|0,1
+|Water Level Effect|WATLEV|EN|1,1
+|Scale Minimum|SCAMIN|IN|0,1
+|**Information**|INFORM|C|0,*
+|    File Locator||(S)TE|0,1
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    Headline||(S)TE|0,1
+|    Language||(S)TE|1,1
+|    Text|INFORM/NINFOM|(S)TE|0,1
+|Default Clearance Depth||RE|0,1
+|Surrounding Depth||RE|1,1
 |===
 
 // include::../features_rules/Obstruction_rules.adoc[tag=Obstruction]
