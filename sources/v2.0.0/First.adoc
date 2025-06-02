@@ -1,0 +1,39 @@
+.Description of FeatureType/InformationType
+**속성 테이블 컬럼 설명**
+
+**Attribute** +
+-객체가 가진 속성이며 SimpleAttribute와 ComplexAttribute으로 나뉘며, 볼드처리로 Complex를 표시하여 구분하였습니다.
+-SimplexAttribute의 경우 들여쓰기를 사용해 구분하였습니다.
+-Mult. 값이 1,1 1,* 2,*과 같은 필수 속성은 Attribute를 #essential 빨간색으로 표시하였습니다.
+
+**Acronym** +
+-S-57 Acronym으로 한 개 혹은 두 개의 Acronym이 적용되었습니다.
+
+**Type** +
+-각각의 속성의 입력타입입니다.
+[cols="1,4" option=header]
+|===
+a| `BO`|Boolean(논리값 True/False 선택)
+a| `EN`|Enumeration(정의된 값들 중 선택)
+a| `RE`|Real(실수)
+a| `IN`|Integer(정수)
+a| `TD`|Truncated Date(그레고리력에 의한 날짜, 부분날짜 가능능)
+a| `TE`|Text
+a| `TI`|Time(24시간에 의한 시간)
+a| `URI`|Universal Resource Identifier
+a| `URN`|Universal Resource Name
+|===
+    
+**Mult.** +
+[cols="1,1,1,1,1" frame=none, grid=none]
+|===
+a| `0,1`=해당 속성은 사용하지 않거나, 한 번만 사용할 수 있음을 의미
+a| `0,*`=해당 속성은 사용하지 않거나, 여러 번 사용할 수 있음을 의미
+a| `1,1`=해당 속성은 한 번은 무조건 사용하며, 한 번만 사용 가능을 의미
+a| `1,*`=해당 속성은 한 번은 무조건 사용하며, 여러 번 반복 가능을 의미
+a| `2,*`=해당 속성은 두 번은 무조건 사용하며, 여러 번 반복 가능을 의미
+|===
+
+**Incoding (일반 예시/입력 예시)** +
+-일반 예시 = 인코딩 상의 Feature는 `Feature`, 속성은 [Attribute], 관계 관련은 {Relation}으로 표현하였습니다. +
+-입력 예시 = Attribute와 Value 컬럼의 조합이며 Value 값은 해당 속성의 예시 데이터입니다.

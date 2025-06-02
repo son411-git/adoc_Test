@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 An area that has been determined to be clear of navigational dangers to a specified depth.
 
@@ -6,7 +6,7 @@ An area that has been determined to be clear of navigational dangers to a specif
 |===
 |Attribute |Acronym |Type |Mult.
 
-|Depth Range Minimum Value|DRVAL1|RE|1,1
+|#essential Depth Range Minimum Value|DRVAL1|RE|1,1
 |Interoperability Identifier||URN|0,1
 |Swept Date||TD|0,1
 |Scale Minimum|SCAMIN|IN|0,1
@@ -14,7 +14,7 @@ An area that has been determined to be clear of navigational dangers to a specif
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

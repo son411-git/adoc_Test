@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 Unnatural coloured areas in the sea which may or may not indicate the existence of shoals.
 
@@ -13,8 +13,8 @@ Unnatural coloured areas in the sea which may or may not indicate the existence 
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/DiscolouredWater_rules.adoc[tag=DiscolouredWater]
+include::../features_rules/DiscolouredWater_rules.adoc[tag=DiscolouredWater]

@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 The Update Information metadata feature is used to represent a change to the information shown.
 
@@ -10,16 +10,16 @@ The Update Information metadata feature is used to represent a change to the inf
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |Interoperability Identifier||URN|0,1
-|Update Number||IN|1,1
-|Update Type||EN|1,1
+|#essential Update Number||IN|1,1
+|#essential Update Type||EN|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |Source||TE|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/UpdateInformation_rules.adoc[tag=UpdateInformation]
+// include::../features_rules/UpdateInformation_rules.adoc[tag=UpdateInformation]

@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 The solid portion of the Earth's surface, as opposed to sea, water.
 
@@ -8,8 +8,8 @@ The solid portion of the Earth's surface, as opposed to sea, water.
 
 |Condition|CONDTN|EN|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
 |Reported Date|SORDAT|TD|0,1
@@ -19,7 +19,7 @@ The solid portion of the Earth's surface, as opposed to sea, water.
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

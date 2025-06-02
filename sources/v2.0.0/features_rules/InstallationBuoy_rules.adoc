@@ -1,38 +1,39 @@
 // tag::InstallationBuoy[]
-.일반기준
-- 주로 유조선 및 가스선을 위한 계선부표로 사용
-- 부표모양은 대형부이(Super buoy)로 존재하며, 두표는 사용하지 않음.
-- 일반적으로 흰색 바탕에 청색 횡선으로만 구성됨.
-- 시설장치부표가 Light 객체와 함께 입력되어 등부표로 표현되는 경우 해당 등대번호는 Light객체에 입력
-   (등부표로 형성된 경우 등대번호가 시설장치부표의 [Information] 등에 입력되어 있을 경우 수정필요)
-- 부표와 등화, 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 {Structure/Equipment} 관계 설정
-  ※ Relation 페이지 참조
+===== Remark
 
-.입력예시
-[cols="1,2", options="header"]
+===== Example
+[cols="20,10,5,5,20", options="header"]
 |===
-|Attribute |Value
+|Attribute |Acronym |Type |Mult. |Value
 
-|Beacon Shape|7:Super buoy
-|Coluor | 1: white
-|Coluor | 3: red
-|Coluor | 1: white
-|Coluor Pattern | 1: horizontal stripes
-|Radar Conspicuous | false
-2+h|**Feature Name**
-|    Name Usage|1 : default name display
-|    Language|eng
-|    Name|Ulsan Hang NoC
-2+h|**Feature Name**
-|    Name Usage|2 : alternate name display
-|    Language|kor
-|    Name|울산항 SK C호 계선
-2+h|**Information**
-|    Language| eng
-|    Text| 추가정보(영문)
-2+h|**Information**
-|    Language| kor
-|    Text| 추가정보(국문)
+|#essential Buoy Shape|BOYSHP|EN|1,1| 
+|Category of Installation Buoy|CATINB|EN|0,1| 
+|#essential Colour|COLOUR|EN|1,*| 
+|Colour Pattern|COLPAT|EN|0,1| 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
+|    Name Usage||(S)EN|0,1| 
+|**Fixed Date Range**||C|0,1| 
+|    Date End|DATEND|(S)TD|0,1| 
+|    Date Start|DATSTA|(S)TD|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|Nature of Construction|NATCON|EN|0,*| 
+|**Periodic Date Range**||C|0,*| 
+|    #essential Date End|DATEND|(S)TD|1,1| 
+|    #essential Date Start|DATSTA|(S)TD|1,1| 
+|Product|PRODCT|EN|0,*| 
+|Radar Conspicuous|CONRAD|BO|0,1| 
+|Status|STATUS|EN|0,*| 
+|Visual Prominence|CONVIS|EN|0,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|Pictorial Representation|PICREP|TE|0,1| 
 |===
 
 // end::InstallationBuoy[]

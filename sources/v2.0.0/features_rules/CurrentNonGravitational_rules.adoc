@@ -1,0 +1,31 @@
+// tag::CurrentNonGravitational[]
+===== Remark
+- 해류는 일반적으로 방향이 일정한 물의 움직임을 설명할 때 사용하며 천문학적 조건(조석)에 영향을 받지 않음
+- 해류는 표층 해류만 입력되어져야 하며, 선박에 위험이 될 수 있는 해류를 표시하는 것이 특히 중요  
+- 천문학적 조건(조석)에 영향을 받는 해류 Feature와 구분하여 사용(아래표 참조)
+[cols="1,1,1" option="header"]
+|===
+|Current Non Gravitational | Tidel Stream-flood/ebb |Water Turbulence
+|image:../images/CurrentNonGravitational/CurrentNonGravitational_image-1[width=200] |image:../images/CurrentNonGravitational/CurrentNonGravitational_image-2[width=200] |image:../images/CurrentNonGravitational/CurrentNonGravitational_image-3[width=200]
+|===
+- 해류의 최강유속은 노트를 사용하며 소수점 첫째자리까지 입력
+- 해류의 세기와 방향이 계절에 따라 변하는 경우 해류주기를 입력하여 표현
+  · 매년 같은 날짜가 지정되는 경우 : ----MMDD
+  · 매년 같은 월이 지정되는 경우 : ----MM--
+- #A "periodicDateRange"에 해당하는 값이 있거나, 간헐적으로 발생하는 해류에는 #A "Status" = 5 : periodic/intermittent 입력
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**#essential Orientation**||C|1,1|  
+|    #essential Orientation Value|ORIENT|(S)RE|1,1| 298
+|**Periodic Date Range**||C|0,*| 
+|    #essential Date End|DATEND|(S)TD|1,1| ----09--
+|    #essential Date Start|DATSTA|(S)TD|1,1| ----07--
+|**#essential Speed**||C|1,1| 
+|    #essential Speed Maximum|CURVEL|(S)RE|1,1| 0.8
+|===
+
+// end::CurrentNonGravitational[]

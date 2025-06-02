@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 The identifying characteristics of an aid to navigation which serve to facilitate its recognition against a daylight viewing background. On those structures that do not by themselves present an adequate viewing area to be seen at the required distance, the aid is made more visible by affixing a daymark to the structure. A daymark so affixed has a distinctive colour and shape depending on the purpose of the aid.
 
@@ -7,12 +7,12 @@ The identifying characteristics of an aid to navigation which serve to facilitat
 |Attribute |Acronym |Type |Mult.
 
 |Category of Special Purpose Mark|CATSPM|EN|0,*
-|Colour|COLOUR|EN|1,*
+|#essential Colour|COLOUR|EN|1,*
 |Colour Pattern|COLPAT|EN|0,1
 |Elevation|ELEVAT|RE|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -21,23 +21,22 @@ The identifying characteristics of an aid to navigation which serve to facilitat
 |Interoperability Identifier||URN|0,1
 |Nature of Construction|NATCON|EN|0,*
 |**Periodic Date Range**||C|0,*
-|    Date End|DATEND|(S)TD|1,1
-|    Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |Radar Conspicuous|CONRAD|BO|0,1
 |Status|STATUS|EN|0,*
-|Topmark/Daymark Shape|TOPSHP|EN|1,1
+|#essential Topmark/Daymark Shape|TOPSHP|EN|1,1
 |Vertical Length|VERLEN|RE|0,1
 |**Shape Information**||C|0,*
 |    Language||(S)TE|0,1
-|    Text|INFORM/NINFOM|(S)TE|1,1
+|    #essential Text|INFORM/NINFOM|(S)TE|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===
-
-// include::../features_rules/Daymark_rules.adoc[tag=Daymark]
+include::../features_rules/Daymark_rules.adoc[tag=Daymark]

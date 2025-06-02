@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 An artificial waterway with no flow, or a controlled flow, used for navigation, or for draining or irrigating land (ditch).
 
@@ -9,14 +9,14 @@ An artificial waterway with no flow, or a controlled flow, used for navigation, 
 |Category of Canal|CATCAN|EN|0,1
 |Condition|CONDTN|EN|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |**Horizontal Clearance Fixed**||C|0,1
-|    Horizontal Clearance Value|HORCLR|(S)RE|1,1
+|    #essential Horizontal Clearance Value|HORCLR|(S)RE|1,1
 |    Horizontal Distance Uncertainty|HORACC|(S)RE|0,1
 |Horizontal Width|HORWID|RE|0,1
 |Interoperability Identifier||URN|0,1
@@ -27,8 +27,8 @@ An artificial waterway with no flow, or a controlled flow, used for navigation, 
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Canal_rules.adoc[tag=Canal]
+include::../features_rules/Canal_rules.adoc[tag=Canal]

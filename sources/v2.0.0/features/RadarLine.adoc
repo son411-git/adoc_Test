@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 Recommended tracks along which ships can be guided by coastal radar stations in the event of bad visibility.
 
@@ -7,18 +7,18 @@ Recommended tracks along which ships can be guided by coastal radar stations in 
 |Attribute |Acronym |Type |Mult.
 
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
-|Orientation Value|ORIENT|RE|1,1
+|#essential Orientation Value|ORIENT|RE|1,1
 |Status|STATUS|EN|0,*
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 An area within which a uniform assessment of the reliability of source survey information exists.
 
@@ -9,8 +9,8 @@ An area within which a uniform assessment of the reliability of source survey in
 |Depth Range Maximum Value|DRVAL2|RE|0,1
 |Depth Range Minimum Value|DRVAL1|RE|0,1
 |**Features Detected**||C|0,1
-|    Least Depth of Detected Features Measured||(S)BO|1,1
-|    Significant Features Detected||(S)BO|1,1
+|    #essential Least Depth of Detected Features Measured||(S)BO|1,1
+|    #essential Significant Features Detected||(S)BO|1,1
 |    Size of Features Detected||(S)RE|0,1
 |Full Seafloor Coverage Achieved||BO|0,1
 |Interoperability Identifier||URN|0,1
@@ -22,17 +22,17 @@ An area within which a uniform assessment of the reliability of source survey in
 |Quality of Vertical Measurement|QUASOU|EN|0,*
 |Scale Value Maximum|SCVAL1|IN|0,1
 |Scale Value Minimum|SCVAL2|IN|0,1
-|Survey Authority|SURATH|TE|1,1
-|**Survey Date Range**||C|1,1
-|    Date End|DATEND|(S)TD|1,1
+|#essential Survey Authority|SURATH|TE|1,1
+|**#essential Survey Date Range**||C|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
 |    Date Start|DATSTA|(S)TD|0,1
-|Survey Type|SURTYP|EN|1,*
+|#essential Survey Type|SURTYP|EN|1,*
 |Technique of Vertical Measurement|TECSOU|EN|0,*
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 The Continental Shelf of a coastal State comprises the seabed and subsoil of the submarine areas that extend beyond its Territorial Sea throughout the natural prolongation of its land territory to the outer edge of the continental margin, or to a distance of 200 nautical miles from the baselines from which the breadth of the Territorial Sea is measured where the outer edge of the continental margin does not extend up to that distance.
 
@@ -7,18 +7,18 @@ The Continental Shelf of a coastal State comprises the seabed and subsoil of the
 |Attribute |Acronym |Type |Mult.
 
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
-|Nationality|NATION|TE|1,*
+|#essential Nationality|NATION|TE|1,*
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/ContinentalShelfArea_rules.adoc[tag=ContinentalShelfArea]
+include::../features_rules/ContinentalShelfArea_rules.adoc[tag=ContinentalShelfArea]

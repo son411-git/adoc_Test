@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 The area within which national custom regulations are in force.
 
@@ -7,14 +7,14 @@ The area within which national custom regulations are in force.
 |Attribute |Acronym |Type |Mult.
 
 |Interoperability Identifier||URN|0,1
-|Nationality|NATION|TE|1,1
+|#essential Nationality|NATION|TE|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/CustomZone_rules.adoc[tag=CustomZone]
+include::../features_rules/CustomZone_rules.adoc[tag=CustomZone]

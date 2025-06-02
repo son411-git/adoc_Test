@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 The line where shore and water meet. Shoreline and coastline are generally used synonymously.
 
@@ -10,8 +10,8 @@ The line where shore and water meet. Shoreline and coastline are generally used 
 |Colour|COLOUR|EN|0,*
 |Elevation|ELEVAT|RE|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
 |Nature of Surface|NATSUR|EN|0,*
@@ -21,9 +21,9 @@ The line where shore and water meet. Shoreline and coastline are generally used 
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/Coastline_rules.adoc[tag=Coastline]
+include::../features_rules/Coastline_rules.adoc[tag=Coastline]

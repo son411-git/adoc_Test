@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 Approximate tidal stream characteristics given as discrete value sets at a specified interval before and/or after a high or low water.
 
@@ -7,28 +7,28 @@ Approximate tidal stream characteristics given as discrete value sets at a speci
 |Attribute |Acronym |Type |Mult.
 
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
-|Station Name||TE|1,1
+|#essential Station Name||TE|1,1
 |Station Number||TE|0,1
-|**Tidal Stream Panel Values**||C|1,*
-|    Reference Tide||(S)EN|1,1
-|    Reference Tide Type||(S)EN|1,1
+|**#essential Tidal Stream Panel Values**||C|1,*
+|    #essential Reference Tide||(S)EN|1,1
+|    #essential Reference Tide Type||(S)EN|1,1
 |    Stream Depth||(S)RE|0,1
-|    **Tidal Stream Value**||(S)C|1,*
-|        **Orientation**||(S)C|1,1
+|**    #essential Tidal Stream Value**||(S)C|1,*
+|**        #essential Orientation**||(S)C|1,1
 |            Orientation Uncertainty||(S)RE|0,1
-|            Orientation Value|ORIENT|(S)RE|1,1
-|        Speed Maximum|CURVEL|(S)RE|1,1
-|        Time Relative to Tide||(S)RE|1,1
+|            #essential Orientation Value|ORIENT|(S)RE|1,1
+|        #essential Speed Maximum|CURVEL|(S)RE|1,1
+|        #essential Time Relative to Tide||(S)RE|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

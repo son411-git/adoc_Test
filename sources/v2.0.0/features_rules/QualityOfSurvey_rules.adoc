@@ -1,10 +1,39 @@
 // tag::QualityOfSurvey[]
-.일반 기준
+===== Remark
 
-* 해당 구역의 측량원도 정보를 표현하기 위해 사용
-* 해당 측량원도가 사용된 가장 대축척 자료에만 입력하며, 해당 구역이 소축척으로 편집될 경우 소축척 전자해도에서는 “QualityOfBathymetricData”의 추가정보로 대체함(“Quality of Survey” 입력 불필요)
-* 5,000 측량원도: 6단계만 입력  
-* 25,000 측량원도: 5단계만 입력  
-* 50,000 측량원도: 4단계만 입력
-* 기존 S-57 전자해도의 [INFORM]에 입력된 축척정보는 S-101의 [Scale value maximum]로 수정 필요
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|Depth Range Maximum Value|DRVAL2|RE|0,1| 
+|Depth Range Minimum Value|DRVAL1|RE|0,1| 
+|**Features Detected**||C|0,1| 
+|    #essential Least Depth of Detected Features Measured||(S)BO|1,1| 
+|    #essential Significant Features Detected||(S)BO|1,1| 
+|    Size of Features Detected||(S)RE|0,1| 
+|Full Seafloor Coverage Achieved||BO|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|Line Spacing Maximum||IN|0,1| 
+|Line Spacing Minimum||IN|0,1| 
+|Measurement Distance Maximum|SDISMX|IN|0,1| 
+|Measurement Distance Minimum|SDISMN|IN|0,1| 
+|Quality of Horizontal Measurement|QUAPOS|EN|0,1| 
+|Quality of Vertical Measurement|QUASOU|EN|0,*| 
+|Scale Value Maximum|SCVAL1|IN|0,1| 
+|Scale Value Minimum|SCVAL2|IN|0,1| 
+|#essential Survey Authority|SURATH|TE|1,1| 
+|**#essential Survey Date Range**||C|1,1| 
+|    #essential Date End|DATEND|(S)TD|1,1| 
+|    Date Start|DATSTA|(S)TD|0,1| 
+|#essential Survey Type|SURTYP|EN|1,*| 
+|Technique of Vertical Measurement|TECSOU|EN|0,*| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|===
+
 // end::QualityOfSurvey[]

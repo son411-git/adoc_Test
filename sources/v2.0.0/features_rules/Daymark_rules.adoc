@@ -1,0 +1,19 @@
+// tag::Daymark[]
+===== Remark
+
+- 주간표지는 등화가 없으며 두표 또한 목적에 따라 없을 수도 있음.
+- 두표가 없는 경우 필수 입력이므로 (unknown)입력
+- 현재 S-57전자해도에서 ODAS로 표현된 객체만 추가정보와 항행통보 사항이 적용되어 있음.
+   (S-101에서는 #F "Daymark"의 ODAS가 삭제됨.) - ODAS는 Obstruction 또는 특수부표로만 입력가능
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+|Category of Special Purpose Mark|CATSPM|EN|0,*| 27(general warning mark)
+|#essential Colour|COLOUR|EN|1,*| 5(blue)
+|Colour Pattern|COLPAT|EN|0,1|-
+|#essential Topmark/Daymark Shape|TOPSHP|EN|1,1| (unknown)
+|===
+
+// end::Daymark[]

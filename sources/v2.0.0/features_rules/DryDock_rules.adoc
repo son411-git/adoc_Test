@@ -1,0 +1,22 @@
+// tag::DryDock[]
+===== Remark
+- 건식선거는 선박의 청소와 수리를 위한 목적이며 #F "Dry dock" 피처를 이용하여 인코딩
+- 건식선거는 Skin of earth 객체인 #F "Land Area"와 중첩해야 함
+
+image::../images/DryDock/DryDock_image-1.png[width=300]
+
+- #A "Feature name"에는 선거 번호를 입력
+- S-57에서 추가정보로 입력되어 있는 내용이 불필요한 정보일 경우 삭제필요
+  (ex. INFORM: DRY DOCK / NINFOM: 건도크)
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| No4 Dock
+|    Name Usage||(S)EN|0,1| 1: default name display
+|===
+
+// end::DryDock[]

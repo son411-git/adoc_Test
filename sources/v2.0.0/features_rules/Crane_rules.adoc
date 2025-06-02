@@ -1,0 +1,20 @@
+// tag::Crane[]
+===== Remark
+
+! 향후 필요한 내용 입력 !
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+|Category of Crane|CATCRN|EN|0,1| 4: travelling crane
+|Lifting Capacity|LIFCAP|RE|0,1| 100
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Coastal Fairway Survey in 2022
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 2022년 연안항로조사
+|===
+
+// end::Crane[]

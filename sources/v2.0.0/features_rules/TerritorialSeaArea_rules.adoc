@@ -1,0 +1,26 @@
+// tag::TerritorialSeaArea[]
+===== Remark
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|In Dispute||BO|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|#essential Nationality|NATION|TE|1,*| 
+|Restriction|RESTRN|EN|0,*| 
+|**Vessel Speed Limit**||C|0,*| 
+|    #essential Speed Limit||(S)RE|1,1| 
+|    #essential Speed Units||(S)EN|1,1| 
+|    Vessel Class||(S)TE|0,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|===
+
+// end::TerritorialSeaArea[]

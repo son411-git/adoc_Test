@@ -1,22 +1,35 @@
 // tag::PilotBoardingPlace[]
-.일반기준
-- 국가가 정한 영토나 수역의 관활 구역을 구분하기 위해서 사용
-- 현재 우리나라의 전자해도에 입력된 현황에서 보면 해상교통관제구역이나 도선사 승선구역으로 표현된 경우가 있으나 S-101전자해도에서는 각각의 용도에 맞게 변경
-`Administration Area`, `Vessel Traffic Service Area`, `Pilot Borading Place` 와 관련하여 추가정보를 입력할 경우 “NauticalInformation”을 이용해서 추가정보를 표현하며 {AdditionalInformation}관계를 형성 +
-※ Relation 페이지 참조
+===== Remark
 
-.입력예시
-[cols="1,1", options="header"]
+===== Example
+[cols="20,10,5,5,20", options="header"]
 |===
-|Attrivbute | Value
-|Category of Pilot Boarding Place | 3: Pilot comes out from shore
-2+h|**Feature Name**
-|    Name Usage|1 : default name display
-|    Language|eng
-|    Name|Massan Pilot Boarding Area
-2+h|**Feature Name**
-|    Name Usage|2 : alternate name display
-|    Language|kor
-|    Name| 마산 도선사 승선구역
+|Attribute |Acronym |Type |Mult. |Value
+
+|Category of Pilot Boarding Place|CATPIL|EN|0,1| 
+|Category of Preference||EN|0,1| 
+|Communication Channel|COMCHA|TE|0,*| 
+|Destination||TE|0,*| 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
+|    Name Usage||(S)EN|0,1| 
+|**Fixed Date Range**||C|0,1| 
+|    Date End|DATEND|(S)TD|0,1| 
+|    Date Start|DATSTA|(S)TD|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|**Periodic Date Range**||C|0,*| 
+|    #essential Date End|DATEND|(S)TD|1,1| 
+|    #essential Date Start|DATSTA|(S)TD|1,1| 
+|Pilot Movement||EN|0,*| 
+|Status|STATUS|EN|0,*| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
 |===
+
 // end::PilotBoardingPlace[]

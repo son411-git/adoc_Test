@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A transponder beacon transmitting a coded signal on radar frequency, permitting an interrogating craft to determine the bearing and range of the transponder.
 
@@ -6,32 +6,32 @@ A transponder beacon transmitting a coded signal on radar frequency, permitting 
 |===
 |Attribute |Acronym |Type |Mult.
 
-|Category of Radar Transponder Beacon|CATRTB|EN|1,1
+|#essential Category of Radar Transponder Beacon|CATRTB|EN|1,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |Interoperability Identifier||URN|0,1
 |**Periodic Date Range**||C|0,*
-|    Date End|DATEND|(S)TD|1,1
-|    Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |**Radar Wave Length**||C|0,2
-|    Radar Band||(S)TE|1,1
-|    Wave Length Value|Radar Wave Length|(S)RE|1,1
+|    #essential Radar Band||(S)TE|1,1
+|    #essential Wave Length Value|Radar Wave Length|(S)RE|1,1
 |**Sector Limit**||C|0,1
-|    **Sector Limit One**|SECTR1|(S)C|1,1
-|        Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
+|**    #essential Sector Limit One**|SECTR1|(S)C|1,1
+|        #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
 |        Sector Line Length||(S)RE|0,1
-|    **Sector Limit Two**|SECTR2|(S)C|1,1
-|        Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
+|**    #essential Sector Limit Two**|SECTR2|(S)C|1,1
+|        #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
 |        Sector Line Length||(S)RE|0,1
 |Signal Group|SIGGRP|TE|0,1
 |**Signal Sequence**|SIGSEQ|C|0,*
-|    Signal Duration||(S)RE|1,1
-|    Signal Status||(S)EN|1,1
+|    #essential Signal Duration||(S)RE|1,1
+|    #essential Signal Status||(S)EN|1,1
 |Status|STATUS|EN|0,*
 |Value of Maximum Range|VALMXR|RE|0,1
 |Scale Minimum|SCAMIN|IN|0,1
@@ -39,7 +39,7 @@ A transponder beacon transmitting a coded signal on radar frequency, permitting 
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

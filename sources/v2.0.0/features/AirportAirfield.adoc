@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A defined area on land (including any buildings, installations and equipment) intended to be used either wholly or in part for the arrival, departure and surface movement of aircraft.
 
@@ -9,8 +9,8 @@ A defined area on land (including any buildings, installations and equipment) in
 |Category of Airport/Airfield|CATAIR|EN|0,*
 |Condition|CONDTN|EN|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
 |Reported Date|SORDAT|TD|0,1
@@ -20,9 +20,9 @@ A defined area on land (including any buildings, installations and equipment) in
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/AirportAirfield_rules.adoc[tag=AirportAirfield]
+include::../features_rules/AirportAirfield_rules.adoc[tag=AirportAirfield]

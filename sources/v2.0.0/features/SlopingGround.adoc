@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 An inclined surface.
 
@@ -9,8 +9,8 @@ An inclined surface.
 |Category of Slope|CATSLO|EN|0,1
 |Colour|COLOUR|EN|0,*
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
 |Nature of Surface|NATSUR|EN|0,*
@@ -21,7 +21,7 @@ An inclined surface.
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

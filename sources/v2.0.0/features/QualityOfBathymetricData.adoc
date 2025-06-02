@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 An area within which a uniform assessment of the quality of the bathymetric data exists.
 
@@ -6,36 +6,36 @@ An area within which a uniform assessment of the quality of the bathymetric data
 |===
 |Attribute |Acronym |Type |Mult.
 
-|Category of Temporal Variation||EN|1,1
-|Data Assessment||EN|1,1
+|#essential Category of Temporal Variation||EN|1,1
+|#essential Data Assessment||EN|1,1
 |Depth Range Maximum Value|DRVAL2|RE|0,1
 |Depth Range Minimum Value|DRVAL1|RE|0,1
-|**Features Detected**||C|1,1
-|    Least Depth of Detected Features Measured||(S)BO|1,1
-|    Significant Features Detected||(S)BO|1,1
+|**#essential Features Detected**||C|1,1
+|    #essential Least Depth of Detected Features Measured||(S)BO|1,1
+|    #essential Significant Features Detected||(S)BO|1,1
 |    Size of Features Detected||(S)RE|0,1
-|Full Seafloor Coverage Achieved||BO|1,1
+|#essential Full Seafloor Coverage Achieved||BO|1,1
 |Interoperability Identifier||URN|0,1
 |**Survey Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
 |    Date Start|DATSTA|(S)TD|0,1
-|**Zone of Confidence**||C|1,*
-|    Category of Zone of Confidence In Data|CATZOC/ZOC|(S)EN|1,1
-|    **Fixed Date Range**||(S)C|0,1
+|**#essential Zone of Confidence**||C|1,*
+|    #essential Category of Zone of Confidence In Data|CATZOC/ZOC|(S)EN|1,1
+|**    Fixed Date Range**||(S)C|0,1
 |        Date End|DATEND|(S)TD|0,1
 |        Date Start|DATSTA|(S)TD|0,1
-|    **Horizontal Position Uncertainty**||(S)C|0,1
-|        Uncertainty Fixed||(S)RE|1,1
+|**    Horizontal Position Uncertainty**||(S)C|0,1
+|        #essential Uncertainty Fixed||(S)RE|1,1
 |        Uncertainty Variable Factor||(S)RE|0,1
-|    **Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
-|        Uncertainty Fixed||(S)RE|1,1
+|**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
+|        #essential Uncertainty Fixed||(S)RE|1,1
 |        Uncertainty Variable Factor||(S)RE|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-include::../features_rules/QualityOfBathymetricData_rules.adoc[tag=QualityOfBathymetricData]
+// include::../features_rules/QualityOfBathymetricData_rules.adoc[tag=QualityOfBathymetricData]

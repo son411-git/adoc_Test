@@ -1,64 +1,51 @@
 // tag::LateralBeacon[]
-.일반기준
-- 측방입표는 선박이 운항하는 항로가 좌현 또는 우현을 지시하는 용도로 사용
-- 입표모양은 망대형 또는 원주형만 존재하며, 두표 모양은 2개의 구체형태로만 구성됨
-- 입표의 목적에 따라 몸체의 색상구성이 다르며, 두표 또한 좌현, 우현에 따라 색상이 구분됨.(그림 1참조) 
-- 측방표지에 설치되는 등화는 목적에 따라 구분됨.(표 1참조)
-- 속성 [Height]는 평균해수면에서 구조물 최상단의 높이입력 (등대표상 없는 정보임) +
-  (속성 [Height]가 S-57전자해도에 존재한다면 확인필요)
-- 속성 [Vertical length]는 지면상 높이에서 구조물 최상단의 높이를 입력 (구조물 자체만의 높이 – 등대표에 제시됨) +
-  ([Height]가 입력된 경우 대부분 [Vertical length] 정보임)
-- 측방입표가 Light객체와 함께 입력되어 등표로 표현되는 경우 해당 등대번호는 Light객체에 입력 +
-   (등표로 형성된 경우 등대번호가 측방입표에 입력되어 있으면 수정필요)
-- 입표와 등화 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 {Structure/Equipment} 관계 설정 +
-  ※ Relation 페이지 참조
-- 입표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
+===== Remark
 
-[cols="1,1" , frame=none , grid=none]
+===== Example
+[cols="20,10,5,5,20", options="header"]
 |===
-a|
-[cols="2,3,1,1", options="header"]
-!===
-!구분 ! 등화리듬 !등색 ! 도색
-!좌현 ! Fl(2+1)제외한 모든 것 !녹색 !녹색 
-!좌항로 우선 !F(2+1) !홍색 !홍녹홍 
-!우현 !Fl(2+1)제외한 모든 것 !홍색 !홍색
-!우항로 우선 ! F(2+1) !녹색 !녹홍녹
-!===
-a|
-image:../images/LateralBeacon_image-1.png[width=400]
+|Attribute |Acronym |Type |Mult. |Value
+
+|#essential Beacon Shape|BCNSHP|EN|1,1| 
+|#essential Category of Lateral Mark|CATLAM|EN|1,1| 
+|#essential Colour|COLOUR|EN|1,*| 
+|Colour Pattern|COLPAT|EN|0,1| 
+|Condition|CONDTN|EN|0,1| 
+|Elevation|ELEVAT|RE|0,1| 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
+|    Name Usage||(S)EN|0,1| 
+|**Fixed Date Range**||C|0,1| 
+|    Date End|DATEND|(S)TD|0,1| 
+|    Date Start|DATSTA|(S)TD|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|Height|HEIGHT|RE|0,1| 
+|Marks Navigational - System Of|MARSYS|EN|0,1| 
+|Nature of Construction|NATCON|EN|0,*| 
+|**Periodic Date Range**||C|0,*| 
+|    #essential Date End|DATEND|(S)TD|1,1| 
+|    #essential Date Start|DATSTA|(S)TD|1,1| 
+|Radar Conspicuous|CONRAD|BO|0,1| 
+|Reported Date|SORDAT|TD|0,1| 
+|Status|STATUS|EN|0,*| 
+|**Topmark**|TOPMAR|C|0,1| 
+|    Colour|COLOUR|(S)EN|0,*| 
+|    Colour Pattern|COLPAT|(S)EN|0,1| 
+|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 
+|**    Shape Information**||(S)C|0,*| 
+|        Language||(S)TE|0,1| 
+|        #essential Text|INFORM/NINFOM|(S)TE|1,1| 
+|Vertical Length|VERLEN|RE|0,1| 
+|Visual Prominence|CONVIS|EN|0,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|Pictorial Representation|PICREP|TE|0,1| 
 |===
 
-.입력예시
-[cols="1,1", options="header"]
-|===
-|Attribute | Value
-|Beacon Shape | 5:pile beacon
-|Category of Lateral Mark | 1: port-hand lateral mark
-|Colour | 4: green
-|Colour | 3: red
-|Colour | 4: green
-|Colour Pattern | 1:horizontal stripes(필요한 경우 입력)
-|Radar Conspicuous | false
-|Visual Prominence | 1: visual prominence
-|Height | (삭제)
-2+h|**Feature Name**                     
-|    Name Usage| 1: default name display
-|    Language| eng
-|    Name| Chudo
-2+h|**Feature Name**                     
-|    Name Usage| 2: alternate name display
-|    Language| kor
-|    Name|추도 남방
-|Vertical Length | 13m
-2+h|**Information**
-|    language|eng
-|    text|추가정보(영문)
-2+h|**Information**
-|    language|kor
-|    text|추가정보(국문)
-2+h|**Topmark**
-|    Colour|4:green
-|    Topmark/Daymark Shape|5:cylinder
-|===
 // end::LateralBeacon[]

@@ -1,30 +1,31 @@
 // tag::AnchorBerth[]
-.일반기준
-- 고시 사항으로 정의되는 정박지 중 단일선박 정박지일 경우 Anchor Berth를 사용하여 인코딩 하며, 기본적으로 Point type으로 입력하되 중심 좌표와 반경이 제시되어 있으면 Area type으로 반경에 따라 입력하고 [Radius]에 반경을 입력 
-- 묘박지의 이름이나 숫자는 복합속성 `Feature name` 에 입력, 단 Group으로 있는 지정묘박지 다수가 공통의 이름을 갖는다면 `Sea Area/Named Water Area`(해역/명명된 수역) 피처로 인코딩
+===== Remark
 
-.입력예시
+- 고시 사항으로 정의되는 정박지 중 단일선박 정박지일 경우 #F "Anchor Berth"를 사용하여 인코딩 하며, 기본적으로 Point type으로 입력하되 중심 좌표와 반경이 제시되어 있으면 Area type으로 반경에 따라 입력하고 #A "Radius"에 반경을 입력 
+- 묘박지의 이름이나 숫자는 복합속성 #A "Feature name"에 입력, 단 Group으로 있는 지정묘박지 다수가 공통의 이름을 갖는다면 #F "Sea Area/Named Water Area"(해역/명명된 수역) 피처로 인코딩
 
-[cols="1,2", options="header"]
+===== Example
+[cols="20,10,5,5,20", options="header"]
 |===
-|Attribute |Value
+|Attribute |Acronym |Type |Mult. |Value
 
-|Category Of Anchorage|1: unrestricted anchorage
-2+h|**Feature Name**
-|    Name Usage|1 : default name display
-|    Language|eng
-|    Name|Temporary Anchorage
-2+h|**Feature Name**
-|    Name Usage|2 : alternate name display
-|    Language|kor
-|    Name|임시정박지
-|Radius | 500m
-|Status | 7: temporary
-2+h|**Information**
-|    Language| eng
-|    Text| 500t Downward Ship Anchor
-2+h|**Information**
-|    Language| kor
-|    Text| 500톤 이하의 선박 정박
+|Category of Anchorage|CATACH|EN|0,*| 1: unrestricted anchorage 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Temporary Anchorage
+|    Name Usage||(S)EN|0,1|  1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 임시정박지
+|    Name Usage||(S)EN|0,1|  2: alternate name display
+|Radius|RADIUS|RE|0,1| 500m 
+|Status|STATUS|EN|0,*| 7:temporary 
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| 500t Downward Ship Anchor
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 500톤 이하의 선박 정박  
 |===
+
 // end::AnchorBerth[]

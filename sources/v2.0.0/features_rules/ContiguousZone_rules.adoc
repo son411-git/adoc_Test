@@ -1,0 +1,5 @@
+// tag::ContiguousZone[]
+===== Remark
+사용하지 않는 객체입니다.
+
+// end::ContiguousZone[]

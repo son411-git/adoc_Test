@@ -1,0 +1,24 @@
+// tag::BuiltUpArea[]
+===== Remark
+
+- 대축척에서 도심지 영역(Area)이나 소축척에서 도심지 위치(Point)를 표현
+- 물 위로 확장된 경우, 해안선을 따라 분할할 필요는 없으며 #A "In the water"=true 입력
+- 단일 건물이 도심지로 입력되어 있다면 #F "Building"로 변경
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|Category of Built-Up Area|CATBUA|EN|0,1|1: urban area
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Busan 
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 부산
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|===
+
+// end::BuiltUpArea[]

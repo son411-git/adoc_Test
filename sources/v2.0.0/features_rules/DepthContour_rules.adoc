@@ -1,0 +1,17 @@
+// tag::DepthContour[]
+===== Remark
+
+- #A "Value of depth contour"에 등심선 값 필수 입력(-H, 2, 5, 10, 20, 30, 50 ,100 ....)
+- 업데이트로 등심선이 새로 인코딩되는 경우, 그에 해당하는 측량원도 정보는 #A "Information"을 사용하여 입력
+- #A "Scale minimum" 값은 누락되어 있다면 입력 - 국내 Scale minimum Step 값 확인.
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+
+|#essential Value of Depth Contour|VALDCO|RE|1,1| 10
+|===
+
+// end::DepthContour[]

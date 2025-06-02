@@ -1,0 +1,39 @@
+// tag::RecommendedRouteCentreline[]
+===== Remark
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|#essential Based On Fixed Marks|CATTRK|BO|1,1| 
+|Depth Range Minimum Value|DRVAL1|RE|0,1| 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
+|    Name Usage||(S)EN|0,1| 
+|**Fixed Date Range**||C|0,1| 
+|    Date End|DATEND|(S)TD|0,1| 
+|    Date Start|DATSTA|(S)TD|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|Orientation Value|ORIENT|RE|0,1| 
+|**Periodic Date Range**||C|0,*| 
+|    #essential Date End|DATEND|(S)TD|1,1| 
+|    #essential Date Start|DATSTA|(S)TD|1,1| 
+|Quality of Vertical Measurement|QUASOU|EN|0,*| 
+|Status|STATUS|EN|0,*| 
+|Technique of Vertical Measurement|TECSOU|EN|0,*| 
+|Traffic Flow|TRAFIC|EN|0,1| 
+|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1| 
+|    #essential Uncertainty Fixed||(S)RE|1,1| 
+|    Uncertainty Variable Factor||(S)RE|0,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|===
+
+// end::RecommendedRouteCentreline[]

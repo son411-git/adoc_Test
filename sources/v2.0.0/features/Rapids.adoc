@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 Portions of a stream with accelerated current where it descends rapidly but without a break in the slope of the bed sufficient to form a waterfall. Usually used in the plural.
 
@@ -7,8 +7,8 @@ Portions of a stream with accelerated current where it descends rapidly but with
 |Attribute |Acronym |Type |Mult.
 
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
 |Vertical Length|VERLEN|RE|0,1
@@ -17,7 +17,7 @@ Portions of a stream with accelerated current where it descends rapidly but with
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

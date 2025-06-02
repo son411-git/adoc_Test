@@ -1,0 +1,23 @@
+// tag::Coastline[]
+===== Remark
+
+- 해안선은 Area(Surface) type의 육지구역 #F "Land area" 경계에서만 존재
+- 자연해안선 #F "Coastline"과 인공해안선 #F"Shoreline Construction"은 중복될 수 없음
+- 모래안선, 자갈안선 등은 #A "Category of coastline"과 #A "Nautical of surface" 속성을 사용하여 인코딩
+- 습지역의 해안선을 인코딩하는 경우, #A "Category of coastline" = 8(marshy shore)로 입력하고 Spatial type의 #A "Quality of horizontal measurement" = 4(approximate)로 입력
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|Category of Coastline|CATCOA|EN|0,1| 1: steep coast
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1|Coastal Fairway Survey in 2022 
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 2022년 연안항로조사
+|===
+
+// end::Coastline[]

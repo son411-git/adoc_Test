@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 The Text Placement feature is used in association with the Feature Name attribute or a light description to optimize text positioning in ECDIS.
 
@@ -6,11 +6,11 @@ The Text Placement feature is used in association with the Feature Name attribut
 |===
 |Attribute |Acronym |Type |Mult.
 
-|Text Offset Bearing||IN|1,1
-|Text Offset Distance||IN|1,1
+|#essential Text Offset Bearing||IN|1,1
+|#essential Text Offset Distance||IN|1,1
 |Text Rotation||BO|0,1
 |Text Type||EN|1,2
 |Scale Minimum|SCAMIN|IN|0,1
 |===
 
-include::../features_rules/TextPlacement_rules.adoc[tag=TextPlacement]
+// include::../features_rules/TextPlacement_rules.adoc[tag=TextPlacement]

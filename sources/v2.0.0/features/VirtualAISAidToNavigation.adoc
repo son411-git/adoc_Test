@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 An Automatic Identification System (AIS) message 21 transmitted from an AIS station to simulate on navigation systems an Aid to Navigation which does not physically exist.
 
@@ -8,8 +8,8 @@ An Automatic Identification System (AIS) message 21 transmitted from an AIS stat
 
 |Estimated Range of Transmission|ESTRNG|RE|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -17,16 +17,16 @@ An Automatic Identification System (AIS) message 21 transmitted from an AIS stat
 |Interoperability Identifier||URN|0,1
 |MMSI Code||TE|0,1
 |**Periodic Date Range**||C|0,*
-|    Date End|DATEND|(S)TD|1,1
-|    Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |Status|STATUS|EN|0,1
-|Virtual AIS Aid to Navigation Type||EN|1,1
+|#essential Virtual AIS Aid to Navigation Type||EN|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A vertical construction consisting, for example, of a steel framework or pre-stressed concrete to carry cables, a bridge, etc.
 
@@ -6,13 +6,13 @@ A vertical construction consisting, for example, of a steel framework or pre-str
 |===
 |Attribute |Acronym |Type |Mult.
 
-|Category of Pylon|CATPYL|EN|1,1
+|#essential Category of Pylon|CATPYL|EN|1,1
 |Colour|COLOUR|EN|0,*
 |Colour Pattern|COLPAT|EN|0,1
 |Condition|CONDTN|EN|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -20,7 +20,7 @@ A vertical construction consisting, for example, of a steel framework or pre-str
 |Height|HEIGHT|RE|0,1
 |Interoperability Identifier||URN|0,1
 |**Multiplicity of Features**||C|0,1
-|    Multiplicity Known||(S)BO|1,1
+|    #essential Multiplicity Known||(S)BO|1,1
 |    Number of Features||(S)IN|0,1
 |Nature of Construction|NATCON|EN|0,*
 |Radar Conspicuous|CONRAD|BO|0,1
@@ -34,7 +34,7 @@ A vertical construction consisting, for example, of a steel framework or pre-str
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===

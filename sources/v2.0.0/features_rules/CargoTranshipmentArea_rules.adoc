@@ -1,0 +1,5 @@
+// tag::CargoTranshipmentArea[]
+===== Remark
+사용하지 않는 객체입니다.
+
+// end::CargoTranshipmentArea[]

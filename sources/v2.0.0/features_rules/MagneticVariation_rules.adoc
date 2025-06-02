@@ -1,6 +1,22 @@
 // tag::MagneticVariation[]
-.일반 기준
+===== Remark
 
-* 우리나라 전자해도구역이 포함된 자침편차도를 이용하여 각 Cell에 해당되는 구역의 편차 값을 입력
-* 자침편차 산정일과 산정기준 정보는 [Information]에 입력
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|Interoperability Identifier||URN|0,1| 
+|#essential Reference Year for Magnetic Variation|RYRMGV|TD|1,1| 
+|#essential Value of Annual Change in Magnetic Variation|VALACM|RE|1,1| 
+|#essential Value of Magnetic Variation|VALMAG|RE|1,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|===
+
 // end::MagneticVariation[]

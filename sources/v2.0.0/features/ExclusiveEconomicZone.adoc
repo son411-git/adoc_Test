@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 An area, not exceeding 200 nautical miles from the baselines from which the breadth of the territorial sea is measured, subject to a specific legal regime established in the United Nations Convention on the Law of the Sea under which the coastal state has certain rights and jurisdiction.
 
@@ -8,13 +8,13 @@ An area, not exceeding 200 nautical miles from the baselines from which the brea
 
 |In Dispute||BO|0,1
 |Interoperability Identifier||URN|0,1
-|Nationality|NATION|TE|1,*
+|#essential Nationality|NATION|TE|1,*
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

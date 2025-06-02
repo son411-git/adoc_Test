@@ -1,0 +1,28 @@
+// tag::CableSubmarine[]
+===== Remark
+- 해저 케이블은 저인망어선과, 해저활동 중인 선박 등의 정박에 위험이 될 수 있으므로 해도에 인코딩 필요
+- 사용 중인 해저 케이블은 수심 2000*미터까지 인코딩하고 이외는 인코딩하지 않음 
+   * 선박이 해저 케이블에 걸려 위험할 수 있는 가장 깊은 수심
+- 케이블의 고압전류로 인해 선박의 자기컴퍼스에 이상을 야기할 경우 지방자기이상 #F "Local Magnetic Anomaly"
+  피처로 입력
+- 기존 S-57전자해도의 불필요한 #A "Information"정보는 삭제함.(ex. INFORM: Submarine power line)
+
+//image::../images/CableSubmarine_image-1[width=400]
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|Buried Depth|BURDEP|RE|0,1| 5.0 m
+|Category of Cable|CATCBL|EN|0,1| 1: power line  
+|Status|STATUS|EN|0,*| 4: not in use 
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
+|===
+
+// end::CableSubmarine[]

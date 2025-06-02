@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A structure erected over a depression or an obstacle such as a body of water, railroad, etc., to provide a roadway for vehicles or pedestrians.
 
@@ -13,8 +13,8 @@ A structure erected over a depression or an obstacle such as a body of water, ra
 |Colour Pattern|COLPAT|EN|0,1
 |Condition|CONDTN|EN|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -32,9 +32,9 @@ A structure erected over a depression or an obstacle such as a body of water, ra
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/Bridge_rules.adoc[tag=Bridge]
+include::../features_rules/Bridge_rules.adoc[tag=Bridge]

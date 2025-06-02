@@ -1,50 +1,34 @@
 // tag::AnchorageArea[]
+===== Remark
 
-.일반기준
-- 정박구역의 이름이나 숫자는 복합속성 `Feature Name` 에 입력하고 정박 종류 및 제한사항 등 부가정보(외부 참조 및 그림파일 포함)는 [Information] 속성으로 입력
-- 명확한 경계가 없는 개별 추천 정박지는 Point type의 `Anchorage Area` 로 입력하고 속성 [Category of anchorage] = 1(제한되지 않은 정박), [Status] = 3(추천)으로 인코딩
-- 관계기관에 의해 정의되지 않았으나 정박지로 보고된 곳은 surface 타입으로 인코딩해서는 안 되며, [Category of anchorage] = 15(보고된 정박지)로 입력 
-- 다수의 소형선이 정박하는 구역의 경우 Surface타입의 `Anchorage Area` 로 입력하고 [Category of anchorage] = 8(Small Craft mooring area)로 입력
-- 각 속성이 S-57에서 두 개 이상으로 입력될 경우 S-101에서 [Category of anchorage]를 두 개 이상으로 입력
-- 임시정박지의 경우 [Category of anchorage] = 1(unrestricted anchorage)로 입력하고 [Status] = 7(temporary)로 입력
+- 정박구역의 이름이나 숫자는 복합속성 #A "Feature name"에 입력하고 정박 종류 및 제한사항 등 부가정보(외부 참조 및 그림파일 포함)는 #A "Information" 속성으로 입력
+- 명확한 경계가 없는 개별 추천 정박지는 Point type의 #F "Anchorage Area"로 입력하고 속성 #A "Category of anchorage" = 1(제한되지 않은 정박), #A "Status" = 3(추천)으로 인코딩
+- 관계기관에 의해 정의되지 않았으나 정박지로 보고된 곳은 surface 타입으로 인코딩해서는 안 되며, #A "Category of anchorage" = 15(보고된 정박지)로 입력 
+- 다수의 소형선이 정박하는 구역의 경우 Surface타입의 #F "Anchorage Area"로 입력하고 #A "Category of anchorage" = 8(Small Craft mooring area)로 입력
+- 각 속성이 S-57에서 두 개 이상으로 입력될 경우 S-101에서 #A "Category of anchorage"를 두 개 이상으로 입력
+- 임시정박지의 경우 #A "Category of anchorage" = 1(unrestricted anchorage)로 입력하고 #A "Status" = 7(temporary)로 입력
 
-[cols="1,1,2,1,1", option="header"]
+===== Example
+[cols="20,10,5,5,20", options="header"]
 |===
+|Attribute |Acronym |Type |Mult. |Value
 
-|No |정박지 종류 |Categorry of anchorage |Status |기타
-
-|1 |일반적 정박지 |1 |3|
-|2 |구계 |1 |7|
-|3 |대형선 정박지 |2 |-|
-|4 |폭발물 관련 정박지 |4 |-|
-|5 |검역묘지 |5 |-|
-|6 |대기정박지지 | - |6|
-
+|Category of Anchorage|CATACH|EN|0,*| 1: unrestricted anchorage  
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Bangdo
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 방도
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| eng 
+|    Text|INFORM/NINFOM|(S)TE|0,1|500t Downward Ship Anchor
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 500톤 이하의 선박 정박
+|Status|STATUS|EN|0,*|3:recommended 
 |===
-
-.입력예시
-[cols="1,2", options="header"]
-|===
-|Attribute |Value
-
-|Category Of Anchorage|1: unrestricted anchorage
-2+h|**Feature Name**
-|    Name Usage| 1: defalut name display
-|    Language| eng
-|    Name| Bangdo
-2+h|**Feature Name**
-|    Name Usage| 2: alternate name display
-|    Language| kor
-|    Name| 방도
-2+h|**Information**
-|    Language| eng
-|    Text| 500t Downward Ship Anchor
-2+h|**Information**
-|    Language| kor
-|    Text| 500톤 이하의 선박 정박
-|Status | 3: recommended
-|===
-
-
 
 // end::AnchorageArea[]

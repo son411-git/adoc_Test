@@ -1,8 +1,19 @@
 // tag::SoundingDatum[]
-.일반 기준
+===== Remark
 
-* S-57 전자해도에서 기본 수심기준면(약최저저조면)을 메타정보로 입력했으나, S-101은 “Sounding Datum” 피처를 생성하여 속성 [Vertical datum] = 11(약최저저조면)으로 인코딩
-* 수심 및 측량데이터를 포함하는 모든 부분은 “Sounding Datum” 피처로 덮여있어야 한다. (즉, “Quality of Bathymetric Data”와 동일한 영역으로 인코딩)
-* 기본 “Sounding Datum”과 다른 속성 값을 갖는 경우 별도의 “Sounding Datum” 피처로 인코딩
-* 메타 피처인 “Vertical Datum of Data”와 중첩 가능
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|Interoperability Identifier||URN|0,1| 
+|#essential Vertical Datum|VERDAT|EN|1,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|===
+
 // end::SoundingDatum[]

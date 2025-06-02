@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A barrier to check or confine anything in motion; particularly one constructed to hold back water and raise its level to form a reservoir, or to prevent flooding.
 
@@ -11,8 +11,8 @@ A barrier to check or confine anything in motion; particularly one constructed t
 |Colour Pattern|COLPAT|EN|0,1
 |Condition|CONDTN|EN|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -30,8 +30,8 @@ A barrier to check or confine anything in motion; particularly one constructed t
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Dam_rules.adoc[tag=Dam]
+include::../features_rules/Dam_rules.adoc[tag=Dam]

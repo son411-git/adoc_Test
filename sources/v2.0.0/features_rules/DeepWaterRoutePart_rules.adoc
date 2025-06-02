@@ -1,0 +1,37 @@
+// tag::DeepWaterRoutePart[]
+===== Remark
+- 깊은 수심 항로의 수심범위 최소값 #A "Depth range minimum value"은 관할기관이 공식 확인한 값이 있으면 입력, 만약 없으면 (unknown)로 입력 – 필수 속성
+- 깊은 수심 항로부가 여러 개의 각도로 구성될 경우, 각도에 따라 각각의 Feature를 생성
+- “Deep Water route”를 구성하는 모든 피처는 동일한 “Scale minimum” 값을 가져야 함
+- 두 개 이상의 #F "Deep water route part" 피처로 구성되어 하나의 깊은 수심 항로부를 표현한다면 surface type 객체인 #F "Deep water route"를 생성하여 #R "Deep Water route Aggregation" 관계 설정. +
+   ※ Relation 페이지 참조
+
+[cols="1,1", frame=none, grid=none]
+|===
+a| image:../images/DeepWaterRoutePart/DeepWaterRoutePart_image-1.png[width=300] 
+a| image:../images/DeepWaterRoutePart/DeepWaterRoutePart_image-2.png[width=300]
+|===
+
+- 항로명은 surface type 피처인 #F "Deep water route"의 #A "Feature name"에 입력하며, 단일 피처로 구성된 경우는 해당 피처의 #A "Feature name"에 입력(기존 S-57 전자해도에서 #A "Information"에 항로명이 입력된 경우 수정필요)
+- #F "Deep water route part" 피처가 #R "Deep Water route Aggregation", #R "Traffic Separation Scheme Aggregation"에 포함된 경우, #A "IMO adopted" 속성은 빈칸(Undefined)으로 입력
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|#essential Depth Range Minimum Value|DRVAL1|RE|1,1| (unknown)
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Masan Fairway
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 마산항로
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|IMO Adopted|CATTSS|BO|0,1| (Undefined)
+|#essential Orientation Value|ORIENT|RE|1,1| 220 
+|#essential Traffic Flow|TRAFIC|EN|1,1| 4: two-way 
+|===
+
+// end::DeepWaterRoutePart[]

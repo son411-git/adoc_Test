@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 An area of ice over land or water.
 
@@ -6,17 +6,17 @@ An area of ice over land or water.
 |===
 |Attribute |Acronym |Type |Mult.
 
-|Category of Ice|CATICE|EN|1,1
+|#essential Category of Ice|CATICE|EN|1,1
 |Elevation|ELEVAT|RE|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Height|HEIGHT|RE|0,1
 |Interoperability Identifier||URN|0,1
 |**Periodic Date Range**||C|0,*
-|    Date End|DATEND|(S)TD|1,1
-|    Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |Reported Date|SORDAT|TD|0,1
 |Status|STATUS|EN|0,*
 |Vertical Length|VERLEN|RE|0,1
@@ -26,7 +26,7 @@ An area of ice over land or water.
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

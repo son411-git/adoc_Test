@@ -1,51 +1,27 @@
 // tag::RangeSystem[]
-.일반기준
-- “Range system”의 명칭은 각각의 그룹화로 표현되는 용도에 따라 입력 (예시 참조)
+===== Remark
 
-[cols="1,1", frame=none, grid=none]
+===== Example
+[cols="20,10,5,5,20", options="header"]
 |===
-a|
-//image::../images/RangeSystem_image-1.png[width=600,align=center] +
-<추천항로 예시>
+|Attribute |Acronym |Type |Mult. |Value
 
-a|
-//image::../images/RangeSystem_image-2.png[width=600,align=center] +
-<속력측정구간 예시>
-|===
-
-- 관련된 피처들은 no-geometry 피처인 `Range System` 와 {Range System Aggregation} 관계 설정 +
-   ※ Relation 페이지 참조 +
-- 향후 {Range System Aggregation} 구성 시 관련 항로표지까지 포함하도록 기준 협의 필요
-
-
-.Range System(추천항로)
-[cols="1,2", option=header]
-
-|===
-|Attribute |Value
-2+h|**FeatureName**                     
-|    Name Usage| 1 : default name display
-|    Language| eng
-|    Name| Recommended Track
-2+h|**FeatureName**                     
-|    Name Usage| 2: alternate name display
-|    Language| kor
-|    Name| 추천항로
-|===
-
-.Range System(속력 측정구역)
-[cols="1,2", option=header]
-
-|===
-|Attribute |Value
-2+h|**FeatureName**                     
-|    Name Usage| 1 : default name display
-|    Language| eng
-|    Name| Beacons marking measured distance
-2+h|**FeatureName**                     
-|    Name Usage| 2: alternate name display
-|    Language| kor
-|    Name| 속력측정구역
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
+|    Name Usage||(S)EN|0,1| 
+|**Fixed Date Range**||C|0,1| 
+|    Date End|DATEND|(S)TD|0,1| 
+|    Date Start|DATSTA|(S)TD|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|Maximum Permitted Draught||RE|0,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
 |===
 
 // end::RangeSystem[]

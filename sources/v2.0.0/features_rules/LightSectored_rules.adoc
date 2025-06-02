@@ -1,59 +1,66 @@
 // tag::LightSectored[]
-.일반 기준
+===== Remark
 
-- 등화의 분류에 따라 `Light Fog Detector` (안개탐지등), `Light Air Obstruction` (항공장애등), `Light Sectored` (분호등화), `Light All Around` (일반등화) 피처로 구분하여 입력
-- `Light All Around` 피처 중 주요등대*는 속성 [Major light] = true로 설정 +
-   * 주요등대는 관할기관이 지정한 “광달거리 15M 이상”의 “백색” 등화
-- 등화와 함께 사용되는 구조물의 명칭은 구조물로 사용되는 피처의 [Feature Name]에 입력  + 
-   (교량등의 경우 `Light All Around` 의 [Feature name]에 입력)
-- 등화는 단독으로 사용될 수 없으며, 함께 사용되는 구조물과 {Structure/Equipment} 관계 설정 +
-   ※ Relation 페이지 참조
-- [Feature name]에는 항로표지의 관리번호(등대표번호) 입력
-- 관리번호(등대표번호)입력 시, 국내번호는 관리번호 앞에 KR, 국제번호는 M을 덧붙임(KR3259.2, M4187.45)
-- S-57에서 [DATEND]가 속성정보로 입력되어 날짜가 지난 경우 속성 삭제 추천 +
-  ([DATEND]는 객체가 존재하는 마지막 날짜를 표기하는 것으로 이후에는 삭제됨을 의미함)
-- 각 속성입력에 있어 정보가 충분하지 않을 경우 Multiplicity는 (unknown)으로 입력가능
-
-image::../images/LightSectored_image-1.png[width=1000,align=center]
-
-.입력예시
-[cols="1,1", options="header"]
+===== Example
+[cols="20,10,5,5,20", options="header"]
 |===
-|Attribute |Value
+|Attribute |Acronym |Type |Mult. |Value
 
-|Category of Light| (unknown)
-|Height| 65m
-
-2+h|**Sector Characteristic** 
-|    Light Characteristic|7: isophased
-|    Light Sector | (하단표 참조)
-|    Signal Group| (1)
-|    Signal Period| 4
-
-2+h|**Feature Name**
-|    Name Usage| 1: default name display
-|    Language| eng
-|    Name| KR2008.1
-
-2+h|**FeatureName**
-|    Name Usage| 2: alternate name display
-|    Language| kor
-|    Name|  2008.1
-|Status | 7:temporary
+|Category of Light|CATLIT|EN|0,*| 
+|Exhibition Condition of Light|EXCLIT|EN|0,1| 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
+|    Name Usage||(S)EN|0,1| 
+|**Fixed Date Range**||C|0,1| 
+|    Date End|DATEND|(S)TD|0,1| 
+|    Date Start|DATSTA|(S)TD|0,1| 
+|Height|HEIGHT|RE|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|Marks Navigational - System Of|MARSYS|EN|0,1| 
+|**Multiplicity of Features**||C|0,1| 
+|    #essential Multiplicity Known||(S)BO|1,1| 
+|    Number of Features||(S)IN|0,1| 
+|**Periodic Date Range**||C|0,*| 
+|    #essential Date End|DATEND|(S)TD|1,1| 
+|    #essential Date Start|DATSTA|(S)TD|1,1| 
+|**#essential Sector Characteristics**||C|1,*| 
+|    #essential Light Characteristic|LITCHR|(S)EN|1,1| 
+|**    #essential Light Sector**||(S)C|1,*| 
+|        #essential Colour|COLOUR|(S)EN|1,*| 
+|**        Directional Character**||(S)C|0,1| 
+|            Moire Effect||(S)BO|0,1| 
+|**            #essential Orientation**||(S)C|1,1| 
+|                Orientation Uncertainty||(S)RE|0,1| 
+|                #essential Orientation Value|ORIENT|(S)RE|1,1| 
+|        Light Visibility|LITVIS|(S)EN|0,*| 
+|**        Sector Limit**||(S)C|0,1| 
+|**            #essential Sector Limit One**|SECTR1|(S)C|1,1| 
+|                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1| 
+|                Sector Line Length||(S)RE|0,1| 
+|**            #essential Sector Limit Two**|SECTR2|(S)C|1,1| 
+|                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1| 
+|                Sector Line Length||(S)RE|0,1| 
+|        Value of Nominal Range|VALNMR|(S)RE|0,1| 
+|**        Sector Information**||(S)C|0,*| 
+|            Language||(S)TE|0,1| 
+|            #essential Text|INFORM/NINFOM|(S)TE|1,1| 
+|        Sector Arc Extension||(S)BO|0,1| 
+|    Signal Group|SIGGRP|(S)TE|0,*| 
+|    Signal Period|SIGPER|(S)RE|0,1| 
+|**    Signal Sequence**|SIGSEQ|(S)C|0,*| 
+|        #essential Signal Duration||(S)RE|1,1| 
+|        #essential Signal Status||(S)EN|1,1| 
+|Signal Generation|SIGGEN|EN|0,1| 
+|Status|STATUS|EN|0,*| 
+|Vertical Datum|VERDAT|EN|0,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
 |===
 
-.Light Sector
-[cols="1,1", options="header"]
-|===
-|Attribute |Value
-|Colour | 4:green
-|Light visibility | 8: partially obscured
-2+h|**Sector Limit**
-2+h|    Sector Limit One
-|        Sector Bearing|74
-2+h|    Sector Limit Two
-|        Sector Bearing|140
-|Value of Nominal Range |7
-
-|===
 // end::LightSectored[]

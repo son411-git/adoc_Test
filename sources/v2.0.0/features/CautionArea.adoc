@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 Generally, an area where the mariner has to be made aware of circumstances influencing the safety of navigation.
 
@@ -12,8 +12,8 @@ Generally, an area where the mariner has to be made aware of circumstances influ
 |    Date Start|DATSTA|(S)TD|0,1
 |Interoperability Identifier||URN|0,1
 |**Periodic Date Range**||C|0,*
-|    Date End|DATEND|(S)TD|1,1
-|    Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |Reported Date|SORDAT|TD|0,1
 |Status|STATUS|EN|0,1
 |Scale Minimum|SCAMIN|IN|0,1
@@ -21,9 +21,9 @@ Generally, an area where the mariner has to be made aware of circumstances influ
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/CautionArea_rules.adoc[tag=CautionArea]
+include::../features_rules/CautionArea_rules.adoc[tag=CautionArea]

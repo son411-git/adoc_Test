@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A rail or set of parallel rails on which a train, tram, or rail wagon runs.
 
@@ -8,8 +8,8 @@ A rail or set of parallel rails on which a train, tram, or rail wagon runs.
 
 |Condition|CONDTN|EN|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Height|HEIGHT|RE|0,1
 |Interoperability Identifier||URN|0,1
@@ -20,7 +20,7 @@ A rail or set of parallel rails on which a train, tram, or rail wagon runs.
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

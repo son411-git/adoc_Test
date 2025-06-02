@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 Areas over which it is safe to navigate but which should be avoided for anchoring, taking the ground or ground fishing.
 
@@ -7,8 +7,8 @@ Areas over which it is safe to navigate but which should be avoided for anchorin
 |Attribute |Acronym |Type |Mult.
 
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
 |Quality of Vertical Measurement|QUASOU|EN|0,*
@@ -17,14 +17,14 @@ Areas over which it is safe to navigate but which should be avoided for anchorin
 |Technique of Vertical Measurement|TECSOU|EN|0,*
 |Value of Sounding|VALSOU|RE|0,1
 |**Vertical Uncertainty**|SOUACC/VERACC|C|0,1
-|    Uncertainty Fixed||(S)RE|1,1
+|    #essential Uncertainty Fixed||(S)RE|1,1
 |    Uncertainty Variable Factor||(S)RE|0,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

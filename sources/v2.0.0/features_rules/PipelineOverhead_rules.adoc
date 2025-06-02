@@ -1,20 +1,42 @@
 // tag::PipelineOverhead[]
+===== Remark
 
-.일반 기준
-- 대축척 해도이면서 항해 가능한 구역인 경우, [Vertical clearance fixed]를 반드시 입력
-- [Vertical clearance fixed]는 최고고조면(Highest astronomical tide) 기준으로 입력하고 조석 범위를 측정할 수 없는 지역은 평균해수면(Mean sea level)기준으로 입력 
-- [Vertical clearance fixed] 값은 meter 단위로 입력하며 10m 미만은 소수 첫째 자리까지 입력하고 이상은 소수 첫째 자리에서 반올림 
-- 사용하지 않는 `Pipeline overhead` 는 [Status] = 4(미사용)으로 인코딩
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
 
-.입력예시
-[cols="1,2", options="header"]
+|Category of Pipeline/Pipe|CATPIP|EN|0,1| 
+|Condition|CONDTN|EN|0,1| 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
+|    Name Usage||(S)EN|0,1| 
+|**Fixed Date Range**||C|0,1| 
+|    Date End|DATEND|(S)TD|0,1| 
+|    Date Start|DATSTA|(S)TD|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|**Multiplicity of Features**||C|0,1| 
+|    #essential Multiplicity Known||(S)BO|1,1| 
+|    Number of Features||(S)IN|0,1| 
+|Product|PRODCT|EN|0,*| 
+|Radar Conspicuous|CONRAD|BO|0,1| 
+|Reported Date|SORDAT|TD|0,1| 
+|Status|STATUS|EN|0,*| 
+|**Vertical Clearance Fixed**|VERCLR|C|0,1| 
+|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1| 
+|**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1| 
+|        #essential Uncertainty Fixed||(S)RE|1,1| 
+|        Uncertainty Variable Factor||(S)RE|0,1| 
+|Vertical Datum|VERDAT|EN|0,1| 
+|Visual Prominence|CONVIS|EN|0,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
 |===
 
-|Attribute |Value
-|Cartegory of Pipeline/pipe | 2: supply pipe
-|Product | 3: water
-2+h|**Vertical Clearance Fixed**
-|    Vertical Clearance | (unknown)
-
-|===
 // end::PipelineOverhead[]

@@ -1,23 +1,24 @@
 // tag::AirportAirfield[]
+===== Remark
 
-.일반기준
-- 공항 뿐 만아니라 항공기의 이착륙 구역 표현 시 `Airport/Airfield` 사용
-- 공항 입력 시 용도에 맞게 [Category of airport/airfield] 필수로 입력
-- 헬기 이착륙장은 `Helipad` 로 인코딩
+- 공항 뿐 만아니라 항공기의 이착륙 구역 표현 시 #F "Airport/Airfield" 사용
+- 공항 입력 시 용도에 맞게 #A "Category of airport/airfield" 필수로 입력
+- 헬기 이착륙장은 #F "Helipad"로 인코딩
 
-.입력예시
-[cols="1,1",options="header"]
+===== Example
+[cols="20,10,5,5,20", options="header"]
 |===
-|Attribute | Value
-|Category of airport/airfield | 2: civil airplane airport
-2+h|**Feature Name**
-|    Name Usage|1 : default name display
-|    Language|eng
-|    Name|Incheon International Airport
-2+h|**Feature Name**
-|    Name Usage|2 : alternate name display
-|    Language|kor
-|    Name|인천국제공항
+|Attribute |Acronym |Type |Mult. |Value
+
+|Category of Airport/Airfield|CATAIR|EN|0,*| 2 : civil aeroplane airport
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Incheon International Airport
+|    Name Usage||(S)EN|0,1| 1 : default name display 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 인천국제공항 
+|    Name Usage||(S)EN|0,1| 2: alternate name display
 |===
 
 // end::AirportAirfield[]

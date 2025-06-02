@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 An all around light is a light that is visible over the whole horizon of interest to marine navigation and having no change in the characteristics of the light.
 
@@ -7,11 +7,11 @@ An all around light is a light that is visible over the whole horizon of interes
 |Attribute |Acronym |Type |Mult.
 
 |Category of Light|CATLIT|EN|0,*
-|Colour|COLOUR|EN|1,*
+|#essential Colour|COLOUR|EN|1,*
 |Exhibition Condition of Light|EXCLIT|EN|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -23,18 +23,18 @@ An all around light is a light that is visible over the whole horizon of interes
 |Major Light||BO|0,1
 |Marks Navigational - System Of|MARSYS|EN|0,1
 |**Multiplicity of Features**||C|0,1
-|    Multiplicity Known||(S)BO|1,1
+|    #essential Multiplicity Known||(S)BO|1,1
 |    Number of Features||(S)IN|0,1
 |**Periodic Date Range**||C|0,*
-|    Date End|DATEND|(S)TD|1,1
-|    Date Start|DATSTA|(S)TD|1,1
-|**Rhythm of Light**||C|1,1
-|    Light Characteristic|LITCHR|(S)EN|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
+|**#essential Rhythm of Light**||C|1,1
+|    #essential Light Characteristic|LITCHR|(S)EN|1,1
 |    Signal Group|SIGGRP|(S)TE|0,*
 |    Signal Period|SIGPER|(S)RE|0,1
-|    **Signal Sequence**|SIGSEQ|(S)C|0,*
-|        Signal Duration||(S)RE|1,1
-|        Signal Status||(S)EN|1,1
+|**    Signal Sequence**|SIGSEQ|(S)C|0,*
+|        #essential Signal Duration||(S)RE|1,1
+|        #essential Signal Status||(S)EN|1,1
 |Signal Generation|SIGGEN|EN|0,1
 |Status|STATUS|EN|0,*
 |Value of Nominal Range|VALNMR|RE|0,1
@@ -45,7 +45,7 @@ An all around light is a light that is visible over the whole horizon of interes
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A fixed component of the deck of a bridge spanning successive bridge piers.
 
@@ -10,13 +10,13 @@ A fixed component of the deck of a bridge spanning successive bridge piers.
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |**Horizontal Clearance Fixed**||C|0,1
-|    Horizontal Clearance Value|HORCLR|(S)RE|1,1
+|    #essential Horizontal Clearance Value|HORCLR|(S)RE|1,1
 |    Horizontal Distance Uncertainty|HORACC|(S)RE|0,1
 |Interoperability Identifier||URN|0,1
-|**Vertical Clearance Fixed**|VERCLR|C|1,1
-|    Vertical Clearance Value|VERCLR|(S)RE|1,1
-|    **Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
-|        Uncertainty Fixed||(S)RE|1,1
+|**#essential Vertical Clearance Fixed**|VERCLR|C|1,1
+|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1
+|**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
+|        #essential Uncertainty Fixed||(S)RE|1,1
 |        Uncertainty Variable Factor||(S)RE|0,1
 |Vertical Datum|VERDAT|EN|0,1
 |Scale Minimum|SCAMIN|IN|0,1
@@ -24,7 +24,7 @@ A fixed component of the deck of a bridge spanning successive bridge piers.
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===

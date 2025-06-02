@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 The horizontal plane or tidal datum to which soundings have been reduced. Also called datum for sounding reduction.
 
@@ -7,12 +7,12 @@ The horizontal plane or tidal datum to which soundings have been reduced. Also c
 |Attribute |Acronym |Type |Mult.
 
 |Interoperability Identifier||URN|0,1
-|Vertical Datum|VERDAT|EN|1,1
+|#essential Vertical Datum|VERDAT|EN|1,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

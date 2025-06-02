@@ -1,0 +1,12 @@
+// tag::Dolphin[]
+===== Remark
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|#essential Category of Dolphin||EN|1,*| 1: mooring dolphin
+|===
+
+// end::Dolphin[]

@@ -1,42 +1,45 @@
 // tag::IsolatedDangerBuoy[]
-.일반기준
-- 부표는 특정지역에 계류하며 부유하는 물체로 항로표지 또는 다른 특별한 목적으로 사용.
-- 고립장애부표 모양은 망대형만 존재하며, 두표모양은 2개의 구체형태로만 구성됨.
-- 몸체는 흑색 바탕에 홍색 횡선 조합으로 구성되며 두표색상은 흑색으로만 구성됨.
-- 고립장애부표에 설치되는 등화는 백색이며 Fl(2)의 등광을 가짐.
-- 고립장애부표가 Light객체와 함께 입력되어 등부표로 표현되는 경우 해당 등대번호는 Light객체에 입력 +
-   (등부표로 형성되어 등대번호가 고립장애부표에 입력되어 있을 경우 수정필요)
-- 부표와 등화, 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 {Structure/Equipment} 관계 설정 +
-  ※ Relation 페이지 참조
-- 부표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
+===== Remark
 
-.입력예시
-[cols="1,1" options="header"]
+===== Example
+[cols="20,10,5,5,20", options="header"]
 |===
-|Attribute | Value
-|Buoy Shape | 4: pillar
-|Colour | 2: black
-|Colour | 2: red
-|Colour | 2: black
-|Colour Pattern | 1: horizontal stripes
-|Radar Conspicuous | false
-2+h|**Feature Name**
-|    Name Usage|1 : default name display
-|    Language|eng
-|    Name|Badakyeo
-2+h|**Feature Name**
-|    Name Usage|2 : alternate name display
-|    Language|kor
-|    Name|바닥여
-2+h|**Information**
-|    Language| eng
-|    Text| 추가정보(영문)
-2+h|**Information**
-|    Language| kor
-|    Text| 추가정보(국문)
-|Scale Minimum | 59999
-2+h|**Topmark**
-|    Colour| 2: Black
-|    Topmark/Daymark Shape|4:2 spheres
+|Attribute |Acronym |Type |Mult. |Value
+
+|#essential Buoy Shape|BOYSHP|EN|1,1| 
+|#essential Colour|COLOUR|EN|1,*| 
+|Colour Pattern|COLPAT|EN|0,1| 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
+|    Name Usage||(S)EN|0,1| 
+|**Fixed Date Range**||C|0,1| 
+|    Date End|DATEND|(S)TD|0,1| 
+|    Date Start|DATSTA|(S)TD|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|Marks Navigational - System Of|MARSYS|EN|0,1| 
+|Nature of Construction|NATCON|EN|0,*| 
+|**Periodic Date Range**||C|0,*| 
+|    #essential Date End|DATEND|(S)TD|1,1| 
+|    #essential Date Start|DATSTA|(S)TD|1,1| 
+|Radar Conspicuous|CONRAD|BO|0,1| 
+|Status|STATUS|EN|0,*| 
+|**Topmark**|TOPMAR|C|0,1| 
+|    Colour|COLOUR|(S)EN|0,*| 
+|    Colour Pattern|COLPAT|(S)EN|0,1| 
+|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 
+|**    Shape Information**||(S)C|0,*| 
+|        Language||(S)TE|0,1| 
+|        #essential Text|INFORM/NINFOM|(S)TE|1,1| 
+|Vertical Length|VERLEN|RE|0,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|Pictorial Representation|PICREP|TE|0,1| 
 |===
+
 // end::IsolatedDangerBuoy[]

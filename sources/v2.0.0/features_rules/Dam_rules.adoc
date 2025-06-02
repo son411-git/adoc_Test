@@ -1,0 +1,25 @@
+// tag::Dam[]
+===== Remark
+
+- #F "Dam"이 surface Type으로 입력될 경우 #F "Land Area" 중첩이 필수
+- 댐이 해안선을 따라 입력될 경우 #F "Dam" Feature를 사용하여 입력되어야 하며 인공해안선 또한 #F "Dam"을 따라 입력
+- #F "Dam"의 명칭을 알 경우에 한하여 일반적인 이름을 #A "Feature Name"에 입력 
+- Point 타입으로 인코딩이 필요한 경우 “Landmark” 피처를 사용, #A "Categroy of landmark" = 27(dam)  
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|Category of Dam|CATDAM|EN|0,1| 2: dam 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Namyang tide embarkment
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 남양방조제
+|    Name Usage||(S)EN|0,1| 2: alternate name display 
+|===
+
+// end::Dam[]

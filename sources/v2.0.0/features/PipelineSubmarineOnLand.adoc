@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A connected set of pipes for conveying liquids, slurries, or gases.
 
@@ -12,15 +12,15 @@ A connected set of pipes for conveying liquids, slurries, or gases.
 |Depth Range Minimum Value|DRVAL1|RE|0,1
 |Depth Range Maximum Value|DRVAL2|RE|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |Interoperability Identifier||URN|0,1
 |**Multiplicity of Features**||C|0,1
-|    Multiplicity Known||(S)BO|1,1
+|    #essential Multiplicity Known||(S)BO|1,1
 |    Number of Features||(S)IN|0,1
 |Product|PRODCT|EN|0,*
 |Reported Date|SORDAT|TD|0,1
@@ -31,7 +31,7 @@ A connected set of pipes for conveying liquids, slurries, or gases.
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===

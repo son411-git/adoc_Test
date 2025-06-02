@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 Sea lanes designated by an archipelagic State for the passage of ships and aircraft. The Archipelagic Sea Lane aggregates all component parts of an Archipelagic Sea Lane system.
 
@@ -7,21 +7,21 @@ Sea lanes designated by an archipelagic State for the passage of ships and aircr
 |Attribute |Acronym |Type |Mult.
 
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |Interoperability Identifier||URN|0,1
-|Nationality|NATION|TE|1,1
+|#essential Nationality|NATION|TE|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/ArchipelagicSeaLane_rules.adoc[tag=ArchipelagicSeaLane]
+include::../features_rules/ArchipelagicSeaLane_rules.adoc[tag=ArchipelagicSeaLane]

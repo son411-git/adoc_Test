@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A sea area where dredged material or other potentially more harmful material, for example explosives, chemical waste, is deliberately deposited.
 
@@ -9,22 +9,22 @@ A sea area where dredged material or other potentially more harmful material, fo
 |Category of Dumping Ground|CATDPG|EN|0,*
 |Date Disused||TD|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
 |Restriction|RESTRN|EN|0,*
 |Status|STATUS|EN|0,*
 |**Vessel Speed Limit**||C|0,*
-|    Speed Limit||(S)RE|1,1
-|    Speed Units||(S)EN|1,1
+|    #essential Speed Limit||(S)RE|1,1
+|    #essential Speed Units||(S)EN|1,1
 |    Vessel Class||(S)TE|0,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

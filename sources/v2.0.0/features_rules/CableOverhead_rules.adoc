@@ -1,0 +1,21 @@
+// tag::CableOverhead[]
+===== Remark
+- #A "Category of cable"은 국내 기준으로 필수 입력하며, 선택 가능한 속성이 없을 경우에는 추가정보로 표기
+- S-57 전자해도에서 #A "Category of Cable" 값이 4(telephone) 또는 5(telegraph) 인 경우 #A "Category of Cable" = 10(telecommunication cable)로 입력
+- 동일한 지역에 여러 케이블이 있으면 가장 낮은 케이블을 대표로 입력
+- 해상 케이블카의 경우 #F "Conveyor"를 사용하여 입력
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|Category of Cable|CATCBL|EN|0,1| 1: power line
+|**Vertical Clearance Fixed**|VERCLR|C|0,1| 
+|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1| 33 
+|**Vertical Clearance Safe**|VERCSA|C|0,1|  
+|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1| 32
+|Vertical Datum|VERDAT|EN|0,1| 29: nearly highest high water 
+|===
+
+// end::CableOverhead[]

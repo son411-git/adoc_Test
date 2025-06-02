@@ -1,0 +1,33 @@
+// tag::UnderwaterAwashRock[]
+===== Remark
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|Exposition of Sounding|EXPSOU|EN|0,1| 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
+|    Name Usage||(S)EN|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|Nature of Surface|NATSUR|EN|0,1| 
+|Quality of Vertical Measurement|QUASOU|EN|0,*| 
+|Reported Date|SORDAT|TD|0,1| 
+|Status|STATUS|EN|0,1| 
+|Technique of Vertical Measurement|TECSOU|EN|0,*| 
+|#essential Value of Sounding|VALSOU|RE|1,1| 
+|#essential Water Level Effect|WATLEV|EN|1,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**Information**|INFORM|C|0,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|Default Clearance Depth||RE|0,1| 
+|#essential Surrounding Depth||RE|1,1| 
+|===
+
+// end::UnderwaterAwashRock[]

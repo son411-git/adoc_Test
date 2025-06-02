@@ -1,0 +1,26 @@
+// tag::DredgedArea[]
+===== Remark
+
+- #F "Dredged Area"는 Skin of earth 객체로 다른 Skin of earth 객체와 중첩하지 않아야 함
+- #A "Depth range maximum depth"는 준설수심보다 더 깊은 수심이 있다면 입력
+- 준설된 지역이 준설수심보다 얕다고 보고되었을 경우 #F "Caution Area" 피처와 중첩하고 관련 내용 기재 
+- 준설구역에 얕은 수심이 존재할 경우 #F "Sounding" 피처로 인코딩하고 수심구역은 #F "Depth Area" 피처 사용
+  (단, #F "Depth Area"의 속성 #A "Depth range minimum value"는 최소 수심으로 설정하고 #A "Depth range maximum value"는 준설 수심으로 설정)
+
+image::../images/DredgedArea/DredgeArea_image-1.png[width=300]
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|#essential Depth Range Minimum Value|DRVAL1|RE|1,1| 5.5m
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| eng 
+|    Text|INFORM/NINFOM|(S)TE|0,1| Dredged to 5.5m
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 수심 5.5m로 준설
+|===
+
+// end::DredgedArea[]

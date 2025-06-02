@@ -1,22 +1,43 @@
 // tag::Bridge[]
-.일반기준
-- 교량은 항해 불가능한 지역(Land area)과 항해가능지역(Depth area, Dredged Area, Unsurveyed area)에 모두 입력 가능
-- S-57 전자해도의 속성 [CATBRG]의 1(fixed bridge), 2(opening bridge)는 “Span Fixed”와 “Span Opening”으로 구분하여 인코딩하고 아래의 표를 참조하여 속성입력
+===== Remark
 
-image::../images/Bridge_image-1.png[width=400,align=center]
+- 교량은 항해 불가능한 지역 #F "Land area"과 항해가능지역 #F "Depth area", #F "Dredged Area", #F "Unsurveyed area"에 모두 입력 가능
+- S-57 전자해도의 속성 #A "CATBRG"의 1(fixed bridge), 2(opening bridge)는 #F "Span Fixed"와 #F "Span Opening"으로 구분하여 인코딩하고 아래의 표를 참조하여 속성입력
+Bridge Construction
+[cols="1,1,1,1,1" , frame=none, grid=none]
+|===
+|arch(아치) |viaduct(고가교) |suspension bridge(천수교) |pontoon bridge(부교) |transporter bridge(수송교)
+|image:../images/Bridge/Bridge_image-1[width=100] |image:../images/Bridge/Bridge_image-2[width=100]| image:../images/Bridge/Bridge_image-3[width=100] |image:../images/Bridge/Bridge_image-4[width=100] |image:../images/Bridge/Bridge_image-5[width=100]
+|===
 
-항해 가능 지역의 교량
-- 항해 가능한 지역의 고정형(Span Fixed), 개방형(Span Opening) 교량은 교량의 모든 구성요소를 포함하는 Surface type의 “Bridge”를 생성하고 관련된 Feature는 {Bridge Aggregation} 관계 설정
-    (교량에 대한 명칭이나 정보는 “Bridge”에 입력)
-    ※ Relation 페이지 참조
-- “Span Opening”을 포함하는 {Bridge Aggregation}은 속성 [Opening bridge], [Category of opening bridge] 필수 입력
-- 교량 수직높이는 “Span Fixed”와 “Span Opening”의 [Vertical clearance]에 필수 입력하며, 아래 그림과 같이 높이 값에 따른 각각의 피처를 생성
+Category of Opening Bridge
+[cols="1,1,1,1" , frame=none, grid=none]
+|===
+|swing bridge(선개교) |lifting bridge(승개교) |bascule bridge(가동교) |draw bridge(도개교)
+|image:../images/Bridge/Bridge_image-6[width=100] |image:../images/Bridge/Bridge_image-7[width=100] | image:../images/Bridge/Bridge_image-8[width=100] |image:../images/Bridge/Bridge_image-9[width=100]
+|===
 
-image::../images/Bridge_image-2.png[width=400,align=center]
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
 
-항해 불가능한 지역의 교량
-- 항해 불가능한 지역(Land area, Pontoon Bridge등)의 교량은 Curve / Surface type의 “Bridge”로 인코딩하며 별도의 교량 관련 {Bridge Aggregation} 설정은 생략
+|Category of Opening Bridge|CATBRG|EN|0,1| 1 : fixed bridge 
+|Condition|CONDTN|EN|0,1| 1 : Under Construction
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Chujagyo
+|    Name Usage||(S)EN|0,1|1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1|kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 추자교 
+|    Name Usage||(S)EN|0,1|2: alternate name display 
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| eng 
+|    Text|INFORM/NINFOM|(S)TE|0,1|Coastal Fairway Survey in 2022
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor 
+|    Text|INFORM/NINFOM|(S)TE|0,1|2022년 연안항로조사 
+|===
 
-image::../images/Bridge_image-3.png[width=400,align=center]
 // end::Bridge[]
----

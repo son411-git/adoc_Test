@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 In marine navigation, anything that hinders or prevents movement, particularly anything that endangers or prevents passage of a vessel. The term is usually used to refer to an isolated danger to navigation, such as a sunken rock or pinnacle.
 
@@ -10,8 +10,8 @@ In marine navigation, anything that hinders or prevents movement, particularly a
 |Condition|CONDTN|EN|0,1
 |Exposition of Sounding|EXPSOU|EN|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Height|HEIGHT|RE|0,1
 |Interoperability Identifier||URN|0,1
@@ -24,16 +24,16 @@ In marine navigation, anything that hinders or prevents movement, particularly a
 |Technique of Vertical Measurement|TECSOU|EN|0,*
 |Value of Sounding|VALSOU|RE|0,1
 |Vertical Length|VERLEN|RE|0,1
-|Water Level Effect|WATLEV|EN|1,1
+|#essential Water Level Effect|WATLEV|EN|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Default Clearance Depth||RE|0,1
-|Surrounding Depth||RE|1,1
+|#essential Surrounding Depth||RE|1,1
 |===
 
 // include::../features_rules/Obstruction_rules.adoc[tag=Obstruction]

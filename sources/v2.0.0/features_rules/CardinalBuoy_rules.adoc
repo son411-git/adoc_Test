@@ -1,64 +1,60 @@
 // tag::CardinalBuoy[]
-.일반기준
+===== Remark
+
 - 부표모양은 망대형만 존재하며, 두표모양은 2개의 원추형 형태로만 구성됨. (그림 1 참조)
 - 몸체는 검정색과 노란색의 조합으로 구성되며 방위에 따라 색의 패턴과 두표모양이 다름.(표 1참조)
-- 방위등화는 백색등으로 Q 또는 VQ 리듬을 가지나 [Signal group] 및 [Signal period]는 방위별로 다름(표 1 참조)
-- 속성 [Colour]이 2개 이상(예: 흑색,황색,흑색) 입력된 경우 [Colour pattern]을 입력
+- 방위등화는 백색등으로 Q 또는 VQ 리듬을 가지나 #A "Signal group" 및 #A"Signal period"는 방위별로 다름(표 1 참조)
+- 속성 #A "Colour"이 2개 이상(예: 흑색,황색,흑색) 입력된 경우 #A "Colour pattern"을 입력
 - 방위부표가 Light 객체와 함께 입력되어 등표로 표현되는 경우 해당 등대번호는 Light객체에 입력 +
-   (등부표로 형성된 경우 등대번호가 방위부표의 [Information] 등에 입력되어 있을 경우 수정필요)
-- 부표와 등화, 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 {Structure/Equipment} 관계 설정 +
+   (등부표로 형성된 경우 등대번호가 방위부표의 #A "Information" 등에 입력되어 있을 경우 수정필요)
+- 부표와 등화, 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 #R "Structure/Equipment" 관계 설정 +
   ※ Relation 페이지 참조
 - 입표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
 
-[cols="1,1" , frame=none , grid=none]
+[cols="1,1" , frame=none , grid=none, align=center]
 |===
 a|
 [cols="1,1,1,1", options="header"]
 !===
-!방위 ! 등화리듬 !등색 ! 도색
-!동 ! VQ(3)5s ! 백색 ! 흑황흑 
-!서 ! VQ(9)10s +
-      Q(9)15S ! 백색 ! 흑황흑 
-!남 ! VQ(6)+LFl10s +
-      Q(6)+LFl15s ! 백색 ! 흑황흑 
-!북 ! VQ +
-      Q ! 백색 ! 흑황흑 
+!방위!등화리듬 !등색 !도색
+!동 !VQ(3)5s,Q(3)10s !백색 !흑황흑
+!서 !VQ(9)10s,Q(9)15s !백색 !황흑
+!남 !VQ(6)+LFl10s,Q(6)+LFl15s !백색 !황흑황
+!북 !VQ,Q !백색 !흑황
 !===
-a|
-image:../images/CardinalBeacon_image-1.png[width=400]
+a| image:../images/CardinalBuoy_image-1.png[width=400]
 |===
 
-.입력예시
-[cols="1,2", options="header"]
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
 |===
-|Attribute |Value
+|Attribute |Acronym |Type |Mult. |Value
 
-|Beacon Shape|4: pilar
-|Category of Cardinal Mark | 4: west cradinal mark
-|Coluor | 6: yellow
-|Coluor | 2: black
-|Coluor | 5: yellow
-|Coluor Pattern | 1: horizontal stripes
-|Radar Conspicuous | false
-2+h|**Feature Name**
-|    Name Usage|1 : default name display
-|    Language|eng
-|    Name|Janghang
-2+h|**Feature Name**
-|    Name Usage|2 : alternate name display
-|    Language|kor
-|    Name|장항
-|Vertical Langth | 5m
-2+h|**Information**
-|    Language| eng
-|    Text| 추가정보(영문)
-2+h|**Information**
-|    Language| kor
-|    Text| 추가정보(국문)
-2+h|**Topmark**
-|    Colour| 2:Black
-|    Topmark/Daymark Shape| 10:2 cones, point to point
-
+|#essential Buoy Shape|BOYSHP|EN|1,1| 4: pillar
+|#essential Category of Cardinal Mark|CATCAM|EN|1,1| 4: west cardinal mark
+|#essential Colour|COLOUR|EN|1,*| 6: yellow
+|#essential Colour|COLOUR|EN|1,*| 2: black
+|#essential Colour|COLOUR|EN|1,*| 6: yellow
+|Colour Pattern|COLPAT|EN|0,1| 1: horizontal stripes
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Janghang
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|장항
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Radar Conspicuous|CONRAD|BO|0,1|false 
+|**Topmark**|TOPMAR|C|0,1| 
+|    Colour|COLOUR|(S)EN|0,*|2: Black 
+|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 10: 2 cones, point to point
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1|추가정보(영문)
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
 |===
 
 // end::CardinalBuoy[]

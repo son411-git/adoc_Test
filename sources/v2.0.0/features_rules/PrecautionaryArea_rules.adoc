@@ -1,0 +1,33 @@
+// tag::PrecautionaryArea[]
+===== Remark
+
+===== Example
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
+|    Name Usage||(S)EN|0,1| 
+|**Fixed Date Range**||C|0,1| 
+|    Date End|DATEND|(S)TD|0,1| 
+|    Date Start|DATSTA|(S)TD|0,1| 
+|IMO Adopted|CATTSS|BO|0,1| 
+|Interoperability Identifier||URN|0,1| 
+|Restriction|RESTRN|EN|0,*| 
+|Status|STATUS|EN|0,*| 
+|**Vessel Speed Limit**||C|0,*| 
+|    #essential Speed Limit||(S)RE|1,1| 
+|    #essential Speed Units||(S)EN|1,1| 
+|    Vessel Class||(S)TE|0,1| 
+|Scale Minimum|SCAMIN|IN|0,1| 
+|**#essential Information**|INFORM|C|1,*| 
+|    File Locator||(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
+|    Headline||(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|===
+
+// end::PrecautionaryArea[]

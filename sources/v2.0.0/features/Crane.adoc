@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A machine for lifting, shifting and lowering objects or materials by means of a swinging boom or with a lifting apparatus supported on an overhead track.
 
@@ -11,22 +11,22 @@ A machine for lifting, shifting and lowering objects or materials by means of a 
 |Colour Pattern|COLPAT|EN|0,1
 |Condition|CONDTN|EN|0,1
 |**Feature Name**||C|0,*
-|    Language||(S)TE|1,1
-|    Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Height|HEIGHT|RE|0,1
 |Interoperability Identifier||URN|0,1
 |Lifting Capacity|LIFCAP|RE|0,1
 |**Orientation**||C|0,1
 |    Orientation Uncertainty||(S)RE|0,1
-|    Orientation Value|ORIENT|(S)RE|1,1
+|    #essential Orientation Value|ORIENT|(S)RE|1,1
 |Radar Conspicuous|CONRAD|BO|0,1
 |Radius|RADIUS|RE|0,1
 |Status|STATUS|EN|0,*
 |**Vertical Clearance Fixed**|VERCLR|C|0,1
-|    Vertical Clearance Value|VERCLR|(S)RE|1,1
-|    **Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
-|        Uncertainty Fixed||(S)RE|1,1
+|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1
+|**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
+|        #essential Uncertainty Fixed||(S)RE|1,1
 |        Uncertainty Variable Factor||(S)RE|0,1
 |Vertical Datum|VERDAT|EN|0,1
 |Vertical Length|VERLEN|RE|0,1
@@ -36,10 +36,10 @@ A machine for lifting, shifting and lowering objects or materials by means of a 
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |In the Water||BO|0,1
 |===
 
-// include::../features_rules/Crane_rules.adoc[tag=Crane]
+include::../features_rules/Crane_rules.adoc[tag=Crane]

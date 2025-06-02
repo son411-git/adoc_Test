@@ -1,4 +1,4 @@
-**<Definition>**
+===== Definition
 
 A traffic flow pattern indicating a recommended directional movement of traffic where it is impractical or unnecessary to adopt an established direction of traffic flow.
 
@@ -10,14 +10,14 @@ A traffic flow pattern indicating a recommended directional movement of traffic 
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |Interoperability Identifier||URN|0,1
-|Orientation Value|ORIENT|RE|1,1
+|#essential Orientation Value|ORIENT|RE|1,1
 |Status|STATUS|EN|0,*
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
