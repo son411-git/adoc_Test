@@ -4,7 +4,7 @@
 - #F "Dock Area" 피처를 육지구역 #F "LandArea" 또는 미측구역 #F "Unsurveyed Area"과 중첩하여 입력
 - 비조석선거와 조석선거의 구분은 #F "Gate"의 유무에 따라 아래 그림과 같이 구분하여 입력
 
-image::../images/DockArea/DockArea_image-1.png[width=400]
+//image::../images/DockArea/DockArea_image-1.png[width=400]
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]

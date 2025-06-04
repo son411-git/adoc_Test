@@ -4,6 +4,7 @@
 - 교량은 항해 불가능한 지역 #F "Land area"과 항해가능지역 #F "Depth area", #F "Dredged Area", #F "Unsurveyed area"에 모두 입력 가능
 - S-57 전자해도의 속성 #A "CATBRG"의 1(fixed bridge), 2(opening bridge)는 #F "Span Fixed"와 #F "Span Opening"으로 구분하여 인코딩하고 아래의 표를 참조하여 속성입력
 Bridge Construction
+////
 [cols="1,1,1,1,1" , frame=none, grid=none]
 |===
 |arch(아치) |viaduct(고가교) |suspension bridge(천수교) |pontoon bridge(부교) |transporter bridge(수송교)
@@ -15,7 +16,8 @@ Category of Opening Bridge
 |===
 |swing bridge(선개교) |lifting bridge(승개교) |bascule bridge(가동교) |draw bridge(도개교)
 |image:../images/Bridge/Bridge_image-6[width=100] |image:../images/Bridge/Bridge_image-7[width=100] | image:../images/Bridge/Bridge_image-8[width=100] |image:../images/Bridge/Bridge_image-9[width=100]
-|===
+|=== 
+////
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]

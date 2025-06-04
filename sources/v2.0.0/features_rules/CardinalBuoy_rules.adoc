@@ -11,6 +11,7 @@
   ※ Relation 페이지 참조
 - 입표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
 
+////
 [cols="1,1" , frame=none , grid=none, align=center]
 |===
 a|
@@ -24,6 +25,7 @@ a|
 !===
 a| image:../images/CardinalBuoy_image-1.png[width=400]
 |===
+////
 
 
 ===== Example

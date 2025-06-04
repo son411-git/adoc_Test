@@ -7,7 +7,7 @@
 - 준설구역에 얕은 수심이 존재할 경우 #F "Sounding" 피처로 인코딩하고 수심구역은 #F "Depth Area" 피처 사용
   (단, #F "Depth Area"의 속성 #A "Depth range minimum value"는 최소 수심으로 설정하고 #A "Depth range maximum value"는 준설 수심으로 설정)
 
-image::../images/DredgedArea/DredgeArea_image-1.png[width=300]
+//image::../images/DredgedArea/DredgeArea_image-1.png[width=300]
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
