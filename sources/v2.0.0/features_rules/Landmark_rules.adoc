@@ -10,11 +10,12 @@
              PUT(product), CAT S/T(category of silo/tank)
 |===
 
+////
 [%header,format=csv]
 |===
 //include::../images/Landmark/Landmark_rules.csv[]
 |===
-
+////
 - 육상물표의 높이 값 관련 내용 입력 시 다음 내용 참고
 ////
 [cols="1,1"]

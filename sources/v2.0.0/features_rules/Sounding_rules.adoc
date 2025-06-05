@@ -5,17 +5,20 @@
  - #F "Obstruction" 및 #F "Underwater/Awash Rock" 등의 수심은 해당 피처의 속성 #A "value of sounding"에 입력
  - <표 A>와 같이 수심의 상태 및 품질에 따라 Spatial 정보의 #A "Quality of horizontal measurement" 및 Feature의 속성 #A "Quality of vertical measurement" 입력
 
-[cols="15,10,10,15,15,10,20"]
+////
+[cols="15,10,10,15,15,10,20" options="header"]
 |===
-|수심|S-4|INT1|**Spatial**-Quality of horizontal measurement|**Feature**-Quality of
-vertical measurement | **Feature**-Status | 비고
-|실제위치|412.1|I10|-|1|-|ㅇㅇㅇ |종이해도 여백상의 위치|412.2|I11,I12|-|1|-|ENC는 실제 위치에 존재
+|수심| S-4 | INT1 | Spatial-Quality of horizontal measurement |Feature-Quality of
+vertical measurement| Feature-Status | 비고
+|실제위치|412.1|I10|-|1|-| 
+|종이해도 여백상의 위치|412.2|I11,I12|-|1|-|ENC는 실제 위치에 존재
 |신뢰도가 낮은값(정체 수심)|412.4|I14|4|4|-|
 |간층 수심|413|I15|-|1|-|음의값
 |의심스러운 수심|424.4|I2|-|3|18|Status=18
-|보고되었으나 확인되지 않음||I3,I4|8|9||보고 날짜를 알 수 있다면 [Reported date]에 입력|
+|보고되었으나 확인되지 않음|I3,I4|8|9||보고 날짜를 알 수 있다면 [Reported date]에 입력
 |===
 <표 A> Spatial 및 Feature 속성
+////
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]

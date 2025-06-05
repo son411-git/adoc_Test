@@ -10,11 +10,13 @@
 - 현재 국내 전자해도에는 속성 #A "Status" = 1(영구적인)로 입력된 경우가 있으나 S-101에서는 간헐천만 구분하여 입력
   (대부분의 기간 동안 건조한 상태인 간헐천은 #A "Status" = 5(주기적/간헐천)로 입력)
 
+////
 [cols="1,1",frame=none,grid=none]
 |===
 | image:../images/River/River_image-1.png[width=200]
 | image:../images/River/River_image-2.png[width=200]
 |===
+////
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]

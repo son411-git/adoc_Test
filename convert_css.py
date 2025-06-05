@@ -1,7 +1,7 @@
 import re
 
 input_path = r'C:\Users\leegihwi\Desktop\Cway7\2025_해도제작\입력지침\final\adoc_Test\index.html'
-output_path = r'C:\Users\leegihwi\Desktop\Cway7\2025_해도제작\입력지침\final\adoc_Test\index_test.html'
+output_path = r'C:\Users\leegihwi\Desktop\Cway7\2025_해도제작\입력지침\final\adoc_Test\index_final.html'
 
 with open(input_path, encoding='utf-8') as f:
     html = f.read()

@@ -6,6 +6,7 @@
    ※ Relation 페이지 참조
 - 의무적 복합 속성인 방향 #A "Orientation"은 바다 쪽으로부터의 방위 값을 입력
 
+////
 [cols="1,1" , frame=none, grid=none]
 |===
 a| image:../../../images/NavigationLine/NavigationLine_image-1.png[width=300]
@@ -24,6 +25,7 @@ a| image:../../../images/NavigationLine/NavigationLine_image-2.png[width=300]
 !7!고정물표에 기반하지 않은 추천항로!없음!False!없음
 !===
 |===
+////
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
