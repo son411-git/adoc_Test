@@ -1,42 +1,27 @@
 // tag::Gate[]
 ===== Remark
+- 물의 유입을 제어하는 수문은 #F "Gate" 피처로 인코딩
+- Area(Surface) Type의 수문 #F "Gate"은 #F "Depth Area" (수심구역), #F "Land Area" (육상구역), #F "Unsurveyed Area" (미측구역) 중 하나와 중첩해야 함
+- 수심범위 최소 값이 주어지면 속성 #A "Depth range minimum value" 에 입력
+//image::../images/Gate/Gate_image-1.png[width=400]
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Gate|CATGAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
-|Depth Range Minimum Value|DRVAL1|RE|0,1| 
+|Category of Gate|CATGAT|EN|0,1| 4: lock gate
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Horizontal Clearance Open**||C|0,1| 
-|    #essential Horizontal Clearance Value|HORCLR|(S)RE|1,1| 
-|    Horizontal Distance Uncertainty|HORACC|(S)RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 
-|Status|STATUS|EN|0,*| 
-|**Vertical Clearance Open**|VERCOP|C|0,1| 
-|    #essential Vertical Clearance Unlimited||(S)BO|1,1| 
-|    Vertical Clearance Value|VERCLR|(S)RE|0,1| 
-|**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1| 
-|        #essential Uncertainty Fixed||(S)RE|1,1| 
-|        Uncertainty Variable Factor||(S)RE|0,1| 
-|Vertical Datum|VERDAT|EN|0,1| 
-|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1| 
-|    #essential Uncertainty Fixed||(S)RE|1,1| 
-|    Uncertainty Variable Factor||(S)RE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Sihwa Sea Dike Sluice
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 시화 배수갑문
+|    Name Usage||(S)EN|0,1| 2: alternate name display
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| 50 KT LOCK
 |===
 
 // end::Gate[]

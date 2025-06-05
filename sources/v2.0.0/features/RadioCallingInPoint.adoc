@@ -30,4 +30,4 @@ A designated position at which vessels are required to report to a traffic contr
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RadioCallingInPoint_rules.adoc[tag=RadioCallingInPoint]
+include::../features_rules/RadioCallingInPoint_rules.adoc[tag=RadioCallingInPoint]

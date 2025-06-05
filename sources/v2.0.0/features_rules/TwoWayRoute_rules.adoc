@@ -1,27 +1,23 @@
 // tag::TwoWayRoute[]
 ===== Remark
+- 항로의 각도에 따라 별도의 피처를 생성하여 두 개 이상의 양길항로부가 하나의 항로를 나타낼 경우, Surface type의 #F "Two Way Route"와  #R "Two Way Route Aggregation" 관계 설정 +
+  ※ Relation 페이지 참조 +
+  ※ ECDIS에 항로 명칭을 표시하려면 Surface type으로 입력해야 함
+- 이에 따른 항로명은 #F "Two Way Route"의 #A "Feature name"에 입력
+
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Maximum Permitted Draught||RE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Wonjeon fairway
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 원전항로
+|    Name Usage||(S)EN|0,1| 2: alternate name display
 |===
 
 // end::TwoWayRoute[]

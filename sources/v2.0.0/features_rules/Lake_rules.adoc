@@ -1,25 +1,24 @@
 // tag::Lake[]
 ===== Remark
 
+- 호수는 항해 불가능 지역으로 #F "Land area"와 중첩
+- 수심이 표기된 호수 즉, 항해 가능한 지역이면 #F "Depth area"로 입력하며, #F "Dredged Area"으로 표시해야 하는 경우, 경계는 #F "Coastline", #F "Shoreline Construction" 해안선 입력(이 경우 호수의 명칭은 #F "Sea Area/Named Water Area" 피처를 이용해서 인코딩하고, #F "Lake" 피처는 입력하지 않음)
+- 전자해도에는 규모가 큰 호수만 입력(시화호 등)
+- S-57 전자해도에서 호수명이 #A "INFORM", #A "NINFOM"에 입력되어 있다면 #A "Feature name" 으로 수정필요
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Elevation|ELEVAT|RE|0,1| 
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Status|STATUS|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 1: default name display
+|    Name Usage||(S)EN|0,1| Sihwaho
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 2: alternate name display
+|    Name Usage||(S)EN|0,1| 시화호
 |===
 
 // end::Lake[]

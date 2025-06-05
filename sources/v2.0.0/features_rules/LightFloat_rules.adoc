@@ -1,46 +1,25 @@
 // tag::LightFloat[]
 ===== Remark
 
+- 국내에서는 일반적으로 기상이나 해양관측 용도로 사용됨.
+
+//image::../images/LightFloat/LightFloat_image-1.png[width=300]Q30
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Colour|COLOUR|EN|1,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
+|#essential Colour|COLOUR|EN|1,*| 6: yellow 
 |**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Seogwipo
+|    Name Usage||(S)EN|0,1| 1: default name display
+|**Feature Name**||C|0,*| kor
 |    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Horizontal Length|HORLEN|RE|0,1| 
-|Horizontal Width|HORWID|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Status|STATUS|EN|0,*| 
-|**Topmark**|TOPMAR|C|0,1| 
-|    Colour|COLOUR|(S)EN|0,*| 
-|    Colour Pattern|COLPAT|(S)EN|0,1| 
-|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 
-|**    Shape Information**||(S)C|0,*| 
-|        Language||(S)TE|0,1| 
-|        #essential Text|INFORM/NINFOM|(S)TE|1,1| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|서귀포 남방 기상
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+
 |===
 
 // end::LightFloat[]

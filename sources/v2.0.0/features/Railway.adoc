@@ -24,4 +24,4 @@ A rail or set of parallel rails on which a train, tram, or rail wagon runs.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Railway_rules.adoc[tag=Railway]
+include::../features_rules/Railway_rules.adoc[tag=Railway]

@@ -26,4 +26,4 @@ A structure in the intertidal zone serving as a support for vessels at low stage
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Gridiron_rules.adoc[tag=Gridiron]
+include::../features_rules/Gridiron_rules.adoc[tag=Gridiron]

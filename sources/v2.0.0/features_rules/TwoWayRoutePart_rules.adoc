@@ -1,32 +1,26 @@
 // tag::TwoWayRoutePart[]
 ===== Remark
+- 양방향 항로부는 일반적으로 양방향이지만, <그림 A>와 같이 일방통항으로 제한할 수 있으며 [Traffic flow]에 지정
+- <그림 B>와 같이 #A "Orientation value" 값에 따라 #F "Two-way route part" 피처를 개별 생성하고 #R "Two-way route Aggregation" 관계를 설정 +
+  ※ Relation 페이지 참조
+- #F "Two-way route"를 구성하는 모든 피처는 동일한 #A "Scale minimum" 값을 가져야 함
+- #F "Two-way route part" 피처는 반드시 #R "Two-way route Aggregation" 관계를 설정해야 하며 #R "Two-way route Aggregation"의 속성에 항로의 명칭을 입력
+
+////
+[cols="1,1" , frame=none , grid=none, align=center]
+|===
+a|image:../images/TwoWayRoutePart/TwoWayRoutePart_image-1.png[width=400] <그림 A>
+a|image:../images/TwoWayRoutePart/TwoWayRoutePart_image-2.png[width=400] <그림 B>
+|===
+////
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|Based On Fixed Marks|CATTRK|BO|0,1| 
-|Depth Range Minimum Value|DRVAL1|RE|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|#essential Orientation Value|ORIENT|RE|1,1| 
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 
-|Status|STATUS|EN|0,*| 
-|Technique of Vertical Measurement|TECSOU|EN|0,*| 
-|#essential Traffic Flow|TRAFIC|EN|1,1| 
-|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1| 
-|    #essential Uncertainty Fixed||(S)RE|1,1| 
-|    Uncertainty Variable Factor||(S)RE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|Based On Fixed Marks|CATTRK|BO|0,1| False
+|#essential Orientation Value|ORIENT|RE|1,1| 140
+|#essential Traffic Flow|TRAFIC|EN|1,1| 4: two-way
 |===
 
 // end::TwoWayRoutePart[]

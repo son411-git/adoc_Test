@@ -28,4 +28,4 @@ Areas over which it is safe to navigate but which should be avoided for anchorin
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/FoulGround_rules.adoc[tag=FoulGround]
+include::../features_rules/FoulGround_rules.adoc[tag=FoulGround]

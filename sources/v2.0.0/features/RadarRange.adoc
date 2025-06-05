@@ -25,4 +25,4 @@ Indicates the coverage of a sea area by a radar surveillance station. Inside thi
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RadarRange_rules.adoc[tag=RadarRange]
+include::../features_rules/RadarRange_rules.adoc[tag=RadarRange]

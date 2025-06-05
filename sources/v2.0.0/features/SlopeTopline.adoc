@@ -26,4 +26,4 @@ The upper marking of a slope, for example the ridge line or the separation line 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SlopeTopline_rules.adoc[tag=SlopeTopline]
+include::../features_rules/SlopeTopline_rules.adoc[tag=SlopeTopline]

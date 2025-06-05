@@ -36,4 +36,4 @@ An installation buoy is a buoy used for loading tankers with gas or oil.
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/InstallationBuoy_rules.adoc[tag=InstallationBuoy]
+include::../features_rules/InstallationBuoy_rules.adoc[tag=InstallationBuoy]

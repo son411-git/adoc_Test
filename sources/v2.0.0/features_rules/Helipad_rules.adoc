@@ -1,30 +1,10 @@
 // tag::Helipad[]
 ===== Remark
+- 필요한 경우 헬기장(Heliport)은 #F "Airport/Airfield" 피처로 인코딩하며, #F "Airport/Airfield"로 인코딩된 경우, 개별 #F "Helipad"를 표시할 필요 없음
+- 수상비행기 또는 수상헬기 착륙장을 인코딩하는 경우 #F "Seaplane Landing Area" 피처를 사용
+- #F "Helipad"가 #F "Offshore Platform"의 일부로 인코딩되는 경우 #R "Structure/Equipment" 관계 설정
+- #A "Feature name"에 피처의 기능 및 속성과 동일한 정보(예: 헬기착륙장) 중복입력 불필요
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
-|===
-|Attribute |Acronym |Type |Mult. |Value
-
-|Condition|CONDTN|EN|0,1| 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|===
-
+※ 공통속성(Scale minimum) 외에 입력된 속성 없음!
 // end::Helipad[]

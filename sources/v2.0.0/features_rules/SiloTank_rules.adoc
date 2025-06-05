@@ -1,42 +1,38 @@
 // tag::SiloTank[]
 ===== Remark
+- 사이로/탱크 피처는 가능하면 Area(surface)로 인코딩
+- 여러 개의 사이로/탱크를 해도의 가독성을 위해 하나로 표시한다면  복합속성 #A "Multiplicity of features"의  #A "Multiplicity known" = true 입력
+
+//image::../images/SiloTank/SiloTank_image-1.png[width=400]
+[%header,format=csv]
+|===
+No,사이로/탱크 목적 및 성격,Category of silo/tank,Product,기타
+1,대형 곡물 창고,3,22,
+2,사이로,1,-,
+3,탱크,2,-,
+4,폭발물 관련 정박지,4,-,
+5,급수탑,4,3 or 8,
+|===
+<사이로/탱크 기본 속성입력>
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|Building Shape|BUISHP|EN|0,1| 
-|Category of Silo/Tank|CATSIL|EN|0,1| 
-|Colour|COLOUR|EN|0,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
-|Elevation|ELEVAT|RE|0,1| 
+|Category of Silo/Tank|CATSIL|EN|0,1|1: silo in general 
+|Height|HEIGHT|RE|0,1| 50m
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Silos
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 양곡부두
+|    Name Usage||(S)EN|0,1| 2: alternate name display
 |**Multiplicity of Features**||C|0,1| 
-|    #essential Multiplicity Known||(S)BO|1,1| 
-|    Number of Features||(S)IN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|Product|PRODCT|EN|0,*| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
-|In the Water||BO|0,1| 
+|    #essential Multiplicity Known||(S)BO|1,1| true
+|               Multiplicity offeatures||(S)IN|0,1| 
+|Product|PRODCT|EN|0,*| 1: oil
 |===
 
 // end::SiloTank[]

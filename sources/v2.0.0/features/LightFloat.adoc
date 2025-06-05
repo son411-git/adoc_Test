@@ -43,4 +43,4 @@ A boat-like structure used instead of a light buoy in waters where strong stream
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/LightFloat_rules.adoc[tag=LightFloat]
+include::../features_rules/LightFloat_rules.adoc[tag=LightFloat]

@@ -1,28 +1,14 @@
 // tag::Road[]
 ===== Remark
 
+! 향후 필요한 내용 입력 !
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Road|CATROD|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|Category of Road|CATROD|EN|0,1|2: major road  
 |===
 
 // end::Road[]

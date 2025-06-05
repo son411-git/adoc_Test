@@ -44,4 +44,4 @@ An air obstruction light is a light marking an obstacle which constitutes a dang
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/LightAirObstruction_rules.adoc[tag=LightAirObstruction]
+include::../features_rules/LightAirObstruction_rules.adoc[tag=LightAirObstruction]

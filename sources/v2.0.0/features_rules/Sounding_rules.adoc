@@ -1,27 +1,35 @@
 // tag::Sounding[]
 ===== Remark
+- 수심은 3차원을 표현할 수 있도록 위치(위도, 경도)와 수직 값은 Spatial Record에 저장되며, 위치 및 수직 값을 제외한 동일한 피처 정보를 갖는 수심끼리 Grouping(그룹화)
+ - 업데이트에 의해 추가되는 수심은 이미 존재하는 수심 그룹에 포함되지 않도록 주의
+ - #F "Obstruction" 및 #F "Underwater/Awash Rock" 등의 수심은 해당 피처의 속성 #A "value of sounding"에 입력
+ - <표 A>와 같이 수심의 상태 및 품질에 따라 Spatial 정보의 #A "Quality of horizontal measurement" 및 Feature의 속성 #A "Quality of vertical measurement" 입력
+
+[cols="15,10,10,15,15,10,20"]
+|===
+|수심|S-4|INT1|**Spatial**-Quality of horizontal measurement|**Feature**-Quality of
+vertical measurement | **Feature**-Status | 비고
+|실제위치|412.1|I10|-|1|-|ㅇㅇㅇ |종이해도 여백상의 위치|412.2|I11,I12|-|1|-|ENC는 실제 위치에 존재
+|신뢰도가 낮은값(정체 수심)|412.4|I14|4|4|-|
+|간층 수심|413|I15|-|1|-|음의값
+|의심스러운 수심|424.4|I2|-|3|18|Status=18
+|보고되었으나 확인되지 않음||I3,I4|8|9||보고 날짜를 알 수 있다면 [Reported date]에 입력|
+|===
+<표 A> Spatial 및 Feature 속성
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,1| 
-|Technique of Vertical Measurement|TECSOU|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|Quality of Vertical Measurement|QUASOU|EN|0,*| 1: depth known
+|Status|STATUS|EN|0,1| 18: existence doubtful
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| H37240622013(Scale 1:25,000)
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| <undefined>
 |===
 
 // end::Sounding[]

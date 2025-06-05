@@ -1,26 +1,22 @@
 // tag::TerritorialSeaArea[]
 ===== Remark
+- 외부참조파일을 입력할 경우 명명기준 확인 +
+  (101CCCCXXXXXXXX.EEE) - 101 : Product명, CCCC: Agency code, XXXXXXXX.EEE:파일명 
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|In Dispute||BO|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|#essential Nationality|NATION|TE|1,*| 
-|Restriction|RESTRN|EN|0,*| 
-|**Vessel Speed Limit**||C|0,*| 
-|    #essential Speed Limit||(S)RE|1,1| 
-|    #essential Speed Units||(S)EN|1,1| 
-|    Vessel Class||(S)TE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|#essential Nationality|NATION|TE|1,*| KR
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| The straight baselines and the limit of territorial sea shown on this chart are based on the provisions of the Territorial Sea and Contiguous Zone Act and its Enforcement Decree.
+|**Information**|INFORM|C|0,*| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 이 해도에 기재된 직선기선 및 영해한계선은 영해 및 접속수역법, 영해 및 접속수역법 시행령의 규정에 의함.
+
 |===
 
 // end::TerritorialSeaArea[]

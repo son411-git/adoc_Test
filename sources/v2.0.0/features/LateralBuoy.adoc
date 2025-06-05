@@ -43,4 +43,4 @@ A lateral buoy is used to indicate the port or starboard hand side of the route 
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/LateralBuoy_rules.adoc[tag=LateralBuoy]
+include::../features_rules/LateralBuoy_rules.adoc[tag=LateralBuoy]

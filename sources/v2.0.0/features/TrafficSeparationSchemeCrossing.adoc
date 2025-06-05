@@ -25,4 +25,4 @@ A defined area where traffic lanes cross.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/TrafficSeparationSchemeCrossing_rules.adoc[tag=TrafficSeparationSchemeCrossing]
+include::../features_rules/TrafficSeparationSchemeCrossing_rules.adoc[tag=TrafficSeparationSchemeCrossing]

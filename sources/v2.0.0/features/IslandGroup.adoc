@@ -20,4 +20,4 @@ A named group of islands, including archipelagos.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/IslandGroup_rules.adoc[tag=IslandGroup]
+include::../features_rules/IslandGroup_rules.adoc[tag=IslandGroup]

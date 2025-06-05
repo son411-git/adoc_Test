@@ -47,4 +47,4 @@ A safe water beacon is used to indicate that there is navigable water around the
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/SafeWaterBeacon_rules.adoc[tag=SafeWaterBeacon]
+include::../features_rules/SafeWaterBeacon_rules.adoc[tag=SafeWaterBeacon]

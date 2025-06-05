@@ -30,4 +30,4 @@ A dyke (or dike) is an artificial embankment to contain or hold back water.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Dyke_rules.adoc[tag=Dyke]
+include::../features_rules/Dyke_rules.adoc[tag=Dyke]

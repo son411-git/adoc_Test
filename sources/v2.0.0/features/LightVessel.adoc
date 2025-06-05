@@ -36,4 +36,4 @@ A distinctively marked vessel anchored or moored at a charted point, to serve as
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/LightVessel_rules.adoc[tag=LightVessel]
+include::../features_rules/LightVessel_rules.adoc[tag=LightVessel]

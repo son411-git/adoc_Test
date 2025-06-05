@@ -28,4 +28,4 @@ A route in a body of water where a ferry crosses from one shoreline to another.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/FerryRoute_rules.adoc[tag=FerryRoute]
+include::../features_rules/FerryRoute_rules.adoc[tag=FerryRoute]

@@ -1,19 +1,24 @@
 // tag::NavigationalSystemOfMarks[]
 ===== Remark
 
+- Navigational System Of Marks 피처는 동일 피처가 중복될 수 없음
+- 데이터가 존재하는 구역에는 #F "Data Coverage" 와 중첩하여 필수로 입력
+- 아래 표의 구역만 IALA B 구역으로 설정하고 그 외는 모두 IALA A 구역
+
+////
+<IALA B구역>
+[%header,format=csv]
+|===
+include::../features_rules/NavigationalSystemOfMarks_rules.csv[]
+|===
+////
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Marks Navigational - System Of|MARSYS|EN|1,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|#essential Marks Navigational - System Of|MARSYS|EN|1,1| 2: IALA B
 |===
 
 // end::NavigationalSystemOfMarks[]

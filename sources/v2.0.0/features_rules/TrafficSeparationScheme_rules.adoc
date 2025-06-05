@@ -1,28 +1,25 @@
 // tag::TrafficSeparationScheme[]
 ===== Remark
+- 통항분리시스템을 따르는 항로는 항로별로 surface type의 #F "Traffic Separation Scheme"를 입력하고 각 항로의 명칭은 #A "Feature name"에 입력 +
+※ ECDIS에 항로 명칭을 표시하려면 Surface type으로 입력해야 함
+
+//image::../images/TrafficSeparationScheme/TrafficSeparationScheme_image-1.png[width=400]
+- #F "Traffic Separation Scheme"을 구성하는 모든 피처는 동일한 #A "Scale minimum" 값을 가져야 함
+- #A "IMO adopted"는 IMO 지정항로 여부를 입력하며, 국내에서는 “해상교통안전법 시행규칙 [별표 20]통항분리방식이 적용되는 수역”에 해당하는 “홍도항로, 보길도항로, 거문도항로”만 #A "IMO adopted" = true로 입력하고 이 외에는 false로 입력
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
+|IMO Adopted|CATTSS|BO|0,1| false
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|IMO Adopted|CATTSS|BO|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Maximum Permitted Draught||RE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Masan Fairway
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 마산항로
+|    Name Usage||(S)EN|0,1| 1 : 2: alternate name display
 |===
 
 // end::TrafficSeparationScheme[]

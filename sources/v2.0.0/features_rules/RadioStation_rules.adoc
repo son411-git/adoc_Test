@@ -1,37 +1,43 @@
 // tag::RadioStation[]
 ===== Remark
 
+- #F "Radio Station"는 필요에 따라 건물이나 구조물을 입력하지만 #R "Structure/Equipment" 관계 설정은 하지 않음
+- DGNSS 기지국 속성은 #A "Category of radio station" = 10 (Differential GNSS)으로 코딩
+- 기존 S-57 전자해도의 #A "INFORM", #A "NINFOM"에 입력되어 있는 정보(예: AIS, 자동위치식별신호표지, DGPS 등)는 피처의 기능 및 속성과 동일한 정보이므로 중복입력 불필요
+
+////
+[cols= "1,1,1", options="header"]
+|===
+|IHO 해도제작 기준에 따른 기호|Category of Radar Transponder Beacon|기타
+| image:../images/RadioStation/RadioStation_image-1.png[width=100] | 1. circular (non-directional) marine or aero-marine radiobeacon ※ 국내 S-57 전자해도에서는 해당 속성을 AIS로 지정, “Physical AIS Aid to Navigational”로 변환|  무지향성 무선표지
+|image:../images/RadioStation/RadioStation_image-2.png[width=100] |2. directional radiobeacon| 지향성 무선표지
+|image:../images/RadioStation/RadioStation_image-3.png[width=100] |3. rotating-pattern radiobeacon| 회전식 무선표지
+|image:../images/RadioStation/RadioStation_image-4.png[width=100] |4. consol beacon| 콘솔무선표지
+|image:../images/RadioStation/RadioStation_image-5.png[width=100] |5. radio direction-finding station| 무선향탐지
+|image:../images/RadioStation/RadioStation_image-6.png[width=100] |6. coast radio station providing QTG service|무선지 업무를하는 해안국
+|image:../images/RadioStation/RadioStation_image-7.png[width=100] |7. aeronautical radiobeacon| 항공무선표지
+|===
+////
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Call Sign|CALSGN|TE|0,1| 
-|Category of Radio Station|CATROS|EN|0,*| 
-|Communication Channel|COMCHA|TE|0,*| 
-|Estimated Range of Transmission|ESTRNG|RE|0,1| 
+|Category of Radio Station|CATROS|EN|0,*| 10: Differential GNSS
+|Estimated Range of Transmission|ESTRNG|RE|0,1| <undefined>
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| M4227
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|4211 
+|    Name Usage||(S)EN|0,1| 1 : default name display 
 |**Frequency Pair**||C|0,1| 
-|    Frequency Shore Station Receives||(S)IN|0,1| 
-|    #essential Frequency Shore Station Transmits|SIGFRQ|(S)IN|1,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    Frequency Shore Station Receives||(S)IN|0,1| 298,000,000
+|    #essential Frequency Shore Station Transmits|SIGFRQ|(S)IN|1,1| 298,000,000 
+|Status|STATUS|EN|0,*| 7: temporary
 |===
 
 // end::RadioStation[]

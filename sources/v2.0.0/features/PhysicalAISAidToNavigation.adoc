@@ -29,4 +29,4 @@ An Automatic Identification System (AIS) message 21 transmitted from a physical 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/PhysicalAISAidToNavigation_rules.adoc[tag=PhysicalAISAidToNavigation]
+include::../features_rules/PhysicalAISAidToNavigation_rules.adoc[tag=PhysicalAISAidToNavigation]

@@ -1,32 +1,32 @@
 // tag::SpanFixed[]
 ===== Remark
+- 항해 가능한 지역의 고정형(#F "Span Fixed"), 개방형(#F "Span Opening") 교량은 교량의 모든 구성요소를 포함하는 Surface type의 #F "Bridge"를 생성하고 관련된 Feature는 #R "Bridge Aggregation" 관계 설정 +
+(교량에 대한 명칭이나 정보는 “Bridge”에 입력) +
+※ Relation 페이지 참조 +
+- #F "Span Opening"을 포함하는 #R "Bridge Aggregation"은 속성 #A "Opening bridge"
+, #A "Category of opening bridge" 필수 입력
+- 교량 수직높이는 #F "Span Fixed"와 #F "Span Opening"의 #A "Vertical clearance"에 필수 입력하며, 아래 그림과 같이 높이 값에 따른 각각의 피처를 생성
+
+<항해 가능수역의 교량 인코딩 예시>
+//image::../images/SpanFixed/SpanFixed_image-1.png[width=400]
+//image::../images/SpanFixed/SpanFixed_image-2.png[width=400]
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|**Horizontal Clearance Fixed**||C|0,1| 
-|    #essential Horizontal Clearance Value|HORCLR|(S)RE|1,1| 
-|    Horizontal Distance Uncertainty|HORACC|(S)RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
 |**#essential Vertical Clearance Fixed**|VERCLR|C|1,1| 
-|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1| 
-|**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1| 
-|        #essential Uncertainty Fixed||(S)RE|1,1| 
-|        Uncertainty Variable Factor||(S)RE|0,1| 
-|Vertical Datum|VERDAT|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1| 10
+|**#essential Vertical Clearance Open**|VERCOP|C|1,1| 
+|    #essential Vertical Clearance Unlimited||(S)BO|1,1| true
+|    Vertical Clearance Value|VERCLR|(S)RE|0,1| undefined
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Coastal Fairway Survey in 2022
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 2022년 연안항로조사
 |===
+
 
 // end::SpanFixed[]

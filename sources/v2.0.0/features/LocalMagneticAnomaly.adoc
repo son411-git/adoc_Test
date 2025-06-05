@@ -24,4 +24,4 @@ An anomaly of the magnetic field of the Earth, extending over a relatively small
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/LocalMagneticAnomaly_rules.adoc[tag=LocalMagneticAnomaly]
+include::../features_rules/LocalMagneticAnomaly_rules.adoc[tag=LocalMagneticAnomaly]

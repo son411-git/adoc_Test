@@ -1,16 +1,28 @@
 // tag::TextPlacement[]
 ===== Remark
+- #F "Text Placement"는 ECDIS 화면에서 해도정보의 식별을 용이하게 하기 위함이며, Point, Curve, Surface 형태의 피처에 적용 가능
+- 각각의 #F "Text Placement" 피처는 하나의 텍스트만 표현할 수 있으며 해당 피처와 #R "Text Association" 관계 설정 +
+  ※ Relation 페이지 참조 +  
+- #F "Text Placement"의 적용은 전자해도 작업 시 작업자의 판단에 따라 필요한 부분에만 사용하며 특정 피처의 일괄 적용이나 무분별한 사용은 항해자에게 혼란 야기※ 꼭 필요한 부분(등질의 내용이 중첩되어 식별이 어렵거나 항해상 중요한 구역)에 한해서만 사용
+- #F "Text Placement" 입력 시, 기준(편집) 축척으로 디스플레이한 상태에서 최적 위치를 결정
+- #A "Text offset bearing"은 참조점을 기준으로 텍스트의 방위를 입력하며, ECDIS 상에서 텍스트 자체의 회전 여부는  #A "Text rotation"에 입력
+- #A "Text offset distance"는 참조점을 기준으로 텍스트의 이격거리를 입력하며, 0~50mm 범위 내 값을 입력
+- #A "Text rotation" = true로 입력 시, ECDIS의 표시모드(north-up 또는 course-up)에 따라 수평으로 정렬되도록 회전
+- #A "Text type" = 1(name) 입력 시 관계 설정된 피처의 #A "feature name"을 상속받으며, #A "Text type" = 2(feature characteristic) 입력 시 등질을 상속받음
+- 명칭과 등질을 개별적으로 배치해야 하는 경우,#A "Text Placement"를 2개 사용단, 수직 또는 수평 정렬은 소축척으로 디스플레이 했을 때 겹칠 수 있으므로 권장되지 않음
+- #A "Scale minimum" 값은 연관된 피처의 값보다 큰 값의 숫자(소축척)가 입력되어서는 안 됨
+
+
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
+|#essential Text Offset Bearing||IN|1,1| 246
+|#essential Text Offset Distance||IN|1,1| 15 
+|Text Rotation||BO|0,1| true
+|Text Type||EN|1,2| 2: light characteristic
 
-|#essential Text Offset Bearing||IN|1,1| 
-|#essential Text Offset Distance||IN|1,1| 
-|Text Rotation||BO|0,1| 
-|Text Type||EN|1,2| 
-|Scale Minimum|SCAMIN|IN|0,1| 
 |===
 
 // end::TextPlacement[]

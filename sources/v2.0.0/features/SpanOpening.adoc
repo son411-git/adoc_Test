@@ -35,4 +35,4 @@ An opening component of the deck of a bridge spanning successive bridge piers.
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/SpanOpening_rules.adoc[tag=SpanOpening]
+include::../features_rules/SpanOpening_rules.adoc[tag=SpanOpening]

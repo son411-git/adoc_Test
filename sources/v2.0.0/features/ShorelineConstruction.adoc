@@ -40,4 +40,4 @@ A fixed artificial structure in the water and/or adjoining the land. It may also
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/ShorelineConstruction_rules.adoc[tag=ShorelineConstruction]
+include::../features_rules/ShorelineConstruction_rules.adoc[tag=ShorelineConstruction]

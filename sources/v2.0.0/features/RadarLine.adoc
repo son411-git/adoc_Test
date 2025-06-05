@@ -22,4 +22,4 @@ Recommended tracks along which ships can be guided by coastal radar stations in 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RadarLine_rules.adoc[tag=RadarLine]
+include::../features_rules/RadarLine_rules.adoc[tag=RadarLine]

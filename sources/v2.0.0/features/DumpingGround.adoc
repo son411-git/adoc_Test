@@ -28,4 +28,4 @@ A sea area where dredged material or other potentially more harmful material, fo
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/DumpingGround_rules.adoc[tag=DumpingGround]
+include::../features_rules/DumpingGround_rules.adoc[tag=DumpingGround]

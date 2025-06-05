@@ -1,35 +1,29 @@
 // tag::PilotBoardingPlace[]
 ===== Remark
 
+- 도선 연락정보를 알 경우 #F "Contact Details"피처에 입력하고 #R "AdditionalInformation Association" 관계 설정
+- 육상의 도선사 사무실은 #F "Building"이나 #F "Landmark" 피처를 이용하고 #A "function" = 11(pilot office) 또는 12(pilot lookout)을 입력
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Pilot Boarding Place|CATPIL|EN|0,1| 
-|Category of Preference||EN|0,1| 
-|Communication Channel|COMCHA|TE|0,*| 
-|Destination||TE|0,*| 
+|Category of Pilot Boarding Place|CATPIL|EN|0,1|1: borading by pilot-crusing vessel 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jangan-Incheon
+|    Name Usage||(S)EN|0,1| 1: default name display
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Pilot Movement||EN|0,*| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 장안-인천
+|    Name Usage||(S)EN|0,1| 2: alternate name display 
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1|change the pilot boarding place at the bad weather of heavy seas warning enforcement date : 16 Feb. 2009
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 풍랑주의보 이상의 기상특보 발효 및 그에 준하는 기상 상태일 경우에 사용하는 도선사 승하선 지점
 |===
 
 // end::PilotBoardingPlace[]

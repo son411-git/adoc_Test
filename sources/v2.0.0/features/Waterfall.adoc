@@ -22,4 +22,4 @@ A vertically descending part of a watercourse where it falls from a height (for 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Waterfall_rules.adoc[tag=Waterfall]
+include::../features_rules/Waterfall_rules.adoc[tag=Waterfall]

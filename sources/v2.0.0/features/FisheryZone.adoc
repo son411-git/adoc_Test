@@ -22,4 +22,4 @@ The offshore zone in which exclusive fishing rights and management are held by t
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/FisheryZone_rules.adoc[tag=FisheryZone]
+include::../features_rules/FisheryZone_rules.adoc[tag=FisheryZone]

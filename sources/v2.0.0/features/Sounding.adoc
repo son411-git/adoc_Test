@@ -24,4 +24,4 @@ Measured or charted depth of water (may be a drying height), or the measurement 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Sounding_rules.adoc[tag=Sounding]
+include::../features_rules/Sounding_rules.adoc[tag=Sounding]

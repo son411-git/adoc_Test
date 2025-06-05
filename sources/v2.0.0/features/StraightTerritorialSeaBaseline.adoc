@@ -17,4 +17,4 @@ Straight baselines are a system of straight lines joining specified or discrete 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/StraightTerritorialSeaBaseline_rules.adoc[tag=StraightTerritorialSeaBaseline]
+include::../features_rules/StraightTerritorialSeaBaseline_rules.adoc[tag=StraightTerritorialSeaBaseline]

@@ -39,4 +39,4 @@ Any prominent object at a fixed location on land which can be used in determinin
 |In the Water||BO|0,1
 |===
 
-// include::../features_rules/Landmark_rules.adoc[tag=Landmark]
+include::../features_rules/Landmark_rules.adoc[tag=Landmark]

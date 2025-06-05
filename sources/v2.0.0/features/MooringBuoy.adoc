@@ -36,4 +36,4 @@ A buoy secured to the bottom by permanent moorings with means for mooring a vess
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/MooringBuoy_rules.adoc[tag=MooringBuoy]
+include::../features_rules/MooringBuoy_rules.adoc[tag=MooringBuoy]

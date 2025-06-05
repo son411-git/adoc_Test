@@ -29,4 +29,4 @@ An area of a two-way route within which traffic flow is generally along one bear
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/TwoWayRoutePart_rules.adoc[tag=TwoWayRoutePart]
+include::../features_rules/TwoWayRoutePart_rules.adoc[tag=TwoWayRoutePart]

@@ -36,4 +36,4 @@ The recommended route centreline indicates the 'centreline' of a recommended rou
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RecommendedRouteCentreline_rules.adoc[tag=RecommendedRouteCentreline]
+include::../features_rules/RecommendedRouteCentreline_rules.adoc[tag=RecommendedRouteCentreline]

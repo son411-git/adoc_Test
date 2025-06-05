@@ -38,4 +38,4 @@ An emergency wreck marking buoy is a buoy moored on or above a new wreck, design
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/EmergencyWreckMarkingBuoy_rules.adoc[tag=EmergencyWreckMarkingBuoy]
+include::../features_rules/EmergencyWreckMarkingBuoy_rules.adoc[tag=EmergencyWreckMarkingBuoy]

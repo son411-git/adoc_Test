@@ -34,4 +34,4 @@ A long heavy timber or section of steel, wood, concrete, etc., forced into the e
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/Pile_rules.adoc[tag=Pile]
+include::../features_rules/Pile_rules.adoc[tag=Pile]

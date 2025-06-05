@@ -39,4 +39,4 @@ A post or group of posts, used for mooring or warping a vessel, or as an aid to 
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/Dolphin_rules.adoc[tag=Dolphin]
+include::../features_rules/Dolphin_rules.adoc[tag=Dolphin]

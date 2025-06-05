@@ -1,31 +1,37 @@
 // tag::FishingFacility[]
 ===== Remark
 
+- 일반적으로 정치망 인코딩에 사용하며, #A "Category of fishing facility" = 2(fish trap) 입력
+- #A "Feautre name"에는 피처의 속성과 중복되지 않는 어로시설의 명칭을 입력하며,“Fish trap”, “정치망” 등 피처의 속성과 동일한 정보가 중복으로 입력된 경우 삭제필요 +
+기존 S-57 전자해도에서 어로시설의 명칭이 #A "INFORM", #A "NINFOM"에 입력된 경우, # A "Featur name"으로 수정필요
+////
+[cols="1,1,1", frame=none, grid=none]
+|===
+|image:../../../images/FishingFacility/FishingFacility_image-1.png[width=200]
+|image:../../../images/FishingFacility/FishingFacility_image-2.png[width=200]
+|image:../../../images/FishingFacility/FishingFacility_image-3.png[width=200]
+|===
+////
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Fishing Facility|CATFIF|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
+|Category of Fishing Facility|CATFIF|EN|0,1| 2: fish trap
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| set gill net 
+|    Name Usage||(S)EN|0,1| 1: default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 닻자망 
+|    Name Usage||(S)EN|0,1| 2: alternate name display
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| From ROK KHOA surveys in 2019
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 2019년 해양안전지도 현장조사
 |===
 
 // end::FishingFacility[]

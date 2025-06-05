@@ -21,4 +21,4 @@ The disturbance of water caused by the interaction of any combination of waves, 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/WaterTurbulence_rules.adoc[tag=WaterTurbulence]
+include::../features_rules/WaterTurbulence_rules.adoc[tag=WaterTurbulence]

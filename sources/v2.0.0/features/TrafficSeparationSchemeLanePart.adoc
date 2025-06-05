@@ -26,4 +26,4 @@ An area within defined limits in which one-way traffic is established. Natural o
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/TrafficSeparationSchemeLanePart_rules.adoc[tag=TrafficSeparationSchemeLanePart]
+include::../features_rules/TrafficSeparationSchemeLanePart_rules.adoc[tag=TrafficSeparationSchemeLanePart]

@@ -28,4 +28,4 @@ A straight line extending towards an area of navigational interest and generally
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/NavigationLine_rules.adoc[tag=NavigationLine]
+include::../features_rules/NavigationLine_rules.adoc[tag=NavigationLine]

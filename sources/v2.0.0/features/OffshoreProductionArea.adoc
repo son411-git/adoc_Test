@@ -38,4 +38,4 @@ An area at sea within which there are production facilities.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/OffshoreProductionArea_rules.adoc[tag=OffshoreProductionArea]
+include::../features_rules/OffshoreProductionArea_rules.adoc[tag=OffshoreProductionArea]

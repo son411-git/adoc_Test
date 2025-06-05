@@ -27,4 +27,4 @@ That part of a river, harbour and so on, where the main navigable channel for ve
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/FairwaySystem_rules.adoc[tag=FairwaySystem]
+include::../features_rules/FairwaySystem_rules.adoc[tag=FairwaySystem]

@@ -21,4 +21,4 @@ A traffic flow pattern indicating a recommended directional movement of traffic 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RecommendedTrafficLanePart_rules.adoc[tag=RecommendedTrafficLanePart]
+include::../features_rules/RecommendedTrafficLanePart_rules.adoc[tag=RecommendedTrafficLanePart]

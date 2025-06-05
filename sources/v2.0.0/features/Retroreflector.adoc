@@ -26,4 +26,4 @@ A means of distinguishing unlighted marks at night. Retroreflective material is 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Retroreflector_rules.adoc[tag=Retroreflector]
+include::../features_rules/Retroreflector_rules.adoc[tag=Retroreflector]

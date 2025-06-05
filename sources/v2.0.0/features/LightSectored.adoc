@@ -63,4 +63,4 @@ A light presenting different appearances (in particular, different colours) over
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/LightSectored_rules.adoc[tag=LightSectored]
+include::../features_rules/LightSectored_rules.adoc[tag=LightSectored]

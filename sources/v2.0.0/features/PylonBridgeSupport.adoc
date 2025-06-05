@@ -39,4 +39,4 @@ A vertical construction consisting, for example, of a steel framework or pre-str
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/PylonBridgeSupport_rules.adoc[tag=PylonBridgeSupport]
+include::../features_rules/PylonBridgeSupport_rules.adoc[tag=PylonBridgeSupport]

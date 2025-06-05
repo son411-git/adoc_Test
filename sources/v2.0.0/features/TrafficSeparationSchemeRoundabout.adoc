@@ -25,4 +25,4 @@ A routeing measure comprising a separation point or circular separation zone and
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/TrafficSeparationSchemeRoundabout_rules.adoc[tag=TrafficSeparationSchemeRoundabout]
+include::../features_rules/TrafficSeparationSchemeRoundabout_rules.adoc[tag=TrafficSeparationSchemeRoundabout]

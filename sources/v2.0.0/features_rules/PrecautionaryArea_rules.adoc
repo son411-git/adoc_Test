@@ -1,33 +1,29 @@
 // tag::PrecautionaryArea[]
 ===== Remark
 
+- 주의구역은 통항분리방식 항로 등이 교차하는 특정 구역과 연관되어 지정되며 보통 IMO가 지정
+- IMO 채택 항로 여부는 #F "Traffic Separation Scheme"피처 속성에 입력 +
+  ※ #F "Traffic Separation Scheme" 인코딩 기준 참조
+- 주의구역은 통항분리방식 항로 등 다른 피처들과 중첩 가능
+
+//image::../images/PrecautionaryArea/PrecautionaryArea_image-1.png[width=300]
+
+- 아래 그림 같이 여러 종류의 항로와 항로표지들이 모두 연결된 항로 시스템을 구축할 경우, surface 타입의 #F "Traffic Separation Scheme"를 생성하고 관련된 피처를 #R "Traffic Separation Scheme Aggregation" 관계 형성 +
+  ※ Relation 페이지 참조
+
+//image::../images/PrecautionaryArea/PrecautionaryArea_image-2.png[width=300]
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|IMO Adopted|CATTSS|BO|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Restriction|RESTRN|EN|0,*| 
-|Status|STATUS|EN|0,*| 
-|**Vessel Speed Limit**||C|0,*| 
-|    #essential Speed Limit||(S)RE|1,1| 
-|    #essential Speed Units||(S)EN|1,1| 
-|    Vessel Class||(S)TE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
 |**#essential Information**|INFORM|C|1,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1|Precautionary Area C(Special attention is required for transit  of the area as it requires a large altering course)
+|**#essential Information**|INFORM|C|1,*| 
+|    #essential Language||(S)TE|1,1|kor 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 항행주의구역 C(이 구역의 통항을 위해서는 대각도 변침이 요구되므로 각별한 주의를 요함)
 |===
 
 // end::PrecautionaryArea[]

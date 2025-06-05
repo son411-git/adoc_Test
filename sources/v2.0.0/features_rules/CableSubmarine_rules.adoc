@@ -5,7 +5,7 @@
    * 선박이 해저 케이블에 걸려 위험할 수 있는 가장 깊은 수심
 - 케이블의 고압전류로 인해 선박의 자기컴퍼스에 이상을 야기할 경우 지방자기이상 #F "Local Magnetic Anomaly"
   피처로 입력
-- 기존 S-57전자해도의 불필요한 #A "Information"정보는 삭제함.(ex. INFORM: Submarine power line)
+- 기존 S-57전자해도의 불필요한 #A "INFORM"정보는 삭제함.(ex. INFORM: Submarine power line)
 
 //image::../images/CableSubmarine_image-1[width=400]
 

@@ -1,39 +1,27 @@
 // tag::RecommendedRouteCentreline[]
 ===== Remark
 
+- 국제 표준에서 #A "Orientation value" 속성은 필수 입력 사항이 아니지만 국내 전자해도에서는 필수 입력 
+- #A "Orientation value"에 오직 하나의 값만 입력 ; 다른 값은 추론 가능 (orientation value +/- 180)
+- #A "Orientation value"에 바다에서 바라본 방위 값을 입력 (바다의 방향을 결정할 수 없는 경우 180°미만인 값을 입력)
+- 추천 항로 중심선이 꺾이는 부분에서는 피처를 분리하여 각각 입력
+- #F "Recommended Route Centreline"이 #F "Navigation Line"과 함께 사용되어 추천항로를 나타낼 경우 no geometry 타입의 #F "Range System" 피처를 입력하고 #R "Range System Aggregation" 관계 설정 +
+  ※ Relation 설정 페이지 참조
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Based On Fixed Marks|CATTRK|BO|1,1| 
-|Depth Range Minimum Value|DRVAL1|RE|0,1| 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Orientation Value|ORIENT|RE|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 
-|Status|STATUS|EN|0,*| 
-|Technique of Vertical Measurement|TECSOU|EN|0,*| 
-|Traffic Flow|TRAFIC|EN|0,1| 
-|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1| 
-|    #essential Uncertainty Fixed||(S)RE|1,1| 
-|    Uncertainty Variable Factor||(S)RE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|#essential Based On Fixed Marks|CATTRK|BO|1,1|False 
+|Orientation Value|ORIENT|RE|0,1|110
+|Traffic Flow|TRAFIC|EN|0,1|4: two-way 
+|**Information**|INFORM|C|0,*|  
+|    #essential Language||(S)TE|1,1|eng
+|    Text|INFORM/NINFOM|(S)TE|0,1|Vessels of 1,000 gross tonnage and upwards inbound to and outbound from Pohang Port are recommended to Navigate along Homigot Recommended Route.
+|**Information**|INFORM|C|0,*|  
+|    #essential Language||(S)TE|1,1|kor
+|    Text|INFORM/NINFOM|(S)TE|0,1|포항항에 입출항하는 총톤수 1,000톤 이상의 선박은 미곶 추천항로를 따라 항행할 것을 권고함 
 |===
 
 // end::RecommendedRouteCentreline[]

@@ -29,4 +29,4 @@ A fixed component of the deck of a bridge spanning successive bridge piers.
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/SpanFixed_rules.adoc[tag=SpanFixed]
+include::../features_rules/SpanFixed_rules.adoc[tag=SpanFixed]

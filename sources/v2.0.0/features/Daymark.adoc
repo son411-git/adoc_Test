@@ -39,4 +39,5 @@ The identifying characteristics of an aid to navigation which serve to facilitat
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===
+
 include::../features_rules/Daymark_rules.adoc[tag=Daymark]

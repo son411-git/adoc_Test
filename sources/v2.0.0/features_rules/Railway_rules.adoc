@@ -1,27 +1,10 @@
 // tag::Railway[]
 ===== Remark
 
-===== Example
-[cols="20,10,5,5,20", options="header"]
-|===
-|Attribute |Acronym |Type |Mult. |Value
+ - 기차역은 #F "Building" 피처에 속성 #A "Function" = 8(기차역) 으로 인코딩
+ - 사용하지 않는 철도를 인코딩하는 경우 속성 #A "Status" = 4(미사용)으로 인코딩
 
-|Condition|CONDTN|EN|0,1| 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|===
+===== Example
+※ 공통속성(Scale minimum) 외에 입력된 속성 없음!
 
 // end::Railway[]

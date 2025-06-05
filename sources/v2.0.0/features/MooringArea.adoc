@@ -35,4 +35,4 @@ An area in which vessels may be secured to mooring buoys
 |    Vessel Class||(S)TE|0,1
 |===
 
-// include::../features_rules/MooringArea_rules.adoc[tag=MooringArea]
+include::../features_rules/MooringArea_rules.adoc[tag=MooringArea]

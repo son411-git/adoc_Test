@@ -1,40 +1,22 @@
 // tag::Hulk[]
 ===== Remark
 
+- 선박의 용도가 아니라 영구적으로 계류하며 기타 용도로 사용되는 경우에만 해당
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Hulk|CATHLK|EN|0,*| 
-|Colour|COLOUR|EN|0,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
+|Category of Hulk|CATHLK|EN|0,*| 1: floating restaurant
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Horizontal Length|HORLEN|RE|0,1| 
-|Horizontal Width|HORWID|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Restaurant
+|    Name Usage||(S)EN|0,1|1 : default name display 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 해상식당당
+|    Name Usage||(S)EN|0,1| 2: alternate name display 
 |===
 
 // end::Hulk[]

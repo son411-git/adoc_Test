@@ -38,4 +38,4 @@ A form of dry dock consisting of a floating structure of one or more sections wh
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/FloatingDock_rules.adoc[tag=FloatingDock]
+include::../features_rules/FloatingDock_rules.adoc[tag=FloatingDock]

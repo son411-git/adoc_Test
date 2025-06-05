@@ -16,4 +16,4 @@ The horizontal plane or tidal datum to which soundings have been reduced. Also c
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SoundingDatum_rules.adoc[tag=SoundingDatum]
+include::../features_rules/SoundingDatum_rules.adoc[tag=SoundingDatum]

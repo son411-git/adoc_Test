@@ -21,4 +21,4 @@ A geographically defined part of the sea or other navigable waters. It may be sp
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SeaAreaNamedWaterArea_rules.adoc[tag=SeaAreaNamedWaterArea]
+include::../features_rules/SeaAreaNamedWaterArea_rules.adoc[tag=SeaAreaNamedWaterArea]

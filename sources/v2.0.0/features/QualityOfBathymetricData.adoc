@@ -38,4 +38,4 @@ An area within which a uniform assessment of the quality of the bathymetric data
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/QualityOfBathymetricData_rules.adoc[tag=QualityOfBathymetricData]
+include::../features_rules/QualityOfBathymetricData_rules.adoc[tag=QualityOfBathymetricData]

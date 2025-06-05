@@ -20,7 +20,7 @@ A transponder beacon transmitting a coded signal on radar frequency, permitting 
 |    #essential Date Start|DATSTA|(S)TD|1,1
 |**Radar Wave Length**||C|0,2
 |    #essential Radar Band||(S)TE|1,1
-|    #essential Wave Length Value|Radar Wave Length|(S)RE|1,1
+|    #essential Wave Length Value||(S)RE|1,1
 |**Sector Limit**||C|0,1
 |**    #essential Sector Limit One**|SECTR1|(S)C|1,1
 |        #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
@@ -43,4 +43,4 @@ A transponder beacon transmitting a coded signal on radar frequency, permitting 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RadarTransponderBeacon_rules.adoc[tag=RadarTransponderBeacon]
+include::../features_rules/RadarTransponderBeacon_rules.adoc[tag=RadarTransponderBeacon]

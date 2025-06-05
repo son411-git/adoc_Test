@@ -32,4 +32,4 @@ A floating structure, usually rectangular in shape which serves as landing, pier
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/Pontoon_rules.adoc[tag=Pontoon]
+include::../features_rules/Pontoon_rules.adoc[tag=Pontoon]

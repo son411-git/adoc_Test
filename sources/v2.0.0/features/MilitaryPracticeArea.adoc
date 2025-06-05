@@ -34,4 +34,4 @@ An area within which naval, military or aerial exercises are carried out.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/MilitaryPracticeArea_rules.adoc[tag=MilitaryPracticeArea]
+include::../features_rules/MilitaryPracticeArea_rules.adoc[tag=MilitaryPracticeArea]

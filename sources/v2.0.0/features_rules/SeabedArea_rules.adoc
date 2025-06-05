@@ -1,28 +1,32 @@
 // tag::SeabedArea[]
 ===== Remark
+- 필수 복합 속성인 #A "Surface characteristics"의 경우 하위 속성인 #A "Nature of surface" 또는 #A "Nature of surface qualifying terms" 중 한 가지 이상을 입력
+- 여러 물질로 이루어진 경우, 주된 구성 성분 순으로 추가입력
+- 항행에 위험한 바위(Point)를 인코딩 하는 경우 #F "Underwater/Awash Rock" 피처를 사용하여 입력
+- 바위가 많은 해저의 형상(area)은 #F "Seabed area"로 인코딩하며, #A "Nature of surface" = 9, #A "Water level effect" = 4 입력
+- <표 A>는 #A "Nature of surface"와 #A "Nature of surface-qualifying terms"의 가장 일반적인 조합을 나타냄
+
+//image:../images/SeabedArea/SeabedArea_image-1.png[width=400]
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
 |**#essential Surface Characteristics**||C|1,*| 
-|    Nature of Surface|NATSUR|(S)EN|0,1| 
-|    Nature of Surface - Qualifying Terms|NATQUA|(S)EN|0,3| 
-|    Underlying Layer||(S)IN|0,1| 
-|Water Level Effect|WATLEV|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    Nature of Surface|NATSUR|(S)EN|0,1| 9: rock
+|    Nature of Surface - Qualifying Terms|NATQUA|(S)EN|0,3| 1: fine
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Yeonjakseo
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 연작서
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Water Level Effect|WATLEV|EN|0,1| 4: covers and uncovers
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| H3426050272014(Scale 1:5,000)
 |===
 
 // end::SeabedArea[]

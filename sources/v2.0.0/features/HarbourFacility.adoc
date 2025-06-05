@@ -39,4 +39,4 @@ A harbour installation with a service or commercial operation of public interest
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/HarbourFacility_rules.adoc[tag=HarbourFacility]
+include::../features_rules/HarbourFacility_rules.adoc[tag=HarbourFacility]

@@ -32,4 +32,4 @@ Approximate tidal stream characteristics given as discrete value sets at a speci
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/TidalStreamPanelData_rules.adoc[tag=TidalStreamPanelData]
+include::../features_rules/TidalStreamPanelData_rules.adoc[tag=TidalStreamPanelData]

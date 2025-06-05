@@ -20,4 +20,4 @@ A zone or line separating the traffic lanes in which ships are proceeding in opp
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SeparationZoneOrLine_rules.adoc[tag=SeparationZoneOrLine]
+include::../features_rules/SeparationZoneOrLine_rules.adoc[tag=SeparationZoneOrLine]

@@ -1,41 +1,53 @@
 // tag::QualityOfBathymetricData[]
 ===== Remark
 
+- 최대표시 축척 1:700,000 이상 대축척의 수심영역에 사용(수심 및 측량 데이터가 없는 경우 인코딩 불필요)
+- CATZOC의 측량등급을 #A "Category of zone of confidence IN data"에 입력
+- 현재 각각의 측량성과에 대한 수심의 위치 및 불확실도 값이 주어지지 않았으므로 S-57에서 제시하는 값 입력 +
+  (추후 측량성과에 대해 불확실도 값이 주어진다면 각각의 값 변경) +
+  ※ S-57에 존재하는 #F "M_QUAL"의 #A "CATZOC"와 아래 테이블의 Depth Accuracy의 매칭으로 입력
+
+//image:../images/QualityOfBathymetricData/QualityOfBathymetricData_image-1.png[width=400]
+
+- 필수 속성인 Category of temporal variation 설정 기준 +
+  ※ 기본적으로 5: unlikely to change로 변환
+
+[%header,format=csv]
+|===
+값,기준
+1:extreme event,허리케인/지진 등이 발생된 이후 해저를 크게 변화시킨 경우 
+2:likely to change and significant shoaling expected,변화는 있고 중요한 영향을 미치는 경우
+3:likely to change but significant shoaling not expected,변화는 있지만 중요한 영향을 미치지 않는 경우
+5:unlikely to change,해저의 변화 가능성이 낮음
+6:unassessed,일시적 변동 없음
+|===
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Category of Temporal Variation||EN|1,1| 
-|#essential Data Assessment||EN|1,1| 
-|Depth Range Maximum Value|DRVAL2|RE|0,1| 
-|Depth Range Minimum Value|DRVAL1|RE|0,1| 
+|#essential Category of Temporal Variation||EN|1,1|5: unlikely to change 
+|#essential Data Assessment||EN|1,1|3: unassessed 
 |**#essential Features Detected**||C|1,1| 
-|    #essential Least Depth of Detected Features Measured||(S)BO|1,1| 
-|    #essential Significant Features Detected||(S)BO|1,1| 
-|    Size of Features Detected||(S)RE|0,1| 
-|#essential Full Seafloor Coverage Achieved||BO|1,1| 
-|Interoperability Identifier||URN|0,1| 
+|    #essential Least Depth of Detected Features Measured||(S)BO|1,1|true
+|    #essential Significant Features Detected||(S)BO|1,1|true
+|    Size of Features Detected||(S)RE|0,1|2
+|#essential Full Seafloor Coverage Achieved||BO|1,1|true
 |**Survey Date Range**||C|0,1| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
+|    #essential Date End|DATEND|(S)TD|1,1|20121106 
+|    Date Start|DATSTA|(S)TD|0,1|2120312 
 |**#essential Zone of Confidence**||C|1,*| 
-|    #essential Category of Zone of Confidence In Data|CATZOC/ZOC|(S)EN|1,1| 
-|**    Fixed Date Range**||(S)C|0,1| 
-|        Date End|DATEND|(S)TD|0,1| 
-|        Date Start|DATSTA|(S)TD|0,1| 
+|    #essential Category of Zone of Confidence In Data|CATZOC/ZOC|(S)EN|1,1|1: zone of cofidence A1 
 |**    Horizontal Position Uncertainty**||(S)C|0,1| 
-|        #essential Uncertainty Fixed||(S)RE|1,1| 
-|        Uncertainty Variable Factor||(S)RE|0,1| 
+|        #essential Uncertainty Fixed||(S)RE|1,1|5
+|        Uncertainty Variable Factor||(S)RE|0,1|0.05
 |**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1| 
-|        #essential Uncertainty Fixed||(S)RE|1,1| 
-|        Uncertainty Variable Factor||(S)RE|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|        #essential Uncertainty Fixed||(S)RE|1,1|0.5 
+|        Uncertainty Variable Factor||(S)RE|0,1|0.01 
+|**Information**|INFORM|C|0,*|  
+|    #essential Language||(S)TE|1,1|eng
+|    Text|INFORM/NINFOM|(S)TE|0,1|From ROK KHOA surveys in 2012(Scale 1:5,000) 
 |===
 
 // end::QualityOfBathymetricData[]

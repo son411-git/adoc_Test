@@ -29,4 +29,4 @@ A warning signal station is a place on shore from which warning signals are made
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SignalStationWarning_rules.adoc[tag=SignalStationWarning]
+include::../features_rules/SignalStationWarning_rules.adoc[tag=SignalStationWarning]

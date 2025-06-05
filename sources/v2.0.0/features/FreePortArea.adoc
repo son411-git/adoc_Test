@@ -21,4 +21,4 @@ A port where certain import and export duties are waived (unless goods pass into
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/FreePortArea_rules.adoc[tag=FreePortArea]
+include::../features_rules/FreePortArea_rules.adoc[tag=FreePortArea]

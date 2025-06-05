@@ -1,42 +1,31 @@
 // tag::PylonBridgeSupport[]
 ===== Remark
 
+- 교각 및 케이블을 지지하는 #F "Pylon/Bridge Support" 피처는 항해 가능한 지역이면서 대축척일 때 입력
+- #A "Water level effect" = 1, 2 or 6으로 입력되면 Skin of the earth인 #F "Land area"와 중첩
+- 교각은 #A "Category of pylon" = 5(bridge pier)로 인코딩하고 #F "Bridge"와 #R "Bridge Aggregation" 관계 설정 +
+  ※ Relation 페이지 참조
+- 지주는 #A "Category of pylon" = 3(공중케이블/공중철탑)으로 입력
+- #F "Pylon/Bridge Support"가 등화(Lights)와 함께 사용될 경우, 등대 관리번호는 등화의 #A "Feature name"에 입력
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Category of Pylon|CATPYL|EN|1,1| 
-|Colour|COLOUR|EN|0,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
+|#essential Category of Pylon|CATPYL|EN|1,1|1: power transmission pylon/pole
+|Colour|COLOUR|EN|0,*| 6(yellow)
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Multiplicity of Features**||C|0,1| 
-|    #essential Multiplicity Known||(S)BO|1,1| 
-|    Number of Features||(S)IN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Water Level Effect|WATLEV|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Yeongheungsudo No P
+|    Name Usage||(S)EN|0,1|1: default name display  
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 영흥 한전철탑P호
+|    Name Usage||(S)EN|0,1| 2: alternate name display 
+|Height|HEIGHT|RE|0,1| 62m
+|Nature of Construction|NATCON|EN|0,*| 7: metal 
+|Visual Prominence|CONVIS|EN|0,1|1: visual prominence
 |===
 
 // end::PylonBridgeSupport[]

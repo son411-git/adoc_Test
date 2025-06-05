@@ -1,33 +1,52 @@
 // tag::VirtualAISAidToNavigation[]
 ===== Remark
+- 현재 국내 전자해도의 입력 현황에 따르면 모든 무선국은 ”RDOSTA“로 입력되었으나 S-101전자해도에서는 #F "Radio Station",#F "Physical AIS Aid to Navigation",#F "Virtual AIS Aid to Navigation"으로 구분
+- 무선국이 송신한 정보를 이용하여 선박의 위치를 항해자들에게 제공할 목적이나 선박에서는 전파방향탐지(RDF)를 사용하지 않기 때문에 <표 A>의 무선국은 S-101 속성에 존재하지 않음 – 삭제필요
+
+////
+[cols="5,30,50,15", options="header"]
+|===
+|No | IHO 해도제작 기준에 따른 기호 | S-57 속성 CATROS | 기타
+|1|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-1[width=400]|1. circular (non-directional) marine or aero-marine radiobeacon +
+ ※ 국내 S-57 전자해도에서는 해당 속성을 AIS로 지정,“Physical AIS Aid to Navigational”로 변환|무지향성 무선표지
+|2|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-2[width=400]| 2. directional radiobeacon|지향성 무선표지
+|3|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-3[width=400]|  3. rotating-pattern radiobeacon|회전식 무선표지
+|4|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-4[width=400]| 4.consol beacon |콘솔솔 무선표지
+|5|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-5[width=400]|  5. radio direction-finding station |무선방향탐지
+|6|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-6[width=400]|  6. coast radio station providing QTG service | 무선표지
+ 업무를하는 해안국
+|7|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-7[width=400]|  7. aeronautical radiobeacon |항공무선표지
+
+|===
+
+////
+
+◯ Virtual AIS Aid to Navigational +
+//image::../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-8[width=400]
+//image::../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-9[width=400]
+- 영구적이거나 특정 기간 동안 사용될 경우 인코딩 (정기적 또는 단기간 이동 및 제거되는 것이 업데이트로 배포되기 어려울 경우 인코딩하지 않음) +
+- #A "Virtual AIS aid to navigation type" 에 정의된 유형 이외의 목적을 갖는 경우 #A "Virtual AIS aid to navigation type" = 11(특수목적)을 입력하고, #A "information"에 해당 목적을 추가입력 +
+- 항로표지의 부속 피처일 경우 #R "Structure/Equipment" 관계 설정 +
+   ※ Relation 페이지 참조 +
+- #A "Virtual AIS aid to navigation type" 필수입력 (S-57에서 입력한 #F "NEWOBJ"의 #A "CLSNAM"에 따라서 매칭됨)
+
+
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|Estimated Range of Transmission|ESTRNG|RE|0,1| 
+|Estimated Range of Transmission|ESTRNG|RE|0,1| 25
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|MMSI Code||TE|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Status|STATUS|EN|0,1| 
-|#essential Virtual AIS Aid to Navigation Type||EN|1,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| KR4736.3
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 3736.3
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Status|STATUS|EN|0,1| 7: temporary
+|#essential Virtual AIS Aid to Navigation Type||EN|1,1| 1: north cardinal
 |===
 
 // end::VirtualAISAidToNavigation[]

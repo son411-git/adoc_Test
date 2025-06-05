@@ -6,44 +6,18 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Colour|COLOUR|EN|0,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
-|Elevation|ELEVAT|RE|0,1| 
+|Colour|COLOUR|EN|0,*| 1(white)
+|Visual Prominence|CONVIS|EN|0,1| 1: visual prominence
+|Nature of Construction|NATCON|EN|0,*| 7: metal
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Multiplicity of Features**||C|0,1| 
-|    #essential Multiplicity Known||(S)BO|1,1| 
-|    Number of Features||(S)IN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|**Vertical Clearance Fixed**|VERCLR|C|0,1| 
-|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1| 
-|**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1| 
-|        #essential Uncertainty Fixed||(S)RE|1,1| 
-|        Uncertainty Variable Factor||(S)RE|0,1| 
-|Vertical Datum|VERDAT|EN|0,1| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Water Level Effect|WATLEV|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
-|In the Water||BO|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Woljeong NoB
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1|kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 월정 해상풍력발전기
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Vertical Length|VERLEN|RE|0,1| 1.8m
 |===
 
 // end::WindTurbine[]

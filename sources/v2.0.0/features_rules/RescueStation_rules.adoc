@@ -1,32 +1,24 @@
 // tag::RescueStation[]
 ===== Remark
 
+- 구조대는 인명구조 장비, 특히 구명보트를 보유한 장소에 인코딩
+- #F "Rescue Station"은 건물이나 구조물 자체와 관계없이 구조대의 기능을 설명하기 위해 사용하며, 서비스가 포함된 건물이나 구조물을 인코딩해야 하는 경우 적절한 피처 (#F "Building", #F "Landmark")를 사용하여 인코딩
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Rescue Station|CATRSC|EN|0,*| 
-|Communication Channel|COMCHA|TE|0,*| 
+|Category of Rescue Station|CATRSC|EN|0,*| 1: rescue station with lifeboat
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
+|    #essential Language||(S)TE|1,1|eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Namhang
+|    Name Usage||(S)EN|0,1|1 : default name display 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1|kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 남항파출소
+|    Name Usage||(S)EN|0,1|2: alternate name display 
 |Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
 |===
 
 // end::RescueStation[]

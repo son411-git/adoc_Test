@@ -17,4 +17,4 @@ Large mobile wave-like sediment feature in shallow water and composed of sand. T
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Sandwave_rules.adoc[tag=Sandwave]
+include::../features_rules/Sandwave_rules.adoc[tag=Sandwave]

@@ -25,4 +25,4 @@ Plants collectively or individually, especially those dominating a particular ar
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Vegetation_rules.adoc[tag=Vegetation]
+include::../features_rules/Vegetation_rules.adoc[tag=Vegetation]

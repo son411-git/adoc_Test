@@ -1,20 +1,18 @@
 // tag::StraightTerritorialSeaBaseline[]
 ===== Remark
+ ! 향후 필요한 내용 입력 !
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|Interoperability Identifier||URN|0,1| 
-|#essential Nationality|NATION|TE|1,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|#essential Nationality|NATION|TE|1,1| KR
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Straight Baseline
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 직선기선
 |===
 
 // end::StraightTerritorialSeaBaseline[]

@@ -24,4 +24,4 @@ A device capable of, or intended for, reflecting radar signals.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RadarReflector_rules.adoc[tag=RadarReflector]
+include::../features_rules/RadarReflector_rules.adoc[tag=RadarReflector]

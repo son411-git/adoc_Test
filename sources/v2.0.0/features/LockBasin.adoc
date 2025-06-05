@@ -32,4 +32,4 @@ A wet dock in a waterway, permitting a ship to pass from one level to another.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/LockBasin_rules.adoc[tag=LockBasin]
+include::../features_rules/LockBasin_rules.adoc[tag=LockBasin]

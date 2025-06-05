@@ -1,35 +1,30 @@
 // tag::Pontoon[]
 ===== Remark
 
+- 부잔교는 Skin of earth 객체가 아니므로 반드시 미측구역(Unsurveyed Area)와 중첩
+- 육지와 부잔교를 연결하는 다리의 경우 #F "Bridge"로 입력하고 #A "Category of bridge" = 3(pontoon bridge) 입력  ※ Briddge 인코딩 기준 참조
+- #F "Pontoon" 경계에 #F "Coastline" #F "Shoreline Construction" 생성 금지
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Condition|CONDTN|EN|0,1| 
+|Condition|CONDTN|EN|0,1| 1: under construction
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Status|STATUS|EN|0,*| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Barge
+|    Name Usage||(S)EN|0,1| 1: default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 바지 
+|    Name Usage||(S)EN|0,1| 2: alternate name display
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Coastal Fairway Survey in 2022
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 2022sus 연안항로조사
 |===
 
 // end::Pontoon[]

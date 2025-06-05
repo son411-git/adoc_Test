@@ -1,5 +1,19 @@
 // tag::FoulGround[]
 ===== Remark
+- 장애물에는 나무, 그루터기, 유정 정두, 방류구, 어초구역, 험악구역, 방책, 얼음방책, 플랫폼이 제거된 장소, 계류도구, 파랑발전장치, 수중발전기, 수중 해양자료수집시스템, 인공암초(reef), 해저 활화산이 포함된다.
+- 장애물이 #F "Foul ground"(험악지) 속성을 가질 경우 #F "Foul Ground"를 사용하여 입력
+* 험악지 #F "Foul ground"는 수상선박의 항해에는 문제가 되지 않으나 정박, 낚시, 수중활동 등은 채 피해야 하는 구역
+ * 험악구역 “Foul area”는 해도에 기록되지 않은 다수의 장애물이 있는 지역
+ - 장애물(Obstruction) 및 험악지(#F "Foul ground")는 아래 표에 따라 입력
+ 
+[cols="1,1,1,1,1" options="header"]
+|===
+|장애물 |INT 1 |water level effect |quality of vertical measurement |technique of vertical measurement 
+|수심을 모름|K40|3 또는 4|2|입력금지
+|최저수심을 앎|K41|3 또는 4|6|
+|와이어를 이용하여 수심 측정|K42|3|6|6
+|다이버에 의해 측정됨|K42|3|6|4
+|===
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
@@ -7,25 +21,24 @@
 |Attribute |Acronym |Type |Mult. |Value
 
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Technique of Vertical Measurement|TECSOU|EN|0,*| 
-|Value of Sounding|VALSOU|RE|0,1| 
-|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1| 
-|    #essential Uncertainty Fixed||(S)RE|1,1| 
-|    Uncertainty Variable Factor||(S)RE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1| eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Iron structure
+|    Name Usage||(S)EN|0,1| 1: default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 철제구조물
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Quality of Vertical Measurement|QUASOU|EN|0,*| 6: least depth known
+|Reported Date|SORDAT|TD|0,1| 20121130
+|Status|STATUS|EN|0,*| 18: existence doubtful
+|Value of Sounding|VALSOU|RE|0,1| 23.5 
+|Scale Minimum|SCAMIN|IN|0,1| 21999
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng 
+|    Text|INFORM/NINFOM|(S)TE|0,1| Old
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 구성과 자료
 |===
 
 // end::FoulGround[]

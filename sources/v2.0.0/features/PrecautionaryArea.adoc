@@ -30,4 +30,4 @@ A routeing measure comprising an area within defined limits where ships must nav
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/PrecautionaryArea_rules.adoc[tag=PrecautionaryArea]
+include::../features_rules/PrecautionaryArea_rules.adoc[tag=PrecautionaryArea]

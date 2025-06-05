@@ -28,4 +28,4 @@ An area for which general information regarding navigation, but not directly rel
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/InformationArea_rules.adoc[tag=InformationArea]
+include::../features_rules/InformationArea_rules.adoc[tag=InformationArea]

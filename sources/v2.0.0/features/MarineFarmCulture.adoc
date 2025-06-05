@@ -42,4 +42,4 @@ An assemblage of cages, nets, rafts and floats or posts where fish, including sh
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/MarineFarmCulture_rules.adoc[tag=MarineFarmCulture]
+include::../features_rules/MarineFarmCulture_rules.adoc[tag=MarineFarmCulture]

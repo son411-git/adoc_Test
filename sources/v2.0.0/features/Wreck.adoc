@@ -34,4 +34,4 @@ The ruined remains of a stranded or sunken vessel which has been rendered useles
 |#essential Surrounding Depth||RE|1,1
 |===
 
-// include::../features_rules/Wreck_rules.adoc[tag=Wreck]
+include::../features_rules/Wreck_rules.adoc[tag=Wreck]

@@ -1,30 +1,20 @@
 // tag::OilBarrier[]
 ===== Remark
 
+- 부유방책이 항구적이지 않으므로 국내 해도에는 미측구역으로 표시
+- 오탁방지막을 입력해야 하는 경우 해상에 Curve 형태로 입력
+- S-57 전자해도에서 오탁방지막 명칭이 #A "INFORM", #A "NINFOM"에 입력되어 있을 경우 #A "Feature name"으로 수정필요 +
+  (명칭 “오탁방지막”은 피처의 속성과 중복되는 정보이므로 삭제필요)
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Oil Barrier|CATOLB|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|Category of Oil Barrier|CATOLB|EN|0,1|2: floating oil barrier 
+|Condition|CONDTN|EN|0,1| 1: under construction
+|Reported Date|SORDAT|TD|0,1| 20120425
+|Scale Minimum|SCAMIN|IN|0,1| 21999
 |===
 
 // end::OilBarrier[]

@@ -1,33 +1,43 @@
 // tag::RadioCallingInPoint[]
 ===== Remark
 
+- 국제 표준에서 #A "Orientation value" 속성은 필수 입력 사항이 아니지만 국내 전자해도에서는 필수 입력 
+- #A "Orientation value"에 바다에서 바라본 방위 값을 입력 (바다의 방향을 결정할 수 없는 경우 180°미만인 값 입력)
+- 하나의 방위와 그 반대 방향을 표시하려면 #A "Traffic flow" = 4 로 입력
+- 같은 지점에서 반대가 아닌, 다른 방향의 통항이 가능하다면 #A "Orientation value"에 추가 입력
+- 곡선으로 입력하는 경우 통항 방향이 올바르게 표현되도록 코딩
+- 통신채널은 Information Type 피처인 #A "Contact Details"의 #A "communication channel"에 입력하고 #R "Additional Information Association" 관계 설정 +
+  (각 관할구역에 따른 채널은 #A "Information"에 표기 – 입력예시 참조)
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Communication Channel|COMCHA|TE|0,*| 
+|Communication Channel|COMCHA|TE|0,*| null(빈칸)
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Orientation Value|ORIENT|RE|0,2| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Status|STATUS|EN|0,*| 
-|#essential Traffic Flow|TRAFIC|EN|1,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1|eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| VTS Reporting Line
+|    Name Usage||(S)EN|0,1|1 : default name display 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1|kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 해상교통관제위치보고선
+|    Name Usage||(S)EN|0,1|2: alternate name display  
+|Orientation Value|ORIENT|RE|0,2|290 
+|#essential Traffic Flow|TRAFIC|EN|1,1|4: two-way 
+|Scale Minimum|SCAMIN|IN|0,1| 439999
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1|eng 
+|    Text|INFORM/NINFOM|(S)TE|0,1|Jindo Coastal VTS[67],Wando VTS[10]
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1|진도 연안 VTS[67], 완도 VTS[10] 
 |===
 
+Contact Details (AdditionalInrmation Association)
+[cols="20,5,5,10"]
+|===
+|Communication channel 1|1,*|TE|[VHF0067]
+|Communication channel 2|1,*|TE|[VHF0010]
+|===
 // end::RadioCallingInPoint[]

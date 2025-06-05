@@ -26,4 +26,4 @@ A place at which a service generally of interest to small craft or pleasure boat
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/SmallCraftFacility_rules.adoc[tag=SmallCraftFacility]
+include::../features_rules/SmallCraftFacility_rules.adoc[tag=SmallCraftFacility]

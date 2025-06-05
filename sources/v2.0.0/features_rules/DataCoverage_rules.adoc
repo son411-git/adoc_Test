@@ -1,22 +1,38 @@
 // tag::DataCoverage[]
 ===== Remark
 
+데이터범위 +
+- S-57 전자해도에서 범위 내 데이터 유무를 나타내는 Object로 사용되었으나 S-101에서는 데이터가 있는 부분만 Feature를 생성하고 없는 부분은 별도의 Coverage를 생성하지 않음.
+- S-101에서 #F "Data Coverage"의 용도는 데이터의 유무를 나타내는 용도와 ECDIS 장비가 축척에 따라 전자해도 데이터를 로딩/언로딩 하는데 필요한 축척정보를 주는 용도로 사용됨
+- 데이터셋 내에서 데이터가 존재하는 구역에는 축척에 따라 하나 이상의 #F "Data Coverage"가 반드시 존재해야 하며 #F "Data Coverage"간에는 중첩할 수 없음 
+- S-57 전자해도의 #F "M_COVR"와 #F "M_CSCL"의 속성에 따라 입력 내용 산출
+- #F "Data Coverage"의 속성 또한 사용자의 화면에 보여줄 최대/최소 축척만을 입력
+- 전자해도 Band에 따른 최대/최소 축척 입력은 #F "M_CSCL" 매칭 페이지 참조
+
+편집축척 +
+- S-57 전자해도에서 영역 내의 편집축척을 나타내는 용도로, ECDIS상에서 표출되는 축척 값과 #A "SCAMIN"값을 설정하는데 사용되었음. S-101에서는 #F "Data Coverage"로 통합하여 사용
+- S-101에서 #F "Data Coverage"의 용도는 데이터의 유무를 나타내는 용도와 ECDIS 장비가 축척에 따라 전자해도 데이터를 로딩/렌더링 하는데 필요한 축척정보를 주는 용도로 사용됨
+- 데이터셋 내에서 데이터가 존재하는 구역에는 축척에 따라 하나 이상의 #F "Data Coverage"가 반드시 존재해야 하며 #F "Data Coverage"간에는 중첩할 수 없음 
+- #F "Data Coverage"의 필수속성인 최대/최소 및 편집 축척 값은 아래의 표를 참조하여 입력
+
+[%haeder,format=csv]
+|===
+Usage,최대축척,최적축척(편집축척),최소축척
+Overview(KR1),1500000,2000000,10000000
+Transit1(KR2),350000,500,1500000
+Transit2(KR3),180000,250000,350000
+Port Entry1(KR4),45000,75000,180000
+Port Entry2(KR5),22000,25000,45000
+Port Entry3(KR6),4000,5000,22000
+|===
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Drawing Index||IN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|#essential Maximum Display Scale|CSCALE|IN|1,1| 
-|#essential Minimum Display Scale||IN|1,1| 
-|#essential Optimum Display Scale|CSCALE|IN|1,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|#essential Maximum Display Scale|CSCALE|IN|1,1| 4000
+|#essential Minimum Display Scale||IN|1,1| 22000
+|#essential Optimum Display Scale|CSCALE|IN|1,1| 5000
 |===
 
 // end::DataCoverage[]

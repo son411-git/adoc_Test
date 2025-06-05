@@ -40,4 +40,4 @@ A fog detector light is a light used to automatically determine conditions of vi
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/LightFogDetector_rules.adoc[tag=LightFogDetector]
+include::../features_rules/LightFogDetector_rules.adoc[tag=LightFogDetector]

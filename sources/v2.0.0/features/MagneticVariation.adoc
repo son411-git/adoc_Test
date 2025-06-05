@@ -19,4 +19,4 @@ The angle between the magnetic and geographic meridians at any place, expressed 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/MagneticVariation_rules.adoc[tag=MagneticVariation]
+include::../features_rules/MagneticVariation_rules.adoc[tag=MagneticVariation]

@@ -25,4 +25,4 @@ A region of the seabed including the material of which it is composed and its ph
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SeabedArea_rules.adoc[tag=SeabedArea]
+include::../features_rules/SeabedArea_rules.adoc[tag=SeabedArea]

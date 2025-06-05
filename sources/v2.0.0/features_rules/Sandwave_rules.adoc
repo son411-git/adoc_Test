@@ -1,20 +1,5 @@
 // tag::Sandwave[]
 ===== Remark
-
-===== Example
-[cols="20,10,5,5,20", options="header"]
-|===
-|Attribute |Acronym |Type |Mult. |Value
-
-|Interoperability Identifier||URN|0,1| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|===
+사용하지 않는 객체입니다.
 
 // end::Sandwave[]

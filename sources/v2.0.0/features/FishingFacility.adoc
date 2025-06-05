@@ -28,4 +28,4 @@ A structure for fishing purposes which can be an obstruction to ships in general
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/FishingFacility_rules.adoc[tag=FishingFacility]
+include::../features_rules/FishingFacility_rules.adoc[tag=FishingFacility]

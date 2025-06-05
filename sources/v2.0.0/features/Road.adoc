@@ -25,4 +25,4 @@ A route with a specially prepared surface that is intended for use by wheeled ve
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Road_rules.adoc[tag=Road]
+include::../features_rules/Road_rules.adoc[tag=Road]

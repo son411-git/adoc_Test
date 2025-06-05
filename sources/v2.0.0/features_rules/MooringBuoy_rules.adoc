@@ -1,39 +1,59 @@
 // tag::MooringBuoy[]
 ===== Remark
+- S-57 전자해도의 속성 #A "CATMOR"에 따라 매칭되는 피처 및 속성은 아래의 표를 참조하여 인코딩
+
+[%header,format=csv]
+|===
+S-57 CATMOR,S-101 Feature,S-101 Attribute
+1(dolphin),Dolphin,[Category of dolphin] = 1(mooring dolphin)
+2 (deviation dolphin),Dolphin,[Category of dolphin] = 2(deviation dolphin)
+3 (bollard),Bollard,
+4 (tie-up wall),Shoreline Construction,[Category of shoreline construction] = 23(tie-up wall)
+5 (post of pile),Pile,[Category of pile] = 8(mooring post)
+6 (chain/wire/cable),Cable Submarine,[Category of cable] = 9(junction cable)
+7 (mooring buoy),Mooring Buoy,
+|===
+
+- 항해 위험이 될 수 있는 사용되지 않는 계류/계선시설 또는 잔해는 #F "Obstruction" 피처로 인코딩하며 #A "Category of obstruction" = 1(snag/stump)로 입력
+- 사용하지 않는 계류/계선시설 또는 잔해는 “Pile” 피처로 인코딩하며 #A "Category of pile" = 8(mooring post), #A "condition" = 2(ruined)로 입력
+
+- S-57 전자해도에서 계선 부표의 관리번호가 #A "INFORM" #A "NINFOM"에 입력되어 있을 경우 #A "Feature name"로 수정필요
+
+////
+[cols="1,1,1",frame=none,grid=none]
+|===
+| image:../images/MooringBuoy/MooringBuoy_image-1.png[width=200] | image:../images/MooringBuoy/MooringBuoy_image-2.png[width=200] | image:../images/MooringBuoy/MooringBuoy_image-3.png[width=200]
+|===
+////
+
+- 트롯 계선은 접속케이블 상에 위치하는 계류도구(닻), 계류 케이블, 부표, 계류 정박지로 구성
+- 트롯계선 입력 시 no geometry 타입의 #R "Mooring trot" 피처를 입력하고 아래 그림에 있는 각 요소를 나타내는 Feature를 #R "Mooring trot Aggregation" 관계 설정 +
+  ※ Relation 페이지 참조
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Buoy Shape|BOYSHP|EN|1,1| 
-|Colour|COLOUR|EN|0,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Maximum Permitted Draught||RE|0,1| 
-|Maximum Permitted Vessel Length||RE|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Status|STATUS|EN|0,*| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visitors Mooring||BO|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|#essential Buoy Shape|BOYSHP|EN|1,1|6: barrel(nun, ogival) 
+|Colour|COLOUR|EN|0,*|1(white), 5(blue), 1(white) 
+|Colour Pattern|COLPAT|EN|0,1|1: horizontal strips 
+|**Feature Name**||C|0,*|
+|    #essential Language||(S)TE|1,1|eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|Mokpohang Hyeondae Samho NoA 
+|    Name Usage||(S)EN|0,1|1 : default name display 
+|**Feature Name**||C|0,*|
+|    #essential Language||(S)TE|1,1|kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|목포항 현대삼호 제A호 
+|    Name Usage||(S)EN|0,1|2: alternate name display 
+|Status|STATUS|EN|0,*|7: temporary 
+|Vertical Length|VERLEN|RE|0,1|0.5  
+|**Information**|INFORM|C|0,*|  
+|    #essential Language||(S)TE|1,1|eng 
+|    Text|INFORM/NINFOM|(S)TE|0,1|Daegyeongdo sea pension 
+|**Information**|INFORM|C|0,*|  
+|    #essential Language||(S)TE|1,1|kor 
+|    Text|INFORM/NINFOM|(S)TE|0,1|대경도 해상펜션 
 |===
 
 // end::MooringBuoy[]

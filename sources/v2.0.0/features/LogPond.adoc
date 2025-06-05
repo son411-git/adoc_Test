@@ -24,4 +24,4 @@ A maritime area enclosed with connected floating timbers used as a staging area 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/LogPond_rules.adoc[tag=LogPond]
+include::../features_rules/LogPond_rules.adoc[tag=LogPond]

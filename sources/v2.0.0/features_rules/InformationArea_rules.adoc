@@ -1,31 +1,35 @@
 // tag::InformationArea[]
 ===== Remark
 
+- 현재까지 국내 S-57 전자해도에 적용된 주의기사“CTNARE”의 경우 ECDIS에서 경보를 요하는 경우가 없으므로 S-101에서는 #F "Information Area"로 입력
+- 향후 경보가 필요한 항목에 대해서는 #F "Caution Area"를 사용 
+- 불필요한 정보의 삭제 +
+ (ex. 현재 시점에서 #A"Date end" 확인 후 지난 날짜에 대해서는 삭제)
+- 외부참조파일을 입력할 경우 명명기준 확인 +
+  (101CCCCXXXXXXXX.EEE) - 101 : Product명, CCCC: Agency code, XXXXXXXX.EEE:파일명
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1| eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| CAUTION 
+|    Name Usage||(S)EN|0,1| 1: default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 주의 
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Scale Minimum|SCAMIN|IN|0,1| 179999
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| CAUTION(Numerous marine farms and obstructions exist in the coastal areas, so mariners should approach with caution.)
+|**Information**|INFORM|C|0,*| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
+|    #essential Language||(S)TE|1,1| kor 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 주의(연안해역에서는 양식장 및 장애물 등이 다수 산재되어 있으므로 접근 시 주의하여야 함.)
 |===
 
 // end::InformationArea[]

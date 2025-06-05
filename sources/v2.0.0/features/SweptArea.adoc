@@ -18,4 +18,4 @@ An area that has been determined to be clear of navigational dangers to a specif
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SweptArea_rules.adoc[tag=SweptArea]
+include::../features_rules/SweptArea_rules.adoc[tag=SweptArea]

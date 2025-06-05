@@ -32,4 +32,4 @@ A man-made barrier used as an enclosure or boundary or for protection.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/FenceWall_rules.adoc[tag=FenceWall]
+include::../features_rules/FenceWall_rules.adoc[tag=FenceWall]

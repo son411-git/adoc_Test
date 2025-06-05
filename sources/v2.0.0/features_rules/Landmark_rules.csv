@@ -1,0 +1,83 @@
+Feature,INT1,Feature class,function,category of landmark,product,category of silo/tank
+Administrative,,Building,18,/,/,/
+Bank office,,Building,13,/,/,/
+Boundary mark,,Landmark,,23,/,/
+Buddhist temple,E16,Building,25,/,/,/
+Bus station,,Building,42,/,/,/
+Cairn,Q100,Landmark,/,1,/,/
+Cemetery,E19,Landmark,,2,/,/
+Chapel,E11,Building,21,/,/,/
+Chimney,E22,Landmark,,3,/,
+Church,E10.1,Building,20,/,/,/
+"Church dome, Cupola",E10.4,Landmark,20,15,/,/
+Church spire,E10.3,Landmark,20,20,/,/
+Church tower,E10.2,Landmark,20,17,/,/
+Clock tower,,Landmark,38,17,/,/
+Column,E24,Landmark,/,10,/,/
+Communication mast,,Landmark,29,7,/,/
+Communication tower,,Landmark,29,17,/,/
+Control tower,,Landmark,39,17,/,/
+Cooling tower,,Landmark,35,17,/,/
+"Cross, Calvary",E12,Landmark,,14,/,/
+Customs office,F61,Building,3,/,/,/
+Dish aerial,E31,Landmark,,4,/,/
+"Dome or cupola, part of a building",,Landmark,,15,/,/
+Educational facility,,Building,19,/,/,/
+Factory,,Building,16,/,/,/
+"Flagstaff, Flagpole",E27,Landmark,,5,/,/
+Flare stack on land,E23,Landmark,,6,/,/
+Grain elevator,,Silo/Tank,/,/,22,3
+Harbour-masters office,F60,Building,2,/,/,/
+Headquarters for district control,,Building,14,/,/,/
+Health office,F62.1,Building,4,/,/,/
+Hospital,F62.2,Building,5,/,/,/
+Hotel,D6,Building,7,/,/,/
+"House, Building",D5,Building,,/,/,/
+Large rock or boulder on land,,Landmark,/,21,/,/
+Light house (tower),P1,Landmark,33,17,/,/
+Light house (other shapes),P1,Building,33,/,/,/
+Lookout station in general,,Building,28,/,/,/
+Lookout tower,,Landmark,28,17,/,/
+Marabout,E18,Building,27,/,/,/
+Mast in general,,Landmark,,7,/,/
+Memorial plaque,,Landmark,,11,/,/
+Microwave tower,,Landmark,34,17,/,/
+Minaret,E17,Landmark,26,20,/,/
+Monument,E24,Landmark,,9,/,/
+Mooring mast,,Landmark,40,7,/,/
+Mosque,E17,Building,26,/,/,/
+Obelisk,E24,Landmark,/,12,/,/
+Observation tower,,Landmark,36,17,/,/
+Observation wheel,,Landmark,/,24,/,/
+Pagoda,E14,Building,23,/,/,/
+Pilot lookout,T2,Building,12,/,/,/
+Pilot office,T3,Building,11,/,/,/
+Police station,,Building,9,/,/,/
+Post office,F63,Building,6,/,/,/
+Power station,,Building,17,/,/,/
+Radar dome,E30.4,Landmark,32,15,/,/
+Radar mast,E30.1,Landmark,32,7,/,/
+Radar scanner,E30.3,Landmark,,16,/,/
+Radar tower,E30.2,Landmark,32,17,/,/
+Radio mast,E28,Landmark,31,7,/,/
+Radio tower,E29,Landmark,31,17,/,/
+Railway station,D13,Building,8,/,/,/
+Shinto shrine,E15,Building,24,/,/,/
+Silo,E33,Silo/Tank,/,/,,1
+"Spire, part of a building",,Landmark,,20,/,/
+Stadium,,Building,41,/,/,/
+Statue,E24,Landmark,,13,/,/
+Tank,E32,Silo/Tank,/,/,,2
+Television mast,E28,Landmark,30,7,/,/
+Television tower,E29,Landmark,30,17,/,/
+Temple,E13,Building,22,/,/,/
+Timeball tower,,Landmark,37,17,/,/
+Torii,,Landmark,/,25,/,/
+Tower,E20,Landmark,,17,/,/
+"Tower, part of a building",,Landmark,,17,/,/
+"Transit shed, Warehouse",F51,Building,15,/,/,/
+Triangulation mark,,Landmark,,22,/,/
+Water tower,E21,Silo/Tank,/,/,3 or 8,4
+Water-police station,,Building,10,/,/,/
+Windmill,E25,Landmark,,18,/,/
+Windmotor,E26.1 L5.1,Wind Turbine,/,/,/,/

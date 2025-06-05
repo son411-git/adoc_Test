@@ -36,4 +36,4 @@ A permanent offshore structure, either fixed or floating.
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/OffshorePlatform_rules.adoc[tag=OffshorePlatform]
+include::../features_rules/OffshorePlatform_rules.adoc[tag=OffshorePlatform]

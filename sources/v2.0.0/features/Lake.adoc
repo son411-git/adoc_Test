@@ -22,4 +22,4 @@ A large body of water entirely surrounded by land.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Lake_rules.adoc[tag=Lake]
+include::../features_rules/Lake_rules.adoc[tag=Lake]

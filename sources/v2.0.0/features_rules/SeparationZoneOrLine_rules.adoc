@@ -1,23 +1,18 @@
 // tag::SeparationZoneOrLine[]
 ===== Remark
+- “Separation Zone of Line”은 IMO 지정항로의 공통 경계 또는 분리구역을 인코딩하거나 교차로의 중앙 부분을 인코딩할 때 사용
+- IMO 지정항로 여부는 surface 타입의 #F "Traffic Separation Scheme" 피처의 속성에 입력 +
+  ※ #F "Traffic Separation Scheme" 인코딩 기준 참조 +
+- 통항분리제도를 구성하는 모든 피처는 surface type 타입의 #F "Traffic Separation Scheme"피처를 입력하고 관련된 Feature를 #R "Traffic Separation Scheme Aggregation" 관계 설정
+   ※ Realtion 페이지 참조
+- 두 개의 통항 항로 또는 연안통항로와 하나의 통항 항로의 공통 경계를 인코딩할 때만 사용
 
+//image::../images/SeparationZoneOrLine/SeparationZoneOrLine_image-1.png[width=400]
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|-|-|-|-|-
 |===
 
 // end::SeparationZoneOrLine[]

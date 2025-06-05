@@ -16,4 +16,4 @@ An area within which the navigational system of marks has been established in re
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/NavigationalSystemOfMarks_rules.adoc[tag=NavigationalSystemOfMarks]
+include::../features_rules/NavigationalSystemOfMarks_rules.adoc[tag=NavigationalSystemOfMarks]

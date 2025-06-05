@@ -47,4 +47,4 @@ An isolated danger beacon is a beacon erected on an isolated danger of limited e
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/IsolatedDangerBeacon_rules.adoc[tag=IsolatedDangerBeacon]
+include::../features_rules/IsolatedDangerBeacon_rules.adoc[tag=IsolatedDangerBeacon]

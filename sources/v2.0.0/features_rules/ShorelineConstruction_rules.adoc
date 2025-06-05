@@ -1,43 +1,53 @@
 // tag::ShorelineConstruction[]
 ===== Remark
+- 부두, 잔교, 돌제, 방파제, 제방, 안벽과 방사제 등 일반적으로 정해진 윤곽선을 가지고 있는 인공 해안선은 #F "Shoreline Construction" 피처로 인코딩.
+- #F "Shoreline Construction"이 Area 타입으로 입력된 경우 Line 타입을 추가로 인코딩할 필요 없음
+- #F "Land Area"에 포함된 #F "Shoreline Construction(Area)"은 #A "Water level effect" = 2(항상 건조) 입력
+- 조간대가 포함된 잠재는 #F "Shoreline Construction(Area)"와 #F "Depth Area"를 중첩하여 인코딩
+- 현재 국내 전자해도에는 <표 A>의 3~9번 속성 조합을 구분하여 인코딩하고 이외에는 일반적으로 1번 또는 2번으로 인코딩
+
+[%header,format=csv]
+|===
+NO,구분,Category of shoreline Construction,Condition,Nature of construction,Water level effect
+1,일반적인 인공안선 Area,-,-,<undefined>/1/3,4
+2,일반적인 인공안선 Line,-,-,-,-
+3,방파제/잠제 방파제,1,-,-,2/3
+4,공사중/매립중,-,1/3,-,-
+5,잠제 대쉬,1,-,-,4
+6,콘크리트/석조 방파제,1,-,1,4
+7,TTP/사석 방파제,1,-,3,4
+8,건조/간출/침수 방사제,2,-,-,2/4/3
+9,건조/간출/침수 선가대,13,-,-,2/4/3
+|===
+
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Shoreline Construction|CATSLC|EN|0,1| 
-|Colour|COLOUR|EN|0,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
+|Category of Shoreline Construction|CATSLC|EN|0,1| 1: breakwater
+|Condition|CONDTN|EN|0,1| 1: under construction
 |**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|**Horizontal Clearance Fixed**||C|0,1| 
-|    #essential Horizontal Clearance Value|HORCLR|(S)RE|1,1| 
-|    Horizontal Distance Uncertainty|HORACC|(S)RE|0,1| 
-|Horizontal Length|HORLEN|RE|0,1| 
-|Horizontal Width|HORWID|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Water Level Effect|WATLEV|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    Date End|DATEND|(S)TD|0,1| 20181231
+|    Date Start|DATSTA|(S)TD|0,1| 20180101
+|Horizontal Length|HORLEN|RE|0,1| 100
+|Nature of Construction|NATCON|EN|0,*| 1: masonry
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|  Busan break water
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 부산항 동방파제
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Water Level Effect|WATLEV|EN|0,1| 4: cover and uncovers
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Coastal Fairway Survey in 2022
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1|2022년 연안항로조사
 |===
 
 // end::ShorelineConstruction[]

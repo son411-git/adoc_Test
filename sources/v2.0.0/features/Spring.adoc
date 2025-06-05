@@ -20,4 +20,4 @@ A natural issue of water or other substances from the earth. One on the bottom o
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Spring_rules.adoc[tag=Spring]
+include::../features_rules/Spring_rules.adoc[tag=Spring]

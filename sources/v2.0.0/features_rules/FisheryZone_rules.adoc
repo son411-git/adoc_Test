@@ -1,25 +1,29 @@
 // tag::FisheryZone[]
 ===== Remark
 
+- #A "Nationality"는 필수 입력사항으로 국가코드 “KR” 입력
+- 어업구역의 명칭은  #A "Feature name"에 입력하고 관련 주의기사 등은 추가정보로 입력
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|#essential Nationality|NATION|TE|1,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| FISHERIES RESOURCES PROTECTION ZONE  
+|    Name Usage||(S)EN|0,1| 1: default name display  
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 어업자원보호수역 
+|    Name Usage||(S)EN|0,1| 2: alternate name display 
+|#essential Nationality|NATION|TE|1,1| KR
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Mariners are warned of the existance of many traps in this limits of fishing zones. 
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 이 어업구역 내에는  정치망이 많이 산재되어 있으니 항해하는 선박은 주의를 요함.
 |===
 
 // end::FisheryZone[]

@@ -21,4 +21,4 @@ A relatively large natural stream of water.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/River_rules.adoc[tag=River]
+include::../features_rules/River_rules.adoc[tag=River]

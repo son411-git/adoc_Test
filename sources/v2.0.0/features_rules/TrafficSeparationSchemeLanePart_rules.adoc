@@ -1,29 +1,36 @@
 // tag::TrafficSeparationSchemeLanePart[]
 ===== Remark
+- IMO 채택 항로 여부는 surface 타입의 #F "Traffic Separation Scheme"피처 속성에 입력
+  ※ #F "Traffic Separation Scheme" 인코딩 기준 참조
+- 아래 그림과 같은 합류구역(Junction)을 제외한 #F "Traffic Separation Scheme Lane Part" 피처의 통항 방향 #A "Orientation value" 속성 필수 입력
+- 교차부(4차로 이하) 또는 선회부를 제외한 합류지점은 #F "Traffic Separation Scheme Lane Part" 피처로 인코딩
+- 항로부 피처는 통항 방향 #A "Orientation value"에 따라 피처를 추가 생성
+- #F "Restricted Area" 피처에 포함되는 경우 #A "Restriction" 속성을 따로 입력하지 않음
+- 통항분리제도를 구성하는 모든 피처는 surface type의 #F "Traffic Separation Scheme" 피처와 #R "Traffic Separation Scheme Aggregation" 관계 설정 +
+  ※ Realtion 페이지 참조
+- 항로별 명칭이 별도로 있는 경우 #A "Information"으로 입력(ex. 입항항로) 하고, 전체 항로 명칭은 #F "Traffic Separation Scheme"에 입력 후 관계 설정 (항로명 필수 입력)
+
+////
+[cols="1,1" , frame=none , grid=none, align=center]
+|===
+a|image:../images/TrafficSeparationSchemeLanePart/TrafficSeparationSchemeLanePart_image-1.png[width=400] 
+a|image:../images/TrafficSeparationSchemeLanePart/TrafficSeparationSchemeLanePart_image-2.png[width=400] 
+|===
+////
+
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Orientation Value|ORIENT|RE|0,1| 
-|Restriction|RESTRN|EN|0,*| 
-|Status|STATUS|EN|0,*| 
-|**Vessel Speed Limit**||C|0,*| 
-|    #essential Speed Limit||(S)RE|1,1| 
-|    #essential Speed Units||(S)EN|1,1| 
-|    Vessel Class||(S)TE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|Orientation Value|ORIENT|RE|0,1| 30
+|Restriction|RESTRN|EN|0,*| 1: anchorage prohibited
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Junction Area
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 합류 구역
 |===
 
 // end::TrafficSeparationSchemeLanePart[]

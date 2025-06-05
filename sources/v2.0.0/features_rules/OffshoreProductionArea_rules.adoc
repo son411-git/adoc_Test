@@ -1,41 +1,23 @@
 // tag::OffshoreProductionArea[]
 ===== Remark
 
+- 원유 및 가스 생산시설, 풍력발전시설, 조류발전시설, 태양광발전시설, 광석 채취지역 등에 사용
+- 개별 풍력발전기를 인코딩하는 경우 #F "Wind Turbine" 피처를 사용
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Offshore Production Area|CATPRA|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
+|Category of Offshore Production Area|CATPRA|EN|0,1| 5: seabed material extraction area
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Product|PRODCT|EN|0,*| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Restriction|RESTRN|EN|0,*| 
-|Status|STATUS|EN|0,*| 
-|Vertical Length|VERLEN|RE|0,1| 
-|**Vessel Speed Limit**||C|0,*| 
-|    #essential Speed Limit||(S)RE|1,1| 
-|    #essential Speed Units||(S)EN|1,1| 
-|    Vessel Class||(S)TE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Water Level Effect|WATLEV|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Silica gather
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 규사광채취
+|    Name Usage||(S)EN|0,1| 2: alternate name display
 |===
 
 // end::OffshoreProductionArea[]

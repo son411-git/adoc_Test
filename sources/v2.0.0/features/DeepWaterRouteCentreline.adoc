@@ -34,4 +34,4 @@ The Deep Water route centreline indicates the centreline of a route, the width o
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/DeepWaterRouteCentreline_rules.adoc[tag=DeepWaterRouteCentreline]
+include::../features_rules/DeepWaterRouteCentreline_rules.adoc[tag=DeepWaterRouteCentreline]

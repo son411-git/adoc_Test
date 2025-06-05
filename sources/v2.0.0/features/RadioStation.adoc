@@ -34,4 +34,4 @@ A place equipped to transmit radio waves. Such a station may be either stationar
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RadioStation_rules.adoc[tag=RadioStation]
+include::../features_rules/RadioStation_rules.adoc[tag=RadioStation]

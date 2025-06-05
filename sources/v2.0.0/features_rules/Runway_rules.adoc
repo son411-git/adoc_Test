@@ -1,6 +1,19 @@
 // tag::Runway[]
 ===== Remark
 
+- 국내 S-57 전자해도 #F "RUNWAY"의 #A "CATRUN" = 2(helicopter landing pad)인 경우 #F "Helipad"로 인코딩
+- 연안으로부터 몇 마일 이내에 위치한 활주로(또는 공항)는 반드시 입력
+- 대축척의 공항은 #F "Airport/Airfield"(surface), #F "Runway"(surface or curve), #F "Building"(surface or point), #F "Landmark" (surface or point)를 조합하여 코딩
+- 두 개 이상의 활주로가 교차하는 경우, 교차로는 하나의 면으로 인코딩 가능
+
+////
+[cols="1,1",frame=none,grid=none]
+|===
+|<대축척>|<소축척>
+| image:../images/Runway/Runway_image-1[width=300] | image:../images/Runway/Runway_image-2[width=300]
+|===
+////
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===

@@ -48,4 +48,4 @@ A lateral beacon is used to indicate the port or starboard hand side of the rout
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/LateralBeacon_rules.adoc[tag=LateralBeacon]
+include::../features_rules/LateralBeacon_rules.adoc[tag=LateralBeacon]

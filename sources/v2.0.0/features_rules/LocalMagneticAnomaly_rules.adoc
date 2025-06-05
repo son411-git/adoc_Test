@@ -1,27 +1,25 @@
 // tag::LocalMagneticAnomaly[]
 ===== Remark
 
+- 해당 구역의 표준 값에서 3°이상 벗어나는 경우에만 해도에 표기
+- 영역을 정의할 수 없는 경우 point type으로 표현
+- S-57 전자해도에 입력된 내용 중 보고연도에 대한 내용은 #A "Reported date"로 수정필요
+- 복합속성 #A "Value of local magnetic anomaly"에는 이상편차 값을 필수로 입력하며, 값을 모르는 경우 (unknown)입력(현재 국내 전자해도에는 입력할 수 있는 정보가 없음)
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
+|Reported Date|SORDAT|TD|0,1| 2011----
 |**Value of Local Magnetic Anomaly**||C|1,2| 
-|    #essential Magnetic Anomaly Value|VALLMA|(S)RE|1,1| 
-|    Reference Direction||(S)EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Magnetic Anomaly Value|VALLMA|(S)RE|1,1| (unknown)  
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Local Magnetic Anomaly was reported in This Area
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 이 지역은 국지적 지자기 이상현상이 보고됨
 |===
 
 // end::LocalMagneticAnomaly[]

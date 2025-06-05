@@ -1,42 +1,66 @@
 // tag::Landmark[]
 ===== Remark
+ - 육상물표의 목적 및 성격에 따라 #F "Building", #F "Landmark", #F "Silo/tank"피처로 구분하며 그 기준은 다음 표에 따라 입력
+[cols="1,1"]
+|===
+|피처별 포함되는 속성 +
+      ▪Building속성: Function +
+      ▪Landmark속성 : category of landmark, Function +
+      ▪Silo/tank속성 : category of silo/tank, product|약어(원어) : FUN(Function), CAT LMK(category of landmark ) +
+             PUT(product), CAT S/T(category of silo/tank)
+|===
+
+[%header,format=csv]
+|===
+//include::../images/Landmark/Landmark_rules.csv[]
+|===
+
+- 육상물표의 높이 값 관련 내용 입력 시 다음 내용 참고
+////
+[cols="1,1"]
+|===
+|- 속성 #A "vertical length"는 지면에서 구조물 최상단의 높이 +
+- 속성 #A "Height"는 평균해수면에서 구조물 최상단의 높이 +
+- 속성 #A "elevation"는 평균해수면에서 지면상 높이| image:../images/Landmark/Landmark_image-1.png[width=200]
+|===
+////
+
+- 방송탑과 TV 무선주, TV 무선탑은 해안과 멀리 있어도 뚜렷하게 식별이 되는 것은 인코딩 함
+- #A "Category of landmark" = 26(bridge) 또는 27(dam)은 항해 불가능한 지역에 point 타입으로만 인코딩 가능
+- 바다에서 피처가 시각적으로 확인되면 속성 #A "Visual prominence" = 1 인코딩
+- 종교 건물의 탑 등이 항해에 유용한 육상물표인 경우 건물은 #F "Building"으로 탑은 #F "Landmark"로 입력
+
+//image::../images/Landmark/Landmark_image-2.png[width=400]
+
+- 육상물표가 등화 등과 함께 항로표지의 구조물로 사용될 경우 {Structure/Equipment} 관계 설정 +
+   ※ Relation 페이지 참조
+- S-57 전자해도에서 등대 관리번호가 #A "INFORM", #A "NINFOM"에 입력되어 있을 경우, #A "Feature Name"으로 수정필요 +
+  기존 S-57전자해도의 불필요한 #A "INFORM"정보는 삭제(작업오류로 인한 정보)
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Category of Landmark|CATLMK|EN|1,*| 
-|Category of Special Purpose Mark|CATSPM|EN|0,*| 
-|Colour|COLOUR|EN|0,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
-|Elevation|ELEVAT|RE|0,1| 
+|#essential Category of Landmark|CATLMK|EN|1,*| 17: tower
+|Colour|COLOUR|EN|0,*| 3: red, 1: white
+|Colour Pattern|COLPAT|EN|0,1| 1: horizontal stripes
+|Elevation|ELEVAT|RE|0,1| 50m
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Function|FUNCTN|EN|0,*| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Multiplicity of Features**||C|0,1| 
-|    #essential Multiplicity Known||(S)BO|1,1| 
-|    Number of Features||(S)IN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Vertical Length|VERLEN|RE|0,1| 
-|#essential Visual Prominence|CONVIS|EN|1,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
-|In the Water||BO|0,1| 
+|    #essential Language||(S)TE|1,1| eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Yeongnangho 
+|    Name Usage||(S)EN|0,1| 1: default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 영랑호 하구 도류제
+|    Name Usage||(S)EN|0,1| 2: alternate name display 
+|Function|FUNCTN|EN|0,*|33: light support 
+|Height|HEIGHT|RE|0,1| 15m  
+|Nature of Construction|NATCON|EN|0,*| 2: concreted 
+|Radar Conspicuous|CONRAD|BO|0,1| true
+|Status|STATUS|EN|0,*| 7: temporary
+|Vertical Length|VERLEN|RE|0,1| 10m
+|#essential Visual Prominence|CONVIS|EN|1,1| 1L visual prominence 
 |===
 
 // end::Landmark[]

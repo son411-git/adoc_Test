@@ -1,0 +1,13 @@
+﻿수심,S-4,INT 1,Spatial,Feature,,비고
+,,,Quality of horizontal measurement,Quality of,Status,
+,,,,vertical,,
+,,,,measurement,,
+실제 위치,412.1,I10,-,1,-,
+종이해도 여백 상의 위치,412.2,I11,-,1,-,ENC는 실제 위치에 존재
+,,I12,,,,
+신뢰도가 낮은 값,412.4,I14,4,4,-,
+(정체 수심),,,,,,
+간출 수심,413,I15,-,1,-,음의 값
+의심스러운 수심,424.4,I2,-,3,18,Status = 18
+보고되었으나 확인되지 않음,,I3,8,9,,보고 날짜를 알 수 있다면
+,,I4,,,,[Reported date]에 입력

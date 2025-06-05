@@ -7,7 +7,7 @@
 - 선박이 드나들 수 있는 지붕 구조의 건물은 “Structure Over Navigable Water”로 인코딩
 - #F "Building" 입력 시 #A "Function" 필수로 입력 – 알 수 없는 경우 (undefined) 입력   ※ #F "Landmark" 인코딩 기준 참조
 - 가항수역에 위치한 건물은 #F "LandArea"를 인코딩할 필요가 없으며, #A "In the water"=true 입력
-- 건물 명칭이 #A "Information"에 입력된 경우, #A "Feature name" 속성으로 수정필요
+- 건물 명칭이 #A "INFORM"에 입력된 경우, #A "Feature name" 속성으로 수정필요
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]

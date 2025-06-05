@@ -16,4 +16,4 @@ Any level surface (for example Mean Sea Level) taken as a surface of reference t
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/VerticalDatumOfData_rules.adoc[tag=VerticalDatumOfData]
+include::../features_rules/VerticalDatumOfData_rules.adoc[tag=VerticalDatumOfData]

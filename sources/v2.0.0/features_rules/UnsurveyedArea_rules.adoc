@@ -1,18 +1,22 @@
 // tag::UnsurveyedArea[]
 ===== Remark
+- 미측구역(Unsurveyed Area) 피처는 Skin of the Earth의 구성 피처이므로 다른 Skin of the Earth의 구성 피처와 중첩 금지
+- #F "Unsurveyed Area"에 수심 및 측량데이터가 없는 경우 #F "Quality of Bathymetric Data" 피처와 중첩 불필요
+- #F "Unsurveyed Area"는 피처 외에 별도로 입력되는 속성이 없음
+- 공사구역의 미측은 #F "Information Area" 피처와 함께 입력
+- #A "Information"에는 미측구역, 공사중 등의 일반적인 정보 외의 추가정보만 입력(미측구역 정보는 #F "Unsurveyed area" 피처 자체의 의미이므로 삭제하고, 공사중 정보는 #F "Information Area" 피처에 입력)
+- 현재 국내 전자해도에는 소축척의 백판구역(대축척참조)에 #F "Unsurveyed Area" 피처를 사용(입력예시 참조) 
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|Interoperability Identifier||URN|0,1| 
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Refer to the large scale chart
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 대축척 참조
 |===
 
 // end::UnsurveyedArea[]

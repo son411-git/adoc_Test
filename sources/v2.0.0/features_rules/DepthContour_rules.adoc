@@ -9,8 +9,6 @@
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-
 |#essential Value of Depth Contour|VALDCO|RE|1,1| 10
 |===
 

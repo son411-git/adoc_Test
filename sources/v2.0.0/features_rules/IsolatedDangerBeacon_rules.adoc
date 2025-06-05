@@ -1,50 +1,53 @@
 // tag::IsolatedDangerBeacon[]
 ===== Remark
 
+- 고정된 항로의 표지로 산호초 또는 얕은 지역 등에 설치되어 위험을 나타내는 용도로 사용됨
+- 입표 모양은 망대형 또는 원주형만 존재하며, 두표 모양은 2개의 구체형태로만 구성됨
+- 몸체는 흑색 바탕에 홍색 횡선 조합으로 구성되며 두표 색상은 흑색으로만 구성됨.
+- 고립장애입표에 설치되는 등화는 백색이며 Fl(2)의 주기를 가짐.
+- 속성 #A "Height"는 평균해수면에서 구조물 최상단의 높이입력 (등대표상 없는 정보임) +
+  (속성 #A "Height"가 S-57전자해도에 존재한다면 확인필요)
+- 속성 #A "Vertical Length"는 지면상 높이에서 구조물 최상단의 높이를 입력 +
+ (구조물 자체만의 높이 – 등대표에 제시됨)
+  (#A "Height"가 입력된 경우 대부분 #A "Vertical Length" 정보임)
+- 고립장애입표가 Light객체와 함께 입력되어 등표로 표현되는 경우 해당 등대번호는 Light객체에 입력
+   (등표로 형성된 경우 등대번호가 고립장애입표에 입력되어 있으면 수정필요)
+- 입표와 등화 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 #R "Structure/Equipment" 관계 설정 +
+  ※ Relation 페이지 참조
+- 입표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Beacon Shape|BCNSHP|EN|1,1| 
-|#essential Colour|COLOUR|EN|1,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
-|Elevation|ELEVAT|RE|0,1| 
+|#essential Beacon Shape|BCNSHP|EN|1,1| 5: pile beacon
+|#essential Colour|COLOUR|EN|1,*| 2: black
+|#essential Colour|COLOUR|EN|1,*| 3: red
+|#essential Colour|COLOUR|EN|1,*| 2: black
+|Colour Pattern|COLPAT|EN|0,1| 1: horizontal stripes 
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Marks Navigational - System Of|MARSYS|EN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|Sumeunnyeo 
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 숨은여
+|    Name Usage||(S)EN|0,1|  2: alternate name display
+|Height|HEIGHT|RE|0,1| (삭제)  
+|Nature of Construction|NATCON|EN|0,*| 2: concreted 
+|Radar Conspicuous|CONRAD|BO|0,1| false
 |**Topmark**|TOPMAR|C|0,1| 
-|    Colour|COLOUR|(S)EN|0,*| 
-|    Colour Pattern|COLPAT|(S)EN|0,1| 
-|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 
-|**    Shape Information**||(S)C|0,*| 
-|        Language||(S)TE|0,1| 
-|        #essential Text|INFORM/NINFOM|(S)TE|1,1| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    Colour|COLOUR|(S)EN|0,*| 2: Black
+|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 4:2 spheres
+|Vertical Length|VERLEN|RE|0,1| 5m
+|Visual Prominence|CONVIS|EN|0,1|1: visual prominence
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng 
+|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
 |===
 
 // end::IsolatedDangerBeacon[]

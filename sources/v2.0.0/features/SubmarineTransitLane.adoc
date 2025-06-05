@@ -26,4 +26,4 @@ A lane where submarines may navigate under water or at the surface.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SubmarineTransitLane_rules.adoc[tag=SubmarineTransitLane]
+include::../features_rules/SubmarineTransitLane_rules.adoc[tag=SubmarineTransitLane]

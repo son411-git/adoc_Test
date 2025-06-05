@@ -29,4 +29,4 @@ A water area in which fishing is frequently carried on.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/FishingGround_rules.adoc[tag=FishingGround]
+include::../features_rules/FishingGround_rules.adoc[tag=FishingGround]

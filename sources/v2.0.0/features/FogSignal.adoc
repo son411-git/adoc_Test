@@ -36,4 +36,4 @@ A warning signal transmitted by a vessel, or aid to navigation, during periods o
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/FogSignal_rules.adoc[tag=FogSignal]
+include::../features_rules/FogSignal_rules.adoc[tag=FogSignal]

@@ -1,24 +1,21 @@
 // tag::SeaAreaNamedWaterArea[]
 ===== Remark
+- #A "Category of sea area" 또는 #A "Feature name" 중 적어도 한 가지는 입력해야 함
+- 해당 피처는 서로 중첩하여 입력이 가능함
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|Category of Sea Area|CATSEA|EN|0,1| 
+|Category of Sea Area|CATSEA|EN|0,1| 5: bay
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| GYEONGGI MAN
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 경기만
+|    Name Usage||(S)EN|0,1| 2: alternate name display
 |===
 
 // end::SeaAreaNamedWaterArea[]

@@ -29,4 +29,4 @@ A designated portion of water for the landing and take-off of seaplanes.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SeaplaneLandingArea_rules.adoc[tag=SeaplaneLandingArea]
+include::../features_rules/SeaplaneLandingArea_rules.adoc[tag=SeaplaneLandingArea]

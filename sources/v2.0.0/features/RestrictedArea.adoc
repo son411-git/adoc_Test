@@ -33,4 +33,4 @@ A specified area on land or water designated by an appropriate authority within 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RestrictedArea_rules.adoc[tag=RestrictedArea]
+include::../features_rules/RestrictedArea_rules.adoc[tag=RestrictedArea]

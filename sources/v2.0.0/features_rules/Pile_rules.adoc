@@ -1,37 +1,25 @@
 // tag::Pile[]
 ===== Remark
 
+- 교량등의 구조물 피처로 #F "Pile"이 사용될 경우 삭제하고 #F "Bridge"와 #R "Structure/Equipment" 관계 설정 +
+  ※ Relation 페이지 참조
+- #F "Pile"이 항로표지 역할을 한다면 항로표지(예: Special Purpose/General Beacon) 피처로 대체하고 속성 
+   #F "Beacon shape" = 1 (stake, pole, perch, post)”으로 인코딩해야 함
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Pile|CATPLE|EN|0,1| 
-|Colour|COLOUR|EN|0,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    #essential Language||(S)TE|1,1|eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|Daecheong
+|    Name Usage||(S)EN|0,1|1: default name display 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1|kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|대청 해상기상탑
+|    Name Usage||(S)EN|0,1|2: alternate name display 
+|Visual Prominence|CONVIS|EN|0,1| 1: visual prominence
 |===
 
 // end::Pile[]

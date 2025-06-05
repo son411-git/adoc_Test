@@ -1,23 +1,19 @@
 // tag::TrafficSeparationSchemeBoundary[]
 ===== Remark
+- IMO 채택 항로 여부는 surface 타입의 #F "Traffic Separation Scheme" 속성에 입력 +
+※ #F "Traffic Separation Scheme" 인코딩 기준 참조
+- 통항분리제도를 구성하는 모든 피처는 surface 타입의 #F "Traffic Separation Scheme" 피처와 #R "Traffic Separation Scheme Aggregation" 관계 설정 +
+  ※ Realtion 페이지 참조
+- 통항분리제도의 #F "Traffic Separation Lane Part" 또는 #F "Traffic Separation Scheme Roundabout"의 바깥 경계를 인코딩할 때만 사용 (통항분리대와의 경계에 사용해서는 안 됨)
+
+//image::../images/TrafficSeparationSchemeBoundary/TrafficSeparationSchemeBoundary_image-1.png[width=400]
+
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|-|-|-|-|- 
 |===
 
 // end::TrafficSeparationSchemeBoundary[]

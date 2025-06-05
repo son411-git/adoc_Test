@@ -37,4 +37,4 @@ A route which has been specially examined to ensure so far as possible that it i
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RecommendedTrack_rules.adoc[tag=RecommendedTrack]
+include::../features_rules/RecommendedTrack_rules.adoc[tag=RecommendedTrack]

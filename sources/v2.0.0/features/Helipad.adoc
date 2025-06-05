@@ -27,4 +27,4 @@ A site on which helicopters may land and take off.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Helipad_rules.adoc[tag=Helipad]
+include::../features_rules/Helipad_rules.adoc[tag=Helipad]

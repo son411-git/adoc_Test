@@ -29,4 +29,4 @@ A traffic signal station is a place on shore from which signals are made to regu
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SignalStationTraffic_rules.adoc[tag=SignalStationTraffic]
+include::../features_rules/SignalStationTraffic_rules.adoc[tag=SignalStationTraffic]

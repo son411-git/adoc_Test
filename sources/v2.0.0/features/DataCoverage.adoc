@@ -19,4 +19,4 @@ A geographical area that describes the coverage and extent of spatial objects.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/DataCoverage_rules.adoc[tag=DataCoverage]
+include::../features_rules/DataCoverage_rules.adoc[tag=DataCoverage]

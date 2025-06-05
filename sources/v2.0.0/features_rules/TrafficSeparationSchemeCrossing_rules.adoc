@@ -1,28 +1,29 @@
 // tag::TrafficSeparationSchemeCrossing[]
 ===== Remark
+- IMO 채택 항로 여부는 surface 타입의 #F "Traffic Separation Scheme" 속성에 입력
+  ※ #F "Traffic Separation Scheme" 인코딩 기준 참조
+- “Traffic Separation Scheme Crossing” 피처는 <그림 A>와 같이 최소한 4차로 교차인 경우만 인코딩하여야 하며 4차로 이하인 경우, <그림 B>와 같이 #F "Traffic Separation Scheme Lane Part" 피처로 인코딩
+- #F "Traffic Separation Scheme Roundabout" 피처는 <그림 C>와 같이 선박이 통항분리대를 중심으로 반시계 방향으로 운행하는 선회형 교차 구역인 경우 인코딩
+- #F "Traffic Separation Zone" 피처와 중첩되어서는 안 됨
+- 영역을 만들기 위해 입력한 Line은 Masking 설정
+- #F "Restricted Area" 피처에 포함되는 경우 #A "Restriction" 속성을 따로 입력하지 않음
+- 통항분리제도를 구성하는 모든 피처는 surface 타입의 #F "Traffic Separation Scheme" 피처와 #R "Traffic Separation Scheme Aggregation" 관계 설정 +
+  ※ Realtion 페이지 참조
+
+//  
+// [cols="1,1,1" , frame=none , grid=none, align=center]
+// |===
+// a|image:../images/TrafficSeparationSchemeCrossing/TrafficSeparationSchemeCrossing_image-1.png[width=400] <그림 A>
+// a|image:../images/TrafficSeparationSchemeCrossing/TrafficSeparationSchemeCrossing_image-2.png[width=400] <그림 B>
+// a|image:../images/TrafficSeparationSchemeCrossing/TrafficSeparationSchemeCrossing_image-3.png[width=400] <그림 C>
+// |===
+// 
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Restriction|RESTRN|EN|0,*| 
-|Status|STATUS|EN|0,*| 
-|**Vessel Speed Limit**||C|0,*| 
-|    #essential Speed Limit||(S)RE|1,1| 
-|    #essential Speed Units||(S)EN|1,1| 
-|    Vessel Class||(S)TE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|-|-|-|-|- 
 |===
 
 // end::TrafficSeparationSchemeCrossing[]

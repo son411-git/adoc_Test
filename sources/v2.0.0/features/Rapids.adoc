@@ -21,4 +21,4 @@ Portions of a stream with accelerated current where it descends rapidly but with
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Rapids_rules.adoc[tag=Rapids]
+include::../features_rules/Rapids_rules.adoc[tag=Rapids]

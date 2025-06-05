@@ -1,46 +1,55 @@
 // tag::RadarTransponderBeacon[]
 ===== Remark
 
+- #F "Radar Transponder Beacon"은 관련 장비가 설치된 건물이나 구조물과는 상관없이 해당 장비 자체에 대한 인코딩
+- 등대표상 확인 가능한 내용은 모두 입력(명칭, 모르스부호, 밴드 주파수, 측정구역, 기사 등)
+- 필요한 경우 건물이나 구조물 등 적절한 피처 또는 육상물표 #F "Landmark"와 #R "Structure/Equipment" 관계 설정
+- 기존 S-57 전자해도의 #F "INFOM", #F "NINFOM"에 입력되어 있는 신호주기 정보는 #F "Signal sequence"와 동일한 정보이므로 삭제필요
+- #A "Category of radar transponder beacon"에 자동무선 레이다표지 종류 입력 - 표 참조
+- 표의 5번 지도표지는 no geometry 타입의 #F "Range system"을 입력하고 구성하는 피처들과 함께 #R "Range system Aggregation" 관계 설정 +
+※ Relation 페이지 참조
+
+////
+[cols= "1,1,1", options="header"]
+|===
+|IHO 해도제작 기준에 따른 기호|Category of Radar Transponder Beacon|기타
+| image:../images/RadarTransponderBeacon/RadarTransponderBeacon_image-1.png[width=100] |1. remark, radar beacon transmitting continuously| 연속 발신하는 레이마크, 레이다비콘
+|image:../images/RadarTransponderBeacon/RadarTransponderBeacon_image-2.png[width=100] |2. racon, radar transponder beacon| 모르스부호(Z), X밴드 주파수 발신
+|image:../images/RadarTransponderBeacon/RadarTransponderBeacon_image-3.png[width=100] |2. racon, radar transponder beacon| 모르스부호(Z), S밴드 주파수 발신
+|image:../images/RadarTransponderBeacon/RadarTransponderBeacon_image-4.png[width=100] |2. racon, radar transponder beacon| 모르스부호(Z)주파수 발신
+|image:../images/RadarTransponderBeacon/RadarTransponderBeacon_image-5.png[width=100] |3. leading racon/radar transponder beacon| 자동무선 레이다 지도표지
+|image:../images/RadarTransponderBeacon/RadarTransponderBeacon_image-6.png[width=100] |3. leading racon/radar transponder beacon|자동무선 레이다 지도표지 (도등과 일치) 
+|===
+////
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Category of Radar Transponder Beacon|CATRTB|EN|1,1| 
+|#essential Category of Radar Transponder Beacon|CATRTB|EN|1,1| 2: racon, radar transponder beacon
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
+|    #essential Language||(S)TE|1,1|eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|M4258 
+|    Name Usage||(S)EN|0,1|1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1|kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|4126.3 
+|    Name Usage||(S)EN|0,1| 2: alternate name display
 |**Radar Wave Length**||C|0,2| 
-|    #essential Radar Band||(S)TE|1,1| 
-|    #essential Wave Length Value|Radar Wave Length|(S)RE|1,1| 
-|**Sector Limit**||C|0,1| 
-|**    #essential Sector Limit One**|SECTR1|(S)C|1,1| 
-|        #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1| 
-|        Sector Line Length||(S)RE|0,1| 
-|**    #essential Sector Limit Two**|SECTR2|(S)C|1,1| 
-|        #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1| 
-|        Sector Line Length||(S)RE|0,1| 
-|Signal Group|SIGGRP|TE|0,1| 
+|    #essential Radar Band||(S)TE|1,1|X 
+|    #essential Wave Length Value||(S)RE|1,1|1
+|**Radar Wave Length**||C|0,2| 
+|    #essential Radar Band||(S)TE|1,1|S 
+|    #essential Wave Length Value||(S)RE|1,1|1  
+|Signal Group|SIGGRP|TE|0,1|(B)
 |**Signal Sequence**|SIGSEQ|C|0,*| 
-|    #essential Signal Duration||(S)RE|1,1| 
-|    #essential Signal Status||(S)EN|1,1| 
-|Status|STATUS|EN|0,*| 
-|Value of Maximum Range|VALMXR|RE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Signal Duration||(S)RE|1,1|30.0
+|    #essential Signal Status||(S)EN|1,1|1: lit/sound
+|**Signal Sequence**|SIGSEQ|C|0,*| 
+|    #essential Signal Duration||(S)RE|1,1| 30.0
+|    #essential Signal Status||(S)EN|1,1| 2:eclipsed/silent
+|Value of Maximum Range|VALMXR|RE|0,1| 15
 |===
 
 // end::RadarTransponderBeacon[]

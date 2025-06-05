@@ -42,4 +42,4 @@ An isolated danger buoy is a buoy moored on or above an isolated danger of limit
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/IsolatedDangerBuoy_rules.adoc[tag=IsolatedDangerBuoy]
+include::../features_rules/IsolatedDangerBuoy_rules.adoc[tag=IsolatedDangerBuoy]

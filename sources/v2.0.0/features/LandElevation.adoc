@@ -22,4 +22,4 @@ An elevation is the vertical distance of a point or a level, on, or affixed to, 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/LandElevation_rules.adoc[tag=LandElevation]
+include::../features_rules/LandElevation_rules.adoc[tag=LandElevation]

@@ -20,4 +20,4 @@ A channel through which a tidal current runs.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Tideway_rules.adoc[tag=Tideway]
+include::../features_rules/Tideway_rules.adoc[tag=Tideway]

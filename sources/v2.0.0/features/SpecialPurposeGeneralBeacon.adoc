@@ -48,4 +48,4 @@ A special purpose beacon is primarily used to indicate an area or feature, the n
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/SpecialPurposeGeneralBeacon_rules.adoc[tag=SpecialPurposeGeneralBeacon]
+include::../features_rules/SpecialPurposeGeneralBeacon_rules.adoc[tag=SpecialPurposeGeneralBeacon]

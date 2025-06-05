@@ -34,4 +34,4 @@ An area on land for the exploitation or storage of natural resources.
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/ProductionStorageArea_rules.adoc[tag=ProductionStorageArea]
+include::../features_rules/ProductionStorageArea_rules.adoc[tag=ProductionStorageArea]

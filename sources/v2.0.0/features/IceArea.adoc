@@ -30,4 +30,4 @@ An area of ice over land or water.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/IceArea_rules.adoc[tag=IceArea]
+include::../features_rules/IceArea_rules.adoc[tag=IceArea]

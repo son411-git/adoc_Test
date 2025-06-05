@@ -20,4 +20,4 @@ The area of any service implemented by a relevant authority primarily designed t
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/VesselTrafficServiceArea_rules.adoc[tag=VesselTrafficServiceArea]
+include::../features_rules/VesselTrafficServiceArea_rules.adoc[tag=VesselTrafficServiceArea]

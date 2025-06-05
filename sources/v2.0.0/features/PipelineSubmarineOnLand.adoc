@@ -36,4 +36,4 @@ A connected set of pipes for conveying liquids, slurries, or gases.
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/PipelineSubmarineOnLand_rules.adoc[tag=PipelineSubmarineOnLand]
+include::../features_rules/PipelineSubmarineOnLand_rules.adoc[tag=PipelineSubmarineOnLand]

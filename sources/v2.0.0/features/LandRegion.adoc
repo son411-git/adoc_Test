@@ -23,4 +23,4 @@ An area of natural or cultivated scenery defined by its geographical characteris
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/LandRegion_rules.adoc[tag=LandRegion]
+include::../features_rules/LandRegion_rules.adoc[tag=LandRegion]

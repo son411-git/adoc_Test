@@ -39,4 +39,4 @@ A string of interconnected pipes, supported by pylons and passing over or nearby
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/PipelineOverhead_rules.adoc[tag=PipelineOverhead]
+include::../features_rules/PipelineOverhead_rules.adoc[tag=PipelineOverhead]

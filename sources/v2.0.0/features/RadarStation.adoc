@@ -29,4 +29,4 @@ A station with a transmitter emitting pulses of ultra-high frequency radio waves
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/RadarStation_rules.adoc[tag=RadarStation]
+include::../features_rules/RadarStation_rules.adoc[tag=RadarStation]

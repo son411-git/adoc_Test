@@ -30,4 +30,4 @@ A concreted mass of stony material or coral which dries, is awash or is below th
 |#essential Surrounding Depth||RE|1,1
 |===
 
-// include::../features_rules/UnderwaterAwashRock_rules.adoc[tag=UnderwaterAwashRock]
+include::../features_rules/UnderwaterAwashRock_rules.adoc[tag=UnderwaterAwashRock]

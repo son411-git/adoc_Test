@@ -1,32 +1,28 @@
 // tag::SignalStationWarning[]
 ===== Remark
+- #F "Signal station warning"는 건물이나 구조물과는 상관없이 신호소 자체의 기능을 설명하기 위해서만 사용하고 해당 서비스를 제공하는 건물이나 구조물을 인코딩해야 한다면 적절한 피처(Building, Landmark 등)를 사용하여 인코딩하고 #R "Structure/Equipment" 관계 설정 +
+  ※ Relation 페이지 참조
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Category of Signal Station, Warning|CATSIW|EN|1,*| 
-|Communication Channel|COMCHA|TE|0,*| 
+|#essential Category of Signal Station, Warning|CATSIW|EN|1,*| 6: weather
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Weather Signal Station
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 기상신호소
+|    Name Usage||(S)EN|0,1| 2: alternate name display
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Wind direction, Wind speed, Air temperature, Atmospheric pressure, Humidity
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1|풍향, 풍속, 기온, 기압, 습도
 |===
 
 // end::SignalStationWarning[]

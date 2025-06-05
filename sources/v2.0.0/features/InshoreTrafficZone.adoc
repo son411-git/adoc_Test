@@ -25,4 +25,4 @@ A routeing measure comprising a designated area between the landward boundary of
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/InshoreTrafficZone_rules.adoc[tag=InshoreTrafficZone]
+include::../features_rules/InshoreTrafficZone_rules.adoc[tag=InshoreTrafficZone]

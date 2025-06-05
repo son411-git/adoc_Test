@@ -1,39 +1,33 @@
 // tag::OffshorePlatform[]
 ===== Remark
 
+- 생산, 하역, 배출 또는 관찰/연구 활동으로 사용되는 해상 구조물. 일반적으로 기름이나 천연가스를 생산하기 위하여 해상에 고정 또는 부유 상태로 영구설치 됨.
+- #F "Offshore Platform"에 항로표지가 설치되어 있으면 관련 피처를 #R "Structure/Equipment" 관계 설정 +
+   ※ Relation 페이지 참조
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Offshore Platform|CATOFP|EN|0,1| 
-|Colour|COLOUR|EN|0,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
+|Category of Offshore Platform|CATOFP|EN|0,1|3: observation/research platform 
+|Colour|COLOUR|EN|0,*| 1(white)
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Flare Stack||BO|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Product|PRODCT|EN|0,*| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1| eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jaeundo
+|    Name Usage||(S)EN|0,1| 1 : default name display 
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 자은도 해상기상탑 
+|    Name Usage||(S)EN|0,1| 2: alternate name display 
+|Vertical Length|VERLEN|RE|0,1| 2 
+|Visual Prominence|CONVIS|EN|0,1| 1: visual prominence 
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    #essential Language||(S)TE|1,1|eng 
+|    Text|INFORM/NINFOM|(S)TE|0,1| Diving board 
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 다이빙 대
 |===
 
 // end::OffshorePlatform[]

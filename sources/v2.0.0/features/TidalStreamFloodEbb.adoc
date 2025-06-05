@@ -30,4 +30,4 @@ Approximate tidal stream rates given as discrete rate values for flood and ebb f
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/TidalStreamFloodEbb_rules.adoc[tag=TidalStreamFloodEbb]
+include::../features_rules/TidalStreamFloodEbb_rules.adoc[tag=TidalStreamFloodEbb]

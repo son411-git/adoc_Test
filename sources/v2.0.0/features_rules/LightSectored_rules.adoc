@@ -1,66 +1,43 @@
 // tag::LightSectored[]
 ===== Remark
 
+- 등화의 분류에 따라 #F "Light Fog Detector" (안개탐지등), #F "Light Air Obstruction" (항공장애등), #F "Light Sectored" (분호등화), #F "Light All Around" (일반등화) 피처로 구분하여 입력
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
 |Category of Light|CATLIT|EN|0,*| 
-|Exhibition Condition of Light|EXCLIT|EN|0,1| 
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Marks Navigational - System Of|MARSYS|EN|0,1| 
-|**Multiplicity of Features**||C|0,1| 
-|    #essential Multiplicity Known||(S)BO|1,1| 
-|    Number of Features||(S)IN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| KR2008.1 
+|    Name Usage||(S)EN|0,1|1: default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 2008.1 
+|    Name Usage||(S)EN|0,1| 2: alternate name display 
+|Height|HEIGHT|RE|0,1| 65m 
 |**#essential Sector Characteristics**||C|1,*| 
-|    #essential Light Characteristic|LITCHR|(S)EN|1,1| 
-|**    #essential Light Sector**||(S)C|1,*| 
-|        #essential Colour|COLOUR|(S)EN|1,*| 
-|**        Directional Character**||(S)C|0,1| 
-|            Moire Effect||(S)BO|0,1| 
-|**            #essential Orientation**||(S)C|1,1| 
-|                Orientation Uncertainty||(S)RE|0,1| 
-|                #essential Orientation Value|ORIENT|(S)RE|1,1| 
-|        Light Visibility|LITVIS|(S)EN|0,*| 
-|**        Sector Limit**||(S)C|0,1| 
-|**            #essential Sector Limit One**|SECTR1|(S)C|1,1| 
-|                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1| 
-|                Sector Line Length||(S)RE|0,1| 
-|**            #essential Sector Limit Two**|SECTR2|(S)C|1,1| 
-|                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1| 
-|                Sector Line Length||(S)RE|0,1| 
-|        Value of Nominal Range|VALNMR|(S)RE|0,1| 
-|**        Sector Information**||(S)C|0,*| 
-|            Language||(S)TE|0,1| 
-|            #essential Text|INFORM/NINFOM|(S)TE|1,1| 
-|        Sector Arc Extension||(S)BO|0,1| 
-|    Signal Group|SIGGRP|(S)TE|0,*| 
-|    Signal Period|SIGPER|(S)RE|0,1| 
-|**    Signal Sequence**|SIGSEQ|(S)C|0,*| 
-|        #essential Signal Duration||(S)RE|1,1| 
-|        #essential Signal Status||(S)EN|1,1| 
-|Signal Generation|SIGGEN|EN|0,1| 
-|Status|STATUS|EN|0,*| 
-|Vertical Datum|VERDAT|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Light Characteristic|LITCHR|(S)EN|1,1| 7:isophased 
+|**    #essential Light Sector**||(S)C|1,*|하단 표 참조 
+|    Signal Group|SIGGRP|(S)TE|0,*| (1) 
+|    Signal Period|SIGPER|(S)RE|0,1| 4
+|Status|STATUS|EN|0,*|7: temporary  
 |===
 
+[cols="20,10,5,5,20", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+|**    #essential Light Sector**||(S)C|1,*|
+|        #essential Colour|COLOUR|(S)EN|1,*|4: green
+|        Light Visibility|LITVIS|(S)EN|0,*|8:partially obscured
+|**        Sector Limit**||(S)C|0,1|
+|**            #essential Sector Limit One**|SECTR1|(S)C|1,1|
+|                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1|74
+|                Sector Line Length||(S)RE|0,1|
+|**            #essential Sector Limit Two**|SECTR2|(S)C|1,1|
+|                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1|140
+|        Value of Nominal Range|VALNMR|(S)RE|0,1|7
+|===
 // end::LightSectored[]

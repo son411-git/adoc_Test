@@ -20,4 +20,4 @@ Any of various submerged monocotyledonous plants (such as eelgrass, tape grass, 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Seagrass_rules.adoc[tag=Seagrass]
+include::../features_rules/Seagrass_rules.adoc[tag=Seagrass]

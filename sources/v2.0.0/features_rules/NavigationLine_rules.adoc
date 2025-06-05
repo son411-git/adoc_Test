@@ -1,31 +1,44 @@
 // tag::NavigationLine[]
 ===== Remark
 
+- 지도선은 단독으로 사용하여 속도 측정구역을 표시하거나 #F "Recommended Track"과 함께 사용하여 추천항로를 표시함
+- 지도선이 속도측정구역, 추천항로로 사용될 경우 관련된 no geometry Feature인 #F "Range system"을 입력하고 각Feature 간에 #R "Range system Aggregation" 관계 설정 +
+   ※ Relation 페이지 참조
+- 의무적 복합 속성인 방향 #A "Orientation"은 바다 쪽으로부터의 방위 값을 입력
+
+[cols="1,1" , frame=none, grid=none]
+|===
+a| image:../../../images/NavigationLine/NavigationLine_image-1.png[width=300]
+a| image:../../../images/NavigationLine/NavigationLine_image-2.png[width=300]
+
+2+a|
+[cols="1,1,1,1,1", options="header"]
+!===
+!그림번호!종류!항로선!추천항로!항행표지
+!1!지도선 위의 추천항로!3!True!최소 2
+!2!일직선 표지 위의 피험선!1!없음!최소 2
+!3!일직선 표지 위의 중시선!2!없음!최소 2
+!4!방위 위의 추천항로!3!True!1
+!5!방위 위의 피험선!1!없음!1
+!6!방위 위의 중시선!2!없음!1
+!7!고정물표에 기반하지 않은 추천항로!없음!False!없음
+!===
+|===
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Category of Navigation Line|CATNAV|EN|1,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Measured Distance||IN|0,1| 
+|#essential Category of Navigation Line|CATNAV|EN|1,1| 2: transit line
 |**#essential Orientation**||C|1,1| 
-|    Orientation Uncertainty||(S)RE|0,1| 
-|    #essential Orientation Value|ORIENT|(S)RE|1,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Orientation Value|ORIENT|(S)RE|1,1| 13 
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| Measured Distance 3689.90m 013Deg
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 속도시험거리 3689.90m 013도
 |===
 
 // end::NavigationLine[]

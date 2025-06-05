@@ -1,26 +1,39 @@
 // tag::LandRegion[]
 ===== Remark
 
+- #F "Land region" 피처는 육상의 자연지형을 표현하거나 지명을 표기할 때 사용
+  ※ 해역에서 비슷한 용도로 사용되는 피처 : #F "Sea Area/Named Water Area" 
+- #F "Land Area" 피처에 #A "Feature name"이 있다면 동일한 정보의 #F "Land Region" 피처는 입력하지 않아야 함 +
+   (단독으로 존재하는 섬 이름 등은 #F "Land Area" 피처에 입력)
+
+////
+[cols="1,1"]
+|===
+| image:../images/LandRegion/LandRegion_image-1.png[width=200] +
+지명 : 육지지역에 지명, ‘곶’, ‘지점’, ‘반도’를 표현할 때 사용 #A "Category of land region" = undefined
+| image:../images/LandRegion/LandRegion_image-2.png[width=200] +
+습지 : #A "Category of land region" = 2로 표현
+| image:../images/LandRegion/LandRegion_image-3.png[width=200] +
+염전 : #A "Category of land region" = 15로 표현
+| image:../images/LandRegion/LandRegion_image-4.png[width=200] +
+용암류 : #A "Category of land region" = 14로 표현
+|===
+////
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Land Region|CATLND|EN|0,*| 
+|Category of Land Region|CATLND|EN|0,*| 15: salt pans
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Nature of Surface|NATSUR|EN|0,*| 
-|Water Level Effect|WATLEV|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Salt pans
+|    Name Usage||(S)EN|0,1| 1: default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 염전 
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Water Level Effect|WATLEV|EN|0,1| 2: always dry 
 |===
 
 // end::LandRegion[]

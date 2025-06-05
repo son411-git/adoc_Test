@@ -1,51 +1,83 @@
 // tag::SpecialPurposeGeneralBeacon[]
 ===== Remark
+- 특수입표는 항해를 지원하기 위한 목적이 아니며 보통 공사나 특별한 시설 등을 표시하는 용도로 사용
+- 입표모양은 여러 가지 형태가 존재하며, 두표모양은 한 개의 X자 형태이거나 없는 경우(기상탑 등)도 있음
+- 일반적으로 황색으로만 구성되나 일부 경우(기상탑 등)에서 색상 조합으로 사용됨
+- 측방표지에 설치되는 등화는 다른 입표들이 사용하는 리듬을 제외한 모든 형식 사용가능
+- 속성 #A "Height"는 평균해수면에서 구조물 최상단의 높이입력 (등대표상 없는 정보임)
+  (속성 #A "Height"가 S-57전자해도에 존재한다면 확인필요)
+- 속성 #A "Vertical Length"는 지면상 높이에서 구조물 최상단의 높이를 입력 (구조물 자체만의 높이 – 등대표에 제시됨)
+- 특수입표가 Light 객체와 함께 입력되어 등표로 표현되는 경우 해당 등대번호는 Light객체에 입력
+   (등표로 형성된 경우 등대번호가 특수입표의 INFORM에 입력되어 있을 경우 수정필요)
+   (S-57 전자해도에서 특수입표에 INFORM에 입력된 정보는 등대번호와 항행통보사항 내용(불필요) 뿐 임
+- 입표와 등화 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 #R "Structure/Equipment" 관계 설정 +
+   ※ Relation 페이지 참조 +
+- 입표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
+
+////
+[cols="1,1" , frame=none , grid=none, align=center]
+|===
+a|
+[cols="1,4", options="header"]
+!===
+!색상 ! 황색
+!부이모양 ! 원통형, 원추형, 구형, 통형, 망대형, 원주형
+!두표 ! 한 개의 X자 형형
+!등화 ! 황색
+!리듬 ! 방위표지, 고립장애표지, 안전수역표지 리듬을 제외한 모든 것
+!===
+a| image:../images/SpecialPurposeGeneralBeacon/SpecialPurposeGeneralBeacon_image-1.png[width=400]
+|===
+////
+
+
+[%header,format=csv]
+|===
+Feature,INT1,category of special purpose mark
+Leading beacon(유도입표),Q120,16
+Beacon marking a clearing line(피험선을 표시한 입표),Q121,41
+Beacon marking measured distance(속력 측정구간 입표),Q122,17
+Cable landing beacon(해저케이블의 상륙지점 입표),Q123,6
+Outfall landing beacon(배수관의 상륙지점 입표),Q123,8
+Pipeline landing beacon(파이프라인 상륙지점 입표),Q123,39
+Refuge beacon(구난수역 입표),Q124,44
+Notice board(안내판),Q126,18
+Buoyant beacon(부력입표),P5,
+|===
+
+
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Beacon Shape|BCNSHP|EN|1,1| 
-|#essential Category of Special Purpose Mark|CATSPM|EN|1,*| 
-|#essential Colour|COLOUR|EN|1,*| 
-|Colour Pattern|COLPAT|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
-|Elevation|ELEVAT|RE|0,1| 
+|#essential Beacon Shape|BCNSHP|EN|1,1| 5: pile beacon
+|#essential Category of Special Purpose Mark|CATSPM|EN|1,*| 27: general warning mark
+|#essential Colour|COLOUR|EN|1,*| 3: red
+|#essential Colour|COLOUR|EN|1,*| 1: white
+|Colour Pattern|COLPAT|EN|0,1| 1: horizontal stripes
+|Radar Conspicuous|CONRAD|BO|0,1| false
+|Nature of Construction|NATCON|EN|0,*| 8: glass reinforced plastic
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Marks Navigational - System Of|MARSYS|EN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|**Topmark**|TOPMAR|C|0,1| 
-|    Colour|COLOUR|(S)EN|0,*| 
-|    Colour Pattern|COLPAT|(S)EN|0,1| 
-|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 
-|**    Shape Information**||(S)C|0,*| 
-|        Language||(S)TE|0,1| 
-|        #essential Text|INFORM/NINFOM|(S)TE|1,1| 
-|Vertical Length|VERLEN|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Suwonhaesang
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 수원해상기상탑
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Status|STATUS|EN|0,*| 7: temporary
+|Vertical Length|VERLEN|RE|0,1| 96
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
+|**Topmark**|TOPMAR|C|0,1| 
+|    Colour|COLOUR|(S)EN|0,*| 6: yellow
+|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 7: x-shape(St.Andrew’s cross)
 |===
 
 // end::SpecialPurposeGeneralBeacon[]

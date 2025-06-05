@@ -1,39 +1,29 @@
 // tag::PipelineSubmarineOnLand[]
 ===== Remark
 
+- 연안수역에 위치한 #F "Pipeline submarine/on land"는 항해에 위험이 될 수 있으므로 대축척에서 인코딩
+- 깊이 묻혀 있어서 정박으로부터 손상을 받을 가능성이 낮은 해저수송관과 육상구역에 묻힌 수송관은 인코딩하지 않음
+- 해저/육상수송관이 명시된 묻힌 수심이 있다면 속성 #A "Buried depth"에 입력
+- 사용하지 않은 해저/육상수송관 #F "Pipeline submarine/on land"은 속성 #A "Status" = 4(미사용)를 입력하고 #A "Category of pipeline/pipe"과 #A "Product" 속성은 입력하지 않음
+- S-57 전자해도에서 해저수송관 명칭이 #A "INFORM", #A "NINFOM"에 입력되어 있을 경우, #A "Feature name"으로 수정필요
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
 |Buried Depth|BURDEP|RE|0,1| 
-|Category of Pipeline/Pipe|CATPIP|EN|0,*| 
-|Condition|CONDTN|EN|0,1| 
-|Depth Range Minimum Value|DRVAL1|RE|0,1| 
-|Depth Range Maximum Value|DRVAL2|RE|0,1| 
+|Category of Pipeline/Pipe|CATPIP|EN|0,*| 6: supply pipe
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Multiplicity of Features**||C|0,1| 
-|    #essential Multiplicity Known||(S)BO|1,1| 
-|    Number of Features||(S)IN|0,1| 
-|Product|PRODCT|EN|0,*| 
-|Reported Date|SORDAT|TD|0,1| 
-|Restriction|RESTRN|EN|0,*| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| discharge pipe
+|    Name Usage||(S)EN|0,1|1: default name display  
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 배사관
+|    Name Usage||(S)EN|0,1|2: alternate name display  
+|Product|PRODCT|EN|0,*| 3: water
+|Status|STATUS|EN|0,*| 7: temporary
 |===
 
 // end::PipelineSubmarineOnLand[]

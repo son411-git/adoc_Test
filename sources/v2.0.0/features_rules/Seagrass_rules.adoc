@@ -1,23 +1,16 @@
 // tag::Seagrass[]
 ===== Remark
+- 해초가 존재한다는 것은 일반적으로 수중에 바위도 있음을 뜻함
+- 좁은 잎을 갖고 빽빽한 수중초원을 형성하는 외떡잎식물은 Seagrass 피처로 입력, 이 외에 조류강(algae)에 속하는 해조류는 Weed/Kelp 피처로 입력
+
+//image::../images/Seagrass/Seagrass_image-1.png[width=400]
+
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|-|-|-|-|-
 |===
 
 // end::Seagrass[]

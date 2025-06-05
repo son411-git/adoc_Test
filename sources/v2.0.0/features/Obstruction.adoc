@@ -36,4 +36,4 @@ In marine navigation, anything that hinders or prevents movement, particularly a
 |#essential Surrounding Depth||RE|1,1
 |===
 
-// include::../features_rules/Obstruction_rules.adoc[tag=Obstruction]
+include::../features_rules/Obstruction_rules.adoc[tag=Obstruction]

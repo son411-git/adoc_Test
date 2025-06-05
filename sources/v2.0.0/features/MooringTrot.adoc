@@ -23,4 +23,4 @@ A mooring is a place where a vessel may be secured. A mooring trot is a mooring 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/MooringTrot_rules.adoc[tag=MooringTrot]
+include::../features_rules/MooringTrot_rules.adoc[tag=MooringTrot]

@@ -31,4 +31,4 @@ An area containing one or more submarine pipelines.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/SubmarinePipelineArea_rules.adoc[tag=SubmarinePipelineArea]
+include::../features_rules/SubmarinePipelineArea_rules.adoc[tag=SubmarinePipelineArea]

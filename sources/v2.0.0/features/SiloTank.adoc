@@ -39,4 +39,4 @@ A large storage structure used for storing loose materials, liquids and/or gases
 |In the Water||BO|0,1
 |===
 
-// include::../features_rules/SiloTank_rules.adoc[tag=SiloTank]
+include::../features_rules/SiloTank_rules.adoc[tag=SiloTank]

@@ -21,4 +21,4 @@ Any macroscopic marine alga.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/WeedKelp_rules.adoc[tag=WeedKelp]
+include::../features_rules/WeedKelp_rules.adoc[tag=WeedKelp]

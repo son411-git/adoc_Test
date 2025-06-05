@@ -1,40 +1,28 @@
 // tag::Fairway[]
 ===== Remark
 
+- 국내에서 일반적인 양방향 통항이 가능한 항로의 표현은 Two-way route part 사용 중
+- 항로에 대한 주의내용은 항해정보 #F "Information Area"피처를 같이 이용 +  
+   (단, 항해 시 주의 경고가 울려야 할 경우 주의구역 #F "Caution Area"피처를 사용)
+- 항로가 여러 개의 각도로 구성될 경우 각도에 따라 각각의 Feature를 생성
+- #F "Fairway system"을 구성하는 모든 피처는 동일한 #A "Scale minimum" 값을 가져야 함
+- 두 개 이상의 #F "Fairway" 피처로 구성되어 하나의 항로를 표현한다면 surface type 객체인 #F "Fairway system"을 생성하고 #R "Fairway Aggregation" 관계 설정
+   ※ Relation 페이지 참조
+- 항로명은 #F "Fairway system"의 #A "Feature name"에 입력 (단일 피처로 구성된 경우 #F "Fairway"에 입력)
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Depth Range Minimum Value|DRVAL1|RE|0,1| 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Maximum Permitted Draught||RE|0,1| 
-|Orientation Value|ORIENT|RE|0,1| 
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 
-|Restriction|RESTRN|EN|0,*| 
-|Status|STATUS|EN|0,*| 
-|Traffic Flow|TRAFIC|EN|0,1| 
-|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1| 
-|    #essential Uncertainty Fixed||(S)RE|1,1| 
-|    Uncertainty Variable Factor||(S)RE|0,1| 
-|**Vessel Speed Limit**||C|0,*| 
-|    #essential Speed Limit||(S)RE|1,1| 
-|    #essential Speed Units||(S)EN|1,1| 
-|    Vessel Class||(S)TE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|Orientation Value|ORIENT|RE|0,1| 90 
+|Traffic Flow|TRAFIC|EN|0,1| 4: two-way 
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| smail craft fairway
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 소형선박 통항로
 |===
 
 // end::Fairway[]

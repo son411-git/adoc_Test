@@ -1,39 +1,46 @@
 // tag::Obstruction[]
 ===== Remark
+- 장애물(Obstruction) 및 험악지(Foul Ground)는 아래 표에 따라 입력
+
+[cols="1,1,1,1,1" options="header"]
+|===
+|장애물 |INT 1 |water level effect |quality of vertical measurement |technique of vertical measurement 
+|수심을 모름|K40|3 또는 4|2|입력금지
+|최저수심을 앎|K41|3 또는 4|6|
+|와이어를 이용하여 수심 측정|K42|3|6|6
+|다이버에 의해 측정됨|K42|3|6|4
+|===
+
+- 위험계선의 경우, #A "Category of obstruction" = 6(험악구역)인 Surface Type의 #F "Obstruction" 피처로 인코딩하며 #F "Depth Area" 피처와 중첩
+- Point Type인 #F "Obstruction"에 대한 #F "Depth area" 와 #F "Depth Contour" 는 따로 생성하지 않으며, #A "Exposition of sounding" 속성을 입력
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Obstruction|CATOBS|EN|0,1| 
-|Condition|CONDTN|EN|0,1| 
-|Exposition of Sounding|EXPSOU|EN|0,1| 
+|Category of Obstruction|CATOBS|EN|0,1| 6: foul area  
+|Exposition of Sounding|EXPSOU|EN|0,1| 2: shoaler than the range of depth of the surrounding depth area
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Maximum Permitted Draught||RE|0,1| 
-|Nature of Surface|NATSUR|EN|0,*| 
-|Product|PRODCT|EN|0,*| 
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 
-|Reported Date|SORDAT|TD|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Iron structure
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 철제구조물 
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Nature of Surface|NATSUR|EN|0,*| 9: rock
+|Quality of Vertical Measurement|QUASOU|EN|0,*| 6: least depth known
+|Reported Date|SORDAT|TD|0,1| 20121130 
 |Status|STATUS|EN|0,*| 
-|Technique of Vertical Measurement|TECSOU|EN|0,*| 
-|Value of Sounding|VALSOU|RE|0,1| 
-|Vertical Length|VERLEN|RE|0,1| 
-|#essential Water Level Effect|WATLEV|EN|1,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Default Clearance Depth||RE|0,1| 
-|#essential Surrounding Depth||RE|1,1| 
+|Value of Sounding|VALSOU|RE|0,1| 23.5
+|#essential Water Level Effect|WATLEV|EN|1,1| 3: always under water
+|**Information**|INFORM|C|0,*|  
+|    #essential Language||(S)TE|1,1| eng 
+|    Text|INFORM/NINFOM|(S)TE|0,1| Old
+|**Information**|INFORM|C|0,*|  
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 구성과 자료
 |===
 
 // end::Obstruction[]

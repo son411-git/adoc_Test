@@ -1,37 +1,62 @@
 // tag::Wreck[]
 ===== Remark
+- 침선은 표<침선 기본 속성입력>의 속성조합 중 하나를 인코딩
+- 표<침선 기본 속성입력>에서 ‘ / ’ 기호는 인코딩해서는 안 되며, 빈칸은 해당 속성에 맞는 값을 입력
+- 최소 수심 #A "Value of sounding"을 모르는 경우 #A "quality of vertical measurement" = 2(수심 또는 최소 수심 모름) 입력
+- 최소 수심 #A "Value of sounding"을 알고 있는 경우 #A "quality of vertical measurement" = 6(알려진 최저 수심) 입력
+- 속성 #A "height"는 #A "water level effect" = 1(partly submerged at high water) 또는 2(always dry)인 경우에만 입력
+- #A "category of wreck"과 #A "value of sounding" 속성은 동시에 입력하지 않는 것이 원칙이나S-57 역변환 시 데이터 누락이 발생하므로 현재는 모두 변환·입력 됨 
+(향후에 기준 협의 필요)
+
+[cols="5,30,15,10,10,10,10,10", options="header"]
+|===
+|NO |침선 종류 |S-4 |INT1 |Category of wreck |Water level effect |Quality of vertical measurement |Technique of vertical measurement
+
+|1 |선박의 전체나 상부구조물의 일부만 보임 |B–422.2 |K24, K20 |5 |1 or 2 or 4 |/ |/
+|2 |간출 |B–422.2 |K24, K21 |4 or 5 |4 | |
+|3 |수면에 씻김 | | | |5 | |
+|4 |고조에서 뚜렷만 보임 |B–422.2 |K25 |4 or 5 |1 |/ |/
+|5 |저조에서 뚜렷만 보임 |B–422.2 |K25 |4 |4 | |
+|6 |측정한 수심 |B–422.4 |K26 | |3 |6 |
+|7 |와이어 소해작업으로 측정된 수심 |B–422.3 |K27 | |3 |6 |
+|8 |다이버가 측정한 수심 |B–422.3 |K27 | |3 | 6 |4
+|9 |수심 모름,유관제작당국에서위험하다고 판단|B–422.6 |K28 |2 |3 |2 |/
+|10 |수심 모름,유관제작당국에서위험하지 않다고 판단 |B–422.6 |K29 |1 |3 |2 |/
+|11 |수심 모름,안전간격확보 |B–422.5 |K30 | |3 |7 |/
+|12 |침선잔재구역역 |B–422.8 |K31 |3 | | |
+|13 |보고되었으나 확인되지 않음 |B–424.5 |I3.1, I3.2 | | |9 |
+|===
+<침선 기본 속성입력>
+
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Wreck|CATWRK|EN|0,1| 
-|Exposition of Sounding|EXPSOU|EN|0,1| 
+|Category of Wreck|CATWRK|EN|0,1| 2: dangerous wreck
+|Exposition of Sounding|EXPSOU|EN|0,1| 2: shoaler than the range of depth of the surrounding depth area
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Height|HEIGHT|RE|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 
-|Radar Conspicuous|CONRAD|BO|0,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Technique of Vertical Measurement|TECSOU|EN|0,*| 
-|Value of Sounding|VALSOU|RE|0,1| 
-|Visual Prominence|CONVIS|EN|0,1| 
-|#essential Water Level Effect|WATLEV|EN|1,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Nagwon No1 
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 낙원 1호
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+|Quality of Vertical Measurement|QUASOU|EN|0,*|6: least depth know 
+|Status|STATUS|EN|0,*| <undefined>
+|Technique of Vertical Measurement|TECSOU|EN|0,*| 3: found by multi beam
+|Value of Sounding|VALSOU|RE|0,1| 0.8
+|#essential Water Level Effect|WATLEV|EN|1,1| 3: always underwater/submerged
+|Scale Minimum|SCAMIN|IN|0,1| 49999
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|Pictorial Representation|PICREP|TE|0,1| 
-|Default Clearance Depth||RE|0,1| 
-|#essential Surrounding Depth||RE|1,1| 
+|    #essential Language||(S)TE|1,1| eng 
+|    Text|INFORM/NINFOM|(S)TE|0,1| Fishing boat, 4ton, sunken date 1900ZT, 6 Oct. 2005
+|**Information**|INFORM|C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 군산선적 연안자망 4톤, 침몰일시 2005.10.6 19:00
+
 |===
 
 // end::Wreck[]

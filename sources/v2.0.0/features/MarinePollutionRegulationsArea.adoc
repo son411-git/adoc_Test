@@ -21,4 +21,4 @@ The International Convention for the Prevention of Pollution from Ships (MARPOL)
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/MarinePollutionRegulationsArea_rules.adoc[tag=MarinePollutionRegulationsArea]
+include::../features_rules/MarinePollutionRegulationsArea_rules.adoc[tag=MarinePollutionRegulationsArea]

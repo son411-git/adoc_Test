@@ -21,4 +21,4 @@ The area over which a harbour authority has jurisdiction.
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/HarbourAreaAdministrative_rules.adoc[tag=HarbourAreaAdministrative]
+include::../features_rules/HarbourAreaAdministrative_rules.adoc[tag=HarbourAreaAdministrative]

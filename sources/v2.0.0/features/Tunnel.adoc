@@ -33,4 +33,4 @@ A passage that is open to the atmosphere at both ends, buried under the seabed o
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/Tunnel_rules.adoc[tag=Tunnel]
+include::../features_rules/Tunnel_rules.adoc[tag=Tunnel]

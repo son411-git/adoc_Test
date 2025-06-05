@@ -20,4 +20,4 @@ The outer limit of a traffic lane part or a traffic separation scheme roundabout
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/TrafficSeparationSchemeBoundary_rules.adoc[tag=TrafficSeparationSchemeBoundary]
+include::../features_rules/TrafficSeparationSchemeBoundary_rules.adoc[tag=TrafficSeparationSchemeBoundary]

@@ -31,4 +31,4 @@ A structure that is specifically designed or reinforced to provide for defence f
 |In the Water||BO|0,1
 |===
 
-// include::../features_rules/FortifiedStructure_rules.adoc[tag=FortifiedStructure]
+include::../features_rules/FortifiedStructure_rules.adoc[tag=FortifiedStructure]

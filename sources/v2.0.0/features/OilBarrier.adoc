@@ -27,4 +27,4 @@ A floating barrier to stop and contain the spread of oil on a water body surface
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/OilBarrier_rules.adoc[tag=OilBarrier]
+include::../features_rules/OilBarrier_rules.adoc[tag=OilBarrier]

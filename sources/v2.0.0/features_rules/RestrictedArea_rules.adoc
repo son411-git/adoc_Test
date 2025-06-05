@@ -1,36 +1,45 @@
 // tag::RestrictedArea[]
 ===== Remark
 
+- 제한구역은 #F "Restricted Area" 피처를 사용하거나 #A "Restriction" 속성을 갖는 다른 피처를 사용하여 인코딩
+- IMO 지정항로의 정박금지구역은 #F "Restricted Area" 의 #A "Restriction" = 1(정박금지)로 입력
+- 속력 제한구역은 #A "Restriction" = 27(속력제한) 로 입력하고, 복합속성인 #A "Vessel speed limit", #A "Speed units", #A "Vessel class"를 사용하여 특정 선박에 대한 제한속도, 속도 단위를 입력
+- 구체적인 규정에 대한 설명은 #A "information"에 입력
+- 해당 구역에 대한 제한사항을 #A "Restriction" 항목에서 선택할 수 없는 경우, #A "Restriction" = null(빈칸) 으로 입력하고 #A "information"에 제한사항을 입력
+- 외부참조파일을 입력할 경우 명명기준 확인 +
+  (101CCCCXXXXXXXX.EEE) - 101: Product명 / CCCC: Agency code / XXXXXXXX.EEE:파일명
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Restricted Area|CATREA|EN|0,*| 
+|Category of Restricted Area|CATREA|EN|0,*|<undefined> 
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|**Fixed Date Range**||C|0,1| 
-|    Date End|DATEND|(S)TD|0,1| 
-|    Date Start|DATSTA|(S)TD|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|#essential Restriction|RESTRN|EN|1,*| 
-|Status|STATUS|EN|0,*| 
+|    #essential Language||(S)TE|1,1|eng 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|Speed restricted 
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1|kor 
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|속력제한구역 
+|    Name Usage||(S)EN|0,1|2: alternate name display 
 |**Vessel Speed Limit**||C|0,*| 
-|    #essential Speed Limit||(S)RE|1,1| 
-|    #essential Speed Units||(S)EN|1,1| 
+|    #essential Speed Limit||(S)RE|1,1|10 
+|    #essential Speed Units||(S)EN|1,1| 4: knots
 |    Vessel Class||(S)TE|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|**Vessel Speed Limit**||C|0,*| 
+|    #essential Speed Limit||(S)RE|1,1|12
+|    #essential Speed Units||(S)EN|1,1|4: knots 
+|    Vessel Class||(S)TE|0,1|high speed vessel 
+|Scale Minimum|SCAMIN|IN|0,1|219999 
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1|101KR000010E100.TXT 
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1|Within Jeju Hang limit area, a vessel shall not exceed 10 knots, but a high speed vessel shall not exceed 12 knots. 
+|**Information**|INFORM|C|0,*| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1|101KR000010K100.TXT 
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1|제주항 항계내에서는 속력 10노트 이하로 항행하여야 함. 단, 초쾌속선은 12노트 이하로 항행하여야 함 
 |===
 
 // end::RestrictedArea[]

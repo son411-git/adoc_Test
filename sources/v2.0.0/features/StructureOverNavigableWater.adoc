@@ -50,4 +50,4 @@ A roofed structure erected, or partly erected, over a body of water, to provide 
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/StructureOverNavigableWater_rules.adoc[tag=StructureOverNavigableWater]
+include::../features_rules/StructureOverNavigableWater_rules.adoc[tag=StructureOverNavigableWater]

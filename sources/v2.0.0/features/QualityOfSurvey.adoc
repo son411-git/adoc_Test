@@ -36,4 +36,4 @@ An area within which a uniform assessment of the reliability of source survey in
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/QualityOfSurvey_rules.adoc[tag=QualityOfSurvey]
+include::../features_rules/QualityOfSurvey_rules.adoc[tag=QualityOfSurvey]

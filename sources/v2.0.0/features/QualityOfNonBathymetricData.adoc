@@ -27,4 +27,4 @@ An area within which a uniform assessment of the quality of the non-bathymetric 
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/QualityOfNonBathymetricData_rules.adoc[tag=QualityOfNonBathymetricData]
+include::../features_rules/QualityOfNonBathymetricData_rules.adoc[tag=QualityOfNonBathymetricData]

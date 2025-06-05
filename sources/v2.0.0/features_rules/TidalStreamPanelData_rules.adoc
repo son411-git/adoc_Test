@@ -1,5 +1,13 @@
 // tag::TidalStreamPanelData[]
 ===== Remark
+- 현재 국내 전자해도에서는 #A "information"에 조류 주의기사를 입력하고 있음(향후 텍스트로 입력된 주의기사를 각각의 속성으로 입력할 수 있도록 기준 협의 필요)
+- 종이해도에 조류표 및 조위관측소로 표시되는 정보는 #F "Tidal Stream Panel data" 피처로 인코딩
+- #A "Tidal stream value"은 필수 복합속성으로 반드시 입력
+- #A "Tidal stream value"은 #A "Orientation", #A "Time relative to tide", #A "Velocity maximum"이 한 세트로 구성
+- 필수 입력 요소에 대해 알 수 없다면 (Unknown) 입력
+- 외부참조파일을 입력할 경우 명명기준 확인
+  (101CCCCXXXXXXXX.EEE) - 101 : Product명, CCCC: Agency code, XXXXXXXX.EEE:파일명
+
 
 ===== Example
 [cols="20,10,5,5,20", options="header"]
@@ -7,29 +15,26 @@
 |Attribute |Acronym |Type |Mult. |Value
 
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|#essential Station Name||TE|1,1| 
-|Station Number||TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| A 
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|#essential Station Name||TE|1,1| (Unknown)
 |**#essential Tidal Stream Panel Values**||C|1,*| 
-|    #essential Reference Tide||(S)EN|1,1| 
-|    #essential Reference Tide Type||(S)EN|1,1| 
-|    Stream Depth||(S)RE|0,1| 
-|**    #essential Tidal Stream Value**||(S)C|1,*| 
-|**        #essential Orientation**||(S)C|1,1| 
-|            Orientation Uncertainty||(S)RE|0,1| 
-|            #essential Orientation Value|ORIENT|(S)RE|1,1| 
-|        #essential Speed Maximum|CURVEL|(S)RE|1,1| 
-|        #essential Time Relative to Tide||(S)RE|1,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
+|    #essential Reference Tide||(S)EN|1,1| (Unknown)
+|    #essential Reference Tide Type||(S)EN|1,1| (Unknown)
+|**  #essential Tidal Stream Value**||(S)C|1,*| 
+|**      #essential Orientation**||(S)C|1,1| 
+|            #essential Orientation Value|ORIENT|(S)RE|1,1| 84.5
+|        #essential Speed Maximum|CURVEL|(S)RE|1,1| 1.8
+|        #essential Time Relative to Tide||(S)RE|1,1| 6
 |**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
+|    #essential Language||(S)TE|1,1| eng
+|    Text|INFORM/NINFOM|(S)TE|0,1| | See Current Tables.
+**Information**|INFORM|C|0,*| 
+|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
+|    #essential Language||(S)TE|1,1| kor
+|    Text|INFORM/NINFOM|(S)TE|0,1| 부근 조류예보표를 참조할 것.
 |===
 
 // end::TidalStreamPanelData[]

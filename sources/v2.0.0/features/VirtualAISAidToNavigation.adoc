@@ -30,4 +30,4 @@ An Automatic Identification System (AIS) message 21 transmitted from an AIS stat
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/VirtualAISAidToNavigation_rules.adoc[tag=VirtualAISAidToNavigation]
+include::../features_rules/VirtualAISAidToNavigation_rules.adoc[tag=VirtualAISAidToNavigation]

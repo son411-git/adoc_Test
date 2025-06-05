@@ -43,4 +43,4 @@ A special purpose buoy is primarily used to indicate an area or feature, the nat
 |Pictorial Representation|PICREP|TE|0,1
 |===
 
-// include::../features_rules/SpecialPurposeGeneralBuoy_rules.adoc[tag=SpecialPurposeGeneralBuoy]
+include::../features_rules/SpecialPurposeGeneralBuoy_rules.adoc[tag=SpecialPurposeGeneralBuoy]

@@ -1,24 +1,35 @@
 // tag::River[]
 ===== Remark
 
+- #F "River"는 항해 불가능 지역으로 육상구역 #F "Land area"와 중첩
+- 항해 가능한 지역으로 표기될 경우, #F "Depth area" 또는 #F "Dredged Area", #F "Unsurveyed Area" 피처로 표시해야 하며 경계는 #F "Coastline" 또는 #F "Shoreline Construction"으로 입력하고 강의 명칭은 #F "Sea Area/Named Water Area" 로 입력 +
+(#F "River" 피처는 입력하지 않음)
+- S-57 전자해도에서 강의 명칭이 #A "INFORM", #A "NINFOM"에 입력되어 있다면 #A "Feature name"으로 수정필요
+- 강의 명칭은 #A "Feature name"에 로마자로 변환하여 입력 +
+(4대 강은 #F "River"로 입력 한강 → Hangang River)
+- 현재 국내 전자해도에는 속성 #A "Status" = 1(영구적인)로 입력된 경우가 있으나 S-101에서는 간헐천만 구분하여 입력
+  (대부분의 기간 동안 건조한 상태인 간헐천은 #A "Status" = 5(주기적/간헐천)로 입력)
+
+[cols="1,1",frame=none,grid=none]
+|===
+| image:../images/River/River_image-1.png[width=200]
+| image:../images/River/River_image-2.png[width=200]
+|===
+
 ===== Example
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
 |**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Status|STATUS|EN|0,1| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Suyeonggang
+|    Name Usage||(S)EN|0,1|1: default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 수영강 
+|    Name Usage||(S)EN|0,1|2: alternate name display
+|Status|STATUS|EN|0,1| 7: temporary
 |===
 
 // end::River[]

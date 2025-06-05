@@ -39,4 +39,4 @@ A structure that may be swung, drawn, or lowered to block an entrance or passage
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
-// include::../features_rules/Gate_rules.adoc[tag=Gate]
+include::../features_rules/Gate_rules.adoc[tag=Gate]
