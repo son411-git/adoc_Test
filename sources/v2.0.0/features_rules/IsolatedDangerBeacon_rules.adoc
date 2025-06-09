@@ -17,7 +17,7 @@
 - 입표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

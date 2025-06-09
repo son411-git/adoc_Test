@@ -3,7 +3,7 @@
 - #A "Feature name"에 피처의 기능과 동일한 정보(예: 해저용수)는 삭제필요
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 |**Feature Name**||C|0,*| 

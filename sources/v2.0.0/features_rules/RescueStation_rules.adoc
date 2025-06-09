@@ -5,7 +5,7 @@
 - #F "Rescue Station"은 건물이나 구조물 자체와 관계없이 구조대의 기능을 설명하기 위해 사용하며, 서비스가 포함된 건물이나 구조물을 인코딩해야 하는 경우 적절한 피처 (#F "Building", #F "Landmark")를 사용하여 인코딩
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

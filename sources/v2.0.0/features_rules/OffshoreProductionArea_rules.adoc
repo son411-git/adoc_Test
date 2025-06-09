@@ -5,7 +5,7 @@
 - 개별 풍력발전기를 인코딩하는 경우 #F "Wind Turbine" 피처를 사용
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

@@ -9,7 +9,7 @@
 - 임시정박지의 경우 #A "Category of anchorage" = 1(unrestricted anchorage)로 입력하고 #A "Status" = 7(temporary)로 입력
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

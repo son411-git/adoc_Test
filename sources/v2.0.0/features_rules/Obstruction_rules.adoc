@@ -15,7 +15,7 @@
 - Point Type인 #F "Obstruction"에 대한 #F "Depth area" 와 #F "Depth Contour" 는 따로 생성하지 않으며, #A "Exposition of sounding" 속성을 입력
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

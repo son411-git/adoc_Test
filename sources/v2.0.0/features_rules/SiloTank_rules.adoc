@@ -16,7 +16,7 @@ No,사이로/탱크 목적 및 성격,Category of silo/tank,Product,기타
 <사이로/탱크 기본 속성입력>
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 |Category of Silo/Tank|CATSIL|EN|0,1|1: silo in general 

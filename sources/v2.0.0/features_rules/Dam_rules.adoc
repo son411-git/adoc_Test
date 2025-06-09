@@ -7,7 +7,7 @@
 - Point 타입으로 인코딩이 필요한 경우 “Landmark” 피처를 사용, #A "Categroy of landmark" = 27(dam)  
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

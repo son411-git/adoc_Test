@@ -4,7 +4,7 @@
  - #F "Radar Station"은 장비 자체를 인코딩하는 것이므로 독립된 건물이나 건축물 피처(예; #F "Building", #F "Landmark")와 함께 인코딩 (Relation 설정은 할 필요 없음)
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

@@ -4,7 +4,7 @@
 ! 향후 필요한 내용 입력 !
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 |Category of Crane|CATCRN|EN|0,1| 4: travelling crane

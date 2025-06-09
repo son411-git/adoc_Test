@@ -8,7 +8,7 @@
 - #A "IMO adopted"는 IMO 지정항로 여부를 입력하며, 국내에서는 “해상교통안전법 시행규칙 [별표 20]통항분리방식이 적용되는 수역”에 해당하는 “홍도항로, 보길도항로, 거문도항로”만 #A "IMO adopted" = true로 입력하고 이 외에는 false로 입력
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 |IMO Adopted|CATTSS|BO|0,1| false

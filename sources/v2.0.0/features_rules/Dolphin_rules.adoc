@@ -19,7 +19,7 @@ S-57 CATMOR,S-101 Feature,S-101 Attribute
 - 사용하지 않는 계류/계선시설 또는 잔해는 “Pile” 피처로 인코딩하며 #A "Category of pile" = 8(mooring post), #A "condition" = 2(ruined)로 입력
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

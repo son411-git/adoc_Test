@@ -2,7 +2,7 @@
 
 A defined area within which a jurisdiction applies. It may or may not be named.
 
-[cols="3,2,1,1", options="header"]
+[cols="50,30,10,10", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 

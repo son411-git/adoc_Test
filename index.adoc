@@ -15,44 +15,36 @@ include::sources/v2.0.0/First.adoc[]
 
 include::sources/v2.0.0/common_attr.adoc[tag=requiredAttr]
 
-////
-************************************************************************************************
-////
-
-// 목차
-== Features
-
-// 객체별 include
-
+== Feature Types
+// Features 객체별 include
 === A
-==== Administration Area
+==== AdministrationArea
 .Attributes
 include::sources/v2.0.0/features/AdministrationArea.adoc[]
 
-==== Airport Airfield
+==== AirportAirfield
 .Attributes
 include::sources/v2.0.0/features/AirportAirfield.adoc[]
 
-==== Anchor Berth
+==== AnchorBerth
 .Attributes
 include::sources/v2.0.0/features/AnchorBerth.adoc[]
 
-==== Anchorage Area
+==== AnchorageArea
 .Attributes
 include::sources/v2.0.0/features/AnchorageArea.adoc[]
 
-==== Archipelagic Sea Lane
+==== ArchipelagicSeaLane
 .Attributes
 include::sources/v2.0.0/features/ArchipelagicSeaLane.adoc[]
 
-==== Archipelagic Sea Lane Area
+==== ArchipelagicSeaLaneArea
 .Attributes
 include::sources/v2.0.0/features/ArchipelagicSeaLaneArea.adoc[]
 
-==== Archipelagic Sea Lane Axis
+==== ArchipelagicSeaLaneAxis
 .Attributes
 include::sources/v2.0.0/features/ArchipelagicSeaLaneAxis.adoc[]
-
 
 === B
 ==== Berth
@@ -71,20 +63,20 @@ include::sources/v2.0.0/features/Bridge.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Building.adoc[]
 
-==== Built Up Area
+==== BuiltUpArea
 .Attributes
 include::sources/v2.0.0/features/BuiltUpArea.adoc[]
 
 === C
-==== Cable Area
+==== CableArea
 .Attributes
 include::sources/v2.0.0/features/CableArea.adoc[]
 
-==== Cable Overhead
+==== CableOverhead
 .Attributes
 include::sources/v2.0.0/features/CableOverhead.adoc[]
 
-==== Cable Submarine
+==== CableSubmarine
 .Attributes
 include::sources/v2.0.0/features/CableSubmarine.adoc[]
 
@@ -92,15 +84,15 @@ include::sources/v2.0.0/features/CableSubmarine.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Canal.adoc[]
 
-==== Cardinal Beacon
+==== CardinalBeacon
 .Attributes
 include::sources/v2.0.0/features/CardinalBeacon.adoc[]
 
-==== Cardinal Buoy
+==== CardinalBuoy
 .Attributes
 include::sources/v2.0.0/features/CardinalBuoy.adoc[]
 
-==== Cargo Transhipment Area
+==== CargoTranshipmentArea
 .Attributes
 include::sources/v2.0.0/features/CargoTranshipmentArea.adoc[]
 
@@ -108,11 +100,11 @@ include::sources/v2.0.0/features/CargoTranshipmentArea.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Causeway.adoc[]
 
-==== Caution Area
+==== CautionArea
 .Attributes
 include::sources/v2.0.0/features/CautionArea.adoc[]
 
-==== Chart 1 Feature
+==== Chart1Feature
 .Attributes
 include::sources/v2.0.0/features/Chart1Feature.adoc[]
 
@@ -120,7 +112,7 @@ include::sources/v2.0.0/features/Chart1Feature.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Checkpoint.adoc[]
 
-==== Coast Guard Station
+==== CoastGuardStation
 .Attributes
 include::sources/v2.0.0/features/CoastGuardStation.adoc[]
 
@@ -128,15 +120,15 @@ include::sources/v2.0.0/features/CoastGuardStation.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Coastline.adoc[]
 
-==== Collision Regulations Limit
+==== CollisionRegulationsLimit
 .Attributes
 include::sources/v2.0.0/features/CollisionRegulationsLimit.adoc[]
 
-==== Contiguous Zone
+==== ContiguousZone
 .Attributes
 include::sources/v2.0.0/features/ContiguousZone.adoc[]
 
-==== Continental Shelf Area
+==== ContinentalShelfArea
 .Attributes
 include::sources/v2.0.0/features/ContinentalShelfArea.adoc[]
 
@@ -148,21 +140,20 @@ include::sources/v2.0.0/features/Conveyor.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Crane.adoc[]
 
-==== Current Non Gravitational
+==== CurrentNonGravitational
 .Attributes
 include::sources/v2.0.0/features/CurrentNonGravitational.adoc[]
 
-==== Custom Zone
+==== CustomZone
 .Attributes
 include::sources/v2.0.0/features/CustomZone.adoc[]
-
 
 === D
 ==== Dam
 .Attributes
 include::sources/v2.0.0/features/Dam.adoc[]
 
-==== Data Coverage
+==== DataCoverage
 .Attributes
 include::sources/v2.0.0/features/DataCoverage.adoc[]
 
@@ -170,39 +161,39 @@ include::sources/v2.0.0/features/DataCoverage.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Daymark.adoc[]
 
-==== Deep Water Route
+==== DeepWaterRoute
 .Attributes
 include::sources/v2.0.0/features/DeepWaterRoute.adoc[]
 
-==== Deep Water Route Centreline
+==== DeepWaterRouteCentreline
 .Attributes
 include::sources/v2.0.0/features/DeepWaterRouteCentreline.adoc[]
 
-==== Deep Water Route Part
+==== DeepWaterRoutePart
 .Attributes
 include::sources/v2.0.0/features/DeepWaterRoutePart.adoc[]
 
-==== Depth Area
+==== DepthArea
 .Attributes
 include::sources/v2.0.0/features/DepthArea.adoc[]
 
-==== Depth Contour
+==== DepthContour
 .Attributes
 include::sources/v2.0.0/features/DepthContour.adoc[]
 
-==== Depth No Bottom Found
+==== DepthNoBottomFound
 .Attributes
 include::sources/v2.0.0/features/DepthNoBottomFound.adoc[]
 
-==== Discoloured Water
+==== DiscolouredWater
 .Attributes
 include::sources/v2.0.0/features/DiscolouredWater.adoc[]
 
-==== Distance Mark
+==== DistanceMark
 .Attributes
 include::sources/v2.0.0/features/DistanceMark.adoc[]
 
-==== Dock Area
+==== DockArea
 .Attributes
 include::sources/v2.0.0/features/DockArea.adoc[]
 
@@ -210,15 +201,15 @@ include::sources/v2.0.0/features/DockArea.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Dolphin.adoc[]
 
-==== Dredged Area
+==== DredgedArea
 .Attributes
 include::sources/v2.0.0/features/DredgedArea.adoc[]
 
-==== Dry Dock
+==== DryDock
 .Attributes
 include::sources/v2.0.0/features/DryDock.adoc[]
 
-==== Dumping Ground
+==== DumpingGround
 .Attributes
 include::sources/v2.0.0/features/DumpingGround.adoc[]
 
@@ -226,66 +217,63 @@ include::sources/v2.0.0/features/DumpingGround.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Dyke.adoc[]
 
-
 === E
-==== Emergency Wreck Marking Buoy
+==== EmergencyWreckMarkingBuoy
 .Attributes
 include::sources/v2.0.0/features/EmergencyWreckMarkingBuoy.adoc[]
 
-==== Exclusive Economic Zone
+==== ExclusiveEconomicZone
 .Attributes
 include::sources/v2.0.0/features/ExclusiveEconomicZone.adoc[]
-
 
 === F
 ==== Fairway
 .Attributes
 include::sources/v2.0.0/features/Fairway.adoc[]
 
-==== Fairway System
+==== FairwaySystem
 .Attributes
 include::sources/v2.0.0/features/FairwaySystem.adoc[]
 
-==== Fence Wall
+==== FenceWall
 .Attributes
 include::sources/v2.0.0/features/FenceWall.adoc[]
 
-==== Ferry Route
+==== FerryRoute
 .Attributes
 include::sources/v2.0.0/features/FerryRoute.adoc[]
 
-==== Fishery Zone
+==== FisheryZone
 .Attributes
 include::sources/v2.0.0/features/FisheryZone.adoc[]
 
-==== Fishing Facility
+==== FishingFacility
 .Attributes
 include::sources/v2.0.0/features/FishingFacility.adoc[]
 
-==== Fishing Ground
+==== FishingGround
 .Attributes
 include::sources/v2.0.0/features/FishingGround.adoc[]
 
-==== Floating Dock
+==== FloatingDock
 .Attributes
 include::sources/v2.0.0/features/FloatingDock.adoc[]
 
-==== Fog Signal
+==== FogSignal
 .Attributes
 include::sources/v2.0.0/features/FogSignal.adoc[]
 
-==== Fortified Structure
+==== FortifiedStructure
 .Attributes
 include::sources/v2.0.0/features/FortifiedStructure.adoc[]
 
-==== Foul Ground
+==== FoulGround
 .Attributes
 include::sources/v2.0.0/features/FoulGround.adoc[]
 
-==== Free Port Area
+==== FreePortArea
 .Attributes
 include::sources/v2.0.0/features/FreePortArea.adoc[]
-
 
 === G
 ==== Gate
@@ -296,13 +284,12 @@ include::sources/v2.0.0/features/Gate.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Gridiron.adoc[]
 
-
 === H
-==== Harbour Area Administrative
+==== HarbourAreaAdministrative
 .Attributes
 include::sources/v2.0.0/features/HarbourAreaAdministrative.adoc[]
 
-==== Harbour Facility
+==== HarbourFacility
 .Attributes
 include::sources/v2.0.0/features/HarbourFacility.adoc[]
 
@@ -314,51 +301,49 @@ include::sources/v2.0.0/features/Helipad.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Hulk.adoc[]
 
-
 === I
-==== Ice Area
+==== IceArea
 .Attributes
 include::sources/v2.0.0/features/IceArea.adoc[]
 
-==== Information Area
+==== InformationArea
 .Attributes
 include::sources/v2.0.0/features/InformationArea.adoc[]
 
-==== Inshore Traffic Zone
+==== InshoreTrafficZone
 .Attributes
 include::sources/v2.0.0/features/InshoreTrafficZone.adoc[]
 
-==== Installation Buoy
+==== InstallationBuoy
 .Attributes
 include::sources/v2.0.0/features/InstallationBuoy.adoc[]
 
-==== Island Group
+==== IslandGroup
 .Attributes
 include::sources/v2.0.0/features/IslandGroup.adoc[]
 
-==== Isolated Danger Beacon
+==== IsolatedDangerBeacon
 .Attributes
 include::sources/v2.0.0/features/IsolatedDangerBeacon.adoc[]
 
-==== Isolated Danger Buoy
+==== IsolatedDangerBuoy
 .Attributes
 include::sources/v2.0.0/features/IsolatedDangerBuoy.adoc[]
-
 
 === L
 ==== Lake
 .Attributes
 include::sources/v2.0.0/features/Lake.adoc[]
 
-==== Land Area
+==== LandArea
 .Attributes
 include::sources/v2.0.0/features/LandArea.adoc[]
 
-==== Land Elevation
+==== LandElevation
 .Attributes
 include::sources/v2.0.0/features/LandElevation.adoc[]
 
-==== Land Region
+==== LandRegion
 .Attributes
 include::sources/v2.0.0/features/LandRegion.adoc[]
 
@@ -366,115 +351,111 @@ include::sources/v2.0.0/features/LandRegion.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Landmark.adoc[]
 
-==== Lateral Beacon
+==== LateralBeacon
 .Attributes
 include::sources/v2.0.0/features/LateralBeacon.adoc[]
 
-==== Lateral Buoy
+==== LateralBuoy
 .Attributes
 include::sources/v2.0.0/features/LateralBuoy.adoc[]
 
-==== Light Air Obstruction
+==== LightAirObstruction
 .Attributes
 include::sources/v2.0.0/features/LightAirObstruction.adoc[]
 
-==== Light All Around
+==== LightAllAround
 .Attributes
 include::sources/v2.0.0/features/LightAllAround.adoc[]
 
-==== Light Float
+==== LightFloat
 .Attributes
 include::sources/v2.0.0/features/LightFloat.adoc[]
 
-==== Light Fog Detector
+==== LightFogDetector
 .Attributes
 include::sources/v2.0.0/features/LightFogDetector.adoc[]
 
-==== Light Sectored
+==== LightSectored
 .Attributes
 include::sources/v2.0.0/features/LightSectored.adoc[]
 
-==== Light Vessel
+==== LightVessel
 .Attributes
 include::sources/v2.0.0/features/LightVessel.adoc[]
 
-==== Local Direction Of Buoyage
+==== LocalDirectionOfBuoyage
 .Attributes
 include::sources/v2.0.0/features/LocalDirectionOfBuoyage.adoc[]
 
-==== Local Magnetic Anomaly
+==== LocalMagneticAnomaly
 .Attributes
 include::sources/v2.0.0/features/LocalMagneticAnomaly.adoc[]
 
-==== Lock Basin
+==== LockBasin
 .Attributes
 include::sources/v2.0.0/features/LockBasin.adoc[]
 
-==== Log Pond
+==== LogPond
 .Attributes
 include::sources/v2.0.0/features/LogPond.adoc[]
 
-
 === M
-==== Magnetic Variation
+==== MagneticVariation
 .Attributes
 include::sources/v2.0.0/features/MagneticVariation.adoc[]
 
-==== Marine Farm Culture
+==== MarineFarmCulture
 .Attributes
 include::sources/v2.0.0/features/MarineFarmCulture.adoc[]
 
-==== Marine Pollution Regulations Area
+==== MarinePollutionRegulationsArea
 .Attributes
 include::sources/v2.0.0/features/MarinePollutionRegulationsArea.adoc[]
 
-==== Military Practice Area
+==== MilitaryPracticeArea
 .Attributes
 include::sources/v2.0.0/features/MilitaryPracticeArea.adoc[]
 
-==== Mooring Area
+==== MooringArea
 .Attributes
 include::sources/v2.0.0/features/MooringArea.adoc[]
 
-==== Mooring Buoy
+==== MooringBuoy
 .Attributes
 include::sources/v2.0.0/features/MooringBuoy.adoc[]
 
-==== Mooring Trot
+==== MooringTrot
 .Attributes
 include::sources/v2.0.0/features/MooringTrot.adoc[]
 
-
 === N
-==== Navigation Line
+==== NavigationLine
 .Attributes
 include::sources/v2.0.0/features/NavigationLine.adoc[]
 
-==== Navigational System Of Marks
+==== NavigationalSystemOfMarks
 .Attributes
 include::sources/v2.0.0/features/NavigationalSystemOfMarks.adoc[]
-
 
 === O
 ==== Obstruction
 .Attributes
 include::sources/v2.0.0/features/Obstruction.adoc[]
 
-==== Offshore Platform
+==== OffshorePlatform
 .Attributes
 include::sources/v2.0.0/features/OffshorePlatform.adoc[]
 
-==== Offshore Production Area
+==== OffshoreProductionArea
 .Attributes
 include::sources/v2.0.0/features/OffshoreProductionArea.adoc[]
 
-==== Oil Barrier
+==== OilBarrier
 .Attributes
 include::sources/v2.0.0/features/OilBarrier.adoc[]
 
-
 === P
-==== Physical AIS Aid to Navigation
+==== PhysicalAISAidToNavigation
 .Attributes
 include::sources/v2.0.0/features/PhysicalAISAidToNavigation.adoc[]
 
@@ -482,19 +463,19 @@ include::sources/v2.0.0/features/PhysicalAISAidToNavigation.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Pile.adoc[]
 
-==== Pilot Boarding Place
+==== PilotBoardingPlace
 .Attributes
 include::sources/v2.0.0/features/PilotBoardingPlace.adoc[]
 
-==== Pilotage District
+==== PilotageDistrict
 .Attributes
 include::sources/v2.0.0/features/PilotageDistrict.adoc[]
 
-==== Pipeline Overhead
+==== PipelineOverhead
 .Attributes
 include::sources/v2.0.0/features/PipelineOverhead.adoc[]
 
-==== Pipeline Submarine On Land
+==== PipelineSubmarineOnLand
 .Attributes
 include::sources/v2.0.0/features/PipelineSubmarineOnLand.adoc[]
 
@@ -502,59 +483,57 @@ include::sources/v2.0.0/features/PipelineSubmarineOnLand.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Pontoon.adoc[]
 
-==== Precautionary Area
+==== PrecautionaryArea
 .Attributes
 include::sources/v2.0.0/features/PrecautionaryArea.adoc[]
 
-==== Production Storage Area
+==== ProductionStorageArea
 .Attributes
 include::sources/v2.0.0/features/ProductionStorageArea.adoc[]
 
-==== Pylon Bridge Support
+==== PylonBridgeSupport
 .Attributes
 include::sources/v2.0.0/features/PylonBridgeSupport.adoc[]
 
-
 === Q
-==== Quality Of Bathymetric Data
+==== QualityOfBathymetricData
 .Attributes
 include::sources/v2.0.0/features/QualityOfBathymetricData.adoc[]
 
-==== Quality Of Non Bathymetric Data
+==== QualityOfNonBathymetricData
 .Attributes
 include::sources/v2.0.0/features/QualityOfNonBathymetricData.adoc[]
 
-==== Quality Of Survey
+==== QualityOfSurvey
 .Attributes
 include::sources/v2.0.0/features/QualityOfSurvey.adoc[]
 
-
 === R
-==== Radar Line
+==== RadarLine
 .Attributes
 include::sources/v2.0.0/features/RadarLine.adoc[]
 
-==== Radar Range
+==== RadarRange
 .Attributes
 include::sources/v2.0.0/features/RadarRange.adoc[]
 
-==== Radar Reflector
+==== RadarReflector
 .Attributes
 include::sources/v2.0.0/features/RadarReflector.adoc[]
 
-==== Radar Station
+==== RadarStation
 .Attributes
 include::sources/v2.0.0/features/RadarStation.adoc[]
 
-==== Radar Transponder Beacon
+==== RadarTransponderBeacon
 .Attributes
 include::sources/v2.0.0/features/RadarTransponderBeacon.adoc[]
 
-==== Radio Calling In Point
+==== RadioCallingInPoint
 .Attributes
 include::sources/v2.0.0/features/RadioCallingInPoint.adoc[]
 
-==== Radio Station
+==== RadioStation
 .Attributes
 include::sources/v2.0.0/features/RadioStation.adoc[]
 
@@ -562,7 +541,7 @@ include::sources/v2.0.0/features/RadioStation.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Railway.adoc[]
 
-==== Range System
+==== RangeSystem
 .Attributes
 include::sources/v2.0.0/features/RangeSystem.adoc[]
 
@@ -570,23 +549,23 @@ include::sources/v2.0.0/features/RangeSystem.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Rapids.adoc[]
 
-==== Recommended Route Centreline
+==== RecommendedRouteCentreline
 .Attributes
 include::sources/v2.0.0/features/RecommendedRouteCentreline.adoc[]
 
-==== Recommended Track
+==== RecommendedTrack
 .Attributes
 include::sources/v2.0.0/features/RecommendedTrack.adoc[]
 
-==== Recommended Traffic Lane Part
+==== RecommendedTrafficLanePart
 .Attributes
 include::sources/v2.0.0/features/RecommendedTrafficLanePart.adoc[]
 
-==== Rescue Station
+==== RescueStation
 .Attributes
 include::sources/v2.0.0/features/RescueStation.adoc[]
 
-==== Restricted Area
+==== RestrictedArea
 .Attributes
 include::sources/v2.0.0/features/RestrictedArea.adoc[]
 
@@ -606,13 +585,12 @@ include::sources/v2.0.0/features/Road.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Runway.adoc[]
 
-
 === S
-==== Safe Water Beacon
+==== SafeWaterBeacon
 .Attributes
 include::sources/v2.0.0/features/SafeWaterBeacon.adoc[]
 
-==== Safe Water Buoy
+==== SafeWaterBuoy
 .Attributes
 include::sources/v2.0.0/features/SafeWaterBuoy.adoc[]
 
@@ -620,11 +598,11 @@ include::sources/v2.0.0/features/SafeWaterBuoy.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Sandwave.adoc[]
 
-==== Sea Area Named Water Area
+==== SeaAreaNamedWaterArea
 .Attributes
 include::sources/v2.0.0/features/SeaAreaNamedWaterArea.adoc[]
 
-==== Seabed Area
+==== SeabedArea
 .Attributes
 include::sources/v2.0.0/features/SeabedArea.adoc[]
 
@@ -632,39 +610,39 @@ include::sources/v2.0.0/features/SeabedArea.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Seagrass.adoc[]
 
-==== Seaplane Landing Area
+==== SeaplaneLandingArea
 .Attributes
 include::sources/v2.0.0/features/SeaplaneLandingArea.adoc[]
 
-==== Separation Zone Or Line
+==== SeparationZoneOrLine
 .Attributes
 include::sources/v2.0.0/features/SeparationZoneOrLine.adoc[]
 
-==== Shoreline Construction
+==== ShorelineConstruction
 .Attributes
 include::sources/v2.0.0/features/ShorelineConstruction.adoc[]
 
-==== Signal Station Traffic
+==== SignalStationTraffic
 .Attributes
 include::sources/v2.0.0/features/SignalStationTraffic.adoc[]
 
-==== Signal Station Warning
+==== SignalStationWarning
 .Attributes
 include::sources/v2.0.0/features/SignalStationWarning.adoc[]
 
-==== Silo Tank
+==== SiloTank
 .Attributes
 include::sources/v2.0.0/features/SiloTank.adoc[]
 
-==== Slope Topline
+==== SlopeTopline
 .Attributes
 include::sources/v2.0.0/features/SlopeTopline.adoc[]
 
-==== Sloping Ground
+==== SlopingGround
 .Attributes
 include::sources/v2.0.0/features/SlopingGround.adoc[]
 
-==== Small Craft Facility
+==== SmallCraftFacility
 .Attributes
 include::sources/v2.0.0/features/SmallCraftFacility.adoc[]
 
@@ -672,23 +650,23 @@ include::sources/v2.0.0/features/SmallCraftFacility.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Sounding.adoc[]
 
-==== Sounding Datum
+==== SoundingDatum
 .Attributes
 include::sources/v2.0.0/features/SoundingDatum.adoc[]
 
-==== Span Fixed
+==== SpanFixed
 .Attributes
 include::sources/v2.0.0/features/SpanFixed.adoc[]
 
-==== Span Opening
+==== SpanOpening
 .Attributes
 include::sources/v2.0.0/features/SpanOpening.adoc[]
 
-==== Special Purpose General Beacon
+==== SpecialPurposeGeneralBeacon
 .Attributes
 include::sources/v2.0.0/features/SpecialPurposeGeneralBeacon.adoc[]
 
-==== Special Purpose General Buoy
+==== SpecialPurposeGeneralBuoy
 .Attributes
 include::sources/v2.0.0/features/SpecialPurposeGeneralBuoy.adoc[]
 
@@ -696,41 +674,40 @@ include::sources/v2.0.0/features/SpecialPurposeGeneralBuoy.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Spring.adoc[]
 
-==== Straight Territorial Sea Baseline
+==== StraightTerritorialSeaBaseline
 .Attributes
 include::sources/v2.0.0/features/StraightTerritorialSeaBaseline.adoc[]
 
-==== Structure Over Navigable Water
+==== StructureOverNavigableWater
 .Attributes
 include::sources/v2.0.0/features/StructureOverNavigableWater.adoc[]
 
-==== Submarine Pipeline Area
+==== SubmarinePipelineArea
 .Attributes
 include::sources/v2.0.0/features/SubmarinePipelineArea.adoc[]
 
-==== Submarine Transit Lane
+==== SubmarineTransitLane
 .Attributes
 include::sources/v2.0.0/features/SubmarineTransitLane.adoc[]
 
-==== Swept Area
+==== SweptArea
 .Attributes
 include::sources/v2.0.0/features/SweptArea.adoc[]
 
-
 === T
-==== Territorial Sea Area
+==== TerritorialSeaArea
 .Attributes
 include::sources/v2.0.0/features/TerritorialSeaArea.adoc[]
 
-==== Text Placement
+==== TextPlacement
 .Attributes
 include::sources/v2.0.0/features/TextPlacement.adoc[]
 
-==== Tidal Stream - Flood/Ebb
+==== TidalStreamFloodEbb
 .Attributes
 include::sources/v2.0.0/features/TidalStreamFloodEbb.adoc[]
 
-==== Tidal Stream Panel Data
+==== TidalStreamPanelData
 .Attributes
 include::sources/v2.0.0/features/TidalStreamPanelData.adoc[]
 
@@ -738,23 +715,23 @@ include::sources/v2.0.0/features/TidalStreamPanelData.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Tideway.adoc[]
 
-==== Traffic Separation Scheme
+==== TrafficSeparationScheme
 .Attributes
 include::sources/v2.0.0/features/TrafficSeparationScheme.adoc[]
 
-==== Traffic Separation Scheme Boundary
+==== TrafficSeparationSchemeBoundary
 .Attributes
 include::sources/v2.0.0/features/TrafficSeparationSchemeBoundary.adoc[]
 
-==== Traffic Separation Scheme Crossing
+==== TrafficSeparationSchemeCrossing
 .Attributes
 include::sources/v2.0.0/features/TrafficSeparationSchemeCrossing.adoc[]
 
-==== Traffic Separation Scheme Lane Part
+==== TrafficSeparationSchemeLanePart
 .Attributes
 include::sources/v2.0.0/features/TrafficSeparationSchemeLanePart.adoc[]
 
-==== Traffic Separation Scheme Roundabout
+==== TrafficSeparationSchemeRoundabout
 .Attributes
 include::sources/v2.0.0/features/TrafficSeparationSchemeRoundabout.adoc[]
 
@@ -762,49 +739,46 @@ include::sources/v2.0.0/features/TrafficSeparationSchemeRoundabout.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Tunnel.adoc[]
 
-==== Two Way Route
+==== TwoWayRoute
 .Attributes
 include::sources/v2.0.0/features/TwoWayRoute.adoc[]
 
-==== Two Way Route Part
+==== TwoWayRoutePart
 .Attributes
 include::sources/v2.0.0/features/TwoWayRoutePart.adoc[]
 
-
 === U
-==== Underwater Awash Rock
+==== UnderwaterAwashRock
 .Attributes
 include::sources/v2.0.0/features/UnderwaterAwashRock.adoc[]
 
-==== Unsurveyed Area
+==== UnsurveyedArea
 .Attributes
 include::sources/v2.0.0/features/UnsurveyedArea.adoc[]
 
-==== Update Information
+==== UpdateInformation
 .Attributes
 include::sources/v2.0.0/features/UpdateInformation.adoc[]
-
 
 === V
 ==== Vegetation
 .Attributes
 include::sources/v2.0.0/features/Vegetation.adoc[]
 
-==== Vertical Datum Of Data
+==== VerticalDatumOfData
 .Attributes
 include::sources/v2.0.0/features/VerticalDatumOfData.adoc[]
 
-==== Vessel Traffic Service Area
+==== VesselTrafficServiceArea
 .Attributes
 include::sources/v2.0.0/features/VesselTrafficServiceArea.adoc[]
 
-==== Virtual AIS Aid To Navigation
+==== VirtualAISAidToNavigation
 .Attributes
 include::sources/v2.0.0/features/VirtualAISAidToNavigation.adoc[]
 
-
 === W
-==== Water Turbulence
+==== WaterTurbulence
 .Attributes
 include::sources/v2.0.0/features/WaterTurbulence.adoc[]
 
@@ -812,11 +786,11 @@ include::sources/v2.0.0/features/WaterTurbulence.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Waterfall.adoc[]
 
-==== Weed Kelp
+==== WeedKelp
 .Attributes
 include::sources/v2.0.0/features/WeedKelp.adoc[]
 
-==== Wind Turbine
+==== WindTurbine
 .Attributes
 include::sources/v2.0.0/features/WindTurbine.adoc[]
 
@@ -824,25 +798,110 @@ include::sources/v2.0.0/features/WindTurbine.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Wreck.adoc[]
 
-
-== associationNames
-
-
+== association
+// associationNames 객체별 include
 === A
-==== Additional information
-==== Aids to navigation association
+==== ASL aggregation
+.Attributes
+include::sources/v2.0.0/associationNames/ASL aggregation.adoc[]
 
-== informationTypes
+==== Additional information
+.Attributes
+include::sources/v2.0.0/associationNames/Additional information.adoc[]
+
+==== Aids to navigation association
+.Attributes
+include::sources/v2.0.0/associationNames/Aids to navigation association.adoc[]
+
+=== B
+==== Bridge aggregation
+.Attributes
+include::sources/v2.0.0/associationNames/Bridge aggregation.adoc[]
 
 === C
+==== Caution area association
+.Attributes
+include::sources/v2.0.0/associationNames/Caution area association.adoc[]
+
+=== D
+==== Deep Water route aggregation
+.Attributes
+include::sources/v2.0.0/associationNames/Deep Water route aggregation.adoc[]
+
+=== F
+==== Fairway aggregation
+.Attributes
+include::sources/v2.0.0/associationNames/Fairway aggregation.adoc[]
+
+==== Fairway auxiliary
+.Attributes
+include::sources/v2.0.0/associationNames/Fairway auxiliary.adoc[]
+
+=== I
+==== Island aggregation
+.Attributes
+include::sources/v2.0.0/associationNames/Island aggregation.adoc[]
+
+=== M
+==== Mooring trot aggregation
+.Attributes
+include::sources/v2.0.0/associationNames/Mooring trot aggregation.adoc[]
+
+=== P
+==== Pilotage district association
+.Attributes
+include::sources/v2.0.0/associationNames/Pilotage district association.adoc[]
+
+=== Q
+==== Quality of bathymetric data composition
+.Attributes
+include::sources/v2.0.0/associationNames/Quality of bathymetric data composition.adoc[]
+
+=== R
+==== Range system aggregation
+.Attributes
+include::sources/v2.0.0/associationNames/Range system aggregation.adoc[]
+
+==== Roofed Structure Aggregation
+.Attributes
+include::sources/v2.0.0/associationNames/Roofed Structure Aggregation.adoc[]
+
+=== S
+==== Spatial association
+.Attributes
+include::sources/v2.0.0/associationNames/Spatial association.adoc[]
+
+==== Structure_equipment
+.Attributes
+include::sources/v2.0.0/associationNames/Structure_equipment.adoc[]
+
+=== T
+==== Text association
+.Attributes
+include::sources/v2.0.0/associationNames/Text association.adoc[]
+
+== information Types
+// informationTypes 객체별 include
+=== C
 ==== ContactDetails
+.Attributes
+include::sources/v2.0.0/informationTypes/ContactDetails.adoc[]
 
 === N
 ==== NauticalInformation
+.Attributes
+include::sources/v2.0.0/informationTypes/NauticalInformation.adoc[]
+
 ==== NonStandardWorkingDay
+.Attributes
+include::sources/v2.0.0/informationTypes/NonStandardWorkingDay.adoc[]
 
 === S
 ==== ServiceHours
-==== SpatialQuality
+.Attributes
+include::sources/v2.0.0/informationTypes/ServiceHours.adoc[]
 
+==== SpatialQuality
+.Attributes
+include::sources/v2.0.0/informationTypes/SpatialQuality.adoc[]
 

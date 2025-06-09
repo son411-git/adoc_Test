@@ -9,7 +9,7 @@
 - #F "Pylon/Bridge Support"가 등화(Lights)와 함께 사용될 경우, 등대 관리번호는 등화의 #A "Feature name"에 입력
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

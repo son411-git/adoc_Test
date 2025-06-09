@@ -4,12 +4,12 @@
 - 현재까지 국내 S-57 전자해도에 적용된 주의기사“CTNARE”의 경우 ECDIS에서 경보를 요하는 경우가 없으므로 S-101에서는 #F "Information Area"로 입력
 - 향후 경보가 필요한 항목에 대해서는 #F "Caution Area"를 사용 
 - 불필요한 정보의 삭제 +
- (ex. 현재 시점에서 #A"Date end" 확인 후 지난 날짜에 대해서는 삭제)
+ (ex. 현재 시점에서 #A "Date end" 확인 후 지난 날짜에 대해서는 삭제)
 - 외부참조파일을 입력할 경우 명명기준 확인 +
   (101CCCCXXXXXXXX.EEE) - 101 : Product명, CCCC: Agency code, XXXXXXXX.EEE:파일명
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

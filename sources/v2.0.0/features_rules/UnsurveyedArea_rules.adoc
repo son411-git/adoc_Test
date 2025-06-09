@@ -8,7 +8,7 @@
 - 현재 국내 전자해도에는 소축척의 백판구역(대축척참조)에 #F "Unsurveyed Area" 피처를 사용(입력예시 참조) 
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 |**Information**|INFORM|C|0,*| 

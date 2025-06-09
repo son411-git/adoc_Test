@@ -15,7 +15,7 @@
 - 각 속성입력에 있어 정보가 충분하지 않을 경우 Multiplicity는 (unknown)으로 입력가능 
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

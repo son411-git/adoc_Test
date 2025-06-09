@@ -11,7 +11,7 @@
 - 항로명은 #F "Fairway system"의 #A "Feature name"에 입력 (단일 피처로 구성된 경우 #F "Fairway"에 입력)
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

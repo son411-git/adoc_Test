@@ -7,7 +7,7 @@
   (주의기사의 내용과 구분되며 항해와 관련해서 특별히 경보를 울릴 필요가 있으면 #F "Caution Area"으로 입력)
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

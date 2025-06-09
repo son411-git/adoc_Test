@@ -6,7 +6,7 @@
 - 대축척 해도에서는 여객항로가 표기 되어야 함 
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 |#essential Category of Ferry|CATFRY|EN|1,*| 1: free moving ferry

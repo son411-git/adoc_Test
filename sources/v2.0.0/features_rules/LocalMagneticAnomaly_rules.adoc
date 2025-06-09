@@ -7,7 +7,7 @@
 - 복합속성 #A "Value of local magnetic anomaly"에는 이상편차 값을 필수로 입력하며, 값을 모르는 경우 (unknown)입력(현재 국내 전자해도에는 입력할 수 있는 정보가 없음)
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

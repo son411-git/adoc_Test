@@ -7,7 +7,7 @@
    (S-101에서는 #F "Daymark"의 ODAS가 삭제됨.) - ODAS는 Obstruction 또는 특수부표로만 입력가능
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 |Category of Special Purpose Mark|CATSPM|EN|0,*| 27(general warning mark)

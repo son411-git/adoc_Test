@@ -1,6 +1,5 @@
-== Nautical Information
+===== Definition
 
-=== 속성 바인딩 (Attribute Bindings)
 
 [cols="1,1,1,1", options="header"]
 |===

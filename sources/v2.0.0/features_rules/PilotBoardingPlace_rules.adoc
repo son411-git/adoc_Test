@@ -5,7 +5,7 @@
 - 육상의 도선사 사무실은 #F "Building"이나 #F "Landmark" 피처를 이용하고 #A "function" = 11(pilot office) 또는 12(pilot lookout)을 입력
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

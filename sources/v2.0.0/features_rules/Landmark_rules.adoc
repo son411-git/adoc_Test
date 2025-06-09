@@ -39,7 +39,7 @@
   기존 S-57전자해도의 불필요한 #A "INFORM"정보는 삭제(작업오류로 인한 정보)
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

@@ -5,7 +5,7 @@
 - S-57전자해도에서 불필요한 정보가 추가정보로 입력되어 있을 경우 삭제필요 (ex. INFORM: Floating Dock)
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 |**Feature Name**||C|0,*| 

@@ -5,7 +5,7 @@
 - Point와 Line, Surface Type 모두 인코딩 가능하지만 Point Type이 원칙 
 
 ===== Example
-[cols="20,10,5,5,20", options="header"]
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
