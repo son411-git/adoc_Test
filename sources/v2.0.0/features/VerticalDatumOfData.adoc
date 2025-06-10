@@ -2,17 +2,18 @@
 
 Any level surface (for example Mean Sea Level) taken as a surface of reference to which the elevations within a data set are reduced. Also called datum level, reference level, reference plane, levelling datum, datum for heights.
 
+.Vertical Datum of Data의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |Interoperability Identifier||URN|0,1
-|#essential Vertical Datum|VERDAT|EN|1,1
+|#essential Vertical Datum|VERDAT|EN|1,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

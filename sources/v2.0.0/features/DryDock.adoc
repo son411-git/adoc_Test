@@ -2,6 +2,7 @@
 
 An artificial basin fitted with a gate or caisson, into which vessels can be floated and the water pumped out to expose the vessel's bottom. Also called graving dock.
 
+.Dry Dock의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
@@ -10,8 +11,8 @@ An artificial basin fitted with a gate or caisson, into which vessels can be flo
 |Depth Range Minimum Value|DRVAL1|RE|0,1
 |Elevation|ELEVAT|RE|0,1
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -25,14 +26,14 @@ An artificial basin fitted with a gate or caisson, into which vessels can be flo
 |Quality of Vertical Measurement|QUASOU|EN|0,*
 |Status|STATUS|EN|0,*
 |**Vertical Uncertainty**|SOUACC/VERACC|C|0,1
-|    #essential Uncertainty Fixed||(S)RE|1,1
+|    #essential Uncertainty Fixed||(S)RE|1,1
 |    Uncertainty Variable Factor||(S)RE|0,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -2,13 +2,14 @@
 
 A relatively large natural stream of water.
 
+.River의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
 |Status|STATUS|EN|0,1
@@ -17,7 +18,7 @@ A relatively large natural stream of water.
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -2,18 +2,19 @@
 
 Straight baselines are a system of straight lines joining specified or discrete points on the low-water line, usually known as straight baseline turning points. Straight baselines are used in delimitation.
 
+.Straight Territorial Sea Baseline의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |Interoperability Identifier||URN|0,1
-|#essential Nationality|NATION|TE|1,1
+|#essential Nationality|NATION|TE|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -2,15 +2,16 @@
 
 A defined area within which a jurisdiction applies. It may or may not be named.
 
-[cols="50,30,10,10", options="header"]
+.Administration Area의 속성
+[cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |In Dispute||BO|0,1
-|#essential Jurisdiction|JRSDTN|EN|1,1
+|#essential Jurisdiction|JRSDTN|EN|1,1
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Interoperability Identifier||URN|0,1
 |Nationality|NATION|TE|0,*
@@ -19,7 +20,7 @@ A defined area within which a jurisdiction applies. It may or may not be named.
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===

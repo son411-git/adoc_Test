@@ -2,20 +2,21 @@
 
 A geographical area that describes the coverage and extent of spatial objects.
 
+.Data Coverage의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |Drawing Index||IN|0,1
 |Interoperability Identifier||URN|0,1
-|#essential Maximum Display Scale|CSCALE|IN|1,1
-|#essential Minimum Display Scale||IN|1,1
-|#essential Optimum Display Scale|CSCALE|IN|1,1
+|#essential Maximum Display Scale|CSCALE|IN|1,1
+|#essential Minimum Display Scale||IN|1,1
+|#essential Optimum Display Scale|CSCALE|IN|1,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

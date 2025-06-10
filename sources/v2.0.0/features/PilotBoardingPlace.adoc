@@ -2,6 +2,7 @@
 
 A location offshore where a pilot may board a vessel in preparation to piloting it through local waters.
 
+.Pilot Boarding Place의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
@@ -11,16 +12,16 @@ A location offshore where a pilot may board a vessel in preparation to piloting 
 |Communication Channel|COMCHA|TE|0,*
 |Destination||TE|0,*
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |Interoperability Identifier||URN|0,1
 |**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |Pilot Movement||EN|0,*
 |Status|STATUS|EN|0,*
 |Scale Minimum|SCAMIN|IN|0,1
@@ -28,7 +29,7 @@ A location offshore where a pilot may board a vessel in preparation to piloting 
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

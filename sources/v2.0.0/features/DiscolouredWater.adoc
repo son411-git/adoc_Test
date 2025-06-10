@@ -2,6 +2,7 @@
 
 Unnatural coloured areas in the sea which may or may not indicate the existence of shoals.
 
+.Discoloured Water의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
@@ -13,7 +14,7 @@ Unnatural coloured areas in the sea which may or may not indicate the existence 
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

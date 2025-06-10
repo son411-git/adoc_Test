@@ -2,6 +2,7 @@
 
 A light presenting different appearances (in particular, different colours) over various parts of the horizon of interest to maritime navigation.
 
+.Light Sectored의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
@@ -9,8 +10,8 @@ A light presenting different appearances (in particular, different colours) over
 |Category of Light|CATLIT|EN|0,*
 |Exhibition Condition of Light|EXCLIT|EN|0,1
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -19,38 +20,38 @@ A light presenting different appearances (in particular, different colours) over
 |Interoperability Identifier||URN|0,1
 |Marks Navigational - System Of|MARSYS|EN|0,1
 |**Multiplicity of Features**||C|0,1
-|    #essential Multiplicity Known||(S)BO|1,1
+|    #essential Multiplicity Known||(S)BO|1,1
 |    Number of Features||(S)IN|0,1
 |**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
-|**#essential Sector Characteristics**||C|1,*
-|    #essential Light Characteristic|LITCHR|(S)EN|1,1
-|**    #essential Light Sector**||(S)C|1,*
-|        #essential Colour|COLOUR|(S)EN|1,*
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
+|**#essential Sector Characteristics**||C|1,*
+|    #essential Light Characteristic|LITCHR|(S)EN|1,1
+|**    #essential Light Sector**||(S)C|1,*
+|        #essential Colour|COLOUR|(S)EN|1,*
 |**        Directional Character**||(S)C|0,1
 |            Moire Effect||(S)BO|0,1
-|**            #essential Orientation**||(S)C|1,1
+|**            #essential Orientation**||(S)C|1,1
 |                Orientation Uncertainty||(S)RE|0,1
-|                #essential Orientation Value|ORIENT|(S)RE|1,1
+|                #essential Orientation Value|ORIENT|(S)RE|1,1
 |        Light Visibility|LITVIS|(S)EN|0,*
 |**        Sector Limit**||(S)C|0,1
-|**            #essential Sector Limit One**|SECTR1|(S)C|1,1
-|                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
+|**            #essential Sector Limit One**|SECTR1|(S)C|1,1
+|                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
 |                Sector Line Length||(S)RE|0,1
-|**            #essential Sector Limit Two**|SECTR2|(S)C|1,1
-|                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
+|**            #essential Sector Limit Two**|SECTR2|(S)C|1,1
+|                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
 |                Sector Line Length||(S)RE|0,1
 |        Value of Nominal Range|VALNMR|(S)RE|0,1
 |**        Sector Information**||(S)C|0,*
 |            Language||(S)TE|0,1
-|            #essential Text|INFORM/NINFOM|(S)TE|1,1
+|            #essential Text|INFORM/NINFOM|(S)TE|1,1
 |        Sector Arc Extension||(S)BO|0,1
 |    Signal Group|SIGGRP|(S)TE|0,*
 |    Signal Period|SIGPER|(S)RE|0,1
 |**    Signal Sequence**|SIGSEQ|(S)C|0,*
-|        #essential Signal Duration||(S)RE|1,1
-|        #essential Signal Status||(S)EN|1,1
+|        #essential Signal Duration||(S)RE|1,1
+|        #essential Signal Status||(S)EN|1,1
 |Signal Generation|SIGGEN|EN|0,1
 |Status|STATUS|EN|0,*
 |Vertical Datum|VERDAT|EN|0,1
@@ -59,7 +60,7 @@ A light presenting different appearances (in particular, different colours) over
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

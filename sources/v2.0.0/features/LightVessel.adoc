@@ -2,15 +2,16 @@
 
 A distinctively marked vessel anchored or moored at a charted point, to serve as an aid to navigation. By night, it displays a characteristic light(s) and is usually equipped with other devices, such as fog signal, submarine sound signal, and radio-beacon, to assist navigation.
 
+.Light Vessel의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
-|#essential Colour|COLOUR|EN|1,*
+|#essential Colour|COLOUR|EN|1,*
 |Colour Pattern|COLPAT|EN|0,1
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -20,8 +21,8 @@ A distinctively marked vessel anchored or moored at a charted point, to serve as
 |Interoperability Identifier||URN|0,1
 |Nature of Construction|NATCON|EN|0,*
 |**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |Radar Conspicuous|CONRAD|BO|0,1
 |Status|STATUS|EN|0,*
 |Vertical Length|VERLEN|RE|0,1
@@ -31,7 +32,7 @@ A distinctively marked vessel anchored or moored at a charted point, to serve as
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===

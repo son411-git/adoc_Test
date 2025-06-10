@@ -2,14 +2,15 @@
 
 That part of a river, harbour and so on, where the main navigable channel for vessels of larger size lies. It is also the usual course followed by vessels entering or leaving harbours, called 'ship channel'.
 
+.Fairway의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |Depth Range Minimum Value|DRVAL1|RE|0,1
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -22,18 +23,18 @@ That part of a river, harbour and so on, where the main navigable channel for ve
 |Status|STATUS|EN|0,*
 |Traffic Flow|TRAFIC|EN|0,1
 |**Vertical Uncertainty**|SOUACC/VERACC|C|0,1
-|    #essential Uncertainty Fixed||(S)RE|1,1
+|    #essential Uncertainty Fixed||(S)RE|1,1
 |    Uncertainty Variable Factor||(S)RE|0,1
 |**Vessel Speed Limit**||C|0,*
-|    #essential Speed Limit||(S)RE|1,1
-|    #essential Speed Units||(S)EN|1,1
+|    #essential Speed Limit||(S)RE|1,1
+|    #essential Speed Units||(S)EN|1,1
 |    Vessel Class||(S)TE|0,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

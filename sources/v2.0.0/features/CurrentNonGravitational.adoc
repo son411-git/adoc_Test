@@ -2,26 +2,27 @@
 
 Any current that is caused by other than tide producing forces.
 
+.Current - Non-Gravitational의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |Interoperability Identifier||URN|0,1
-|**#essential Orientation**||C|1,1
+|**#essential Orientation**||C|1,1
 |    Orientation Uncertainty||(S)RE|0,1
-|    #essential Orientation Value|ORIENT|(S)RE|1,1
+|    #essential Orientation Value|ORIENT|(S)RE|1,1
 |**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
-|**#essential Speed**||C|1,1
-|    #essential Speed Maximum|CURVEL|(S)RE|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
+|**#essential Speed**||C|1,1
+|    #essential Speed Maximum|CURVEL|(S)RE|1,1
 |    Speed Minimum||(S)RE|0,1
 |Status|STATUS|EN|0,1
 |Scale Minimum|SCAMIN|IN|0,1
@@ -29,7 +30,7 @@ Any current that is caused by other than tide producing forces.
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

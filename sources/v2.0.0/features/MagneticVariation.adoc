@@ -2,20 +2,21 @@
 
 The angle between the magnetic and geographic meridians at any place, expressed in degrees east or west to indicate the direction of magnetic north from true north. Also called magnetic declination.
 
+.Magnetic Variation의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |Interoperability Identifier||URN|0,1
-|#essential Reference Year for Magnetic Variation|RYRMGV|TD|1,1
-|#essential Value of Annual Change in Magnetic Variation|VALACM|RE|1,1
-|#essential Value of Magnetic Variation|VALMAG|RE|1,1
+|#essential Reference Year for Magnetic Variation|RYRMGV|TD|1,1
+|#essential Value of Annual Change in Magnetic Variation|VALACM|RE|1,1
+|#essential Value of Magnetic Variation|VALMAG|RE|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

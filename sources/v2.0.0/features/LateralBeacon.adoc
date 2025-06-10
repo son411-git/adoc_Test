@@ -2,19 +2,20 @@
 
 A lateral beacon is used to indicate the port or starboard hand side of the route to be followed. They are generally used for well defined channels and are used in conjunction with a conventional direction of buoyage.
 
+.Lateral Beacon의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
-|#essential Beacon Shape|BCNSHP|EN|1,1
-|#essential Category of Lateral Mark|CATLAM|EN|1,1
-|#essential Colour|COLOUR|EN|1,*
+|#essential Beacon Shape|BCNSHP|EN|1,1
+|#essential Category of Lateral Mark|CATLAM|EN|1,1
+|#essential Colour|COLOUR|EN|1,*
 |Colour Pattern|COLPAT|EN|0,1
 |Condition|CONDTN|EN|0,1
 |Elevation|ELEVAT|RE|0,1
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -24,18 +25,18 @@ A lateral beacon is used to indicate the port or starboard hand side of the rout
 |Marks Navigational - System Of|MARSYS|EN|0,1
 |Nature of Construction|NATCON|EN|0,*
 |**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |Radar Conspicuous|CONRAD|BO|0,1
 |Reported Date|SORDAT|TD|0,1
 |Status|STATUS|EN|0,*
 |**Topmark**|TOPMAR|C|0,1
 |    Colour|COLOUR|(S)EN|0,*
 |    Colour Pattern|COLPAT|(S)EN|0,1
-|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1
+|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1
 |**    Shape Information**||(S)C|0,*
 |        Language||(S)TE|0,1
-|        #essential Text|INFORM/NINFOM|(S)TE|1,1
+|        #essential Text|INFORM/NINFOM|(S)TE|1,1
 |Vertical Length|VERLEN|RE|0,1
 |Visual Prominence|CONVIS|EN|0,1
 |Scale Minimum|SCAMIN|IN|0,1
@@ -43,7 +44,7 @@ A lateral beacon is used to indicate the port or starboard hand side of the rout
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |===

@@ -2,19 +2,20 @@
 
 An area within which the navigational system of marks has been established in relation to a specific direction.
 
+.Local Direction of Buoyage의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |Interoperability Identifier||URN|0,1
-|#essential Marks Navigational - System Of|MARSYS|EN|1,1
-|#essential Orientation Value|ORIENT|RE|1,1
+|#essential Marks Navigational - System Of|MARSYS|EN|1,1
+|#essential Orientation Value|ORIENT|RE|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

@@ -2,38 +2,39 @@
 
 Any prominent object at a fixed location on land which can be used in determining a location or a direction.
 
+.Landmark의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
-|#essential Category of Landmark|CATLMK|EN|1,*
+|#essential Category of Landmark|CATLMK|EN|1,*
 |Category of Special Purpose Mark|CATSPM|EN|0,*
 |Colour|COLOUR|EN|0,*
 |Colour Pattern|COLPAT|EN|0,1
 |Condition|CONDTN|EN|0,1
 |Elevation|ELEVAT|RE|0,1
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |Function|FUNCTN|EN|0,*
 |Height|HEIGHT|RE|0,1
 |Interoperability Identifier||URN|0,1
 |**Multiplicity of Features**||C|0,1
-|    #essential Multiplicity Known||(S)BO|1,1
+|    #essential Multiplicity Known||(S)BO|1,1
 |    Number of Features||(S)IN|0,1
 |Nature of Construction|NATCON|EN|0,*
 |Radar Conspicuous|CONRAD|BO|0,1
 |Reported Date|SORDAT|TD|0,1
 |Status|STATUS|EN|0,*
 |Vertical Length|VERLEN|RE|0,1
-|#essential Visual Prominence|CONVIS|EN|1,1
+|#essential Visual Prominence|CONVIS|EN|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |Pictorial Representation|PICREP|TE|0,1
 |In the Water||BO|0,1

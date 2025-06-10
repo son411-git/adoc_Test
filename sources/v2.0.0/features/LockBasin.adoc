@@ -2,22 +2,23 @@
 
 A wet dock in a waterway, permitting a ship to pass from one level to another.
 
+.Lock Basin의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |**Horizontal Clearance Fixed**||C|0,1
-|    #essential Horizontal Clearance Value|HORCLR|(S)RE|1,1
+|    #essential Horizontal Clearance Value|HORCLR|(S)RE|1,1
 |    Horizontal Distance Uncertainty|HORACC|(S)RE|0,1
 |Horizontal Length|HORLEN|RE|0,1
 |Horizontal Width|HORWID|RE|0,1
@@ -28,7 +29,7 @@ A wet dock in a waterway, permitting a ship to pass from one level to another.
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

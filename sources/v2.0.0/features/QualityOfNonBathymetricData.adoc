@@ -2,28 +2,29 @@
 
 An area within which a uniform assessment of the quality of the non-bathymetric data exists.
 
+.Quality of Non-Bathymetric Data의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |Category of Temporal Variation||EN|0,1
 |Horizontal Distance Uncertainty|HORACC|RE|0,1
-|**#essential Horizontal Position Uncertainty**||C|1,1
-|    #essential Uncertainty Fixed||(S)RE|1,1
+|**#essential Horizontal Position Uncertainty**||C|1,1
+|    #essential Uncertainty Fixed||(S)RE|1,1
 |    Uncertainty Variable Factor||(S)RE|0,1
 |Interoperability Identifier||URN|0,1
 |Orientation Uncertainty||RE|0,1
 |**Survey Date Range**||C|0,1
-|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
 |    Date Start|DATSTA|(S)TD|0,1
 |**Vertical Uncertainty**|SOUACC/VERACC|C|0,1
-|    #essential Uncertainty Fixed||(S)RE|1,1
+|    #essential Uncertainty Fixed||(S)RE|1,1
 |    Uncertainty Variable Factor||(S)RE|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

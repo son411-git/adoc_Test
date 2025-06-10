@@ -2,6 +2,7 @@
 
 An artificially enclosed area within which ships may moor and which may have gates to regulate water level.
 
+.Dock Area의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
@@ -9,17 +10,17 @@ An artificially enclosed area within which ships may moor and which may have gat
 |Category of Dock|CATDOC|EN|0,1
 |Condition|CONDTN|EN|0,1
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |**Horizontal Clearance Fixed**||C|0,1
-|    #essential Horizontal Clearance Value|HORCLR|(S)RE|1,1
+|    #essential Horizontal Clearance Value|HORCLR|(S)RE|1,1
 |    Horizontal Distance Uncertainty|HORACC|(S)RE|0,1
 |Horizontal Clearance Length||RE|0,1
 |Horizontal Clearance Width||RE|0,1
@@ -31,7 +32,7 @@ An artificially enclosed area within which ships may moor and which may have gat
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

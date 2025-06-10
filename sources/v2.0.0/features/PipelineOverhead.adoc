@@ -2,6 +2,7 @@
 
 A string of interconnected pipes, supported by pylons and passing over or nearby navigable waters, used for the transport of matter, nowadays mainly oil or gas.
 
+.Pipeline Overhead의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
@@ -9,24 +10,24 @@ A string of interconnected pipes, supported by pylons and passing over or nearby
 |Category of Pipeline/Pipe|CATPIP|EN|0,1
 |Condition|CONDTN|EN|0,1
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |Interoperability Identifier||URN|0,1
 |**Multiplicity of Features**||C|0,1
-|    #essential Multiplicity Known||(S)BO|1,1
+|    #essential Multiplicity Known||(S)BO|1,1
 |    Number of Features||(S)IN|0,1
 |Product|PRODCT|EN|0,*
 |Radar Conspicuous|CONRAD|BO|0,1
 |Reported Date|SORDAT|TD|0,1
 |Status|STATUS|EN|0,*
 |**Vertical Clearance Fixed**|VERCLR|C|0,1
-|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1
+|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1
 |**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
-|        #essential Uncertainty Fixed||(S)RE|1,1
+|        #essential Uncertainty Fixed||(S)RE|1,1
 |        Uncertainty Variable Factor||(S)RE|0,1
 |Vertical Datum|VERDAT|EN|0,1
 |Visual Prominence|CONVIS|EN|0,1
@@ -35,7 +36,7 @@ A string of interconnected pipes, supported by pylons and passing over or nearby
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

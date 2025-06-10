@@ -2,6 +2,7 @@
 
 A routeing measure comprising a separation point or circular separation zone and a circular traffic lane within defined limits. Traffic within the roundabout is separated by moving in a counter-clockwise direction around the separation point or zone.
 
+.Traffic Separation Scheme Roundabout의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
@@ -13,15 +14,15 @@ A routeing measure comprising a separation point or circular separation zone and
 |Restriction|RESTRN|EN|0,*
 |Status|STATUS|EN|0,*
 |**Vessel Speed Limit**||C|0,*
-|    #essential Speed Limit||(S)RE|1,1
-|    #essential Speed Units||(S)EN|1,1
+|    #essential Speed Limit||(S)RE|1,1
+|    #essential Speed Units||(S)EN|1,1
 |    Vessel Class||(S)TE|0,1
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

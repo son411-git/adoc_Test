@@ -2,6 +2,7 @@
 
 A zone contiguous to a coastal State's Territorial Sea, which may not extend beyond 24 nautical miles from the baselines from which the breadth of the Territorial Sea is measured. The coastal State may exercise certain control in this zone subject to the provisions of International Law.
 
+.Contiguous Zone의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
@@ -11,13 +12,13 @@ A zone contiguous to a coastal State's Territorial Sea, which may not extend bey
 |    Date Start|DATSTA|(S)TD|0,1
 |In Dispute||BO|0,1
 |Interoperability Identifier||URN|0,1
-|#essential Nationality|NATION|TE|1,*
+|#essential Nationality|NATION|TE|1,*
 |Scale Minimum|SCAMIN|IN|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 

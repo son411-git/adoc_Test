@@ -2,14 +2,15 @@
 
 An area in which vessels may be secured to mooring buoys
 
+.Mooring Area의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
 
 |Category of Mooring Area||EN|0,*
 |**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
+|    #essential Language||(S)TE|1,1
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
 |    Name Usage||(S)EN|0,1
 |**Fixed Date Range**||C|0,1
 |    Date End|DATEND|(S)TD|0,1
@@ -18,8 +19,8 @@ An area in which vessels may be secured to mooring buoys
 |Maximum Permitted Draught||RE|0,1
 |Maximum Permitted Vessel Length||RE|0,1
 |**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
+|    #essential Date End|DATEND|(S)TD|1,1
+|    #essential Date Start|DATSTA|(S)TD|1,1
 |Restriction|RESTRN|EN|0,*
 |Status|STATUS|EN|0,*
 |Scale Minimum|SCAMIN|IN|0,1
@@ -27,11 +28,11 @@ An area in which vessels may be secured to mooring buoys
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |**Vessel Speed Limit**||C|0,*
-|    #essential Speed Limit||(S)RE|1,1
-|    #essential Speed Units||(S)EN|1,1
+|    #essential Speed Limit||(S)RE|1,1
+|    #essential Speed Units||(S)EN|1,1
 |    Vessel Class||(S)TE|0,1
 |===
 

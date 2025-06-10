@@ -2,6 +2,7 @@
 
 The Update Information metadata feature is used to represent a change to the information shown.
 
+.Update Information의 속성
 [cols="3,2,1,1", options="header"]
 |===
 |Attribute |Acronym |Type |Mult.
@@ -10,15 +11,15 @@ The Update Information metadata feature is used to represent a change to the inf
 |    Date End|DATEND|(S)TD|0,1
 |    Date Start|DATSTA|(S)TD|0,1
 |Interoperability Identifier||URN|0,1
-|#essential Update Number||IN|1,1
-|#essential Update Type||EN|1,1
+|#essential Update Number||IN|1,1
+|#essential Update Type||EN|1,1
 |Scale Minimum|SCAMIN|IN|0,1
 |Source||TE|0,1
 |**Information**|INFORM|C|0,*
 |    File Locator||(S)TE|0,1
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
+|    #essential Language||(S)TE|1,1
 |    Text|INFORM/NINFOM|(S)TE|0,1
 |===
 
