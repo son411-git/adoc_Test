@@ -2,7 +2,7 @@
 :toc: left
 :safe: unsafe      // ← 이 한 줄만 추가해도 inline HTML 이 살아납니다.
 :sectnums:
-:toclevels: 5
+:toclevels: 3
 :doctype: standard
 :icons: font
 :sectanchors: 
