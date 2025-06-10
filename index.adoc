@@ -15,7 +15,7 @@ include::sources/v2.0.0/First.adoc[]
 
 include::sources/v2.0.0/common_attr.adoc[tag=requiredAttr]
 
-== Features
+== Features Types
 // Features 객체별 include
 === A
 ==== Administration Area
@@ -798,7 +798,7 @@ include::sources/v2.0.0/features/WindTurbine.adoc[]
 .Attributes
 include::sources/v2.0.0/features/Wreck.adoc[]
 
-== associationNames
+== Association
 // associationNames 객체별 include
 === A
 ==== A S L aggregation
@@ -880,7 +880,7 @@ include::sources/v2.0.0/associationNames/Structure_equipment.adoc[]
 .Attributes
 include::sources/v2.0.0/associationNames/Text association.adoc[]
 
-== informationTypes
+== Information Types
 // informationTypes 객체별 include
 === C
 ==== Contact Details
