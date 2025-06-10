@@ -11,4 +11,5 @@
 |#essential Vertical Datum|VERDAT|EN|1,1| 3: mean sea level
 |===
 
+---
 // end::VerticalDatumOfData[]

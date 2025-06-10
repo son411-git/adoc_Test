@@ -15,4 +15,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 직선기선
 |===
 
+---
 // end::StraightTerritorialSeaBaseline[]

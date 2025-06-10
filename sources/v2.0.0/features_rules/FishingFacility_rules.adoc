@@ -34,4 +34,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 2019년 해양안전지도 현장조사
 |===
 
+---
 // end::FishingFacility[]

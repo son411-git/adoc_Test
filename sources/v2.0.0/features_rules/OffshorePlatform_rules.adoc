@@ -30,4 +30,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 다이빙 대
 |===
 
+---
 // end::OffshorePlatform[]

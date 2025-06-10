@@ -28,4 +28,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 서해갑문의 내부수역에서 수심기준면은 평균해면상의 1.5미터이다.
 |===
 
+---
 // end::SoundingDatum[]

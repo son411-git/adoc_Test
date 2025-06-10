@@ -68,4 +68,5 @@ a| image:../images/LateralBeacon/LateralBeacon_image-1.png[width=400]
 |    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
 |===
 
+---
 // end::LateralBeacon[]

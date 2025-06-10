@@ -33,4 +33,5 @@ a|image:../images/TrafficSeparationSchemeLanePart/TrafficSeparationSchemeLanePar
 |    Text|INFORM/NINFOM|(S)TE|0,1| 합류 구역
 |===
 
+---
 // end::TrafficSeparationSchemeLanePart[]

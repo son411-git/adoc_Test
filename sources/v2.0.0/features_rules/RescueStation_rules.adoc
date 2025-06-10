@@ -21,4 +21,5 @@
 |Status|STATUS|EN|0,*| 
 |===
 
+---
 // end::RescueStation[]

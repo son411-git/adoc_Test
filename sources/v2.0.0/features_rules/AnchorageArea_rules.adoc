@@ -31,4 +31,5 @@
 |Status|STATUS|EN|0,*|3:recommended 
 |===
 
+---
 // end::AnchorageArea[]

@@ -12,4 +12,5 @@
 |Category of Radar Station|CATRAS|EN|0,*| 2: coast radar station
 |===
 
+---
 // end::RadarStation[]

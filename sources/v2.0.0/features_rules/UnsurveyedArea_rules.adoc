@@ -19,4 +19,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 대축척 참조
 |===
 
+---
 // end::UnsurveyedArea[]

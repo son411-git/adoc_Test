@@ -40,4 +40,5 @@ Contact Details (AdditionalInrmation Association)
 |Communication channel 1|1,*|TE|[VHF0067]
 |Communication channel 2|1,*|TE|[VHF0010]
 |===
+---
 // end::RadioCallingInPoint[]

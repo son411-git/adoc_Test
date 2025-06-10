@@ -49,4 +49,5 @@
 |#essential Virtual AIS Aid to Navigation Type||EN|1,1| 1: north cardinal
 |===
 
+---
 // end::VirtualAISAidToNavigation[]

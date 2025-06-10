@@ -28,4 +28,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 500톤 이하의 선박 정박  
 |===
 
+---
 // end::AnchorBerth[]

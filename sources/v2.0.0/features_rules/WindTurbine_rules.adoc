@@ -20,4 +20,5 @@
 |Vertical Length|VERLEN|RE|0,1| 1.8m
 |===
 
+---
 // end::WindTurbine[]

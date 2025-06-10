@@ -35,4 +35,5 @@ Port Entry3(KR6),4000,5000,22000
 |#essential Optimum Display Scale|CSCALE|IN|1,1| 5000
 |===
 
+---
 // end::DataCoverage[]

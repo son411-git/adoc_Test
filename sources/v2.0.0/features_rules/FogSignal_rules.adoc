@@ -34,4 +34,5 @@
 |Value of Maximum Range|VALMXR|RE|0,1| 2 
 |===
 
+---
 // end::FogSignal[]

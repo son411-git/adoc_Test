@@ -56,4 +56,5 @@ S-57 CATMOR,S-101 Feature,S-101 Attribute
 |    Text|INFORM/NINFOM|(S)TE|0,1|대경도 해상펜션 
 |===
 
+---
 // end::MooringBuoy[]

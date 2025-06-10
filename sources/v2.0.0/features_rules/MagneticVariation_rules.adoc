@@ -18,4 +18,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| World Magnetic Model for 2015(20150101)
 |===
 
+---
 // end::MagneticVariation[]

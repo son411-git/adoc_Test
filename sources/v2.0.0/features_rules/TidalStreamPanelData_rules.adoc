@@ -37,4 +37,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 부근 조류예보표를 참조할 것.
 |===
 
+---
 // end::TidalStreamPanelData[]

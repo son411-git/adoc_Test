@@ -10,4 +10,5 @@
 |Colour|COLOUR|EN|0,*| 3: red
 |===
 
+---
 // end::LightFogDetector[]

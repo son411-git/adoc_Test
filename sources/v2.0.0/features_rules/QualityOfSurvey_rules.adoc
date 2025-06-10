@@ -21,4 +21,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1|H3428050S0132016 
 |===
 
+---
 // end::QualityOfSurvey[]

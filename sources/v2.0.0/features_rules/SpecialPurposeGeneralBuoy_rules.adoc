@@ -56,5 +56,6 @@ a| image:../images/SpecialPurposeGeneralBuoy/SpecialPurposeGeneralBuoy_image-1.p
 |    Colour|COLOUR|(S)EN|0,*| 6: yellow
 |    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 7: x-shaped
 |===
+---
 // end::SpecialPurposeGeneralBuoy[]
 

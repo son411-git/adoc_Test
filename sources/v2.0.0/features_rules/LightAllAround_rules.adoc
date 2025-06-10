@@ -48,4 +48,5 @@
 |Value of Nominal Range|VALNMR|RE|0,1| 15
 |===
 
+---
 // end::LightAllAround[]

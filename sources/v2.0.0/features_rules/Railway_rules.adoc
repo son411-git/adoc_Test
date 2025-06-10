@@ -7,4 +7,5 @@
 ===== Example
 ※ 공통속성(Scale minimum) 외에 입력된 속성 없음!
 
+---
 // end::Railway[]

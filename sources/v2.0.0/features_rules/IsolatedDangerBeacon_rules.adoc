@@ -50,4 +50,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
 |===
 
+---
 // end::IsolatedDangerBeacon[]

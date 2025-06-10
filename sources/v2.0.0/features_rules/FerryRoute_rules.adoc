@@ -12,4 +12,5 @@
 |#essential Category of Ferry|CATFRY|EN|1,*| 1: free moving ferry
 |===
 
+---
 // end::FerryRoute[]

@@ -50,4 +50,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1|From ROK KHOA surveys in 2012(Scale 1:5,000) 
 |===
 
+---
 // end::QualityOfBathymetricData[]

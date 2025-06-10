@@ -31,4 +31,5 @@
 |    #essential Speed Maximum|CURVEL|(S)RE|1,1| 0.8
 |===
 
+---
 // end::CurrentNonGravitational[]

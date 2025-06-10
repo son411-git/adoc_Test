@@ -26,4 +26,5 @@ S-57 CATMOR,S-101 Feature,S-101 Attribute
 |#essential Category of Dolphin||EN|1,*| 1: mooring dolphin
 |===
 1
+---
 // end::Dolphin[]

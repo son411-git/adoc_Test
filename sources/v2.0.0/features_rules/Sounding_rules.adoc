@@ -35,4 +35,5 @@ vertical measurement| Feature-Status | 비고
 |    Text|INFORM/NINFOM|(S)TE|0,1| <undefined>
 |===
 
+---
 // end::Sounding[]

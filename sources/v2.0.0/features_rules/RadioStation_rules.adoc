@@ -40,4 +40,5 @@
 |Status|STATUS|EN|0,*| 7: temporary
 |===
 
+---
 // end::RadioStation[]

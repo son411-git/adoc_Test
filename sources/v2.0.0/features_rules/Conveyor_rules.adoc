@@ -25,4 +25,5 @@
 |    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1| 33
 |===
 
+---
 // end::Conveyor[]

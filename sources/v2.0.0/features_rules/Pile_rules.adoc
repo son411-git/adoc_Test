@@ -22,4 +22,5 @@
 |Visual Prominence|CONVIS|EN|0,1| 1: visual prominence
 |===
 
+---
 // end::Pile[]

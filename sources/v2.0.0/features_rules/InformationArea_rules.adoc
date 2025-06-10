@@ -32,4 +32,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 주의(연안해역에서는 양식장 및 장애물 등이 다수 산재되어 있으므로 접근 시 주의하여야 함.)
 |===
 
+---
 // end::InformationArea[]

@@ -15,4 +15,5 @@
 |#essential Depth Range Maximum Value|DRVAL2|RE|1,1| 0
 |===
 
+---
 // end::DepthArea[]

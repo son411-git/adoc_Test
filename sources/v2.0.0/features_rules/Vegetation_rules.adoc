@@ -9,4 +9,5 @@
 |#essential Category of Vegetation|CATVEG|EN|1,1| 15: coniferous tree
 |===
 
+---
 // end::Vegetation[]

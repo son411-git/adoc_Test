@@ -21,4 +21,5 @@ include::../features_rules/NavigationalSystemOfMarks_rules.csv[]
 |#essential Marks Navigational - System Of|MARSYS|EN|1,1| 2: IALA B
 |===
 
+---
 // end::NavigationalSystemOfMarks[]

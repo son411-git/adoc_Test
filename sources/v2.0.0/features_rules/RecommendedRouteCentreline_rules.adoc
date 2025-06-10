@@ -24,4 +24,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1|포항항에 입출항하는 총톤수 1,000톤 이상의 선박은 미곶 추천항로를 따라 항행할 것을 권고함 
 |===
 
+---
 // end::RecommendedRouteCentreline[]

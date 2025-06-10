@@ -25,4 +25,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1|풍향, 풍속, 기온, 기압, 습도
 |===
 
+---
 // end::SignalStationWarning[]

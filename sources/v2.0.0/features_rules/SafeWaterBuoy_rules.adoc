@@ -58,4 +58,5 @@ a| image:../images/SafeWaterBuoy/SafeWaterBuoy_image-1.png[width=400]
 
 |===
 
+---
 // end::SafeWaterBuoy[]

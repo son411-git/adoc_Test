@@ -22,4 +22,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 이 지역은 국지적 지자기 이상현상이 보고됨
 |===
 
+---
 // end::LocalMagneticAnomaly[]

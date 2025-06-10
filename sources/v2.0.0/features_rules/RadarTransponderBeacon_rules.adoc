@@ -52,4 +52,5 @@
 |Value of Maximum Range|VALMXR|RE|0,1| 15
 |===
 
+---
 // end::RadarTransponderBeacon[]

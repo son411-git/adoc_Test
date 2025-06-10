@@ -80,4 +80,5 @@ Buoyant beacon(부력입표),P5,
 |    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 7: x-shape(St.Andrew’s cross)
 |===
 
+---
 // end::SpecialPurposeGeneralBeacon[]

@@ -29,4 +29,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| H3426050272014(Scale 1:5,000)
 |===
 
+---
 // end::SeabedArea[]

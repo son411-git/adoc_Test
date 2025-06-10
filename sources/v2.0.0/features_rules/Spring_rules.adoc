@@ -12,4 +12,5 @@
 |    Name Usage||(S)EN|0,1| 1 : default name display
 |===
 
+---
 // end::Spring[]

@@ -50,4 +50,5 @@ NO,구분,Category of shoreline Construction,Condition,Nature of construction,Wa
 |    Text|INFORM/NINFOM|(S)TE|0,1|2022년 연안항로조사
 |===
 
+---
 // end::ShorelineConstruction[]

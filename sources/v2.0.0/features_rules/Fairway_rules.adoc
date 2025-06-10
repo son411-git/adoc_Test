@@ -25,4 +25,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 소형선박 통항로
 |===
 
+---
 // end::Fairway[]

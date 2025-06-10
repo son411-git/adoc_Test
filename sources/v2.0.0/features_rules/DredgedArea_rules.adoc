@@ -23,4 +23,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 수심 5.5m로 준설
 |===
 
+---
 // end::DredgedArea[]

@@ -43,4 +43,5 @@ a| image:../../../images/NavigationLine/NavigationLine_image-2.png[width=300]
 |    Text|INFORM/NINFOM|(S)TE|0,1| 속도시험거리 3689.90m 013도
 |===
 
+---
 // end::NavigationLine[]

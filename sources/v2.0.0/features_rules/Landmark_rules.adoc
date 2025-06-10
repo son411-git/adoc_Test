@@ -64,4 +64,5 @@
 |#essential Visual Prominence|CONVIS|EN|1,1| 1L visual prominence 
 |===
 
+---
 // end::Landmark[]

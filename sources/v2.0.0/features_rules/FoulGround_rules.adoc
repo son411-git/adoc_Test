@@ -41,4 +41,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 구성과 자료
 |===
 
+---
 // end::FoulGround[]

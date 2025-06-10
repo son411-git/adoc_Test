@@ -17,4 +17,5 @@
 |Scale Minimum|SCAMIN|IN|0,1| 119999
 |===
 
+---
 // end::MarineFarmCulture[]

@@ -40,4 +40,5 @@
 |                #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1|140
 |        Value of Nominal Range|VALNMR|(S)RE|0,1|7
 |===
+---
 // end::LightSectored[]

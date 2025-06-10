@@ -26,4 +26,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 항행주의구역 C(이 구역의 통항을 위해서는 대각도 변침이 요구되므로 각별한 주의를 요함)
 |===
 
+---
 // end::PrecautionaryArea[]

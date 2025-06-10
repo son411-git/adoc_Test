@@ -27,4 +27,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 정치망 다수 존재
 |===
 
+---
 // end::HarbourAreaAdministrative[]

@@ -34,4 +34,5 @@
 |Status|STATUS|EN|0,1| 7: temporary
 |===
 
+---
 // end::River[]

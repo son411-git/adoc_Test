@@ -26,4 +26,5 @@
 |    Text|INFORM/NINFOM|(S)TE|0,1| 풍랑주의보 이상의 기상특보 발효 및 그에 준하는 기상 상태일 경우에 사용하는 도선사 승하선 지점
 |===
 
+---
 // end::PilotBoardingPlace[]
