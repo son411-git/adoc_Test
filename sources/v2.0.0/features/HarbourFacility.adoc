@@ -5,39 +5,40 @@ A harbour installation with a service or commercial operation of public interest
 .Harbour Facility의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: point, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential Category of Harbour Facility|CATHAF|EN|1,*
-|Communication Channel|COMCHA|TE|0,*
-|Condition|CONDTN|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Interoperability Identifier||URN|0,1
-|Nature of Construction|NATCON|EN|0,*
-|**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
-|Product|PRODCT|EN|0,1
-|Reported Date|SORDAT|TD|0,1
-|Restriction|RESTRN|EN|0,*
-|Status|STATUS|EN|0,*
-|**Vessel Speed Limit**||C|0,*
-|    #essential Speed Limit||(S)RE|1,1
-|    #essential Speed Units||(S)EN|1,1
-|    Vessel Class||(S)TE|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
-|Pictorial Representation|PICREP|TE|0,1
+|#essential category of harbour facility|CATHAF|EN|1,*
+|communication channel|COMCHA|TE|0,*
+|condition|CONDTN|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|interoperability identifier||URN|0,1
+|nature of construction|NATCON|EN|0,*
+|**periodic date range**||C|0,*
+|    #essential date end|DATEND|(S)TD|1,1
+|    #essential date start|DATSTA|(S)TD|1,1
+|product|PRODCT|EN|0,1
+|reported date|SORDAT|TD|0,1
+|restriction|RESTRN|EN|0,*
+|status|STATUS|EN|0,*
+|**vessel speed limit**||C|0,*
+|    #essential speed limit||(S)RE|1,1
+|    #essential speed units||(S)EN|1,1
+|    vessel class||(S)TE|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
+|pictorial representation|PICREP|TE|0,1
 |===
 
 include::../features_rules/HarbourFacility_rules.adoc[tag=HarbourFacility]

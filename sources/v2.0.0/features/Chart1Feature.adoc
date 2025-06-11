@@ -5,13 +5,14 @@ A feature which exists to support the rendering of graphics or text in order to 
 .Chart 1 Feature의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: point, pointSet, curve, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Drawing Instruction||TE|0,*
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
+|drawing instruction||TE|0,*
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
 |===
 
 include::../features_rules/Chart1Feature_rules.adoc[tag=Chart1Feature]

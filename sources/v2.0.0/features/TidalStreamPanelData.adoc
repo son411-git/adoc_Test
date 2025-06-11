@@ -5,32 +5,33 @@ Approximate tidal stream characteristics given as discrete value sets at a speci
 .Tidal Stream Panel Data의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: point, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|Interoperability Identifier||URN|0,1
-|#essential Station Name||TE|1,1
-|Station Number||TE|0,1
-|**#essential Tidal Stream Panel Values**||C|1,*
-|    #essential Reference Tide||(S)EN|1,1
-|    #essential Reference Tide Type||(S)EN|1,1
-|    Stream Depth||(S)RE|0,1
-|**    #essential Tidal Stream Value**||(S)C|1,*
-|**        #essential Orientation**||(S)C|1,1
-|            Orientation Uncertainty||(S)RE|0,1
-|            #essential Orientation Value|ORIENT|(S)RE|1,1
-|        #essential Speed Maximum|CURVEL|(S)RE|1,1
-|        #essential Time Relative to Tide||(S)RE|1,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|interoperability identifier||URN|0,1
+|#essential station name||TE|1,1
+|station number||TE|0,1
+|**#essential tidal stream panel values**||C|1,*
+|    #essential reference tide||(S)EN|1,1
+|    #essential reference tide type||(S)EN|1,1
+|    stream depth||(S)RE|0,1
+|**    #essential tidal stream value**||(S)C|1,*
+|**        #essential orientation**||(S)C|1,1
+|            orientation uncertainty||(S)RE|0,1
+|            #essential orientation value|ORIENT|(S)RE|1,1
+|        #essential speed maximum|CURVEL|(S)RE|1,1
+|        #essential time relative to tide||(S)RE|1,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/TidalStreamPanelData_rules.adoc[tag=TidalStreamPanelData]

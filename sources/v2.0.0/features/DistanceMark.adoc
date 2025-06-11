@@ -5,28 +5,29 @@ A distance mark indicates the distance measured from an origin and consists of e
 .Distance Mark의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: point
+h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential Distance Mark Visible|CATDIS|BO|1,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Interoperability Identifier||URN|0,1
-|**#essential Measured Distance Value**||C|1,1
-|    #essential Distance Unit of Measurement||(S)EN|1,1
-|    Reference Location||(S)TE|0,1
-|    #essential Waterway Distance||(S)RE|1,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|#essential distance mark visible|CATDIS|BO|1,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|interoperability identifier||URN|0,1
+|**#essential measured distance value**||C|1,1
+|    #essential distance unit of measurement||(S)EN|1,1
+|    reference location||(S)TE|0,1
+|    #essential waterway distance||(S)RE|1,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/DistanceMark_rules.adoc[tag=DistanceMark]

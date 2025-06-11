@@ -5,32 +5,33 @@ A location offshore where a pilot may board a vessel in preparation to piloting 
 .Pilot Boarding Place의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: point, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Category of Pilot Boarding Place|CATPIL|EN|0,1
-|Category of Preference||EN|0,1
-|Communication Channel|COMCHA|TE|0,*
-|Destination||TE|0,*
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Interoperability Identifier||URN|0,1
-|**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
-|Pilot Movement||EN|0,*
-|Status|STATUS|EN|0,*
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|category of pilot boarding place|CATPIL|EN|0,1
+|category of preference||EN|0,1
+|communication channel|COMCHA|TE|0,*
+|destination||TE|0,*
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|interoperability identifier||URN|0,1
+|**periodic date range**||C|0,*
+|    #essential date end|DATEND|(S)TD|1,1
+|    #essential date start|DATSTA|(S)TD|1,1
+|pilot movement||EN|0,*
+|status|STATUS|EN|0,*
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/PilotBoardingPlace_rules.adoc[tag=PilotBoardingPlace]

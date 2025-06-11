@@ -5,16 +5,17 @@ An area within which the navigational system of marks has been established in re
 .Navigational System of Marks의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential Marks Navigational - System Of|MARSYS|EN|1,1
-|Interoperability Identifier||URN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|#essential marks navigational - system of|MARSYS|EN|1,1
+|interoperability identifier||URN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/NavigationalSystemOfMarks_rules.adoc[tag=NavigationalSystemOfMarks]

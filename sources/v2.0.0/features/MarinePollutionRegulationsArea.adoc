@@ -5,21 +5,22 @@ The International Convention for the Prevention of Pollution from Ships (MARPOL)
 .Marine Pollution Regulations Area의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|Interoperability Identifier||URN|0,1
-|Regulation Citation||TE|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|interoperability identifier||URN|0,1
+|regulation citation||TE|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/MarinePollutionRegulationsArea_rules.adoc[tag=MarinePollutionRegulationsArea]

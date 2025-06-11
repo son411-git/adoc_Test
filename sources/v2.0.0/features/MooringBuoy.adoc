@@ -5,36 +5,37 @@ A buoy secured to the bottom by permanent moorings with means for mooring a vess
 .Mooring Buoy의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: point
+h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential Buoy Shape|BOYSHP|EN|1,1
-|Colour|COLOUR|EN|0,*
-|Colour Pattern|COLPAT|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Interoperability Identifier||URN|0,1
-|Maximum Permitted Draught||RE|0,1
-|Maximum Permitted Vessel Length||RE|0,1
-|Nature of Construction|NATCON|EN|0,*
-|**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
-|Status|STATUS|EN|0,*
-|Vertical Length|VERLEN|RE|0,1
-|Visitors Mooring||BO|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
-|Pictorial Representation|PICREP|TE|0,1
+|#essential buoy shape|BOYSHP|EN|1,1
+|colour|COLOUR|EN|0,*
+|colour pattern|COLPAT|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|interoperability identifier||URN|0,1
+|maximum permitted draught||RE|0,1
+|maximum permitted vessel length||RE|0,1
+|nature of construction|NATCON|EN|0,*
+|**periodic date range**||C|0,*
+|    #essential date end|DATEND|(S)TD|1,1
+|    #essential date start|DATSTA|(S)TD|1,1
+|status|STATUS|EN|0,*
+|vertical length|VERLEN|RE|0,1
+|visitors mooring||BO|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
+|pictorial representation|PICREP|TE|0,1
 |===
 
 include::../features_rules/MooringBuoy_rules.adoc[tag=MooringBuoy]

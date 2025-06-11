@@ -5,36 +5,37 @@ A connected set of pipes for conveying liquids, slurries, or gases.
 .Pipeline Submarine/On Land의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: curve
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Buried Depth|BURDEP|RE|0,1
-|Category of Pipeline/Pipe|CATPIP|EN|0,*
-|Condition|CONDTN|EN|0,1
-|Depth Range Minimum Value|DRVAL1|RE|0,1
-|Depth Range Maximum Value|DRVAL2|RE|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Interoperability Identifier||URN|0,1
-|**Multiplicity of Features**||C|0,1
-|    #essential Multiplicity Known||(S)BO|1,1
-|    Number of Features||(S)IN|0,1
-|Product|PRODCT|EN|0,*
-|Reported Date|SORDAT|TD|0,1
-|Restriction|RESTRN|EN|0,*
-|Status|STATUS|EN|0,*
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
-|Pictorial Representation|PICREP|TE|0,1
+|buried depth|BURDEP|RE|0,1
+|category of pipeline/pipe|CATPIP|EN|0,*
+|condition|CONDTN|EN|0,1
+|depth range minimum value|DRVAL1|RE|0,1
+|depth range maximum value|DRVAL2|RE|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|interoperability identifier||URN|0,1
+|**multiplicity of features**||C|0,1
+|    #essential multiplicity known||(S)BO|1,1
+|    number of features||(S)IN|0,1
+|product|PRODCT|EN|0,*
+|reported date|SORDAT|TD|0,1
+|restriction|RESTRN|EN|0,*
+|status|STATUS|EN|0,*
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
+|pictorial representation|PICREP|TE|0,1
 |===
 
 include::../features_rules/PipelineSubmarineOnLand_rules.adoc[tag=PipelineSubmarineOnLand]

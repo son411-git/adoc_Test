@@ -5,31 +5,32 @@ A structure that is specifically designed or reinforced to provide for defence f
 .Fortified Structure의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: point, curve, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Category of Fortified Structure|CATFOR|EN|0,1
-|Condition|CONDTN|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|Height|HEIGHT|RE|0,1
-|Interoperability Identifier||URN|0,1
-|Nature of Construction|NATCON|EN|0,*
-|Radar Conspicuous|CONRAD|BO|0,1
-|Reported Date|SORDAT|TD|0,1
-|Status|STATUS|EN|0,*
-|Vertical Length|VERLEN|RE|0,1
-|Visual Prominence|CONVIS|EN|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
-|Pictorial Representation|PICREP|TE|0,1
-|In the Water||BO|0,1
+|category of fortified structure|CATFOR|EN|0,1
+|condition|CONDTN|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|height|HEIGHT|RE|0,1
+|interoperability identifier||URN|0,1
+|nature of construction|NATCON|EN|0,*
+|radar conspicuous|CONRAD|BO|0,1
+|reported date|SORDAT|TD|0,1
+|status|STATUS|EN|0,*
+|vertical length|VERLEN|RE|0,1
+|visual prominence|CONVIS|EN|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
+|pictorial representation|PICREP|TE|0,1
+|in the water||BO|0,1
 |===
 
 include::../features_rules/FortifiedStructure_rules.adoc[tag=FortifiedStructure]

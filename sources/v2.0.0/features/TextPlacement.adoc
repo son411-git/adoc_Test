@@ -5,13 +5,14 @@ The Text Placement feature is used in association with the Feature Name attribut
 .Text Placement의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: point
+h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential Text Offset Bearing||IN|1,1
-|#essential Text Offset Distance||IN|1,1
-|Text Rotation||BO|0,1
-|Text Type||EN|1,2
-|Scale Minimum|SCAMIN|IN|0,1
+|#essential text offset bearing||IN|1,1
+|#essential text offset distance||IN|1,1
+|text rotation||BO|0,1
+|text type||EN|1,2
+|scale minimum|SCAMIN|IN|0,1
 |===
 
 include::../features_rules/TextPlacement_rules.adoc[tag=TextPlacement]

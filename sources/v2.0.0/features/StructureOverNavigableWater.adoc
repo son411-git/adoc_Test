@@ -5,50 +5,51 @@ A roofed structure erected, or partly erected, over a body of water, to provide 
 .Structure Over Navigable Water의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Category of Structure||EN|0,*
-|Colour|COLOUR|EN|0,*
-|Colour Pattern|COLPAT|EN|0,1
-|Condition|CONDTN|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Height|HEIGHT|RE|0,1
-|**#essential Horizontal Clearance Fixed**||C|1,1
-|    #essential Horizontal Clearance Value|HORCLR|(S)RE|1,1
-|    Horizontal Distance Uncertainty|HORACC|(S)RE|0,1
-|Horizontal Length|HORLEN|RE|0,1
-|Horizontal Width|HORWID|RE|0,1
-|Interoperability Identifier||URN|0,1
-|Nature of Construction|NATCON|EN|0,*
-|**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
-|Product|PRODCT|EN|0,1
-|Radar Conspicuous|CONRAD|BO|0,1
-|Reported Date|SORDAT|TD|0,1
-|Status|STATUS|EN|0,*
-|**#essential Vertical Clearance Fixed**|VERCLR|C|1,1
-|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1
-|**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
-|        #essential Uncertainty Fixed||(S)RE|1,1
-|        Uncertainty Variable Factor||(S)RE|0,1
-|Vertical Datum|VERDAT|EN|0,1
-|Vertical Length|VERLEN|RE|0,1
-|Visual Prominence|CONVIS|EN|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
-|Pictorial Representation|PICREP|TE|0,1
+|category of structure||EN|0,*
+|colour|COLOUR|EN|0,*
+|colour pattern|COLPAT|EN|0,1
+|condition|CONDTN|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|height|HEIGHT|RE|0,1
+|**#essential horizontal clearance fixed**||C|1,1
+|    #essential horizontal clearance value|HORCLR|(S)RE|1,1
+|    horizontal distance uncertainty|HORACC|(S)RE|0,1
+|horizontal length|HORLEN|RE|0,1
+|horizontal width|HORWID|RE|0,1
+|interoperability identifier||URN|0,1
+|nature of construction|NATCON|EN|0,*
+|**periodic date range**||C|0,*
+|    #essential date end|DATEND|(S)TD|1,1
+|    #essential date start|DATSTA|(S)TD|1,1
+|product|PRODCT|EN|0,1
+|radar conspicuous|CONRAD|BO|0,1
+|reported date|SORDAT|TD|0,1
+|status|STATUS|EN|0,*
+|**#essential vertical clearance fixed**|VERCLR|C|1,1
+|    #essential vertical clearance value|VERCLR|(S)RE|1,1
+|**    vertical uncertainty**|SOUACC/VERACC|(S)C|0,1
+|        #essential uncertainty fixed||(S)RE|1,1
+|        uncertainty variable factor||(S)RE|0,1
+|vertical datum|VERDAT|EN|0,1
+|vertical length|VERLEN|RE|0,1
+|visual prominence|CONVIS|EN|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
+|pictorial representation|PICREP|TE|0,1
 |===
 
 include::../features_rules/StructureOverNavigableWater_rules.adoc[tag=StructureOverNavigableWater]

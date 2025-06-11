@@ -5,17 +5,18 @@ Large mobile wave-like sediment feature in shallow water and composed of sand. T
 .Sandwave의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: point, curve, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Interoperability Identifier||URN|0,1
-|Vertical Length|VERLEN|RE|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|interoperability identifier||URN|0,1
+|vertical length|VERLEN|RE|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/Sandwave_rules.adoc[tag=Sandwave]

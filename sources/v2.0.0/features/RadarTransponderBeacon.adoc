@@ -5,43 +5,44 @@ A transponder beacon transmitting a coded signal on radar frequency, permitting 
 .Radar Transponder Beacon의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: point
+h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential Category of Radar Transponder Beacon|CATRTB|EN|1,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Interoperability Identifier||URN|0,1
-|**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
-|**Radar Wave Length**||C|0,2
-|    #essential Radar Band||(S)TE|1,1
-|    #essential Wave Length Value|Radar Wave Length|(S)RE|1,1
-|**Sector Limit**||C|0,1
-|**    #essential Sector Limit One**|SECTR1|(S)C|1,1
-|        #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
-|        Sector Line Length||(S)RE|0,1
-|**    #essential Sector Limit Two**|SECTR2|(S)C|1,1
-|        #essential Sector Bearing|SECTR1/SECTR2|(S)RE|1,1
-|        Sector Line Length||(S)RE|0,1
-|Signal Group|SIGGRP|TE|0,1
-|**Signal Sequence**|SIGSEQ|C|0,*
-|    #essential Signal Duration||(S)RE|1,1
-|    #essential Signal Status||(S)EN|1,1
-|Status|STATUS|EN|0,*
-|Value of Maximum Range|VALMXR|RE|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|#essential category of radar transponder beacon|CATRTB|EN|1,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|interoperability identifier||URN|0,1
+|**periodic date range**||C|0,*
+|    #essential date end|DATEND|(S)TD|1,1
+|    #essential date start|DATSTA|(S)TD|1,1
+|**radar wave length**||C|0,2
+|    #essential radar band||(S)TE|1,1
+|    #essential wave length value|Radar Wave Length|(S)RE|1,1
+|**sector limit**||C|0,1
+|**    #essential sector limit one**|SECTR1|(S)C|1,1
+|        #essential sector bearing|SECTR1/SECTR2|(S)RE|1,1
+|        sector line length||(S)RE|0,1
+|**    #essential sector limit two**|SECTR2|(S)C|1,1
+|        #essential sector bearing|SECTR1/SECTR2|(S)RE|1,1
+|        sector line length||(S)RE|0,1
+|signal group|SIGGRP|TE|0,1
+|**signal sequence**|SIGSEQ|C|0,*
+|    #essential signal duration||(S)RE|1,1
+|    #essential signal status||(S)EN|1,1
+|status|STATUS|EN|0,*
+|value of maximum range|VALMXR|RE|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/RadarTransponderBeacon_rules.adoc[tag=RadarTransponderBeacon]

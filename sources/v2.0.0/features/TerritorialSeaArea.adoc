@@ -5,23 +5,24 @@ A belt of water of a defined breadth but not exceeding 12 nautical miles measure
 .Territorial Sea Area의 속성
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h| Primitives: curve, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|In Dispute||BO|0,1
-|Interoperability Identifier||URN|0,1
-|#essential Nationality|NATION|TE|1,*
-|Restriction|RESTRN|EN|0,*
-|**Vessel Speed Limit**||C|0,*
-|    #essential Speed Limit||(S)RE|1,1
-|    #essential Speed Units||(S)EN|1,1
-|    Vessel Class||(S)TE|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|in dispute||BO|0,1
+|interoperability identifier||URN|0,1
+|#essential nationality|NATION|TE|1,*
+|restriction|RESTRN|EN|0,*
+|**vessel speed limit**||C|0,*
+|    #essential speed limit||(S)RE|1,1
+|    #essential speed units||(S)EN|1,1
+|    vessel class||(S)TE|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/TerritorialSeaArea_rules.adoc[tag=TerritorialSeaArea]
