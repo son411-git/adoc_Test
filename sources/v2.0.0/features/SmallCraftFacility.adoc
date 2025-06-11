@@ -1,11 +1,8 @@
-===== Definition
-
-A place at which a service generally of interest to small craft or pleasure boats is available.
-
-.Small Craft Facility의 속성
+.Small Craft Facility의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* A place at which a service generally of interest to small craft or pleasure boats is available.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential category of small craft facility|CATSCF|EN|1,*

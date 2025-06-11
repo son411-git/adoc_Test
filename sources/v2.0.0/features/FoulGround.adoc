@@ -1,11 +1,8 @@
-===== Definition
-
-Areas over which it is safe to navigate but which should be avoided for anchoring, taking the ground or ground fishing.
-
-.Foul Ground의 속성
+.Foul Ground의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* Areas over which it is safe to navigate but which should be avoided for anchoring, taking the ground or ground fishing.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

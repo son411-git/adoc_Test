@@ -1,11 +1,8 @@
-===== Definition
-
-An area of land or construction over the water containing a concentration of buildings and/or other structures.
-
-.Built-Up Area의 속성
+.Built-Up Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* An area of land or construction over the water containing a concentration of buildings and/or other structures.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of built-up area|CATBUA|EN|0,1

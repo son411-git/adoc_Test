@@ -1,11 +1,8 @@
-===== Definition
-
-An area within which a uniform assessment of the reliability of source survey information exists.
-
-.Quality of Survey의 속성
+.Quality of Survey의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve, surface
+4+h|*Definition:* An area within which a uniform assessment of the reliability of source survey information exists.
+4+h|*Primitives:* curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |depth range maximum value|DRVAL2|RE|0,1

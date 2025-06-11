@@ -1,11 +1,8 @@
-===== Definition
-
-A designated area of water where a vessel, seaplane, etc., may anchor.
-
-.Anchor Berth의 속성
+.Anchor Berth의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* A designated area of water where a vessel, seaplane, etc., may anchor.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of anchorage|CATACH|EN|0,*

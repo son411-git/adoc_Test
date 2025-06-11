@@ -1,11 +1,8 @@
-===== Definition
-
-Small shaped post, mounted on a wharf or dolphin used to secure ship's lines.
-
-.Bollard의 속성
+.Bollard의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* Small shaped post, mounted on a wharf or dolphin used to secure ship's lines.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |condition|CONDTN|EN|0,1

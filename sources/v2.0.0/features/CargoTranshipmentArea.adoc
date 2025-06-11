@@ -1,11 +1,8 @@
-===== Definition
-
-An area designated for transfer of cargo from one vessel to another sometimes in order to reduce a vessel's draught.
-
-.Cargo Transhipment Area의 속성
+.Cargo Transhipment Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* An area designated for transfer of cargo from one vessel to another sometimes in order to reduce a vessel's draught.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

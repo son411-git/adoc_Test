@@ -1,11 +1,8 @@
-===== Definition
-
-The ruined remains of a stranded or sunken vessel which has been rendered useless.
-
-.Wreck의 속성
+.Wreck의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* The ruined remains of a stranded or sunken vessel which has been rendered useless.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of wreck|CATWRK|EN|0,1

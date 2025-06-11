@@ -1,11 +1,8 @@
-===== Definition
-
-An area within which a pilotage direction exists. Such directions are regulated by a competent harbour authority which dictates circumstances under which they apply.
-
-.Pilotage District의 속성
+.Pilotage District의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* An area within which a pilotage direction exists. Such directions are regulated by a competent harbour authority which dictates circumstances under which they apply.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |communication channel|COMCHA|TE|0,*

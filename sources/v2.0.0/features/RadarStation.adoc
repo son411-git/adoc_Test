@@ -1,11 +1,8 @@
-===== Definition
-
-A station with a transmitter emitting pulses of ultra-high frequency radio waves which are reflected by solid objects and are detected upon their return to the sending station.
-
-.Radar Station의 속성
+.Radar Station의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* A station with a transmitter emitting pulses of ultra-high frequency radio waves which are reflected by solid objects and are detected upon their return to the sending station.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |call sign|CALSGN|TE|0,1

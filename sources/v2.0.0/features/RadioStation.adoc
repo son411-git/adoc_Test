@@ -1,11 +1,8 @@
-===== Definition
-
-A place equipped to transmit radio waves. Such a station may be either stationary or mobile, and may also be provided with a radio receiver.
-
-.Radio Station의 속성
+.Radio Station의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* A place equipped to transmit radio waves. Such a station may be either stationary or mobile, and may also be provided with a radio receiver.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |call sign|CALSGN|TE|0,1

@@ -1,11 +1,8 @@
-===== Definition
-
-An area of ice over land or water.
-
-.Ice Area의 속성
+.Ice Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* An area of ice over land or water.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential category of ice|CATICE|EN|1,1

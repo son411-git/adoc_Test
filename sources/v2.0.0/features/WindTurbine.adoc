@@ -1,11 +1,8 @@
-===== Definition
-
-A tower and associated equipment that generates electrical power from wind. They can be sited offshore and may be either fixed or floating.
-
-.Wind Turbine의 속성
+.Wind Turbine의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* A tower and associated equipment that generates electrical power from wind. They can be sited offshore and may be either fixed or floating.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |colour|COLOUR|EN|0,*

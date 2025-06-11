@@ -1,11 +1,8 @@
-===== Definition
-
-That part of a river, harbour and so on, where the main navigable channel for vessels of larger size lies. It is also the usual course followed by vessels entering or leaving harbours, called 'ship channel'. A fairway system is an aggregation of connected fairway features making up a complex fairway system.
-
-.Fairway System의 속성
+.Fairway System의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface, noGeometry
+4+h|*Definition:* That part of a river, harbour and so on, where the main navigable channel for vessels of larger size lies. It is also the usual course followed by vessels entering or leaving harbours, called 'ship channel'. A fairway system is an aggregation of connected fairway features making up a complex fairway system.
+4+h|*Primitives:* surface, noGeometry
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

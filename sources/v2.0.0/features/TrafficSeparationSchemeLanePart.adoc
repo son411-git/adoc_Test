@@ -1,11 +1,8 @@
-===== Definition
-
-An area within defined limits in which one-way traffic is established. Natural obstacles, including those forming separation zones, may constitute a boundary.
-
-.Traffic Separation Scheme Lane Part의 속성
+.Traffic Separation Scheme Lane Part의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* An area within defined limits in which one-way traffic is established. Natural obstacles, including those forming separation zones, may constitute a boundary.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**fixed date range**||C|0,1

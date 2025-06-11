@@ -1,11 +1,8 @@
-===== Definition
-
-The Text Placement feature is used in association with the Feature Name attribute or a light description to optimize text positioning in ECDIS.
-
-.Text Placement의 속성
+.Text Placement의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* The Text Placement feature is used in association with the Feature Name attribute or a light description to optimize text positioning in ECDIS.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential text offset bearing||IN|1,1

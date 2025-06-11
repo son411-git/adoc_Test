@@ -1,11 +1,8 @@
-===== Definition
-
-A fog detector light is a light used to automatically determine conditions of visibility which warrant the turning on or off of a sound signal.
-
-.Light Fog Detector의 속성
+.Light Fog Detector의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* A fog detector light is a light used to automatically determine conditions of visibility which warrant the turning on or off of a sound signal.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |colour|COLOUR|EN|0,*

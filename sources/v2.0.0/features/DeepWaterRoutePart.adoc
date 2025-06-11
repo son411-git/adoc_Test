@@ -1,11 +1,8 @@
-===== Definition
-
-An area of a deep water route within which ships proceed in the same direction.
-
-.Deep Water Route Part의 속성
+.Deep Water Route Part의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* An area of a deep water route within which ships proceed in the same direction.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential depth range minimum value|DRVAL1|RE|1,1

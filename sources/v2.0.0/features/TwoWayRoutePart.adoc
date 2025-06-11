@@ -1,11 +1,8 @@
-===== Definition
-
-An area of a two-way route within which traffic flow is generally along one bearing (and possibly its reciprocal).
-
-.Two-Way Route Part의 속성
+.Two-Way Route Part의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* An area of a two-way route within which traffic flow is generally along one bearing (and possibly its reciprocal).
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |based on fixed marks|CATTRK|BO|0,1

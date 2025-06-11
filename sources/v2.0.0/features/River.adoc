@@ -1,11 +1,8 @@
-===== Definition
-
-A relatively large natural stream of water.
-
-.River의 속성
+.River의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve, surface
+4+h|*Definition:* A relatively large natural stream of water.
+4+h|*Primitives:* curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

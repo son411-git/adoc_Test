@@ -1,11 +1,8 @@
-===== Definition
-
-A port where certain import and export duties are waived (unless goods pass into the country) to facilitate reshipment to other countries.
-
-.Free Port Area의 속성
+.Free Port Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* A port where certain import and export duties are waived (unless goods pass into the country) to facilitate reshipment to other countries.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

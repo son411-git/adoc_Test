@@ -1,11 +1,8 @@
-===== Definition
-
-A boat-like structure used instead of a light buoy in waters where strong streams or currents are experienced, or when a greater elevation than that of a light buoy is necessary.
-
-.Light Float의 속성
+.Light Float의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* A boat-like structure used instead of a light buoy in waters where strong streams or currents are experienced, or when a greater elevation than that of a light buoy is necessary.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential colour|COLOUR|EN|1,*

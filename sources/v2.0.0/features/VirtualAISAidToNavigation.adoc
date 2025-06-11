@@ -1,11 +1,8 @@
-===== Definition
-
-An Automatic Identification System (AIS) message 21 transmitted from an AIS station to simulate on navigation systems an Aid to Navigation which does not physically exist.
-
-.Virtual AIS Aid to Navigation의 속성
+.Virtual AIS Aid to Navigation의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* An Automatic Identification System (AIS) message 21 transmitted from an AIS station to simulate on navigation systems an Aid to Navigation which does not physically exist.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |estimated range of transmission|ESTRNG|RE|0,1

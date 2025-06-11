@@ -1,11 +1,8 @@
-===== Definition
-
-A lane where submarines may navigate under water or at the surface.
-
-.Submarine Transit Lane의 속성
+.Submarine Transit Lane의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* A lane where submarines may navigate under water or at the surface.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

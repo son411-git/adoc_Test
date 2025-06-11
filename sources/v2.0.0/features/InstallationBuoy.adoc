@@ -1,11 +1,8 @@
-===== Definition
-
-An installation buoy is a buoy used for loading tankers with gas or oil.
-
-.Installation Buoy의 속성
+.Installation Buoy의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* An installation buoy is a buoy used for loading tankers with gas or oil.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential buoy shape|BOYSHP|EN|1,1

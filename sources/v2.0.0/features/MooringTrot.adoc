@@ -1,11 +1,8 @@
-===== Definition
-
-A mooring is a place where a vessel may be secured. A mooring trot is a mooring that is composed of ground tackle, mooring cables, buoys and mooring berths on junction cables.
-
-.Mooring Trot의 속성
+.Mooring Trot의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface, noGeometry
+4+h|*Definition:* A mooring is a place where a vessel may be secured. A mooring trot is a mooring that is composed of ground tackle, mooring cables, buoys and mooring berths on junction cables.
+4+h|*Primitives:* surface, noGeometry
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

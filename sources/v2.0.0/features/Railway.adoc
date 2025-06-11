@@ -1,11 +1,8 @@
-===== Definition
-
-A rail or set of parallel rails on which a train, tram, or rail wagon runs.
-
-.Railway의 속성
+.Railway의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve
+4+h|*Definition:* A rail or set of parallel rails on which a train, tram, or rail wagon runs.
+4+h|*Primitives:* curve
 h|Attribute h|Acronym h|Type h|Mult.
 
 |condition|CONDTN|EN|0,1

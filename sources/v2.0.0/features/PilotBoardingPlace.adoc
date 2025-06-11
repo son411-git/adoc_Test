@@ -1,11 +1,8 @@
-===== Definition
-
-A location offshore where a pilot may board a vessel in preparation to piloting it through local waters.
-
-.Pilot Boarding Place의 속성
+.Pilot Boarding Place의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* A location offshore where a pilot may board a vessel in preparation to piloting it through local waters.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of pilot boarding place|CATPIL|EN|0,1

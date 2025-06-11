@@ -1,11 +1,8 @@
-===== Definition
-
-An area of the bottom of a body of water which has been deepened by dredging.
-
-.Dredged Area의 속성
+.Dredged Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* An area of the bottom of a body of water which has been deepened by dredging.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential depth range minimum value|DRVAL1|RE|1,1

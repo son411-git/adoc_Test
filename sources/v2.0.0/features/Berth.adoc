@@ -1,11 +1,8 @@
-===== Definition
-
-A place, generally named or numbered, where a vessel may moor or anchor.
-
-.Berth의 속성
+.Berth의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, curve, surface
+4+h|*Definition:* A place, generally named or numbered, where a vessel may moor or anchor.
+4+h|*Primitives:* point, curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of cargo||EN|0,*

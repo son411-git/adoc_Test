@@ -1,11 +1,8 @@
-===== Definition
-
-A specified area on land or water designated by an appropriate authority within which access or navigation is restricted in accordance with certain specified conditions.
-
-.Restricted Area의 속성
+.Restricted Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* A specified area on land or water designated by an appropriate authority within which access or navigation is restricted in accordance with certain specified conditions.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of restricted area|CATREA|EN|0,*

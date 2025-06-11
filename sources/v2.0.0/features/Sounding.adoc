@@ -1,11 +1,8 @@
-===== Definition
-
-Measured or charted depth of water (may be a drying height), or the measurement of such a depth, which has been reduced to a vertical datum.
-
-.Sounding의 속성
+.Sounding의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: pointSet
+4+h|*Definition:* Measured or charted depth of water (may be a drying height), or the measurement of such a depth, which has been reduced to a vertical datum.
+4+h|*Primitives:* pointSet
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

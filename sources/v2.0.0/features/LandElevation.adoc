@@ -1,11 +1,8 @@
-===== Definition
-
-An elevation is the vertical distance of a point or a level, on, or affixed to, the surface of the earth, measured from a specified vertical datum.
-
-.Land Elevation의 속성
+.Land Elevation의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, curve
+4+h|*Definition:* An elevation is the vertical distance of a point or a level, on, or affixed to, the surface of the earth, measured from a specified vertical datum.
+4+h|*Primitives:* point, curve
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential elevation|ELEVAT|RE|1,1

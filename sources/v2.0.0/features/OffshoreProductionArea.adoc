@@ -1,11 +1,8 @@
-===== Definition
-
-An area at sea within which there are production facilities.
-
-.Offshore Production Area의 속성
+.Offshore Production Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* An area at sea within which there are production facilities.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of offshore production area|CATPRA|EN|0,1

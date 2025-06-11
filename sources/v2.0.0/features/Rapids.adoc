@@ -1,11 +1,8 @@
-===== Definition
-
-Portions of a stream with accelerated current where it descends rapidly but without a break in the slope of the bed sufficient to form a waterfall. Usually used in the plural.
-
-.Rapids의 속성
+.Rapids의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve, surface
+4+h|*Definition:* Portions of a stream with accelerated current where it descends rapidly but without a break in the slope of the bed sufficient to form a waterfall. Usually used in the plural.
+4+h|*Primitives:* curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

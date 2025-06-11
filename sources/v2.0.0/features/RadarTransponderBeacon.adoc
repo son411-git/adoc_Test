@@ -1,11 +1,8 @@
-===== Definition
-
-A transponder beacon transmitting a coded signal on radar frequency, permitting an interrogating craft to determine the bearing and range of the transponder.
-
-.Radar Transponder Beacon의 속성
+.Radar Transponder Beacon의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* A transponder beacon transmitting a coded signal on radar frequency, permitting an interrogating craft to determine the bearing and range of the transponder.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential category of radar transponder beacon|CATRTB|EN|1,1

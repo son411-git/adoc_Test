@@ -1,11 +1,8 @@
-===== Definition
-
-An area within which naval, military or aerial exercises are carried out.
-
-.Military Practice Area의 속성
+.Military Practice Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* An area within which naval, military or aerial exercises are carried out.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of military practice area|CATMPA|EN|0,*

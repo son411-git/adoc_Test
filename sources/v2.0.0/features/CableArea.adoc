@@ -1,11 +1,8 @@
-===== Definition
-
-An area which contains one or more submarine cables.
-
-.Cable Area의 속성
+.Cable Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* An area which contains one or more submarine cables.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of cable|CATCBL|EN|0,*

@@ -1,11 +1,8 @@
-===== Definition
-
-A device capable of, or intended for, reflecting radar signals.
-
-.Radar Reflector의 속성
+.Radar Reflector의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* A device capable of, or intended for, reflecting radar signals.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**fixed date range**||C|0,1

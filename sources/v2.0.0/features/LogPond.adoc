@@ -1,11 +1,8 @@
-===== Definition
-
-A maritime area enclosed with connected floating timbers used as a staging area for sawn logs.
-
-.Log Pond의 속성
+.Log Pond의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* A maritime area enclosed with connected floating timbers used as a staging area for sawn logs.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

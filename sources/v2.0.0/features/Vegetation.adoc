@@ -1,11 +1,8 @@
-===== Definition
-
-Plants collectively or individually, especially those dominating a particular area or habitat.
-
-.Vegetation의 속성
+.Vegetation의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, curve, surface
+4+h|*Definition:* Plants collectively or individually, especially those dominating a particular area or habitat.
+4+h|*Primitives:* point, curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential category of vegetation|CATVEG|EN|1,1

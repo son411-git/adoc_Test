@@ -1,11 +1,8 @@
-===== Definition
-
-An area on land for the exploitation or storage of natural resources.
-
-.Production/Storage Area의 속성
+.Production/Storage Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* An area on land for the exploitation or storage of natural resources.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential category of production area|CATPRA|EN|1,1

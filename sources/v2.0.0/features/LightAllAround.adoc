@@ -1,11 +1,8 @@
-===== Definition
-
-An all around light is a light that is visible over the whole horizon of interest to marine navigation and having no change in the characteristics of the light.
-
-.Light All Around의 속성
+.Light All Around의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* An all around light is a light that is visible over the whole horizon of interest to marine navigation and having no change in the characteristics of the light.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of light|CATLIT|EN|0,*

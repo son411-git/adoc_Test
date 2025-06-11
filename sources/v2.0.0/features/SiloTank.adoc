@@ -1,11 +1,8 @@
-===== Definition
-
-A large storage structure used for storing loose materials, liquids and/or gases.
-
-.Silo/Tank의 속성
+.Silo/Tank의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* A large storage structure used for storing loose materials, liquids and/or gases.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |building shape|BUISHP|EN|0,1

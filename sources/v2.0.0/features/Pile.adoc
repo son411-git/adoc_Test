@@ -1,11 +1,8 @@
-===== Definition
-
-A long heavy timber or section of steel, wood, concrete, etc., forced into the earth or seafloor to serve as a support, as for a pier, or to resist lateral pressure; or as a free standing pole within a marine environment.
-
-.Pile의 속성
+.Pile의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, curve, surface
+4+h|*Definition:* A long heavy timber or section of steel, wood, concrete, etc., forced into the earth or seafloor to serve as a support, as for a pier, or to resist lateral pressure; or as a free standing pole within a marine environment.
+4+h|*Primitives:* point, curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of pile|CATPLE|EN|0,1

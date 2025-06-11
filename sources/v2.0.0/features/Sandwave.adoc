@@ -1,11 +1,8 @@
-===== Definition
-
-Large mobile wave-like sediment feature in shallow water and composed of sand. The wavelength may reach 100 metres, the amplitude may be up to 20 metres.
-
-.Sandwave의 속성
+.Sandwave의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, curve, surface
+4+h|*Definition:* Large mobile wave-like sediment feature in shallow water and composed of sand. The wavelength may reach 100 metres, the amplitude may be up to 20 metres.
+4+h|*Primitives:* point, curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |interoperability identifier||URN|0,1

@@ -1,11 +1,8 @@
-===== Definition
-
-An inclined surface.
-
-.Sloping Ground의 속성
+.Sloping Ground의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* An inclined surface.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of slope|CATSLO|EN|0,1

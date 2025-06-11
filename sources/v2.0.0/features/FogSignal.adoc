@@ -1,11 +1,8 @@
-===== Definition
-
-A warning signal transmitted by a vessel, or aid to navigation, during periods of low visibility. Also, the device producing such a signal.
-
-.Fog Signal의 속성
+.Fog Signal의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* A warning signal transmitted by a vessel, or aid to navigation, during periods of low visibility. Also, the device producing such a signal.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential category of fog signal|CATFOG|EN|1,1

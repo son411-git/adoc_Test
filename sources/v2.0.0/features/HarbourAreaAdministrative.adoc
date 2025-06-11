@@ -1,11 +1,8 @@
-===== Definition
-
-The area over which a harbour authority has jurisdiction.
-
-.Harbour Area (Administrative)의 속성
+.Harbour Area (Administrative)의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* The area over which a harbour authority has jurisdiction.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

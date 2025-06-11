@@ -1,11 +1,8 @@
-===== Definition
-
-A floating barrier to stop and contain the spread of oil on a water body surface.
-
-.Oil Barrier의 속성
+.Oil Barrier의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve
+4+h|*Definition:* A floating barrier to stop and contain the spread of oil on a water body surface.
+4+h|*Primitives:* curve
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of oil barrier|CATOLB|EN|0,1

@@ -1,11 +1,8 @@
-===== Definition
-
-A station at which a visual/radio/radar marine watch is kept either continuously or at certain times only.
-
-.Coast Guard Station의 속성
+.Coast Guard Station의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* A station at which a visual/radio/radar marine watch is kept either continuously or at certain times only.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |communication channel|COMCHA|TE|0,*

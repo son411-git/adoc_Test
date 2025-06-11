@@ -1,11 +1,8 @@
-===== Definition
-
-The outer limit of a traffic lane part or a traffic separation scheme roundabout.
-
-.Traffic Separation Scheme Boundary의 속성
+.Traffic Separation Scheme Boundary의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve
+4+h|*Definition:* The outer limit of a traffic lane part or a traffic separation scheme roundabout.
+4+h|*Primitives:* curve
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**fixed date range**||C|0,1

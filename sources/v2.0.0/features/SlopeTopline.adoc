@@ -1,11 +1,8 @@
-===== Definition
-
-The upper marking of a slope, for example the ridge line or the separation line between two different gradients.
-
-.Slope Topline의 속성
+.Slope Topline의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve
+4+h|*Definition:* The upper marking of a slope, for example the ridge line or the separation line between two different gradients.
+4+h|*Primitives:* curve
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of slope|CATSLO|EN|0,1

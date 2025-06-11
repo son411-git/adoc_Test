@@ -1,11 +1,8 @@
-===== Definition
-
-A water area whose depth is within a defined range of values.
-
-.Depth Area의 속성
+.Depth Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* A water area whose depth is within a defined range of values.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential depth range minimum value|DRVAL1|RE|1,1

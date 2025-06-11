@@ -1,11 +1,8 @@
-===== Definition
-
-Convention on the International Regulations for Preventing Collisions at Sea, 1972 (COLREGs). The demarcation line between inland navigation rules and international navigation rules.
-
-.Collision Regulations Limit의 속성
+.Collision Regulations Limit의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve
+4+h|*Definition:* Convention on the International Regulations for Preventing Collisions at Sea, 1972 (COLREGs). The demarcation line between inland navigation rules and international navigation rules.
+4+h|*Primitives:* curve
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

@@ -1,11 +1,8 @@
-===== Definition
-
-Approximate tidal stream rates given as discrete rate values for flood and ebb flow during springs.
-
-.Tidal Stream - Flood/Ebb의 속성
+.Tidal Stream - Flood/Ebb의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* Approximate tidal stream rates given as discrete rate values for flood and ebb flow during springs.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential category of tidal stream|CAT_TS|EN|1,1

@@ -1,11 +1,8 @@
-===== Definition
-
-A site on which helicopters may land and take off.
-
-.Helipad의 속성
+.Helipad의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* A site on which helicopters may land and take off.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |condition|CONDTN|EN|0,1

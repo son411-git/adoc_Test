@@ -1,11 +1,8 @@
-===== Definition
-
-A region of the seabed including the material of which it is composed and its physical characteristics. Also called nature of bottom, character (or characteristics) of the bottom, or quality of the bottom.
-
-.Seabed Area의 속성
+.Seabed Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, curve, surface
+4+h|*Definition:* A region of the seabed including the material of which it is composed and its physical characteristics. Also called nature of bottom, character (or characteristics) of the bottom, or quality of the bottom.
+4+h|*Primitives:* point, curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

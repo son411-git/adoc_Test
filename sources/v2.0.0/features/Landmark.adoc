@@ -1,11 +1,8 @@
-===== Definition
-
-Any prominent object at a fixed location on land which can be used in determining a location or a direction.
-
-.Landmark의 속성
+.Landmark의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, curve, surface
+4+h|*Definition:* Any prominent object at a fixed location on land which can be used in determining a location or a direction.
+4+h|*Primitives:* point, curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential category of landmark|CATLMK|EN|1,*

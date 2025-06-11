@@ -1,11 +1,8 @@
-===== Definition
-
-Sea lanes designated by an archipelagic State for the passage of ships and aircraft. The Archipelagic Sea Lane aggregates all component parts of an Archipelagic Sea Lane system.
-
-.Archipelagic Sea Lane의 속성
+.Archipelagic Sea Lane의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface, noGeometry
+4+h|*Definition:* Sea lanes designated by an archipelagic State for the passage of ships and aircraft. The Archipelagic Sea Lane aggregates all component parts of an Archipelagic Sea Lane system.
+4+h|*Primitives:* surface, noGeometry
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

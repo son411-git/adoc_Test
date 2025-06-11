@@ -1,11 +1,8 @@
-===== Definition
-
-Generally, an area where the mariner has to be made aware of circumstances influencing the safety of navigation.
-
-.Caution Area의 속성
+.Caution Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* Generally, an area where the mariner has to be made aware of circumstances influencing the safety of navigation.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |condition|CONDTN|EN|0,1

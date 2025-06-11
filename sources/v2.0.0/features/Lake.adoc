@@ -1,11 +1,8 @@
-===== Definition
-
-A large body of water entirely surrounded by land.
-
-.Lake의 속성
+.Lake의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* A large body of water entirely surrounded by land.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |elevation|ELEVAT|RE|0,1

@@ -1,11 +1,8 @@
-===== Definition
-
-A zone or line separating the traffic lanes in which ships are proceeding in opposite, or nearly opposite directions; or separating a traffic lane from the adjacent sea area; or separating traffic lanes designated for particular classes of ships proceeding in the same direction.
-
-.Separation Zone or Line의 속성
+.Separation Zone or Line의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve, surface
+4+h|*Definition:* A zone or line separating the traffic lanes in which ships are proceeding in opposite, or nearly opposite directions; or separating a traffic lane from the adjacent sea area; or separating traffic lanes designated for particular classes of ships proceeding in the same direction.
+4+h|*Primitives:* curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**fixed date range**||C|0,1

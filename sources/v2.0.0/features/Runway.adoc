@@ -1,11 +1,8 @@
-===== Definition
-
-A defined area, on a land aerodrome, prepared for the landing and take-off run of aircraft.
-
-.Runway의 속성
+.Runway의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve, surface
+4+h|*Definition:* A defined area, on a land aerodrome, prepared for the landing and take-off run of aircraft.
+4+h|*Primitives:* curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |condition|CONDTN|EN|0,1

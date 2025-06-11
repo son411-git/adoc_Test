@@ -1,11 +1,8 @@
-===== Definition
-
-An artificially enclosed area within which ships may moor and which may have gates to regulate water level.
-
-.Dock Area의 속성
+.Dock Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* An artificially enclosed area within which ships may moor and which may have gates to regulate water level.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of dock|CATDOC|EN|0,1

@@ -1,11 +1,8 @@
-===== Definition
-
-A floating structure, usually rectangular in shape which serves as landing, pier head, bridge support, etc.
-
-.Pontoon의 속성
+.Pontoon의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: curve, surface
+4+h|*Definition:* A floating structure, usually rectangular in shape which serves as landing, pier head, bridge support, etc.
+4+h|*Primitives:* curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |condition|CONDTN|EN|0,1

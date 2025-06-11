@@ -1,11 +1,8 @@
-===== Definition
-
-Any current that is caused by other than tide producing forces.
-
-.Current - Non-Gravitational의 속성
+.Current - Non-Gravitational의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point
+4+h|*Definition:* Any current that is caused by other than tide producing forces.
+4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*

@@ -1,11 +1,8 @@
-===== Definition
-
-An area within which the navigational system of marks has been established in relation to a specific direction.
-
-.Navigational System of Marks의 속성
+.Navigational System of Marks의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: surface
+4+h|*Definition:* An area within which the navigational system of marks has been established in relation to a specific direction.
+4+h|*Primitives:* surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |#essential marks navigational - system of|MARSYS|EN|1,1

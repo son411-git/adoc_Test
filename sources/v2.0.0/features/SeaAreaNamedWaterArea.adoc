@@ -1,11 +1,8 @@
-===== Definition
-
-A geographically defined part of the sea or other navigable waters. It may be specified within its limits by its proper name.
-
-.Sea Area/Named Water Area의 속성
+.Sea Area/Named Water Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, surface
+4+h|*Definition:* A geographically defined part of the sea or other navigable waters. It may be specified within its limits by its proper name.
+4+h|*Primitives:* point, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of sea area|CATSEA|EN|0,1

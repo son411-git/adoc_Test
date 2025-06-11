@@ -1,11 +1,8 @@
-===== Definition
-
-A feature which exists to support the rendering of graphics or text in order to provide additional information that cannot be encoded using other features.
-
-.Chart 1 Feature의 속성
+.Chart 1 Feature의 정의
 [cols="3,2,1,1", options="header"]
 |===
-4+h| Primitives: point, pointSet, curve, surface
+4+h|*Definition:* A feature which exists to support the rendering of graphics or text in order to provide additional information that cannot be encoded using other features.
+4+h|*Primitives:* point, pointSet, curve, surface
 h|Attribute h|Acronym h|Type h|Mult.
 
 |drawing instruction||TE|0,*
