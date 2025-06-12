@@ -1,31 +1,29 @@
-===== Definition
-
-A floating barrier to stop and contain the spread of oil on a water body surface.
-
-.Oil Barrier의 속성
+.Oil Barrier의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* A floating barrier to stop and contain the spread of oil on a water body surface.
+4+h|*Primitives:* curve
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Category of Oil Barrier|CATOLB|EN|0,1
-|Condition|CONDTN|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Interoperability Identifier||URN|0,1
-|Reported Date|SORDAT|TD|0,1
-|Status|STATUS|EN|0,*
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|category of oil barrier|CATOLB|EN|0,1
+|condition|CONDTN|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|interoperability identifier||URN|0,1
+|reported date|SORDAT|TD|0,1
+|status|STATUS|EN|0,*
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/OilBarrier_rules.adoc[tag=OilBarrier]

@@ -1,22 +1,20 @@
-===== Definition
-
-An area within which the navigational system of marks has been established in relation to a specific direction.
-
-.Local Direction of Buoyage의 속성
+.Local Direction of Buoyage의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* An area within which the navigational system of marks has been established in relation to a specific direction.
+4+h|*Primitives:* surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Interoperability Identifier||URN|0,1
-|#essential Marks Navigational - System Of|MARSYS|EN|1,1
-|#essential Orientation Value|ORIENT|RE|1,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|interoperability identifier||URN|0,1
+|#essential marks navigational - system of|MARSYS|EN|1,1
+|#essential orientation value|ORIENT|RE|1,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/LocalDirectionOfBuoyage_rules.adoc[tag=LocalDirectionOfBuoyage]

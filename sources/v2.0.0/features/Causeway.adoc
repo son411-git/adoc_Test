@@ -1,29 +1,27 @@
-===== Definition
-
-A raised way across low or wet ground or water.
-
-.Causeway의 속성
+.Causeway의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* A raised way across low or wet ground or water.
+4+h|*Primitives:* curve, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Condition|CONDTN|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|Interoperability Identifier||URN|0,1
-|Nature of Construction|NATCON|EN|0,*
-|Reported Date|SORDAT|TD|0,1
-|Status|STATUS|EN|0,*
-|Water Level Effect|WATLEV|EN|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|condition|CONDTN|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|interoperability identifier||URN|0,1
+|nature of construction|NATCON|EN|0,*
+|reported date|SORDAT|TD|0,1
+|status|STATUS|EN|0,*
+|water level effect|WATLEV|EN|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/Causeway_rules.adoc[tag=Causeway]

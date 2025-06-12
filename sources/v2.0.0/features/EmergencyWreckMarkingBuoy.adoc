@@ -1,42 +1,40 @@
-===== Definition
-
-An emergency wreck marking buoy is a buoy moored on or above a new wreck, designed to provide a prominent (both visual and radio) and easily identifiable temporary first response.
-
-.Emergency Wreck Marking Buoy의 속성
+.Emergency Wreck Marking Buoy의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* An emergency wreck marking buoy is a buoy moored on or above a new wreck, designed to provide a prominent (both visual and radio) and easily identifiable temporary first response.
+4+h|*Primitives:* point
+h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential Buoy Shape|BOYSHP|EN|1,1
-|#essential Colour|COLOUR|EN|1,*
-|Colour Pattern|COLPAT|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Interoperability Identifier||URN|0,1
-|Marks Navigational - System Of|MARSYS|EN|0,1
-|Nature of Construction|NATCON|EN|0,*
-|Radar Conspicuous|CONRAD|BO|0,1
-|**Topmark**|TOPMAR|C|0,1
-|    Colour|COLOUR|(S)EN|0,*
-|    Colour Pattern|COLPAT|(S)EN|0,1
-|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1
-|**    Shape Information**||(S)C|0,*
-|        Language||(S)TE|0,1
-|        #essential Text|INFORM/NINFOM|(S)TE|1,1
-|Vertical Length|VERLEN|RE|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
-|Pictorial Representation|PICREP|TE|0,1
+|#essential buoy shape|BOYSHP|EN|1,1
+|#essential colour|COLOUR|EN|1,*
+|colour pattern|COLPAT|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|interoperability identifier||URN|0,1
+|marks navigational - system of|MARSYS|EN|0,1
+|nature of construction|NATCON|EN|0,*
+|radar conspicuous|CONRAD|BO|0,1
+|**topmark**|TOPMAR|C|0,1
+|    colour|COLOUR|(S)EN|0,*
+|    colour pattern|COLPAT|(S)EN|0,1
+|    #essential topmark/daymark shape|TOPSHP|(S)EN|1,1
+|**    shape information**||(S)C|0,*
+|        language||(S)TE|0,1
+|        #essential text|INFORM/NINFOM|(S)TE|1,1
+|vertical length|VERLEN|RE|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
+|pictorial representation|PICREP|TE|0,1
 |===
 
 include::../features_rules/EmergencyWreckMarkingBuoy_rules.adoc[tag=EmergencyWreckMarkingBuoy]

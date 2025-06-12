@@ -1,24 +1,22 @@
-===== Definition
-
-The outer limit of a traffic lane part or a traffic separation scheme roundabout.
-
-.Traffic Separation Scheme Boundary의 속성
+.Traffic Separation Scheme Boundary의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* The outer limit of a traffic lane part or a traffic separation scheme roundabout.
+4+h|*Primitives:* curve
+h|Attribute h|Acronym h|Type h|Mult.
 
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Interoperability Identifier||URN|0,1
-|Status|STATUS|EN|0,*
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|interoperability identifier||URN|0,1
+|status|STATUS|EN|0,*
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/TrafficSeparationSchemeBoundary_rules.adoc[tag=TrafficSeparationSchemeBoundary]

@@ -1,41 +1,39 @@
-===== Definition
-
-The hull of a wrecked or condemned ship, from which the fittings and superstructure have usually been removed, which is moored in a permanent position or grounded. It may be abandoned or put to some other use.
-
-.Hulk의 속성
+.Hulk의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* The hull of a wrecked or condemned ship, from which the fittings and superstructure have usually been removed, which is moored in a permanent position or grounded. It may be abandoned or put to some other use.
+4+h|*Primitives:* point, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Category of Hulk|CATHLK|EN|0,*
-|Colour|COLOUR|EN|0,*
-|Colour Pattern|COLPAT|EN|0,1
-|Condition|CONDTN|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Horizontal Length|HORLEN|RE|0,1
-|Horizontal Width|HORWID|RE|0,1
-|Interoperability Identifier||URN|0,1
-|**Periodic Date Range**||C|0,*
-|    #essential Date End|DATEND|(S)TD|1,1
-|    #essential Date Start|DATSTA|(S)TD|1,1
-|Radar Conspicuous|CONRAD|BO|0,1
-|Reported Date|SORDAT|TD|0,1
-|Vertical Length|VERLEN|RE|0,1
-|Visual Prominence|CONVIS|EN|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
-|Pictorial Representation|PICREP|TE|0,1
+|category of hulk|CATHLK|EN|0,*
+|colour|COLOUR|EN|0,*
+|colour pattern|COLPAT|EN|0,1
+|condition|CONDTN|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|horizontal length|HORLEN|RE|0,1
+|horizontal width|HORWID|RE|0,1
+|interoperability identifier||URN|0,1
+|**periodic date range**||C|0,*
+|    #essential date end|DATEND|(S)TD|1,1
+|    #essential date start|DATSTA|(S)TD|1,1
+|radar conspicuous|CONRAD|BO|0,1
+|reported date|SORDAT|TD|0,1
+|vertical length|VERLEN|RE|0,1
+|visual prominence|CONVIS|EN|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
+|pictorial representation|PICREP|TE|0,1
 |===
 
 include::../features_rules/Hulk_rules.adoc[tag=Hulk]

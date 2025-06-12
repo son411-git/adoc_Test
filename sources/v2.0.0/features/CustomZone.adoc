@@ -1,21 +1,19 @@
-===== Definition
-
-The area within which national custom regulations are in force.
-
-.Custom Zone의 속성
+.Custom Zone의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* The area within which national custom regulations are in force.
+4+h|*Primitives:* surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Interoperability Identifier||URN|0,1
-|#essential Nationality|NATION|TE|1,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|interoperability identifier||URN|0,1
+|#essential nationality|NATION|TE|1,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/CustomZone_rules.adoc[tag=CustomZone]

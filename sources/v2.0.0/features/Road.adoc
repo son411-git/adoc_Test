@@ -1,29 +1,27 @@
-===== Definition
-
-A route with a specially prepared surface that is intended for use by wheeled vehicles or pedestrians.
-
-.Road의 속성
+.Road의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* A route with a specially prepared surface that is intended for use by wheeled vehicles or pedestrians.
+4+h|*Primitives:* curve, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Category of Road|CATROD|EN|0,1
-|Condition|CONDTN|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|Interoperability Identifier||URN|0,1
-|Nature of Construction|NATCON|EN|0,*
-|Reported Date|SORDAT|TD|0,1
-|Status|STATUS|EN|0,*
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|category of road|CATROD|EN|0,1
+|condition|CONDTN|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|interoperability identifier||URN|0,1
+|nature of construction|NATCON|EN|0,*
+|reported date|SORDAT|TD|0,1
+|status|STATUS|EN|0,*
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/Road_rules.adoc[tag=Road]

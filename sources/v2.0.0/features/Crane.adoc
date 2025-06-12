@@ -1,46 +1,44 @@
-===== Definition
-
-A machine for lifting, shifting and lowering objects or materials by means of a swinging boom or with a lifting apparatus supported on an overhead track.
-
-.Crane의 속성
+.Crane의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* A machine for lifting, shifting and lowering objects or materials by means of a swinging boom or with a lifting apparatus supported on an overhead track.
+4+h|*Primitives:* point, surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Category of Crane|CATCRN|EN|0,1
-|Colour|COLOUR|EN|0,*
-|Colour Pattern|COLPAT|EN|0,1
-|Condition|CONDTN|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|Height|HEIGHT|RE|0,1
-|Interoperability Identifier||URN|0,1
-|Lifting Capacity|LIFCAP|RE|0,1
-|**Orientation**||C|0,1
-|    Orientation Uncertainty||(S)RE|0,1
-|    #essential Orientation Value|ORIENT|(S)RE|1,1
-|Radar Conspicuous|CONRAD|BO|0,1
-|Radius|RADIUS|RE|0,1
-|Status|STATUS|EN|0,*
-|**Vertical Clearance Fixed**|VERCLR|C|0,1
-|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1
-|**    Vertical Uncertainty**|SOUACC/VERACC|(S)C|0,1
-|        #essential Uncertainty Fixed||(S)RE|1,1
-|        Uncertainty Variable Factor||(S)RE|0,1
-|Vertical Datum|VERDAT|EN|0,1
-|Vertical Length|VERLEN|RE|0,1
-|Visual Prominence|CONVIS|EN|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
-|Pictorial Representation|PICREP|TE|0,1
-|In the Water||BO|0,1
+|category of crane|CATCRN|EN|0,1
+|colour|COLOUR|EN|0,*
+|colour pattern|COLPAT|EN|0,1
+|condition|CONDTN|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|height|HEIGHT|RE|0,1
+|interoperability identifier||URN|0,1
+|lifting capacity|LIFCAP|RE|0,1
+|**orientation**||C|0,1
+|    orientation uncertainty||(S)RE|0,1
+|    #essential orientation value|ORIENT|(S)RE|1,1
+|radar conspicuous|CONRAD|BO|0,1
+|radius|RADIUS|RE|0,1
+|status|STATUS|EN|0,*
+|**vertical clearance fixed**|VERCLR|C|0,1
+|    #essential vertical clearance value|VERCLR|(S)RE|1,1
+|**    vertical uncertainty**|SOUACC/VERACC|(S)C|0,1
+|        #essential uncertainty fixed||(S)RE|1,1
+|        uncertainty variable factor||(S)RE|0,1
+|vertical datum|VERDAT|EN|0,1
+|vertical length|VERLEN|RE|0,1
+|visual prominence|CONVIS|EN|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
+|pictorial representation|PICREP|TE|0,1
+|in the water||BO|0,1
 |===
 
 include::../features_rules/Crane_rules.adoc[tag=Crane]

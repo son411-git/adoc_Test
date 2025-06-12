@@ -1,37 +1,35 @@
-===== Definition
-
-An area of the bottom of a body of water which has been deepened by dredging.
-
-.Dredged Area의 속성
+.Dredged Area의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* An area of the bottom of a body of water which has been deepened by dredging.
+4+h|*Primitives:* surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential Depth Range Minimum Value|DRVAL1|RE|1,1
-|Depth Range Maximum Value|DRVAL2|RE|0,1
-|Dredged Date||TD|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|Interoperability Identifier||URN|0,1
-|Maximum Permitted Draught||RE|0,1
-|Quality of Vertical Measurement|QUASOU|EN|0,1
-|Restriction|RESTRN|EN|0,*
-|Technique of Vertical Measurement|TECSOU|EN|0,*
-|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1
-|    #essential Uncertainty Fixed||(S)RE|1,1
-|    Uncertainty Variable Factor||(S)RE|0,1
-|**Vessel Speed Limit**||C|0,*
-|    #essential Speed Limit||(S)RE|1,1
-|    #essential Speed Units||(S)EN|1,1
-|    Vessel Class||(S)TE|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|#essential depth range minimum value|DRVAL1|RE|1,1
+|depth range maximum value|DRVAL2|RE|0,1
+|dredged date||TD|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|interoperability identifier||URN|0,1
+|maximum permitted draught||RE|0,1
+|quality of vertical measurement|QUASOU|EN|0,1
+|restriction|RESTRN|EN|0,*
+|technique of vertical measurement|TECSOU|EN|0,*
+|**vertical uncertainty**|SOUACC/VERACC|C|0,1
+|    #essential uncertainty fixed||(S)RE|1,1
+|    uncertainty variable factor||(S)RE|0,1
+|**vessel speed limit**||C|0,*
+|    #essential speed limit||(S)RE|1,1
+|    #essential speed units||(S)EN|1,1
+|    vessel class||(S)TE|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/DredgedArea_rules.adoc[tag=DredgedArea]

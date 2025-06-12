@@ -1,34 +1,32 @@
-===== Definition
-
-A concreted mass of stony material or coral which dries, is awash or is below the water surface.
-
-.Underwater/Awash Rock의 속성
+.Underwater/Awash Rock의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* A concreted mass of stony material or coral which dries, is awash or is below the water surface.
+4+h|*Primitives:* point
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Exposition of Sounding|EXPSOU|EN|0,1
-|**Feature Name**||C|0,*
-|    #essential Language||(S)TE|1,1
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1
-|    Name Usage||(S)EN|0,1
-|Interoperability Identifier||URN|0,1
-|Nature of Surface|NATSUR|EN|0,1
-|Quality of Vertical Measurement|QUASOU|EN|0,*
-|Reported Date|SORDAT|TD|0,1
-|Status|STATUS|EN|0,1
-|Technique of Vertical Measurement|TECSOU|EN|0,*
-|#essential Value of Sounding|VALSOU|RE|1,1
-|#essential Water Level Effect|WATLEV|EN|1,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
-|Default Clearance Depth||RE|0,1
-|#essential Surrounding Depth||RE|1,1
+|exposition of sounding|EXPSOU|EN|0,1
+|**feature name**||C|0,*
+|    #essential language||(S)TE|1,1
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|interoperability identifier||URN|0,1
+|nature of surface|NATSUR|EN|0,1
+|quality of vertical measurement|QUASOU|EN|0,*
+|reported date|SORDAT|TD|0,1
+|status|STATUS|EN|0,1
+|technique of vertical measurement|TECSOU|EN|0,*
+|#essential value of sounding|VALSOU|RE|1,1
+|#essential water level effect|WATLEV|EN|1,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
+|default clearance depth||RE|0,1
+|#essential surrounding depth||RE|1,1
 |===
 
 include::../features_rules/UnderwaterAwashRock_rules.adoc[tag=UnderwaterAwashRock]

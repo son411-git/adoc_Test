@@ -1,33 +1,31 @@
-===== Definition
-
-An area of a two-way route within which traffic flow is generally along one bearing (and possibly its reciprocal).
-
-.Two-Way Route Part의 속성
+.Two-Way Route Part의 정의
 [cols="3,2,1,1", options="header"]
 |===
-|Attribute |Acronym |Type |Mult.
+4+h|*Definition:* An area of a two-way route within which traffic flow is generally along one bearing (and possibly its reciprocal).
+4+h|*Primitives:* surface
+h|Attribute h|Acronym h|Type h|Mult.
 
-|Based On Fixed Marks|CATTRK|BO|0,1
-|Depth Range Minimum Value|DRVAL1|RE|0,1
-|**Fixed Date Range**||C|0,1
-|    Date End|DATEND|(S)TD|0,1
-|    Date Start|DATSTA|(S)TD|0,1
-|Interoperability Identifier||URN|0,1
-|#essential Orientation Value|ORIENT|RE|1,1
-|Quality of Vertical Measurement|QUASOU|EN|0,*
-|Status|STATUS|EN|0,*
-|Technique of Vertical Measurement|TECSOU|EN|0,*
-|#essential Traffic Flow|TRAFIC|EN|1,1
-|**Vertical Uncertainty**|SOUACC/VERACC|C|0,1
-|    #essential Uncertainty Fixed||(S)RE|1,1
-|    Uncertainty Variable Factor||(S)RE|0,1
-|Scale Minimum|SCAMIN|IN|0,1
-|**Information**|INFORM|C|0,*
-|    File Locator||(S)TE|0,1
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    Headline||(S)TE|0,1
-|    #essential Language||(S)TE|1,1
-|    Text|INFORM/NINFOM|(S)TE|0,1
+|based on fixed marks|CATTRK|BO|0,1
+|depth range minimum value|DRVAL1|RE|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|interoperability identifier||URN|0,1
+|#essential orientation value|ORIENT|RE|1,1
+|quality of vertical measurement|QUASOU|EN|0,*
+|status|STATUS|EN|0,*
+|technique of vertical measurement|TECSOU|EN|0,*
+|#essential traffic flow|TRAFIC|EN|1,1
+|**vertical uncertainty**|SOUACC/VERACC|C|0,1
+|    #essential uncertainty fixed||(S)RE|1,1
+|    uncertainty variable factor||(S)RE|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    #essential language||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 include::../features_rules/TwoWayRoutePart_rules.adoc[tag=TwoWayRoutePart]
