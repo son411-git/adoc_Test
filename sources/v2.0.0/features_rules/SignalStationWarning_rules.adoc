@@ -16,7 +16,7 @@
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 기상신호소
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|    Name Usage||(S)EN|0,1| 2 : alternate name display
 |**Information**|INFORM|C|0,*| 
 |    #essential Language||(S)TE|1,1| eng
 |    Text|INFORM/NINFOM|(S)TE|0,1| Wind direction, Wind speed, Air temperature, Atmospheric pressure, Humidity

@@ -66,7 +66,7 @@ Buoyant beacon(부력입표),P5,
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 수원해상기상탑
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|    Name Usage||(S)EN|0,1| 2 : alternate name display
 |Status|STATUS|EN|0,*| 7: temporary
 |Vertical Length|VERLEN|RE|0,1| 96
 |**Information**|INFORM|C|0,*| 

@@ -18,7 +18,7 @@
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1|kor 
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|대청 해상기상탑
-|    Name Usage||(S)EN|0,1|2: alternate name display 
+|    Name Usage||(S)EN|0,1|2 : alternate name display 
 |Visual Prominence|CONVIS|EN|0,1| 1: visual prominence
 |===
 

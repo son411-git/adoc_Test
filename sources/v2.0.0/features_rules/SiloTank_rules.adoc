@@ -28,7 +28,7 @@ No,사이로/탱크 목적 및 성격,Category of silo/tank,Product,기타
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 양곡부두
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|    Name Usage||(S)EN|0,1| 2 : alternate name display
 |**Multiplicity of Features**||C|0,1| 
 |    #essential Multiplicity Known||(S)BO|1,1| true
 |               Multiplicity offeatures||(S)IN|0,1| 

@@ -22,7 +22,7 @@
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1|kor 
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|속력제한구역 
-|    Name Usage||(S)EN|0,1|2: alternate name display 
+|    Name Usage||(S)EN|0,1|2 : alternate name display 
 |**Vessel Speed Limit**||C|0,*| 
 |    #essential Speed Limit||(S)RE|1,1|10 
 |    #essential Speed Units||(S)EN|1,1| 4: knots

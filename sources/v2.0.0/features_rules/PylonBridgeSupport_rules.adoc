@@ -22,7 +22,7 @@
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor 
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 영흥 한전철탑P호
-|    Name Usage||(S)EN|0,1| 2: alternate name display 
+|    Name Usage||(S)EN|0,1| 2 : alternate name display 
 |Height|HEIGHT|RE|0,1| 62m
 |Nature of Construction|NATCON|EN|0,*| 7: metal 
 |Visual Prominence|CONVIS|EN|0,1|1: visual prominence

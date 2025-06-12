@@ -40,7 +40,7 @@ NO,구분,Category of shoreline Construction,Condition,Nature of construction,Wa
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 부산항 동방파제
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|    Name Usage||(S)EN|0,1| 2 : alternate name display
 |Water Level Effect|WATLEV|EN|0,1| 4: cover and uncovers
 |**Information**|INFORM|C|0,*| 
 |    #essential Language||(S)TE|1,1| eng

@@ -17,7 +17,7 @@
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| 
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 장안-인천
-|    Name Usage||(S)EN|0,1| 2: alternate name display 
+|    Name Usage||(S)EN|0,1| 2 : alternate name display 
 |**Information**|INFORM|C|0,*| 
 |    #essential Language||(S)TE|1,1| eng
 |    Text|INFORM/NINFOM|(S)TE|0,1|change the pilot boarding place at the bad weather of heavy seas warning enforcement date : 16 Feb. 2009
