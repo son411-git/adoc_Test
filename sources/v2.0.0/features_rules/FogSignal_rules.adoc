@@ -21,7 +21,7 @@
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 4409  
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|    Name Usage||(S)EN|0,1| 2 : alternate name display
 |Signal Group|SIGGRP|TE|0,1| (1) 
 |Signal Period|SIGPER|RE|0,1| 35
 |**Signal Sequence**|SIGSEQ|C|0,*| 

@@ -18,7 +18,7 @@
 |**Feature Name**||C|0,*| kor
 |    #essential Language||(S)TE|1,1| 
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|서귀포 남방 기상
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|    Name Usage||(S)EN|0,1| 2 : alternate name display
 
 |===
 

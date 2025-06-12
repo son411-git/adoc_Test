@@ -15,7 +15,7 @@
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor 
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 마산항로
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|    Name Usage||(S)EN|0,1| 2 : alternate name display
 |IMO Adopted|CATTSS|BO|0,1| false
 |===
 

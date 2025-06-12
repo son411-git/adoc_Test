@@ -54,7 +54,7 @@
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 영랑호 하구 도류제
-|    Name Usage||(S)EN|0,1| 2: alternate name display 
+|    Name Usage||(S)EN|0,1| 2 : alternate name display 
 |Function|FUNCTN|EN|0,*|33: light support 
 |Height|HEIGHT|RE|0,1| 15m  
 |Nature of Construction|NATCON|EN|0,*| 2: concreted 

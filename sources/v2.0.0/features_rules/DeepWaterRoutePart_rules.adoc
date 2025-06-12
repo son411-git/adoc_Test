@@ -28,7 +28,7 @@ a| image:../images/DeepWaterRoutePart/DeepWaterRoutePart_image-2.png[width=300]
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 마산항로
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|    Name Usage||(S)EN|0,1| 2 : alternate name display
 |IMO Adopted|CATTSS|BO|0,1| (Undefined)
 |#essential Orientation Value|ORIENT|RE|1,1| 220 
 |#essential Traffic Flow|TRAFIC|EN|1,1| 4: two-way 

@@ -45,7 +45,7 @@ S-57 CATMOR,S-101 Feature,S-101 Attribute
 |**Feature Name**||C|0,*|
 |    #essential Language||(S)TE|1,1|kor 
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|목포항 현대삼호 제A호 
-|    Name Usage||(S)EN|0,1|2: alternate name display 
+|    Name Usage||(S)EN|0,1|2 : alternate name display 
 |Status|STATUS|EN|0,*|7: temporary 
 |Vertical Length|VERLEN|RE|0,1|0.5  
 |**Information**|INFORM|C|0,*|  

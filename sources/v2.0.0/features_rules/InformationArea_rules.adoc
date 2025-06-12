@@ -20,7 +20,7 @@
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor 
 |    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 주의 
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|    Name Usage||(S)EN|0,1| 2 : alternate name display
 |Scale Minimum|SCAMIN|IN|0,1| 179999
 |**Information**|INFORM|C|0,*| 
 |    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
