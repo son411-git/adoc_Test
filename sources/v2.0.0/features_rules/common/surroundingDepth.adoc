@@ -1,0 +1,6 @@
+// tag::surroundingDepth[]
+
+* ECDIS System 속성인 #A "surrounding depth"를 필수로 입력해야 함
+** #A "surrounding depth"의 값은 객체를 완전히 덮기 위해 필요한 모든 #F "Depth Area" 및 #F "Dredged Area" 중 *가장 깊은 영역*의 #A "depth range minimum value"와 같게 입력
+
+// end::surroundingDepth[]
