@@ -1,0 +1,6 @@
+// tag::information[]
+
+** 추가 정보는 #A "information" 또는 #F "Nautical Information"을 사용하여 입력
+** 항해 안전과 관련된 내용은 #F "Caution Area"를 사용
+
+// eng::information[]
