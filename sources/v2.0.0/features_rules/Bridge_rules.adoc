@@ -1,52 +1,105 @@
 // tag::Bridge[]
 ===== Remark
 
-- 교량은 항해 불가능한 지역 #F "Land area"과 항해가능지역 #F "Depth area", #F "Dredged Area", #F "Unsurveyed area"에 모두 입력 가능
-- S-57 전자해도의 속성 #A "CATBRG"의 1(fixed bridge), 2(opening bridge)는 #F "Span Fixed"와 #F "Span Opening"으로 구분하여 인코딩하고 아래의 표를 참조하여 속성입력
-Bridge Construction
+* #F "Bridge"는 항해 가능 여부와 관계없이 모든 수역 및 육지에서 입력이 가능함
+* #F "Bridge"은 상세 수준과 맥락에 따라 단독 객체로 입력하거나 교량 집합(#R "Bridge aggregation")으로 구성할 수 있음
+--
+&nbsp;
+--
+* 단독 교량 (#F "Bridge"(C,S))
 
-////
-[cols="1,1,1,1,1" , frame=none, grid=none]
-|===
-|arch(아치) |viaduct(고가교) |suspension bridge(천수교) |pontoon bridge(부교) |transporter bridge(수송교)
-|image:../images/Bridge/Bridge_image-1[width=100] |image:../images/Bridge/Bridge_image-2[width=100]| image:../images/Bridge/Bridge_image-3[width=100] |image:../images/Bridge/Bridge_image-4[width=100] |image:../images/Bridge/Bridge_image-5[width=100]
-|===
+** 단독 교량은 #R "Bridge aggregation" 없이 #F "Bridge"(C,S)로, 이는 상세한 표현이 어렵거나 필요하지 않은 경우에 사용됨
 
-Category of Opening Bridge
-[cols="1,1,1,1" , frame=none, grid=none]
-|===
-|swing bridge(선개교) |lifting bridge(승개교) |bascule bridge(가동교) |draw bridge(도개교)
-|image:../images/Bridge/Bridge_image-6[width=100] |image:../images/Bridge/Bridge_image-7[width=100] | image:../images/Bridge/Bridge_image-8[width=100] |image:../images/Bridge/Bridge_image-9[width=100]
-|=== 
-////
+* 사용 조건
+** #A "optimum display scale"에 해당하는 화면 축척에서 #F "Span Fixed" 또는 #F "Span Opening"과 같은 구성 객체로 교량을 상세히 표현하기 어려운 경우
+** #F "Pontoon"으로 구성된 연결 교량인 경우
+** 해안선 부근, 강, 하천 등 항해가 불가능한 지역인 경우
 
-항해 불가능한 지역의 교량
-- 항해 불가능한 지역(#F "Land area", #F "Pontoon",#F "Bridge"등)의 교량은 Curve / Surface type의 #F "Bridge"로 인코딩하며 별도의 교량 관련 #R "Bridge Aggregation" 설정은 생략
+* 필수 속성
+** #A "feature name": 교량의 이름을 입력
+** #A "opening bridge": 개방 가능 여부를 나타내는 필수 속성으로, `True` 또는 `False` 값을 선택해야 함
+--
+&nbsp;
+--
+* 교량 집합 (#R "Bridge aggregation")
 
-//image::../images/Bridge/Bridge_image-1[width=400]
+** #R "Bridge aggregation"은 대표 객체 #F "Bridge"(C,S,N)를 사용하여 항해 가능한 수역에서 상세히 입력할 때 사용됨. 이는 구성 객체를 통해 교량의 구조를 자세히 표현할 수 있는 경우에 적용됨
+
+* 사용 조건
+** 항해 가능한 수역에서 구성 객체를 사용하여 교량을 상세히 입력할 수 있는 경우
+** 교량 집합은 다음을 포함해야 함:
+*** 대표 객체로 #F "Bridge"(C,S,N)
+*** 최소한 하나의 #F "Span Fixed" (고정 경간) 또는 #F "Span Opening" (개방 경간)
+*** 관련이 있는 경우, #F "Pylon/Bridge Support" (교각) 또는 #F "Pontoon" (부잔교)을 선택적으로 포함함
+*** 고정 경간은 #F "Span Fixed", 개방 경간은 #F "Span Opening", 교각은 #F "Pylon/Bridge Support"로 #F "Bridge"와 구분하여 입력
+
+* 필수 속성
+** #A "opening bridge": 개방 가능 여부를 나타내는 속성으로, 항해 가능한 수역에 걸쳐져 있을 경우 `True` 또는 `False` 값을 선택해야 함
+*** 집합에 #F "Span Opening"이 포함된 경우, #A "opening bridge" = (True)로 설정하고, #A "category of opening bridge"를 필수로 입력해야 함
+** 교량 이름:
+*** 교량 이름이 알려져 있고 #A "feature name"에 입력할 경우, #F "Bridge"(C,S)를 사용
+*** 교량 이름이 알려지지 않았거나 입력할 필요가 없는 경우, #F "Bridge"(N)를 사용
+** #A "scale minimum": #R "Bridge aggregation"에 포함된 모든 객체는 동일한 #A "scale minimum" 값을 가져야 함
+* 공간적 범위:
+*** #F "Bridge"(C,S)의 공간적 범위는 관련된 #F "Span Fixed" 및 #F "Span Opening" 의 전체 범위를 포함해야 함
+
+.개방 교량의 교량 집합과 공간적 범위의 차이
+image::../images/Bridge/Bridge_image-1.png[width=50%]
+
+* 부가 정보
+** 추가 정보는 #A "information" 또는 #F "Nautical Information"을 사용하여 입력
+** 항해 안전과 관련된 내용은 #F "Caution Area"를 사용
+
+.bridge construction의 예시
+image::../images/Bridge/Bridge_image-2.png[width=100%]
+
+.category of opening bridge의 예시
+image::../images/Bridge/Bridge_image-3.png[width=100%]
+
 
 ===== Example
+
+.고정 교량의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Opening Bridge|CATBRG|EN|0,1| 1 : fixed bridge 
-|Condition|CONDTN|EN|0,1| 1 : Under Construction
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Chujagyo
-|    Name Usage||(S)EN|0,1|1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 추자교 
-|    Name Usage||(S)EN|0,1|2: alternate name display 
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    Text|INFORM/NINFOM|(S)TE|0,1|Coastal Fairway Survey in 2022
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor 
-|    Text|INFORM/NINFOM|(S)TE|0,1|2022년 연안항로조사 
+|bridge construction|CATBRG|EN|0,1| 1 : arch
+|bridge function|CATBRG|EN|0,*| 1 : vehicular 
+|bridge function|CATBRG|EN|0,*| 3 : pedestrian
+|condition|CONDTN|EN|0,1| 1 : Under Construction
+|feature name||C|0,*| 
+|    #essential language||(S)TE|1,1| eng
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1| Busan Bridge
+|    name usage||(S)EN|0,1|1 : default name display
+|feature name||C|0,*| 
+|    #essential language||(S)TE|1,1|kor
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1| 부산대교
+|    name usage||(S)EN|0,1|2 : alternate name display 
+|opening bridge||(S)BO|0,1|false
 |===
+
+.개방 교량의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|bridge construction|CATBRG|EN|0,1| 1 : arch
+|bridge function|CATBRG|EN|0,*| 1 : vehicular 
+|bridge function|CATBRG|EN|0,*| 3 : pedestrian
+|category of opening bridge|CATBRG|EN|0,1| 5 : bascule bridge
+|condition|CONDTN|EN|0,1| 1 : Under Construction
+|feature name||C|0,*| 
+|    #essential language||(S)TE|1,1| eng
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1| Yeongdo Bridge
+|    name usage||(S)EN|0,1|1 : default name display
+|feature name||C|0,*| 
+|    #essential language||(S)TE|1,1|kor
+|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1| 영도대교
+|    name usage||(S)EN|0,1|2 : alternate name display 
+|opening bridge||(S)BO|0,1|true
+|===
+
 
 ---
 // end::Bridge[]
