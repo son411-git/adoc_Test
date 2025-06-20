@@ -12,15 +12,15 @@ h|Attribute h|Acronym h|Type h|Mult.
 |restriction|RESTRN|EN|0,*
 |status|STATUS|EN|0,*
 |**vessel speed limit**||C|0,*
-|    #essential speed limit||(S)RE|1,1
-|    #essential speed units||(S)EN|1,1
+|    span:E[speed limit]||(S)RE|1,1
+|    span:E[speed units]||(S)EN|1,1
 |    vessel class||(S)TE|0,1
 |scale minimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    file locator||(S)TE|0,1
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    #essential language||(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

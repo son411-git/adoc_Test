@@ -8,24 +8,24 @@ h|Attribute h|Acronym h|Type h|Mult.
 |category of pipeline/pipe|CATPIP|EN|0,1
 |condition|CONDTN|EN|0,1
 |**feature name**||C|0,*
-|    #essential language||(S)TE|1,1
-|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1
 |    name usage||(S)EN|0,1
 |**fixed date range**||C|0,1
 |    date end|DATEND|(S)TD|0,1
 |    date start|DATSTA|(S)TD|0,1
 |interoperability identifier||URN|0,1
 |**multiplicity of features**||C|0,1
-|    #essential multiplicity known||(S)BO|1,1
+|    span:E[multiplicity known]||(S)BO|1,1
 |    number of features||(S)IN|0,1
 |product|PRODCT|EN|0,*
 |radar conspicuous|CONRAD|BO|0,1
 |reported date|SORDAT|TD|0,1
 |status|STATUS|EN|0,*
 |**vertical clearance fixed**|VERCLR|C|0,1
-|    #essential vertical clearance value|VERCLR|(S)RE|1,1
+|    span:E[vertical clearance value]|VERCLR|(S)RE|1,1
 |**    vertical uncertainty**|SOUACC/VERACC|(S)C|0,1
-|        #essential uncertainty fixed||(S)RE|1,1
+|        span:E[uncertainty fixed]||(S)RE|1,1
 |        uncertainty variable factor||(S)RE|0,1
 |vertical datum|VERDAT|EN|0,1
 |visual prominence|CONVIS|EN|0,1
@@ -34,7 +34,7 @@ h|Attribute h|Acronym h|Type h|Mult.
 |    file locator||(S)TE|0,1
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    #essential language||(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

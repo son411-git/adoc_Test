@@ -9,8 +9,8 @@ h|Attribute h|Acronym h|Type h|Mult.
 |condition|CONDTN|EN|0,1
 |exposition of sounding|EXPSOU|EN|0,1
 |**feature name**||C|0,*
-|    #essential language||(S)TE|1,1
-|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1
 |    name usage||(S)EN|0,1
 |height|HEIGHT|RE|0,1
 |interoperability identifier||URN|0,1
@@ -23,16 +23,16 @@ h|Attribute h|Acronym h|Type h|Mult.
 |technique of vertical measurement|TECSOU|EN|0,*
 |value of sounding|VALSOU|RE|0,1
 |vertical length|VERLEN|RE|0,1
-|#essential water level effect|WATLEV|EN|1,1
+|span:E[water level effect]|WATLEV|EN|1,1
 |scale minimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    file locator||(S)TE|0,1
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    #essential language||(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |default clearance depth||RE|0,1
-|#essential surrounding depth||RE|1,1
+|span:E[surrounding depth]||RE|1,1
 |===
 
 include::../features_rules/Obstruction_rules.adoc[tag=Obstruction]

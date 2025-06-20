@@ -1,20 +1,19 @@
-===== Definition
-
-
-
-[cols="1,1,1,1", options="header"]
+.Spatial Quality의 정의
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+4+h|*Definition:* The indication of the quality of the locational information for features in a dataset.
+4+h|*Primitives:* None
+h|Attribute h|Acronym h|Type h|Mult.
 
-|qualityOfHorizontalMeasurement|QUAPOS|EN|0,1
-|spatialAccuracy||C|0,*
-|    fixedDateRange||(S)C|0,1
-|        dateEnd|DATEND|(S)TD|0,1
-|        dateStart|DATSTA|(S)TD|0,1
-|    horizontalPositionUncertainty||(S)C|0,1
-|        uncertaintyFixed||(S)RE|1,1
-|        uncertaintyVariableFactor||(S)RE|0,1
-|    verticalUncertainty|SOUACC|(S)C|0,1
-|        uncertaintyFixed||(S)RE|1,1
-|        uncertaintyVariableFactor||(S)RE|0,1
+|quality of horizontal measurement|QUAPOS|EN|0,1
+|**spatial accuracy**||C|0,*
+|**    fixed date range**||(S)C|0,1
+|        date end|DATEND|(S)TD|0,1
+|        date start|DATSTA|(S)TD|0,1
+|**    horizontal position uncertainty**||(S)C|0,1
+|        span:E[uncertainty fixed]||(S)RE|1,1
+|        uncertainty variable factor||(S)RE|0,1
+|**    vertical uncertainty**|SOUACC/VERACC|(S)C|0,1
+|        span:E[uncertainty fixed]||(S)RE|1,1
+|        uncertainty variable factor||(S)RE|0,1
 |===

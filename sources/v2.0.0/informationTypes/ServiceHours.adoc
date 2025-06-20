@@ -1,27 +1,27 @@
-===== Definition
-
-
-[cols="1,1,1,1", options="header"]
+.Service Hours의 정의
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+4+h|*Definition:* The time when a service is available and known exceptions.
+4+h|*Primitives:* None
+h|Attribute h|Acronym h|Type h|Mult.
 
-|fixedDateRange||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|periodicDateRange||C|0,*
-|    dateEnd|DATEND|(S)TD|1,1
-|    dateStart|DATSTA|(S)TD|1,1
-|scheduleByDayOfWeek||C|1,*
-|    categoryOfSchedule||(S)EN|0,1
-|    timeIntervalsByDayOfWeek||(S)C|1,*
-|        dayOfWeek||(S)EN|0,7
-|        dayOfWeekIsRange||(S)BO|0,1
-|        timeOfDayStart||(S)TI|0,*
-|        timeOfDayEnd||(S)TI|0,*
-|information|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|**periodic date range**||C|0,*
+|    span:E[date end]|DATEND|(S)TD|1,1
+|    span:E[date start]|DATSTA|(S)TD|1,1
+|**span:E[schedule by day of week]**||C|1,*
+|    category of schedule||(S)EN|0,1
+|**    span:E[time intervals by day of week]**||(S)C|1,*
+|        day of week||(S)EN|0,7
+|        day of week is range||(S)BO|0,1
+|        time of day start||(S)TI|0,*
+|        time of day end||(S)TI|0,*
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    span:E[language]||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===

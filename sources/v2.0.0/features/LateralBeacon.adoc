@@ -5,15 +5,15 @@
 4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential beacon shape|BCNSHP|EN|1,1
-|#essential category of lateral mark|CATLAM|EN|1,1
-|#essential colour|COLOUR|EN|1,*
+|span:E[beacon shape]|BCNSHP|EN|1,1
+|span:E[category of lateral mark]|CATLAM|EN|1,1
+|span:E[colour]|COLOUR|EN|1,*
 |colour pattern|COLPAT|EN|0,1
 |condition|CONDTN|EN|0,1
 |elevation|ELEVAT|RE|0,1
 |**feature name**||C|0,*
-|    #essential language||(S)TE|1,1
-|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1
 |    name usage||(S)EN|0,1
 |**fixed date range**||C|0,1
 |    date end|DATEND|(S)TD|0,1
@@ -23,18 +23,18 @@ h|Attribute h|Acronym h|Type h|Mult.
 |marks navigational - system of|MARSYS|EN|0,1
 |nature of construction|NATCON|EN|0,*
 |**periodic date range**||C|0,*
-|    #essential date end|DATEND|(S)TD|1,1
-|    #essential date start|DATSTA|(S)TD|1,1
+|    span:E[date end]|DATEND|(S)TD|1,1
+|    span:E[date start]|DATSTA|(S)TD|1,1
 |radar conspicuous|CONRAD|BO|0,1
 |reported date|SORDAT|TD|0,1
 |status|STATUS|EN|0,*
 |**topmark**|TOPMAR|C|0,1
 |    colour|COLOUR|(S)EN|0,*
 |    colour pattern|COLPAT|(S)EN|0,1
-|    #essential topmark/daymark shape|TOPSHP|(S)EN|1,1
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1
 |**    shape information**||(S)C|0,*
 |        language||(S)TE|0,1
-|        #essential text|INFORM/NINFOM|(S)TE|1,1
+|        span:E[text]|INFORM/NINFOM|(S)TE|1,1
 |vertical length|VERLEN|RE|0,1
 |visual prominence|CONVIS|EN|0,1
 |scale minimum|SCAMIN|IN|0,1
@@ -42,7 +42,7 @@ h|Attribute h|Acronym h|Type h|Mult.
 |    file locator||(S)TE|0,1
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    #essential language||(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |pictorial representation|PICREP|TE|0,1
 |===

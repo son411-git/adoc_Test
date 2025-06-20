@@ -7,8 +7,8 @@ h|Attribute h|Acronym h|Type h|Mult.
 
 |drawing instruction||TE|0,*
 |**feature name**||C|0,*
-|    #essential language||(S)TE|1,1
-|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1
 |    name usage||(S)EN|0,1
 |===
 

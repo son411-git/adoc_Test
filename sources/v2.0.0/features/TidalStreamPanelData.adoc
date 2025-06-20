@@ -6,28 +6,28 @@
 h|Attribute h|Acronym h|Type h|Mult.
 
 |**feature name**||C|0,*
-|    #essential language||(S)TE|1,1
-|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1
 |    name usage||(S)EN|0,1
 |interoperability identifier||URN|0,1
-|#essential station name||TE|1,1
+|span:E[station name]||TE|1,1
 |station number||TE|0,1
-|**#essential tidal stream panel values**||C|1,*
-|    #essential reference tide||(S)EN|1,1
-|    #essential reference tide type||(S)EN|1,1
+|**span:E[tidal stream panel values]**||C|1,*
+|    span:E[reference tide]||(S)EN|1,1
+|    span:E[reference tide type]||(S)EN|1,1
 |    stream depth||(S)RE|0,1
-|**    #essential tidal stream value**||(S)C|1,*
-|**        #essential orientation**||(S)C|1,1
+|**    span:E[tidal stream value]**||(S)C|1,*
+|**        span:E[orientation]**||(S)C|1,1
 |            orientation uncertainty||(S)RE|0,1
-|            #essential orientation value|ORIENT|(S)RE|1,1
-|        #essential speed maximum|CURVEL|(S)RE|1,1
-|        #essential time relative to tide||(S)RE|1,1
+|            span:E[orientation value]|ORIENT|(S)RE|1,1
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1
+|        span:E[time relative to tide]||(S)RE|1,1
 |scale minimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    file locator||(S)TE|0,1
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    #essential language||(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

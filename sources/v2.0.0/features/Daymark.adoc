@@ -6,12 +6,12 @@
 h|Attribute h|Acronym h|Type h|Mult.
 
 |category of special purpose mark|CATSPM|EN|0,*
-|#essential colour|COLOUR|EN|1,*
+|span:E[colour]|COLOUR|EN|1,*
 |colour pattern|COLPAT|EN|0,1
 |elevation|ELEVAT|RE|0,1
 |**feature name**||C|0,*
-|    #essential language||(S)TE|1,1
-|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1
 |    name usage||(S)EN|0,1
 |**fixed date range**||C|0,1
 |    date end|DATEND|(S)TD|0,1
@@ -20,21 +20,21 @@ h|Attribute h|Acronym h|Type h|Mult.
 |interoperability identifier||URN|0,1
 |nature of construction|NATCON|EN|0,*
 |**periodic date range**||C|0,*
-|    #essential date end|DATEND|(S)TD|1,1
-|    #essential date start|DATSTA|(S)TD|1,1
+|    span:E[date end]|DATEND|(S)TD|1,1
+|    span:E[date start]|DATSTA|(S)TD|1,1
 |radar conspicuous|CONRAD|BO|0,1
 |status|STATUS|EN|0,*
-|#essential topmark/daymark shape|TOPSHP|EN|1,1
+|span:E[topmark/daymark shape]|TOPSHP|EN|1,1
 |vertical length|VERLEN|RE|0,1
 |**shape information**||C|0,*
 |    language||(S)TE|0,1
-|    #essential text|INFORM/NINFOM|(S)TE|1,1
+|    span:E[text]|INFORM/NINFOM|(S)TE|1,1
 |scale minimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    file locator||(S)TE|0,1
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    #essential language||(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |pictorial representation|PICREP|TE|0,1
 |===

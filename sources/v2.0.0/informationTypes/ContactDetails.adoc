@@ -1,27 +1,26 @@
-===== Definition
-
-
-
-[cols="1,1,1,1", options="header"]
+.Contact Details의 정의
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+4+h|*Definition:* Information on how to reach a person or organisation by postal, internet, telephone, telex and radio systems.
+4+h|*Primitives:* None
+h|Attribute h|Acronym h|Type h|Mult.
 
-|callSign|CALSGN|TE|0,1
-|communicationChannel|COMCHA|TE|0,*
-|contactInstructions||TE|0,1
-|fixedDateRange||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|frequencyPair||C|0,*
-|    frequencyShoreStationReceives||(S)IN|0,1
-|    frequencyShoreStationTransmits|SIGFRQ|(S)IN|1,1
-|mMSICode||TE|0,1
-|onlineResource||C|0,*
+|call sign|CALSGN|TE|0,1
+|communication channel|COMCHA|TE|0,*
+|contact instructions||TE|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|**frequency pair**||C|0,*
+|    frequency shore station receives||(S)IN|0,1
+|    span:E[frequency shore station transmits]|SIGFRQ|(S)IN|1,1
+|mmsi code||TE|0,1
+|**online resource**||C|0,*
 |    headline||(S)TE|0,1
-|    linkage||(S)URI|1,1
-|    nameOfResource||(S)TE|0,1
-|telecommunications||C|0,*
-|    contactInstructions||(S)TE|0,1
-|    telecommunicationIdentifier||(S)TE|1,1
-|    telecommunicationService||(S)EN|0,1
+|    span:E[linkage]||(S)URI|1,1
+|    name of resource||(S)TE|0,1
+|**telecommunications**||C|0,*
+|    contact instructions||(S)TE|0,1
+|    span:E[telecommunication identifier]||(S)TE|1,1
+|    telecommunication service||(S)EN|0,1
 |===

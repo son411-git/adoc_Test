@@ -6,15 +6,15 @@
 h|Attribute h|Acronym h|Type h|Mult.
 
 |interoperability identifier||URN|0,1
-|#essential reference year for magnetic variation|RYRMGV|TD|1,1
-|#essential value of annual change in magnetic variation|VALACM|RE|1,1
-|#essential value of magnetic variation|VALMAG|RE|1,1
+|span:E[reference year for magnetic variation]|RYRMGV|TD|1,1
+|span:E[value of annual change in magnetic variation]|VALACM|RE|1,1
+|span:E[value of magnetic variation]|VALMAG|RE|1,1
 |scale minimum|SCAMIN|IN|0,1
 |**information**|INFORM|C|0,*
 |    file locator||(S)TE|0,1
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    #essential language||(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

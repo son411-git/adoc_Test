@@ -5,8 +5,8 @@
 4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential text offset bearing||IN|1,1
-|#essential text offset distance||IN|1,1
+|span:E[text offset bearing]||IN|1,1
+|span:E[text offset distance]||IN|1,1
 |text rotation||BO|0,1
 |text type||EN|1,2
 |scale minimum|SCAMIN|IN|0,1

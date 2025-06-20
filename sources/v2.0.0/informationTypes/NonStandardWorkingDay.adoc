@@ -1,21 +1,22 @@
-===== Definition
-
-[cols="1,1,1,1", options="header"]
+.Non-Standard Working Day의 정의
+[cols="3,2,1,1", options="header"]
 |===
-|S-101 Attribute |S-57 Acronym |Type |Multiplicity
+4+h|*Definition:* Days when many services are not available. Often days of festivity or recreation or public holidays when normal working hours are limited, especially a national or religious festival, etc.
+4+h|*Primitives:* None
+h|Attribute h|Acronym h|Type h|Mult.
 
-|dateFixed||TD|0,*
-|dateVariable||TE|0,*
-|fixedDateRange||C|0,1
-|    dateEnd|DATEND|(S)TD|0,1
-|    dateStart|DATSTA|(S)TD|0,1
-|periodicDateRange||C|0,*
-|    dateEnd|DATEND|(S)TD|1,1
-|    dateStart|DATSTA|(S)TD|1,1
-|information|INFORM|C|0,*
-|    fileLocator||(S)TE|0,1
-|    fileReference|TXTDSC|(S)TE|0,1
+|date fixed||TD|0,*
+|date variable||TE|0,*
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|**periodic date range**||C|0,*
+|    span:E[date end]|DATEND|(S)TD|1,1
+|    span:E[date start]|DATSTA|(S)TD|1,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    language||(S)TE|1,1
-|    text|INFORM|(S)TE|0,1
+|    span:E[language]||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===

@@ -5,32 +5,32 @@
 4+h|*Primitives:* point
 h|Attribute h|Acronym h|Type h|Mult.
 
-|#essential category of radar transponder beacon|CATRTB|EN|1,1
+|span:E[category of radar transponder beacon]|CATRTB|EN|1,1
 |**feature name**||C|0,*
-|    #essential language||(S)TE|1,1
-|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1
 |    name usage||(S)EN|0,1
 |**fixed date range**||C|0,1
 |    date end|DATEND|(S)TD|0,1
 |    date start|DATSTA|(S)TD|0,1
 |interoperability identifier||URN|0,1
 |**periodic date range**||C|0,*
-|    #essential date end|DATEND|(S)TD|1,1
-|    #essential date start|DATSTA|(S)TD|1,1
+|    span:E[date end]|DATEND|(S)TD|1,1
+|    span:E[date start]|DATSTA|(S)TD|1,1
 |**radar wave length**||C|0,2
-|    #essential radar band||(S)TE|1,1
-|    #essential wave length value|Radar Wave Length|(S)RE|1,1
+|    span:E[radar band]||(S)TE|1,1
+|    span:E[wave length value]|Radar Wave Length|(S)RE|1,1
 |**sector limit**||C|0,1
-|**    #essential sector limit one**|SECTR1|(S)C|1,1
-|        #essential sector bearing|SECTR1/SECTR2|(S)RE|1,1
+|**    span:E[sector limit one]**|SECTR1|(S)C|1,1
+|        span:E[sector bearing]|SECTR1/SECTR2|(S)RE|1,1
 |        sector line length||(S)RE|0,1
-|**    #essential sector limit two**|SECTR2|(S)C|1,1
-|        #essential sector bearing|SECTR1/SECTR2|(S)RE|1,1
+|**    span:E[sector limit two]**|SECTR2|(S)C|1,1
+|        span:E[sector bearing]|SECTR1/SECTR2|(S)RE|1,1
 |        sector line length||(S)RE|0,1
 |signal group|SIGGRP|TE|0,1
 |**signal sequence**|SIGSEQ|C|0,*
-|    #essential signal duration||(S)RE|1,1
-|    #essential signal status||(S)EN|1,1
+|    span:E[signal duration]||(S)RE|1,1
+|    span:E[signal status]||(S)EN|1,1
 |status|STATUS|EN|0,*
 |value of maximum range|VALMXR|RE|0,1
 |scale minimum|SCAMIN|IN|0,1
@@ -38,7 +38,7 @@ h|Attribute h|Acronym h|Type h|Mult.
 |    file locator||(S)TE|0,1
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    #essential language||(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

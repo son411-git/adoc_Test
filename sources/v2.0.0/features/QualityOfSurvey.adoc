@@ -8,8 +8,8 @@ h|Attribute h|Acronym h|Type h|Mult.
 |depth range maximum value|DRVAL2|RE|0,1
 |depth range minimum value|DRVAL1|RE|0,1
 |**features detected**||C|0,1
-|    #essential least depth of detected features measured||(S)BO|1,1
-|    #essential significant features detected||(S)BO|1,1
+|    span:E[least depth of detected features measured]||(S)BO|1,1
+|    span:E[significant features detected]||(S)BO|1,1
 |    size of features detected||(S)RE|0,1
 |full seafloor coverage achieved||BO|0,1
 |interoperability identifier||URN|0,1
@@ -21,17 +21,17 @@ h|Attribute h|Acronym h|Type h|Mult.
 |quality of vertical measurement|QUASOU|EN|0,*
 |scale value maximum|SCVAL1|IN|0,1
 |scale value minimum|SCVAL2|IN|0,1
-|#essential survey authority|SURATH|TE|1,1
-|**#essential survey date range**||C|1,1
-|    #essential date end|DATEND|(S)TD|1,1
+|span:E[survey authority]|SURATH|TE|1,1
+|**span:E[survey date range]**||C|1,1
+|    span:E[date end]|DATEND|(S)TD|1,1
 |    date start|DATSTA|(S)TD|0,1
-|#essential survey type|SURTYP|EN|1,*
+|span:E[survey type]|SURTYP|EN|1,*
 |technique of vertical measurement|TECSOU|EN|0,*
 |**information**|INFORM|C|0,*
 |    file locator||(S)TE|0,1
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    #essential language||(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
 

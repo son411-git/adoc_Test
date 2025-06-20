@@ -8,8 +8,8 @@ h|Attribute h|Acronym h|Type h|Mult.
 |category of built-up area|CATBUA|EN|0,1
 |condition|CONDTN|EN|0,1
 |**feature name**||C|0,*
-|    #essential language||(S)TE|1,1
-|    #essential name|OBJNAM/NOBJNM|(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1
 |    name usage||(S)EN|0,1
 |height|HEIGHT|RE|0,1
 |interoperability identifier||URN|0,1
@@ -21,7 +21,7 @@ h|Attribute h|Acronym h|Type h|Mult.
 |    file locator||(S)TE|0,1
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1
 |    headline||(S)TE|0,1
-|    #essential language||(S)TE|1,1
+|    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |pictorial representation|PICREP|TE|0,1
 |in the water||BO|0,1
