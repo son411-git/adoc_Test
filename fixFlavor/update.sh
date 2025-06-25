@@ -1,0 +1,1 @@
+docker cp iho/ meta:/usr/local/bundle/gems/metanorma-iho-1.1.7/lib/isodoc/
