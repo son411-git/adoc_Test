@@ -1,6 +1,23 @@
 // tag::ArchipelagicSeaLaneArea[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* span:F[Archipelagic Sea Lane Area]는 군도수로의 경계를 면(Surface)형태로 입력할때 사용
+* span:F[Archipelagic Sea Lane]를 사용하여 span:R[ASL Aggregation]을 맺지 않는 경우 span:A[nationality] 는 필수임.
+* 이때 ECDIS에서 이름이 표시되어야 하는 경우, 이름은 span:A[feature name]으로 입력
+
+===== Example
+
+.Archipelagic Sea Lane Area의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|ASL I
+|    name usage||(S)EN|0,1| 1 : default name display
+|nationality|NATION|TE|0,1|ID
+|===
 
 ---
 // end::ArchipelagicSeaLaneArea[]

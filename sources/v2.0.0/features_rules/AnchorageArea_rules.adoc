@@ -1,34 +1,34 @@
 // tag::AnchorageArea[]
 ===== Remark
 
-- 정박구역의 이름이나 숫자는 복합속성 #A "Feature name"에 입력하고 정박 종류 및 제한사항 등 부가정보(외부 참조 및 그림파일 포함)는 #A "Information" 속성으로 입력
-- 명확한 경계가 없는 개별 추천 정박지는 Point type의 #F "Anchorage Area"로 입력하고 속성 #A "Category of anchorage" = 1(제한되지 않은 정박), #A "Status" = 3(추천)으로 인코딩
-- 관계기관에 의해 정의되지 않았으나 정박지로 보고된 곳은 surface 타입으로 인코딩해서는 안 되며, #A "Category of anchorage" = 15(보고된 정박지)로 입력 
-- 다수의 소형선이 정박하는 구역의 경우 Surface타입의 #F "Anchorage Area"로 입력하고 #A "Category of anchorage" = 8(Small Craft mooring area)로 입력
-- 각 속성이 S-57에서 두 개 이상으로 입력될 경우 S-101에서 #A "Category of anchorage"를 두 개 이상으로 입력
-- 임시정박지의 경우 #A "Category of anchorage" = 1(unrestricted anchorage)로 입력하고 #A "Status" = 7(temporary)로 입력
+* 명확한 경계가 없는 추천 정박지는 span:F[Anchorage Area][P]로 입력하고 span:A[category of anchorage] = 1(unrestricted anchorage), span:A[status] = 3(recommended)으로 입력
+* 관계기관에 의해 정의되지 않았으나 정박지로 보고된 곳은 점(Point) 형태로 입력해야하며, span:A[category of anchorage] = 15(reported anchorage)로 입력 
+* 다수의 소형선이 계류 장소가 있는 정박지구역의 경우 span:F[Mooring Area][S]로 입력하고 span:A[category of mooring area] = 1(Small craft mooring area)로 입력
+* 임시정박지의 경우 span:A[category of anchorage] = 1(unrestricted anchorage)로 입력하고 span:A[status] = 7(temporary)로 입력
 
 ===== Example
+
+.Anchorage Area의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Anchorage|CATACH|EN|0,*| 1: unrestricted anchorage  
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Bangdo
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 방도
-|    Name Usage||(S)EN|0,1| 2: alternate name display
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    Text|INFORM/NINFOM|(S)TE|0,1|500t Downward Ship Anchor
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 500톤 이하의 선박 정박
-|Status|STATUS|EN|0,*|3:recommended 
+|category of anchorage|CATACH|EN|0,*| 1: unrestricted anchorage  
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Bangdo
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 방도
+|    name usage||(S)EN|0,1| 2 : alternate name display
+|**information**|INFORM|C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng 
+|    text|INFORM/NINFOM|(S)TE|0,1| Anchoring of vessels of 500 tons or less
+|**information**|INFORM|C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 500톤 이하의 선박 정박
+|status|STATUS|EN|0,*|3: recommended 
 |===
 
 ---
