@@ -1,34 +1,30 @@
 // tag::Building[]
 ===== Remark
-- #F "Landmark" 또는 #F "Silo/tank"가 아닌 일반적인 건물은 #F "Building"을 사용하여 인코딩
-- 건물이 항로표지의 구조물로 활용되는 경우 #R "Structure /Equipment" 관계 설정 +
-   ※ Relation 페이지 참조
-- 종교 건물의 탑 등이 항해에 유용한 육상물표인 경우 건물은 “Building”으로 탑은 #F "Landmark"로 입력
-- 선박이 드나들 수 있는 지붕 구조의 건물은 “Structure Over Navigable Water”로 인코딩
-- #F "Building" 입력 시 #A "Function" 필수로 입력 – 알 수 없는 경우 (undefined) 입력   ※ #F "Landmark" 인코딩 기준 참조
-- 가항수역에 위치한 건물은 #F "LandArea"를 인코딩할 필요가 없으며, #A "In the water"=true 입력
-- 건물 명칭이 #A "INFORM"에 입력된 경우, #A "Feature name" 속성으로 수정필요
+
+* span:F[Landmark] 또는 span:F[Silo/tank]가 아닌 일반적인 건물은 span:F[Building]을 사용하여 입력
+* span:F[Building]이 항로표지의 구조물 객체로 활용되는 경우 span:R[Structure/Equipment]를 사용하여 장비(Equipment) 객체와 연관되어야 함.
+* 선박이나 화물을 보호하기 위해 항해 가능한 수역 위에 세워지거나 물 위로 확장된 보트하우스와 같은 지붕이 있는 건물은 span:F[Structure Over Navigable Water]로 입력 
+* 파손된 건물은 span:A[condition] = (2 : ruined)로 입력
+* 항해가 가능한 수역에 위치한 span:F[Building]은 말뚝, 기둥과 같은 지지 구조물 또는 span:F[LandArea]를 입력할 필요가 없으며, span:A[in the water]= (true)를 입력
+* 일반 창고 또는 환적 창고는 span:A[function] = (15 : transit shed/warehouse)로 입력
+* 국내 지침 : 종교 건물은 입력하지 않음 (종교와 관련된 span:A[function]의 속성값 20 ~ 27까지 사용하지 않음)
 
 ===== Example
+
+.Building의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Busan
-|    Name Usage||(S)EN|0,1|1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 부산 
-|    Name Usage||(S)EN|0,1| 2: alternate name display 
-|Function|FUNCTN|EN|0,*| 1: urban area
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문) 
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng 
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Busan Regional Customs
+|    name usage||(S)EN|0,1|1 : default name display
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산본부세관
+|    name usage||(S)EN|0,1| 2 : alternate name display 
+|function|FUNCTN|EN|0,*| 3 : customs office
 |===
 
 ---

@@ -1,24 +1,25 @@
 // tag::BuiltUpArea[]
 ===== Remark
 
-- 대축척에서 도심지 영역(Area)이나 소축척에서 도심지 위치(Point)를 표현
-- 물 위로 확장된 경우, 해안선을 따라 분할할 필요는 없으며 #A "In the water"=true 입력
-- 단일 건물이 도심지로 입력되어 있다면 #F "Building"로 변경
+* 시가지 지역은 대축척에서는 면(surface) 형태로, 소축척에서는 점(Point) 형태로 입력
+* 단일 건물은 span:F[Building]로 입력해야 함
 
 ===== Example
+
+.Built-Up Area의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Built-Up Area|CATBUA|EN|0,1|1: urban area
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Busan 
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 부산
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|category of built-up area|CATBUA|EN|0,1|1: urban area
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Busan 
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산
+|    name usage||(S)EN|0,1| 2 : alternate name display
 |===
 
 ---
