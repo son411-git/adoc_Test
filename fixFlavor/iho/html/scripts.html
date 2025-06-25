@@ -1,0 +1,215 @@
+<!-- scripts.html: 기존 TOC toggle 제거 + 커스텀 TOC 트리 생성 -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // ✅ 기존 toggle div 제거
+  const toggle = document.getElementById('toggle');
+  toggle && toggle.remove();
+
+  // ✅ 기존 toggle 관련 스크립트 제거
+  const scripts = document.querySelectorAll('script');
+  scripts.forEach(s => {
+    if (s.textContent.includes('TOC toggle animation')) s.remove();
+  });
+
+  // ✅ 커스텀 TOC 트리 구조 생성
+  const toc = document.querySelector('#toc > ul');
+  if (!toc) return;
+  const items = Array.from(toc.children);
+
+  let tree = [];
+  let curH1 = null, curH2 = null;
+  for (let i = 0; i < items.length; i++) {
+    const li = items[i];
+    if (li.classList.contains('h1')) {
+      curH1 = {li, children: []};
+      tree.push(curH1);
+      curH2 = null;
+    } else if (li.classList.contains('h2')) {
+      curH2 = {li, children: []};
+      if (curH1) curH1.children.push(curH2);
+    } else if (li.classList.contains('h3')) {
+      let children = [];
+      let j = i + 1;
+      while (j < items.length && items[j].classList.contains('h4')) {
+        children.push({li: items[j], children: []});
+        j++;
+      }
+      if (curH2) curH2.children.push({li, children});
+      i += children.length;
+    }
+  }
+
+  toc.innerHTML = '';
+  function buildUL(nodes, level=0) {
+    const ul = document.createElement('ul');
+    if (level === 0) ul.style.paddingLeft = '0';
+    nodes.forEach(node => {
+      const li = node.li;
+      li.style.listStyle = 'none';
+      if (node.children && node.children.length > 0) {
+        let a = li.querySelector('a');
+        if (a) {
+          a.style.cursor = 'pointer';
+          a.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const u = li.querySelector('ul');
+            li.classList.toggle('collapsed');
+            u && (u.style.display = li.classList.contains('collapsed') ? 'none' : '');
+          };
+        }
+        li.appendChild(buildUL(node.children, level+1));
+      } else if (li.classList.contains('h3') || li.classList.contains('h4')) {
+        let a = li.querySelector('a');
+        if (a) {
+          a.style.cursor = 'pointer';
+          a.onclick = function(e) {
+            document.querySelectorAll('#toc li.h3.active, #toc li.h4.active').forEach(el => el.classList.remove('active'));
+            li.classList.add('active');
+            if (a.href) location.href = a.href;
+          };
+        }
+      }
+      ul.appendChild(li);
+    });
+    return ul;
+  }
+  toc.appendChild(buildUL(tree));
+
+  // ✅ TOC 스타일 주입
+  const style = document.createElement('style');
+  style.textContent = `
+nav {
+  background: linear-gradient(180deg, #d2edfc 0%, #e7f5fc 100%) !important;
+  border-right: 1.5px solid #b2d5e8;
+}
+#toc li.h1 {
+  padding-left: 0 !important;
+  margin-left: -1em !important;
+}
+#toc li > ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  border-radius: 0;
+  box-shadow: none;
+}
+.h1, .h2 {
+  display: block;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgba(246, 250, 255, 0.97);
+  color: #174772;
+  border-radius: 12px;
+  margin: 4px 0 0 4px;
+  padding: 7px 14px;
+  min-width: 180px;
+  box-shadow: 0 1px 10px 0 rgba(100,170,200,0.02);
+  border: none;
+  transition: none;
+}
+.h2, .h3, .h4 {
+  margin-left: 0 !important;
+}
+.h2 { padding-left: 4px !important; }
+.h3 { padding-left: 14px !important; font-size: 0.90em; font-weight: 500; }
+.h4 {
+  padding-left: 24px !important;
+  font-size: 0.83em;
+  font-weight: normal;
+  background: rgba(237, 245, 255, 0.86);
+  color: #386089;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.h3, .h4 {
+  display: block;
+  background: rgba(246, 250, 255, 0.97);
+  color: #174772;
+  border-radius: 12px;
+  white-space: normal;
+  transition: none;
+  padding: 3px 0;
+}
+#toc li.h3:hover,
+#toc li.h4:hover,
+#toc li.h3.active,
+#toc li.h4.active {
+  background: #f7e082 !important;
+  color: #174772 !important;
+  font-weight: bold;
+  box-shadow: 0 2px 10px 0 rgba(220,180,80,0.07);
+}
+.h2:hover, .h1:hover {
+  background: none !important;
+  color: inherit !important;
+}
+.toc-toggle, .toc-arrow, .h3::before, .h2::before, .h4::before {
+  display: none !important;
+  content: none !important;
+}
+`;
+  document.head.appendChild(style);
+
+  // ✅ 하위 항목 기본 닫기
+  document.querySelectorAll('#toc .h2').forEach(li => {
+    const ul = li.querySelector('ul');
+    if (ul) { ul.style.display = 'none'; li.classList.add('collapsed'); }
+  });
+
+  // ✅ 로고 교체
+  const logo = document.querySelector('.coverpage-logo');
+  if (logo) {
+    logo.innerHTML = '<img src="sources/v2.0.0/images/Cway7.png" style="width:300px;">';
+  }
+
+  // ✅ docnumber 제거
+  document.querySelectorAll('span.docnumber').forEach(span => {
+    span.innerHTML = '';
+  });
+
+  // ✅ .wrapper-top 스타일 주입
+  const wrapperStyle = document.createElement('style');
+  wrapperStyle.textContent = `
+.wrapper-top {
+  background: linear-gradient(160deg, #153f61 0%, #206c98 30%, #1fa8c4 100%) !important;
+  color: #ffffff;
+  padding: 3em 1em 2.5em;
+  margin: 2em auto;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: block;
+  min-height: 420px;
+  box-sizing: border-box;
+}
+.wrapper-top > div {
+  max-width: 100%;
+  width: auto;
+  text-align: center;
+}
+.wrapper-top .coverpage-doc-identity,
+.wrapper-top .coverpage-logo,
+.wrapper-top .coverpage-tc-name {
+  margin: 0 auto 1.2em;
+  text-align: center;
+}
+.coverpage-title .title-first {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+.coverpage-logo {
+  margin-top: -330px;
+  z-index: 2;
+  position: relative;
+}
+`;
+  document.head.appendChild(wrapperStyle);
+});
+</script>
