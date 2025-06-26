@@ -1,62 +1,333 @@
 // tag::Wreck[]
 ===== Remark
-- 침선은 표<침선 기본 속성입력>의 속성조합 중 하나를 인코딩
-- 표<침선 기본 속성입력>에서 ‘ / ’ 기호는 인코딩해서는 안 되며, 빈칸은 해당 속성에 맞는 값을 입력
-- 최소 수심 #A "Value of sounding"을 모르는 경우 #A "quality of vertical measurement" = 2(수심 또는 최소 수심 모름) 입력
-- 최소 수심 #A "Value of sounding"을 알고 있는 경우 #A "quality of vertical measurement" = 6(알려진 최저 수심) 입력
-- 속성 #A "height"는 #A "water level effect" = 1(partly submerged at high water) 또는 2(always dry)인 경우에만 입력
-- #A "category of wreck"과 #A "value of sounding" 속성은 동시에 입력하지 않는 것이 원칙이나S-57 역변환 시 데이터 누락이 발생하므로 현재는 모두 변환·입력 됨 
-(향후에 기준 협의 필요)
+* 침선은 <<Wreck_T1,[표 - Wreck 속성 입력 기준]>>을 참고하여 입력
+** 표에서 '/' 로 표시된 속성은 입력해서는 안 되며, 빈 칸은 상황에 맞게 추가로 입력할 수 있음
+** span:A[category of wreck] 이나 span:A[value of sounding] 둘 중 하나는 반드시 입력해야 함
+//REVIEW : 추후수정필요
+*** span:A[category of wreck]과 span:A[value of sounding] 은 동시에 입력하지 않는 것이 원칙이나, S-57 역변환 시 데이터 누락이 발생하므로 변환 결과에서는 모두 입력된 상태임
+** 최소 수심을 알 수 있는 경우 span:A[quality of vertical measurement] = 6 span:D[least depth known]입력
+** 수심을 알 수 없는 경우 주변 span:F[Depth Area]의 수심 범위에 포함된다면 span:A[exposition of sounding] = 1 span:D[within the range of ther surrounding depth area]을 입력
+//REVIEW: 해당 부분 삭제되도 되는거 아닌지?
+// ** 최소 수심 span:A[value of sounding]을 모르는 경우 span:A[quality of vertical measurement] = 2 span:D[depth or least depth unknown]입력
+** span:A[height]는 span:A[water level effect] = 1 span:D[partly submerged at high water] 또는 2 span:D[always dry]인 경우에만 입력
 
-[cols="5,30,15,10,10,10,10,10", options="header"]
-|===
-|NO |침선 종류 |S-4 |INT1 |Category of wreck |Water level effect |Quality of vertical measurement |Technique of vertical measurement
+//
+* 아래에 해당하는 경우 <<Wreck_T2,[표 - Wreck의 default clearance depth 입력 기준]>>을 참고해서 span:A[default clearance depth]를 **반드시** 입력해야 함 +
+( 표에서 **Least Depth**는 객체를 완전히 덮기 위해 필요한 span:F[Depth Area] 또는 span:F[Dredged Area]들 중 **가장 얕은 영역**의 span:A[depth range minimum value]를 의미함 )
+** span:A[category of wreck]의 값이 4 span:D[wreck showing mast/masts] 또는 5 span:D[wreck showing any portion of hull or superstructure] 이고, span:A[height]가 _(Undefined)_ 인 경우
+** span:A[value of sounding]이 _Empty(null)_ 인 경우
 
-|1 |선박의 전체나 상부구조물의 일부만 보임 |B–422.2 |K24, K20 |5 |1 or 2 or 4 |/ |/
-|2 |간출 |B–422.2 |K24, K21 |4 or 5 |4 | |
-|3 |수면에 씻김 | | | |5 | |
-|4 |고조에서 뚜렷만 보임 |B–422.2 |K25 |4 or 5 |1 |/ |/
-|5 |저조에서 뚜렷만 보임 |B–422.2 |K25 |4 |4 | |
-|6 |측정한 수심 |B–422.4 |K26 | |3 |6 |
-|7 |와이어 소해작업으로 측정된 수심 |B–422.3 |K27 | |3 |6 |
-|8 |다이버가 측정한 수심 |B–422.3 |K27 | |3 | 6 |4
-|9 |수심 모름,유관제작당국에서위험하다고 판단|B–422.6 |K28 |2 |3 |2 |/
-|10 |수심 모름,유관제작당국에서위험하지 않다고 판단 |B–422.6 |K29 |1 |3 |2 |/
-|11 |수심 모름,안전간격확보 |B–422.5 |K30 | |3 |7 |/
-|12 |침선잔재구역역 |B–422.8 |K31 |3 | | |
-|13 |보고되었으나 확인되지 않음 |B–424.5 |I3.1, I3.2 | | |9 |
+
+//
+include::./common/surroundingDepth.adoc[tag=surroundingDepth]
+
+
+[[Wreck_T1]]
+.Wreck 속성 입력 기준
+[cols="30,15,10,10,10,10,10", options="header"]
 |===
-<침선 기본 속성입력>
+|침선 종류 |S-4 |INT1 |Category of wreck |Water level effect |Quality of vertical measurement |Technique of vertical measurement
+
+|(고조일 때) 선박의 전체나 상부구조물의 일부가 보임
+^|B–422.2
+^|K24, K20
+^|5
+^|1, 2
+^|/
+^|/
+
+|(저조일 때) 선박의 전체나 상부구조물의 일부가 보임
+^|B–422.2
+^|K24, K21
+^|5
+^|4
+^|
+^|
+
+|간출
+^|B–422.2
+^|K24, K21
+^|4, 5
+^|4
+^|
+^|
+
+|수면에 씻김
+^|
+^|
+^|
+^|5
+^|
+^|
+
+|(고조일 때) 돛대만 보임
+^|B–422.2
+^|K25
+^|4, 5
+^|1
+^|/
+^|/
+
+|(저조일 때) 돛대만 보임
+^|B–422.2
+^|K25
+^|4
+^|4
+^|
+^|
+
+|측정한 수심
+^|B–422.4
+^|K26
+^|
+^|3
+^|1, 6, _(Undefined)_
+^|
+
+|와이어 소해작업으로 측정된 수심
+^|B–422.3
+^|K27
+^|
+^|3
+^|6
+^|
+
+|다이버가 측정한 수심
+^|B–422.3
+^|K27
+^|
+^|3
+^|1, 6
+^|4
+
+|수심 모름,유관제작당국에서위험하다고 판단
+^|B–422.6
+^|K28
+^|2
+^|3
+^|2, _(Undefined)_
+^|/
+
+|수심 모름,유관제작당국에서위험하지 않다고 판단
+^|B–422.6
+^|K29
+^|1
+^|3
+^|2, _(Undefined)_
+^|/
+
+|수심 모름,안전간격확보
+^|B–422.5
+^|K30
+^|
+^|3
+^|7
+^|/
+
+|침선의 잔해
+^|B–422.8
+^|K31
+^|3
+^|
+^|
+^|
+
+|보고되었으나 확인되지 않음
+^|B–424.5
+^|I3.1, I3.2
+^|
+^|
+^|9
+^|
+
+|===
+
+
+[[Wreck_T2]]
+.Wreck의 default clearance value 입력 기준
+[cols="14,14,14,14,14,30", options="header"]
+|===
+6+^h| 중첩되는 모든 Depth/Dredged Area의 depth range minimum value를 알고 있는 경우 
+
+^h| category of wreck 
+^h| exposition of sounding
+^h| height
+^h| value of sounding
+^h| water level effect
+^h| default clearance value 
+
+// 1
+^| 4, 5
+^| /
+^| _Known_
+^| /
+^| 1,2,_(Unknown)_
+^| /
+
+// 2
+^| /
+^|
+^| /
+^| _Known_
+^| 3, 4, 5, _(Unknown)_
+^| /
+
+// 3
+^| /
+^| 1,3
+^| /
+^| _(Unknown)_
+^| 3
+^| *Least Depth*
+
+// 4 
+^| 
+^| 1,3
+^| /
+^| /
+^| 3
+^| *Least Depth*
+
+// 5
+^| 1
+^|
+^| /
+^| /
+^| 1, 2, 4, 5, _(Unknown)_
+^| *20.1* or {*Least Depth – 66*} +
+   (큰 값을 선택) 
+
+// 6
+^| 1
+^| 2, _Empty(null)_
+^| /
+^| /
+^|
+^| *20.1* or {*Least Depth – 66*} +
+   (큰 값을 선택) 
+
+// 7
+^| /
+^| 2, _Empty(null)_
+^| /
+^| _(Unknown)_
+^| 3, 5
+^| *0*
+
+// 8
+^| /
+^| 2, _Empty(null)_
+^| /
+^| _(Unknown)_
+^| 4, _(Unknown)_
+^| *-15*
+
+// 9
+^| 2, 3, 4, 5, _(Unknown)_
+^| 
+^| /
+^| /
+^| 1, 2, 4, 5, _(Unknown)_
+^| *-15*
+
+// 10
+^| 2, 3, 4, 5, _(Unknown)_
+^| 2, _Empty(null)_
+^| /
+^| /
+^| 
+^| *-15*
+
+6+^h| Unsurveyed Area와 중첩되거나, Depth/Dredged Area의 depth range minimum value를 알 수 없는 경우
+
+^h| category of wreck 
+^h| exposition of sounding
+^h| height
+^h| value of sounding
+^h| water level effect
+^h| default clearance value 
+
+// 11
+^| 1
+^|
+^| /
+^| /
+^| 3, _(Unknown)_
+^| *20.1*
+
+// 12
+^| /
+^|
+^| /
+^| _(Unknown)_
+^| 3, 5
+^| *0*
+
+// 13
+^| /
+^|
+^| /
+^| _(Unknown)_
+^| 4, _(Unknown)_
+^| *-15*
+
+// 14
+^| _(Unknown)_
+^|
+^| /
+^| /
+^| 3, 5
+^| *0*
+
+// 15
+^| 2, 3, 4, 5
+^|
+^| /
+^| /
+^| 3, 5
+^| *-15*
+
+// 16
+^| 2, 3, 4, 5, _(Unknown)_
+^|
+^| /
+^| /
+^| 4, _(Unknown)_
+^| *-15*
+
+|===
+
+
 
 
 ===== Example
-[cols="30,25,10,10,25", options="header"]
+
+.Wreck의 인코딩 예시
+[%header, cols="30,25,10,10,25" ]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Wreck|CATWRK|EN|0,1| 2: dangerous wreck
-|Exposition of Sounding|EXPSOU|EN|0,1| 2: shoaler than the range of depth of the surrounding depth area
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Nagwon No1 
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 낙원 1호
-|    Name Usage||(S)EN|0,1| 2: alternate name display
-|Quality of Vertical Measurement|QUASOU|EN|0,*|6: least depth know 
-|Status|STATUS|EN|0,*| <undefined>
-|Technique of Vertical Measurement|TECSOU|EN|0,*| 3: found by multi beam
-|Value of Sounding|VALSOU|RE|0,1| 0.8
-|#essential Water Level Effect|WATLEV|EN|1,1| 3: always underwater/submerged
-|Scale Minimum|SCAMIN|IN|0,1| 49999
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    Text|INFORM/NINFOM|(S)TE|0,1| Fishing boat, 4ton, sunken date 1900ZT, 6 Oct. 2005
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 군산선적 연안자망 4톤, 침몰일시 2005.10.6 19:00
-
+|exposition of sounding|EXPSOU|EN|0,1| 2 span:D[shoaler than the range of depth of the surrounding depth area]
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Nagwon No1 
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 낙원 1호
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|quality of vertical measurement|QUASOU|EN|0,*|6 span:D[least depth known]
+|technique of vertical measurement|TECSOU|EN|0,*| 3 span:D[found by multi beam]
+|value of sounding|VALSOU|RE|0,1| 0.8
+|span:E[water] level effect|WATLEV|EN|1,1| 3 span:D[always underwater/submerged]
+|scale minimum|SCAMIN|IN|0,1| 49999
+|**information**|INFORM|C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng 
+|    text|INFORM/NINFOM|(S)TE|0,1| Fishing boat, 4ton, sunken date 1900ZT, 6 Oct. 2005
+|**information**|INFORM|C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 군산선적 연안자망 4톤, 침몰일시 2005.10.6 19:00
+|span:E[surrounding depth]||RE|1,1| 2
 |===
 
 ---

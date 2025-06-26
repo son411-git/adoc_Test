@@ -1,23 +1,29 @@
 // tag::WindTurbine[]
 ===== Remark
+* 풍력터빈은 span:F[Wind Turbine]으로 입력 ( span:F[Landmark] 와는 구별해서 입력 )
+** 해상풍력터빈은 span:A[in the water]를 'true'로 입력
+** 해상풍력터빈이 부유식이라면 가능한 span:A[water level effect]를 7 span:D[floating]로 입력
+** 해상풍력터빈 구조물의 길이, 재질을 알 수 있다면 span:A[vertical length] 및 span:A[nature of construction]을 입력
 
 ===== Example
+.Wind Turbine의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Colour|COLOUR|EN|0,*| 1(white)
-|Visual Prominence|CONVIS|EN|0,1| 1: visual prominence
-|Nature of Construction|NATCON|EN|0,*| 7: metal
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Woljeong NoB
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 월정 해상풍력발전기
-|    Name Usage||(S)EN|0,1| 2: alternate name display
-|Vertical Length|VERLEN|RE|0,1| 1.8m
+|colour|COLOUR|EN|0,*| 6 span:D[yellow]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gunsan Hang No 1
+|    name usage||(S)EN|0,1|1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 군산항 전력연구원 해상풍력발전기 1호
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|nature of construction|NATCON|EN|0,*| 7 span:D[metal]
+|visual prominence|CONVIS|EN|0,1| 1 span:D[visual prominence]
+|vertical length|VERLEN|RE|0,1| 1.8 span:D[m]
+
 |===
 
 ---
