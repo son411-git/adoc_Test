@@ -1,6 +1,33 @@
 // tag::ArchipelagicSeaLane[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 객체의 이름이 없으면 span:F[Archipelagic Sea Lane][N]으로 입력
+* 객체의 이름을 알고 있고 ECDIS에서 이름이 표시되어야 하는 경우, span:F[Archipelagic Sea Lane][C,S]로 입력하고 이름은 span:A[feature name]으로 입력
+
+//
+* 객체 관계
+** span:R[ASL aggregation]을 정의하기 위해 구성 객체 및 관련 항로표지를 span:F[Archipelagic Sea Lane]로 객체 관계를 맺어야함
+** span:F[Archipelagic Sea Lane]의 공간적 범위는 구성 객체들의 전체 범위를 포함해야함
+** span:R[ASL aggregation]는 최소한 하나의 구성 객체를 반드시 포함해야함
+** span:R[ASL aggregation]의 구성 객체는 같은 span:A[scale minimum] 값을 가져야 함
+
+//
+* 부가정보는 span:A[information] 또는 span:F[Nautical Information] 으로 입력함
+* 항해 안전과 관련된 내용은 span:F[Caution Area]를 사용
+
+===== Example
+
+.Archipelagic Sea Lane의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|eng
+|    span:E[name]||OBJNAM/NOBJNM|(S)TE|1,1|Philippine ASL
+|    name usage||(S)EN|0,1| 1 : default name display
+|span:E[nationality]||NATION|TE|1,1|PH
+|===
 
 ---
 // end::ArchipelagicSeaLane[]

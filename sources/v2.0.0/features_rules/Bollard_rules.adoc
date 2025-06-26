@@ -1,6 +1,22 @@
 // tag::Bollard[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* span:F[Bollard]는 필요한 경우 span:A[feature name]을 사용하여 입력
+* span:F[Bollard]는 span:R[Structure/Equipment]을 사용하여 구조물(Structure) 객체와 관계를 맺어야 함.
+include::/common/Not Used Feature.adoc
+
+===== Example
+
+.Bollard의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|0,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 3
+|    name usage||(S)EN|0,1|  1 : default name display
+|===
 
 ---
 // end::Bollard[]

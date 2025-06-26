@@ -1,25 +1,31 @@
 // tag::AdministrationArea[]
 ===== Remark
 
-- 국가가 정한 영토나 수역의 관활 구역을 구분하기 위해서 사용
-- 현재 우리나라의 전자해도에 입력된 현황에서 보면 해상교통관제구역이나 도선사 승선구역으로 표현된 경우가 있으나 S-101전자해도에서는 각각의 용도에 맞게 변경
+* 국가가 정한 영토나 수역의 관할 구역을 구분하기 위해서 span:F[Administration Area]을 입력
+* 일반적으로 소축척해도에서 국경의 입력
+* span:A[nationality]는 ISO 3166 표준에 따라 2자리의 대문자 영문 코드로 입력
 
+[inclue]
 ===== Example
+
+.Administration Area의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Jurisdiction|JRSDTN|EN|1,1| 1: international
-|Nationality|NATION|TE|0,*|kor
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Republic of Korea
-|    Name Usage||(S)EN|0,1|1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 대한민국
-|    Name Usage||(S)EN|0,1|2: alternate name display
+|span:E[jurisdiction]|JRSDTN|EN|1,1| 1: international
+|nationality|NATION|TE|0,*| KR
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Republic of Korea
+|    name usage||(S)EN|0,1|1 : default name display
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 대한민국
+|    name usage||(S)EN|0,1|2 : alternate name display
 |===
 
 ---
 // end::AdministrationArea[]
+
+
