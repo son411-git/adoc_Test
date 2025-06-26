@@ -1,52 +1,107 @@
 // tag::VirtualAISAidToNavigation[]
 ===== Remark
-- 현재 국내 전자해도의 입력 현황에 따르면 모든 무선국은 ”RDOSTA“로 입력되었으나 S-101전자해도에서는 #F "Radio Station",#F "Physical AIS Aid to Navigation",#F "Virtual AIS Aid to Navigation"으로 구분
-- 무선국이 송신한 정보를 이용하여 선박의 위치를 항해자들에게 제공할 목적이나 선박에서는 전파방향탐지(RDF)를 사용하지 않기 때문에 <표 A>의 무선국은 S-101 속성에 존재하지 않음 – 삭제필요
 
-////
-[cols="5,30,50,15", options="header"]
+* 실제 물리적 장치에 의해 신호를 발사하는 span:F[Physical AIS AidToNavigation]과는 구분해야 함
+
+//REVIEW: Sythetic 과 구분? 항로표지 없이 단독으로 사용되는 Virtual AIS만?
+* 국내 제작지침에 따라 span:F[Physical AIS AidToNavigation]는 더 이상 입력하지 않지만, span:F[VirtualAISAidToNavigation]에 대해서는 입력
+
+--
+.등대표의 V-AIS
+image::../images/VirtualAISAidToNavigation/Virtual_AtoN.png[]
+.입력 예시 (KR4F2O10)
+image::../images/VirtualAISAidToNavigation/Virtual_Example.png[]
+--
+
+* 단, V-AIS라 하더라도 명칭 또는 좌표를 확인하여 **고정된 물표와 함께 사용되는 Synthetic V-AIS는 입력하지 않음**
+
+--
+.등대표의 Synthetic V-AIS(고정된 물표와 함께 사용되는 V-AIS)
+image::../images/VirtualAISAidToNavigation/Synthetic_AtoN.png[]
+.예시 (KR5G1N34)
+image::../images/VirtualAISAidToNavigation/Synthetic_Example.png[] 
+--
+
+
+//REVIEW: 굳이 이 말이 필요한가?
+// * 상시 운용되거나 정해진 기간 동안 사용될 경우에만 인코딩 (비정기적 또는 단기간 이동 및 제거되는 것이 업데이트로 배포되기 어려울 경우 인코딩하지 않음)
+
+* V-AIS의 기능(설치 목적)에 따라 span:A[virtual AIS aid to navigation type] 를 입력해야 함 ( <<V-AIS_T1, [표 - V-AIS 유형]>> 참고 )
+** 등대표나 항행통보 또는 간행된 해도등을 확인하여 V-AIS의 기능을 반드시 입력
+
+//
+* MMSI(Maritime Mobile Service Identity; 해상이동업무식별번호)를 알 수 있는 경우, span:A[MMSI Code]에 입력 (9자리 숫자)
+** [참고] - 일반적으로 MMSI 코드는 아래와 같은 형식으로 부여할 것을 권고하고 있음; Recommendation ITU-R M.585 (Section 4) +
+*** Physical AIS AtoN : 99MID1XXX
+*** Virtual AIS AtoN : 99MID6XXX
+
+//REVIEW: 이것도 삭제?
+// * 항로표지와 결합하여 사용되는 경우 해당 항로표지와 span:R[Structure/Equipment] 관계 설정 (Sythetic AIS)
+
+
+[[V-AIS_T1]]
+.V-AIS 유형
+[%header, cols="a,a,a"]
 |===
-|No | IHO 해도제작 기준에 따른 기호 | S-57 속성 CATROS | 기타
-|1|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-1[width=400]|1. circular (non-directional) marine or aero-marine radiobeacon +
- ※ 국내 S-57 전자해도에서는 해당 속성을 AIS로 지정,“Physical AIS Aid to Navigational”로 변환|무지향성 무선표지
-|2|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-2[width=400]| 2. directional radiobeacon|지향성 무선표지
-|3|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-3[width=400]|  3. rotating-pattern radiobeacon|회전식 무선표지
-|4|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-4[width=400]| 4.consol beacon |콘솔솔 무선표지
-|5|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-5[width=400]|  5. radio direction-finding station |무선방향탐지
-|6|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-6[width=400]|  6. coast radio station providing QTG service | 무선표지
- 업무를하는 해안국
-|7|image:../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-7[width=400]|  7. aeronautical radiobeacon |항공무선표지
+^| 심볼 
+^| 설명 
+^| 입력해야 하는 속성
+
+^.^| image:../images/VirtualAISAidToNavigation/S18_1.png[,50%]
+| IALA에 규정된 기능이 알려지지 않은 가상 AIS 항로표지
+| span:A[virtual AIS aid to navigation type] = 11 span:D[special purpose] +
+span:A[information]에 기능에 대한 설명을 입력
+
+.4+^.^| image:../images/VirtualAISAidToNavigation/S18_2.png[,50%]
+| 북방위표지 (두표 ▲▲)
+| span:A[virtual AIS aid to navigation type] = 1 span:D[north cardial]
+
+| 동방위표지 (두표 ▲▼)
+| span:A[virtual AIS aid to navigation type] = 2 span:D[east cardial]
+
+| 남방위표지 (두표 ▼▼)
+| span:A[virtual AIS aid to navigation type] = 3 span:D[south cardial]
+
+| 서방위표지 (두표 ▼▲)
+| span:A[virtual AIS aid to navigation type] = 4 span:D[west cardial]
+
+
+.2+^.^| image:../images/VirtualAISAidToNavigation/S18_3.png[,50%]
+| 좌현 측방표지 (두표 ■) [IALA B]
+| span:A[virtual AIS aid to navigation type] = 7 span:D[port lateral(IALA B)]
+
+| 우현 측방표지 (두표 ▲) [IALA B]
+| span:A[virtual AIS aid to navigation type] = 8 span:D[starboard lateral(IALA B)]
+
+^.^| image:../images/VirtualAISAidToNavigation/S18_4.png[,50%]
+| 고립장애표지
+| span:A[virtual AIS aid to navigation type] = 9 span:D[isolated danger]
+
+^.^| image:../images/VirtualAISAidToNavigation/S18_5.png[,50%]
+| 안전수역표지
+| span:A[virtual AIS aid to navigation type] = 10 span:D[safe water]
+
+^.^| image:../images/VirtualAISAidToNavigation/S18_6.png[,50%]
+| 특수표지
+| span:A[virtual AIS aid to navigation type] = 11 span:D[special purpose] +
+span:A[information]에 기능에 대한 설명을 입력
+
 
 |===
-
-////
-
-◯ Virtual AIS Aid to Navigational +
-//image::../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-8[width=400]
-//image::../VirtualAISAidToNavigation/VirtualAISAidToNavigation_image-9[width=400]
-- 영구적이거나 특정 기간 동안 사용될 경우 인코딩 (정기적 또는 단기간 이동 및 제거되는 것이 업데이트로 배포되기 어려울 경우 인코딩하지 않음) +
-- #A "Virtual AIS aid to navigation type" 에 정의된 유형 이외의 목적을 갖는 경우 #A "Virtual AIS aid to navigation type" = 11(특수목적)을 입력하고, #A "information"에 해당 목적을 추가입력 +
-- 항로표지의 부속 피처일 경우 #R "Structure/Equipment" 관계 설정 +
-   ※ Relation 페이지 참조 +
-- #A "Virtual AIS aid to navigation type" 필수입력 (S-57에서 입력한 #F "NEWOBJ"의 #A "CLSNAM"에 따라서 매칭됨)
-
 
 
 ===== Example
+.Virtual AIS Aid To Navigation의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|Estimated Range of Transmission|ESTRNG|RE|0,1| 25
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| KR4736.3
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 3736.3
-|    Name Usage||(S)EN|0,1| 2: alternate name display
-|Status|STATUS|EN|0,1| 7: temporary
-|#essential Virtual AIS Aid to Navigation Type||EN|1,1| 1: north cardinal
+|estimated range of transmission|ESTRNG|RE|0,1| 25
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| NACHIDO_ROCK
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|mmsi code||TE|0,1| 994406950
+|span:E[virtual ais aid to navigation type]||EN|1,1| 9 span:D[isolated danger]
 |===
 
 ---

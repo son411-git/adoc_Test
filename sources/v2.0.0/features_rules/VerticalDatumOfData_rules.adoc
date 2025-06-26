@@ -1,14 +1,21 @@
 // tag::VerticalDatumOfData[]
 ===== Remark
-- 국내 S-57 전자해도에서 기본 수직기준면(평균해수면)을 메타정보로 입력했으나, S-101은 #F "Vertical Datum of Data" 피처의 속성 #A "Vertical datum" = 3(평균해수면) 으로 필수 인코딩
-- 데이터가 포함된 모든 부분은 #F "Vertical Datum of Data"로 덮여야 하며, #F "Vertical Datum of Data" 피처는 서로 중첩불가
-- 메타 피처인 #F "Sounding Datum"과 중첩 가능
+* span:F[Vertical Datum of Data]는 필수 메타 객체로, 반드시 하나 이상 입력해야 하고, 데이터가 존재하는 모든 영역을 빈틈없이 덮도록 입력해야 함
+** span:F[Vertical Datum of Data]끼리 중첩되는 영역이 있으면 오류
+** 다른 필수 메타 객체인 span:F[Sounding Datum]과는 중첩될 수 있음
+* 국내의 경우 span:A[Vertical datum] = 3 span:D[mean sea level] 으로 인코딩하는 것이 일반적
+** 영역 내에서 개별 객체가 사용하는 기준면이 다른 경우는 해당 객체의 span:A[vertical datum]을 반드시 입력해야 함 +
+   예) 교량의 안전통과높이(약최고고조면 기준)
+
 
 ===== Example
+.Vertical Datum of Data의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|#essential Vertical Datum|VERDAT|EN|1,1| 3: mean sea level
+
+|span:E[vertical datum]|VERDAT|EN|1,1| 3 span:D[mean sea level]
+
 |===
 
 ---

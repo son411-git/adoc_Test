@@ -1,9 +1,10 @@
 // tag::VesselTrafficServiceArea[]
 ===== Remark
-- 국가가 정한 영토나 수역의 관활 구역을 구분하기 위해서 사용
-- 현재 우리나라의 전자해도에 입력된 현황에서 보면 해상교통관제구역이나 도선사 승선구역으로 표현된 경우가 있으나 S-101전자해도에서는 각각의 용도에 맞게 변경
+//REVIEW: 대공사
+- ( @Bex : 수정 필요 )
 
 ===== Example
+.Vessel Traffic Service Area의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
