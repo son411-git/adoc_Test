@@ -1,6 +1,6 @@
 // tag::Wreck[]
 ===== Remark
-* 침선은 <<Wreck_T1,[표 - Wreck 속성 입력 기준]>>을 참고하여 입력
+* 침선은 [<<Wreck_T1>> - Wreck 속성 입력 기준]을 참고하여 입력
 ** 표에서 '/' 로 표시된 속성은 입력해서는 안 되며, 빈 칸은 상황에 맞게 추가로 입력할 수 있음
 ** span:A[category of wreck] 이나 span:A[value of sounding] 둘 중 하나는 반드시 입력해야 함
 //REVIEW : 추후수정필요
@@ -12,7 +12,7 @@
 ** span:A[height]는 span:A[water level effect] = 1 span:D[partly submerged at high water] 또는 2 span:D[always dry]인 경우에만 입력
 
 //
-* 아래에 해당하는 경우 <<Wreck_T2,[표 - Wreck의 default clearance depth 입력 기준]>>을 참고해서 span:A[default clearance depth]를 **반드시** 입력해야 함 +
+* 아래에 해당하는 경우 [<<Wreck_T2>>  - Wreck의 default clearance depth 입력 기준]을 참고해서 span:A[default clearance depth]를 **반드시** 입력해야 함 +
 ( 표에서 **Least Depth**는 객체를 완전히 덮기 위해 필요한 span:F[Depth Area] 또는 span:F[Dredged Area]들 중 **가장 얕은 영역**의 span:A[depth range minimum value]를 의미함 )
 ** span:A[category of wreck]의 값이 4 span:D[wreck showing mast/masts] 또는 5 span:D[wreck showing any portion of hull or superstructure] 이고, span:A[height]가 _(Undefined)_ 인 경우
 ** span:A[value of sounding]이 _Empty(null)_ 인 경우
