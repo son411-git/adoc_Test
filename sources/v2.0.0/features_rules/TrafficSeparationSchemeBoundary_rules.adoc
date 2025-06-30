@@ -1,19 +1,22 @@
 // tag::TrafficSeparationSchemeBoundary[]
 ===== Remark
-- IMO 채택 항로 여부는 surface 타입의 #F "Traffic Separation Scheme" 속성에 입력 +
-※ #F "Traffic Separation Scheme" 인코딩 기준 참조
-- 통항분리제도를 구성하는 모든 피처는 surface 타입의 #F "Traffic Separation Scheme" 피처와 #R "Traffic Separation Scheme Aggregation" 관계 설정 +
-  ※ Realtion 페이지 참조
-- 통항분리제도의 #F "Traffic Separation Lane Part" 또는 #F "Traffic Separation Scheme Roundabout"의 바깥 경계를 인코딩할 때만 사용 (통항분리대와의 경계에 사용해서는 안 됨)
+* 통항분리제도를 구성하는 요소 중 수역의 바깥쪽 경계를 의미
+** 통항분리대, 구역를 뜻하는 span:F[Separation Zone of Line]과는 구별해서 사용해야 함
+** 선박이 진출입하는 쪽에는 입력하지 않아야 함
+
+* span:F[Traffic Separation Scheme Boundary]는 다른 구성요소와 함께 span:F[Traffic Separation Scheme]과 span:R[Traffic Separation Scheme Aggregation] 관계를 가져야 함 (<<TSS_AGGR,※참고>>)
 
 //image::../images/TrafficSeparationSchemeBoundary/TrafficSeparationSchemeBoundary_image-1.png[width=400]
 
 
 ===== Example
-[cols="30,25,10,10,25", options="header"]
+.Traffic Separation Scheme Boundary의 인코딩 예시
+[cols="30,25,10,10,25", options="header", stripes="even"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|-|-|-|-|- 
+
+|scale minimum|SCAMIN|IN|0,1| span:D[Traffic Separation Aggregation에 포함되는 다른 구성요소와 동일한 값]
+
 |===
 
 ---

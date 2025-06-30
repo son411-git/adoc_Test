@@ -1,36 +1,52 @@
 // tag::TrafficSeparationSchemeLanePart[]
 ===== Remark
-- IMO 채택 항로 여부는 surface 타입의 #F "Traffic Separation Scheme"피처 속성에 입력
-  ※ #F "Traffic Separation Scheme" 인코딩 기준 참조
-- 아래 그림과 같은 합류구역(Junction)을 제외한 #F "Traffic Separation Scheme Lane Part" 피처의 통항 방향 #A "Orientation value" 속성 필수 입력
-- 교차부(4차로 이하) 또는 선회부를 제외한 합류지점은 #F "Traffic Separation Scheme Lane Part" 피처로 인코딩
-- 항로부 피처는 통항 방향 #A "Orientation value"에 따라 피처를 추가 생성
-- #F "Restricted Area" 피처에 포함되는 경우 #A "Restriction" 속성을 따로 입력하지 않음
-- 통항분리제도를 구성하는 모든 피처는 surface type의 #F "Traffic Separation Scheme" 피처와 #R "Traffic Separation Scheme Aggregation" 관계 설정 +
-  ※ Realtion 페이지 참조
-- 항로별 명칭이 별도로 있는 경우 #A "Information"으로 입력(ex. 입항항로) 하고, 전체 항로 명칭은 #F "Traffic Separation Scheme"에 입력 후 관계 설정 (항로명 필수 입력)
 
-////
-[cols="1,1" , frame=none , grid=none, align=center]
-|===
-a|image:../images/TrafficSeparationSchemeLanePart/TrafficSeparationSchemeLanePart_image-1.png[width=400] 
-a|image:../images/TrafficSeparationSchemeLanePart/TrafficSeparationSchemeLanePart_image-2.png[width=400] 
-|===
-////
+* 통항분리제도에서 한쪽 방향으로 항행이 가능한 구역을 의미
+** 합류구간(Junction)도 span:F[Traffic Separation Scheme Lane Part]으로 입력하지만, 이 때는 span:A[orientation value]를 입력하면 안 됨
+*** 그외에는 span:A[orientation value]를 반드시 입력
+
+//
+** span:F[Traffic Separation Scheme Lane Part]은 통항분리제도를 구성하는 요소 중 다음 요소들과 중첩되어서는 안됨 span:D[그림의 파란색 선 부분만 입력]
+*** span:F[Traffic Separation Scheme Crossing]
+*** span:F[Traffic Separation Scheme Roundabout]
+*** span:F[Separation Zone or Line] span:D[Surface 형태의 경우]
+
+//
+* span:F[Traffic Separation Scheme Lane Part]은 다른 구성요소와 함께 span:F[Traffic Separation Scheme]과 span:R[Traffic Separation Scheme Aggregation] 관계를 가져야 함 (<<TSS_AGGR,※참고>>)
+
+//
+* 통항구역에 관한 항행 제한사항이 있다면, span:A[restriction]을 이용하여 입력 할 수 있음
+** 단, 중첩되는 span:F[Restricted Area]에 동일한 제한사항에 대해 입력되어 있다면, span:F[Traffic Separation Scheme Lane Part]에는 span:A[restriction]을 생략함
+
+//REVIEW: 아래 내용 남아 있을 필요가 있는지?
+// - 항로별 명칭이 별도로 있는 경우 #A "Information"으로 입력(ex. 입항항로) 하고, 전체 항로 명칭은 #F "Traffic Separation Scheme"에 입력 후 관계 설정 (항로명 필수 입력)
 
 
 ===== Example
+.Traffic Separation Scheme Lane Part의 인코딩 예시 - 합류구간(Junction) 의 경우
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|Orientation Value|ORIENT|RE|0,1| 30
-|Restriction|RESTRN|EN|0,*| 1: anchorage prohibited
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| Junction Area
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 합류 구역
+
+|restriction|RESTRN|EN|0,*| 1 span:D[anchorage prohibited]
+|**information**|INFORM|C|0,*|  
+|    span:E[language]||(S)TE|1,1| eng 
+|    text|INFORM/NINFOM|(S)TE|0,1| Junction Area
+|**information**|INFORM|C|0,*|  
+|    span:E[language]||(S)TE|1,1| kor 
+|    text|INFORM/NINFOM|(S)TE|0,1| 합류 구역 
+|scale minimum|SCAMIN|IN|0,1| span:D[Traffic Separation Aggregation에 포함되는 다른 구성요소와 동일한 값]
+
+|===
+
+.Traffic Separation Scheme Lane Part의 인코딩 예시 - 일반적인 통항구간의 경우
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|orientation value|ORIENT|RE|0,1| 90 
+|scale minimum|SCAMIN|IN|0,1| span:D[Traffic Separation Aggregation에 포함되는 다른 구성요소와 동일한 값]
+
 |===
 
 ---

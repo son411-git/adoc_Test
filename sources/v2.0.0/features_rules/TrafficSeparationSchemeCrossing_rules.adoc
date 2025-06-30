@@ -1,29 +1,31 @@
 // tag::TrafficSeparationSchemeCrossing[]
 ===== Remark
-- IMO 채택 항로 여부는 surface 타입의 #F "Traffic Separation Scheme" 속성에 입력
-  ※ #F "Traffic Separation Scheme" 인코딩 기준 참조
-- “Traffic Separation Scheme Crossing” 피처는 <그림 A>와 같이 최소한 4차로 교차인 경우만 인코딩하여야 하며 4차로 이하인 경우, <그림 B>와 같이 #F "Traffic Separation Scheme Lane Part" 피처로 인코딩
-- #F "Traffic Separation Scheme Roundabout" 피처는 <그림 C>와 같이 선박이 통항분리대를 중심으로 반시계 방향으로 운행하는 선회형 교차 구역인 경우 인코딩
-- #F "Traffic Separation Zone" 피처와 중첩되어서는 안 됨
-- 영역을 만들기 위해 입력한 Line은 Masking 설정
-- #F "Restricted Area" 피처에 포함되는 경우 #A "Restriction" 속성을 따로 입력하지 않음
-- 통항분리제도를 구성하는 모든 피처는 surface 타입의 #F "Traffic Separation Scheme" 피처와 #R "Traffic Separation Scheme Aggregation" 관계 설정 +
-  ※ Realtion 페이지 참조
+* 통항분리제도가 적용되는 수역 중 선박이 횡단할 수 있는 구역을 의미
+** 아래 그림과  같이 교차하는 항로가 교차하는 부분에만 span:F[Traffic Separation Scheme Crossing]을 입력해야 함
+** span:F[Traffic Separation Scheme Crossing]은 통항분리제도를 구성하는 요소 중 다음 요소들과 중첩되어서는 안됨 span:D[그림의 파란색 선 부분만 입력]
+*** span:F[Traffic Separation Scheme Lane Part]
+*** span:F[Traffic Separation Scheme Roundabout]
+*** span:F[Separation Zone or Line] span:D[Surface 형태의 경우]
 
-//  
-// [cols="1,1,1" , frame=none , grid=none, align=center]
-// |===
-// a|image:../images/TrafficSeparationSchemeCrossing/TrafficSeparationSchemeCrossing_image-1.png[width=400] <그림 A>
-// a|image:../images/TrafficSeparationSchemeCrossing/TrafficSeparationSchemeCrossing_image-2.png[width=400] <그림 B>
-// a|image:../images/TrafficSeparationSchemeCrossing/TrafficSeparationSchemeCrossing_image-3.png[width=400] <그림 C>
-// |===
-// 
+.Traffic Separation Scheme Crossing의 예
+image::../images/TrafficSeparationSchemeCrossing/TrafficSeparationSchemeCrossing_image-1.png[]
+
+//
+* span:F[Traffic Separation Scheme Crossing]은 다른 구성요소와 함께 span:F[Traffic Separation Scheme]과 span:R[Traffic Separation Scheme Aggregation] 관계를 가져야 함 (<<TSS_AGGR,※참고>>)
+
+//
+* 횡단구역에 관한 항행 제한사항이 있다면, span:A[restriction]을 이용하여 입력 할 수 있음
+** 단, 중첩되는 span:F[Restricted Area]에 동일한 제한사항에 대해 입력되어 있다면, span:F[Traffic Separation Scheme Crossing]에는 span:A[restriction]을 생략함
+
 
 ===== Example
+.Traffic Separation Scheme Crossing의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|-|-|-|-|- 
+
+|scale minimum|SCAMIN|IN|0,1| span:D[Traffic Separation Aggregation에 포함되는 다른 구성요소와 동일한 값]
+
 |===
 
 ---

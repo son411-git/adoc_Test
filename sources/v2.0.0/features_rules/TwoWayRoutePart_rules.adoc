@@ -1,26 +1,30 @@
 // tag::TwoWayRoutePart[]
 ===== Remark
 - 양방향 항로부는 일반적으로 양방향이지만, <그림 A>와 같이 일방통항으로 제한할 수 있으며 [Traffic flow]에 지정
-- <그림 B>와 같이 #A "Orientation value" 값에 따라 #F "Two-way route part" 피처를 개별 생성하고 #R "Two-way route Aggregation" 관계를 설정 +
+- <그림 B>와 같이 span:A[Orientation value] 값에 따라 span:F[Two-way route part] 피처를 개별 생성하고 span:R[Two-way route Aggregation] 관계를 설정 +
   ※ Relation 페이지 참조
-- #F "Two-way route"를 구성하는 모든 피처는 동일한 #A "Scale minimum" 값을 가져야 함
-- #F "Two-way route part" 피처는 반드시 #R "Two-way route Aggregation" 관계를 설정해야 하며 #R "Two-way route Aggregation"의 속성에 항로의 명칭을 입력
+- span:R[Two-way route Aggregation]에 포함되는 모든 피처는 동일한 span:A[Scale minimum] 값을 가져야 함
+- span:F[Two-way route part] 피처는 반드시 span:R[Two-way route Aggregation] 관계를 설정해야 하며 span:R[Two-way route Aggregation]의 속성에 항로의 명칭을 입력(<<TWRT_AGGR,※참고>>)
 
-////
-[cols="1,1" , frame=none , grid=none, align=center]
-|===
-a|image:../images/TwoWayRoutePart/TwoWayRoutePart_image-1.png[width=400] <그림 A>
-a|image:../images/TwoWayRoutePart/TwoWayRoutePart_image-2.png[width=400] <그림 B>
-|===
-////
+// [cols="1,1" , frame=none , grid=none, align=center]
+// |===
+// a|image:../images/TwoWayRoutePart/TwoWayRoutePart_image-1.png// [width=400] +
+//   <그림 A>
+// a|image:../images/TwoWayRoutePart/TwoWayRoutePart_image-2.png// [width=400] +
+//   <그림 B>
+// |===
+
 
 ===== Example
+.Two-Way Route Part의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|Based On Fixed Marks|CATTRK|BO|0,1| False
-|#essential Orientation Value|ORIENT|RE|1,1| 140
-|#essential Traffic Flow|TRAFIC|EN|1,1| 4: two-way
+
+|based on fixed marks|CATTRK|BO|0,1| false
+|span:E[orientation value]|ORIENT|RE|1,1| 140
+|span:E[traffic flow]|TRAFIC|EN|1,1| 4 span:D[two-way]
+
 |===
 
 ---

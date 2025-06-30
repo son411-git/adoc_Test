@@ -1,12 +1,15 @@
 // tag::Tideway[]
 ===== Remark
-- #F "Tideway"는 간출지역에서 자연적으로 생성된 수역을 인코딩할 때 사용
+- span:F[Tideway]는 간출지역에서 자연적으로 생성된 물골을 입력할 때 사용
 
 ===== Example
+.Tideway의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-5+h|※ 공통속성(Scale minimum) 외에 입력된 속성 없음!
+
+5+h| --
+
 |===
 
 ---
