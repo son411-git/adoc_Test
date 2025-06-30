@@ -1,5 +1,27 @@
 // tag::Checkpoint[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 화물 및 사람의 등록, 신고 및/또는 확인을 위한 공식 장소를 인코딩해야 하는 경우 입력
+* span:F[Custom Zone]과 구분되어야 함
+
+include::common/NotUsedFeature.adoc[]
+
+===== Example
+.Checkpoint의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|category of checkpoint|CATCHP|EN|0,1| 1 : custom
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Busan Port Check Point
+|    name usage||(S)EN|0,1|1 : default name display 
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산항 검문소
+|    name usage||(S)EN|0,1|2 : alternate name display
+|===
+
 ---
 // end::Checkpoint[]

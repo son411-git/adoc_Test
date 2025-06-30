@@ -1,6 +1,24 @@
 // tag::CargoTranshipmentArea[]
 ===== Remark
-사용하지 않는 객체입니다.
+* 국내 법령에서 환적이란 동일한 세관관할구역안에서 입항하는 운송수단에서 출항하는 운송수단으로 물품을 옮겨 싣는 것을 정의함
+
+include::common/NotUsedFeature.adoc[]
+
+===== Example
+.Cargo Transhipment Area의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Busan
+|    name usage||(S)EN|0,1|1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|부산
+|    name usage||(S)EN|0,1|2 : alternate name display
+|===
 
 ---
 // end::CargoTranshipmentArea[]

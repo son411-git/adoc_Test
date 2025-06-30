@@ -3,7 +3,7 @@
 * 일반적으로 항해 안전에 영향을 미치는 상황을 선원이 인지해야 하는 구역
 * 항해자의 안전 항해를 위한 정보인지, 일반정보인지 구분해야 함 +
 따라서 span:F[Information Area]와는 구분해야 함
-* 종이해도에 주의기사가 있다고해서 무조건 그 내용을 span:F[Caution Area]로 옮기지 아야 함 +
+* 종이해도에 주의기사가 있다고해서 무조건 그 내용을 span:F[Caution Area]로 옮기지 않아야 함 +
 또한, 셀 구역 전체에 입력하는 것을 피해야함
 
 //
@@ -12,30 +12,30 @@
 ** 공사중, 매립중
 *** 공사 기간, 공사 도면 등을 입수 했다면 해당 객체(예 : span:F[Shoreline Construction] 등)에 span:A[information] 또는 span:F[Nautical Information] 으로 입력해야 함
 *** 그 외의 경우 측량원도에 표기된 공사중, 매립중은 자세한 정보가 입수 될 때까지 span:F[Caution Area]로 입력해야 함
-**** 공사중인 영역의 span:F[Caution Area]은 span:A[condition] = 1 (under construction) 으로만 입력하고, span:A[information/text] = (Under Construction) 또는 (공사중) 과 같이 입력하지 않아야 함
-**** 매립중인 영역의 span:F[Caution Area] span:A[condition] = 3 (under reclamation) 으로만 입력하고, span:A[information/text] = (Under Reclamation) 또는 (매립중) 과 같이 입력하지 않아야 함
+*** 공사중인 영역의 span:F[Caution Area]은 span:A[condition] = 1 (under construction) 으로만 입력하고, span:A[information/text] = (Under Construction) 또는 (공사중) 과 같이 입력하지 않아야 함
+*** 매립중인 영역의 span:F[Caution Area]은 span:A[condition] = 3 (under reclamation) 으로만 입력하고, span:A[information/text] = (Under Reclamation) 또는 (매립중) 과 같이 입력하지 않아야 함
 
 ** 미측 구역 
-*** span:F[Unsurveyed Area]와 중첩하여 span:F[Caution Area](P,S)로 입력해야 함
-*** span:F[Caution Area](S)는 span:F[Depth Contour]와 같이 화면 표시 우선 순위 (Display Priority) 3 이상의 객체와 중첩하면 안되며, 이 경우 span:F[Data Coverage]에 입력된 span:A[optimum display scale] 속성 값 기준으로 최소 0.3mm(도상거리) 이상 span:F[Caution Area]를 더 크게 그려줘야 함
+*** span:F[Unsurveyed Area]와 중첩하여 span:F[Caution Area][P,S]로 입력해야 함
+*** span:F[Caution Area][S]는 span:F[Depth Contour]와 같이 화면 표시 우선 순위 (Display Priority) 3 이상의 객체와 중첩하면 안되며, 이 경우 span:F[Data Coverage]에 입력된 span:A[optimum display scale]에 해당하는 화면 축척으로 최소 0.3mm(도상거리) 이상 span:F[Caution Area]를 더 크게 그려줘야 함
 
 ** 송전선
-*** span:F[Cable Overhead]를 따라 span:F[Caution Area](C)로 입력하지 않아야 함
-*** span:F[Data Coverage]에 입력된 span:A[optimum display scale] 속성 값 기준으로 최소 0.3mm(도상거리) 이상 (양쪽으로 입력해야 하므로 총 0.6mm 이상)의 얇은 면을 해당 송전선을 따라 span:F[Caution Area](S) 로 입력해야 함
+*** span:F[Cable Overhead]를 따라 span:F[Caution Area][C]로 입력하지 않아야 함
+*** span:F[Data Coverage]에 입력된 span:A[optimum display scale]에 해당하는 화면 축척으로 최소 0.3mm(도상거리) 이상 (양쪽으로 입력해야 하므로 총 0.6mm 이상)의 얇은 면을 해당 송전선을 따라 span:F[Caution Area][S] 로 입력해야 함
 
 ** 안벽
 *** 일반 정보는 span:F[Information Area]로 입력
-*** span:F[Data Coverage]에 입력된 span:A[optimum display scale] 속성 값 기준으로 최소 0.3mm(도상거리)의 얇은 면을 해당 안벽 선을 따라 바다 방향으로 생성하여 span:F[Caution Area](S) 로 입력해야 함
+*** span:F[Data Coverage]에 입력된 span:A[optimum display scale]에 해당하는 화면 축척으로 최소 0.3mm(도상거리)의 얇은 면을 해당 안벽 선을 따라 바다 방향으로 생성하여 span:F[Caution Area][S] 로 입력해야 함
 
 ** 암초
-*** 해당 객체 주변에 span:F[Caution Area](P,S)를 입력 (셀 구역 전체에 입력된 span:F[Caution Area]를 삭제)
-*** 필요하면 해당 객체 주변에 span:F[Caution Area] 보다 span:F[Obstruction](S) 를 입력하여 위험계선을 생성하는 것을 권장
+*** 해당 객체 주변에 span:F[Caution Area][P,S]를 입력 (셀 구역 전체에 입력된 span:F[Caution Area]를 삭제)
+*** 필요하면 해당 객체 주변에 span:F[Caution Area] 보다 span:F[Obstruction][S] 를 입력하여 위험계선을 생성하는 것을 권장
 
 ** 기타 사례
 *** 관련 기사 : 항해주의, 잠수정, 선박횡단, 고도제한, 사주, 사퇴, 모래톱, 좌주, 토사 등
-*** 대상 객체 주변에 span:F[Caution Area](P,C,S)를 입력하고 span:A[information]또는 span:F[Nautical Information] 관련 정보를 입력
+*** 대상 객체 주변에 span:F[Caution Area][P,C,S]를 입력하고 span:A[information]또는 span:F[Nautical Information] 관련 정보를 입력
 
-IMPORTANT: 위에 언급되지 않은 사례는 관련 객체 또는 span:F[Information Area]를 참고
+* 위에 언급되지 않은 난외 기사는 관련 객체 또는 span:F[Information Area]에 입력
 
 ===== Example
 .Caution Area의 인코딩 예시

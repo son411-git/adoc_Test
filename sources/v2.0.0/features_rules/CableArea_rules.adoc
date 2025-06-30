@@ -1,6 +1,26 @@
 // tag::CableArea[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 다음의 경우 span:F[CableArea]를 입력
+** 케이블(폐기된 케이블 포함)이 구역 내에 너무 많아서 개별적으로 입력했을 때 전자해도의 가독성을 해치는 경우
+** 또는 고시 등으로 케이블 보호 구역을 지정하는 경우
+* span:A[status]는 해당 span:F[CableArea]의 상태이지 구역 내 span:F[CableSubmarine]의 상태를 의미하는 것이 아님
+* 케이블 손상에 대비해 소유자/운영자의 연락처 정보를 입력하려면 span:F[Contact Details]를 사용하여 입력
+* 선박 속력 제한에 관한 지침은 S-101 DCEG 17.4 절 참조
+
+===== Example
+
+.Cable Area의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult.|
+
+|category of cable|CATCBL|EN|0,*|
+|restriction|RESTRN|EN|0,*| 27
+|**vessel speed limit**||C|0,*|
+|    span:E[speed limit]||(S)RE|1,1| 12
+|    span:E[speed units]||(S)EN|1,1| 4 : knots
+|===
 
 ---
 // end::CableArea[]

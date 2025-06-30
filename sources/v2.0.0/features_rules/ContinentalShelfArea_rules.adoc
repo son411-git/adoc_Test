@@ -1,5 +1,16 @@
 // tag::ContinentalShelfArea[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 대륭붕은 span:F[Continental Shelf Area]으로 입력
+ 
+include::common/NotUsedFeature.adoc[]
+
+.Continental Shelf Area의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|span:E[nationality]|NATION|TE|1,*| KR
+|===
 ---
 // end::ContinentalShelfArea[]

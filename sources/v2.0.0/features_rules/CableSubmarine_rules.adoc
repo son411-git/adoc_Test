@@ -1,28 +1,24 @@
 // tag::CableSubmarine[]
 ===== Remark
-- 해저 케이블은 저인망어선과, 해저활동 중인 선박 등의 정박에 위험이 될 수 있으므로 해도에 인코딩 필요
-- 사용 중인 해저 케이블은 수심 2000*미터까지 인코딩하고 이외는 인코딩하지 않음 
-   * 선박이 해저 케이블에 걸려 위험할 수 있는 가장 깊은 수심
-- 케이블의 고압전류로 인해 선박의 자기컴퍼스에 이상을 야기할 경우 지방자기이상 #F "Local Magnetic Anomaly"
-  피처로 입력
-- 기존 S-57전자해도의 불필요한 #A "INFORM"정보는 삭제함.(ex. INFORM: Submarine power line)
 
-//image::../images/CableSubmarine_image-1[width=400]
+* span:F[Cable Submarine]은 정박이나 저인망 어업, 해저 활동에 종사하는 선박에 그 존재를 알리기 위해 입력해햐 함
+* 사용 중인 span:F[Cable Submarine]은 수심 2000미터까지 입력해야하며 이는 선박이 케이블에 걸려 위험에 처할 수 있는 가장 깊은 수심임
+* 케이블의 매설 깊이가 매설 구간에 따라 달라지는 경우, 여러 개의 객체로 나누어 span:A[buried depth]를 입력해야 함
+* 전화선이나 광섬유 케이블과 같은 통신 케이블은 필요 시 span:A[category of cable] = (10 : telecommunications cable)로 입력
+* 사용하지 않는 케이블은 속성 span:A[status] = (4 : not in use)로 입력하며, span:A[category of cable]은 입력하지 않음
+* 고압 전력 케이블은 선박의 자기 나침반에 편차를 일으킬 수 있음. 이 경우 span:F[Local Magnetic Anomaly] 를 입력해야 함
+
+image::../images/CableSubmarine/CableSubmarine_image-1.png[width=400]
 
 ===== Example
+
+.Cable Submarine의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Buried Depth|BURDEP|RE|0,1| 5.0 m
-|Category of Cable|CATCBL|EN|0,1| 1: power line  
-|Status|STATUS|EN|0,*| 4: not in use 
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
+|buried depth|BURDEP|RE|0,1| 5.0
+|category of cable|CATCBL|EN|0,1| 1 : power line  
 |===
 
 ---

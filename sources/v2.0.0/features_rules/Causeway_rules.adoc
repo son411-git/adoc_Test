@@ -1,6 +1,25 @@
 // tag::Causeway[]
 ===== Remark
-사용하지 않는 객체입니다.
+* span:F[Causeway]는 주로 습지나 조수 간만의 차가 있는 지역을 가로지르는 경로를 제공하기 위해 건설된 단단한 구조의 융기된 도로를 정의함
+
+include::common/information.adoc[]
+
+===== Example
+.Causeway의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+  
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Maehwadohwangmado Nodugil
+|    name usage||(S)EN|0,1|1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|매화도황마도 노두길
+|    name usage||(S)EN|0,1|2 : alternate name display
+|===
+
 
 ---
 // end::Causeway[]

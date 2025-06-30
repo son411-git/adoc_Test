@@ -1,5 +1,26 @@
 // tag::CollisionRegulationsLimit[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 국제 해상 충돌 예방 규칙 (COLREGs) 경계선은 span:F[Collision Regulations Limit] 로 입력
+* span:A[regulation citation]에 관련 국가 규정의 인용문을 입력 
+* span:A[feature name]에 관련 국가 규정의 제목을 입력
+* 규정의 제목을 ECDIS에 표시할 필요 없으므로 span:A[name usage]를 입력하지 않아야 함
+
+include::common/NotUsedFeature.adoc[]
+
+===== Example
+
+.Collision Regulations Limit의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Intemational Regulations
+for the Prevention of Collisions at Sea — Vessel Bridge-to-Bridge Radiotelephone Regulations
+|    name usage||(S)EN|0,1|UNDEFINED
+|regulation citation||TE|0,1|33 CFR 26
+|===
 ---
 // end::CollisionRegulationsLimit[]

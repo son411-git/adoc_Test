@@ -1,29 +1,25 @@
 // tag::Canal[]
 ===== Remark
-- 내륙 수로를 입력할 때 사용(인천 아라뱃길 등)
-- 국내 입력여부 +
-협의필요
+
+* 운하를 span:A[optimum display scale]에 해당하는 화면 축척에서 항해가 불가능하면 span:F[Canal]로 입력해야 하며, span:F[Land Area] 객체 위에 있어야 함
+* 반대로 span:A[optimum display scale]에 해당하는 화면 축척에서 항해가 가능하면 span:F[Depth Area], span:F[Dredged Area]로 입력해야 하며, 운하의 제방은 span:F[Coastline], span:F[Shoreline Construction]으로 입력해야 함
+** 결국 대축척에서는 운하를 span:F[Canal]로 입력하면 안됨
 
 ===== Example
+.Canal의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Canal|CATCAN|EN|0,1| 1: transportation 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Busan
+|category of canal|CATCAN|EN|0,1| 1: transportation 
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gyeongin ARA Waterway
 |    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 부산
-|    Name Usage||(S)EN|0,1| 2: alternate name display  
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 경인 아라뱃길
+|    Name Usage||(S)EN|0,1| 2 : alternate name di
 |===
 
 ---

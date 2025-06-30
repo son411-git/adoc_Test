@@ -1,21 +1,24 @@
 // tag::CableOverhead[]
 ===== Remark
-- #A "Category of cable"은 국내 기준으로 필수 입력하며, 선택 가능한 속성이 없을 경우에는 추가정보로 표기
-- S-57 전자해도에서 #A "Category of Cable" 값이 4(telephone) 또는 5(telegraph) 인 경우 #A "Category of Cable" = 10(telecommunication cable)로 입력
-- 동일한 지역에 여러 케이블이 있으면 가장 낮은 케이블을 대표로 입력
-- 해상 케이블카의 경우 #F "Conveyor"를 사용하여 입력
+
+* 전화선이나 광섬유 케이블과 같은 통신 케이블은 필요 시 span:A[category of cable] = (10 : telecommunications cable)로 입력
+* 동일한 지역에 여러 케이블이 있으면 가장 낮은 케이블을 대표로 입력
+* 해상 케이블카의 경우 span:F[Conveyor]를 사용하여 입력
+* 항해 가능한 수역에서 span:F[Cable Overhead]의 지지대는 가능하면 span:F[Pylon/Bridge Support]를 사용하여 입력해야 하며, span:A[category of pylon] = (1 : power transmission pylon/pole) 또는 (2 : telephone/telegraph pylon/pole)로 설정
+* 국내기준 : span:A[category of cable]은 필수 입력, 선택 가능한 속성이 없을 경우에는 span:A[information] 또는 span:F[Nautical Information]으로 입력
 
 ===== Example
+.Cable Overhead의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Cable|CATCBL|EN|0,1| 1: power line
-|**Vertical Clearance Fixed**|VERCLR|C|0,1| 
-|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1| 33 
-|**Vertical Clearance Safe**|VERCSA|C|0,1|  
-|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1| 32
-|Vertical Datum|VERDAT|EN|0,1| 29: nearly highest high water 
+|category of cable|CATCBL|EN|0,1| 1: power line
+|**vertical clearance fixed**||C|0,1| 
+|    span:E[vertical clearance value]|VERCLR|(S)RE|1,1| 33 
+|**vertical clearance safe**||C|0,1|  
+|    span:E[vertical clearance value]|VERCSA|(S)RE|1,1| 32
+|vertical datum|VERDAT|EN|0,1| 29 : nearly highest high water 
 |===
 
 ---

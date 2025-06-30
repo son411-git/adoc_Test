@@ -1,6 +1,8 @@
 // tag::Chart1Feature[]
 ===== Remark
-사용하지 않는 객체입니다.
+* 전자해도에 사용하지 않는 객체입니다.
+* span:F[Chart 1 Feature]는 테스트 데이터셋 및 ECDIS Chart 1 데이터셋 내에서와 같이 특정 용도로만 사용해야 합니다. 
+* 항해용 전자해도 데이터셋에서 span:F[Chart 1 Feature]를 사용하는 것은 **금지**되어 있습니다.
 
 ---
 // end::Chart1Feature[]

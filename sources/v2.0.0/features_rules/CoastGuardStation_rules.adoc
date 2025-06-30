@@ -1,5 +1,78 @@
 // tag::CoastGuardStation[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 해상 구조 조정 본부(MRCC), 해상 구조 하위 본부(MRSC)의 위치를 입력
+** span:F[Contact Details], span:F[Service Hours] 를 사용해 선위통보 방법과 운영시간을 입력하고 span:R[Addtional Informaion] 관계를 맺어야 함
+* 또한, 지속적으로 또는 특정 시간 당직으로 연안을 감시하는 해양경찰의 기지를 span:F[Coast Guard Station]로 입력
+** 해양경찰의 일반적인 건물은 span:F[Building], span:F[Landmark] 등으로 입력
+
+//
+* 참고
+** 해상구조조정본부 지정 및 운영 등에 관한 고시 (해양경찰청 제2021-7호)
+** https://gisis.imo.org/Public/Default.aspx[IMO - Global Integrated Shipping Information System]
+
+===== Example
+.Coast Guard Station의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Eastern Regional Coast Guard
+|    name usage||(S)EN|0,1|1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1|kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|동해구조조정본부
+|    name usage||(S)EN|0,1|2 : alternate name display
+|is mrcc|Maritime Rescue and Coordination Centre|BO|0,1|true
+|===
+
+.Coast Guard Station - Contact Details의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|call sign|CALSGN|TE|0,1|동해해경
+|communication channel|COMCHA|TE|0,*|VHF0016
+|communication channel|COMCHA|TE|0,*|VHF0009
+|contact instructions||TE|0,1|호출용(shore station receives) - VHF CH16, 통신용(shore station transmits) - VHF CH09
+|**frequency pair**||C|0,*|
+|    frequency shore station receives||(S)IN|0,1|156800
+|    span:E[frequency shore station transmits]|SIGFRQ|(S)IN|1,1|156450
+|mmsi code||TE|0,1|	004401010
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-33-680-2442
+|    telecommunication service||(S)EN|0,1|1 : voice
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-33-680-2442
+|    telecommunication service||(S)EN|0,1|2 : facsimile
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|rcceast@korea.kr
+|    telecommunication service||(S)EN|0,1|8 : email
+|===
+
+.Coast Guard Station - Service Hours의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**span:E[schedule by day of week]**||C|1,*|
+|    category of schedule||(S)EN|0,1| 1 : normal operation
+|**    span:E[time intervals by day of week]**||(S)C|1,*|
+|        day of week||(S)EN|0,7|
+|        day of week is range||(S)BO|0,1|
+|        time of day start||(S)TI|0,*|000000
+|        time of day end||(S)TI|0,*|235959
+|**information**|INFORM|C|0,*|
+|    file locator||(S)TE|0,1|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1|
+|    headline||(S)TE|0,1|
+|    span:E[language]||(S)TE|1,1|
+|    text|INFORM/NINFOM|(S)TE|0,1|
+|===
 ---
 // end::CoastGuardStation[]

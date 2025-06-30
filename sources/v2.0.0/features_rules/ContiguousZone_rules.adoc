@@ -1,6 +1,22 @@
 // tag::ContiguousZone[]
 ===== Remark
-사용하지 않는 객체입니다.
 
+* 접속 수역은 span:F[Contiguous Zone]으로 입력
+* 분쟁 지역일 경우 span:A[in dispute] = (true)로 입력
+* span:A[nationality]는 분쟁 중인 국가들을 입력
+ 
+include::common/NotUsedFeature.adoc[]
+
+===== Example
+
+.Contiguous Zone의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|in dispute||BO|0,1| true
+|span:E[nationality]|NATION|TE|1,*| KR
+|span:E[nationality]|NATION|TE|1,*| JP
+|===
 ---
 // end::ContiguousZone[]

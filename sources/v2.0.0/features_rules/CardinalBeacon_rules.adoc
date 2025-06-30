@@ -1,70 +1,156 @@
 // tag::CardinalBeacon[]
 ===== Remark
 
-- 입표모양은 망대형 또는 원주형만 존재하며, 두표모양은 2개의 원추형 형태로만 구성됨 (그림 1 참조)
-- 몸체는 검정색과 노란색의 조합으로 구성되며 방위에 따라 색의 패턴과 두표 모양이 다름 (표 1참조)
-- 방위등화는 백색등으로 Q 또는 VQ 등광을 가지나 #A "Signal group" 및 #A "Signal period"은 방위별로 다름(표 1 참조)
-- #A "Height"는 평균해수면에서 구조물 최상단의 높이입력 (등대표상 없는 정보임) +
-  (#A "Height"가 S-57전자해도에 존재한다면 확인필요)
-- #A "Vertical Length"는 지면상 높이에서 구조물 최상단의 높이를 입력 +
- (구조물 자체만의 높이 – 등대표에 제시됨)
-- #A "Colour"이 2개 이상(예: 흑색,황색,흑색)입력된 경우 #A "Colour Pattern"을 입력
-- 방위입표가 등화 함께 입력되어 등표로 표현되는 경우 해당 등대번호는 Light객체에 입력 +
-   (등표로 형성된 경우 등대번호가 방위입표의 #A "INFORM" 등에 입력되어 있으면 수정필요)
-- 입표와 등화 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 #R "Structure/Equipment" 관계 설정 + 
-  ※ Relation 페이지 참조
-- 입표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
+* span:F[Cardinal Beacon]은 나침반과 함께 사용되어 항해자가 가장 안전한 항로를 찾을 수 있도록 안내하며, 입표가 표시된 지점에 대해 사분면에 따라 이름을 갖게됨.
+* 항해자는 북방위표지의 북쪽, 동방위표지의 동쪽 등을 통과해야 함
 
-////
-[cols="1,1" , frame=none , grid=none, align=center]
-|===
-a|
-[cols="1,1,1,1", options="header"]
-!===
-!방위!등화리듬 !등색 !도색
-!동 !VQ(3)5s,Q(3)10s !백색 !흑황흑
-!서 !VQ(9)10s,Q(9)15s !백색 !황흑
-!남 !VQ(6)+LFl10s,Q(6)+LFl15s !백색 !황흑황
-!북 !VQ,Q !백색 !흑황
-!===
-a| image:../images/CardinalBeacon_image-1.png[width=400]
-|===
-////
+* 필수 속성 : IALA 해상 부표 시스템에 따라,
+** span:A[Colour]는 검정색과 노란색의 가로 줄무늬로 구성되며 방위에 따라 색의 패턴이 다름
+** 가로 줄무늬로 색상을 입력하므로 span:A[Colour Pattern] = (1 : horizontal stripes)를 입력
+** span:A[Topmark]는 검정색 이중 원뿔의 조합으로 구성되며 방위에 따라 모양이 다름
+** 등화는 백색등으로 Q 또는 VQ 등광을 가지나, 북쪽은 연속 점멸, 동쪽은 3회 점멸, +
+남쪽은 6회 점멸 + 긴 점멸(LFI), 서쪽은 9회 점멸(아날로그 시계와 유사) 함
+** 위 조건에 따른 속성의 조합은 **반드시** <<CardinalBeacon_T1,[표 - Cardinal Beacon의 속성 조합 기준]>>를 참고하여 입력
 
+* 부가 정보
+** span:A[Vertical Length]는 지면에서 구조물 최상단까지의 높이를 입력 (등대표에 기재된 구조물 높이를 입력)
+** 입표(Beacon)에 span:F[Fog Signal], span:F[Radar Transponder Beacon] 및 등화 등 장비 역할의 객체들이 있다면 span:R[Structure/Equipment] 관계 설정
+** 입표(Beacon)의 span:A[Height]는 등대표에 기재되어 있지 않으며, 일반적으로 입력하지 않음
+
+include::common/information.adoc[]
+
+
+.Cardinal Beacon의 구성 (IALA A & B 동일)
+image::../images/CardinalBeacon/CardinalBeacon_image-1.png[width=50%]
+
+
+[[CardinalBeacon_T1]]
+.Cardinal Beacon의 속성 조합 기준
+[cols="1,1,1,1,1", options="header"]
+|===
+| | North | East | South | West
+5+^h|beacon
+|span:E[beacon shape] 
+|1 : stake, pole, perch, post +
+/ 5 : pile beacon
+|1 : stake, pole, perch, post +
+/ 5 : pile beacon
+|1 : stake, pole, perch, post +
+/ 5 : pile beacon
+|1 : stake, pole, perch, post +
+/ 5 : pile beacon
+|span:E[category of cardinal mark]
+|1 : north cardinal mark 
+|2 : east cardinal mark 
+|3 : south cardinal mark 
+|4 : west cardinal mark 
+|span:E[colour] 
+|2 : black +
+ 6 : yellow 
+|2 : black +
+ 6 : yellow +
+ 2 : black 
+|6 : yellow +
+ 2 : black
+|6 : yellow +
+ 2 : black +
+ 6 : yellow
+|colour pattern 
+|1 : horizontal stripes 
+|1 : horizontal stripes 
+|1 : horizontal stripes 
+|1 : horizontal stripes 
+|marks navigational +
+- system of
+|2 : IALA B
+|2 : IALA B
+|2 : IALA B
+|2 : IALA B
+5+^h|topmark
+|    colour
+|2 : black
+|2 : black
+|2 : black
+|2 : black
+|    colour pattern
+|UNDEFINED
+|UNDEFINED
+|UNDEFINED
+|UNDEFINED
+|    span:E[topmark/daymark shape]
+|13 : 2 cones (points upward)
+|11 : 2 cones (base to base)
+|14 : 2 cones (points downward)
+|10 : 2 cones (point to point)
+5+^h|Light
+|Rhythm Character
+|V +
+Q
+| V(3)5s + 
+Q(3)10s
+| Q(6)+LFl.10s +
+VQ(6)+LFl.15s
+| Q(9)15s +
+VQ(9)10s
+|===
 
 ===== Example
+
+.Cardinal Beacon, North의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Beacon Shape|BCNSHP|EN|1,1| 5: pile beacon
-|#essential Category of Cardinal Mark|CATCAM|EN|1,1| 4: west cardinal mark
-|#essential Colour|COLOUR|EN|1,*| 6: yellow
-|#essential Colour|COLOUR|EN|1,*| 2: black
-|#essential Colour|COLOUR|EN|1,*| 5: yellow
-|Colour Pattern|COLPAT|EN|0,1| 1: horizontal stripes
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|Janghang 
-|    Name Usage||(S)EN|0,1|1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|장항 
-|    Name Usage||(S)EN|0,1|2 : alternate name display  
-|Height|HEIGHT|RE|0,1|(삭제)
-|Nature of Construction|NATCON|EN|0,*| 2: concreted
-|Radar Conspicuous|CONRAD|BO|0,1| false 
-|**Topmark**|TOPMAR|C|0,1| 
-|    Colour|COLOUR|(S)EN|0,*|2: Black 
-|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 10: 2 cones, point to point
-|Vertical Length|VERLEN|RE|0,1|5 m 
-|Visual Prominence|CONVIS|EN|0,1|1: visual prominence
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1|kor 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
+|span:E[beacon shape]|BCNSHP|EN|1,1| 5 : pile beacon
+|span:E[category of cardinal mark]|CATCAM|EN|1,1| 1 : north cardinal mark
+|span:E[colour]|COLOUR|EN|1,*| 2 : black
+|span:E[colour]|COLOUR|EN|1,*| 6 : yellow
+|colour pattern|COLPAT|EN|0,1| 1 : horizontal stripes
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Haksanseo 
+|    name usage||(S)EN|0,1|1 : default name display
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1|kor 
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|학산서
+|    name usage||(S)EN|0,1|2 : alternate name display  
+|marks navigational - system of|MARSYS|EN|0,1| 2 : IALA B
+|nature of construction|NATCON|EN|0,*| 2 : concreted
+|radar conspicuous|CONRAD|BO|0,1| false 
+|**topmark**|TOPMAR|C|0,1| 
+|    colour|COLOUR|(S)EN|0,*|2 : black 
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 13 : 2 cones (points upward)
+|vertical length|VERLEN|RE|0,1|19.8
+|visual prominence|CONVIS|EN|0,1|1 : visually conspicuous
+|===
+
+.Cardinal Beacon, East의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|span:E[beacon shape]|BCNSHP|EN|1,1| 5 : pile beacon
+|span:E[category of cardinal mark]|CATCAM|EN|1,1| 2 : east cardinal mark
+|span:E[colour]|COLOUR|EN|1,*| 2 : black
+|span:E[colour]|COLOUR|EN|1,*| 6 : yellow
+|span:E[colour]|COLOUR|EN|1,*| 2 : black
+|colour pattern|COLPAT|EN|0,1| 1 : horizontal stripes
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Kkamagyeo
+|    name usage||(S)EN|0,1|1 : default name display
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor 
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|까막여
+|    name usage||(S)EN|0,1|2 : alternate name display 
+|marks navigational - system of|MARSYS|EN|0,1| 2 : IALA B 
+|nature of construction|NATCON|EN|0,*| 7 : metal
+|radar conspicuous|CONRAD|BO|0,1| false 
+|**topmark**|TOPMAR|C|0,1| 
+|    colour|COLOUR|(S)EN|0,*|2 : black 
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 11 : 2 cones (base to base)
+|vertical length|VERLEN|RE|0,1|11
+|visual prominence|CONVIS|EN|0,1||
 |===
 
 ---
