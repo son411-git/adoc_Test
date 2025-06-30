@@ -1,0 +1,23 @@
+.Two-way Route Aggregation의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h| Definition:: A feature association for the binding between a two-way route and its component features. 
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+
+| Aggregation
+| The Collection 
+| Two-Way Route 
+| 0, 1
+
+| Association
+| The Component
+| Two-Way Route Part
+| 0, *
+
+|===
+
+* span:R[Two-Way Route Aggregation]은 span:F[Two-Way Route]와 연관된 최소 하나이상의 span:F[Two-Way Route Part]가 있어야 함
+* span:F[Two-Way Route]와 연관된 항로표지에 대한 연관관계를 입력할 때에는 span:R[Aids To Navigation Association]을 이용해야 함(<<ATON_ASSO,※참고>>)
+

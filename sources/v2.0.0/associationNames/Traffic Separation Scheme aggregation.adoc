@@ -1,0 +1,25 @@
+.Traffic Seperation Scheme Aggregation의 정의
+[%header, cols="a,a,a,a"]
+|===
+4+h| Definition:: A feature association for the binding between a Traffic Separation Scheme or a Traffic Separation Scheme System and its component features.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+| Aggregation
+| The Collection
+| span:F[Traffic Separation Scheme]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Deep Water Route], span:F[Deep Water Route Centreline], span:F[Deep Water Route Part], span:F[Inshore Traffic Zone], span:F[Precautionary Area], span:F[Restricted Area], span:F[Separation Zone or Line], span:F[Traffic Separation Scheme], span:F[Traffic Separation Scheme Boundary], span:F[Traffic Separation Scheme Crossing], span:F[Traffic Separation Scheme Lane Part], span:F[Traffic Separation Scheme Roundabout], span:F[Two-Way Route], span:F[Two-Way Route Part]
+| 0, *
+|===
+
+===== Remark
+
+* span:F[Traffic Separation Scheme] 을 입력할 때에는 **반드시** 1개 이상의 구성요소(정의에서 The Component 쪽 객체들)를 가져야 함
+** 주의: 정의에서 The Component 쪽의 Multiplicity 가 ( 0, * ) 인 것은 개별 객체에 대한 제한임 +
+   예를 들어, span:F[Traffic Separation Scheme Roundabout]이 **없는** 통항분리제도도 있을 수 있기 때문에, 개별 객체는 ( **0** , *)
+
+
+
