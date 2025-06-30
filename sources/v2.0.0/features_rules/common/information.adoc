@@ -1,6 +1,8 @@
 // tag::information[]
 
-** 추가 정보는 #A "information" 또는 #F "Nautical Information"을 사용하여 입력
-** 항해 안전과 관련된 내용은 #F "Caution Area"를 사용
+* 해당 객체의 추가 정보는 span:A[information] 또는 span:F[Nautical Information]을 사용하여 입력
+** span:A[information/text]는 300자를 초과할 수 없음
+** span:A[information/text]가 300자를 초과할 경우, 반드시 span:A[information/file reference]를 사용해야 함
+* 항해 안전과 관련된 내용은 span:F[Caution Area]를 사용
 
 // eng::information[]
