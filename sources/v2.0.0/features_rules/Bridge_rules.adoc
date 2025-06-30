@@ -16,7 +16,7 @@
 
 * 필수 속성
 ** span:A[feature name]: 교량의 이름을 입력
-** span:A[opening bridge]: 개방 가능 여부를 나타내는 필수 속성으로, `True` 또는 `False` 값을 선택해야 함
+** span:A[opening bridge]: 개방 가능 여부를 나타내는 필수 속성으로, True 또는 False 값을 선택해야 함
 
 //
 * 교량 집합 (span:R[Bridge aggregation])
@@ -38,6 +38,7 @@
 *** 교량 이름이 알려져 있고 span:A[feature name]에 입력할 경우, span:F[Bridge][C,S]를 사용
 *** 교량 이름이 알려지지 않았거나 입력할 필요가 없는 경우, span:F[Bridge][N]를 사용
 ** span:A[scale minimum]: span:R[Bridge aggregation]에 포함된 모든 객체는 동일한 span:A[scale minimum] 값을 가져야 함
+
 * 공간적 범위:
 *** span:F[Bridge][C,S]의 공간적 범위는 관련된 span:F[Span Fixed] 및 span:F[Span Opening] 의 전체 범위를 포함해야 함
 
