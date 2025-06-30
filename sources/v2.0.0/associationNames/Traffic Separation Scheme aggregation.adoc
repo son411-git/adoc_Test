@@ -4,6 +4,7 @@
 4+h| Definition:: A feature association for the binding between a Traffic Separation Scheme or a Traffic Separation Scheme System and its component features.
 h| Role Type h| Role h|Assiciated With h| Multiplicity
 
+
 | Aggregation
 | The Collection
 | span:F[Traffic Separation Scheme]
