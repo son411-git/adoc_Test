@@ -1,18 +1,25 @@
 // tag::SeparationZoneOrLine[]
 ===== Remark
-- “Separation Zone of Line”은 IMO 지정항로의 공통 경계 또는 분리구역을 인코딩하거나 교차로의 중앙 부분을 인코딩할 때 사용
-- IMO 지정항로 여부는 surface 타입의 #F "Traffic Separation Scheme" 피처의 속성에 입력 +
-  ※ #F "Traffic Separation Scheme" 인코딩 기준 참조 +
-- 통항분리제도를 구성하는 모든 피처는 surface type 타입의 #F "Traffic Separation Scheme"피처를 입력하고 관련된 Feature를 #R "Traffic Separation Scheme Aggregation" 관계 설정
-   ※ Realtion 페이지 참조
-- 두 개의 통항 항로 또는 연안통항로와 하나의 통항 항로의 공통 경계를 인코딩할 때만 사용
+* 통항분리제도 중 분리대 또는 분리구역을 의미
+
+** span:F[Separation Zone or Line]은 통항분리제도를 구성하는 요소 중 다음 요소들과 중첩되어서는 안됨 span:D[그림의 파란색 선 부분만 입력]
+*** span:F[Traffic Separation Scheme Lane Part]
+*** span:F[Traffic Separation Scheme Crossing]
+*** span:F[Traffic Separation Scheme Roundabout]
+
+//
+* span:F[Separation Zone or Line]은 다른 구성요소와 함께 span:F[Traffic Separation Scheme]과 span:R[Traffic Separation Scheme Aggregation] 관계를 가져야 함 (<<TSS_AGGR,※참고>>)
 
 //image::../images/SeparationZoneOrLine/SeparationZoneOrLine_image-1.png[width=400]
+
 ===== Example
+.Separation Zone or Line의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|-|-|-|-|-
+
+|scale minimum|SCAMIN|IN|0,1| span:D[Traffic Separation Aggregation에 포함되는 다른 구성요소와 동일한 값]
+
 |===
 
 ---
