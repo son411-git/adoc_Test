@@ -138,7 +138,7 @@ dl dd {
 }
 
 b, strong {
-  font-weight: bold; /* BEXBEX: bold to 450 */
+  font-weight: bold;
 }
 
 div.document-stage-band, div.document-type-band {
@@ -305,7 +305,7 @@ h6:hover > a.anchor,
 }
 
 .active:after {
-  content: ""; /* BEXBEX : ▲ to blank */
+  content: "▲";
 }
 
 /* collapsible: */
@@ -320,8 +320,6 @@ h6:hover > a.anchor,
 
 svg {
   width: 100%;
-  padding-bottom: 92%;
-  height: 1px;
   overflow: visible;
 }
 
@@ -466,7 +464,7 @@ body {
   margin-right: auto;
   max-width: 100%;
   font-size: {{normalfontsize}};
-  font-weight: 300; /* BEXBEX: bump up to 350 before 300 */
+  font-weight: 300;
   line-height: 1.4em;
   color: #212529;
   background-color: #ffffff;
@@ -544,7 +542,7 @@ main {
   color: #05164d;
 }
 #toc li a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li a {
-  /* text-transform: uppercase; */ /* BEXBEX: Uppercase transform remove */
+  text-transform: uppercase;
 }
 #toc ul a:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul a:hover {
   box-shadow: none;
@@ -566,7 +564,7 @@ main {
     width: 323px;
     font-size: 0.9em;
     overflow: auto;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 30px;
     background-color: #f7f7f7;
   }
 }
@@ -876,8 +874,8 @@ h6,
 }
 
 h1, .h1 {
-  font-size: 2.0em;              /* BEXBEX: size up */
-  /*text-transform: uppercase;*/ /* BEXBEX: remove */
+  font-size: 1.6em;
+  text-transform: uppercase;
   margin-top: 2em;
 }
 
@@ -887,24 +885,15 @@ h1#content, .h1#content {
 
 h2, .h2 {
   margin-top: 1.3em;
-  font-size: 1.8em; /* BEXBEX: size up */
-  font-weight: 300; /* BEXBEX: down */
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 h3, .h3 {
   margin-top: 1.1em;
-  font-size: 1.6em; /* BEXBEX: size up */
-  font-weight: 600; /* BEXBEX: up */
-}
-
-
-/* BEXBEX: new */
-h4, .h4 {
-  margin-top: 1.1em;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 100;
 }
-
 
 .TermNum,
 .Terms,
@@ -978,33 +967,11 @@ ul li {
 }
 
 ul > li::before {
-  content: "• ";
+  content: "—";
   display: inline-block;
   width: 1em;
   margin-left: -1.2em;
 }
-
-ul ul > li::before {
-  content: "◦ ";
-  display: inline-block;
-  width: 1em;
-  margin-left: -1.2em;
-}
-
-ul ul ul > li::before {
-  content: "▪ ";
-  display: inline-block;
-  width: 1em;
-  margin-left: -1.2em;
-}
-
-ul ul ul ul > li::before {
-  content: "▫ ";
-  display: inline-block;
-  width: 1em;
-  margin-left: -1.2em;
-}
-
 
 ul > li p:first-child {
   display: inline;
@@ -1286,61 +1253,35 @@ h2 p, .h2 p {
   color: #5ecf86;
 }
 
-/* BEXBEX: 객체, 속성 등 스타일 */
-span.F { color: #377E47; font-weight: 550; font-style: italic; } /* Feature: 녹색 */
-span.A { color: #404040; font-weight: 550; font-style: italic; } /* Attribute: 핑크 */
-span.R { color: #F09B59; font-weight: 550; font-style: italic; } /* Relation: 주황색 */
-span.E { color: #d32f2f; font-weight: 550; }                     /* 필수: 빨간색 */
-span.D { color: #999999; font-weight: 300; font-style: italic; } /* Enum 값 설명 */
-span.D::before{
-  content: "(";
-}
-span.D::after{
-  content: ")";
-}
-
-
 .wrapper-top {
-  background: linear-gradient(160deg, #153f61 0%, #206c98 30%, #1fa8c4 100%) !important;
+  background: #05164D;
   color: #ffffff;
-  padding: 3em 1em 2.5em;
-  margin: 2em auto;
-  max-width: 1000px;
+  padding: 2em 0;
   width: 100%;
-  border-radius: 2rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  display: block;
-  min-height: 420px;         /* ✅ 로고가 포함될 정도로 높이 확보 */
-  box-sizing: border-box;
-}
-.wrapper-top > div {
-  max-width: 100%;      /* ← 이걸 없애거나 */
-  width: auto;          /* ← 더 자연스럽게 */
-  text-align: center;
-}
-/* 내부 각 요소 중앙 정렬 */
-.wrapper-top .coverpage-doc-identity,
-.wrapper-top .coverpage-logo,
-.wrapper-top .coverpage-tc-name {
-  margin: 0 auto 1.2em;
-  text-align: center;
 }
 
-/* 제목 */
-.coverpage-title .title-first {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 1em;
-  line-height: 1.4;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+.wrapper-top-bottom {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #05164D;
+  border-right: 100px solid transparent;
+  position: absolute;
 }
 
-.coverpage-logo {
-  margin-top: -330px;      /* ✅ 위로 강제로 올리기 */
-  z-index: 2;
-  position: relative;
+.doc-number {
+  font-size: 0.5em;
+  font-family: {{bodyfont}};
+}
+
+.coverpage-title {
+  padding-bottom: 0.5em;
+  font-family: {{headerfont}};
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 100;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-transform: uppercase;
 }
 
 .WordSection11 {
