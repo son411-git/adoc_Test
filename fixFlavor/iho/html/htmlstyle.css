@@ -1461,3 +1461,219 @@ To top button
     display: none;
   }
 }
+
+
+/* C7 : Added For Pre Block*/
+pre.sourcecode .m, pre.sourcecode .s, pre.sourcecode .sb, pre.sourcecode .sc, pre.sourcecode .ld, pre.sourcecode .sd, pre.sourcecode .s2, pre.sourcecode .se, pre.sourcecode .sh, pre.sourcecode .si, pre.sourcecode .sx, pre.sourcecode .sr, pre.sourcecode .s1, pre.sourcecode .ss {
+  color: #00009C !important;
+  font-weight: 600 !important;
+}
+pre.sourcecode .c, pre.sourcecode .ch, pre.sourcecode .cd, pre.sourcecode .cm, pre.sourcecode .cpf, pre.sourcecode .c1 {
+  color: #999999 !important;
+  font-weight: 300 !important;
+}
+
+/* C7 : 객체, 속성 등 스타일 */
+span.F { color: #377E47; font-weight: 550; font-style: italic; } /* Feature: 녹색 */
+span.A { color: #404040; font-weight: 550; font-style: italic; } /* Attribute: 핑크 */
+span.R { color: #e5721b; font-weight: 550; font-style: italic; } /* Relation: 주황색 */
+span.E { color: #d32f2f; font-weight: 550; }                     /* 필수: 빨간색 */
+span.D { color: #999999; font-weight: 300; font-style: italic; } /* Enum 값 설명 */
+span.D::before{
+  content: "(";
+}
+span.D::after{
+  content: ")";
+}
+
+
+/* C7: Fonts  */
+b, strong {
+  font-weight: 550 !important;
+}
+
+
+body {
+  font-weight: 400 !important;
+}
+
+/* C7 : Sytle Changes */
+.active:after {
+  content: "" !important;
+}
+
+
+.example pre,
+.example .pseudocode {
+  background: #efefef !important;
+  /* background: #f7f7f7 !important; */
+}
+
+
+table {
+  width: 95% !important;
+  font-weight: 400 !important; // bump up 300 to 400
+  margin: 0.5em 0 1em 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-right: 2em !important;
+}
+table, table th, table td {
+  border: 1px solid black !important;
+  font-size: 0.95em !important;
+  background-color: #ffffff !important;
+}
+table th, table td {
+  padding: 0.7em !important;
+}
+
+
+svg {
+  width: 100%;
+  padding-bottom: 92% !important;
+  height: 1px !important;
+  overflow: visible;
+}
+
+
+#toc li a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li a {
+  text-transform: none !important; 
+}
+
+
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 323px;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0 0 0 50px !important;
+    background-color: #f7f7f7;
+  }
+}
+
+
+/* C7: Headers */
+
+h1, .h1 {
+  font-size: 2.0em;
+  text-transform: none !important;
+  margin-top: 2em;
+}
+
+h1#content, .h1#content {
+  margin-top: 2em;
+}
+
+h2, .h2 {
+  margin-top: 1.3em;
+  font-size: 1.8em;
+  font-weight: 400 !important;
+}
+
+h3, .h3 {
+  margin-top: 1.1em;
+  font-size: 1.6em;
+  font-weight: 600 !important;
+}
+
+  /* new */
+h4, .h4 {
+  margin-top: 1.1em;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+
+/* C7: Bullet List */
+
+ul > li::before {
+  content: "• " !important;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em;
+}
+
+
+ul ul > li::before {
+  content: "◦ ";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em;
+}
+
+ul ul ul > li::before {
+  content: "▪ ";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em;
+}
+
+ul ul ul ul > li::before {
+  content: "▫ ";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em;
+}
+
+/* C7: More Styles */
+.wrapper-top {
+  background: linear-gradient(160deg, #153f61 0%, #206c98 30%, #1fa8c4 100%) !important;
+  color: #ffffff;
+  padding: 3em 1em 2.5em !important;
+  margin: 2em auto;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: block;
+  min-height: 420px;
+  box-sizing: border-box;
+}
+.wrapper-top > div {
+  max-width: 100%;
+  width: auto;
+  text-align: center;
+}
+.wrapper-top .coverpage-doc-identity,
+.wrapper-top .coverpage-logo,
+.wrapper-top .coverpage-tc-name {
+  margin: 0 auto 1.2em;
+  text-align: center;
+}
+.coverpage-title .title-first {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+.coverpage-logo {
+  margin-top: -330px;
+  z-index: 2;
+  position: relative;
+}
+
+
+.example {
+  /* background-color: #e1eef1; */
+  background-color: #f7f7f7 !important;
+  padding: 1.2em;
+  margin: 2em 0 1em 0;
+  text-align: left;
+  color: #424242;
+  padding-left: 2.7em;
+}
+.example p {
+  margin: 0;
+}
+.example .example-title {
+  font-weight: 700;
+  text-transform: none !important;
+  margin-left: -1.5em;
+}
