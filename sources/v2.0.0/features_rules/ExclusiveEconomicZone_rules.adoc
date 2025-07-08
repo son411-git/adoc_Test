@@ -1,5 +1,12 @@
 // tag::ExclusiveEconomicZone[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 배타적 경제수역(EEZ)에서 연안 국가는 해저 위의 수역, 해저 및 그 하층토의 천연자원(생물자원 또는 비생물자원)을 탐사, 개발, 보존 및 관리할 수 있는 주권적 권리를 가지며, 물, 해류, 바람 등으로부터 에너지를 생산하는 등 수역의 경제적 탐사 및 개발과 관련된 기타 활동에 대한 권리를 가짐
+* 배타적 경제수역(EEZ)을 인코딩해야 하는 경우, 반드시 span:F[Exclusive Economic Zone]를 사용해야 함
+
+* 실제로 EEZ가 선(curve) 형태인 연안 국가에서는 반드시 span:F[Exclusive Economic Zone][C]를 사용해야 하며, 면(Surface) 형태를 사용해서는 안됨
+* 두 개 이상의 연안 국가 간에 해양 관할권이 분쟁 중인 지역의 인코딩에 대한 지침은 DCEG 16.2.1
+include::common/NotUsedFeature.adoc[]
+
 ---
 // end::ExclusiveEconomicZone[]
