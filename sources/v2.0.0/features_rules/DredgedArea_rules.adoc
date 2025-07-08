@@ -1,26 +1,31 @@
 // tag::DredgedArea[]
 ===== Remark
 
-- #F "Dredged Area"는 Skin of earth 객체로 다른 Skin of earth 객체와 중첩하지 않아야 함
-- #A "Depth range maximum depth"는 준설수심보다 더 깊은 수심이 있다면 입력
-- 준설된 지역이 준설수심보다 얕다고 보고되었을 경우 #F "Caution Area" 피처와 중첩하고 관련 내용 기재 
-- 준설구역에 얕은 수심이 존재할 경우 #F "Sounding" 피처로 인코딩하고 수심구역은 #F "Depth Area" 피처 사용
-  (단, #F "Depth Area"의 속성 #A "Depth range minimum value"는 최소 수심으로 설정하고 #A "Depth range maximum value"는 준설 수심으로 설정)
+* span:F[Dredged Area]는 span:F[Depth Area], span:F[Unsurveyed Area], span:F[Land Area]와 함께 **Skin of the Earth**에 포함되는 객체 중 하나임
+* span:F[Dredged Area]의 준설 깊이는 span:A[depth range minimum value]에 입력
+** 출처에서 더 깊은 준설 깊이가 표시되어 있고 이를 입력할 필요가 있는 경우, span:A[depth range maximum value] 를 사용하여 입력
+* span:F[Dredged Area]의 경계에는 span:F[Coastline], span:F[Shoreline Construction] 외에 선(Curve) 형태 객체가 입력되서는 안됨
+* span:F[Dredged Area]는 종종 침전으로 인해 설계된 준설 깊이보다 얕은 수심(shoaler depths)이 확인될 수 있음. 필요한 경우 다음의 대안 중 하나를 적절히 선택하여 입력
+1. 얕은 수심은 span:F[Sounding]으로 입력하고, 적절한 span:F[Depth Area], span:F[Depth Contour]를 입력
+2. span:F[Dredged Area]의 span:A[depth range maximum value]을 준설된 지역의 설계된 준설 깊이로 설정하고, span:A[depth range minimum value] 가장 얕은 수심 값으로 설정
+3. 얕은 수심 영역을 커버하는 span:F[Caution Area]를 입력하고 span:A[information]을 통해 깊이 정보를 제공
+4. 얕은 수심이 span:F[Dredged Area]의 가장자리에 가까운 경우, span:F[Dredged Area]의 경계를 조정하여 얕은 수심을 제외하도록 수정
+* span:A[dredged date]는 준설 깊이가 유지되지 않는 준설된 지역에 대해 최신 측량의 연도를 입력하는데 사용. 준설 깊이가 유지될 경우에는 준설 연도를 표시할 필요가 없음
+* span:F[Dredged Area]의 span:A[vertical uncertainty]가 채워진 경우, 이는 span:F[Quality of Bathymetric Data]의 span:A[vertical uncertainty]로 표시된 불확실성과 동등하거나 더 나쁘지 않아야 함
+
+//
+* 법령 및 고시 등에 준설 구역 내 제한 속력이 명시되어 있거나, 별도의 속력 제한 구역의 범위가 일치하면 span:F[Restricted Area]를 별도로 입력하지 않고 span:F[Dredged Area]에 span:A[vessel speed limit]를 직접 입력
 
 //image::../images/DredgedArea/DredgeArea_image-1.png[width=300]
 
 ===== Example
+.Dredged Area의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Depth Range Minimum Value|DRVAL1|RE|1,1| 5.5m
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    Text|INFORM/NINFOM|(S)TE|0,1| Dredged to 5.5m
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 수심 5.5m로 준설
+|span:E[depth range minimum value]|DRVAL1|RE|1,1| 20.3
+|maximum permitted draught||RE|0,1| 18.0
 |===
 
 ---

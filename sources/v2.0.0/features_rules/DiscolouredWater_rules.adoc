@@ -1,6 +1,20 @@
 // tag::DiscolouredWater[]
 ===== Remark
-사용하지 않는 객체입니다.
+* 바다에서 물이 탁하거나 색이 달라 보이는 곳은 바닥이 얕을 가능성이 있음
+* span:F[Discoloured Water]는 변색이 관찰되었으나 얕은 수역의 수심 데이터가 없는 경우에만 잠재적은 얕은 수역(천소)를 나타내기 위해 사용 됨
+* span:F[Discoloured Water]는 span:F[Depth Area] 또는 span:F[Unsurveyed Area]로 반드시 덮여 있어야 함
+include::common/NotUsedFeature.adoc[]
+
+===== Example
+.Discoloured Water의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|reported date|SORDAT|TD|0,1|20210621
+|===
 
 ---
+
+
 // end::DiscolouredWater[]

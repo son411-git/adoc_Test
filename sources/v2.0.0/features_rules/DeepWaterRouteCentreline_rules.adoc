@@ -1,5 +1,33 @@
 // tag::DeepWaterRouteCentreline[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* span:F[Deep Water Route Centreline]은 폭이 명시되지 않은 깊은 수심 항로의 중심선을 선(Curve)형태로 입력할때 사용
+* 깊은 수심 항로의 이름을 표시할 때는 span:R[Deep Water Route Aggregation] 관계의 span:F[Deep Water Route]의 span:A[feature name] 에 입력
+* 만약 항로가 단순해서 span:F[Deep Water Route Centreline] 하나로 전체 항로를 나타낼 수 있다면 이 객체의 span:A[feature name] 에 입력, 이 때 span:A[depth range minimum value]도 함께 입력할 수 있음
+** 단, span:F[Deep Water Route Part]는 span:F[Dredged Area]와 달리 항만청이나 항만공사의 직접적인 관리 없이 연안 해역에 주로 지정되어 최소 수심이 완전히 보장되지 않으므로, +
+수로국이 특정 span:F[Deep Water Route]내 최소 수심을 확실히 보장할 수 있다면, span:A[depth range minimum value] 속성에 이 값을 입력해야 함
+
+//
+* span:A[based on fixed marks]는 필수이며 항로가 하나 이상의 고정 표지를 기반으로 하고 있으면 True 로 입력
+* span:A[orientation value]는 필수이며 일방통행* 일때는 선박이 진행하는 방향으로 방위각을 입력하고, 양방향일때는 180 미만의 값을 입력해야 함
+** 일방통행 : span:A[traffic flow] = (1 : inbound, 2 : outbound or 3 : one-way)
+** ECDIS에서 따라야 할 방향을 올바르게 표시하기 위해 선(Curve)을 그리는 순서도 span:A[orientation value], span:A[traffic flow]에 입력된 방향과 동일해야 함
+
+//
+* span:F[Deep Water Route Centreline]가 span:R[Deep Water Route Aggregation] 또는 span:R[Traffic separation scheme Aggregation] 에 포함된 경우 span:A[IMO adopted]를 입력해서는 안됨
+** IMO가 지정한 깊은 수심 항로는 IMO 간행물 "Ships' Routeing" Part C 참고
+
+===== Example
+.Deep Water Route Centreline의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|span:E[based on fixed marks]|CATTRK|BO|1,1| false
+|depth range minimum value|DRVAL1|RE|0,1| 30
+|span:E[orientation value]|ORIENT|RE|1,1| 139
+|span:E[traffic flow]|TRAFIC|EN|1,1| 3
+|===
+
 ---
 // end::DeepWaterRouteCentreline[]
