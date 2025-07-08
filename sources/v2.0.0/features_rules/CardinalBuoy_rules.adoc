@@ -5,16 +5,17 @@
 * 항해자는 북방위표지의 북쪽, 동방위표지의 동쪽 등을 통과해야 함
 
 * 필수 속성 : IALA 해상 부표 시스템에 따라,
-** span:A[Colour]는 검정색과 노란색의 가로 줄무늬로 구성되며 방위에 따라 색의 패턴이 다름
-** 가로 줄무늬로 색상을 입력하므로 span:A[Colour Pattern] = (1 : horizontal stripes)를 입력
-** span:A[Topmark]는 검정색 이중 원뿔의 조합으로 구성되며 방위에 따라 모양이 다름
-** 등화는 백색등으로 Q 또는 VQ 등광을 가지나, 북쪽은 연속 점멸(Q, VQ), 동쪽은 3회 점멸(Q(3), VQ(3)), +
+** 부표의 형상은 망대(pillar) 또는 원주(spar) 만 허용됨
+** 도색은 검정색과 노란색의 가로 줄무늬로 구성되며 방위에 따라 색의 패턴이 다름
+** (장착된 경우) 두표는 검정색 이중 원뿔의 조합으로 구성되며 방위에 따라 모양이 다름
+** (장착된 경우) 등화는 백색등으로 Q 또는 VQ 등광을 가지나, 북쪽은 연속 점멸(Q, VQ), 동쪽은 3회 점멸(Q(3), VQ(3)), +
 남쪽은 6회 점멸 + 긴 점멸(LFI), 서쪽은 9회 점멸(아날로그 시계와 유사) 함
 ** 위 조건에 따른 속성의 조합은 **반드시** <<CardinalBuoy_T1,[표 - Cardinal Buoy의 속성 조합 기준]>>를 참고하여 입력
 
 * 부가 정보
 ** 부표(Buoy)에 span:F[Fog Signal], span:F[Radar Transponder Beacon] 및 등화 등 장비 역할의 객체들이 있다면 span:R[Structure/Equipment] 관계 설정
-** 부표(Buoy)의 span:A[Height]와 span:A[Vertical Length]는 일반적으로 입력하지 않음
+** 부표(Buoy)의 span:A[height]와 span:A[vertical length]는 일반적으로 입력하지 않음
+include::common/IALA_Warning.adoc[]
 
 include::common/information.adoc[]
 
@@ -66,11 +67,6 @@ image::../images/CardinalBuoy/CardinalBuoy_image-1.png[width=50%]
 |2 : black
 |2 : black
 |2 : black
-|    colour pattern
-|UNDEFINED
-|UNDEFINED
-|UNDEFINED
-|UNDEFINED
 |    span:E[topmark/daymark shape]
 |13 : 2 cones (points upward)
 |11 : 2 cones (base to base)
