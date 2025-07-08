@@ -11,7 +11,7 @@
 
 * 사용 조건
 ** span:A[optimum display scale]에 해당하는 화면 축척에서 span:F[Span Fixed] 또는 span:F[Span Opening]과 같은 구성 객체로 교량을 상세히 표현하기 어려운 경우
-** span:F[Pontoon]으로 구성된 연결 교량인 경우
+** span:F[Pontoon] 또는 span:F[Dolphin]의 연결 교량인 경우
 ** 해안선 부근, 강, 하천 등 항해가 불가능한 지역인 경우
 
 * 필수 속성
@@ -43,7 +43,7 @@
 *** span:F[Bridge][C,S]의 공간적 범위는 관련된 span:F[Span Fixed] 및 span:F[Span Opening] 의 전체 범위를 포함해야 함
 
 .개방 교량의 교량 집합과 공간적 범위의 차이
-image::../images/Bridge/Bridge_image-1.png[width=50%]
+image::../images/Bridge/Bridge_image-1.png[width=100%]
 
 * 부가 정보
 include::common/information.adoc[]
@@ -97,7 +97,6 @@ image::../images/Bridge/Bridge_image-3.png[width=100%]
 |    name usage||(S)EN|0,1|2 : alternate name display 
 |opening bridge||(S)BO|0,1|true
 |===
-
 
 ---
 // end::Bridge[]
