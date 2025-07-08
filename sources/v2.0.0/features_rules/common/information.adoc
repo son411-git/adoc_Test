@@ -5,4 +5,4 @@
 ** span:A[information/text]가 300자를 초과할 경우, 반드시 span:A[information/file reference]를 사용해야 함
 * 항해 안전과 관련된 내용은 span:F[Caution Area]를 사용
 
-// eng::information[]
+// end::information[]

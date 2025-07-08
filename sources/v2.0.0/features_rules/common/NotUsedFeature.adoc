@@ -1,1 +1,5 @@
+// tag::NotUsedFeature[]
+
 * 국내 기준 : 일반적으로 입력하지 않음
+
+// end::NotUsedFeature[]
