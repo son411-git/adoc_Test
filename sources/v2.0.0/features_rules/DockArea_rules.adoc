@@ -1,26 +1,40 @@
 // tag::DockArea[]
 ===== Remark
-- 선거구역은 항해가 불가능한 구역으로써 수심#F "Sounding"등이 존재하지 않아야 함
-- #F "Dock Area" 피처를 육지구역 #F "LandArea" 또는 미측구역 #F "Unsurveyed Area"과 중첩하여 입력
-- 비조석선거와 조석선거의 구분은 #F "Gate"의 유무에 따라 아래 그림과 같이 구분하여 입력
 
-//image::../images/DockArea/DockArea_image-1.png[width=400]
+* span:F[Dock Area]는 항해가 불가능한 지역에만 입력해야하며 span:F[Land Area] 또는 span:F[Unsurveyed Area]로 덮여야 함
+* span:F[Dock Area]의 경계는 별도로 입력하지 않아야하며, span:F[Gate]는 예외임
+* span:F[Dock Area]의 입구 크기는 span:A[horizontal clearance fixed]에 입력
+* 항해가 가능한 부분의 길이와 너비는 span:A[horizontal clearance length]와 span:A[horizontal clearance width]로 입력
+* 알려진 span:F[Dock Area]의 이름은 span:A[feature name]에 입력
+
+//
+* 항해가 가능한 도크는 span:F[Depth Area], span:F[Dredge Area], span:F[Unsurveyed Area]를 사용해야하며, span:F[Dock Area]는 사용하지 않아야 함
+* 경계는 span:F[Coastline], span:F[Shoreline Construction], span:F[Gate]으로 입력
+* 알려진 span:F[Dock Area]의 이름은 span:F[Sea Area/Named Water Area]를 사용하여 입력해야 함
+
+// 
+* 습식 도크(비조수 도크)는 바깥 바다와 다른 수심 기준면(sounding datum)을 사용할 수 있으며 해당 영역에 span:F[Sounding Datum]을 span:A[vertical datum] = (24 : local datum) 으로 입력
+
+include::common/NotUsedFeature.adoc[]
 
 ===== Example
+.Dock Area의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Non tidal basin 
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 선거
-|    Name Usage||(S)EN|0,1| 2 : alternate name display 
-
-
+|category of dock|CATDOC|EN|0,1| 2 : wet dock
+|condition|CONDTN|EN|0,1|
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Ulsan wet dock
+|    name usage||(S)EN|0,1| 1 : default name display
+|**horizontal clearance fixed**||C|0,1| 
+|    span:E[horizontal clearance value]|HORCLR|(S)RE|1,1| 80
+|    horizontal distance uncertainty|HORACC|(S)RE|0,1|
+|horizontal clearance length||RE|0,1| 390
+|horizontal clearance width||RE|0,1| 80
+|maximum permitted draught||RE|0,1| 5
 |===
 
 ---

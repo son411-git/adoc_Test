@@ -6,6 +6,7 @@
 * 가항수역에서 span:F[Conveyor]의 지지대는 span:F[Pylon/Bridge Support]로 span:A[Category of pylon] = (3 :aerial cableway pylon)를 입력
 * span:A[vertical clearance fixed]는 10m 이상은 정수로 입력하고 10m 미만 일때만 소수점 첫째자리까지 입력한다. (예 : 9.5m)
 
+.종이해도에서 Conveyor의 사용
 image::../images/Conveyor/Conveyor_image-1.png[width=400]
 
 ===== Example

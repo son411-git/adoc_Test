@@ -1,6 +1,10 @@
 // tag::DepthNoBottomFound[]
 ===== Remark
-사용하지 않는 객체입니다.
+* 너무 깊어 바닥을 측정하지 못한 지점의 깊이를 입력할 때 사용
+* 데이터 구조는 위도, 경도, 깊이로 구성된 3D 좌표 배열을 가짐
+* span:F[Sounding]과 마찬가지로 Sounding Group으로 묶어 효율적으로 저장해야 함
+* 깊이 단위는 정수 미터(m)로 기록하고, 소수점은 사용해지 않아야 함
+include::common/NotUsedFeature.adoc[]
 
 ---
 // end::DepthNoBottomFound[]

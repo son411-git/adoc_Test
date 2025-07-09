@@ -5,7 +5,6 @@
 * 일반적으로 소축척해도에서 국경의 입력
 * span:A[nationality]는 ISO 3166 표준에 따라 2자리의 대문자 영문 코드로 입력
 
-[inclue]
 ===== Example
 
 .Administration Area의 인코딩 예시

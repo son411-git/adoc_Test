@@ -1,38 +1,94 @@
 // tag::DataCoverage[]
 ===== Remark
 
-데이터범위 +
-- S-57 전자해도에서 범위 내 데이터 유무를 나타내는 Object로 사용되었으나 S-101에서는 데이터가 있는 부분만 Feature를 생성하고 없는 부분은 별도의 Coverage를 생성하지 않음.
-- S-101에서 #F "Data Coverage"의 용도는 데이터의 유무를 나타내는 용도와 ECDIS 장비가 축척에 따라 전자해도 데이터를 로딩/언로딩 하는데 필요한 축척정보를 주는 용도로 사용됨
-- 데이터셋 내에서 데이터가 존재하는 구역에는 축척에 따라 하나 이상의 #F "Data Coverage"가 반드시 존재해야 하며 #F "Data Coverage"간에는 중첩할 수 없음 
-- S-57 전자해도의 #F "M_COVR"와 #F "M_CSCL"의 속성에 따라 입력 내용 산출
-- #F "Data Coverage"의 속성 또한 사용자의 화면에 보여줄 최대/최소 축척만을 입력
-- 전자해도 Band에 따른 최대/최소 축척 입력은 #F "M_CSCL" 매칭 페이지 참조
+* span:F[Data Coverage]는 데이터셋 내 데이터가 적용된 공간적 범위와 동일한 영역을 커버해야 하며, 겹쳐서는 안 됨
+** 또한, span:F[Data Coverage]는 ECDIS에서 사용자가 선택한 화면 축척에 따라 데이터셋 로딩과 렌더링을 결정하는 데 필요한 축척 정보를 제공함
+* 최소한 하나의 span:F[Data Coverage] 가 데이터셋에 포함되어야 함
 
-편집축척 +
-- S-57 전자해도에서 영역 내의 편집축척을 나타내는 용도로, ECDIS상에서 표출되는 축척 값과 #A "SCAMIN"값을 설정하는데 사용되었음. S-101에서는 #F "Data Coverage"로 통합하여 사용
-- S-101에서 #F "Data Coverage"의 용도는 데이터의 유무를 나타내는 용도와 ECDIS 장비가 축척에 따라 전자해도 데이터를 로딩/렌더링 하는데 필요한 축척정보를 주는 용도로 사용됨
-- 데이터셋 내에서 데이터가 존재하는 구역에는 축척에 따라 하나 이상의 #F "Data Coverage"가 반드시 존재해야 하며 #F "Data Coverage"간에는 중첩할 수 없음 
-- #F "Data Coverage"의 필수속성인 최대/최소 및 편집 축척 값은 아래의 표를 참조하여 입력
+* 전자해도의 축척에 따라 ECDIS에 표시하기 위해 입력되는 축척 정보는 아래와 같이 3개의 속성이 있으며, 속성 값은 <<DataCoverage_F1,[그림 - 최대/적정/최소 표시 축척의 값]>>에 명시된 값만을 사용해야 함
 
-[%haeder,format=csv]
+[[DataCoverage_F1]]
+.최대 / 적정 / 최소 표시 축척의 값 (S-101 Ed. 2.0.0 DCEG Table 3-2)
+image::../images/DataCoverage/DataCoverage_image-1.png[width=100%]
+
+//
+* span:A[optimum display scale] (적정 표시 축척) 설정
+** S-101 Annex A, Table 3-2에서 정의된 값 중 편집 축척보다 한 단계 큰 값을 선택
+** 예: 1:5,000 편집 축척 → span:A[optimum display scale] = (4000)
+
+//
+* span:A[minimum display scale] (최소 표시 축척) 설정
+** span:A[optimum display scale] 보다 큰 값을 선택해야 함
+** 보통 다음 축척 단계의 span:A[optimum display scale] 값과 일치하도록 설정
+** 예: 1:5,000 편집 축척 → span:A[minimum display scale] = (8000)
+
+//
+* span:A[maximum display scale] (최대 표시 축척) 설정
+** span:A[optimum display scale] 보다 작은 값 또는 동일한 값으로 설정 가능
+** 일반적으로 span:A[optimum display scale]의 절반 정도 값 선택
+** 예: 1:5,000 편집 축척 →span:A[maximum display scale] = (2000)
+
+// 
+* 주의사항
+** 하나의 데이터셋에 다수의 span:F[Data Coverage]가 있는 경우:
+*** span:A[minimum display scale]은 모두 동일해야 함
+*** span:A[optimum display scale]은 다를 수 있음
+*** span:A[maximum display scale]은 다를 수 있음
+
+// 
+NOTE :
+**2025년 S-101 DB 구축 TF 결정 사항** : +
+국내 전자해도 제작 시 기본 편수 자료의 단계별 축척 일관성이 높아지고 S-57 메타 객체 span:F[M_CSCL]의 사용이 점차 줄어듦에 따라 +
+데이터 편집 축척을 구분하기 위한 목적으로 S-101에서 span:F[Data Coverage]를 사용하지 않으며, S-57 span:F[M_CSCL]로도 변환하지 않음
+
+.단계별 Data Coverage의 속성 조합 기준
+[cols="2,1,1,1,1", options="header"]
 |===
-Usage,최대축척,최적축척(편집축척),최소축척
-Overview(KR1),1500000,2000000,10000000
-Transit1(KR2),350000,500,1500000
-Transit2(KR3),180000,250000,350000
-Port Entry1(KR4),45000,75000,180000
-Port Entry2(KR5),22000,25000,45000
-Port Entry3(KR6),4000,5000,22000
+|단계|기준 축척|max.|opt.|min.
+
+|Overview (ENC 1)
+|1 : 2,000,000
+|350000
+|1500000
+|UNKNOWN
+|Transit 1 (ENC 2)
+|1 : 500,000
+|180000
+|350000
+|1500000
+|Transit 2 (ENC 3)
+|1 : 250,000
+|45000
+|180000
+|350000
+|Port Entry 1 (ENC 4)
+|1 : 75,000
+|22000
+|45000
+|180000
+|Port Entry 2 (ENC 5)
+|1 : 25,000
+|4000
+|22000
+|45000
+|Port Entry 3 (ENC 6)
+|1 : 5,000
+|2000
+|4000
+|22000
+
 |===
+
+
 ===== Example
+.축척 1:25,000 의 Data Coverage 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Maximum Display Scale|CSCALE|IN|1,1| 4000
-|#essential Minimum Display Scale||IN|1,1| 22000
-|#essential Optimum Display Scale|CSCALE|IN|1,1| 5000
+|span:E[maximum display scale]|CSCALE|IN|1,1|45000
+|span:E[minimum display scale]||IN|1,1|4000
+|span:E[optimum display scale]|CSCALE|IN|1,1|22000
 |===
 
 ---

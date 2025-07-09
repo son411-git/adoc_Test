@@ -19,7 +19,6 @@ include::common/NotUsedFeature.adoc[]
 |    span:E[language]||(S)TE|1,1|eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Intemational Regulations
 for the Prevention of Collisions at Sea — Vessel Bridge-to-Bridge Radiotelephone Regulations
-|    name usage||(S)EN|0,1|UNDEFINED
 |regulation citation||TE|0,1|33 CFR 26
 |===
 ---

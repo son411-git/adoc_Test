@@ -1,5 +1,98 @@
 // tag::EmergencyWreckMarkingBuoy[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* span:F[Emergency Wreck Marking Buoy]는 선박 침몰 시 해당 침선에 대한 영구적인 해도 표기 방식이 확정되어 항행통보를 통해 공표되거나, 침선이 제거(인양)될 때까지 새로운 침선의 위치를 표시하는 데 사용됨
+
+* 필수 속성 : IALA 해상 부표 시스템에 따라,
+** 부표의 형상은 망대(pillar) 또는 원주(spar) 만 허용됨
+** 도색는 파란색과 노란색의 세로 줄무늬로 구성됨
+** (장착된 경우) 두표는 노란색 십자가
+** (장착된 경우) 등화는 Al.Oc.BuY.3s 를 사용해야 함, (해도에 표기하지 않지만 광달거리는 IALA 규정에 의해 **4 해상마일(M)** 임)
+** (장착된 경우) 레이콘은 모스 부호를 **D**로 사용해야 함
+** 위 조건에 따른 속성의 조합은 아래 표를 참고하여 입력
+include::common/IALA_Warning.adoc[]
+
+include::common/information.adoc[]
+
+.Emergency Wreck Marking Buoy의 속성 조합 기준
+[cols="1,1", options="header"]
+|===
+|Attribute |Value
+2+^h|buoy
+|span:E[buoy shape]
+| 4 : pillar / 5 : spar
+|span:E[colour]
+| 5 : blue +
+6 : yellow
+|colour pattern
+|2 : vertical stripes 
+|marks navigational +
+- system of
+| 2 : IALA B
+2+^h|topmark (if any)
+|    colour 
+| 6 : yellow
+|    span:E[topmark/daymark shape]
+| 8 : upright cross
+2+^h|Light All Around : rhythm of light(if any)
+|span:E[colour]
+| 5 : blue
+|span:E[colour]
+| 6 : yellow
+| span:E[light characteristic]
+| 17 : occulting alternating
+| signal group
+| (1)
+| signal period
+| 3
+|    signal sequence / span:E[signal duration]
+| 0.5 +
+1 +
+0.5 +
+1
+|    signal sequence / span:E[signal status]
+| 2 : eclipsed/silent +
+1 : lit/sound +
+2 : eclipsed/silent +
+1 : lit/sound 
+| value of nominal range
+| 4
+2+^h|Radar Transponder Beacon (if any)
+| category of radar transponder beacon
+| 2 : racon, radar transponder beacon
+| signal group
+|(D)
+|===
+
+//
+* 부가 정보
+** 부표(Buoy)에 span:F[Fog Signal], span:F[Radar Transponder Beacon] 및 등화 등 장비 역할의 객체들이 있다면 span:R[Structure/Equipment] 관계 설정
+** 부표(Buoy)의 span:A[height]와 span:A[vertical length]는 일반적으로 입력하지 않음
+include::common/information.adoc[]
+
+===== Example
+.Emergency Wreck Marking Buoy의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|span:E[buoy shape]|BOYSHP|EN|1,1| 4 : pillar
+|span:E[colour]|COLOUR|EN|1,*| 5 : blue
+|span:E[colour]|COLOUR|EN|1,*| 6 : yellow
+|colour pattern|COLPAT|EN|0,1| 2 : vertical stripes
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Yonggipo Hang
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 용기포항 침선
+|    name usage||(S)EN|0,1| 2 : alternate name display
+|marks navigational - system of|MARSYS|EN|0,1| 2 : IALA B
+|**topmark**|TOPMAR|C|0,1|
+|    colour|COLOUR|(S)EN|0,*| 6: yellow
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 8 : upright cross
+|===
+
 ---
 // end::EmergencyWreckMarkingBuoy[]

@@ -1,22 +1,37 @@
 // tag::DeepWaterRoute[]
 ===== Remark
-- 항로의 각도에 따라 별도의 피처를 생성하여 두 개 이상의 깊은수심 항로부가 하나의 항로를 나타낼 경우, Surface type의 #F "Deep Water Route"와 #R "Deep Water Route Aggregation" 관계 설정 +
-  ※ Relation 페이지 참조
-- 이에 따른 항로명은 “Two Way Route”에 입력
+* 깊은 수심 항로는 span:F[Deep Water Route]로 입력
+* 객체의 이름이 없으면 span:F[Deep Water Route][N]으로 입력
+* 객체의 이름을 알고 있고 ECDIS에서 이름이 표시되어야 하는 경우, + 
+  span:F[Deep Water Route][C,S]로 입력하고 이름은 span:A[feature name]으로 입력
+
+//
+* 객체 관계
+** span:R[Deep Water Route Aggregation]을 정의하기 위해 구성 객체를 span:F[Deep Water Route]로 객체 관계를 맺어야함 (<<DW_AGGR,※참고>>)
+** span:R[Deep Water Route Aggregation]가 통항분리제도와 연관이 있다면 span:R[Traffic Separation Scheme Aggregation]으로 계층적 관계를 형성할 수 있음
+** span:F[Deep Water Route]의 공간적 범위는 구성 객체들의 전체 범위를 포함해야함
+** span:R[Deep Water Route Aggregation]는 최소한 하나의 구성 객체를 반드시 포함해야함
+** span:R[Deep Water Route Aggregation]의 구성 객체는 같은 span:A[scale minimum] 값을 가져야 함
+
+//
+* IMO가 지정한 깊은 수심 항로는 IMO 간행물 "Ships' Routeing" Part C에 나열되어 있으며 해당하지 않으면 span:A[IMO adopted] = (false)를 입력
+include::common/information.adoc[]
+
 ===== Example
+.Deep Water Route의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Mason Fairway 
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 마산항로
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|IMO Adopted|CATTSS|BO|0,1| false
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Masan Fairway
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 마산 항로
+|    name usage||(S)EN|0,1| 2 : alternate name display  
+|imo adopted|CATTSS|BO|0,1|false
 |===
 
 //image::../images/DeepWaterRoute/DeepWaterRoute_image-1.png[width=400]

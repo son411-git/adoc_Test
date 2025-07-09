@@ -1,15 +1,25 @@
 // tag::DepthContour[]
 ===== Remark
 
-- #A "Value of depth contour"에 등심선 값 필수 입력(-H, 2, 5, 10, 20, 30, 50 ,100 ....)
-- 업데이트로 등심선이 새로 인코딩되는 경우, 그에 해당하는 측량원도 정보는 #A "Information"을 사용하여 입력
-- #A "Scale minimum" 값은 누락되어 있다면 입력 - 국내 Scale minimum Step 값 확인.
+* span:A[value of depth contour]는 필수 입력(0, 2, 5, 10, 20, 30, 50, 100m 등....)
 
+* 가능하면 span:F[Depth Contour]는 폐합되거나 데이터셋의 경계, span:F[Coastline], span:F[Shoreline Construction] 또는 다른 span:F[Depth Contour]에 연결하여 폐합된 영역을 형성해야 함 
+
+* 대략적인 등심선은 span:F[Depth Contour]과 관련된 공간 품질을 입력하는 span:F[Spatial Quility]에 span:A[quality of horizontal measurement] = ( 4 : approximate) 로 입력할 수 있음
+* 아래 그림은 국내 전자해도에서 사용되는 span:F[Depth Contour] 의 span:A[value of depth contour] 값 만을 사용하여 제작되었으며, span:F[Depth Area]의 span:A[depth range minimum value] 와 span:A[depth range maximum value] 의 조합은 그림과 다를 수 있으므로 참고용으로만 사용해야 함
+
+//
+.밴드별 등심선 사용 현황 - 참고용 (단위 : m)
+image::../images/DepthContour/DepthContour_image-1.png[width=100%]
+					
 ===== Example
+.Depth Contour의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|#essential Value of Depth Contour|VALDCO|RE|1,1| 10
+
+|interoperability identifier||URN|0,1|
+|span:E[value of depth contour]|VALDCO|RE|1,1|30
 |===
 
 ---
