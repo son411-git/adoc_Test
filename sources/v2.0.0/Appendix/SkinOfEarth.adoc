@@ -1,0 +1,17 @@
+[[SkinOfEarth]]
+
+= Skin of Earth
+
+* 지표를 의미하는 것으로 span:F[Data Coverage]는 아래 객체들로 완전히 채워져야 함
+** span:F[Depth Area]
+** span:F[Dredged Area]
+** span:F[Land Area]
+** span:F[Unsurveyed Area]
+** S-101의 Skin of Earth 는 S-57 때와 구성이 다름;
+*** span:F[DEPARE]
+*** span:F[DRGARE]
+*** span:F[FLODOC]
+*** span:F[HULKES]
+*** span:F[LNDARE]
+*** span:F[PONTON]
+*** span:F[UNSARE]

@@ -1,6 +1,7 @@
 = S-101 객체 입력 지침서 테스팅
 :toc: left
-:safe: unsafe      // ← 이 한 줄만 추가해도 inline HTML 이 살아납니다.
+// 아래 한 줄만 추가해도 inline HTML 이 살아납니다.
+:safe: unsafe      
 :sectnums:
 :toclevels: 3
 :doctype: standard
@@ -874,7 +875,7 @@ include::sources/v2.0.0/associationNames/Roofed Structure Aggregation.adoc[]
 include::sources/v2.0.0/associationNames/Spatial association.adoc[]
 
 [[Structure_Equipment]]
-==== Structure_equipment
+==== Structure/Equipment
 include::sources/v2.0.0/associationNames/Structure_equipment.adoc[]
 
 === T
@@ -885,6 +886,20 @@ include::sources/v2.0.0/associationNames/Text association.adoc[]
 [[TSS_AGGR]]
 ==== Traffic Separation Scheme aggregation
 include::sources/v2.0.0/associationNames/Traffic Separation Scheme aggregation.adoc[]
+
+[[TWRT_AGGR]]
+==== Two-way route aggregation
+include::sources/v2.0.0/associationNames/Two-way route aggregation.adoc[]
+
+=== U
+[[UPDATE_AGGR]]
+==== Update aggregation
+include::sources/v2.0.0/associationNames/Update aggregation.adoc[]
+
+[[UPDATE_INFO]]
+==== Update information
+include::sources/v2.0.0/associationNames/Update information.adoc[]
+
 
 == Information Types
 // informationTypes 객체별 include
@@ -911,3 +926,12 @@ include::sources/v2.0.0/informationTypes/ServiceHours.adoc[]
 .Attributes
 include::sources/v2.0.0/informationTypes/SpatialQuality.adoc[]
 
+
+
+== Appendix
+
+include::sources/v2.0.0/Appendix/SkinOfEarth.adoc[leveloffset=2]
+
+include::sources/v2.0.0/Appendix/ListOfLights.adoc[leveloffset=2]
+
+include::sources/v2.0.0/Appendix/Height_Elevation_VerticalLength.adoc[leveloffset=2]
