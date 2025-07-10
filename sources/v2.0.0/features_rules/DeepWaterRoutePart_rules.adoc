@@ -3,7 +3,7 @@
 
 * span:F[Deep Water Route Part]은 깊은 수심 항로를 면(Surface)형태로 입력할때 사용
 * 깊은 수심 항로의 이름을 표시할 때는 span:R[Deep Water Route Aggregation] 관계의 span:F[Deep Water Route]의 span:A[feature name] 에 입력
-* 만약 항로가 단순해서 span:F[Deep Water Route Part] 하나로 전체 항로를 나타낼 수 있다면 이 객체의 span:A[feature name] 에 입력
+** 만약 깊은 수심 항로가 단순해서 span:F[Deep Water Route Part] 하나로 전체 항로를 나타낼 수 있다면 해당 객체의 span:A[feature name] 에 입력
 
 //
 * span:A[depth range minimum value]는 필수이며 항로 내 최소 수심 값을 입력
@@ -11,6 +11,7 @@
 수로국이 특정 span:F[Deep Water Route]내 최소 수심을 확실히 보장할 수 있다면, span:A[depth range minimum value] 속성에 이 값을 입력해야 함
 
 //
+* 굽이진 경로로 구성된 깊은 수심 항로는, 각 구간을 별도로 분리하여 각각의 span:F[Deep Water Route Part]에 대해 span:A[orientation value]를 입력해야 함
 * span:A[orientation value]는 필수이며 일방통행* 일때는 선박이 진행하는 방향으로 방위각을 입력하고, 양방향일때는 180 미만의 값을 입력해야 함
 ** 일방통행 : span:A[traffic flow] = (1 : inbound, 2 : outbound or 3 : one-way)
 
