@@ -45,12 +45,14 @@ include::common/information.adoc[]
 | (1)
 | signal period
 | 3
-|    signal sequence / span:E[signal duration]
+|signal sequence +
+    span:E[signal duration]
 | 0.5 +
 1 +
 0.5 +
 1
-|    signal sequence / span:E[signal status]
+|signal sequence +
+    span:E[signal status]
 | 2 : eclipsed/silent +
 1 : lit/sound +
 2 : eclipsed/silent +
