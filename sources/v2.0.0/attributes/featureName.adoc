@@ -34,7 +34,8 @@
 |    name usage||(S)EN|0,1| 2 : alternate name display 
 |===
 
-** 다르게 알려져 있거나 불리는 이름이 있다는 경우 괄호() 안에 함께 입력해야 함
+** 따라서, 다르게 알려져 있거나 불리는 이름이 있다는 경우 아래와 같이 괄호() 안에 함께 입력해야 함
+
 .별칭 또는 다른 이름의 입력 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -53,17 +54,34 @@
 //
 .Sub Attributes
 * span:A[language]
-** 하위 속성 span:A[language]는 필수 속성으로, span:A[name]에 입력된 이름의 언어를 ISO 639-2/T 3글자 언어 코드(예: eng, kor)로 지정함
+** span:A[language]는 필수 속성으로, span:A[name]에 입력된 이름의 언어를 ISO 639-2/T 3글자 언어 코드(예: eng, kor)로 지정함
 ** 항해자가 ECDIS 화면에 표시할 언어를 선택하면 해당 언어로 이름이 표시됨
 
 * span:A[name]
-** 하위 속성 span:A[name]은 필수 속성으로, 입력된 이름은 항해자가 선택한 언어(span:A[language]에 지정된 언어 코드)에 따라 ECDIS 화면에 표시됨
+** span:A[name]은 필수 속성으로, 입력된 이름은 항해자가 선택한 언어(span:A[language]에 지정된 언어 코드)에 따라 ECDIS 화면에 표시됨
 ** 이름을 입력할 때 영어 이름(eng)은 반드시 첫 번째로 입력해야 하며, 영어 이름 없이 한글 이름(kor)만 입력할 수 없음
 
 * span:A[name usage]
-** 하위 속성 span:A[name usage]는 다음 두 가지 값 중 하나를 가짐: 1(default name display), 2(alternate name display). 
+** span:A[name usage]는 다음 두 가지 값 중 하나를 가짐: 
+*** (1 : default name display) 
+*** (2 : alternate name display)
 ** span:A[name usage] 값이 1이면 기본 언어(eng)로 이름이 표시되고, 값이 2이면 대체 언어(kor)로 이름이 표시됨
 ** span:A[name usage]를 입력하지 않으면 span:A[name]에 값이 있어도 화면에 표시되지 않으며, 항해자는 객체를 선택해 'Pick Report'로만 정보를 확인할 수 있음
+
+//
+[[Structue_Equipment_featureName]]
+.Structue/Equipment에서의 feature name
+
+* span:R[Structue/Equipment] 관계의 객체들은 구조물(Structure)과 장비(Equipment) 역할로 구분됨
+
+* 장비(Equipment)가 구조물(Structure)의 span:A[feature name]을 승계하기 때문에, **예외 조건**이 아니면 장비에 span:A[feature name] 별도 입력이 불필요함
+
+* **예외 조건**
+** 등대표에서 장비 (전파, 음파, 특수 항로표지)의 이름이 구조물과 다를 경우, 각 장비의 이름을 span:A[feature name]에 입력
+** Source DB에서 구조물(교량)과 장비(항로표지)가 다른 레이어 (ScaleBase, ScaleLess)에 입력되어 구조물의 이름을 승계 받지 못함. **Navigational Aids** 레이어에서 항로표지의 span:A[feature name]를 별도 입력
+
+* 구조물(Structure)과 장비(Equipment)의 span:A[feature name]이 같을 때, span:R[Structue/Equipment] 관계 설정 시 장비의 span:A[feature name]가 자동 삭제됨 (CARIS HPD 5.0 기능)
+* 반대로, 구조물(Structure)과 장비(Equipment)의 span:A[feature name]이 다를 때, span:R[Structue/Equipment] 관계 설정 시 유효성 검증에서 구조물의 span:A[feature name] 미승계로 'Warning' 레벨의 오류를 발생시킴
 
 .Encoding Guidance
 
