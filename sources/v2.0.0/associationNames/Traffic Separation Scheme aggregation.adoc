@@ -1,7 +1,7 @@
 .Traffic Seperation Scheme Aggregation의 정의
 [%header, cols="a,a,a,a"]
 |===
-4+h| Definition:: A feature association for the binding between a Traffic Separation Scheme or a Traffic Separation Scheme System and its component features.
+4+h|*Definition:* A feature association for the binding between a Traffic Separation Scheme or a Traffic Separation Scheme System and its component features.
 h| Role Type h| Role h|Assiciated With h| Multiplicity
 
 
