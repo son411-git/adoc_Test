@@ -24,14 +24,14 @@
 | 컨테이너선 | Container ship
 | 탱커선 | Tanker (운반하는 화물에 따라 Oil Tanker, Chemical Tanker, Gas Tanker 등으로 구분하기도 함)
 | 벌크선 | Bulk Carrier
-
+| 유람선 | Sightseeing Cruise
 | 여객선 | Passenger ship
 | 고속선(고속여객선) | High-Speed Craft
 | 예인선 | Tugboat
 | 부선 | Barge
 | 어선 | Fishing vessel, Fishing boat
 | 작업선, 특수목적선 | Workboat, Special purpose vessel
-| 위험물 운반선 | Dangerous cargo ship
+| 위험물 운반선 | Dangerous goods carrier
 
 |===
 
