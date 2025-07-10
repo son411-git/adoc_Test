@@ -1,0 +1,146 @@
+// tag::featureName[]
+
+.feature Name의 정의
+* S-101 에서 복합 속성 span:A[feature name]과 그 하위 속성은 객체의 이름을 입력하는데 사용됨
+* span:A[feature name]은 S-57 의 속성 span:A[OBJNAM]과 span:A[NOBJNM]과 대응됨
+* span:A[feature name]은 하위 속성으로 span:A[language], span:A[name], span:A[name usage]를 가짐
+
+//
+.Multiplicity
+* span:A[feature name]은 다중 속성 값을 지원하므로, 객체의 이름을 여러 언어로 입력할 수 있음
+* 실세계에서 객체의 이름은 고유하므로, 데이터셋에는 각 언어별로 번역된 이름을 하나씩만 입력해야 함
+** 예를 들어, 영어 이름이나 한글 이름을 중복 입력해서는 안 됨
+
+.다중 입력 오류 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gumeongseom
+|    name usage||(S)EN|0,1| 1 : default name display 
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng 
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| jangdaeseo
+|    name usage||(S)EN|0,1| 1 : default name display 
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 구멍섬
+|    name usage||(S)EN|0,1| 2 : alternate name display 
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 장대서
+|    name usage||(S)EN|0,1| 2 : alternate name display 
+|===
+
+** 따라서, 다르게 알려져 있거나 불리는 이름이 있다는 경우 아래와 같이 괄호() 안에 함께 입력해야 함
+
+.별칭 또는 다른 이름의 입력 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gumeongseom(jangdaeseo)
+|    name usage||(S)EN|0,1| 1 : default name display 
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 구멍섬(장대서)
+|    name usage||(S)EN|0,1| 2 : alternate name display 
+|===
+
+//
+.Sub Attributes
+* span:A[language]
+** span:A[language]는 필수 속성으로, span:A[name]에 입력된 이름의 언어를 ISO 639-2/T 3글자 언어 코드(예: eng, kor)로 지정함
+** 항해자가 ECDIS 화면에 표시할 언어를 선택하면 해당 언어로 이름이 표시됨
+
+* span:A[name]
+** span:A[name]은 필수 속성으로, 입력된 이름은 항해자가 선택한 언어(span:A[language]에 지정된 언어 코드)에 따라 ECDIS 화면에 표시됨
+** 이름을 입력할 때 영어 이름(eng)은 반드시 첫 번째로 입력해야 하며, 영어 이름 없이 한글 이름(kor)만 입력할 수 없음
+
+* span:A[name usage]
+** span:A[name usage]는 다음 두 가지 값 중 하나를 가짐: 
+*** (1 : default name display) 
+*** (2 : alternate name display)
+** span:A[name usage] 값이 1이면 기본 언어(eng)로 이름이 표시되고, 값이 2이면 대체 언어(kor)로 이름이 표시됨
+** span:A[name usage]를 입력하지 않으면 span:A[name]에 값이 있어도 화면에 표시되지 않으며, 항해자는 객체를 선택해 'Pick Report'로만 정보를 확인할 수 있음
+
+//
+[[Structue_Equipment_featureName]]
+.Structue/Equipment에서의 feature name
+
+* span:R[Structue/Equipment] 관계의 객체들은 구조물(Structure)과 장비(Equipment) 역할로 구분됨
+
+* 장비(Equipment)가 구조물(Structure)의 span:A[feature name]을 승계하기 때문에, **예외 조건**이 아니면 장비에 span:A[feature name] 별도 입력이 불필요함
+
+* **예외 조건**
+** 등대표에서 장비 (전파, 음파, 특수 항로표지)의 이름이 구조물과 다를 경우, 각 장비의 이름을 span:A[feature name]에 입력
+** Source DB에서 구조물(교량)과 장비(항로표지)가 다른 레이어 (ScaleBase, ScaleLess)에 입력되어 구조물의 이름을 승계 받지 못함. **Navigational Aids** 레이어에서 항로표지의 span:A[feature name]를 별도 입력
+
+* 구조물(Structure)과 장비(Equipment)의 span:A[feature name]이 같을 때, span:R[Structue/Equipment] 관계 설정 시 장비의 span:A[feature name]가 자동 삭제됨 (CARIS HPD 5.0 기능)
+* 반대로, 구조물(Structure)과 장비(Equipment)의 span:A[feature name]이 다를 때, span:R[Structue/Equipment] 관계 설정 시 유효성 검증에서 구조물의 span:A[feature name] 미승계로 'Warning' 레벨의 오류를 발생시킴
+
+.Encoding Guidance
+
+* 해도의 영문 표기는 문화체육관광부고시 제2024-27호 「국어의 로마자 표기법」에 따라 표준 발음으로 로마자를 사용함
+* 아래 대조표는 『해도제작 업무편람』(2024)과 『해도제작 실무지침』(2025)에서 발췌한 것임
+
+.한·영 대조표 
+[cols="10,25", options="header"]
+|===
+|한글 |영어
+2+^h| 행정지명
+|서울특별시 |SEOUL
+|제주도 | JEJU-DO
+|강원도 | GANGWON-DO
+|전라남도 |JEOLLNAM-DO
+|청주시 |CHEONGJU
+|양주군 |YANGJU
+|도봉구 |DODONG
+|순창읍 |SUNCHANG
+|삼죽면 |SAMJUK-MYEON
+|당산동 |Dangsan-dong
+2+^h| 기타
+|급수탑 |Water Tower 
+|수협 |National Federation of Fisheries Cooperatives
+|농협 |National Agricultural Cooperative Federation
+|보건소 |Public Health Center
+|초등학교 |Elementary School
+|해양안전심판원 |Korea Maritime Safety Tribunal
+|갑문관리소 |Lock Gate Management Office 
+|해양경찰청 |Korea Coast Guard
+|OO해양경찰서 |Coast Guard Station OO
+|OO해양경찰 XX파출소 |Coast Guard Substation XX
+|경찰청 |Korea National Police Agency
+|경찰서 |Police Station
+|파출소 |Police Box
+|OO지방해양수산청 |OO Regional Office of Oceans & Fisheries
+|해양수산청분소 |Maritime Affairs & Fisheries Branch Office 
+|국립해양조사원 |Korea Hydrographic and Oceanographic Agency
+|검역소 |Quarantine Station
+|부산항시설관리센터 |Busan Port Facilities Management Center
+|갑문관제탑 |Lock Gate Control Tower
+|세관 |Korea Custom House 
+|기상대 |Meteorological Office
+|선거 |Non Tidal Basin
+|기차역 |Station
+|조선소 |Shipyard
+|방조제 |Seawall
+|선착장 |Wharf
+|어촌계 |Fishing Village Cooperatives Office
+|-대교 / -교 |- Bridge / -gyo
+|OO해상교통관제센터 |OO VTS Center
+|공업단지 / 산업단지 |Industrial Complex
+|조위관측소 |Tidal Station
+
+|===
+
+// end::featureName[]
+
+
+
+ 
+
