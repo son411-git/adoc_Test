@@ -319,7 +319,7 @@ include::./common/surroundingDepth.adoc[tag=surroundingDepth]
 |quality of vertical measurement|QUASOU|EN|0,*|6 span:D[least depth known]
 |technique of vertical measurement|TECSOU|EN|0,*| 3 span:D[found by multi beam]
 |value of sounding|VALSOU|RE|0,1| 0.8
-|span:E[water] level effect|WATLEV|EN|1,1| 3 span:D[always underwater/submerged]
+|span:E[water level effect]|WATLEV|EN|1,1| 3 span:D[always underwater/submerged]
 |scale minimum|SCAMIN|IN|0,1| 49999
 |**information**|INFORM|C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng 

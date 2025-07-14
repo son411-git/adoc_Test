@@ -6,21 +6,64 @@
 //REVIEW: Sythetic 과 구분? 항로표지 없이 단독으로 사용되는 Virtual AIS만?
 * 국내 제작지침에 따라 span:F[Physical AIS AidToNavigation]는 더 이상 입력하지 않지만, span:F[VirtualAISAidToNavigation]에 대해서는 입력
 
---
+.V-AIS 와 입력예시
+====
 .등대표의 V-AIS
-image::../images/VirtualAISAidToNavigation/Virtual_AtoN.png[]
-.입력 예시 (KR4F2O10)
-image::../images/VirtualAISAidToNavigation/Virtual_Example.png[]
---
+[%header, cols="a,a,a,a,a,a,a,a,a"]
+[style="background-color:#FFFFFF"]
+|===
+^| 번&emsp;호 ^| 해안구분 ^| 명&emsp;칭 ^| 위&emsp;치 ^| MMSI ^| 주파수(MHz) ^| 출력(W) ^| 측정 구역(M) | 기&emsp;사
+
+<.^| 4630
+<.^| 서해안
+<.^| Virtual +
+NACHIDO_ROCK
+>.^| 36-30.69N +
+126-08.87E
+^.^| 994406032
+^.^| 16K0F1D +
+161.975 +
+162.025
+^.^| 12.5
+^.^| -
+<.^| 3분 주기 발사
+
+|===
+
+image:../images/VirtualAISAidToNavigation/Virtual_Example.png[]
+====
 
 * 단, V-AIS라 하더라도 명칭 또는 좌표를 확인하여 **고정된 물표와 함께 사용되는 Synthetic V-AIS는 입력하지 않음**
 
---
+.Sythetic V-AIS와 입력 예시
+====
 .등대표의 Synthetic V-AIS(고정된 물표와 함께 사용되는 V-AIS)
-image::../images/VirtualAISAidToNavigation/Synthetic_AtoN.png[]
-.예시 (KR5G1N34)
-image::../images/VirtualAISAidToNavigation/Synthetic_Example.png[] 
---
+[%header, cols="a,a,a,a,a,a,a,a,a"]
+[style="background-color:#FFFFFF"]
+|===
+^| 번&emsp;호 ^| 해안구분 ^| 명&emsp;칭 ^| 위&emsp;치 ^| MMSI ^| 주파수(MHz) ^| 출력(W) ^| 측정 구역(M) | 기&emsp;사
+
+<.^| 4451.46 +
+M4410.94
+<.^| 동해안
+<.^| 영일만항 +
+남방파제 북단 등대 +
+Yeongilman Hang
+>.^| 36-05.47N +
+129-27.23E
+^.^| 994403592
+^.^| 16K0F1D +
+161.975 +
+162.025
+^.^| 12.5
+^.^| -
+<.^| 3분 주기 발사 +
+Virtual AIS
+
+|===
+
+image:../images/VirtualAISAidToNavigation/Synthetic_Example.png[] 
+====
 
 
 //REVIEW: 굳이 이 말이 필요한가?
@@ -100,7 +143,7 @@ span:A[information]에 기능에 대한 설명을 입력
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| NACHIDO_ROCK
 |    name usage||(S)EN|0,1| 1 span:D[default name display]
-|mmsi code||TE|0,1| 994406950
+|mmsi code||TE|0,1| 994406032
 |span:E[virtual ais aid to navigation type]||EN|1,1| 9 span:D[isolated danger]
 |===
 

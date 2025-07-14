@@ -2,7 +2,7 @@
 
 [%header, cols="a,a,a,a"]
 |===
-4+h| Definition:: A feature association for the binding between a two-way route and its component features. 
+4+h|*Definition:* A feature association for the binding between a two-way route and its component features. 
 h| Role Type h| Role h|Assiciated With h| Multiplicity
 
 
