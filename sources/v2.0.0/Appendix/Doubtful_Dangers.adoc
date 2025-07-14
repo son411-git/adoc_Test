@@ -1,0 +1,51 @@
+[[Doubtful_Dangers]]
+
+= 의심스러운 항해위험물 
+
+* 의심스러운 항해위험물은 span:A[quality of vertical measurement] 및 span:A[][status] 와 공간 속성 (Spatial Attribute) span:A[quality of horizontal measurement] 로 설명되어야 함
+(예: 수심이 정확하지 않거나, 위치가 정확하지 않은 경우 등)
+
+.의심스러운 항해위험물의 속성 입력
+[cols="^5,^3,^2,^4,^4,^2", options="header"]
+|===
+|Attribute |S-4 |INT 1 |quality of horizontal measurement |quality of vertical measurement |status
+
+|Position approximate 
+|B-424.1
+|B7
+|4 : approximate 
+|
+| 
+|Position doubtful
+|B-424.2
+|B8 
+|4 : approximate
+|
+| 
+|Existence doubtful 
+|B-424.3 
+|I1 
+| 
+| 
+|18 : existence doubtful
+|Doubtful sounding
+|B-424.4 
+|I2 
+| 
+|3 : doubtful sounding 
+|
+|Reported danger 
+|B-424.5 
+|I3.1, I3.2 
+|4 : approximate 
+|8 : value reported +
+(not surveyed) or +
+9 : value reported +
+(not confirmed) 
+|
+|===
+
+//
+**span:A[quality of horizontal measurement]** :: 위치에 부여된 신뢰도의 정도
+**span:A[quality of vertical measurement]** :: 수심 값의 신뢰도
+**span:A[status]** :: 특정 시점에서의 객체의 상태
