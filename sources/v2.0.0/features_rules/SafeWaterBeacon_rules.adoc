@@ -1,6 +1,24 @@
 // tag::SafeWaterBeacon[]
 ===== Remark
-사용하지 않는 객체입니다.
+include::common/NotUsedFeature.adoc[]
+
+
+* span:deletion[테스트 용도 입니다. 아래 내용은 나중에 다 지울꺼에요]
+
+include::common/phrase.adoc[tag=NotUsedFeature]
+
+include::common/phrase.adoc[tag=CautionNotUsed]
+
+:ObjectName: span:F[Safe Water Beacon]을
+:Relation: span:R[Structure/Equipment]
+:linkTo: Structure_Equipment
+include::common/phrase.adoc[tag=Refer]
+
+
+:ObjectName: span:F[Separation Zone or Line]을
+:Relation: span:R[Traffic Separation Scheme Aggregation]
+:linkTo: TSS_AGGR
+include::common/phrase.adoc[tag=Refer]
 
 ---
 // end::SafeWaterBeacon[]

@@ -1,0 +1,11 @@
+// tag::NotUsedFeature[]
+* 국내 기준 : 일반적으로 입력하지 않음
+// end::NotUsedFeature[]
+
+// tag::CautionNotUsed[]
+**span:E[주의]**:: 국내 제작 지침 상 일반적으로 사용하지 않는 객체입니다.
+// end::CautionNotUsed[]
+
+// tag::Refer[]
+* {ObjectName} 입력할 때에는, 반드시 {Relation} 관계에 포함되어야 함 (<<{linkTo},※참고>>)
+// end::Refer[]
