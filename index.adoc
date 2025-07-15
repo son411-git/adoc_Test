@@ -456,7 +456,7 @@ include::sources/v2.0.0/features/OffshoreProductionArea.adoc[]
 include::sources/v2.0.0/features/OilBarrier.adoc[]
 
 === P
-==== Physical A I S Aid To Navigation
+==== Physical AIS Aid To Navigation
 .Attributes
 include::sources/v2.0.0/features/PhysicalAISAidToNavigation.adoc[]
 
@@ -774,7 +774,7 @@ include::sources/v2.0.0/features/VerticalDatumOfData.adoc[]
 .Attributes
 include::sources/v2.0.0/features/VesselTrafficServiceArea.adoc[]
 
-==== Virtual A I S Aid To Navigation
+==== Virtual AIS Aid To Navigation
 .Attributes
 include::sources/v2.0.0/features/VirtualAISAidToNavigation.adoc[]
 
