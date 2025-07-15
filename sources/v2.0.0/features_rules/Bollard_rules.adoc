@@ -3,7 +3,8 @@
 
 * span:F[Bollard]는 필요한 경우 span:A[feature name]을 사용하여 입력
 * span:F[Bollard]는 span:R[Structure/Equipment]을 사용하여 구조물(Structure) 객체와 관계를 맺어야 함.
-include::/common/Not Used Feature.adoc
+include::common/NotUsedFeature.adoc[]
+
 
 ===== Example
 

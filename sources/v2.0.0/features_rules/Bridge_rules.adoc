@@ -45,7 +45,7 @@
 .개방 교량의 교량 집합과 공간적 범위의 차이
 image::../images/Bridge/Bridge_image-1.png[width=100%]
 
-* 부가 정보
+//
 include::common/information.adoc[]
 
 .bridge construction의 예시
