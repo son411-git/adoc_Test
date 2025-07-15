@@ -1,6 +1,12 @@
 // tag::FortifiedStructure[]
 ===== Remark
 
+//REVIEW
+span:addition[업무 편람에 요새 구조물 부분을 보면 국내해도에 표시하지 않는다고 되어 있음 아래 include만 남기고 나머지를 다 지울지?]
+
+include::common/phrase.adoc[tag=EncodingRestricted]
+
+//
 * 일일부 해안선에는 방어 구조물이 있으며, 종종 사용되지 않거나 노후되어 방어 외 목적으로 쓰임
 * 주요 성곽부터 소규모 감시 초소까지 다양하며, 곶이나 해안선의 주요 특징으로 항해목표물로 사용될 수 있음
 

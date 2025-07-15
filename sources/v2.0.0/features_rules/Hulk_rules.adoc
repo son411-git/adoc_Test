@@ -16,16 +16,16 @@
 
 |category of hulk|CATHLK|EN|0,*| 2 : historic ship
 |colour|COLOUR|EN|0,*| 7 : grey
-|**feature name**||C|0,*
+|**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gimpo Ship Park
 |    name usage||(S)EN|0,1| 1 : default name display
-|**feature name**||C|0,*
+|**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 김포함상공원
 |    name usage||(S)EN|0,1| 2 : alternate name display
-|**fixed date range**||C|0,1
-|    date end|DATEND|(S)TD|0,1
+|**fixed date range**||C|0,1|
+|    date end|DATEND|(S)TD|0,1|
 |    date start|DATSTA|(S)TD|0,1| 20200910
 |horizontal length|HORLEN|RE|0,1| 100
 |horizontal width|HORWID|RE|0,1| 15
@@ -34,3 +34,8 @@
 
 ---
 // end::Hulk[]
+
+
+//REVIEW:
+// https://www.guc.or.kr/facility/park_marinepark_gallery.php
+// Gimpo Marine Park 로 변경??
