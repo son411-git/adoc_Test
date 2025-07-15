@@ -11,12 +11,11 @@
 |Attribute |Acronym |Type |Mult. |Value
 
 |category of fortified structure|CATFOR|EN|0,1 | 2 : fort
-|condition|CONDTN|EN|0,1
-|**feature name**||C|0,*
+|**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1 | eng 
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1 | Chojijin Fort
 |    name usage||(S)EN|0,1| 1 : default name display
-|**feature name**||C|0,*
+|**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1 | kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1 | 초지진
 |    name usage||(S)EN|0,1| 1 : default name display

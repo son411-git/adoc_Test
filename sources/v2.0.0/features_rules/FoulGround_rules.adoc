@@ -12,7 +12,7 @@
 * 불확실한 경우 span:F[Obstruction]으로 인코딩 권장.
 
 //
-* span:F[Foul Ground]가 span:A[status] = ( 9 : value reported (not confirmed) ) 일 때 span:A[reported date]은 필수
+* span:F[Foul Ground]가 span:A[status] = (9 : value reported (not confirmed)) 일 때 span:A[reported date]은 필수
 * span:F[Foul Ground][S]는 Skin of the Earth 객체 span:F[Depth Area], span:F[Dredged Area] 또는 span:F[Unsurveyed Area]로 덮여 있어야 함
 * 해저면 수준으로 절단된 플랫폼은 span:F[Foul Ground]로 입력하고, 해저면에서 돌출되어 절단된 플랫폼은 span:F[Foul Ground]로 입력
 * 흩어진 침선의 잔해는 span:F[Wreck]으로 입력해야하며, span:F[Foul Ground]로 입력하지 않음
@@ -30,10 +30,10 @@
 | image:../images/FoulGround/FoulGround_image-1.png[width=70%]
 | image:../images/FoulGround/FoulGround_image-2.png[width=70%]
 | span:F[Obstruction] +
-span:A[category of obstruction] = ( 6 : foul area ) +
-span:A[quality of vertical measurement] = ( 6 : least depth known ) +
-span:A[value of sounding] = ( 10 ) +
-span:A[water level effect] = ( 3 : always under water/submerged ) +
+span:A[category of obstruction] = (6 : foul area) +
+span:A[quality of vertical measurement] = (6 : least depth known) +
+span:A[value of sounding] = (10) +
+span:A[water level effect] = (3 : always under water/submerged) +
 * span:F[Foul Ground]로 입력하면 전자해도에서 장애물 수심 표시되지 않고 '#'로 표시되므로 span:F[Obstruction]으로 입력
 3+^h| Surface
 | ENC
@@ -42,10 +42,13 @@ span:A[water level effect] = ( 3 : always under water/submerged ) +
 | image:../images/FoulGround/FoulGround_image-3.png[width=70%]
 | image:../images/FoulGround/FoulGround_image-4.png[width=70%]
 | span:F[foul ground] +
-span:A[value of sounding] = ( 10 ) +
-span:A[quality of vertical measurement] = ( 6 : least depth known ) +
-span:A[water level effect] = ( 3 : always under water/submerged )
+span:A[value of sounding] = (10) +
+span:A[quality of vertical measurement] = (6 : least depth known) +
+span:A[water level effect] = (3 : always under water/submerged)
 |===
+
+//
+include::common/information.adoc[]
 
 ===== Example
 .Foul Ground의 인코딩 예시
