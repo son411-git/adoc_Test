@@ -1,11 +1,32 @@
 // tag::Helipad[]
 ===== Remark
-- 필요한 경우 헬기장(Heliport)은 #F "Airport/Airfield" 피처로 인코딩하며, #F "Airport/Airfield"로 인코딩된 경우, 개별 #F "Helipad"를 표시할 필요 없음
-- 수상비행기 또는 수상헬기 착륙장을 인코딩하는 경우 #F "Seaplane Landing Area" 피처를 사용
-- #F "Helipad"가 #F "Offshore Platform"의 일부로 인코딩되는 경우 #R "Structure/Equipment" 관계 설정
-- #A "Feature name"에 피처의 기능 및 속성과 동일한 정보(예: 헬기착륙장) 중복입력 불필요
+
+* 헬기장(Heliport)은 span:F[Airport/Airfield]로 입력하며, span:F[Airport/Airfield]로 입력된 경우, 개별 span:F[Helipad]를 입력할 필요 없음
+
+헬기장(Heliport) :: 헬리콥터를 위한 공항 또는 비행장으로, 하나 이상의 헬리패드와 추가 시설(연료 공급, 격납고, 터미널, 관제 시설 등)을 포함하는 더 큰 구역
+
+헬기착륙장(Helipad) :: 헬리콥터가 이착륙할 수 있는 특정한 평평한 구역으로, 주로 단일 착륙 지점을 의미합니다. 병원, 해상 플랫폼, 건물 옥상 등에 설치
+
+* 수상에서 헬리콥터가 착륙할 수 있는 구역을 입력하는 경우 span:F[Seaplane Landing Area]를 사용
+
+* span:F[Helipad]가 span:F[Offshore Platform]의 일부로 입력되는 경우 span:R[Structure/Equipment] 관계 설정
 
 ===== Example
-※ 공통속성(Scale minimum) 외에 입력된 속성 없음!
+.Helipad의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Seogeocha-do Emergency Medical Helipad
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 서거차도 응급의료전용 헬기착륙장
+|    name usage||(S)EN|0,1| 2 : alternate name display
+|nature of construction|NATCON|EN|0,*| 2 : concreted
+|===
+
 ---
 // end::Helipad[]
