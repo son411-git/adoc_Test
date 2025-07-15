@@ -1,22 +1,35 @@
 // tag::Hulk[]
 ===== Remark
 
-- 선박의 용도가 아니라 영구적으로 계류하며 기타 용도로 사용되는 경우에만 해당
+* 영구적으로 계류된 폐선박을 입력하는 경우, span:F[Hulk]로 입력
+* span:F[Hulk][S]는 span:F[Coastline][C] 또는 span:F[Shoreline Construction][C]로 경계가 입력되어서는 안 됨 ** 단, span:F[Land Area]의 경계인 span:F[Coastline][C] 또는 span:F[Shoreline Construction][C]와 접하는 것은 가능함
+* 부유식 생산, 저장 및 하역 선박을 입력하는 경우 span:F[Offshore Platform]을 사용해야 하며, span:A[category of offshore platform] = (8 : floating production, storage and off-loading vessel)으로 입력
+* 부유식 방파제 역할을 하는 span:F[Hulk]를 입력해야 하는 경우, span:A[category of hulk] = (5 : floating breakwater)로 입력
+* 다른 구조물로 된 부유식 방파제를 인코딩해야 하는 경우, span:F[Shoreline Construction]을 사용하며, span:A[category of shoreline construction] = (1 : breakwater) 및 span:A[water level effect] = (7 : floating)으로 입력
+
 
 ===== Example
+.Hulk의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Hulk|CATHLK|EN|0,*| 1: floating restaurant
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Restaurant
-|    Name Usage||(S)EN|0,1|1 : default name display 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 해상식당당
-|    Name Usage||(S)EN|0,1| 2 : alternate name display 
+|category of hulk|CATHLK|EN|0,*| 2 : historic ship
+|colour|COLOUR|EN|0,*| 7 : grey
+|**feature name**||C|0,*
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gimpo Ship Park
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 김포함상공원
+|    name usage||(S)EN|0,1| 2 : alternate name display
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1| 20200910
+|horizontal length|HORLEN|RE|0,1| 100
+|horizontal width|HORWID|RE|0,1| 15
+|visual prominence|CONVIS|EN|0,1| 1 : visually conspicuous
 |===
 
 ---

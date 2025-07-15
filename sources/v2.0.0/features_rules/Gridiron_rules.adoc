@@ -1,6 +1,8 @@
 // tag::Gridiron[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* span:F[Gridiron]은 일반적으로 조간대(intertidal area)에 위치하므로, 대축척 전자해도에서 입력
+include::common/NotUsedFeature.adoc[]
 
 ---
 // end::Gridiron[]

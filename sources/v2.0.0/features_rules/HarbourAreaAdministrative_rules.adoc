@@ -1,30 +1,25 @@
 // tag::HarbourAreaAdministrative[]
 ===== Remark
 
-- 관할기관에서 고시한 무역·연안항을 입력할 때 사용
-- 기존 S-57 전자해도에서 항만의 명칭이 #A "INFORM", #A "NINFOM"에 입력된 경우, #A "Feature name"으로 수정필요 
-- 항계 내의 추가정보가 있을 경우, #A "Information"으로 입력 - 예시참조
-  (주의기사의 내용과 구분되며 항해와 관련해서 특별히 경보를 울릴 필요가 있으면 #F "Caution Area"으로 입력)
+* 관할권이 있는 항만 구역은 span:F[Harbour Area (Administrative)]로 입력
+* 국내 기준 : span:F[Harbour Area (Administrative)]는 항만법 시행령에서 지정된 무역·연안항을 입력할 때 사용
+* 관할권이 없는 항만 구역을 입력하는 경우 span:F[Sea Area Named/Water Area]로 입력
+include::common/information.adoc[]
 
 ===== Example
+.Harbour Area (Administrative)의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 1: default name display 
-|    Name Usage||(S)EN|0,1| BUSAN HANG
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 2 : alternate name display 
-|    Name Usage||(S)EN|0,1| 부산항
-|**Information**|INFORM|C|0,*|  
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| Numerous Set Fish-trap 
-|**Information**|INFORM|C|0,*|  
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 정치망 다수 존재
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Busan Hang
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산항
+|    name usage||(S)EN|0,1| 2 : alternate name display
 |===
 
 ---

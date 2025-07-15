@@ -1,25 +1,33 @@
 // tag::HarbourFacility[]
 ===== Remark
 
-- 항구의 분류에 따라 국가어항을 입력할 때 사용하며 각각의 경계 좌표는 관련 관리처에서 고시된다.
-- 어항은 #A "Category of harbour facility" = 4(fishing harbour) 입력
-- 요트항/마리나항은 #A "Category of harbour facility" = 5(yacht harbour/marina) 입력
-- S-57 전자해도에서 어항명이 #A "INFROM", #A "NINFOM"에 입력되어 있을 경우 #A "Feature name"으로 수정필요
+* 공익을 목적으로 하는 서비스 또는 상업적 운영을 하는 항만 시설은 span:F[Harbour Facility]로 입력
+* 어항을 입력하는 경우 span:A[Category of harbour facility] = (4 : fishing harbour) 를 사용
+* 요트항/마리나항을 입력하는 경우 span:A[Category of harbour facility] = (5 : yacht harbour/marina) 를 사용
+* 유조선 터미널을 입력하는 경우 span:A[Category of harbour facility] = (7 : tanker terminal) 를 사용
+* 컨테이너를 적재/하역하거나 저장하는 시설을 갖춘 터미널을 입력하는 경우 span:A[Category of harbour facility] = (10 : container terminal) 를 사용
+* 벌크선 터미널을 입력하는 경우 span:A[Category of harbour facility] = (11 : bulk terminal) 를 사용
+* 선박이 들어갈 수 있는 덮인 구조물(covered structure)을 입력하는 경우, span:F[Harbour Facility]가 아닌 span:F[Structure Over Navigable Water] 를 사용. 
+include::common/information.adoc[]
+
 
 ===== Example
+.Harbour Facility의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Category of Harbour Facility|CATHAF|EN|1,*| 4: fishing harbour
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|Moseulpo Hang 
-|    Name Usage||(S)EN|0,1|1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 모슬포항
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
+|span:E[category of harbour facility]|CATHAF|EN|1,*| 4 : fishing harbour
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Dadaepo Hang
+
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 다대포항
+|    name usage||(S)EN|0,1| 2 : alternate name display
+
 
 |===
 

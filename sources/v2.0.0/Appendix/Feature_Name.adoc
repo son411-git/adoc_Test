@@ -1,17 +1,19 @@
-// tag::featureName[]
+[[featureName]]
 
-.feature Name의 정의
+= 객체 명칭의 입력
+
+.span:A[feature Name]의 정의
 * S-101 에서 복합 속성 span:A[feature name]과 그 하위 속성은 객체의 이름을 입력하는데 사용됨
 * span:A[feature name]은 S-57 의 속성 span:A[OBJNAM]과 span:A[NOBJNM]과 대응됨
 * span:A[feature name]은 하위 속성으로 span:A[language], span:A[name], span:A[name usage]를 가짐
 
 //
-.Multiplicity
-* span:A[feature name]은 다중 속성 값을 지원하므로, 객체의 이름을 여러 언어로 입력할 수 있음
+.다중 속성(Multiplicity)
+* span:A[feature name]은 여러 속성 값을 입력을 지원하므로, 객체의 이름을 여러 언어로 입력할 수 있음
 * 실세계에서 객체의 이름은 고유하므로, 데이터셋에는 각 언어별로 번역된 이름을 하나씩만 입력해야 함
 ** 예를 들어, 영어 이름이나 한글 이름을 중복 입력해서는 안 됨
 
-.다중 입력 오류 예시
+.다중 속성 입력 오류 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
@@ -34,7 +36,7 @@
 |    name usage||(S)EN|0,1| 2 : alternate name display 
 |===
 
-** 따라서, 다르게 알려져 있거나 불리는 이름이 있다는 경우 아래와 같이 괄호() 안에 함께 입력해야 함
+** 따라서, 다르게 알려져 있거나 불리는 이름이 있다는 경우 아래와 같이 괄호( ) 안에 함께 입력해야 함
 
 .별칭 또는 다른 이름의 입력 예시
 [cols="30,25,10,10,25", options="header"]
@@ -52,7 +54,7 @@
 |===
 
 //
-.Sub Attributes
+.하위 속성(Sub-Attributes)
 * span:A[language]
 ** span:A[language]는 필수 속성으로, span:A[name]에 입력된 이름의 언어를 ISO 639-2/T 3글자 언어 코드(예: eng, kor)로 지정함
 ** 항해자가 ECDIS 화면에 표시할 언어를 선택하면 해당 언어로 이름이 표시됨
@@ -70,7 +72,7 @@
 
 //
 [[Structue_Equipment_featureName]]
-.Structue/Equipment에서의 feature name
+.Structue/Equipment에서의 span:A[feature Name]
 
 * span:R[Structue/Equipment] 관계의 객체들은 구조물(Structure)과 장비(Equipment) 역할로 구분됨
 
@@ -83,7 +85,7 @@
 * 구조물(Structure)과 장비(Equipment)의 span:A[feature name]이 같을 때, span:R[Structue/Equipment] 관계 설정 시 장비의 span:A[feature name]가 자동 삭제됨 (CARIS HPD 5.0 기능)
 * 반대로, 구조물(Structure)과 장비(Equipment)의 span:A[feature name]이 다를 때, span:R[Structue/Equipment] 관계 설정 시 유효성 검증에서 구조물의 span:A[feature name] 미승계로 'Warning' 레벨의 오류를 발생시킴
 
-.Encoding Guidance
+.입력 지침
 
 * 해도의 영문 표기는 문화체육관광부고시 제2024-27호 「국어의 로마자 표기법」에 따라 표준 발음으로 로마자를 사용함
 * 아래 대조표는 『해도제작 업무편람』(2024)과 『해도제작 실무지침』(2025)에서 발췌한 것임
