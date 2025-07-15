@@ -21,10 +21,10 @@ image::../images/FloatingDock/FloatingDock_image-1.png[width=70%]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**feature name**||C|0,*
+|**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Royal Dock No.1
-|    name usage||(S)EN|0,1| 1 : 
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |===
 ---
 // end::FloatingDock[]
