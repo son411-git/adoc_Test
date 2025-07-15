@@ -1,17 +1,30 @@
 // tag::FloatingDock[]
 ===== Remark
 
-- S-101에서는 Skin of earth 객체에서 삭제되었으므로 Skin of earth 객체(#F "Unsurveyed Area")와 중첩하여 입력
-- S-57전자해도에서 불필요한 정보가 추가정보로 입력되어 있을 경우 삭제필요 (ex. INFORM: Floating Dock)
+* span:F[Floating Dock]는 반드시 span:F[Depth Area], span:F[Dredged Area], 또는 span:F[Unsurveyed Area]로 덮어야 함
+* span:F[Floating Dock][S]의 경계를 별도의 객체(span:F[Coastline] 또는 span:F[Shoreline Construction])로 입력해서는 안 됨
+
+//
+.부유선거 (출처 : 삼성중공업 블로그)
+image::../images/FloatingDock/FloatingDock_image-1.png[width=70%]
+
+// 
+* 정보가 알려진 경우
+** 항해가 가능한 부분의 길이와 너비는 span:A[horizontal clearance length]와 span:A[horizontal clearance width]로 입력
+** 필요 시, span:F[Floating Dock] 자체의 최소 물리적 길이와 너비는 span:A[horizontal length]와 span:A[horizontal width]을 사용하여 입력
+** span:A[depth range minimum value]는 span:F[Floating Dock]가 물에 잠겼을 때의 가장 얕은 깊이를 입력
+** span:A[maximum permitted draught]는 도크에서 허용되는 최대 흘수를 입력
 
 ===== Example
+.Floating Dock의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 1: default name display 
-|    Name Usage||(S)EN|0,1| Rolyal Dock No1
+
+|**feature name**||C|0,*
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Royal Dock No.1
+|    name usage||(S)EN|0,1| 1 : 
 |===
 ---
 // end::FloatingDock[]

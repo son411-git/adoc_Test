@@ -1,44 +1,60 @@
 // tag::FoulGround[]
 ===== Remark
-- 장애물에는 나무, 그루터기, 유정 정두, 방류구, 어초구역, 험악구역, 방책, 얼음방책, 플랫폼이 제거된 장소, 계류도구, 파랑발전장치, 수중발전기, 수중 해양자료수집시스템, 인공암초(reef), 해저 활화산이 포함된다.
-- 장애물이 #F "Foul ground"(험악지) 속성을 가질 경우 #F "Foul Ground"를 사용하여 입력
-* 험악지 #F "Foul ground"는 수상선박의 항해에는 문제가 되지 않으나 정박, 낚시, 수중활동 등은 채 피해야 하는 구역
- * 험악구역 “Foul area”는 해도에 기록되지 않은 다수의 장애물이 있는 지역
- - 장애물(Obstruction) 및 험악지(#F "Foul ground")는 아래 표에 따라 입력
- 
-[cols="1,1,1,1,1" options="header"]
+
+* span:F[Foul Ground]
+** 항해는 안전하지만, 묘박, 해저 어업(예: 저인망, 트롤)을 피해야 하는 영역
+** ECDIS 표시: "기타(other)" 디스플레이에 "항해는 안전하지만 묘박에 부적합한 해저 장애물 영역"으로 표시.
+** 선원에게 진입/통과는 안전하지만, 수중 활동은 위험함을 알림.
+* span:F[Obstruction] 및 span:A[category of obstruction] = 6 (foul area)
+** 항해에 위험한 미탐사 장애물이 다수 존재하는 영역.
+** ECDIS 표시: "기본 디스플레이(base display)"에 "항해 장애물"로 표시, 진입/통과 시 경보 발생
+** 선박의 항해 자체가 안전하지 않음을 알림.
+* 불확실한 경우 span:F[Obstruction]으로 인코딩 권장.
+
+//
+* span:F[Foul Ground]가 span:A[status] = ( 9 : value reported (not confirmed) ) 일 때 span:A[reported date]은 필수
+* span:F[Foul Ground][S]는 Skin of the Earth 객체 span:F[Depth Area], span:F[Dredged Area] 또는 span:F[Unsurveyed Area]로 덮여 있어야 함
+* 해저면 수준으로 절단된 플랫폼은 span:F[Foul Ground]로 입력하고, 해저면에서 돌출되어 절단된 플랫폼은 span:F[Foul Ground]로 입력
+* 흩어진 침선의 잔해는 span:F[Wreck]으로 입력해야하며, span:F[Foul Ground]로 입력하지 않음
+
+//
+* 국내 지침: 5m 보다 깊은 수심(즉, 수심 5m 초과)에서 span:F[Obstruction][S]은 항해 가능 영역으로 간주되어 span:F[Foul Ground]로 입력
+
+.국내 지침 : 지오메트리 유형별 입력 예시
+[cols="25,25,70", options="header"]
 |===
-|장애물 |INT 1 |water level effect |quality of vertical measurement |technique of vertical measurement 
-|수심을 모름|K40|3 또는 4|2|입력금지
-|최저수심을 앎|K41|3 또는 4|6|
-|와이어를 이용하여 수심 측정|K42|3|6|6
-|다이버에 의해 측정됨|K42|3|6|4
+3+^h| Point
+| ENC
+| Paper Chart
+| Encoding
+| image:../images/FoulGround/FoulGround_image-1.png[width=70%]
+| image:../images/FoulGround/FoulGround_image-2.png[width=70%]
+| span:F[Obstruction] +
+span:A[category of obstruction] = ( 6 : foul area ) +
+span:A[quality of vertical measurement] = ( 6 : least depth known ) +
+span:A[value of sounding] = ( 10 ) +
+span:A[water level effect] = ( 3 : always under water/submerged ) +
+* span:F[Foul Ground]로 입력하면 전자해도에서 장애물 수심 표시되지 않고 '#'로 표시되므로 span:F[Obstruction]으로 입력
+3+^h| Surface
+| ENC
+| Paper Chart
+| Encoding
+| image:../images/FoulGround/FoulGround_image-3.png[width=70%]
+| image:../images/FoulGround/FoulGround_image-4.png[width=70%]
+| span:F[foul ground] +
+span:A[value of sounding] = ( 10 ) +
+span:A[quality of vertical measurement] = ( 6 : least depth known ) +
+span:A[water level effect] = ( 3 : always under water/submerged )
 |===
 
 ===== Example
+.Foul Ground의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Iron structure
-|    Name Usage||(S)EN|0,1| 1: default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 철제구조물
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 6: least depth known
-|Reported Date|SORDAT|TD|0,1| 20121130
-|Status|STATUS|EN|0,*| 18: existence doubtful
-|Value of Sounding|VALSOU|RE|0,1| 23.5 
-|Scale Minimum|SCAMIN|IN|0,1| 21999
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    Text|INFORM/NINFOM|(S)TE|0,1| Old
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 구성과 자료
+|quality of vertical measurement|QUASOU|EN|0,*| 6 : least depth known
+|value of sounding|VALSOU|RE|0,1 | 10
 |===
 
 ---

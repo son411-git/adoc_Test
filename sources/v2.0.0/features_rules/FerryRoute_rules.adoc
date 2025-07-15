@@ -1,15 +1,22 @@
 // tag::FerryRoute[]
 ===== Remark
 
-- 섬과 섬 사이 통상적인 여객 항로 표현
-- 여객선이 다니는 좁은 수로를 횡단하는 다른 선박에 주의를 주어야 할 경우에만 사용
-- 대축척 해도에서는 여객항로가 표기 되어야 함 
+* span:F[Ferry Route]는 대축척 해도에 입력해야하며, 다음 경우에 해당함
+** 여객선이 비교적 좁은 수로를 가로지르는 경우, 이를 통해 다른 선박이 여객선의 존재를 인지할 수 있도록 하기 위해.
+** 여객선 경로가 비교적 짧아 정확하게 표현될 수 있는 경우.
+
+* NOTE:
+** 날씨, 조석, 교통 상황에 따라 경로가 변동되는 장거리 여객선 항로는 일반적으로 입력하지 않아야 함
+** 관련 여객선 터미널은 span:F[Harbour Facility]를 사용하여 표시해야 하며, +
+이때 span:A[category of harbour facility] = (3 : ferry terminal / 7 : RoRo-terminal) 중 하나로 입력해야 함
 
 ===== Example
+.Ferry Route의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|#essential Category of Ferry|CATFRY|EN|1,*| 1: free moving ferry
+
+|span:E[category of ferry]|CATFRY|EN|1,*| 1 : free moving ferry
 |===
 
 ---

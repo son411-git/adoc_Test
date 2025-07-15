@@ -1,6 +1,26 @@
 // tag::FortifiedStructure[]
 ===== Remark
-사용하지 않는 객체입니다.
 
+* 일일부 해안선에는 방어 구조물이 있으며, 종종 사용되지 않거나 노후되어 방어 외 목적으로 쓰임
+* 주요 성곽부터 소규모 감시 초소까지 다양하며, 곶이나 해안선의 주요 특징으로 항해목표물로 사용될 수 있음
+
+===== Example
+.Fortified Structure의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|category of fortified structure|CATFOR|EN|0,1 | 2 : fort
+|condition|CONDTN|EN|0,1
+|**feature name**||C|0,*
+|    span:E[language]||(S)TE|1,1 | eng 
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1 | Chojijin Fort
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*
+|    span:E[language]||(S)TE|1,1 | kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1 | 초지진
+|    name usage||(S)EN|0,1| 1 : default name display
+|nature of construction|NATCON|EN|0,*| 1 : masonry
+|===
 ---
 // end::FortifiedStructure[]
