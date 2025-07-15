@@ -1,5 +1,8 @@
 // tag::FishingGround[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 낚시 허가 구역 또는 해상 낚시터는 span:F[Fishing Ground]로 입력
+* 영역 내 선박 속력 제한 사항은 span:A[vessel speed limit]에 입력
+include::common/NotUsedFeature.adoc[]
 ---
 // end::FishingGround[]

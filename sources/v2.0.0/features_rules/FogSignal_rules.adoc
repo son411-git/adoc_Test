@@ -1,37 +1,72 @@
 // tag::FogSignal[]
 ===== Remark
 
-- 무중신호는 범위가 짧은 항로표지로, 보통은 위험 경고용으로 사용하며 Fog signal 피처를 이용하여 인코딩 
-- 무중신호는 신호의 리듬이 중요하므로 속성 #A "Signal group" (신호그룹), #A "Signal period" (신호주기), #A "Signal sequence" (신호시퀸스)를 입력
-- #A "Signal sequence" 입력 시 취명 / 정명을 구분하여 각각의 속성으로 입력
-- 신호그룹이 하나일 경우에도 #A "Signal group" “(1)“ 입력
-- S-57 전자해도상 #A "INFORM", #A "NINFOM"에 입력된 신호 리듬에 관한 내용은 이미 속성정보로 입력되므로 삭제필요
-- 관리번호(국제/국내) 와 #F "Fog Signal" 명칭 입력 시 #A "Feature name" 속성을 추가하여 입력함.
+* span:F[Fog Signal]는 안개, 눈, 노을, 호우, 연무 등에 의하여 시계가 불량할 때 소리로 선박에 그 위치를 알림
+* span:F[Fog Signal]은 장치 자체가 아니라 방출되는 소리를 의미하며, 방출 위치가 보통 표지 또는 등화와 충분히 가까워 동일 위치로 간주함
+* span:F[Fog Signal]은 신호 범위가 짧은 단거리 항로표지로써 주로 위험 경고로 사용되며, 위치 표지로는 신뢰성이 낮아 다른 항로표지에 비해 중요도가 떨어짐
+* 전자 장비가 제한적이거나 작동하지 않는 선박의 안전 항행에 유용함
+
+//
+* span:F[Fog Signal]의 소리 방출 횟수(예: 폭음, 타격)와 주기가 알려진 경우 span:A[signal group], span:A[signal period],span:A[signal sequence]를 사용하여 입력해야 함
+
+* 필요한 경우, 속성 span:A[signal frequency]는 헤르츠(Hz) 단위로 입력 (예 : 950 MHz → 950000000)
+
+//
+* span:F[Fog Signal]이 무선으로 활성화되는 경우, span:A[signal generation] = (5 : radio activated)로 입력해야 함
+
+* span:F[Fog Signal]이 관제소 호출로 활성화되는 경우, span:A[signal generation]은 (6 : call activated)로 입력해야 함
+
+** 신호 활성화에 필요한 연락 정보를 입력하려면 span:F[Contact Details]를 사용해야 하며, span:F[Fog Signal]와 span:R[Additional Information]로 관계 맺어야 함
+
+//
+.등대표 - 무신호(Fog Signal)
+[cols="10,20,20,25,25", options="header"]
+|===
+^|번호 ^|명칭 ^|위치 ^|종류 및 주기 ^|리듬
+
+^|4354
+|서이말 등대 +
+Seoimal
+>| 34-47.26N +
+128-44.30E
+^| Siren 60s
+^| 취명 4초 정명 5초 +
+취명 4초 정명 47초
+|===
+
+* 속성 입력 방법
+include::common/featureName_for_AtoN.adoc[]
+** 종류는 Siren 이므로, span:A[category of fog signal] = (3 : siren)을 입력
+** 주기는 60s 이므로, span:A[signal period] = (60)을 입력
+** 리듬은 취명과 정명이 각각 두 번씩 반복되므로, span:A[signal group] = ((2))을 입력
+** 상태는
+  - 취명(빛이나 신호가 발생하는 상태)은 span:A[signal status] = (1 : lit/sound)로 입력
+  - 정명(빛이나 신호가 멈춘 상태)은 span:A[signal status] = (2 : eclipsed/silent)로 입력
+  - span:A[signal status]는 신호 순서에 따라 입력
+** 각 신호의 지속 시간은 span:A[signal duration]에 소수점 첫째 자리 초(sec) 단위로 순서대로 입력
+
 
 ===== Example
+.Fog Signal의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Category of Fog Signal|CATFOG|EN|1,1| 10: horn
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| M4164.14  
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 4409  
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|Signal Group|SIGGRP|TE|0,1| (1) 
-|Signal Period|SIGPER|RE|0,1| 35
-|**Signal Sequence**|SIGSEQ|C|0,*| 
-|    #essential Signal Duration||(S)RE|1,1| 5  
-|    #essential Signal Status||(S)EN|1,1| 1: Lit/Sound
-|**Signal Sequence**|SIGSEQ|C|0,*| 
-|    #essential Signal Duration||(S)RE|1,1| 30  
-|    #essential Signal Status||(S)EN|1,1| 2: Eclipsed/silent
-|Status|STATUS|EN|0,*| 7: temporary
-|Value of Maximum Range|VALMXR|RE|0,1| 2 
+|span:E[category of fog signal]|CATFOG|EN|1,1| 3 : siren
+|signal group|SIGGRP|TE|0,1| (2)
+|signal period|SIGPER|RE|0,1| 60
+|**signal sequence**|SIGSEQ|C|0,*|
+|    span:E[signal duration]||(S)RE|1,1| 4
+|    span:E[signal status]||(S)EN|1,1| 1 : lit/sound
+|**signal sequence**|SIGSEQ|C|0,*|
+|    span:E[signal duration]||(S)RE|1,1| 5
+|    span:E[signal status]||(S)EN|1,1| 2 : eclipsed/silent
+|**signal sequence**|SIGSEQ|C|0,*|
+|    span:E[signal duration]||(S)RE|1,1| 4
+|    span:E[signal status]||(S)EN|1,1| 1 : lit/sound
+|**signal sequence**|SIGSEQ|C|0,*|
+|    span:E[signal duration]||(S)RE|1,1| 47
+|    span:E[signal status]||(S)EN|1,1| 2 : eclipsed/silent
 |===
 
 ---

@@ -1,6 +1,27 @@
 // tag::FreePortArea[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 자유무역지역은 span:F[Free Port Area]로 입력
+* 자유무역지역의 지정 및 운영에 관한 법률(약칭 : 자유무역지역법)로 지정 (산업통상자원부 법률 제20608호)
+include::common/NotUsedFeature.adoc[]
+
+
+===== Example
+.Free Port Area의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Incheon Port Free Trade Zone
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 인천항 자유무역지역
+|    name usage||(S)EN|0,1| 2 : alternate name display
+|===
 
 ---
+
 // end::FreePortArea[]

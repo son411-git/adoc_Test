@@ -1,5 +1,26 @@
 // tag::FenceWall[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 울타리 또는 벽을 입력해야 하는 경우, span:F[Fence/Wall]를 사용해야 험
+* span:F[Fortified Structure]와는 구분해야함
+
+* span:A[colour pattern]은 span:A[colour]에 두 개 이상의 값이 있는 경우 필수임
+* 항해자가 ECDIS에서 명칭 표시를 활성화했을 때 명칭을 표시하려는 경우, span:A[feature name]의 사용이 필수임
+
+include::common/NotUsedFeature.adoc[]
+
+===== Example
+.Fence/Wall의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|category of fence|CATFNC|EN|0,1| 1 : fence
+|colour|COLOUR|EN|0,*| 1 : white
+|colour|COLOUR|EN|0,*| 6 : yellow
+|colour pattern|COLPAT|EN|0,1| 1 : horizontal stripes
+|height|HEIGHT|RE|0,1| 5
+|===
+
 ---
 // end::FenceWall[]
