@@ -9,3 +9,14 @@
 // tag::Refer[]
 * {ObjectName} 입력할 때에는, 반드시 {Relation} 관계에 포함되어야 함 (<<{linkTo},※참고>>)
 // end::Refer[]
+
+// tag::SurroundingDepth[]
+**span:E[주의]**:: ECDIS System 속성인 span:A[surrounding depth]를 필수로 입력해야 함
+* span:A[surrounding depth]의 값은 객체를 완전히 덮기 위해 필요한 모든 span:F[Depth Area] 및 span:F[Dredged Area] 중 **가장 깊은 영역**의 span:A[depth range minimum value]와 같게 입력
+// end::SurroundingDepth[]
+
+// tag::DefaultClearanceDepth[]
+**span:E[주의]**:: 필요한 경우 ECDIS System 속성인 span:A[surrounding depth]를 필수로 입력해야 함
+* span:A[default clearance depth]의 값은 <<{linkTo}>> 참고하여 입력
+** 표에서 Least Depth는 값은 객체를 완전히 덮기 위해 필요한 모든 span:F[Depth Area] 및 span:F[Dredged Area] 중 **가장 얕은 영역**의 span:A[depth range minimum value]와 같은 값을 의미
+// end::DefaultClearanceDepth[]

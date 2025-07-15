@@ -1,17 +1,23 @@
 // tag::UnderwaterAwashRock[]
 ===== Remark
 
-* 암초는 표 <Underwater Awash Rock 입력 기준>과 같이 기본수준면 기준으로 잠기는 또는 닿는 정도에 따라 간출암, 세암, 암암으로 구분하여 입력
+* 암초는 <<UWTROC_T1,Underwater Awash Rock 입력 기준>>과 같이 기본수준면 기준으로 잠기는 또는 닿는 정도에 따라 간출암, 세암, 암암으로 구분하여 입력
 
-* *산호초 일 경우* span:A[nature of surface] = 14(coral; 산호)로 입력 +
+* *산호초의 경우* span:A[nature of surface] = 14 span:D[coral]로 입력 +
   그렇지 않은 경우 span:A[nature of surface]는 입력하지 않음 _(undefined)_
 
 * 필수속성인 span:A[value of sounding] 은 암초의 확인된 수심을 입력
-** 해당 속성을 알 수 없는 경우, 표 <Underwater Awash Rock의 default clearence value 입력 기준>을 참고하여 입력
-** 표에서 **LEAST DEPTH** 는 중첩되는 span:F[Depth Area], span:F[Dredged Area]의 span:A[depth range minimum value]들 중 가장 작은 값을 의미
+
+//
+include::common/phrase.adoc[tag=SurroundingDepth]
+
+//
+:linkTo: UWTROC_T2, Underwater Awash Rock의 default clearance value 입력 기준을
+include::common/phrase.adoc[tag=DefaultClearanceDepth]
 
 
 .Underwater Awash Rock 입력 기준
+[[UWTROC_T1]]
 [cols="1,2,1,1,3", options="header"]
 |===
 | Int 1 | Rock or coral reef | water level effect | quality of vertical measurement | 비고
@@ -54,6 +60,7 @@
 |===
 
 .Underwater Awash Rock의 default clearance value 입력 기준
+[[UWTROC_T2]]
 [cols="14,14,14,30", options="header"]
 |===
 4+^h| 중첩되는 모든 Depth/Dredged Area의 depth range minimum value를 알고 있는 경우 
