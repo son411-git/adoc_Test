@@ -5,23 +5,25 @@
 * 항해자는 북방위표지의 북쪽, 동방위표지의 동쪽 등을 통과해야 함
 
 //
-* 필수 속성 : IALA 해상 부표 시스템에 따라,
-** 도색은 검정색과 노란색의 가로 줄무늬로 구성되며 방위에 따라 색의 패턴이 다름
-** (장착된 경우) 두표는 검정색 이중 원뿔의 조합으로 구성되며 방위에 따라 모양이 다름
-** (장착된 경우) 등화는 백색등으로 Q 또는 VQ 등광을 가지나, 북쪽은 연속 점멸, 동쪽은 3회 점멸, +
+IALA 해상 부표 시스템에 의거하여 ::
+* 도색은 검정색과 노란색의 가로 줄무늬로 구성되며 방위에 따라 색의 패턴이 다름
+* (장착된 경우) 두표는 검정색 이중 원뿔의 조합으로 구성되며 방위에 따라 모양이 다름
+* (장착된 경우) 등화는 백색등으로 Q 또는 VQ 등광을 가지나, 북쪽은 연속 점멸, 동쪽은 3회 점멸, +
 남쪽은 6회 점멸 + 긴 점멸(LFI), 서쪽은 9회 점멸(아날로그 시계와 유사) 함
-** 위 조건에 따른 속성의 조합은 **반드시** <<CardinalBeacon_T1,[표 - Cardinal Beacon의 속성 조합 기준]>>를 참고하여 입력
+* 위 조건에 따른 속성의 조합은 **반드시** <<CardinalBeacon_T1,[표 - Cardinal Beacon의 속성 조합 기준]>>를 참고하여 입력
 
 //
-* 부가 정보
-** span:A[vertical length]는 지면에서 구조물 최상단까지의 높이를 입력 (등대표에 기재된 구조물 높이를 입력)
-** 입표(Beacon)에 span:F[Fog Signal], span:F[Radar Transponder Beacon] 및 등화 등 장비 역할의 객체들이 있다면 span:R[Structure/Equipment] 관계 설정
-** 입표(Beacon)의 span:A[height]는 등대표에 기재되어 있지 않으며, 일반적으로 입력하지 않음 
-include::common/IALA_Warning.adoc[]
+* span:A[vertical length]는 지면에서 구조물 최상단까지의 높이를 입력 (등대표에 기재된 구조물 높이를 입력)
+* 입표(Beacon)에 span:F[Fog Signal], span:F[Radar Transponder Beacon] 및 등화 등 장비 역할의 객체들이 있다면 span:R[Structure/Equipment] 관계 설정
+* 입표(Beacon)의 span:A[height]는 등대표에 기재되어 있지 않으며, 일반적으로 입력하지 않음
 
-include::common/information.adoc[]
+//
+include::common/phrase.adoc[tag=IALA_Warning]
 
+//
+include::common/phrase.adoc[tag=information]
 
+//
 .Cardinal Beacon의 구성 (IALA A & B 동일)
 image::../images/CardinalBeacon/CardinalBeacon_image-1.png[width=50%]
 
@@ -90,6 +92,9 @@ VQ(6)+LFl.15s
 | Q(9)15s +
 VQ(9)10s
 |===
+
+//
+include::common/phrase.adoc[tag=featureName_for_AtoN]
 
 ===== Example
 
