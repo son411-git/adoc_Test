@@ -30,10 +30,16 @@
 
 === 4. 선택적 객체/속성 인코딩 지침
 
+==== colourPattern
+// tag::colourPattern[]
+//
+* 객체에 여러 색상을 입력해야 하는 경우, span:A[colour pattern] 및 span:A[colour] 속성을 다음과 같이 사용해야 함 (<<Colour_Pattern,※참고>>)
+// end::colourPattern[]
+
 ==== featureName
 // tag::featureName[]
 //
-* 객체의 명칭을 입력해야하는 경우... <<featureName,더보기>>
+* 객체의 명칭을 입력해야하는 경우 span:A[featureName] 속성을 다음과 같이 사용해야 함 (<<featureName,※참고>>)
 // end::featureName[]
 
 ==== featureName_for_AtoN
@@ -61,6 +67,6 @@
 
 ==== speedLimits
 // tag::speedLimits[]
-* 모든 선박 또는 특정 선박 등급에 대해 속력 제한이나 항주파 제한이 설정된 경우... <<Speed_Limits,더보기>>
+* 모든 선박 또는 특정 선박 등급에 대해 속력 제한이나 항주파 제한이 설정된 경우 다음과 같이 입력해야 함 (<<Speed_Limits,※참고>>)
 // end::speedLimits[]
 
