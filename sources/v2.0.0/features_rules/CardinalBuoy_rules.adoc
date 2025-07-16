@@ -137,7 +137,7 @@ VQ(9)10s
 |**topmark**|TOPMAR|C|0,1| 
 |    colour|COLOUR|(S)EN|0,*|2 : black 
 |    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 11 : 2 cones (base to base)
-|visual prominence|CONVIS|EN|0,1|
+|visual prominence|CONVIS|EN|0,1|1 : visually conspicuous
 |===
 
 ---
