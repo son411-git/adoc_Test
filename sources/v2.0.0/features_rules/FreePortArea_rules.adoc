@@ -3,7 +3,7 @@
 
 * 자유무역지역은 span:F[Free Port Area]로 입력
 * 자유무역지역의 지정 및 운영에 관한 법률(약칭 : 자유무역지역법)로 지정 (산업통상자원부 법률 제20608호)
-include::common/NotUsedFeature.adoc[]
+include::common/phrase.adoc[tag=NotUsedFeature]
 
 
 ===== Example

@@ -48,7 +48,7 @@ span:A[water level effect] = (3 : always under water/submerged)
 |===
 
 //
-include::common/information.adoc[]
+include::common/phrase.adoc[tag=information]
 
 ===== Example
 .Foul Ground의 인코딩 예시
