@@ -8,7 +8,7 @@
 * 컨테이너를 적재/하역하거나 저장하는 시설을 갖춘 터미널을 입력하는 경우 span:A[Category of harbour facility] = (10 : container terminal) 를 사용
 * 벌크선 터미널을 입력하는 경우 span:A[Category of harbour facility] = (11 : bulk terminal) 를 사용
 * 선박이 들어갈 수 있는 덮인 구조물(covered structure)을 입력하는 경우, span:F[Harbour Facility]가 아닌 span:F[Structure Over Navigable Water] 를 사용. 
-include::common/information.adoc[]
+include::common/phrase.adoc[tag=information]
 
 
 ===== Example

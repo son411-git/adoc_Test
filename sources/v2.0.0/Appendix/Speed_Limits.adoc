@@ -7,7 +7,7 @@
 * 예 : 속력제한구역을 위해 입력하는 span:F[Restricted Area]와 span:F[PrecautionaryArea]이 중첩된다면 span:F[PrecautionaryArea]에 span:A[restriction] = (27 : speed restricted)를 입력하고 span:A[vessel speed limit]을 사용하여 속력 제한에 관한 하위 속성을 입력할 수 있음
 
 //
-**항주파 제한** :: 항만 내에서 선박이 항해하면서 생기는 파도(항주파, wake)으로 인한 피해를 줄이기 위해 속력 제한이 설정됨. 이는 span:F[Restricted Area]의 span:A[category of restricted area] = (24 : no wake area) 또는  <<restriction_related_feature_list,관련 객체>>의 span:A[restriction] = (13 : no wake)로 지정됨
+**항주파 제한** :: 항만 내에서 선박이 항해하면서 생기는 파도(항주파, wake)으로 인한 피해를 줄이기 위해 항주파 제한이 설정됨. 이는 span:F[Restricted Area]의 span:A[category of restricted area] = (24 : no wake area) 또는  <<restriction_related_feature_list,관련 객체>>의 span:A[restriction] = (13 : no wake)로 지정됨
 
 [[restriction_related_feature_list]]
 .속성 restriction 이 포함된 관련 객체 목록
