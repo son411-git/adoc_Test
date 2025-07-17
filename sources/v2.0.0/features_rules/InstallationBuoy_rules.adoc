@@ -1,39 +1,50 @@
 // tag::InstallationBuoy[]
 ===== Remark
 
-- 주로 유조선 및 가스선을 위한 계선부표로 사용
-- 부표모양은 대형부이(Super buoy)로 존재하며, 두표는 사용하지 않음.
-- 일반적으로 흰색 바탕에 청색 횡선으로만 구성됨.
-- 시설장치부표가 Light 객체와 함께 입력되어 등부표로 표현되는 경우 해당 등대번호는 Light객체에 입력
-   (등부표로 형성된 경우 등대번호가 시설장치부표의 #F "INFORM" 등에 입력되어 있을 경우 수정필요)
-- 부표와 등화, 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 #R "Structure/Equipment" 관계 설정 +
-  ※ Relation 페이지 참조
+* 주로 유조선 및 가스선의 하역을 위한 계선 부표로 사용됨
+* 시설장치 부표는 span:F[Installation Buoy]로 입력해야 함
+
+//
+.Installation Buoy의 설명도 (출처 : SK 이노베이션)
+image::../images/InstallationBuoy/InstallationBuoy_image-1.png[width=70%]
+
+//
+include::common/phrase.adoc[tag=AtoN_Relationship]
+
+//
+include::common/phrase.adoc[tag=Buoy_Attr_General]
+
+//
+include::common/phrase.adoc[tag=colourPattern]
+
+//
+include::common/phrase.adoc[tag=featureName_for_AtoN]
+
+//
+include::common/phrase.adoc[tag=information]
+
+//
+include::common/phrase.adoc[tag=IALA_Warning]
+
 
 ===== Example
+.Installation Buoy의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Buoy Shape|BOYSHP|EN|1,1| 7: Super Buoy
-|#essential Colour|COLOUR|EN|1,*| 1: white
-|#essential Colour|COLOUR|EN|1,*| 3: red
-|#essential Colour|COLOUR|EN|1,*| 1: white
-|Colour Pattern|COLPAT|EN|0,1| 1: horizontal stripes
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Ulsan Hang NoC
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 울산항 SK C호 계선선
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|Radar Conspicuous|CONRAD|BO|0,1| false
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
+|span:E[buoy shape]|BOYSHP|EN|1,1| 7 : superbuoy
+|category of installation buoy|CATINB|EN|0,1| 2 : single buoy mooring
+|span:E[colour]|COLOUR|EN|1,*| 6 : yellow
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Ulsan Hang No.B
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 울산항 SK B호 계선
+|    name usage||(S)EN|0,1| 2 : alternate name display
+|product|PRODCT|EN|0,*| 1 : oil
 |===
 
 ---

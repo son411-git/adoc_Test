@@ -17,6 +17,12 @@
 * {ObjectName} 입력할 때에는, 반드시 {Relation} 관계에 포함되어야 함 (<<{linkTo},※참고>>)
 // end::Refer[]
 
+==== AtoN_Relationship
+// tag::AtoN_Relationship[]
+//
+* span:F[Fog Signal], span:F[Radar Transponder Beacon] 및 등화 등 장비 역할의 객체들이 있다면 span:R[Structure/Equipment] 관계 설정
+// end::AtoN_Relationship[]
+
 === 3. 필수 객체/속성 인코딩 지침
 
 ==== surroundingDepth
@@ -30,10 +36,29 @@
 
 === 4. 선택적 객체/속성 인코딩 지침
 
+==== Beacon_Attr_General
+// tag::Beacon_Attr_General[]
+//
+* 입표(Beacon)의 span:A[height]는 등대표에 기재되어 있지 않으며, 일반적으로 입력하지 않음
+* span:A[vertical length]는 지면에서 구조물 최상단까지의 높이를 입력 (등대표에 기재된 구조물 높이를 입력)
+// end::Beacon_Attr_General[]
+
+==== Buoy_Attr_General
+// tag::Buoy_Attr_General[]
+//
+* 부표(Buoy)의 span:A[height]와 span:A[vertical length]는 일반적으로 입력하지 않음
+// end::Buoy_Attr_General[]
+
+==== colourPattern
+// tag::colourPattern[]
+//
+* 객체에 여러 색상을 입력해야 하는 경우, span:A[colour pattern] 및 span:A[colour] 속성을 다음과 같이 사용해야 함 (<<Colour_Pattern,※참고>>)
+// end::colourPattern[]
+
 ==== featureName
 // tag::featureName[]
 //
-* 객체의 명칭을 입력해야하는 경우... <<featureName,더보기>>
+* 객체의 명칭을 입력해야하는 경우 span:A[featureName] 속성을 다음과 같이 사용해야 함 (<<featureName,※참고>>)
 // end::featureName[]
 
 ==== featureName_for_AtoN
@@ -61,6 +86,6 @@
 
 ==== speedLimits
 // tag::speedLimits[]
-* 모든 선박 또는 특정 선박 등급에 대해 속력 제한이나 항주파 제한이 설정된 경우... <<Speed_Limits,더보기>>
+* 모든 선박 또는 특정 선박 등급에 대해 속력 제한이나 항주파 제한이 설정된 경우 다음과 같이 입력해야 함 (<<Speed_Limits,※참고>>)
 // end::speedLimits[]
 

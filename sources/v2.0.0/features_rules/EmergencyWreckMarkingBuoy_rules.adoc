@@ -10,9 +10,24 @@
 ** (장착된 경우) 등화는 Al.Oc.BuY.3s 를 사용해야 함, (해도에 표기하지 않지만 광달거리는 IALA 규정에 의해 **4 해상마일(M)** 임)
 ** (장착된 경우) 레이콘은 모스 부호를 **D**로 사용해야 함
 ** 위 조건에 따른 속성의 조합은 아래 표를 참고하여 입력
-include::common/IALA_Warning.adoc[]
 
-include::common/information.adoc[]
+//
+include::common/phrase.adoc[tag=AtoN_Relationship]
+
+//
+include::common/phrase.adoc[tag=Buoy_Attr_General]
+
+//
+include::common/phrase.adoc[tag=colourPattern]
+
+//
+include::common/phrase.adoc[tag=featureName_for_AtoN]
+
+//
+include::common/phrase.adoc[tag=information]
+
+//
+include::common/phrase.adoc[tag=IALA_Warning]
 
 .Emergency Wreck Marking Buoy의 속성 조합 기준
 [cols="1,1", options="header"]
@@ -34,7 +49,7 @@ include::common/information.adoc[]
 | 6 : yellow
 |    span:E[topmark/daymark shape]
 | 8 : upright cross
-2+^h|Light All Around : rhythm of light(if any)
+2+^h|Light All Around : rhythm of light (if any)
 |span:E[colour]
 | 5 : blue
 |span:E[colour]
@@ -65,12 +80,6 @@ include::common/information.adoc[]
 | signal group
 |(D)
 |===
-
-//
-* 부가 정보
-** 부표(Buoy)에 span:F[Fog Signal], span:F[Radar Transponder Beacon] 및 등화 등 장비 역할의 객체들이 있다면 span:R[Structure/Equipment] 관계 설정
-** 부표(Buoy)의 span:A[height]와 span:A[vertical length]는 일반적으로 입력하지 않음
-include::common/information.adoc[]
 
 ===== Example
 .Emergency Wreck Marking Buoy의 인코딩 예시

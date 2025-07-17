@@ -1,5 +1,9 @@
 // tag::InshoreTrafficZone[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* span:F[Inshore Traffic Zone]는 통항 분리 제도의 육지 쪽 경계와 인접한 해안 사이의 지정된 구역을 입력하는데 사용
+include::common/phrase.adoc[tag=speedLimits]
+include::common/phrase.adoc[tag=NotUsedFeature]
+
 ---
 // end::InshoreTrafficZone[]

@@ -1,36 +1,85 @@
 // tag::InformationArea[]
 ===== Remark
 
-- 현재까지 국내 S-57 전자해도에 적용된 주의기사“CTNARE”의 경우 ECDIS에서 경보를 요하는 경우가 없으므로 S-101에서는 #F "Information Area"로 입력
-- 향후 경보가 필요한 항목에 대해서는 #F "Caution Area"를 사용 
-- 불필요한 정보의 삭제 +
- (ex. 현재 시점에서 #A "Date end" 확인 후 지난 날짜에 대해서는 삭제)
-- 외부참조파일을 입력할 경우 명명기준 확인 +
-  (101CCCCXXXXXXXX.EEE) - 101 : Product명, CCCC: Agency code, XXXXXXXX.EEE:파일명
+해도 간행 정보::
+* 기준 축척 종이해도의 간행정보 및 보정도 정보를 입력하는데 사용
+* 개정 시 종이해도의 간행 정보를 업데이트하고 보정도와 관련된 span:F[Information Area]는 삭제
+* span:F[Information Area]에 해도명과 발행일을 입력하고 해도의 적용 자료 등 추가 정보는 span:A[information] 또는 span:F[Nautical Information]에 입력하여 span:R[Additional Information Association]을 설정
+
+//
+
+일반적인 정보::
+* 종이해도에 주의기사를 입력할 때에는 항해안전을 위한 정보 제공 목적인지, 일반 정보 제공 목적인지 구분해야 하여 span:F[Caution Area] 또는 span:F[Information Area]로 입력해야 함 +
+또한, 셀 구역 전체에 입력하는 것을 피해야함
+
+* 아래 나열된 주의기사 내용은 대상 객체 주변에 span:F[Caution Area][P,C,S]를 입력하고 span:A[information]또는 span:F[Nautical Information] 관련 정보를 입력
+** 공사중, 매립중, 미측 구역, 송전선, 안벽, 암초, 항해주의, 잠수정, 선박횡단, 고도제한, 사주, 사퇴, 모래톱, 좌주, 토사 등 항해 안전에 직접적인 영향을 미치는 내용
+
+* 위에 언급되지 않은 난외 기사의 내용은 span:F[Information Area]에 입력하거나 해도 상 관련 객체의 span:A[information]에 입력
+** 해도 상 관련 객체가 여러 개이며, 동일한 내용을 입력해야 할 경우 span:F[Nautical Information]에 에 입력하여 span:R[Additional Information Association]을 설정
+
+//
+* 객체의 이름을 ECDIS에 표시할 필요 없으므로 span:A[name usage]를 입력하지 않아야 함
+
+* span:A[fixed date range]의 하위 속성 span:A[date end]의 날짜가 지난 경우, span:F[Information Area]는 삭제해야 함
 
 ===== Example
+
+//REVIEW 1
+// 기존에는 Information Area의 feature name에 "(No.3412)상왕등도에서 어청도" 등을 입력하고 
+//Nautical Information의 text에 "2003년부터 2023년까지 대한민국 국립해양조사원 측량"등을 입력했음
+
+.종이해도 간행 정보의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| CAUTION 
-|    Name Usage||(S)EN|0,1| 1: default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 주의 
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|Scale Minimum|SCAMIN|IN|0,1| 179999
-|**Information**|INFORM|C|0,*| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| CAUTION(Numerous marine farms and obstructions exist in the coastal areas, so mariners should approach with caution.)
-|**Information**|INFORM|C|0,*| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
-|    #essential Language||(S)TE|1,1| kor 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 주의(연안해역에서는 양식장 및 장애물 등이 다수 산재되어 있으므로 접근 시 주의하여야 함.)
+|reported date|SORDAT|TD|0,1| 20241101
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| (No.3412)SANGWANGDEUNGDO TO EOCHEONGDO(From ROK KHOA surveys from 2003 to 2023)
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| (No.3412)상왕등도에서 어청도(2003년부터 2023년까지 대한민국 국립해양조사원 측량)
+|===
+
+//REVIEW 2
+// 기존에는 Information Area의 feature name에 "보정도(1:75,000)" 등을 입력했음
+
+.보정도의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|reported date|SORDAT|TD|0,1| 20250509
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Block for Chart(No.3412) 
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 보정도(1:75,000)
+|===
+
+//REVIEW 3
+// 기존에는 Information Area의 feature name에 "교통안전 특정해역의 항해" 등을 입력하고 
+//Nautical Information의 file reference에 "101KR000030K100.TXT"등을 입력했음
+
+.일반 정보(교통안전 특정해역의 항해)의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|reported date|SORDAT|TD|0,1| 20241101
+|**information**|INFORM|C|0,*| 
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000030E100.TXT
+|    text|INFORM/NINFOM|(S)TE|0,1| Navigation in the Specific Sea Areas for Traffic Safety
+|    span:E[language]||(S)TE|1,1| eng
+|**information**|INFORM|C|0,*|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000030K100.TXT
+|    text|INFORM/NINFOM|(S)TE|0,1| 교통안전 특정해역의 항해
+|    span:E[language]||(S)TE|1,1| kor
 |===
 
 ---
+
 // end::InformationArea[]

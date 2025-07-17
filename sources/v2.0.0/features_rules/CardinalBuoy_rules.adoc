@@ -14,14 +14,22 @@ IALA 해상 부표 시스템에 의거하여 ::
 ** 위 조건에 따른 속성의 조합은 **반드시** <<CardinalBuoy_T1,[표 - Cardinal Buoy의 속성 조합 기준]>>를 참고하여 입력
 
 //
-* 부표(Buoy)에 span:F[Fog Signal], span:F[Radar Transponder Beacon] 및 등화 등 장비 역할의 객체들이 있다면 span:R[Structure/Equipment] 관계 설정
-* 부표(Buoy)의 span:A[height]와 span:A[vertical length]는 일반적으로 입력하지 않음
+include::common/phrase.adoc[tag=AtoN_Relationship]
 
 //
-include::common/phrase.adoc[tag=IALA_Warning]
+include::common/phrase.adoc[tag=Buoy_Attr_General]
+
+//
+include::common/phrase.adoc[tag=colourPattern]
+
+//
+include::common/phrase.adoc[tag=featureName_for_AtoN]
 
 //
 include::common/phrase.adoc[tag=information]
+
+//
+include::common/phrase.adoc[tag=IALA_Warning]
 
 .Cardinal Buoy의 구성 (IALA A & B 동일)
 image::../images/CardinalBuoy/CardinalBuoy_image-1.png[width=50%]
@@ -76,7 +84,7 @@ image::../images/CardinalBuoy/CardinalBuoy_image-1.png[width=50%]
 |11 : 2 cones (base to base)
 |14 : 2 cones (points downward)
 |10 : 2 cones (point to point)
-5+^h|Light
+5+^h|Light All Around : rhythm of light (if any)
 |Rhythm Character
 |V +
 Q
@@ -87,9 +95,6 @@ VQ(6)+LFl.15s
 | Q(9)15s +
 VQ(9)10s
 |===
-
-//
-include::common/phrase.adoc[tag=featureName_for_AtoN]
 
 ===== Example
 .Cardinal Buoy, North의 인코딩 예시

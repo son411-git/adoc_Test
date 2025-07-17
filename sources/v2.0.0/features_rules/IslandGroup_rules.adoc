@@ -1,6 +1,30 @@
 // tag::IslandGroup[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 열도(列島), 군도(群島), 제도(諸島)와 같은 섬 무리의 명칭을 입력하는 경우, span:F[Island Group][S]를 사용해야 하며, +
+명명된 섬 무리에 포함된 모든 관련 span:F[Land Area]와 span:R[Island Aggregation] 를 맺어야 함
+
+* 섬 무리에 포함된 개별 섬의 이름은 관련 span:F[Land Area]에 span:A[feature name]을 사용하여 입력
+
+include::common/phrase.adoc[tag=NotUsedFeature]
+
+** 섬 무리에 포함되는 섬과 이를 둘러싸는 영역을 입력하는 명확한 기준이 없어, 현재는 span:F[Sea Area/Named Water Area][P]로 입력
+
+===== Example
+.Installation Buoy의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**span:E[feature name]**||C|1,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gyeongnyeolbi Yeoldo
+|    name usage||(S)EN|0,1| 1 : default name display
+|**span:E[feature name]**||C|1,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 격렬비열도
+|    name usage||(S)EN|0,1| 2 : alternate name display
+|===
 
 ---
 // end::IslandGroup[]

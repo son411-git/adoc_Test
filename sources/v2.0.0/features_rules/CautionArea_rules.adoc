@@ -1,9 +1,11 @@
 // tag::CautionArea[]
 ===== Remark
-* 일반적으로 항해 안전에 영향을 미치는 상황을 선원이 인지해야 하는 구역
-* 항해자의 안전 항해를 위한 정보인지, 일반정보인지 구분해야 함 +
-따라서 span:F[Information Area]와는 구분해야 함
-* 종이해도에 주의기사가 있다고해서 무조건 그 내용을 span:F[Caution Area]로 옮기지 않아야 함 +
+* 항해자에게 경고와 알림(Alert and Indication)이 필요한 지역에 한하여 span:F[Caution Area]를 입력
+** span:F[Caution Area]는 ECDIS의 경보를 유발하기 때문에 항해자에게 경보를 통한 경각심이 필요한 경우에 한하여 입력해야 함
+* 다음과 같은 사항에 span:F[Information Area]를 입력
+** 항해자에게 유용할 수는 있으나, 안전한 항해와 명백한 관계가 없는 사항
+** 항해자와 관련이 있으나 ECDIS 경보를 울릴 필요가 없는 주의구역 정보
+* 종이해도에 주의기사를 입력할 때에는 항해안전을 위한 정보 제공 목적인지, 일반 정보 제공 목적인지 구분해야 하여 span:F[Caution Area] 또는 span:F[Information Area]로 입력해야 함 +
 또한, 셀 구역 전체에 입력하는 것을 피해야함
 
 //
@@ -37,6 +39,8 @@
 
 * 위에 언급되지 않은 난외 기사는 관련 객체 또는 span:F[Information Area]에 입력
 
+* span:A[fixed date range]의 하위 속성 span:A[date end]의 날짜가 지난 경우, span:F[Caution Area]는 삭제해야 함
+
 ===== Example
 .Caution Area의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
@@ -44,18 +48,11 @@
 |Attribute |Acronym |Type |Mult. |Value
 
 |**information**|INFORM|C|0,*|
-|    file locator||(S)TE|0,1|
-|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    headline||(S)TE|0,1|
 |    span:E[language]||(S)TE|1,1|eng
 |    text|INFORM/NINFOM|(S)TE|0,1|The overhead power cable spanning the YEONGHEUNG SUDO is widened unusually on the radar scope, so mariners are required to navigate with caution in this area.
 |**information**|INFORM|C|0,*|
-|    file locator||(S)TE|0,1|
-|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    headline||(S)TE|0,1|
 |    span:E[language]||(S)TE|1,1|kor
 |    text|INFORM/NINFOM|(S)TE|0,1|영흥수도 위를 횡단하는 송전선은 레이더 화면에 비정상적으로 확대되어 보이므로 이 수도를 항해하는 선박은 주의하여야 함.
-|pictorial representation|PICREP|TE|0,1|
 |===
 
 ---
