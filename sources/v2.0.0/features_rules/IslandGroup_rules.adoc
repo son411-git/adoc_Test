@@ -1,6 +1,14 @@
 // tag::IslandGroup[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 열도(列島), 군도(群島), 제도(諸島)와 같은 섬 무리의 명칭을 입력하는 경우, span:F[Island Group][S]를 사용해야 하며, +
+명명된 섬 무리에 포함된 모든 관련 span:F[Land Area]와 span:R[Island Aggregation] 를 맺어야 함
+
+* 섬 무리에 포함된 개별 섬의 이름은 관련 span:F[Land Area]에 span:A[feature name]을 사용하여 입력
+
+include::common/phrase.adoc[tag=NotUsedFeature]
+
+** 섬 무리에 포함되는 섬과 이를 둘러싸는 영역을 입력하는 명확한 기준이 없어, 현재는 span:F[Sea Area/Named Water Area][P]로 입력
 
 ---
 // end::IslandGroup[]
