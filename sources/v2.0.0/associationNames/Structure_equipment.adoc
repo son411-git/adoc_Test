@@ -1,0 +1,119 @@
+.Structure/Equipment의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between a navigation aid 
+equipment feature and the structure that supports it. 
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+// ---------
+4+h| Case 1 - 일반적인 Structure/Equipment 관계
+
+| Composition
+| The Structure
+| span:F[Bridge], span:F[Building], span:F[Crane], span:F[Cardinal Beacon], span:F[Cardinal Buoy], span:F[Conveyor], span:F[Dolphin], span:F[Emergency Wreck Marking Buoy], span:F[Fishing Facility], span:F[Floating Dock], span:F[Fortified Structure], span:F[Hulk], span:F[Installation Buoy], span:F[Isolated Danger Beacon], span:F[Isolated Danger Buoy], span:F[Landmark], span:F[Lateral Beacon], span:F[Lateral Buoy], span:F[Light Float], span:F[Light Vessel], span:F[Mooring Buoy], span:F[Offshore Platform], span:F[Pile], span:F[Pipeline Overhead], span:F[Pontoon], span:F[Pylon/Bridge Support], span:F[Safe Water Beacon], span:F[Safe Water Buoy], span:F[Shoreline Construction], span:F[Silo/Tank], span:F[Span Fixed], span:F[Span Opening], span:F[Special Purpose/General Beacon], span:F[Special Purpose/General Buoy], span:F[Structure Over Navigable Water], span:F[Wind Turbine], span:F[Wreck]
+| 0, 1
+
+| Association
+| The Equipment
+| span:F[Daymark], span:F[Distance Mark], span:F[Fog Signal], span:F[Light All Around], span:F[Light Fog Detector], span:F[Physical AIS Aid to Navigation], span:F[Radar Transponder Beacon], span:F[Retroreflector], span:F[Signal Station Traffic], span:F[Signal Station Warning]
+| 0, *
+
+// ---------
+4+h| Case 2 - 섹터가 있는 등화의 경우( span:F[Light Sectored]가 **Equipment** )
+
+| Composition
+| The Structure
+| span:F[Bridge], span:F[Building], span:F[Crane], span:F[Cardinal Beacon], span:F[Conveyor], span:F[Dolphin], span:F[Fishing Facility], span:F[Fortified Structure], span:F[Isolated Danger Beacon], span:F[Landmark], span:F[Lateral Beacon], span:F[Offshore Platform], span:F[Pile], span:F[Pipeline Overhead], span:F[Pylon/Bridge Support], span:F[Safe Water Beacon], span:F[Shoreline Construction], span:F[Silo/Tank], span:F[Span Fixed], span:F[Span Opening], span:F[Special Purpose/General Beacon], span:F[Structure Over Navigable Water], span:F[Wind Turbine], span:F[Wreck]
+| 0, 1
+
+| Association
+| The Equipment
+| span:F[Light Sectored]
+| 0, *
+
+// ---------
+4+h| Case 3 - 볼라드의 경우( span:F[Bollard]가 **Equipment** )
+
+| Composition
+| The Structure
+| span:F[Dolphin], span:F[Fortified Structure], span:F[Hulk], span:F[Landmark], span:F[Offshore Platform], span:F[Pile], span:F[Pylon/Bridge Support], span:F[Shoreline Construction]
+| 0, 1
+
+| Association
+| The Equipment
+| span:F[Bollard]
+| 0, *
+
+// ---------
+4+h| Case 4 - 항공부등, 항공장애등의 경우( span:F[Light Air Obstruction]가 **Equipment**  )
+
+| Composition
+| The Structure
+| span:F[Bridge], span:F[Building], span:F[Crane], span:F[Conveyor], span:F[Landmark], span:F[Offshore Platform], span:F[Pylon/Bridge Support], span:F[Span Fixed], span:F[Span Opening], span:F[Wind Turbine]
+| 0, 1
+
+| Association
+| The Equipment
+| span:F[Light Air Obstruction]
+| 0, *
+
+// ---------
+4+h| Case 5 - 등화가 Structure로 기능하는 경우 span:D[표준 상 허용하는 형태지만, 극히 드문 경우이므로 사실 상 사용하지 않음]
+
+| Composition
+| The Structure
+| span:F[Light All Around], span:F[Light Sectored]
+| 0, 1
+
+| Association
+| The Equipment
+| span:F[Fog Signal], span:F[Light Air Obstruction], span:F[Light All Around], span:F[Light Fog Detector], span:F[Light Sectored], span:F[Radar Transponder Beacon], span:F[Retroreflector]
+| 0, *
+
+// ---------
+4+h| Case 6 - 주간표지가 **Structure**일 경우( span:F[Daymark]가 **Structure**로써 기능하는 경우 )
+
+| Composition
+| The Structure
+| span:F[Daymark]
+| 0, 1
+
+| Association
+| The Equipment
+| span:F[Distance Mark], span:F[Fog Signal], span:F[Light All Around], span:F[Light Fog Detector], span:F[Light Sectored], span:F[Physical AIS Aid to Navigation], span:F[Radar Transponder Beacon], span:F[Retroreflector], span:F[Signal Station Traffic], span:F[Signal Station Warning]
+| 0, *
+
+// ---------
+4+h| Case 7 - 가공선, 파이프의 경우( span:F[Cable Overhead], span:F[Pipeline Overhead]가 **Structure** )
+
+| Composition
+| The Structure
+| span:F[Cable Overhead], span:F[Pipeline Overhead]
+| 0, 1
+
+| Association
+| The Equipment
+| span:F[Radar Reflector]
+| 0, *
+
+// ---------
+4+h| Case 8 - 헬기 착륙장의 경우( span:F[Helipad]가 **Equipment** )
+
+| Composition
+| The Structure
+| span:F[Building], span:F[Landmark], span:F[Offshore Platform]
+| 0, 1
+
+| Association
+| The Equipment
+| span:F[Helipad]
+| 0, *
+
+
+|===
+
+===== Remark
+
+* span:R[Structure/Equipment] 연관관계를 설정할 때에는, 적어도 하나 이상의 **The Equipment**에 해당하는 장비와 이에 대응되는 단 하나의 **The Structure**에 해당하는 구조물을 입력해야 함
+
