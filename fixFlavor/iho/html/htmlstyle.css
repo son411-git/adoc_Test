@@ -1485,7 +1485,18 @@ span.D::before{
 span.D::after{
   content: ")";
 }
-
+span.RG{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #e7e7e7;
+  color: red;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
 
 /* C7: Fonts  */
 b, strong {
@@ -1599,21 +1610,21 @@ ul > li::before {
 
 
 ul ul > li::before {
-  content: "◦ ";
+  content: "◦ " !important;
   display: inline-block;
   width: 1em;
   margin-left: -1.2em;
 }
 
 ul ul ul > li::before {
-  content: "▪ ";
+  content: "▪ " !important;
   display: inline-block;
   width: 1em;
   margin-left: -1.2em;
 }
 
 ul ul ul ul > li::before {
-  content: "▫ ";
+  content: "▫ " !important;
   display: inline-block;
   width: 1em;
   margin-left: -1.2em;
