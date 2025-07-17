@@ -7,7 +7,10 @@
 ** 통항분리제도가 적용되는 수역이 맏닿아 있더라도, 구분되는(명칭이 서로 다른) 경우 각각 별개로 입력해야 함
 
 //
-* span:F[Traffic Separation Scheme]은 다른 구성요소와 span:R[Traffic Separation Scheme Aggregation] 관계를 가져야 함 (<<TSS_AGGR,※참고>>)
+:ObjectName: span:F[Traffic Separation Scheme]을
+:Relation: span:R[Traffic Separation Scheme Aggregation]
+:linkTo: TSS_AGGR
+include::common/phrase.adoc[tag=Refer]
 
 //REVIEW: 리뷰 필요
 // * span:A[IMO adopted]는 IMO 지정항로 여부를 입력하며, 국내에서는 “해상교통안전법 시행규칙 [별표 20]통항분리방식이 적용되는 수역”에 해당하는 “홍도항로, 보길도항로, 거문도항로”만 span:A[IMO adopted] = true로 입력하고 이 외에는 false로 입력

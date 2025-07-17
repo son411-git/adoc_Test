@@ -1,9 +1,9 @@
 // tag::Waterfall[]
 ===== Remark
 
-//REVIEW: 사용하지 않는 객체입니다.
-
 * 면(Surface) 형태로 인코딩하는 경우, 반드시 span:F[River] 와 span:F[Land Area]로 덥혀야 함
+
+include::common/phrase.adoc[tag=NotUsedFeature]
 
 ---
 // end::Waterfall[]

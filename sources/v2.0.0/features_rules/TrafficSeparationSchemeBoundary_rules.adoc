@@ -4,7 +4,11 @@
 ** 통항분리대, 구역를 뜻하는 span:F[Separation Zone of Line]과는 구별해서 사용해야 함
 ** 선박이 진출입하는 쪽에는 입력하지 않아야 함
 
-* span:F[Traffic Separation Scheme Boundary]는 다른 구성요소와 함께 span:F[Traffic Separation Scheme]과 span:R[Traffic Separation Scheme Aggregation] 관계를 가져야 함 (<<TSS_AGGR,※참고>>)
+//
+:ObjectName: span:F[Traffic Separation Scheme Boundary]를
+:Relation: span:R[Traffic Separation Scheme Aggregation]
+:linkTo: TSS_AGGR
+include::common/phrase.adoc[tag=Refer]
 
 //image::../images/TrafficSeparationSchemeBoundary/TrafficSeparationSchemeBoundary_image-1.png[width=400]
 

@@ -8,9 +8,9 @@
 
 .V-AIS 와 입력예시
 ====
+
 .등대표의 V-AIS
 [%header, cols="a,a,a,a,a,a,a,a,a"]
-[style="background-color:#FFFFFF"]
 |===
 ^| 번&emsp;호 ^| 해안구분 ^| 명&emsp;칭 ^| 위&emsp;치 ^| MMSI ^| 주파수(MHz) ^| 출력(W) ^| 측정 구역(M) | 기&emsp;사
 
@@ -30,16 +30,18 @@ NACHIDO_ROCK
 
 |===
 
-image:../images/VirtualAISAidToNavigation/Virtual_Example.png[]
+.전자해도 입력 예시
+image::../images/VirtualAISAidToNavigation/Virtual_Example.png[align="center"]
+
 ====
 
 * 단, V-AIS라 하더라도 명칭 또는 좌표를 확인하여 **고정된 물표와 함께 사용되는 Synthetic V-AIS는 입력하지 않음**
 
 .Sythetic V-AIS와 입력 예시
 ====
+
 .등대표의 Synthetic V-AIS(고정된 물표와 함께 사용되는 V-AIS)
 [%header, cols="a,a,a,a,a,a,a,a,a"]
-[style="background-color:#FFFFFF"]
 |===
 ^| 번&emsp;호 ^| 해안구분 ^| 명&emsp;칭 ^| 위&emsp;치 ^| MMSI ^| 주파수(MHz) ^| 출력(W) ^| 측정 구역(M) | 기&emsp;사
 
@@ -62,7 +64,9 @@ Virtual AIS
 
 |===
 
-image:../images/VirtualAISAidToNavigation/Synthetic_Example.png[] 
+.전자해도 입력 예시
+image::../images/VirtualAISAidToNavigation/Synthetic_Example.png[] 
+
 ====
 
 

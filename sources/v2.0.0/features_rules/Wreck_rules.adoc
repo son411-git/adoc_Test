@@ -12,11 +12,8 @@
 ** span:A[height]는 span:A[water level effect] = 1 span:D[partly submerged at high water] 또는 2 span:D[always dry]인 경우에만 입력
 
 //
-include::common/phrase.adoc[tag=SurroundingDepth]
-
-//
 :linkTo: Wreck_T2, Wreck의 default clearance depth 입력 기준을
-include::common/phrase.adoc[tag=DefaultClearanceDepth]
+include::common/phrase.adoc[tag=SurroundingDepth]
 ** span:A[category of wreck]의 값이 4 span:D[wreck showing mast/masts] 또는 5 span:D[wreck showing any portion of hull or superstructure] 이고, span:A[height]가 _(Undefined)_ 인 경우
 ** span:A[value of sounding]이 _Empty(null)_ 인 경우
 
