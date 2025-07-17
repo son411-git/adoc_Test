@@ -60,6 +60,7 @@ include::common/phrase.adoc[tag=IALA_Warning]
 |===
 
 ===== Example
+.Isolated Danger Buoy의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value

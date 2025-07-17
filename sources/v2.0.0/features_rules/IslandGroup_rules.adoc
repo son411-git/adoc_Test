@@ -10,5 +10,21 @@ include::common/phrase.adoc[tag=NotUsedFeature]
 
 ** 섬 무리에 포함되는 섬과 이를 둘러싸는 영역을 입력하는 명확한 기준이 없어, 현재는 span:F[Sea Area/Named Water Area][P]로 입력
 
+===== Example
+.Installation Buoy의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**span:E[feature name]**||C|1,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gyeongnyeolbi Yeoldo
+|    name usage||(S)EN|0,1| 1 : default name display
+|**span:E[feature name]**||C|1,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 격렬비열도
+|    name usage||(S)EN|0,1| 2 : alternate name display
+|===
+
 ---
 // end::IslandGroup[]
