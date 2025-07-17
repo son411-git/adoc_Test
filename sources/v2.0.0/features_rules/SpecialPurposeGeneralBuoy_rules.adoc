@@ -1,15 +1,29 @@
 // tag::SpecialPurposeGeneralBuoy[]
 ===== Remark
- - 특수부표는 항해를 지원하기 위한 목적이 아니며 보통 공사나 특별한 시설 등을 표시하는 용도로 사용
- - 부표모양은 여러 형태가 존재하며, 두표모양은 기본적으로 한 개의 X자 형태이나 없거나 일부 다른 경우도 있음.
-- 일반적으로 황색으로만 구성되나 일부 경우 백색 또는 색상 조합으로 사용됨.
-- 특수부표에 설치되는 등화는 다른 입표들이 사용하는 리듬을 제외한 모든 형식 사용가능.
-- 속성 #A "Vertical Length"는 지면상 높이에서 구조물 최상단의 높이를 입력 (구조물 자체만의 높이 – 등대표에 제시됨)
-- 특수부표가 Light 객체와 함께 입력되어 등부표로 표현되는 경우 해당 등대번호는 Light객체에 입력
-   (등부표로 형성된 경우 등대번호가 특수부표의 #A "INFORM"에 입력되어 있을 경우 수정필요)
-- 부표와 등화, 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 #R "Structure/Equipment" 관계 설정
-  ※ Relation 페이지 참조
- - 부표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
+* 특수/일반 부표는 span:F[Special Purpose/General Buoy]로 입력
+** 일반적으로 황색 구조물/황색 'X'자 형태의 두표를 가짐
+*** 두표(top mark)가 다색/패턴이고, 항해에 매우 중요한 정보라면 두표를 span:F[Daymark]로 입력
+
+:ObjectName: span:F[Special Purpose/General Buoy]를
+:Relation: span:R[Structure/Equipment]
+:linkTo: Structure_Equipment
+include::common/phrase.adoc[tag=Refer]
+* 장비(등화, 무신호, AIS 등)를 탑재한 경우, 해당 객체와 span:F[Special Purpose/General Buoy]간 span:R[Structure/Equipment] 관계 설정
+
+//REVIEW: 등대표 번호 입력에 관한 지침수정
+
+
+
+// - 특수부표는 항해를 지원하기 위한 목적이 아니며 보통 공사나 특별한 시설 등을 표시하는 용도로 사용
+// - 부표모양은 여러 형태가 존재하며, 두표모양은 기본적으로 한 개의 X자 형태이나 없거나 일부 다른 경우도 있음.
+// - 일반적으로 황색으로만 구성되나 일부 경우 백색 또는 색상 조합으로 사용됨.
+// - 특수부표에 설치되는 등화는 다른 입표들이 사용하는 리듬을 제외한 모든 형식 사용가능.
+// - 속성 #A "Vertical Length"는 지면상 높이에서 구조물 최상단의 높이를 입력 (구조물 자체만의 높이 – 등대표에 제시됨)
+// - 특수부표가 Light 객체와 함께 입력되어 등부표로 표현되는 경우 해당 등대번호는 Light객체에 입력
+//    (등부표로 형성된 경우 등대번호가 특수부표의 #A "INFORM"에 입력되어 있을 경우 수정필요)
+// - 부표와 등화, 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 #R "Structure/Equipment" 관계 설정
+//   ※ Relation 페이지 참조
+//  - 부표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
 
 ////
 [cols="1,1" , frame=none , grid=none, align=center]
@@ -28,34 +42,67 @@ a| image:../images/SpecialPurposeGeneralBuoy/SpecialPurposeGeneralBuoy_image-1.p
 ////
 
 ===== Example
+
+.장사 영덕군 A호 등부표
+
+====
+
+.등대표에 기재된 내용
+[%header, cols="a,a,a,a,a,a,a,a"]
+|===
+^| 번&emsp;호 ^| 명&emsp;칭 ^| 위&emsp;치 ^| 등&emsp;질 ^| 등&emsp;고(m) ^| 광달거리 ^| 도색·구조·높이(m) ^| 기&emsp;사
+
+<| 1298.1
+<| 장사 +
+영덕군 A호 등부표 +
+Jangsa
+>| 36-16.84N +
+129-22.89E
+<| Fl(4)Y 8s
+| 
+| 7
+| 황 망대형
+| 
+|===
+
+---
+
+.Special Purpose/General Buoy의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|#essential Buoy Shape|BOYSHP|EN|1,1| 4: pillar
-|#essential Category of Special Purpose Mark|CATSPM|EN|1,*| 18: notice mark
-|#essential Colour|COLOUR|EN|1,*| 6(yellow)
-|Colour Pattern|COLPAT|EN|0,1| 2: vertical stripes(대부분 없음)
-|Radar Conspicuous|CONRAD|BO|0,1| false
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Hajodo No D
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 하조도 송공D호호
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|Status|STATUS|EN|0,*| 7: temporary
-|Vertical Length|VERLEN|RE|0,1| 0.9(대부분 없음)
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
-|**Topmark**|TOPMAR|C|0,1| 
-|    Colour|COLOUR|(S)EN|0,*| 6: yellow
-|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 7: x-shaped
+
+|span:E[buoy shape]|BOYSHP|EN|1,1| 4 span:D[pillar]
+|span:E[category of special purpose mark]|CATSPM|EN|1,*| 27 span:D[general warning mark]
+|span:E[colour]|COLOUR|EN|1,*| 6 span:D[yellow]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jangsa No.A
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 장사 영덕군A호
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|**topmark**|TOPMAR|C|0,1|
+|    colour|COLOUR|(S)EN|0,*| 6 span:D[yellow]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 7 span:D[X-shaped]
 |===
+
+---
+
+//REVIEW: 수정 필요
+
+번호:: _(수정 필요)_
+
+명칭:: '등부표' 를 제외한 **장사 영덕군A호**만 입력
+
+등질, 등고, 광달거리:: 이 세가지 항목은 구조물의 속성이 아님 ( span:F[Light All Around]나 span:F[Light Sectored]로 입력해야 함 )
+
+도색·구조·높이:: 도색이 '황'색이므로 span:A[colour]를 6 span:D[yellow]으로 입력 +
+구조는 '망대형'이므로 span:A[buoy shape]를 4 span:D[pillar]로 입력
+
+====
+
 ---
 // end::SpecialPurposeGeneralBuoy[]
 

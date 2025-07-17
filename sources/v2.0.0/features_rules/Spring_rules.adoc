@@ -1,15 +1,18 @@
 // tag::Spring[]
 ===== Remark
-- #A "Feature name"에 피처의 기능과 동일한 정보(예: 해저용수)는 삭제필요
+
+// REVIEW: 이 내용이 꼭 필요한지..  모든 객체에 다 똑같이 적용되어야 하고.. 
+// - #A "Feature name"에 피처의 기능과 동일한 정보(예: 해저용수)는 삭제필요
+* span:A[feature name]은 해저용수에 대한 명칭이 있을 때만 사용 span:D[단순 '해저용수' 같은 명칭은 입력을 지양]
 
 ===== Example
+.Spring의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Yeongheungsudo NoP
-|    Name Usage||(S)EN|0,1| 1 : default name display
+
+5+h| --
+
 |===
 
 ---

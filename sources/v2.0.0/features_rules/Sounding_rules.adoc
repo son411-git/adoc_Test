@@ -1,38 +1,88 @@
 // tag::Sounding[]
 ===== Remark
-- 수심은 3차원을 표현할 수 있도록 위치(위도, 경도)와 수직 값은 Spatial Record에 저장되며, 위치 및 수직 값을 제외한 동일한 피처 정보를 갖는 수심끼리 Grouping(그룹화)
- - 업데이트에 의해 추가되는 수심은 이미 존재하는 수심 그룹에 포함되지 않도록 주의
- - #F "Obstruction" 및 #F "Underwater/Awash Rock" 등의 수심은 해당 피처의 속성 #A "value of sounding"에 입력
- - <표 A>와 같이 수심의 상태 및 품질에 따라 Spatial 정보의 #A "Quality of horizontal measurement" 및 Feature의 속성 #A "Quality of vertical measurement" 입력
 
-////
-[cols="15,10,10,15,15,10,20" options="header"]
+* 수심은 X,Y,Z 좌표를 갖는 3차원 Point의 집합
+** 단일 포인트를 표현하는 경우도 있지만, 일반적으로는 여러 개의 Point를 그룹화하여 표현
+
+* span:F[Sounding] 그룹화 시 주의사항
+** 하나의 span:F[Sounding](그룹)이 서로 다른 span:F[Sounding Datum]에 걸쳐 있지 않도록 주의해야 함
+** 업데이트에 의해 추가되는 수심은 이미 존재하는 span:F[Sounding] 그룹에 포함되지 않도록 주의해야 함 +
+   ( 업데이트 시에는 그룹화를 해제하고 다시 그룹화하는 작업을 하지 않아야 함 )
+** 개정할 때에는 기존에 만들어진 그룹을 모두 해제하고, 다시 그룹화해야 함
+
+* 수심은 종이해도나 전자해도 상 표출을 위해 span:F[Spatial Quality]의 span:A[quality of horizontal measurement]나, span:A[quality of vertical measurement]을 입력해야 함 
+** 실제 위치의 수심, 간출 수심등의 경우 span:A[quality of vertical measurement]는 1span:D[depth known] 또는 _(Undefined)_ 두 가지 모두 허용하지만, +
+   가급적 __(Undefined)__로 입력할 것을 권장
+
+.Sounding 속성 입력
+[%header, cols="a,a,a,a,a,a"]
 |===
-|수심| S-4 | INT1 | Spatial-Quality of horizontal measurement |Feature-Quality of
-vertical measurement| Feature-Status | 비고
-|실제위치|412.1|I10|-|1|-| 
-|종이해도 여백상의 위치|412.2|I11,I12|-|1|-|ENC는 실제 위치에 존재
-|신뢰도가 낮은값(정체 수심)|412.4|I14|4|4|-|
-|간층 수심|413|I15|-|1|-|음의값
-|의심스러운 수심|424.4|I2|-|3|18|Status=18
-|보고되었으나 확인되지 않음|I3,I4|8|9||보고 날짜를 알 수 있다면 [Reported date]에 입력
+<.^| Sounding 
+<.^| S-4 
+<.^| INT1 
+<.^| span:D[Spatial Quality] +
+quality of horizontal measurement 
+<.^| quality of vertical measurement 
+<.^| 비고 
+
+<.^| 실제 위치 
+<.^| B-412.1 
+<.^| I10 
+^.^| 
+^.^| 1 or _(Undefined)_ 
+<.^|
+
+<.^| span:D[종이해도에서] +
+실제위치에서 벗어난 수심 
+<.^| B-412.2 
+<.^| I11, I12 
+^.^| 
+^.^| 1 or _(Undefined)_ 
+<.^| ENC는 실제 위치에 인코딩해야만 함
+
+<.^| 신뢰도가 낮은 수심(정체 수심) 
+<.^| B-412.4 
+<.^| I14 
+^.^| 4 
+^.^| 4 
+<.^|
+
+<.^| 간출 수심 
+<.^| B-413 
+<.^| I15 
+^.^| 
+^.^| 1 or _(Undefined)_ 
+<.^| 수심의 값은 음수
+
+<.^| 의심스러운 수심 
+<.^| B-424.4 
+<.^| I2 
+^.^| 
+^.^| 3 
+<.^| 실제하는지 의심스러운 경우 +
+span:A[status]를 18 span:D[existence doubtful]로 인코딩
+
+<.^| 보고되었으나 확인되지 않은 수심 
+<.^|  
+<.^| I3, I4 
+^.^| 4 
+^.^| 9 
+<.^| 보고 날짜를 알 수 있다면 span:A[reported date]에 입력
+
 |===
-<표 A> Spatial 및 Feature 속성
-////
 
 ===== Example
+.Sounding의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 1: depth known
-|Status|STATUS|EN|0,1| 18: existence doubtful
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| H37240622013(Scale 1:25,000)
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| <undefined>
+|quality of vertical measurement|QUASOU|EN|0,*| 
+|status|STATUS|EN|0,1| 18 span:D[existence doubtful]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| H37240622013(Scale 1:25,000)
+
 |===
 
 ---

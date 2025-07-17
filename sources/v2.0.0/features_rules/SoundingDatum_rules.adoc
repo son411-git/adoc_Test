@@ -1,32 +1,52 @@
 // tag::SoundingDatum[]
 ===== Remark
-- S-57 전자해도에서 기본 수심기준면(약최저저조면)을 메타정보로 입력했으나, S-101은 #F "Sounding Datum" 피처를 생성하여 속성 #A "Vertical datum" = 11(약최저저조면)으로 인코딩 
-- 수심 및 측량데이터를 포함하는 모든 부분은 #F "Sounding Datum" 피처로 덮여있어야 한다.
-  (즉, #F "Quality of Bathymetric Data"와 동일한 영역으로 인코딩)
-- 기본 #F "Sounding Datum"과 다른 속성 값을 갖는 경우 별도의 #F "Sounding Datum" 피처로 인코딩
-- 메타 피처인 #F "Vertical Datum of Data"와 중첩 가능
+
+* 수심에 관한 수직기준면은 span:F[Sounding Datum]으로 기술 (S-57과 다르게 Dataset의 메타데이터가 아닌 메타 객체로, 인코딩)
+
+* span:F[Sounding Datum]와 다른 메타 객체와의 관계
+** span:F[Sounding Datum] 끼리는 서로 중첩되서는 안 됨
+** 하나 이상의 span:F[Quality of Bathymetric Data]로 완전히 덮혀야 함 + 
+   ( 측량연도 등의 정보가 다르더라도, 수심기준면이 동일한 경우에는 하나의 span:F[Sounding Datum]로 입력 )
+** span:F[Vertical Datum of Data]와는 중첩되어도 무방함 (별개의 정보)
+
+//REVIEW: 이런 주의사항들을 적어도 될지?
+**span:E[주의]**:: 서로 다른 span:F[Sounding Datum]이 맞닿아 경계를 이루는 경우 다음에 주의해야 함
+* span:F[Sounding](그룹), span:F[Depth Area], span:F[Depth Contour]는 서로 다른 span:F[Sounding Datum]에 걸쳐 있지 않도록 주의 +
+** 이런 경우, span:F[Sounding](그룹), span:F[Depth Area], span:F[Depth Contour]는 분할해서 어느 한쪽의 span:F[Sounding Datum]에만 속하도록 입력해야 함
+* Point 유형의 경우, 경계에 걸쳐 있지 않도록 주의해야 함 +
+** 특히 span:A[value of sounding]이나 span:A[water level effect] 속성을 가지는 경우, 적용되는 기준면이 어떤 쪽인지 구분할 수 없기 때문에, 경계에 걸쳐 있지 않도록 주의 +
+   (예: Obstruction, Wreck, Underwater Awash Rock, Seabed Area 등)
+
 
 ===== Example
 
-<Sounding Datum(일반기준)>
+.Sounding Datum의 인코딩 예시 (일반적인 경우)
+====
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|#essential Vertical Datum|VERDAT|EN|1,1| 11: nearly lowest low water
-|===
 
-<Sounding Datum>
+|span:E[vertical datum]|VERDAT|EN|1,1| 11 span:D[nearly lowest low water]
+
+|===
+====
+
+.Sounding Datum의 인코딩 예시 (서해갑문 내부수역 - 수직 기준면이 약최저저조면이 아닌 경우)
+====
 [cols="20,10,5,5,20", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|#essential Vertical Datum|VERDAT|EN|1,1| 24: local datum
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| Soundings in the inner waters of the West Sea Barrage are reduced tp 1.5m above Mean Sea Level.
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 서해갑문의 내부수역에서 수심기준면은 평균해면상의 1.5미터이다.
+
+|span:E[vertical datum]|VERDAT|EN|1,1| 24 span:D[local datum]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1 | eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Soundings in the inner waters of the West Sea Barrage are reduced tp 1.5m above Mean Sea Level.
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1 | kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 서해갑문의 내부수역에서 수심기준면은 평균해면상의 1.5미터이다.
+
 |===
+====
 
 ---
 // end::SoundingDatum[]

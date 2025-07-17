@@ -1,33 +1,35 @@
 // tag::SpanOpening[]
 ===== Remark
 
-- 항해 가능한 지역의 고정형(#F "Span Fixed"), 개방형(#F "Span Opening") 교량은 교량의 모든 구성요소를 포함하는 Surface type의 #F "Bridge"를 생성하고 관련된 Feature는 #R "Bridge Aggregation" 관계 설정 +
-(교량에 대한 명칭이나 정보는 “Bridge”에 입력) +
-※ Relation 페이지 참조 +
-- #F "Span Opening"을 포함하는 #R "Bridge Aggregation"은 속성 #A "Opening bridge"
-, #A "Category of opening bridge" 필수 입력
-- 교량 수직높이는 #F "Span Fixed"와 #F "Span Opening"의 #A "Vertical clearance"에 필수 입력하며, 아래 그림과 같이 높이 값에 따른 각각의 피처를 생성
+* **항해가 가능한 지역**의 개방형 교량의 개방부는 span:F[Span Opening]으로 입력
+** 항행이 불가능한 지역의 경우는 span:F[Bridge]로 입력
 
-<항해 가능수역의 교량 인코딩 예시>
-//image::../images/SpanOpening/SpanOpening_image-1.png[width=400]
-//image::../images/SpanOpening/SpanOpening_image-2.png[width=400]
+* span:F[Span Opening]는 반드시 span:R[Bridge Aggregation] 관계에 포함되어야 함 <<BRIDGE_AGGR,※참조>>
+** 이 때, span:R[Bridge Aggregation]에 포함된 span:F[Bridge]의 span:A[opening bridge]는 true로 설정해야 하고, span:A[category of opening bridge]를 필수로 입력해야 함
 
+* 통항이 가능한 수직높이는 닫혀 있을 때와, 열려 있을 때를 구분하여 입력해야 함
+** 닫혀 있을 때는 span:F[Span Opening]의 span:A[vertical clearance closed] 속성에 입력
+** 열려 있을 때는 span:F[Span Opening]의 span:A[vertical clearance open] 속성에 입력
+*** 만약, 열려 있을 때 수직높이가 무제한인 경우, span:A[vertical clearance unlimited] 속성을 true로 설정하고, span:A[vertical clearance value] 속성은 입력하지 않음
+** 이 높이는 수직기준면이 다른 객체와 다르므로, span:A[vertical datum]를 필수로 입력해야 함
+*** (국내에서는) 일반적으로 교량의 통과높이는 약최고고조면을 기준으로 하므로, span:A[vertical datum]는 29 span:D[nearly highest high water]로 입력
+*** 만일, 통항이 가능한 지역이 내륙의 강(또는 수로)로서, **조석의 영향을 받지 않는 경우**, span:A[vertical datum]는 13 span:D[low water]로 입력
+
+//REVIEW: 기준면 관련 내용 검토 필요
+
+//REVIEW: 기존 예에서 information은 삭제해버림; 자료의 출처에 관한 내용이라
 
 ===== Example
+.Span Opening의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|**#essential Vertical Clearance Closed**|VERCCL|C|1,1| 
-|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1| 10
-|**#essential Vertical Clearance Open**|VERCOP|C|1,1| 
-|    #essential Vertical Clearance Unlimited||(S)BO|1,1| true
-|    Vertical Clearance Value|VERCLR|(S)RE|0,1| undefined
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| Coastal Fairway Survey in 2022
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 2022년 연안항로조사
+
+|**span:E[vertical clearance closed]**|VERCCL|C|1,1|
+|    span:E[vertical clearance value]|VERCLR|(S)RE|1,1| 10 span:D[m]
+|**span:E[vertical clearance open]**|VERCOP|C|1,1|
+|    span:E[vertical clearance unlimited]||(S)BO|1,1| true
+|vertical datum|VERDAT|EN|0,1| 29 span:D[nearly highest high water]
 |===
 
 ---

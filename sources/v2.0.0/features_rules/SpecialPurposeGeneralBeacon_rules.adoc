@@ -1,84 +1,154 @@
 // tag::SpecialPurposeGeneralBeacon[]
 ===== Remark
-- 특수입표는 항해를 지원하기 위한 목적이 아니며 보통 공사나 특별한 시설 등을 표시하는 용도로 사용
-- 입표모양은 여러 가지 형태가 존재하며, 두표모양은 한 개의 X자 형태이거나 없는 경우(기상탑 등)도 있음
-- 일반적으로 황색으로만 구성되나 일부 경우(기상탑 등)에서 색상 조합으로 사용됨
-- 측방표지에 설치되는 등화는 다른 입표들이 사용하는 리듬을 제외한 모든 형식 사용가능
-- 속성 #A "Height"는 평균해수면에서 구조물 최상단의 높이입력 (등대표상 없는 정보임)
-  (속성 #A "Height"가 S-57전자해도에 존재한다면 확인필요)
-- 속성 #A "Vertical Length"는 지면상 높이에서 구조물 최상단의 높이를 입력 (구조물 자체만의 높이 – 등대표에 제시됨)
-- 특수입표가 Light 객체와 함께 입력되어 등표로 표현되는 경우 해당 등대번호는 Light객체에 입력
-   (등표로 형성된 경우 등대번호가 특수입표의 INFORM에 입력되어 있을 경우 수정필요)
-   (S-57 전자해도에서 특수입표에 INFORM에 입력된 정보는 등대번호와 항행통보사항 내용(불필요) 뿐 임
-- 입표와 등화 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 #R "Structure/Equipment" 관계 설정 +
-   ※ Relation 페이지 참조 +
-- 입표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
+* 특수/일반 입표는 span:F[Special Purpose/General Beacon]로 입력
+** 일반적으로 황색 구조물/황색 'X'자 형태의 두표를 가짐
+*** 두표(top mark)가 다색/패턴이고, 항해에 매우 중요한 정보라면 두표를 span:F[Daymark]로 입력
 
-////
-[cols="1,1" , frame=none , grid=none, align=center]
+:ObjectName: span:F[Special Purpose/General Beacon]을
+:Relation: span:R[Structure/Equipment]
+:linkTo: Structure_Equipment
+include::common/phrase.adoc[tag=Refer]
+* 장비(등화, 무신호, AIS 등)를 탑재한 경우, 해당 객체와 span:F[Special Purpose/General Beacon]간 span:R[Structure/Equipment] 관계 설정
+
+//
+* 등대표, 항행통보 문서 등을 참고하여 명칭과 도색·구조·높이를 입력
+** 명칭을 span:A[feature name]의 span:A[name]을 입력할 때 '입표', '등표'는 입력하지 않음
+** 등대표의 도색·구조·높이 중 높이는 구조물의 수직길이를 의미하므로, span:A[vertical length]에 입력(<<ListOfLights,※참고>>)
+
+//REVIEW: 등대표 번호 입력에 관한 지침수정
+
+.IALA - 특수/일반 입표의 속성 예시
+[%header, cols="a,a,a,a"]
 |===
-a|
-[cols="1,4", options="header"]
-!===
-!색상 ! 황색
-!부이모양 ! 원통형, 원추형, 구형, 통형, 망대형, 원주형
-!두표 ! 한 개의 X자 형형
-!등화 ! 황색
-!리듬 ! 방위표지, 고립장애표지, 안전수역표지 리듬을 제외한 모든 것
-!===
-a| image:../images/SpecialPurposeGeneralBeacon/SpecialPurposeGeneralBeacon_image-1.png[width=400]
-|===
-////
+^| Feature ^| INT1 ^| beacon shape ^| category of special purpose mark
+
+^| Leading Beacon (유도입표)
+^| Q111
+^|
+^| 16 span:D[leading mark]
+
+^| Beacon marking a clearing line (피험선을 표시하는 입표)
+^| Q121
+^| 
+^| 41 span:D[clearing mark]
+
+^| Beacon marking measured distance (속력 측정구간 입표)
+^| Q122
+^| 
+^| 17 span:D[measured distance mark]
 
 
-[%header,format=csv]
-|===
-Feature,INT1,category of special purpose mark
-Leading beacon(유도입표),Q120,16
-Beacon marking a clearing line(피험선을 표시한 입표),Q121,41
-Beacon marking measured distance(속력 측정구간 입표),Q122,17
-Cable landing beacon(해저케이블의 상륙지점 입표),Q123,6
-Outfall landing beacon(배수관의 상륙지점 입표),Q123,8
-Pipeline landing beacon(파이프라인 상륙지점 입표),Q123,39
-Refuge beacon(구난수역 입표),Q124,44
-Notice board(안내판),Q126,18
-Buoyant beacon(부력입표),P5,
+^| Cable landing beacon (해저케이블의 상륙지점 입표)
+^| Q123
+^|
+^| 6 span:D[cable mark]
+
+^| Outfall landing beacon (배수관의 상륙지점 입표)
+^| Q123
+^|
+^| 8 span:D[outfall mark]
+
+^| Pipeline landing beacon (파이프라인 상륙지점 입표)
+^| Q123
+^|
+^| 39 span:D[pipeline mark]
+
+^| Refuge beacon (피항구역 입표)
+^| Q124
+^|
+^| 44 span:D[refuge beacon]
+
+^| Firing practice area beacon (사격훈련구역 입표)
+^| Q125
+^|
+^| 1 span:D[firing danger mark]
+
+^| Notice board (안내판)
+^| Q126
+^|
+^| 18 span:D[notice mark]
+
+^| Buoyant beacon(부력입표)
+^| P5
+^| 7 span:D[buoyant beacon]
+^| 
+
 |===
 
 
 
 ===== Example
-[cols="30,25,10,10,25", options="header"]
+
+.포항항 포스코 케미칼 취수탑 등표
+====
+
+.등대표에 기재된 내용
+[%header, cols="a,a,a,a,a,a,a,a"]
+|===
+^| 번&emsp;호 ^| 명&emsp;칭 ^| 위&emsp;치 ^| 등&emsp;질 ^| 등&emsp;고(m) ^| 광달거리 ^| 도색·구조·높이(m) ^| 기&emsp;사
+
+<.^| 1328 +
+ +
+M4412.8
+<.^| 포항항 +
+포스코 케미칼 취수탑 등표 +
+Pohang Hang
+>.^| 36-00.26N +
+129-25.33E
+^.^| Fl Y 5s
+^.^| 7.4
+^.^| 8
+^.^| 황 원형 +
+철조 +
+12
+<.^| 
+
+|===
+
+
+---
+
+.Special Purpose/Genral Beacon의 인코딩 예시
+[cols="30,25,10,10,25", options="header", stripes="even"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Beacon Shape|BCNSHP|EN|1,1| 5: pile beacon
-|#essential Category of Special Purpose Mark|CATSPM|EN|1,*| 27: general warning mark
-|#essential Colour|COLOUR|EN|1,*| 3: red
-|#essential Colour|COLOUR|EN|1,*| 1: white
-|Colour Pattern|COLPAT|EN|0,1| 1: horizontal stripes
-|Radar Conspicuous|CONRAD|BO|0,1| false
-|Nature of Construction|NATCON|EN|0,*| 8: glass reinforced plastic
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Suwonhaesang
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 수원해상기상탑
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|Status|STATUS|EN|0,*| 7: temporary
-|Vertical Length|VERLEN|RE|0,1| 96
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
-|**Topmark**|TOPMAR|C|0,1| 
-|    Colour|COLOUR|(S)EN|0,*| 6: yellow
-|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 7: x-shape(St.Andrew’s cross)
+|span:E[beacon shape]|BCNSHP|EN|1,1| 5 span:D[pile beacon]
+|span:E[category of special purpose mark]|CATSPM|EN|1,*| 27 span:D[general warning mark]
+|span:E[colour]|COLOUR|EN|1,*| 6 span:D[yellow]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Pohang Hang
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 포항항 포스코 케미칼 취수탑
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|nature of construction|NATCON|EN|0,*| 7 span:D[metal]
+|**topmark**|TOPMAR|C|0,1|
+|    colour|COLOUR|(S)EN|0,*| 6 span:D[yellow]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 7 span:D[X-shaped]
+|vertical length|VERLEN|RE|0,1| 12 span:D[m]
 |===
+
+---
+
+//REVIEW: 수정 필요
+번호:: _(수정 필요)_
+
+명칭:: '등표'를 제외한 **포항항 포스코 케미칼 취수탑**만 입력
+
+등질, 등고, 광달거리:: 이 세가지 항목은 구조물의 속성이 아님 ( span:F[Light All Around]나 span:F[Light Sectored]로 입력해야 함 ) +
+**[참고]** 등고를 span:F[SpecialPurposeGeneralBeacon]의 span:A[height]나 span:A[elevation]에 입력한 것은 오류
+
+도색·구조·높이:: 도색이 '황'색이므로 span:A[colour]를 6 span:D[yellow]으로 입력 +
+구조는 '원형 철조'이므로 span:A[nature of construction]을 7 span:D[metal]로 입력 +
+높이가 12이므로 span:A[vertical length]를 12span:D[m]로 입력
+
+기타:: 등대표에서 확인할 수 없는 정보는 항행통보 문서 등을 확인하여 입력 +
+입표의 모양(span:A[beacon shape])이나 두표의 존재 여부 등
+
+====
 
 ---
 // end::SpecialPurposeGeneralBeacon[]

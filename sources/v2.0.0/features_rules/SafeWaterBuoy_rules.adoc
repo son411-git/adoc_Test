@@ -1,62 +1,127 @@
 // tag::SafeWaterBuoy[]
 ===== Remark
-- 안전수역 부표는 표지 주변에 항행가능 수역의 의미하며 중심선, 항로의 중앙, 육지접근 부표, 교량 밑의 최적 항로를 표시하는 등의 목적으로 사용 
-- 안전수역 부표의 모양은 망대형, 대형부이 형태로만 존재하며, 적색 구형의 두표를 가지고 있음
-   (우리나라에 존재하는 안전수역 부표에 두표가 없는 경우는 없음.)
-- 부표의 색은 홍백종선으로 속성 #A "Colour = 3,1(홍색, 백색)", #A "Colour pattern = 2(종선)"으로 인코딩 
-- 등화는 백색으로 Oc, Iso, LFl 또는 Mo(A)이며 신호주기는 10s 속성을 가짐
-- 안전수역부표가 Light객체와 함께 입력되어 등부표로 표현되는 경우 해당 등대번호는 Light객체에 입력
-   (등부표로 형성된 경우 등대번호가 안전수역부표에 입력되어 있을 경우 수정필요)
-- 부표와 등화 무신호, 레이더비콘, 라디오비콘 등 입표와 부속된 피처들이 있다면 #R "Structure/Equipment" 관계 설정 +
-  ※ Relation 페이지 참조 +
-- 부표와 두표의 항행통보 번호가 다를 경우 최신의 항행통보 정보 하나만 입력
 
-////
-[cols="1,1" , frame=none , grid=none, align=center]
-|===
-a|
-[cols="1,2", options="header"]
-!===
-!색상  ! 홍백 종선
-!부이모양 ! 구형, 망대형, 원주형
-!두표 ! 한 개의 붉은 구형
-!등화 ! 백색
-!리듬 ! Iso, Oc+LFl 10s 또는 Morse A 
-!===
-a| image:../images/SafeWaterBuoy/SafeWaterBuoy_image-1.png[width=400]
-|===
-////
+* 안전수역 부표는 표지 주변이 항행가능한 수역임을 나타내는 표지로 항로의 중심선이나 최적 항로를 표시하기 위한 목적으로 사용
+* IALA 부표식을 따르는 경우 아래와 같은 특성을 가짐
+** 모양은 구형span:D[spherical] 또는 망대형span:D[pillar] 또는 원주형span:D[spar]
+** 부표의 색은 홍백종선
+** 등화의 색은 백색
+** 등질은 Oc span:D[occulting] 또는 Iso span:D[Isophased] 또는 LFl(1) span:D[Long flashing] 또는 Mo(A) span:D[Morse]
+** 주기는 10s
+
+:ObjectName: span:F[Safe Water Buoy]를
+:Relation: span:R[Structure/Equipment]
+:linkTo: Structure_Equipment
+include::common/phrase.adoc[tag=Refer]
+* 장비(등화, 무신호, AIS 등)를 탑재한 경우, 해당 객체와 span:F[Special Purpose/General Beacon]간 span:R[Structure/Equipment] 관계 설정
+
+//REVIEW: 이런 내용도 필요한가?
+//비고:: span:F[Safe Water Buoy]의 span:A[buoy shape]가 구형span:D[3: spherical], 망대형span:D[4: pillar], 원주형span:D[5: spar]에 해당하지 않는 특대형span:D[7 : super-buoy]으로 입력된 경우 자동검사 S/W에서 오류로 탐지함; +
+//=> 등대표 상에 기술된 내용과 다르지 않다면, 해당 오류는 무시해야 함
+
+**비고**:: span:F[Safe Water Buoy]의 특성이 IALA 부표식과 다른 경우 자동검사 S/W에서 오류로 탐지하기도 하나, 등대표의 내용과 일치한다면 해당 오류는 무시해야 함
 
 
 ===== Example
+
+.Safe Water Buoy의 인코딩 예시 - 부산항 신항 유도 등부표
+====
+
+.등대표에 기재된 내용
+[%header, cols="a,a,a,a,a,a,a,a"]
+|===
+^| 번&emsp;호 ^| 명&emsp;칭 ^| 위&emsp;치 ^| 등&emsp;질 ^| 등&emsp;고(m) ^| 광달거리 ^| 도색·구조·높이(m) ^| 기&emsp;사
+
+<.^| 2068
+<.^| 부산항 신항 +
+유도 등부표 +
+Busan New Port
+>.^| 34-58.00N +
+128-48.78E
+^.^| Mo(A) W 8s
+^.^| 
+^.^| 11
+^.^| 홍백종선 +
+특대형
+<.^| 
+
+|===
+
+.Safe Water Buoy의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|#essential Buoy Shape|BOYSHP|EN|1,1| 4: pillar
-|#essential Colour|COLOUR|EN|1,*| 3: red
-|#essential Colour|COLOUR|EN|1,*| 1: white
-|Colour Pattern|COLPAT|EN|0,1| 2: vertical stripes 
-|Radar Conspicuous|CONRAD|BO|0,1| false
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Yuldo
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 율도 복방방 
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(영문)
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 추가정보(국문)
-|**Topmark**|TOPMAR|C|0,1| 
-|    Colour|COLOUR|(S)EN|0,*| 3:red
-|    #essential Topmark/Daymark Shape|TOPSHP|(S)EN|1,1| 3: sphere
 
+|span:E[buoy shape]|BOYSHP|EN|1,1| 7 span:D[super-buoy]
+|span:E[colour]|COLOUR|EN|1,*| 3 span:D[red]
+|span:E[colour]|COLOUR|EN|1,*| 1 span:D[white]
+|colour pattern|COLPAT|EN|0,1| 2 span:D[vertical stripes]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Busan New Port
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산항신항 유도
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**topmark**|TOPMAR|C|0,1|
+|    colour|COLOUR|(S)EN|0,*| 3 span:D[red]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 3 span:D[sphere]
 
 |===
+
+**비고**:: 등부표의 모양span:D[특대형]이 IALA 규정과는 다르지만, 등대표의 내용대로 입력
+
+====
+
+
+.Safe Water Buoy의 인코딩 예시 - 횡간수도 통항분리 1호 등부표
+====
+
+.등대표에 기재된 내용
+[%header, cols="a,a,a,a,a,a,a,a"]
+|===
+^| 번&emsp;호 ^| 명&emsp;칭 ^| 위&emsp;치 ^| 등&emsp;질 ^| 등&emsp;고(m) ^| 광달거리 ^| 도색·구조·높이(m) ^| 기&emsp;사
+
+<.^| 2582.9
+<.^| 횡간수도 +
+통항분리 1호 등부표 +
+Hoenggansudo
+>.^| 34-17.84N +
+126-29.06E
+^.^| Mo(A) W 8s
+^.^| 
+^.^| 7
+^.^| 홍백종선 +
+망대형
+<.^| 
+
+|===
+
+.Safe Water Buoy의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|span:E[buoy shape]|BOYSHP|EN|1,1| 4 span:D[pillar]
+|span:E[colour]|COLOUR|EN|1,*| 3 span:D[red]
+|span:E[colour]|COLOUR|EN|1,*| 1 span:D[white]
+|colour pattern|COLPAT|EN|0,1| 2 span:D[vertical stripes]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Hoenggansudo No.1
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 횡간수도 통항분리 1호
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**topmark**|TOPMAR|C|0,1|
+|    colour|COLOUR|(S)EN|0,*| 3 span:D[red]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 3 span:D[sphere]
+
+|===
+
+====
 
 ---
 // end::SafeWaterBuoy[]

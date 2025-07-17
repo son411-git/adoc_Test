@@ -1,6 +1,9 @@
 // tag::StructureOverNavigableWater[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+include::common/phrase.adoc[tag=NotUsedFeature]
+
+span:addition[실제 사례는 있으나 구체적인 정보를 입수할 방법이 없어, 입력 예시를 만들기 어려움]
 
 ---
 // end::StructureOverNavigableWater[]

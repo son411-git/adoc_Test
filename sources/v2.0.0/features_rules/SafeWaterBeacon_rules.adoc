@@ -1,7 +1,6 @@
 // tag::SafeWaterBeacon[]
 ===== Remark
-include::common/NotUsedFeature.adoc[]
-
+include::common/phrase.adoc[tag=NotUsedFeature]
 
 * span:deletion[테스트 용도 입니다. 아래 내용은 나중에 다 지울꺼에요]
 

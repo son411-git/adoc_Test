@@ -1,6 +1,6 @@
 // tag::SubmarinePipelineArea[]
 ===== Remark
-사용하지 않는 객체입니다.
+include::common/phrase.adoc[tag=NotUsedFeature]
 
 ---
 // end::SubmarinePipelineArea[]

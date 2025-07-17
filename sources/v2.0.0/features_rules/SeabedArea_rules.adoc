@@ -1,33 +1,242 @@
 // tag::SeabedArea[]
 ===== Remark
-- 필수 복합 속성인 #A "Surface characteristics"의 경우 하위 속성인 #A "Nature of surface" 또는 #A "Nature of surface qualifying terms" 중 한 가지 이상을 입력
-- 여러 물질로 이루어진 경우, 주된 구성 성분 순으로 추가입력
-- 항행에 위험한 바위(Point)를 인코딩 하는 경우 #F "Underwater/Awash Rock" 피처를 사용하여 입력
-- 바위가 많은 해저의 형상(area)은 #F "Seabed area"로 인코딩하며, #A "Nature of surface" = 9, #A "Water level effect" = 4 입력
-- <표 A>는 #A "Nature of surface"와 #A "Nature of surface-qualifying terms"의 가장 일반적인 조합을 나타냄
 
-//image:../images/SeabedArea/SeabedArea_image-1.png[width=400]
+* span:A[surface characteristics]는 최소 하나 이상 입력해야 함
+** 표층의 저질만 입력하는 경우 하위 속성인 span:A[underlying layer]를 생략할 수 있음
+** 여러 층의 저질을 입력하는 경우 표층 - 0을 기준으로 1, 2, 3.. 과 같이 순차적으로 span:A[underlying layer] 값을 입력
+** 하나의 층에 저질의 혼합되어 있는 경우, 주된 성분을 먼저 입력하고, 각 저질의 span:A[underlying layer]는 동일한 값으로 표현
+** 저질의 특성을 추가로 기술하기 위한 span:A[nature of surface - qualifying Terms]는 span:A[nature of surface]에 따라 허용되는 값이 다름 + 
+   ( <<SEABED_T1>>에 X 표시된 조합만 사용가능 함 )
+
+//
+* 조간대와 수중의 구별을 위해 span:A[water level effect]를 주변 span:F[Depth Area]에 맞게 입력
+
+
+[[SEABED_T1]]
+.Nature of surface 와 Nature of surface - Qualifying Terms의 사용가능한 조합
+[cols="a,a,a,a,a,a,a,a,a,a,a"]
+|===
+h| - Qualifying Terms (→) +
+Nature of Surface (↓)
+| **1** +
+_(fine)_
+| **2** +
+_(medium)_
+| **3** +
+__(coarse)__
+| **4** +
+_(broken)_
+| **5** +
+_(sticky)_
+| **6** +
+__(soft)__
+| **7** +
+_(stiff)_
+| **8** +
+_(volcanic)_
+| **9** +
+_(calcareous)_
+| **10** +
+_(hard)_
+
+| **1** _(mud)_
+|
+|
+|
+|
+^| span:RG[✓]
+^| span:RG[✓]
+^| span:RG[✓]
+^| span:RG[✓]
+^| span:RG[✓]
+|
+
+| **2** _(clay)_
+|
+|
+|
+|
+^| span:RG[✓]
+^| span:RG[✓]
+^| span:RG[✓]
+|
+|
+|
+
+| **3** _(silt)_
+|
+|
+|
+|
+^| span:RG[✓]
+^| span:RG[✓]
+^| span:RG[✓]
+|
+|
+|
+
+| **4** _(sand)_
+^| span:RG[✓]
+^| span:RG[✓]
+^| span:RG[✓]
+|
+|
+^| span:RG[✓]
+|
+^| span:RG[✓]
+^| span:RG[✓]
+|
+
+| **5** _(Stone)_
+|
+|
+|
+|
+|
+|
+|
+^| span:RG[✓]
+^| span:RG[✓]
+|
+
+| **6** _(Gravel)_
+|
+|
+|
+|
+|
+|
+|
+^| span:RG[✓]
+^| span:RG[✓]
+|
+
+| **7** _(Pebbles)_
+|
+|
+|
+|
+|
+|
+|
+^| span:RG[✓]
+^| span:RG[✓]
+|
+
+| **8** _(Cobbles)_
+|
+|
+|
+|
+|
+|
+|
+^| span:RG[✓]
+^| span:RG[✓]
+|
+
+| **9** _(Rock)_
+|
+|
+|
+|
+|
+|
+|
+^| span:RG[✓]
+^| span:RG[✓]
+|
+
+| **11** _(Lava)_
+|
+|
+|
+|
+|
+|
+|
+^| span:RG[✓]
+| 
+|
+
+| **11** _(Coral)_
+|
+|
+|
+^| span:RG[✓]
+|
+^| span:RG[✓]
+|
+|
+| 
+|
+
+| **17** _(Shells)_
+|
+|
+|
+^| span:RG[✓]
+|
+|
+|
+|
+^| span:RG[✓] 
+|
+
+| **18** _(Boulder)_
+|
+|
+|
+|
+|
+|
+|
+^| span:RG[✓]
+^| span:RG[✓] 
+|
+
+|===
+
 
 ===== Example
-[cols="30,25,10,10,25", options="header"]
+
+._M S Sh_ (Mud, Sand, Shell) - 복합 저질 (표층)
+====
+.Seabed Area의 인코딩 예시
+[cols="30,25,10,10,25", options="header", keep-title=true]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|**#essential Surface Characteristics**||C|1,*| 
-|    Nature of Surface|NATSUR|(S)EN|0,1| 9: rock
-|    Nature of Surface - Qualifying Terms|NATQUA|(S)EN|0,3| 1: fine
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Yeonjakseo
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 연작서
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|Water Level Effect|WATLEV|EN|0,1| 4: covers and uncovers
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| H3426050272014(Scale 1:5,000)
+
+|**span:E[surface characteristics]**||C|1,*|
+|    nature of surface|NATSUR|(S)EN|0,1| 1 span:D[mud]
+|**span:E[surface characteristics]**||C|1,*|
+|    nature of surface|NATSUR|(S)EN|0,1| 4 span:D[sand]
+|**span:E[surface characteristics]**||C|1,*|
+|    nature of surface|NATSUR|(S)EN|0,1| 17 span:D[shell]
+|water level effect|WATLEV|EN|0,1| 3 span:D[always underwater/submerged]
+
 |===
+
+---
+
+비고:: [ M S Sh ] 의 경우 주 성분부터 순서대로 입력
+
+====
+
+._fS_ (fine Sand) - Qualifying Terms 가 있고, 조간대에 위치할 때
+====
+.Seabed Area의 인코딩 예시
+[cols="30,25,10,10,25", options="header", keep-title=true]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**span:E[surface characteristics]**||C|1,*|
+|    nature of surface|NATSUR|(S)EN|0,1| 4 span:D[sand]
+|    nature of surface - qualifying terms|NATQUA|(S)EN|0,3| 1 span:D[fine]
+|water level effect|WATLEV|EN|0,1| 4 span:D[covers and uncovers]
+
+|===
+====
 
 ---
 // end::SeabedArea[]

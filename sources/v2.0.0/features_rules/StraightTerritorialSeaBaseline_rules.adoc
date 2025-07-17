@@ -1,19 +1,32 @@
 // tag::StraightTerritorialSeaBaseline[]
 ===== Remark
- ! 향후 필요한 내용 입력 !
+* span:A[nationality]는 반드시 입력해야 함
+
+//REVIEW: 이거 information 이 굳이 필요할까요? 객체 자체가 직선기선을 의미하는데... 
+//REVIEW: 다른 객체에서도 이런건 빼고 있는데.. nationality 만 남기는 건 어떨지
+
+* span:addition[이 객체에도 information/text가 들어가야 하는 것이 아닌지?]
+
+국문:: 이 해도에 기재된 직선기선 및 영해한계선은 영해 및 접속수역법과 동법 시행령의 규정에 의함.
+영문:: The straight baselines and the limit of territorial sea shown on this chart are based on the provisions of the Territorial Sea and Contiguous Zone Act and its Enforcement Decree.
 
 ===== Example
+.Straight Territorial Sea Baseline의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|#essential Nationality|NATION|TE|1,1| KR
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| Straight Baseline
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 직선기선
+
+|span:E[nationality]|NATION|TE|1,1| KR
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| The straight baselines and the limit of territorial sea shown on this chart are based on the provisions of the Territorial Sea and Contiguous Zone Act and its Enforcement Decree.
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 이 해도에 기재된 직선기선 및 영해한계선은 영해 및 접속수역법과 동법 시행령의 규정에 의함.
+
+
 |===
 
 ---
 // end::StraightTerritorialSeaBaseline[]
+
