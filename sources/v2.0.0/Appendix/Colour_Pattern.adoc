@@ -1,6 +1,6 @@
 [[Colour_Pattern]]
 
-= 다중 색상 인코딩 규칙
+= 여러 색상을 가진 객체의 속성 입력
 
 * 객체에 여러 색상을 입력해야 하는 경우, span:A[colour pattern] 및 span:A[colour] 속성을 다음과 같이 사용해야 함:
 

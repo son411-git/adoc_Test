@@ -1,7 +1,7 @@
 // tag::Canal[]
 ===== Remark
 
-* 운하를 span:A[optimum display scale]에 해당하는 화면 축척에서 항해가 불가능하면 span:F[Canal]로 입력해야 하며, span:F[Land Area] 객체 위에 있어야 함
+* 운하를 편집 축척에서 항해가 불가능하면 span:F[Canal]로 입력해야 하며, span:F[Land Area] 객체 위에 있어야 함
 * 반대로 span:A[optimum display scale]에 해당하는 화면 축척에서 항해가 가능하면 span:F[Depth Area], span:F[Dredged Area]로 입력해야 하며, 운하의 제방은 span:F[Coastline], span:F[Shoreline Construction]으로 입력해야 함
 ** 결국 대축척에서는 운하를 span:F[Canal]로 입력하면 안됨
 
