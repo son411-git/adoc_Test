@@ -1,0 +1,339 @@
+[[Cautionary_Note]]
+
+= 주의기사 (국문/영문) 입력 방법
+
+* span:F[Caution Area], span:F[Information Area], span:F[Nautical Information] 또는 해당 객체의 span:A[information] 등 관련 속성에 입력되는 주의기사의 입력 방법을 정리
+
+* span:E[주의] 아래 내용은 KHOA INT2 (2025.06.24) span:D[INT2_2_Ed2025_KHOA_250624]를 기준으로 작성되었으며, Support File (*.txt)과 내용이 다를 경우 KHOA INT2에 작성된 내용을 우선으로 하였음
+
+
+. 영해
++
+."영해"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/1.svg[]
+5+^h| Territorial Sea Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|span:E[nationality]|NATION|TE|1,*| KR
+|**information**|INFORM|C|0,*|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
+|    headline||(S)TE|0,1| Territorial Sea
+|    span:E[language]||(S)TE|1,1| eng
+|**information**|INFORM|C|0,*|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010K100.TXT
+|    headline||(S)TE|0,1| 영해
+|    span:E[language]||(S)TE|1,1| kor
+|===
+
+. 유조선통항금지해역
++
+."유조선통항금지해역"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/2.svg[]
+5+^h| Restricted Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|span:E[restriction]|RESTRN|EN|1,*| 8 : entry restricted
+|**information**|INFORM|C|0,*|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000020E100.TXT
+|    headline||(S)TE|0,1| Traffic Prohibited Area for Oil Tankers
+|    span:E[language]||(S)TE|1,1| eng
+|**information**|INFORM|C|0,*|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000020K100.TXT
+|    headline||(S)TE|0,1| 유조선통항금지해역
+|    span:E[language]||(S)TE|1,1| kor
+5+| ※ 비고 : +
+출입 금지(entry prohibited): 항해 및/또는 정박이 금지된 구역. +
+출입 제한(entry restricted): 관련 당국이 지정한 특정 구역으로 특정 조건에 따라 항해가 제한되는 구역. +
+span:D[출처 : IHO S-32 수로 사전] +
+따라서 **8 : entry restricted** 가 적합함
+|===
+
+. 연안 부근 송전선 주의
++
+."연안 부근 송전선 주의"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/3.svg[]
+5+^h| Information Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Overhead Power Cables Along Korean Coast
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| There are many overhead power cables with pylons in the Koreaspan:E[n] coast, so mariners should refer to the large scale chart.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 한국 연안 송전선 주의
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 한국연안 부근은 다수의 송전선이 존재하니 항해 시 대축척 해도를 참조 바람.
+|===
+
+. 항행 금지(우선피항선 제외)
++
+."항행 금지(우선피항선 제외)"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/4.svg[]
+5+^h| Restricted Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|span:E[restriction]|RESTRN|EN|1,*| 8 : entry restricted
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Entry Prohibited (Except the priority give-way vessels) 
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| No vessel shall navigate within this area except the preferred give-way vessels.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 항행 금지(우선피항선 제외)
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서 우선피항선을 제외한 선박은 어떠한 형태로든 항행을 금지함.
+|===
+
+. 해상사격훈련구역
++
+."해상사격훈련구역"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/5.svg[]
+5+^h| Information Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002010E100.TXT
+|    headline||(S)TE|0,1| Firing and Bombing Exercise Areas in the Coasts of Korea
+|    span:E[language]||(S)TE|1,1| eng
+|**information**|INFORM|C|0,*|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002010K100.TXT
+|    headline||(S)TE|0,1| 해상사격훈련구역
+|    span:E[language]||(S)TE|1,1| kor
+|===
+
+. 풍도 해역의 항해
++
+."풍도 해역의 항해"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/6.svg[]
+5+^h| Information Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Navigating in the waters of Pungdo 
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| All vessels navigating in the northwest waters of Pungdo are advised to navigate to the right of the traffic separation line, based on their direction of course.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 풍도 해역의 항해
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 풍도 북서쪽 해역을 항해하는 선박들은 본선의 진행방향을 기준으로 하여 통항분리선의 오른쪽으로 항해할 것을 권고함.
+|===
+
+. 해안 부근 기뢰 주의
++
+."해안 부근 기뢰 주의"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/7.svg[]
+5+^h| Caution Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Caution: Mines near the coast
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Vessels navigating near the coastal area advised to take caution due to the potential danger from the existence of mines.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 해안 부근 기뢰 주의
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 해안 부근에는 기뢰에 의한 위험성이 있으므로 항해하는 선박은 주의하여야 함.
+|===
+
+. 북한 및 러시아 해역 내 기뢰 주의
++
+."북한 및 러시아 해역 내 기뢰 주의"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/8.svg[]
+5+^h| Caution Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Caution: Mines in North Korean and Russian Waters
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| 1. Vessels navigating near the south coast of Dumangang are advised to take caution due to the risk of mines. 2. Vessels are prohibited from anchoring and fishing in the Area No 9 where mines were laid during the World War II. (1939~45)
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 북한 및 러시아 해역 내 기뢰 주의
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 1. 두만강 남쪽 해안 부근은 기뢰에 의한 위험성이 있으므로 항해하는 선박은 주의하여야 함. 2. 제9호 러시아 해역은 2차 세계 대전중 기뢰가 부설 되었던 곳으로 선박의 정박 및 어로 활동을 금지함. (1939~45)
+|===
+
+. 주의구역 A
++
+."주의구역 A"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/9.svg[]
+5+^h| Precautionary Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Precautionary Area A
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Precautionary maneuvering is required in this area to avoid generating ship waves which may affect other vessels that are moored nearby.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 주의구역 A
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 이 구역 내에서는 항주파에 의해 주변의 계류중인 선박들에 영향을 미칠 수 있으므로 주의하여 항행하여야 함.
+|===
+
+. 주의구역 B
++
+."주의구역 B"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/10.svg[]
+5+^h| Precautionary Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Precautionary Area B
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Due to the presence of numerous small ships crossing the fairway, mariners are advised to take caution in this area.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 주의구역 B
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서는 항로를 횡단하는 소형선박이 많으므로 주의하여 항행하여야 함.
+|===
+
+. 주의구역 C
++
+."주의구역 C"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/11.svg[]
+5+^h| Precautionary Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Precautionary Area C
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| As navigation in this area requires large alteration of course, vessels are advised to take extra caution.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 주의구역 C
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 이 구역의 통항을 위해서는 대각도 변침이 요구되므로 각별히 주의하여야 함. 
+|===
+
+. 호미곶 추천항로
++
+."호미곶 추천항로"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/12.svg[]
+5+^h| Recommended Route Centreline
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|span:E[based on fixed marks]|CATTRK|BO|1,1| false
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng 
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Homigot Recommended Route
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor 
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 호미곶 추천항로
+|    name usage||(S)EN|0,1| 2 : alternate name display
+|orientation value|ORIENT|RE|0,1 | 90 
+|traffic flow|TRAFIC|EN|0,1| 4 : two-way
+
+5+^h| Nautical Information
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Recommended Navigation along Homigot Route
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Vessels with a gross tonnage of 1,000 tons or more departing from or entering Pohang Hang are advised to navigate along the Homigot Recommended Route.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 호미곶 추천항로 항행 권고
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 포항항에서 입출항하는 총톤수 1,000톤 이상의 선박은 호미곶 추천항로를 따라 항행할 것을 권고함.
+|===
+
+. 통항제한구역
++
+."통항제한구역"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/13.svg[]
+5+^h| Restricted Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|**periodic date range**||C|0,*|
+|    span:E[date end]|DATEND|(S)TD|1,1| ----0731
+|    span:E[date start]|DATSTA|(S)TD|1,1| ----0401
+|span:E[restriction]|RESTRN|EN|1,*| 8 : entry restricted
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Traffic Restricted Area
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| During the foggy period from 1 April to 31 July every year, oil and gas tankers chemical product carriers, and sand carriers with a gross tonnage of over 50 are prohibited from navigating in the area.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 통항제한구역
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 농무기(매년 4.1~7.31) 선박통항 제한 구역: 총톤수 50톤 이상의 유조선, 모든 액화가스 및 케미칼운송 선박, 모래운반선(예부선 포함)
+|===
+
+. 특정금지구역
++
+."특정금지구역"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/14.svg[]
+5+^h| Restricted Area
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|span:E[restriction]|RESTRN|EN|1,*| 4 : fishing restricted
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Specifically Prohibited Area
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| No foreigner may conduct fishery activities in the Specifically Prohibited Area.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 특정금지구역
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 특정금지구역 내에서 외국인은 어업활동을 하여서는 아니된다.
+|===
+
+. 국지적 지자기 이상 현상
++
+."국지적 지자기 이상 현상"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| image:_images/15.svg[]
+5+^h| Local Magnetic Anomaly
+
+|Attribute |Acronym |Type |Mult. |Value
+
+|reported date|SORDAT|TD|0,1| 2011----
+|**value of local magnetic anomaly**||C|1,2|
+|    span:E[magnetic anomaly value]|VALLMA|(S)RE|1,1| Unknown
+|    reference direction||(S)EN|0,1|
+|**information**|INFORM|C|0,*|
+|    file locator||(S)TE|0,1|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1|
+|    headline||(S)TE|0,1|
+|    span:E[language]||(S)TE|1,1|
+|    text|INFORM/NINFOM|(S)TE|0,1|
+|===
