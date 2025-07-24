@@ -1,24 +1,29 @@
 // tag::RescueStation[]
 ===== Remark
 
-- 구조대는 인명구조 장비, 특히 구명보트를 보유한 장소에 인코딩
-- #F "Rescue Station"은 건물이나 구조물 자체와 관계없이 구조대의 기능을 설명하기 위해 사용하며, 서비스가 포함된 건물이나 구조물을 인코딩해야 하는 경우 적절한 피처 (#F "Building", #F "Landmark")를 사용하여 인코딩
+* span:F[Rescue Station]은 인명구조를 위한 구명정,보트등을 보유한 장소에 입력
+* span:F[Rescue Station]은 span:F[Building] 같은 구조물과는 구분하여 입력해야 함
+
+//
+* 국내 지침 상 Port Entry 3 (ENC6)에 해당하는 프로덕트에만 포함시키고, 나머지에서는 생략
 
 ===== Example
+
+.Rescue Station의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Rescue Station|CATRSC|EN|0,*| 1: rescue station with lifeboat
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Namhang
-|    Name Usage||(S)EN|0,1|1 : default name display 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 남항파출소
-|    Name Usage||(S)EN|0,1|2 : alternate name display 
-|Status|STATUS|EN|0,*| 
+|category of rescue station|CATRSC|EN|0,*| 1 span:D[rescue station with lifeboat]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Namhang
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 남항파출소
+|    name usage||(S)EN|0,1| 1 span:D[alternate name display]
+
 |===
 
 ---

@@ -1,44 +1,13 @@
 // tag::Runway[]
 ===== Remark
 
-- 국내 S-57 전자해도 #F "RUNWAY"의 #A "CATRUN" = 2(helicopter landing pad)인 경우 #F "Helipad"로 인코딩
-- 연안으로부터 몇 마일 이내에 위치한 활주로(또는 공항)는 반드시 입력
-- 대축척의 공항은 #F "Airport/Airfield"(surface), #F "Runway"(surface or curve), #F "Building"(surface or point), #F "Landmark" (surface or point)를 조합하여 코딩
-- 두 개 이상의 활주로가 교차하는 경우, 교차로는 하나의 면으로 인코딩 가능
-
-////
-[cols="1,1",frame=none,grid=none]
-|===
-|<대축척>|<소축척>
-| image:../images/Runway/Runway_image-1[width=300] | image:../images/Runway/Runway_image-2[width=300]
-|===
-////
+* 공항의 활주로를 나타내는 객체
+** 두 개 이상의 활주로가 교차하는 경우, 교차로는 하나의 면으로 인코딩할 수 있음
+** 대축척에서는 span:F[Airport/Airfield], span:F[Runway][S,C], span:F[Building][S,C], span:F[Landmark] 등의 객체를 조합해서 상세하게 입력할 수 있음
 
 ===== Example
-[cols="30,25,10,10,25", options="header"]
-|===
-|Attribute |Acronym |Type |Mult. |Value
 
-|Condition|CONDTN|EN|0,1| 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 
-|    Name Usage||(S)EN|0,1| 
-|Interoperability Identifier||URN|0,1| 
-|Nature of Construction|NATCON|EN|0,*| 
-|**Periodic Date Range**||C|0,*| 
-|    #essential Date End|DATEND|(S)TD|1,1| 
-|    #essential Date Start|DATSTA|(S)TD|1,1| 
-|Reported Date|SORDAT|TD|0,1| 
-|Status|STATUS|EN|0,*| 
-|Scale Minimum|SCAMIN|IN|0,1| 
-|**Information**|INFORM|C|0,*| 
-|    File Locator||(S)TE|0,1| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1| 
-|    Headline||(S)TE|0,1| 
-|    #essential Language||(S)TE|1,1| 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 
-|===
+//REVIEW: 입력예 없음 관용구?
 
 ---
 // end::Runway[]

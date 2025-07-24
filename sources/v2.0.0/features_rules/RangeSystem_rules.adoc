@@ -1,10 +1,9 @@
 // tag::RangeSystem[]
 ===== Remark
-- #F "Range system"의 명칭은 각각의 그룹화로 표현되는 용도에 따라 입력 (예시 참조)
-- 관련된 피처들은 no-geometry 피처인 #F "Range System"와 #R "Range System Aggregation" 관계 설정 +
-   ※ Relation 페이지 참조
-- 향후 #R "Range System Aggregation" 구성 시 관련 항로표지까지 포함하도록 기준 협의 필요
 
+* span:F[Range system]의 명칭은 목적에 따라 입력
+
+//REVIEW: 관계참조 추가
 
 ////
 [cols="1,1" , frame=none , grid=none]
@@ -16,31 +15,42 @@
 
 ===== Example
 [cols="30,25,10,10,25", options="header"]
-Range System(추천항로)
+
+.Range System - 추천항로의 인코딩 예시
+====
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|Recommended Track 
-|    Name Usage||(S)EN|0,1|1: default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|추천항로 
-|    Name Usage||(S)EN|0,1|2 : alternate name display
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Recommended Track
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 추천항로
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |===
 
-Range System(속력측정구역)
+====
+
+.Range System - 속력측정구역의 인코딩 예시
+====
+[cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Beacons marking measured distance
-|    Name Usage||(S)EN|0,1|1: default name display 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|속력측정구역 
-|    Name Usage||(S)EN|0,1|2 : alternate name display 
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Beacons marking measured distance
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 속력측정구역
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+
 |===
+
+====
 
 ---
 // end::RangeSystem[]

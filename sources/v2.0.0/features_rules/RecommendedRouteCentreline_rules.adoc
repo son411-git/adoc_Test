@@ -1,27 +1,40 @@
 // tag::RecommendedRouteCentreline[]
 ===== Remark
 
-- 국제 표준에서 #A "Orientation value" 속성은 필수 입력 사항이 아니지만 국내 전자해도에서는 필수 입력 
-- #A "Orientation value"에 오직 하나의 값만 입력 ; 다른 값은 추론 가능 (orientation value +/- 180)
-- #A "Orientation value"에 바다에서 바라본 방위 값을 입력 (바다의 방향을 결정할 수 없는 경우 180°미만인 값을 입력)
-- 추천 항로 중심선이 꺾이는 부분에서는 피처를 분리하여 각각 입력
-- #F "Recommended Route Centreline"이 #F "Navigation Line"과 함께 사용되어 추천항로를 나타낼 경우 no geometry 타입의 #F "Range System" 피처를 입력하고 #R "Range System Aggregation" 관계 설정 +
-  ※ Relation 설정 페이지 참조
+* span:A[orientaion value]는 필수 속성은 아니지만, 추천항로 중심선의 방향을 계산해서 입력
+** 일방 통행인 경우(span:A[traffic flow] = 1,2,3), 선의 방향과 일치
+** 양방 인 경우(span:A[traffic flow] = 4), 하나의 값만 입력할 수 있으므로, 180° 미만인 쪽의 값을 입력
+
+//
+* 고정된 물표나 등화로 추천항로를 나타내는 경우는 span:F[Navigation Line]등과 연관관계를 가짐
+//REVIEW: 참고 링크 추가해야 함
 
 ===== Example
+
+//REVIEW: 예시에 추천항로 명칭 기입한거
+
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Based On Fixed Marks|CATTRK|BO|1,1|False 
-|Orientation Value|ORIENT|RE|0,1|110
-|Traffic Flow|TRAFIC|EN|0,1|4: two-way 
-|**Information**|INFORM|C|0,*|  
-|    #essential Language||(S)TE|1,1|eng
-|    Text|INFORM/NINFOM|(S)TE|0,1|Vessels of 1,000 gross tonnage and upwards inbound to and outbound from Pohang Port are recommended to Navigate along Homigot Recommended Route.
-|**Information**|INFORM|C|0,*|  
-|    #essential Language||(S)TE|1,1|kor
-|    Text|INFORM/NINFOM|(S)TE|0,1|포항항에 입출항하는 총톤수 1,000톤 이상의 선박은 미곶 추천항로를 따라 항행할 것을 권고함 
+|span:E[based on fixed marks]|CATTRK|BO|1,1| false
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Homigot
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 호미곶
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|orientation value|ORIENT|RE|0,1| 110 span:D[°]
+|traffic flow|TRAFIC|EN|0,1| 4 span:D[two-way]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Vessels of 1,000 gross tonnage and upwards inbound to and outbound from Pohang Port are recommended to Navigate along Homigot Recommended Route.
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 포항항에 입출항하는 총톤수 1,000톤 이상의 선박은 호미곶 추천항로를 따라 항행할 것을 권고함
+
 |===
 
 ---

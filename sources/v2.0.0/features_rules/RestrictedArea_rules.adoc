@@ -1,46 +1,86 @@
 // tag::RestrictedArea[]
 ===== Remark
 
-- 제한구역은 #F "Restricted Area" 피처를 사용하거나 #A "Restriction" 속성을 갖는 다른 피처를 사용하여 인코딩
-- IMO 지정항로의 정박금지구역은 #F "Restricted Area" 의 #A "Restriction" = 1(정박금지)로 입력
-- 속력 제한구역은 #A "Restriction" = 27(속력제한) 로 입력하고, 복합속성인 #A "Vessel speed limit", #A "Speed units", #A "Vessel class"를 사용하여 특정 선박에 대한 제한속도, 속도 단위를 입력
-- 구체적인 규정에 대한 설명은 #A "information"에 입력
-- 해당 구역에 대한 제한사항을 #A "Restriction" 항목에서 선택할 수 없는 경우, #A "Restriction" = null(빈칸) 으로 입력하고 #A "information"에 제한사항을 입력
-- 외부참조파일을 입력할 경우 명명기준 확인 +
-  (101CCCCXXXXXXXX.EEE) - 101: Product명 / CCCC: Agency code / XXXXXXXX.EEE:파일명
+* 제한구역은 span:F[Restricted Area]을 사용하여 입력하고, 제한사항은 span:A[restriction]을 이용해 표현
+** 일반적으로 span:A[restriction]를 이용해 제한 사항을 표현하지만, 속성의 값으로 표현하기 어려운 복잡한 제한에 대해서는 span:A[information]을 이용해서 기술 ( 이 때, restriction은 _(Unknown)_ 으로 입력 )
+** 만일, 제한구역과 동일한 영역을 가진 다른 객체가 span:A[restriction]을 갖는 경우, 해당 객체에 제한사항을 표기하고, span:F[Restricted Area]는 생략 +
+  ( 예를 들어 통항 분리제도의 주의 해역에서 속력이 제한된다면, Precautionary Area의 restriction으로 표현하고 Restricted Area는 추가로 입력하지 않음 )
+
+//
+* IMO 지정 항로의 정박금지구역은 span:A[restriction] = 1 span:D[anchoring prohibited]로 입력
+include::common/phrase.adoc[tags=speedLimits]
+
+//
 
 ===== Example
+
+.Restricted Area의 인코딩 예시 - 부산항 항계 내 속력제한 중 북내항
+====
+
+* https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B6%80%EC%82%B0%ED%95%AD%20%ED%95%AD%EB%B2%95%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EA%B7%9C%EC%B9%99[**참고** - 부산항 항법 등에 관한 규칙] - [별표 5] 항행최고속력
+
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Restricted Area|CATREA|EN|0,*|<undefined> 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|Speed restricted 
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|속력제한구역 
-|    Name Usage||(S)EN|0,1|2 : alternate name display 
-|**Vessel Speed Limit**||C|0,*| 
-|    #essential Speed Limit||(S)RE|1,1|10 
-|    #essential Speed Units||(S)EN|1,1| 4: knots
-|    Vessel Class||(S)TE|0,1| 
-|**Vessel Speed Limit**||C|0,*| 
-|    #essential Speed Limit||(S)RE|1,1|12
-|    #essential Speed Units||(S)EN|1,1|4: knots 
-|    Vessel Class||(S)TE|0,1|high speed vessel 
-|Scale Minimum|SCAMIN|IN|0,1|219999 
-|**Information**|INFORM|C|0,*| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1|101KR000010E100.TXT 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1|Within Jeju Hang limit area, a vessel shall not exceed 10 knots, but a high speed vessel shall not exceed 12 knots. 
-|**Information**|INFORM|C|0,*| 
-|    File Reference|TXTDSC/NTXTDS|(S)TE|0,1|101KR000010K100.TXT 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1|제주항 항계내에서는 속력 10노트 이하로 항행하여야 함. 단, 초쾌속선은 12노트 이하로 항행하여야 함 
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
+|**vessel speed limit**||C|0,*|
+|    span:E[speed limit]||(S)RE|1,1| 12
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
+|    vessel class||(S)TE|0,1| Passenger ships under 500 GT span:D[총톤수 500톤 미만의 여객선]
+|**vessel speed limit**||C|0,*|
+|    span:E[speed limit]||(S)RE|1,1| 10 span:D[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
+|    vessel class||(S)TE|0,1| All other vessels span:D[기타 모든 선박]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| The speed of passenger ships under 500 GT should not exceed 12 knots and all other vessels should not exceed 10 knots for in this area.
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서는 10 노트 이하로 항행하여야 함. 단, (총톤수) 500톤 미만의 여객선은 12노트 이하로 제한함.
+
 |===
+
+**비고**:: span:A[vesselSpeedLimit] 와 span:A[information] 은 중복으로 볼 수 있지만, Source에 입력할 때에는 종이해도의 제작을 고려하여 기사의 내용을 span:A[information]을 이용해 기재
+
+**비고**:: 앞으로는 종이해도의 기사를 그대로 입력하기 보다는, 실제 구역별 정보를 각기 입력하는 방식으로 전환
+
+pass-format:all[<font color="#ab549c">]
+속력제한구역 +
+부산항 내에는 선박속력제한구역이 지정되어 있으니 항해하는 선박은 주의를 요함. (부산항 항법 등에 관한 규칙 제6조 참조)
+pass-format:all[</font>]
+
+
+====
 
 ---
 // end::RestrictedArea[]
+
+//REVIEW: 제주항 항계 내 속력제한의 경우, 제주특별자치도 고시 (2011년) 꺼 밖에 없어서 예시 교체; 값은 임의로 작성한 내용 (실제 인코딩된 값이 아님)
+
+//REVIEW: 부산항 항계 내 속력제한 관련 북내항 부근에 대해서 자세히 살펴보면 
+
+25년 6월 기준 ENC KR5G3B33 에는 북내항쪽 RESARE 속성이 아래처럼 되어 있음
+
+Attributes ( RESARE )
+ SCAMIN :	44999
+ RESTRN :	27 (speed restricted)
+ INFORM : Speed restricted(Speed limit is 8knots. but speed limit of a ship below 500ton is 12knots.)
+ NINFOM :	속력제한구역(이 구역에서는 속력 8knots 이하로 항해하여야 한다. 단, 총톤수 500톤 미만의 여객선은 12노트 이하로 항행하여야 한다.)
+
+종이해도에는 아래 같은 기사만 있음
+
+""
+속력제한구역
+부산항 내에는 선박속력제한구역이 지정되어 있으니 항해하는 선박은 주의를 요함. (부산항 항법 등에 관한 규칙 제6조 참조)
+
+SPEED LIMIT AREA
+Speed Limit Area is designated at Busan Hang. All Mariners navigating within Busan Hang are requested to be Cautious. (Refer to Busan Hang Rule No 6)
+""
+
+전자해도의 내용은 고시내용과 맞지 않고, 영문의 형식도 다른 기사 (INT2의 주의기사 내용들)
+이에 더해서 해도 도식 상 속력제한구역 ( --- 에 옅은 자색 띠 )을 나타내는 도식으로 표현된 구간이 전혀 없음
+해도가 복잡해진다는 이유로 생략한 건지도 모르겠지만, 
+
+Busan Hang Rule No 6를 외국인이 알아들을 수 있을까?
+onlineResource 라도 제공하는게 아니라면... 

@@ -1,14 +1,18 @@
 // tag::Road[]
 ===== Remark
 
-! 향후 필요한 내용 입력 !
+* 일반적으로 HPD Source에는 입력하지 않고, 종이해도 제작 시 에 입력 +
+  ( ENC 파일 크기 제한에 따른 조치 )
+
+//REVIEW: 5M -> 10M으로 늘었는데 이 조치가 계속 유지되어야 하는지?; 물론 역변환도 같이 생각하면 문제지만 이건 매핑룰로 Road만 제외할 수도 있고.. 
 
 ===== Example
+.Road의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Road|CATROD|EN|0,1|2: major road  
+|category of road|CATROD|EN|0,1|2 span:D[major road]
 |===
 
 ---
