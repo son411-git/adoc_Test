@@ -13,7 +13,7 @@ include::common/phrase.adoc[tag=SurroundingDepth]
 
 //
 :linkTo: UWTROC_T2, Underwater Awash Rock의 default clearance value 입력 기준을
-include::common/phrase.adoc[tag=DefaultClearanceDepth]
+include::common/phrase.adoc[tag=SurroundingDepth]
 
 
 .Underwater Awash Rock 입력 기준

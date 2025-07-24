@@ -71,7 +71,8 @@ span:A[category of special purpose mark] = (24 : reduced wake mark) 또는 (25 :
 ** 총 톤수 500톤 미만 여객선 => Passenger ships under 500 GT
 ** 1,000톤 이상의 선박 => All Ships over 1,000 GT
 ** 위험물 문반선 => Dangerous cargo ship
-** 그 외 모든 선박 (명시된 조건이 있고, 그 외에 나머지를 의미할 때에만 사용)=> All other vessels 
+** 그 외 모든 선박 (명시된 조건이 있고, 그 외에 나머지를 의미할 때에만 사용)=> All other vessels + 
+   ( 이 때, 그 외 모든 선박에 대한 vessel speed limit는 맨 마지막 값으로 입력한다. )
 
 
 .선박의 종류에 따른 vessel class 입력 예시
