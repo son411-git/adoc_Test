@@ -49,22 +49,23 @@
 [cols="1,2,7" options="header"]
 |===
 | 약어 | 자료형 | 설명
-| BO | Boolean | 논리값을 입력. +
-True 또는 False 중 하나를 선택합니다.
-| EN | Enumeration | 미리 정의된 목록 중 하나의 값을 선택합니다.
-| RE | Real | 실수를 입력합니다. +
-소수점 이하 자리수는 속성에 따라 다를 수 있습니다.
+| BO | Boolean | (True) 또는 (False) 논리값을 입력합니다. +
+선택값에 따라 다른 속성 입력이 필수일 수 있습니다.
+| EN | Enumeration | 미리 정의된 목록에서 값을 선택합니다. +
+객체에 따라 허용된 값이 다르므로, 해당 목록을 확인해야 합니다 +
+(예: span:A[condition], span:A[status], span:A[restriction]).
+| RE | Real | 실수를 입력합니다. 소수점 이하 자리수는 속성에 따라 다릅니다.
 | IN | Integer | 정수를 입력합니다.
 | TD | Truncated Date | YYYYMMDD 형식의 날짜를 입력하며, 일부 날짜 표현도 가능합니다. +
-예 : 매년 3월 → pass-format:all[----03--]
-| TE | Text | 문자열을 입력합니다. +
-입력 가능한 문자 유형과 길이는 속성마다 다를 수 있습니다.
-| TI | Time | HHMMSS+UTC 형식의 시간을 입력합니다. +
-예: 오후 7시 32분 0초 → 193200+0900
-| URI | Universal Resource Identifier | 주로 URL 형태의 자원을 식별하기 위해 사용합니다. +
-예: https://registry.iho.int
-| URN | Universal Resource Name | 해양 자원 식별 이름(MRN: Maritime Resource Name)을 입력할 때 사용합니다. +
-예: urn:mrn:iho:s101:2:0:0:AnchorageArea
+(예 : 매년 3월 → pass-format:all[----03--])
+| TE | Text | 문자열을 입력합니다. 속성마다 문자 유형과 길이 제한이 다르며, +
+시작/끝 공백 및 줄바꿈은 절대 포함 불가합니다.
+| TI | Time | HHMMSS+UTC 형식으로 시간을 입력합니다 +
+(예: 오후 7시 32분 → 193200+0900).
+| URI | Universal Resource Identifier | URL 형태로 자원을 식별합니다 +
+(예: https://registry.iho.int)
+| URN | Universal Resource Name | 해양 자원 식별 이름(MRN: Maritime Resource Name)을 입력합니다. +
+(예: urn:mrn:iho:s101:2:0:0:AnchorageArea)
 |===
 
 //
