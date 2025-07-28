@@ -9,13 +9,8 @@
 * span:F[Span Fixed]는 반드시 span:R[Bridge Aggregation] 관계에 포함되어야 함 <<BRIDGE_AGGR,※참조>>
 
 * 통항이 가능한 수직높이는 span:A[vertical clearance fixed]로 입력
-** 이 높이는 수직기준면이 다른 객체와 다르므로, span:A[vertical datum]를 필수로 입력해야 함
-*** (국내에서는) 교량의 통과높이는 약최고고조면을 기준으로 하므로, span:A[vertical datum]는 29 span:D[nearly highest high water]로 입력
-*** 만일, 통항이 가능한 지역이 내륙의 강(또는 수로)로서, **조석의 영향을 받지 않는 경우**, span:A[vertical datum]는 13 span:D[low water]로 입력
+include::common/phrase.adoc[tag=verticalDatum_for_clearance]
 
-//REVIEW: 기준면 관련 내용 검토 필요
-
-//REVIEW: 기존 예에서 information은 삭제해버림; 자료의 출처에 관한 내용이라
 
 ===== Example
 .Span Fixed의 인코딩 예시

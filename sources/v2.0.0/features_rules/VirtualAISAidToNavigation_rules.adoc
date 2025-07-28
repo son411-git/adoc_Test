@@ -64,7 +64,7 @@ Virtual AIS
 
 |===
 
-.전자해도 입력 예시
+.전자해도 입력 예시(더 이상 입력하지 않음)
 image::../images/VirtualAISAidToNavigation/Synthetic_Example.png[] 
 
 ====
