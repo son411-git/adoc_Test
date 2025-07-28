@@ -1,29 +1,35 @@
 // tag::PilotBoardingPlace[]
 ===== Remark
 
-- 도선 연락정보를 알 경우 #F "Contact Details"피처에 입력하고 #R "AdditionalInformation Association" 관계 설정
-- 육상의 도선사 사무실은 #F "Building"이나 #F "Landmark" 피처를 이용하고 #A "function" = 11(pilot office) 또는 12(pilot lookout)을 입력
+* 도선사 승/하선 지점은 반드시 span:F[Pilot Boarding Place] 피처를 사용하여 입력
+** 도선사 승/하선 지점이 다를 경우, 각각 별도의 span:F[Pilot Boarding Place]로 입력
+** 기상 상황에 따라 도선사 승/하선 지점이 변경되는 경우, 기존 명칭에 '(Bad Weather)'를 추가하여 입력하고, span:A[information]에 상세한 정보를 입력
+// REVIEW:: 기상 상황에 따른 대체 지점에 대한 명칭 입력 방법에 대한 검토 필요
+
+//
+* 도선을 위한 연락정보는 span:I[Contact Details] 피처에 입력하고, span:F[Pilot Boarding Place] 피처와 연관관계를 설정
+
 
 ===== Example
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Pilot Boarding Place|CATPIL|EN|0,1|1: borading by pilot-crusing vessel 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jangan-Incheon
-|    Name Usage||(S)EN|0,1| 1: default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 장안-인천
-|    Name Usage||(S)EN|0,1| 2 : alternate name display 
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1|change the pilot boarding place at the bad weather of heavy seas warning enforcement date : 16 Feb. 2009
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 풍랑주의보 이상의 기상특보 발효 및 그에 준하는 기상 상태일 경우에 사용하는 도선사 승하선 지점
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Dorido(Bad weather)
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 도리도(기상악화 시)
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| change the pilot boarding place at the bad weather of heavy seas warning enforcement date : 18 Aug. 2016
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 풍랑주의보 이상의 기상특보 발효 및 그에 준하는 기상 상태일 때에는 다음 각 호의 중심 반경 2마일 이내의 해역, 선박교통관제의 시행등에 관한 고시 제2016-121호, 시행일 : 2016.08.18
+
 |===
 
 ---

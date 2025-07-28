@@ -1,29 +1,27 @@
 // tag::PrecautionaryArea[]
 ===== Remark
 
-- 주의구역은 통항분리방식 항로 등이 교차하는 특정 구역과 연관되어 지정되며 보통 IMO가 지정
-- IMO 채택 항로 여부는 #F "Traffic Separation Scheme"피처 속성에 입력 +
-  ※ #F "Traffic Separation Scheme" 인코딩 기준 참조
-- 주의구역은 통항분리방식 항로 등 다른 피처들과 중첩 가능
-
-//image::../images/PrecautionaryArea/PrecautionaryArea_image-1.png[width=300]
-
-- 아래 그림 같이 여러 종류의 항로와 항로표지들이 모두 연결된 항로 시스템을 구축할 경우, surface 타입의 #F "Traffic Separation Scheme"를 생성하고 관련된 피처를 #R "Traffic Separation Scheme Aggregation" 관계 형성 +
-  ※ Relation 페이지 참조
-
-//image::../images/PrecautionaryArea/PrecautionaryArea_image-2.png[width=300]
+* span:F[Precautionary Area]는 주로 항로의 교차점이나 항로와 다른 수역이 만나는 지점 등에서 선박의 안전한 통항을 위해 주의를 요하는 구역을 나타냄
+* span:F[Precautionary Area]는 통항분리제도(Traffic Separation Scheme)의 일부로 사용될 수 있으며, 이 경우 span:R[Traffic Separation Scheme Aggregation] 연관 관계에 포함되어야 함 (<<TSS_AGGR,※참고>>)
+** span:F[Precautionary Area]는 통항분리제도를 구성하는 다른 객체(예; Traffic Separation Lane Part)와 함께 사용될 수 있음
+** TSS에 포함되는 경우 span:A[imo adopted] 속성은 입력하지 않음 
+//
+* span:F[Precautionary Area]를 입력할 때에는 반드시 span:A[information]에 주의해야 하는 사항에 대한 설명을 입력해야 함
 
 ===== Example
+.Precautionary Area의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**#essential Information**|INFORM|C|1,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1|Precautionary Area C(Special attention is required for transit  of the area as it requires a large altering course)
-|**#essential Information**|INFORM|C|1,*| 
-|    #essential Language||(S)TE|1,1|kor 
-|    Text|INFORM/NINFOM|(S)TE|0,1| 항행주의구역 C(이 구역의 통항을 위해서는 대각도 변침이 요구되므로 각별한 주의를 요함)
+|imo adopted|CATTSS|BO|0,1| false
+|**span:E[information]**|INFORM|C|1,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Due to plenty of crossing small boats on the fairway, vessels are requested to navigate with caution within this area.
+|**span:E[information]**|INFORM|C|1,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서는 항로를 횡단하는 소형선박이 많으므로 주의하여 항행하여야 함.
+
 |===
 
 ---

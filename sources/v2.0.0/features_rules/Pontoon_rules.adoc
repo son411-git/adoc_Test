@@ -1,30 +1,23 @@
 // tag::Pontoon[]
 ===== Remark
 
-- 부잔교는 Skin of earth 객체가 아니므로 반드시 미측구역(Unsurveyed Area)와 중첩
-- 육지와 부잔교를 연결하는 다리의 경우 #F "Bridge"로 입력하고 #A "Category of bridge" = 3(pontoon bridge) 입력  ※ Briddge 인코딩 기준 참조
-- #F "Pontoon" 경계에 #F "Coastline" #F "Shoreline Construction" 생성 금지
+* span:F[Pontoon] 객체는 반드시 span:F[Depth Area], span:F[Dredged Area], 또는 span:F[Unsurveyed Area]와 중첩되어야 함.
+* span:F[Pontoon][S]의 경계에 span:F[Coastline] 또는 span:F[Shoreline Construction]을 입력해서는 안 됨 ( 단, 라인이 span:F[Land Area][S]의 경계와 일치하는 경우는 예외. )
+
+//REVIEW: 아래 내용은 잘 못된 내용임;
+// * 육지와 부잔교를 연결하는 다리의 경우 #F "Bridge"로 입력하고 #A "Category of bridge" = 3(pontoon bridge) 입력  ※ Briddge 인코딩 기준 참조
+
+span:addition[비고]:: span:F[Bridge]의 span:A[category of bridge] 속성은 3 span:D[pontoon bridge] 변경되었음
+span:A[bridge construction] 중 3 span:D[pontoon bridge]는 실제로 Pontoon으로 지지하는 교량을 말하기 때문에, 부잔교와 육상을 연결하는 다리까지 포함해서 span:F[Pontoon]으로 입력할 것을 제안
 
 ===== Example
+
+
+
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Condition|CONDTN|EN|0,1| 1: under construction
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Barge
-|    Name Usage||(S)EN|0,1| 1: default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 바지 
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| Coastal Fairway Survey in 2022
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 2022sus 연안항로조사
 |===
 
 ---

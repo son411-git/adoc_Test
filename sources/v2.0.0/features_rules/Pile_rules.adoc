@@ -1,15 +1,28 @@
 // tag::Pile[]
 ===== Remark
 
-- 교량등의 구조물 피처로 #F "Pile"이 사용될 경우 삭제하고 #F "Bridge"와 #R "Structure/Equipment" 관계 설정 +
-  ※ Relation 페이지 참조
-- #F "Pile"이 항로표지 역할을 한다면 항로표지(예: Special Purpose/General Beacon) 피처로 대체하고 속성 
-   #F "Beacon shape" = 1 (stake, pole, perch, post)”으로 인코딩해야 함
+* 일반적인 말뚝, 기둥은 span:F[Pile]로 입력
+** 말뚝이나 기둥이 연속적으로 설치된 경우, +
+   span:F[Pile][C] - span:A[category of pile] = 5 span:D[piling]로 입력하거나, +
+   span:F[Pile][S] - span:A[category of pile] = 6 span:D[area of piles]로 입력할 수 있음
+** 소축척에서는 span:F[Pile][P]로 일반화 할 수 있음
+
+* 항행에 위험한 말뚝,기둥은 span:F[Pile]로 입력해서는 안되며, span:F[Obstruction]로 입력하고, span:A[category of obstruction] = 1 span:D[snag/stump]로 입력해야 함
+
+//
+* 항로표지 역할을 하는 말뚝, 기둥은 span:F[Pile]로 입력해서는 안되며, 목적에 맞는 **Beacon** 객체로 입력해야 함
+** 이 때, span:A[beacon shape]은 1 span:D[stake, pole, perch, post]로 입력
+
+//REVIEW:: 해양기상탑이 Pile? 이건 아닌게 확실한 거 같은데, Beacon이 맞나 OffshorePlatform이 맞나?
+
 
 ===== Example
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
+
+
+
 
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1|eng 

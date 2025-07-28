@@ -1,28 +1,23 @@
 // tag::PhysicalAISAidToNavigation[]
 ===== Remark
 
-- 현재 국내 전자해도의 입력 현황에 따르면 모든 무선국은 ”RDOSTA“로 입력되었으나 S-101전자해도에서는 #F "Radio Station", #F "Physical AIS Aid to Navigation", #F "Virtual AIS Aid to Navigation"으로 구분
-- 무선국이 송신한 정보를 이용하여 선박의 위치를 항해자들에게 제공할 목적이나 선박에서는 전파방향탐지(RDF)를 사용하지 않기 때문에 표의 무선국은 S-101 속성에 존재하지 않음 – 삭제필요
+**span:E[주의]**:: AIS에 대해서는 더 이상입력하지 않음
 
-////
-[cols= "1,1,1", options="header"]
-|===
-|IHO 해도제작 기준에 따른 기호|Category of Radar Transponder Beacon|기타
-| image:../images/RadioStation/RadioStation_image-1.png[width=100] | 1. circular (non-directional) marine or aero-marine radiobeacon ※ 국내 S-57 전자해도에서는 해당 속성을 AIS로 지정, “Physical AIS Aid to Navigational”로 변환|  무지향성 무선표지
-|image:../images/RadioStation/RadioStation_image-2.png[width=100] |2. directional radiobeacon| 지향성 무선표지
-|image:../images/RadioStation/RadioStation_image-3.png[width=100] |3. rotating-pattern radiobeacon| 회전식 무선표지
-|image:../images/RadioStation/RadioStation_image-4.png[width=100] |4. consol beacon| 콘솔무선표지
-|image:../images/RadioStation/RadioStation_image-5.png[width=100] |5. radio direction-finding station| 무선향탐지
-|image:../images/RadioStation/RadioStation_image-6.png[width=100] |6. coast radio station providing QTG service|무선지 업무를하는 해안국
-|image:../images/RadioStation/RadioStation_image-7.png[width=100] |7. aeronautical radiobeacon| 항공무선표지
-|===
-////
+* 물리적 AIS를 인코딩해야 하는 경우, 반드시 span:F[Physical AIS Aid to Navigation]을 사용 (span:F[Virtual AIS Aid to Navigation]과 구분)
 
-//image::../images/PhysicalAISAidToNavigation/PhysicalAISAidToNavigation_image-1.png[width=300]
+* AIS 신호가 다른 위치에서 송신되는 경우(Sythnetic V-AIS), 실제 신호를 보내는 기지국은 span:F[Radio Station] 피처로 입력하며, span:A[category of radio station] = 20 span:D[AIS base station]으로 입력
+//REVIEW:: 기존 내용이 이상함; 항로표지 없이 단독으로 입력된 경우에 관한 설명
 
-- 항로표지의 부속 피처일 경우 #R "Structure/Equipment" 관계 설정 +
-  ※ Relation 페이지 참조 
-- 항로표지 없이 별도로 인코딩해야하는 경우 #F "Radio Station" 피처에 속성 #A "Category of radio station" = 20(AIS base station)으로 코딩
+//
+* MMSI(Maritime Mobile Service Identity; 해상이동업무식별번호)를 알 수 있는 경우, span:A[MMSI Code]에 입력 (9자리 숫자)
+** [참고] - 일반적으로 MMSI 코드는 아래와 같은 형식으로 부여할 것을 권고하고 있음; Recommendation ITU-R M.585 (Section 4) +
+*** Physical AIS AtoN : 99MID1XXX
+*** Virtual AIS AtoN : 99MID6XXX
+//
+:ObjectName: span:F[Physical AIS Aid to Navigation]을
+:Relation: span:R[Structure/Equipment]
+:linkTo: Structure_Equipment
+include::common/phrase.adoc[tag=Refer]
 
 ===== Example
 [cols="30,25,10,10,25", options="header"]

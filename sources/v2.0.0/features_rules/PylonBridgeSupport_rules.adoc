@@ -1,12 +1,26 @@
 // tag::PylonBridgeSupport[]
 ===== Remark
 
-- 교각 및 케이블을 지지하는 #F "Pylon/Bridge Support" 피처는 항해 가능한 지역이면서 대축척일 때 입력
-- #A "Water level effect" = 1, 2 or 6으로 입력되면 Skin of the earth인 #F "Land area"와 중첩
-- 교각은 #A "Category of pylon" = 5(bridge pier)로 인코딩하고 #F "Bridge"와 #R "Bridge Aggregation" 관계 설정 +
-  ※ Relation 페이지 참조
-- 지주는 #A "Category of pylon" = 3(공중케이블/공중철탑)으로 입력
-- #F "Pylon/Bridge Support"가 등화(Lights)와 함께 사용될 경우, 등대 관리번호는 등화의 #A "Feature name"에 입력
+* span:F[Pylon/Bridge Support]는 교각이나 철탑을 나타내는 피처
+
+* 항해가 가능한 지역의 교량에 교각이 있다면, 경간에 의해 가려지더라도 span:F[Pylon/Bridge Support]를 입력해야 함
+** (일반적인 교량의) 교각의 경우 span:A[category of pylon] = 5 span:D[bridge pier]로 입력
+** (현수교, 사장교의) 주탑의 경우 span:A[category of pylon] = 4 span:D[bridge pylon/tower]로 입력
+
+:ObjectName: 교량이나, 주탑을 의미하는 span:F[Pylon/Bridge Support]를
+:Relation: span:R[Bridge Aggregation]
+:linkTo: BRIDGE_AGGR
+include::common/phrase.adoc[tag=Refer]
+
+//
+* 가공선,파이프 지지하기 위한 구조물(주로 철탑)의 경우, 종류에 따라 span:A[category of pylon] 속성 입력
+** 전력선을 지지하는 경우 span:A[category of pylon] = 1 span:D[power transmission pylon/pole]로 입력
+** 통신선을 지지하는 경우 span:A[category of pylon] = 2 span:D[communication pylon/pole]로 입력
+** 케이블카 등을 지지하는 경우 span:A[category of pylon] = 3 span:D[aerial cableway pylon/pole]로 입력
+** 가공 파이프를 지지하는 경우 span:A[category of pylon] = 6 span:D[pipeline pylon/pole]로 입력
+
+//
+* span:A[water level effect] = 1 span:D[partly submerged at high water], 2 span:D[always dry] 또는 6 span:D[subject to inundation or flooding]인 경우 span:F[Land area]로 덮혀야 함
 
 ===== Example
 [cols="30,25,10,10,25", options="header"]

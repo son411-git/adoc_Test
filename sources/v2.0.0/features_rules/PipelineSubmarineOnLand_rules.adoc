@@ -1,29 +1,38 @@
 // tag::PipelineSubmarineOnLand[]
 ===== Remark
 
-- 연안수역에 위치한 #F "Pipeline submarine/on land"는 항해에 위험이 될 수 있으므로 대축척에서 인코딩
-- 깊이 묻혀 있어서 정박으로부터 손상을 받을 가능성이 낮은 해저수송관과 육상구역에 묻힌 수송관은 인코딩하지 않음
-- 해저/육상수송관이 명시된 묻힌 수심이 있다면 속성 #A "Buried depth"에 입력
-- 사용하지 않은 해저/육상수송관 #F "Pipeline submarine/on land"은 속성 #A "Status" = 4(미사용)를 입력하고 #A "Category of pipeline/pipe"과 #A "Product" 속성은 입력하지 않음
-- S-57 전자해도에서 해저수송관 명칭이 #A "INFORM", #A "NINFOM"에 입력되어 있을 경우, #A "Feature name"으로 수정필요
+* 충분히 깊게 뭍힌 수송관은 입력하지 않아도 되지만, 닻 이나 저인망에 의해 손상될 위험이 있는 깊이로 매설된 해저 수송관은 대축척에 반드시 입력해야 함 
+* 매설 깊이를 알 수 있는 경우 span:A[buried depth]로 입력
+** 매설 깊이가 구간별로 다를 경우, 해당 구간별로 별도의 피처로 인코딩
+
+* 수송관을 통해 수송하는 물질과 종류에 따라 span:A[category of pipeline/pipe]와 span:A[product] 속성을 입력 +
++
+.수송물에 따른 product 속성 값 
+[cols="a,a"]
+|===
+|수송물 | product | category of pipeline/pipe
+|석유 | 1 span:D[oil] | 6 span:D[supply pipe]
+|가스 |2 span:D[gas] | 6 span:D[supply pipe]
+|물 |3 span:D[water] | (하수관)2 span:D[outfall pipe], (취수관)3 span:D[intake pipe] 
+|화학물질 |7 span:D[chemical] | 6 span:D[supply pipe]
+|식수(상수) |8 span:D[drinking water] | 6 span:D[supply pipe]
+|액화천연가스(LNG) |18 span:D[liquefied natural gas]
+|액화석유가스(LPG) |19 span:D[liquefied petroleum gas]
+|===
+
+* 사용하지 않는 수송관은 span:A[status] = 4 span:D[not in use]로 입력하고, span:A[category of pipeline/pipe] 및 span:A[product] 속성은 입력하지 않음
+//
+* 하수관/취수관의 배출구나 취수구는 span:F[Obstruction]으로 입력하고, span:A[category of obstruction] =  4 span:D[crib]로 입력
 
 ===== Example
+.Pipeline Submarine/On Land의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Buried Depth|BURDEP|RE|0,1| 
-|Category of Pipeline/Pipe|CATPIP|EN|0,*| 6: supply pipe
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| discharge pipe
-|    Name Usage||(S)EN|0,1|1: default name display  
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 배사관
-|    Name Usage||(S)EN|0,1|2 : alternate name display  
-|Product|PRODCT|EN|0,*| 3: water
-|Status|STATUS|EN|0,*| 7: temporary
+|category of pipeline/pipe|CATPIP|EN|0,*| 6 span:D[supply pipe]
+|product|PRODCT|EN|0,*| 1 span:D[oil]
+
 |===
 
 ---

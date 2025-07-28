@@ -1,20 +1,28 @@
 // tag::PipelineOverhead[]
 ===== Remark
 
-- 대축척 해도이면서 항해 가능한 구역인 경우, #A "Vertical clearance fixed"를 반드시 입력
-- #A "Vertical clearance fixed"는 최고고조면(Highest astronomical tide) 기준으로 입력하고 조석 범위를 측정할 수 없는 지역은 평균해수면(Mean sea level)기준으로 입력 
-- #A "Vertical clearance fixed" 값은 meter 단위로 입력하며 10m 미만은 소수 첫째 자리까지 입력하고 이상은 소수 첫째 자리에서 반올림 
-- 사용하지 않는 #F "Pipeline overhead"는 #A "Status" = 4(미사용)으로 인코딩
+* 항해가 가능한 수역을 지나는 가공관을 입력해야하는 경우, 반드시 span:F[Pipeline Overhead] 피처를 사용해야 함
+//
+* 통과 가능 높이는 span:A[vertical clearance fixed]로 입력
+include::common/phrase.adoc[tag=verticalDatum_for_clearance]
+
+//
+* 사용하지 않는 가공관은 span:A[status] = 4 span:D[not in use]로 입력하고, span:A[category of pipeline/pipe] 및 span:A[product] 속성은 입력하지 않음
+
+//
+* 가능하다면, 가공관을 지지하는 구조물은 span:F[Pylon/Bridge Support] 피처로 인코딩하고, span:A[category of pylon] = 6 span:D[pipeline pylon]으로 입력해야 함
 
 ===== Example
+.Pipeline Overhead의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Pipeline/Pipe|CATPIP|EN|0,1| 2: supply pipe
-|Product|PRODCT|EN|0,*| 3: water
-|**Vertical Clearance Fixed**|VERCLR|C|0,1| 
-|    #essential Vertical Clearance Value|VERCLR|(S)RE|1,1|(unknown) 
+|category of pipeline/pipe|CATPIP|EN|0,1| 6 span:D[supply pipe]
+|product|PRODCT|EN|0,*| 3 span:D[water]
+|**vertical clearance fixed**|VERCLR|C|0,1|
+|    span:E[vertical clearance value]|VERCLR|(S)RE|1,1| _(Unknown)_
+
 |===
 
 ---
