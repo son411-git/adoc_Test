@@ -1,6 +1,64 @@
 // tag::MilitaryPracticeArea[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 해상에서의 군사 훈련(또는 연습) 구역은 다양한 유형으로 나뉘며, 항해자에게 미치는 영향에 따라 다음과 같이 분류될 수 있음
+
+** 사격 위험 구역(Firing danger areas) : 사격 훈련 구역(Firing practice areas)이라고도 하며, 영구적이거나 일시적인 사격장, 폭격, 어뢰, 미사일 사격장을 포함함
+** 기뢰 부설 연습(및 대응 조치) 구역 (Mine-laying practice (and counter-measures) areas)
+** 잠수함 훈련 구역 (Submarine exercise areas)
+** 기타 훈련 구역 (Other exercise areas)
+
+* 군사 훈련 구역의 지정은 항해 및 기타 권리에 일정 정도의 제한을 암시할 수 있음. 이러한 제한의 유효성이나 영해 및 기타 해역에서의 무해 통항권 침해 가능성에 대해 다양한 해석이 있을 수 있음.
+* 명확한 범위 절차가 준수되거나, 해당 구역이 공해의 자유를 침해하는 것으로 보일지라도 이러한 구역을 표시하는 것이 바람직하다고 판단되는 경우, (전자해도(ENC)에 반드시 표시할 필요는 없지만) 해당 법규 또는 규정의 세부 사항이 오로지 선박의 안전과 편의를 위해 공표되었으며, 해당 법규 또는 규정의 국제적 유효성을 인정하지 않는다는 점을 항해자에게 알려야 함
+* 이를 통해 침해를 묵인하지 않으면서도 항해자의 안전을 위해 필요한 경고를 제공할 수 있음
+
+* 군사 훈련 구역을 입력해야 하는 경우, span:F[Military Practice Area]를 사용하여야 함
+
+* 잠수함 훈련 구역은 잠수함은 일반적으로 입력하지 않지만 주요 항로 또는 항구 접근로 근처에서 존재하는 경우에는 입력할 수 있음
+
+* 해상의 사격 위험 구역은 종종 IALA 특수 부표로 표시되며, 이 부표는 구역의 경계 주변에 배치되거나 특별히 설치된 등대, 표지, 표적과 함께 사용될 수 있음. 항해자의 위치 식별에 도움이 되거나 위험 요소가 될 수 있는 이러한 객체는 필요 시 일반적인 방식으로 입력해야 함
+
+* 기뢰 부설(및 대응/제거) 연습 구역의 존재는 해저에 폭발하지 않은 기뢰 또는 폭뢰가 있을 가능성을 암시하며, 또한 무해한 연습용 기뢰가 존재할 수 있음을 나타냄
+
+* span:F[Military Practice Area]의 유형과 위치는 **한국연안 해상사격 훈련구역도 (No.462)** 참고
+
+[cols="10,15,10"%header,format=csv]
+|===
+한글 명칭,영문 명칭,영문 약어
+대한민국 해군,Republic of Korea Navy,ROKN
+대한민국 해병대,Republic of Korea Marine Corps,ROKMC
+대한민국 국방과학연구소,Agency for Defense Development,ADD
+대한민국 해양경찰청,Korea Coast Guard,KCG
+대한민국 육군,Republic of Korea Army,ROKA
+대한민국 공군,Republic of Korea Air Force,ROKAF
+|===
+
+include::common/phrase.adoc[tag=speedLimits]
+
+include::common/phrase.adoc[tag=NotUsedFeature]
+
+===== Example
+.Military Practice Area의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^| Military Practice Area
+|Attribute |Acronym |Type |Mult. |Value
+|category of military practice area|CATMPA|EN|0,*| 4 : firing danger area
+|**fixed date range**||C|0,1|
+|    date start|DATSTA|(S)TD|0,1| 19941201
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| R-88
+|nationality|NATION|TE|0,1| KR
+|restriction|RESTRN|EN|0,*| 7 : entry prohibited
+5+^| Nautical Information
+|Attribute |Acronym |Type |Mult. |Value
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Republic of Korea Air Force(ROKAF) Practice Area
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 대한민국 공군 훈련구역
+|===
 
 ---
 // end::MilitaryPracticeArea[]
