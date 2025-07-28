@@ -89,3 +89,10 @@
 * 모든 선박 또는 특정 선박 등급에 대해 속력 제한이나 항주파 제한이 설정된 경우 다음과 같이 입력해야 함 (<<Speed_Limits,※참고>>)
 // end::speedLimits[]
 
+
+==== vertical clearance의 vertical datum
+// tag::verticalDatum_for_clearance[]
+//
+** 이 높이는 수직기준면이 다른 객체와 다르므로, span:A[vertical datum]를 필수로 입력해야 함
+** 표준에서는 최고천문조위(HAT; Highest Astronomical Tide)를 기준으로 사용할 것을 권고하고 있지만, 국내에서는 약최고고조면을 기준으로 하기 때문에, span:A[vertical datum]는 29 span:D[nearly highest high water]로 입력
+// end::verticalDatum_for_clearance[]
