@@ -1,33 +1,39 @@
 // tag::OffshorePlatform[]
 ===== Remark
 
-- 생산, 하역, 배출 또는 관찰/연구 활동으로 사용되는 해상 구조물. 일반적으로 기름이나 천연가스를 생산하기 위하여 해상에 고정 또는 부유 상태로 영구설치 됨.
-- #F "Offshore Platform"에 항로표지가 설치되어 있으면 관련 피처를 #R "Structure/Equipment" 관계 설정 +
-   ※ Relation 페이지 참조
+* 해상 플랫폼을 입력할 때에는 반드시 span:F[Offshore Platform]를 사용
+** span:A[height]는 고정식 플랫폼에만 사용해야 하며, 참조하는 수직 기준면에 대해서 입력
+** span:A[vertical length]는 부유식 플랫폼에만 사용해야 하며, 해수면을 기준으로 입력
+
+//
+* 해체된 플랫폼의 잔해 등을 입력할 때에는 보통 span:F[Foul Ground]를 사용
+** 단, 해저에서 충분히 돌출되어 항해에 장애가 될 경우에는 span:F[Obstruction]을 사용
+//
+* 플랫폼에는 등화, 무신호, 헬리콥터 착륙장 등 장비 역할의 객체들이 설치될 수 있으며, 이 경우 span:F[Offshore Platform]과 span:R[Structure/Equipment] 관계를 설정해야 함
+** (주로 석유나 가스 시추 시설에서)연소탑이 있는 경우, span:A[flare stack]으로 유/무를 입력
+//
+* 해양 기상탑과 같은 관측을 위한 구조물은 span:F[Offshore Platform]을 사용하여 입력하고, span:A[category of offshore platform] = 3 span:D[observation/research platform]을 입력
+
+* 대축척에서는 Surface 형태로 입력하고, 소축척에서는 Point 형태로 일반화 할 수 있음
+
 
 ===== Example
+
+.Offshore Platform의 인코딩 예시 - 소청초 종합해양과학기지
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Offshore Platform|CATOFP|EN|0,1|3: observation/research platform 
-|Colour|COLOUR|EN|0,*| 1(white)
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jaeundo
-|    Name Usage||(S)EN|0,1| 1 : default name display 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 자은도 해상기상탑 
-|    Name Usage||(S)EN|0,1| 2 : alternate name display 
-|Vertical Length|VERLEN|RE|0,1| 2 
-|Visual Prominence|CONVIS|EN|0,1| 1: visual prominence 
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1|eng 
-|    Text|INFORM/NINFOM|(S)TE|0,1| Diving board 
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 다이빙 대
+|category of offshore platform|CATOFP|EN|0,1| 3 span:D[observation/research platform]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Socheongcho
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 소청초 종합해양과학기지
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+
 |===
 
 ---

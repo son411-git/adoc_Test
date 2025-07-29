@@ -1,20 +1,20 @@
 // tag::OilBarrier[]
 ===== Remark
 
-- 부유방책이 항구적이지 않으므로 국내 해도에는 미측구역으로 표시
-- 오탁방지막을 입력해야 하는 경우 해상에 Curve 형태로 입력
-- S-57 전자해도에서 오탁방지막 명칭이 #A "INFORM", #A "NINFOM"에 입력되어 있을 경우 #A "Feature name"으로 수정필요 +
-  (명칭 “오탁방지막”은 피처의 속성과 중복되는 정보이므로 삭제필요)
+* span:F[Oil Barrier]은 유류 유출/확산 방지를 위한 설비
+** 국내에서는 해상공사 시 오염 방지를 위해 사용하는 오탁방지막까지 확장해서 사용
+** span:F[Oil Barrier]는 Curve 형태로 입력
+** 공사를 위해 일시적으로 설치된 경우, span:A[condition] = 7 span:D[temporary]로 입력
+** 오탁 방지막인 경우, span:A[category of oil barrier] = 2 span:D[floating oil barrier]로 입력
 
 ===== Example
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Oil Barrier|CATOLB|EN|0,1|2: floating oil barrier 
-|Condition|CONDTN|EN|0,1| 1: under construction
-|Reported Date|SORDAT|TD|0,1| 20120425
-|Scale Minimum|SCAMIN|IN|0,1| 21999
+|category of oil barrier|CATOLB|EN|0,1| 2 span:D[floating oil barrier]
+|condition|CONDTN|EN|0,1| 7 span:D[temporary]
+
 |===
 
 ---
