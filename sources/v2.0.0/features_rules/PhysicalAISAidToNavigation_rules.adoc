@@ -1,40 +1,77 @@
 // tag::PhysicalAISAidToNavigation[]
 ===== Remark
 
-**span:E[주의]**:: AIS에 대해서는 더 이상입력하지 않음
-
-* 물리적 AIS를 인코딩해야 하는 경우, 반드시 span:F[Physical AIS Aid to Navigation]을 사용 (span:F[Virtual AIS Aid to Navigation]과 구분)
-
-* AIS 신호가 다른 위치에서 송신되는 경우(Sythnetic V-AIS), 실제 신호를 보내는 기지국은 span:F[Radio Station] 피처로 입력하며, span:A[category of radio station] = 20 span:D[AIS base station]으로 입력
-//REVIEW:: 기존 내용이 이상함; 항로표지 없이 단독으로 입력된 경우에 관한 설명
+**span:E[주의]**:: Physical AIS에 대해서는 더 이상 입력하지 않음
 
 //
-* MMSI(Maritime Mobile Service Identity; 해상이동업무식별번호)를 알 수 있는 경우, span:A[MMSI Code]에 입력 (9자리 숫자)
-** [참고] - 일반적으로 MMSI 코드는 아래와 같은 형식으로 부여할 것을 권고하고 있음; Recommendation ITU-R M.585 (Section 4) +
-*** Physical AIS AtoN : 99MID1XXX
-*** Virtual AIS AtoN : 99MID6XXX
+* 물리적 AIS를 인코딩해야 하는 경우, 반드시 span:F[Physical AIS Aid to Navigation]을 사용 (span:F[Virtual AIS Aid to Navigation]과 구분)
+
 //
 :ObjectName: span:F[Physical AIS Aid to Navigation]을
 :Relation: span:R[Structure/Equipment]
 :linkTo: Structure_Equipment
 include::common/phrase.adoc[tag=Refer]
 
+//
+* AIS 신호가 다른 위치에서 송신되는 경우(Sythnetic V-AIS), 실제 신호를 보내는 기지국은 span:F[Radio Station] 피처로 입력하며, span:A[category of radio station] = 20 span:D[AIS base station]으로 입력
+//REVIEW:: 기존 내용이 이상함; 번역은 이게 더 적절한거 같은데.. 
+
+//
+* MMSI(Maritime Mobile Service Identity; 해상이동업무식별번호)를 알 수 있는 경우, span:A[MMSI Code]에 입력 (9자리 숫자)
+** [참고] - 일반적으로 MMSI 코드는 아래와 같은 형식으로 부여할 것을 권고하고 있음; Recommendation ITU-R M.585 (Section 4) +
+*** Physical AIS AtoN : 99MID1XXX
+*** Virtual AIS AtoN : 99MID6XXX
+
+
+
 ===== Example
+
+.Physical AIS Aid to Navigation의 인코딩 예시 - 울릉도 등대 (AIS)
+==== 
+
+.등대표의 V-AIS
+[%header, cols="a,a,a,a,a,a,a,a,a"]
+|===
+^| 번&emsp;호 ^| 해안구분 ^| 명&emsp;칭 ^| 위&emsp;치 ^| MMSI ^| 주파수(MHz) ^| 출력(W) ^| 측정 구역(M) | 기&emsp;사
+
+<.<| 4451.33 +
+ +
+M4444
+<.<| 동해안
+<.<| 울릉도 +
+등대 +
+Ulleungdo
+>.<| 37-31.08N +
+130-47.86E
+^.<| 994403580
+^.<| 16K0F1D +
+161.975 +
+162.025
+^.<| 12.5
+^.<| 25
+<.<| 
+
+|===
+
+.Physical AIS Aid to Navigation의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Estimated Range of Transmission|ESTRNG|RE|0,1| 20
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| KR4558.10
-|    Name Usage||(S)EN|0,1|1: default name display 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 4558.10 
-|    Name Usage||(S)EN|0,1|1: default name display  
-|Status|STATUS|EN|0,1| 7: temporary
+|estimated range of transmission|ESTRNG|RE|0,1| 25
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Ulleungdo
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 울릉도
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|mmsi code||TE|0,1| 994403580
+
 |===
+
+====
 
 ---
 // end::PhysicalAISAidToNavigation[]

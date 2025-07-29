@@ -7,32 +7,23 @@
    span:F[Pile][S] - span:A[category of pile] = 6 span:D[area of piles]로 입력할 수 있음
 ** 소축척에서는 span:F[Pile][P]로 일반화 할 수 있음
 
+//
 * 항행에 위험한 말뚝,기둥은 span:F[Pile]로 입력해서는 안되며, span:F[Obstruction]로 입력하고, span:A[category of obstruction] = 1 span:D[snag/stump]로 입력해야 함
 
 //
 * 항로표지 역할을 하는 말뚝, 기둥은 span:F[Pile]로 입력해서는 안되며, 목적에 맞는 **Beacon** 객체로 입력해야 함
-** 이 때, span:A[beacon shape]은 1 span:D[stake, pole, perch, post]로 입력
+** 이 때, span:A[beacon shape]는 1 span:D[stake, pole, perch, post]로 입력
 
-//REVIEW:: 해양기상탑이 Pile? 이건 아닌게 확실한 거 같은데, Beacon이 맞나 OffshorePlatform이 맞나?
-
+//REVIEW:: 교량등의 파일은 Bridge에 직접 연결, 기상탑은 Pile이 아니라 Beacon이던 Offshore 던 제외하고 나면, Pile에 입력할 예시가 없음
 
 ===== Example
+.Pile의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
+5+h| 실제 Pile의 예시로 쓸만한 정보가 없음
 
-
-
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|Daecheong
-|    Name Usage||(S)EN|0,1|1: default name display 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1|대청 해상기상탑
-|    Name Usage||(S)EN|0,1|2 : alternate name display 
-|Visual Prominence|CONVIS|EN|0,1| 1: visual prominence
 |===
 
 ---
