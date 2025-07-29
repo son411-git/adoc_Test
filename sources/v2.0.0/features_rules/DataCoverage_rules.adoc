@@ -9,7 +9,25 @@
 
 [[DataCoverage_F1]]
 .최대 / 적정 / 최소 표시 축척의 값 (S-101 Ed. 2.0.0 DCEG Table 3-2)
-image::../images/DataCoverage/DataCoverage_image-1.png[width=100%]
+[%header, cols="3*"]
+|===
+| Maximum Display Scale | Optimal Display Scale | Minimum Display Scale 
+.15+| Any value | 10,000,000 | _Empty(null)_
+                | 3,500,000 | 10,000,000
+                | 1,500,000 | 3,500,000
+                | 700,000 | 1,500,000
+                | 350,000 | 700,000
+                | 180,000 | 350,000
+                | 90,000 | 180,000
+                | 45,000 | 90,000
+                | 22,000 | 45,000
+                | 12,000 | 22,000
+                | 8,000 | 12,000
+                | 4,000 | 8,000
+                | 3,000 | 4,000
+                | 2,000 | 3,000
+                | 1,000 | 2,000
+|===
 
 //
 * span:A[optimum display scale] (적정 표시 축척) 설정
