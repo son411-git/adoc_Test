@@ -64,32 +64,32 @@ NOTE :
 |===
 |단계|기준 축척|max.|opt.|min.
 
-|Overview (ENC 1)
+h|Overview (ENC 1)
 |1 : 2,000,000
 |350000
 |1500000
 |UNKNOWN
-|Transit 1 (ENC 2)
+h|Transit 1 (ENC 2)
 |1 : 500,000
 |180000
 |350000
 |1500000
-|Transit 2 (ENC 3)
+h|Transit 2 (ENC 3)
 |1 : 250,000
 |45000
 |180000
 |350000
-|Port Entry 1 (ENC 4)
+h|Port Entry 1 (ENC 4)
 |1 : 75,000
 |22000
 |45000
 |180000
-|Port Entry 2 (ENC 5)
+h|Port Entry 2 (ENC 5)
 |1 : 25,000
 |4000
 |22000
 |45000
-|Port Entry 3 (ENC 6)
+h|Port Entry 3 (ENC 6)
 |1 : 5,000
 |2000
 |4000
