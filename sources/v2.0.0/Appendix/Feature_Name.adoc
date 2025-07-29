@@ -94,15 +94,15 @@
 |===
 |한글 |영어
 2+^h| 행정지명
-|서울특별시 |SEOUL
-|제주도 | JEJU-DO
-|강원도 | GANGWON-DO
-|전라남도 |JEOLLNAM-DO
-|청주시 |CHEONGJU
-|양주군 |YANGJU
-|도봉구 |DODONG
-|순창읍 |SUNCHANG
-|삼죽면 |SAMJUK-MYEON
+|서울특별시 |Seoul
+|제주도 | Jeju-do
+|강원도 | Gangwon-do
+|전라남도 |Jeollanam- do
+|청주시 |Cheonju
+|양주군 |Yangju
+|도봉구 |Dodong
+|순창읍 |Sunchang
+|삼죽면 |Samjuk-myeon
 |당산동 |Dangsan-dong
 2+^h| 기타
 |급수탑 |Water Tower 
