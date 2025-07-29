@@ -26,8 +26,11 @@
 *** span:F[Data Coverage]에 입력된 span:A[optimum display scale]에 해당하는 화면 축척으로 최소 0.3mm(도상거리) 이상 (양쪽으로 입력해야 하므로 총 0.6mm 이상)의 얇은 면을 해당 송전선을 따라 span:F[Caution Area][S] 로 입력해야 함
 
 ** 안벽
-*** 일반 정보는 span:F[Information Area]로 입력
-*** span:F[Data Coverage]에 입력된 span:A[optimum display scale]에 해당하는 화면 축척으로 최소 0.3mm(도상거리)의 얇은 면을 해당 안벽 선을 따라 바다 방향으로 생성하여 span:F[Caution Area][S] 로 입력해야 함
+*** 안벽에 대한 수심 이격거리가 지정된 항만 또는 부두 안벽에는 실제 이격 거리만큼의 폭으로 span:F[Caution Area][S]를 해당 안벽 선을 따라 바다 방향으로 입력해야 함
+**** span:F[Caution Area][S] 내부에는 span:F[Sounding]를 입력하지 않아야 함
+*** 그 외 항행 주의 사항은 span:F[Data Coverage]에 입력된 span:A[optimum display scale]에 해당하는 화면 축척에서 span:F[Caution Area][S]를 생성
+*** 이때 최소 0.3mm(도상거리)의 얇은 면(surface)을 해당 안벽 선을 따라 바다 방향으로 생성해야 함.
+*** 안벽에 대한 일반정보는 span:F[Information Area]로 입력
 
 ** 암초
 *** 해당 객체 주변에 span:F[Caution Area][P,S]를 입력 (셀 구역 전체에 입력된 span:F[Caution Area]를 삭제)
