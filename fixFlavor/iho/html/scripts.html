@@ -160,7 +160,7 @@ nav {
   // ✅ 로고 교체
   const logo = document.querySelector('.coverpage-logo');
   if (logo) {
-    logo.innerHTML = '<img src="sources/v2.0.0/images/Cway7.png" style="width:300px;">';
+    logo.innerHTML = '<img src="sources/v2.0.0/images/khoa_mi.png">';
   }
 
   // ✅ docnumber 제거
@@ -168,48 +168,6 @@ nav {
     span.innerHTML = '';
   });
 
-  // ✅ .wrapper-top 스타일 주입
-  const wrapperStyle = document.createElement('style');
-  wrapperStyle.textContent = `
-.wrapper-top {
-  background: linear-gradient(160deg, #153f61 0%, #206c98 30%, #1fa8c4 100%) !important;
-  color: #ffffff;
-  padding: 3em 1em 2.5em;
-  margin: 2em auto;
-  max-width: 1000px;
-  width: 100%;
-  border-radius: 2rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  display: block;
-  min-height: 420px;
-  box-sizing: border-box;
-}
-.wrapper-top > div {
-  max-width: 100%;
-  width: auto;
-  text-align: center;
-}
-.wrapper-top .coverpage-doc-identity,
-.wrapper-top .coverpage-logo,
-.wrapper-top .coverpage-tc-name {
-  margin: 0 auto 1.2em;
-  text-align: center;
-}
-.coverpage-title .title-first {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 1em;
-  line-height: 1.4;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-}
-.coverpage-logo {
-  margin-top: -330px;
-  z-index: 2;
-  position: relative;
-}
-`;
   document.head.appendChild(wrapperStyle);
 });
 </script>

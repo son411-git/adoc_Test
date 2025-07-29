@@ -1632,7 +1632,7 @@ ul ul ul ul > li::before {
 
 /* C7: More Styles */
 .wrapper-top {
-  background: linear-gradient(160deg, #153f61 0%, #206c98 30%, #1fa8c4 100%) !important;
+  background: linear-gradient(180deg, #087DEC 0%, #2695FF 5%, #FFFFFF 10%, #FFFFFF 100%) !important;
   color: #ffffff;
   padding: 3em 1em 2.5em !important;
   margin: 2em auto;
@@ -1642,7 +1642,7 @@ ul ul ul ul > li::before {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   text-align: center;
   display: block;
-  min-height: 420px;
+  min-height: 200px;
   box-sizing: border-box;
 }
 .wrapper-top > div {
@@ -1659,9 +1659,9 @@ ul ul ul ul > li::before {
 .coverpage-title .title-first {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #fff;
-  margin-bottom: 1em;
-  line-height: 1.4;
+  color: #58585A;
+  margin-bottom: 0.5em;
+  line-height: 0.5;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 .coverpage-logo {
@@ -1669,7 +1669,9 @@ ul ul ul ul > li::before {
   z-index: 2;
   position: relative;
 }
-
+.coverpage img {
+  width: min-content;
+}
 
 .example {
   /* background-color: #e1eef1; */
@@ -1687,4 +1689,9 @@ ul ul ul ul > li::before {
   font-weight: 700;
   text-transform: none !important;
   margin-left: -1.5em;
+}
+
+/* 기타; Coverpage 내용 안 보이게 */
+.WordSection11{
+  display: none !important;
 }

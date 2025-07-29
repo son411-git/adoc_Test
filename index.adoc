@@ -1,4 +1,4 @@
-= S-101 객체 입력 지침서 테스팅
+= S-101 객체 입력 지침서
 :toc: left
 // 아래 한 줄만 추가해도 inline HTML 이 살아납니다.
 :safe: unsafe      
@@ -6,12 +6,14 @@
 :toclevels: 3
 :doctype: standard
 :icons: font
-:sectanchors: 
+:sectanchors:
+:draft:
 
 // 이미지  폴더 경로 지정
 :imagesdir: sources/v2.0.0/images
 :coverpage-logo: image::cway7_logo.png[]
 // 공용 속성 경로 지정
+
 include::sources/v2.0.0/First.adoc[]
 
 include::sources/v2.0.0/common_attr.adoc[tag=requiredAttr]
