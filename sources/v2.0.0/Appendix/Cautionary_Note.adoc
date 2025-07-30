@@ -8,9 +8,9 @@
 
 * span:E[주의] 아래 내용은 KHOA INT2 (2025.06.24) span:D[INT2_2_Ed2025_KHOA_250624], 외부참조파일(*.txt)을 기준으로 작성되었으며, 내용이 서로 다를 경우 최신의 KHOA INT2에 작성된 내용을 우선으로 하였음
 
-. 영해
+. 대한민국 영해
 +
-."영해"의 인코딩 예시
+."대한민국 영해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 5+^| image:_images/1.svg[]
@@ -21,11 +21,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |span:E[nationality]|NATION|TE|1,*| KR
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
-|    headline||(S)TE|0,1| Territorial Sea
+|    headline||(S)TE|0,1| Territorial Sea of KOREA
 |    span:E[language]||(S)TE|1,1| eng
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010K100.TXT
-|    headline||(S)TE|0,1| 영해
+|    headline||(S)TE|0,1| 대한민국 영해
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
@@ -506,8 +506,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| This area may be congested or ships may cross navigate, so mariners are advised to navigate with caution.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 
-|    span:E[language]||(S)TE|1,1| 가덕수도 항행 주의
+|    headline||(S)TE|0,1| 가덕수도 항행 주의
+|    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서는 항로를 횡단하는 소형선박이 많으므로 주의하여 항행하여야 함.
 |===
 
@@ -1413,29 +1413,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/00.svg[]
-5+^h| Information Area
-
-h|Attribute h|Acronym h|Type h|Mult. h|Value
-
-|**information**|INFORM|C|0,*|
-|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000040E100.TXT
-|    headline||(S)TE|0,1| ASL - Archipelagic Sea Lanes
-|    span:E[language]||(S)TE|1,1| eng
-|**information**|INFORM|C|0,*| 
-|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000040K100.TXT
-|    headline||(S)TE|0,1| ASL - 군도수로
-|    span:E[language]||(S)TE|1,1| kor
-|===
-
-. ASL - 군도 수로
-+
-."ASL - 군도 수로"의 인코딩 예시
-[cols="30,25,10,10,25", options="header"]
-|===
-
-5+^| image:_images/00.svg[]
-5+^h| Information Area
+// 5+^| image:_images/00.svg[]
+5+^h| Archipelagic Sea Lane
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
@@ -1455,7 +1434,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/00.svg[]
+// 5+^| image:_images/00.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1476,7 +1455,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/00.svg[]
+// 5+^| image:_images/00.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1497,7 +1476,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/00.svg[]
+// 5+^| image:_images/00.svg[]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1518,7 +1497,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/00.svg[]
+// 5+^| image:_images/00.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1533,13 +1512,13 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
-. 술루 군도 및 사바 동부해협 통항로 지정
+. 팔라완 항로 서쪽 위험구역 주의
 +
-."술루 군도 및 사바 동부해협 통항로 지정"의 인코딩 예시
+."팔라완 항로 서쪽 위험구역 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/00.svg[]
+// 5+^| image:_images/00.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
