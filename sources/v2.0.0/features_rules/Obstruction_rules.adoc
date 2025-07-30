@@ -1,18 +1,56 @@
 // tag::Obstruction[]
 ===== Remark
-- 장애물(Obstruction) 및 험악지(Foul Ground)는 아래 표에 따라 입력
 
-[cols="1,1,1,1,1" options="header"]
+* 항해에 위험이 되는 요소가 다른 객체(예; Underwater Awash Rock, Wreck 등)로 표현할 수 있는 경우, 해당 객체를 이용해서 입력 +
+  그 이외에 것들에 대해서만 span:F[Obstruction]으로 입력
+** 관련 속성은 아래 표의 예시에 따라 입력 ( '/' 표시한 속성은 입력해서는 안 되며, 빈칸은 상황에 따라 적절한 값을 선택해서 입력할 수 있음 )
++ 
+.Obstruction의 속성 입력
+[%header,cols="a,a,a,a,a"]
 |===
-|장애물 |INT 1 |water level effect |quality of vertical measurement |technique of vertical measurement 
-|수심을 모름|K40|3 또는 4|2|입력금지
-|최저수심을 앎|K41|3 또는 4|6|
-|와이어를 이용하여 수심 측정|K42|3|6|6
-|다이버에 의해 측정됨|K42|3|6|4
+| 구분 | INT1 | water level effect | quality of vertical measurement | technique of vertical measurement
+
+| 수심을 모름 span:D[Depth Unknown] 
+| K40 
+| 3 span:D[always underwater/submerged] or +
+  4 span:D[covers and uncovers] 
+| 2 span:D[depth unknown] or + 
+  _(Undefined)_ +
+  ( 국내지침 : _(undefined)_ 로 입력할 것을 권장 )
+| /
+
+| 최저수심을 앎 span:D[Least Depth Known]
+| K41
+| 3 span:D[always underwater/submerged] or +
+  4 span:D[covers and uncovers] 
+| 1 span:D[depth known] or +
+  6 span:D[least depth known]
+|
+
+| (와이어 등 기계적 장비를 이용해) +
+  표기된 수심까지 소해측량 +
+  span:D[Mechanically swept to the depth shown]
+| K42
+| 3 span:D[always underwater/submerged]
+| 6 span:D[least depth known]
+| 18 span:D[mechanically swept]
+
 |===
 
-- 위험계선의 경우, #A "Category of obstruction" = 6(험악구역)인 Surface Type의 #F "Obstruction" 피처로 인코딩하며 #F "Depth Area" 피처와 중첩
-- Point Type인 #F "Obstruction"에 대한 #F "Depth area" 와 #F "Depth Contour" 는 따로 생성하지 않으며, #A "Exposition of sounding" 속성을 입력
+//
+* span:A[category of obstruction] = 6 span:D[fould area] 인 span:F[Obstruction]과 span:F[Foul Ground]는 반드시 구별해야 함
+** span:F[Obstruction]은 항해에 위험한 장애물을 의미 +
+   수면 항해에 지장이 있거나 위험한 구역, 또는 미탐사 장애물이 다수 존재하는 구역을 의미
+** span:F[Foul Ground]는 항해는 가능하나 닻을 내리거나 저수심 활동(ground fishing 등)은 위험한 구역을 의미
+
+//REVIEW:: 해당 내용 있는게 나을 지?
+* span:F[Obstruction] 자체가 천해/천소(Shallow water)를 의미하지 않음
+** span:F[Obstruction] 주변의 수심이 얕은 것을 표현하려면 span:F[Depth Area]의 속성 값을 적절히 입력해야 함
+
+//
+* span:F[Obstruction][P]를 입력할 때 span:A[value of sounding] 속성이 주변의 수심과 맞지 않는 경우, span:F[Depth Area] 및 span:F[Depth Contour]를 별도로 입력할 필요는 없음
+** 단, 이 경우 span:F[Obstruction][P]의 span:A[exposition of sounding] 속성을 적절히 입력해야 함
+
 
 ===== Example
 [cols="30,25,10,10,25", options="header"]
