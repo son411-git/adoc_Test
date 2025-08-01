@@ -13,6 +13,7 @@
 // 이미지  폴더 경로 지정
 :imagesdir: sources/v2.0.0/images
 :coverpage-logo: image::cway7_logo.png[]
+:data-uri-image: false
 // 공용 속성 경로 지정
 
 include::sources/v2.0.0/First.adoc[]
