@@ -1,10 +1,57 @@
 // tag::Obstruction[]
 ===== Remark
 
-* 항해에 위험이 되는 요소가 다른 객체(예; Underwater Awash Rock, Wreck 등)로 표현할 수 있는 경우, 해당 객체를 이용해서 입력 +
-  그 이외에 것들에 대해서만 span:F[Obstruction]으로 입력
-** 관련 속성은 아래 표의 예시에 따라 입력 ( '/' 표시한 속성은 입력해서는 안 되며, 빈칸은 상황에 따라 적절한 값을 선택해서 입력할 수 있음 )
-+ 
+* 항해에 위험이 되는 요소가 다른 객체(예; Underwater Awash Rock, Wreck, Foul Ground 등)로 표현할 수 있는 경우, 해당 객체를 이용해서 입력해야 함 +
+  그 이외에 것들이나, 위험이 되는 요소가 불명확할 때에만 span:F[Obstruction]으로 입력
+** 특히, span:F[Obstruction]과 span:F[Foul Ground]는 반드시 구별해야 함
+*** span:F[Obstruction]은 **항해에 지장이 있거나 위험한 구역**, 또는 **미탐사 장애물이 다수 존재하는 구역**을 의미
+*** span:F[Foul Ground]는 항해는 가능하나 **닻을 내리거나 저수심 활동(ground fishing 등)은 위험한 구역**을 의미
+//
+* 관련 속성은 <<OBSTRN_T1,Obstruction의 속성 입력>>의 예시에 따라 입력 ( '/' 표시한 속성은 입력해서는 안 되며, 빈칸은 상황에 따라 적절한 값을 선택해서 입력할 수 있음 )
+** span:A[height]와 span:A[value of sounding] 속성 중 하나만 입력해야 하며, 둘 다 입력해서는 안 됨
+** span:A[water level effect] 속성이 1 span:D[partly submerged at high water] 또는 2 span:D[always dry]인 경우, span:A[height] 속성을 입력해야 함
+** span:A[water level effect] 속성이 7 span:D[floating]인 경우, span:A[height] 속성은 비워둬야 함
+** 그 외에 경우, 수심을 안다면 span:A[value of sounding] 속성을 입력해야 함
+** span:A[vertical length] 속성은 장애물이 해저 위로 솟은 거리 또는 부유 장애물이 해수면 위로 솟은 높이를 입력하는 데 사용함
+** span:A[value of sounding]를 알 수 없더라도, 주변 수심 구역 범위 내에 있음을 나타내야 할 경우, span:A[exposition of sounding] = 1 span:D[within the range of depth of the surrounding depth area]로 입력해서 불필요한 위험 심볼 표시를 방지해야 함
+//
+* 많은 장애물이 존재해서, 해당 기본 축척에서 안전하게 항해할 수 없는 구역은 span:F[Obstruction][S] 타입으로 입력하고, span:A[category of obstruction] = 6 span:D[foul area]으로 입력
+//
+* 실제 측량을 통해 확인 되지 않고, 보고만 된 장애물의 경우, span:A[reported date] 속성에 보고 날짜를 입력해야 함
+//
+* (해저)활화산은 항해의 위험이 크므로, span:F[Obstruction][P]로 입력하고, span:A[category of obstruction] = 21 span:D[active submarine volcano], span:A[exposition of sounding] = 2 span:D[shoaler than the range of depth of the surrounding depth area], span:A[quality of vertical measurement] = 2 span:D[depth unknown]로 입력해야 함 +
+  예측 불가성을 나타내기 위해 span:A[value of sounding]와 span:A[water level effect]는 입력하지 않음.
+** 추가로 ECDIS에서 경보를 유도하기 위해, 넓지 않은 span:F[Depth Area][S] 객체를 함께 입력할 수 있음; 이 때 span:A[depth range minimum value] = 0으로 입력
+   화산 가스가 영향을 미칠 수 있는 구역(최대 10NM)은 span:F[Caution Area][S] 객체로 입력하고, span:A[information] 속성의 span:A[text] = _Volcanic activity_ 및 span:A[file reference]에 관련 파일을 입력
+//
+* 어초나 수중 어군 집합장치(FAD; Fish Aggregating Device)는 span:F[Obstruction]로 입력하고, span:A[category of obstruction] = 5 span:D[fish haven]로 입력
+* 수중 해양자료수집시스템(ODAS; Ocean Data Acquisition System)은 해저면에 있거나 수중 부유체에 의해 떠 있는 경우 모두 span:F[Obstruction]로 입력하고, span:A[category of obstruction] = 14 span:D[subsurface ocean data acquisition system (ODAS)]로 입력 +
+  ODAS 부표는 span:F[Special Purpose/General Buoy]로 입력; span:A[category of special purpose mark] = 9 span:D[ODAS]로 입력
+
+//
+
+:linkTo: OBSTRN_T2, Obstruction의 default clearance value 입력 기준을
+include::common/phrase.adoc[tag=SurroundingDepth]
+
+//REVIEW:: 해당 내용 있는게 나을 지?
+* span:F[Obstruction] 자체가 천해(Shallow water)를 의미하지 않음
+** span:F[Obstruction] 주변의 수심이 얕은 것을 표현하려면 span:F[Depth Area]와 span:F[Depth Contour]를 이용해서 표현해야 함
+** 특히, 위험계선을 등심선처럼(완전히 겹치게 그리고, 등심선을 마스킹하는 등) 사용하는 것은 지양해야 하는 표현
+
+[NOTE, title="참고 : IHO S-4 v4.9.0 일부 발췌 내용"]
+====
+**B-411.4**:: _**A danger line (dotted line)** must not be substituted for the shoalest contour line off rocky coasts. Its use must be restricted to emphasize particular dangers. See B-420.1_
+
+**B-420.1**:: _**A danger line** consisting of a line of dots backed by solid blue tint, must be used to draw the navigator's attention to a danger which would not stand out clearly enough if it were represented solely by the symbol for the feature. The danger line must also used to delimit areas containing numerous dangers, through which it is unsafe to navigate at the scale of the chart._
+---
+
+**B-411.4**:: **위험계선(점선)**은 암석 해안에서 가장 얕은 등심선을 대신하여 사용해서는 안 된다. 위험계선은 특정 위험을 강조할 필요가 있을 때에만 제한적으로 사용해야 한다. B-420.1 참조
+
+**B-420.1**:: **위험계선**은 해당 위험이 해당 객체의 심볼만으로는 충분히 두드러지지 않을 때 항해자의 주의를 환기시키기 위해 사용해야 한다. 위험계선은 또한 다수의 위험물이 존재하여 해당 해도 축척에서 안전하게 항해할 수 없는 구역을 구분하는 데에도 사용해야 한다.
+====
+
+
+[[OBSTRN_T1]]
 .Obstruction의 속성 입력
 [%header,cols="a,a,a,a,a"]
 |===
@@ -12,18 +59,18 @@
 
 | 수심을 모름 span:D[Depth Unknown] 
 | K40 
-| 3 span:D[always underwater/submerged] or +
-  4 span:D[covers and uncovers] 
-| 2 span:D[depth unknown] or + 
+| 3 span:D[always underwater/submerged], +
+  4 span:D[covers and uncovers]
+| 2 span:D[depth unknown], +
   _(Undefined)_ +
-  ( 국내지침 : _(undefined)_ 로 입력할 것을 권장 )
+  ※ 국내지침 : _(Undefined)_ 로 입력할 것을 권장
 | /
 
 | 최저수심을 앎 span:D[Least Depth Known]
 | K41
-| 3 span:D[always underwater/submerged] or +
+| 3 span:D[always underwater/submerged], +
   4 span:D[covers and uncovers] 
-| 1 span:D[depth known] or +
+| 1 span:D[depth known], +
   6 span:D[least depth known]
 |
 
@@ -37,22 +84,131 @@
 
 |===
 
-//
-* span:A[category of obstruction] = 6 span:D[fould area] 인 span:F[Obstruction]과 span:F[Foul Ground]는 반드시 구별해야 함
-** span:F[Obstruction]은 항해에 위험한 장애물을 의미 +
-   수면 항해에 지장이 있거나 위험한 구역, 또는 미탐사 장애물이 다수 존재하는 구역을 의미
-** span:F[Foul Ground]는 항해는 가능하나 닻을 내리거나 저수심 활동(ground fishing 등)은 위험한 구역을 의미
+[[OBSTRN_T2]]
+.Obstruction의 default clearance depth 입력 기준
+[%header, cols="a,a,a,a,a,a"]
+|===
+6+^h| 중첩되는 모든 Depth/Dredged Area의 depth range minimum value를 알고 있는 경우 
+^h| category of obstruction ^h| exposition of sounding ^h| height ^h| value of sounding ^h| water level effect ^h| default clearance depth
 
-//REVIEW:: 해당 내용 있는게 나을 지?
-* span:F[Obstruction] 자체가 천해/천소(Shallow water)를 의미하지 않음
-** span:F[Obstruction] 주변의 수심이 얕은 것을 표현하려면 span:F[Depth Area]의 속성 값을 적절히 입력해야 함
 
-//
-* span:F[Obstruction][P]를 입력할 때 span:A[value of sounding] 속성이 주변의 수심과 맞지 않는 경우, span:F[Depth Area] 및 span:F[Depth Contour]를 별도로 입력할 필요는 없음
-** 단, 이 경우 span:F[Obstruction][P]의 span:A[exposition of sounding] 속성을 적절히 입력해야 함
+//1
+^|
+^| /
+^| _(Known)_
+^| /
+| 1 span:D[partly submerged at high water], +
+  2 span:D[always dry]
+^| /
+
+//2
+|
+^| /
+^| _(Unknown)_
+^| /
+| 1 span:D[partly submerged at high water], +
+  2 span:D[always dry], +
+  7 span:D[floating]
+^| /
+
+//3
+|
+|
+^| /
+^| _(Known)_
+| 3 span:D[always underwater/submerged], +
+  4 span:D[covers and uncovers], +
+  5 span:D[awash], + 
+  _(Unknown)_
+^| /
+
+//4
+|
+| 1 span:D[within the range of depth of the surrounding depth area], +
+  3 span:D[deeper than the range of depth of the surrounding depth area]
+^| /
+^| _(Unknown)_
+| 3 span:D[always underwater/submerged] 
+^| **Least Depth**
+
+//5
+| 6 span:D[foul area]
+| 2 span:D[shoaler than the range of depth of the surrounding depth area], +
+  _Empty(null)_
+^| /
+^| _(Unknown)_
+|
+^| 0.1
+
+//6
+|
+| 2 span:D[shoaler than the range of depth of the surrounding depth area], +
+  _Empty(null)_
+^| /
+^| _(Unknown)_
+| 3 span:D[always underwater/submerged]
+^| 0.1
+
+//7
+| ≠ 6 span:D[foul area]
+| 2 span:D[shoaler than the range of depth of the surrounding depth area], +
+  _Empty(null)_
+^| /
+^| _(Unknown)_
+| 5 span:D[awash]
+^| 0
+
+//8
+| ≠ 6 span:D[foul area]
+| 2 span:D[shoaler than the range of depth of the surrounding depth area], +
+  _Empty(null)_
+^| /
+^| _(Unknown)_
+| 4 span:D[covers and uncovers], +
+  _(Unknown)_
+^| -15
+
+6+^h| Unsurveyed Area와 중첩되거나, Depth/Dredged Area의 depth range minimum value를 알 수 없는 경우
+^h| category of obstruction ^h| exposition of sounding ^h| height ^h| value of sounding ^h| water level effect ^h| default clearance depth
+
+//9
+| 6 span:D[foul area]
+|
+^| /
+^| _(Unknown)_
+| 
+^| 0.1
+
+//10
+|
+|
+^| /
+^| _(Unknown)_
+| 3 span:D[always underwater/submerged]
+^| 0.1
+
+//11
+| ≠ 6 span:D[foul area]
+|
+^| /
+^| _(Unknown)_
+| 5 span:D[awash]
+^| 0
+
+//12
+| ≠ 6 span:D[foul area]
+|
+^| /
+^| _(Unknown)_
+| 4 span:D[covers and uncovers], +
+  _(Unknown)_
+^| -15
+
+|===
 
 
 ===== Example
+.Obstruction의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value

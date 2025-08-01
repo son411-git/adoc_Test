@@ -1691,6 +1691,13 @@ ul ul ul ul > li::before {
   margin-left: -1.5em;
 }
 
+.Note{
+  background-color: #f7f7f7 !important;
+  padding: 1.2em;
+  margin: 1em 0 1em 0;
+  color: #424242;
+}
+
 /* 기타; Coverpage 내용 안 보이게 */
 .WordSection11{
   display: none !important;
