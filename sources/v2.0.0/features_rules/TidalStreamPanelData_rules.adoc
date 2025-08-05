@@ -1,6 +1,6 @@
 // tag::TidalStreamPanelData[]
 ===== Remark
-
+[[TidalStreamPanelData_Rule_Remark]]
 //REVIEW: 으악
 span:deletion[으악]
 

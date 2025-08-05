@@ -15,6 +15,9 @@
 include::common/phrase.adoc[tag=AtoN_Relationship]
 
 //
+* 등대표 보는법은 <<ListOfLights,링크>>를 참고
+
+//
 include::common/phrase.adoc[tag=Buoy_Attr_General]
 
 //

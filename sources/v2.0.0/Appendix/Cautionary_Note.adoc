@@ -66,11 +66,11 @@ span:D[출처 : IHO S-32 수로 사전] +
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Overhead Power Cables Along Korean Coast
+|    headline||(S)TE|0,1| Overhead Power Cables
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| There are many overhead power cables with pylons in the Koreaspan:E[n] coast, so mariners should refer to the large scale chart.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 한국 연안 송전선 주의
+|    headline||(S)TE|0,1| 송전선
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 한국연안 부근은 다수의 송전선이 존재하니 항해 시 대축척 해도를 참조 바람.
 |===
@@ -87,11 +87,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |span:E[restriction]|RESTRN|EN|1,*| 8 : entry restricted
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Entry Prohibited (Except the priority give-way vessels) 
+|    headline||(S)TE|0,1| Entry Prohibited
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| No vessel shall navigate within this area except the preferred give-way vessels.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 항행 금지(우선피항선 제외)
+|    headline||(S)TE|0,1| 항행 금지
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서 우선피항선을 제외한 선박은 어떠한 형태로든 항행을 금지함.
 |===
@@ -147,11 +147,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Mines near the coast
+|    headline||(S)TE|0,1| Minefield
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Vessels navigating near the coastal area advised to take caution due to the potential danger from the existence of mines.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 해안 부근 기뢰 주의
+|    headline||(S)TE|0,1| 기뢰구역
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 해안 부근에는 기뢰에 의한 위험성이 있으므로 항해하는 선박은 주의하여야 함.
 |===
@@ -167,11 +167,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Mines in North Korean Waters
+|    headline||(S)TE|0,1| Minefield
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Vessels navigating near the south coast of Dumangang are advised to take caution due to the risk of mines.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 북한 해역 내 기뢰 주의
+|    headline||(S)TE|0,1| 기뢰구역
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 두만강 남쪽 해안 부근은 기뢰에 의한 위험성이 있으므로 항해하는 선박은 주의하여야 함.
 
@@ -180,11 +180,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Mines in Russian Waters
+|    headline||(S)TE|0,1| Minefield
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Vessels are prohibited from anchoring and fishing in the Area No 9 where mines were laid during the World War II. (1939~45)
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 러시아 해역 내 기뢰 주의
+|    headline||(S)TE|0,1| 기뢰구역
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 제9호 러시아 해역은 2차 세계 대전중 기뢰가 부설 되었던 곳으로 선박의 정박 및 어로 활동을 금지함. (1939~45)
 |===
@@ -276,11 +276,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Recommended Navigation along Homigot Route
+|    headline||(S)TE|0,1| Recommended Route
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Vessels with a gross tonnage of 1,000 tons or more departing from or entering Pohang Hang are advised to navigate along the Homigot Recommended Route.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 호미곶 추천항로 항행 권고
+|    headline||(S)TE|0,1| 추천항로
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 포항항에서 입출항하는 총톤수 1,000톤 이상의 선박은 호미곶 추천항로를 따라 항행할 것을 권고함.
 |===
@@ -300,11 +300,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[date start]|DATSTA|(S)TD|1,1| ----0401
 |span:E[restriction]|RESTRN|EN|1,*| 8 : entry restricted
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Traffic Restricted Area
+|    headline||(S)TE|0,1| Entry Restricted
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| During the foggy period from 1 April to 31 July every year, oil and gas tankers chemical product carriers, and sand carriers with a gross tonnage of over 50 are prohibited from navigating in the area.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 통항제한구역
+|    headline||(S)TE|0,1| 통항제한
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 농무기(매년 4.1~7.31) 선박통항 제한 구역: 총톤수 50톤 이상의 유조선, 모든 액화가스 및 케미칼운송 선박, 모래운반선(예부선 포함)
 |===
@@ -364,11 +364,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |span:E[restriction]|RESTRN|EN|1,*| 7 : entry prohibited
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Volcanic Activity Restricted Area Entry Prohibited
+|    headline||(S)TE|0,1| Entry Prohibited (Volcanic Activity)
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Due to the continued threat of volcanic activity, mariners should not enter the exclusion zones marked on the chart.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 화산 활동 구역 진입 금지
+|    headline||(S)TE|0,1| 진입 금지 (화산활동)
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 화산활동의 위험때문에 항해자는 해도에 표시된 특정구역 내로 진입을 금지함.
 |===
@@ -402,11 +402,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Speed Limit Restrictions in Gyeongin Ara Waterway
+|    headline||(S)TE|0,1| Speed Limited Area
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The speed of a vessel should not exceed 10 knots in the Gyeongin Ara Waterway but 8 knots in a curved channel and 6 knots when crossing.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 경인아라뱃길 속력제한
+|    headline||(S)TE|0,1| 속력제한구역
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 경인아라뱃길을 운항하는 선박은 10노트 이하로 항행하여야 함. (단, 만곡부 8노트 이하, 교행 시 6노트 이하)
 |===
@@ -502,11 +502,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[speed limit]||(S)RE|1,1| 12
 |    span:E[speed units]||(S)EN|1,1| 4 : knots
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Navigational Caution in Gadeok Sudo
+|    headline||(S)TE|0,1| Precautionary and Speed Limited Area
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| This area may be congested or ships may cross navigate, so mariners are advised to navigate with caution.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 가덕수도 항행 주의
+|    headline||(S)TE|0,1| 항행주의 및 속력제한구역
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서는 항로를 횡단하는 소형선박이 많으므로 주의하여 항행하여야 함.
 |===
@@ -525,7 +525,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 12
 |    span:E[speed units]||(S)EN|1,1| 4 : knots
-|    name usage||(S)EN|0,1| Dangerous goods carrier
+|    name usage||(S)EN|0,1| Hazardous cargo carrier
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 14
 |    span:E[speed units]||(S)EN|1,1| 4 : knots
@@ -546,7 +546,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 12
 |    span:E[speed units]||(S)EN|1,1| 4 : knots
-|    name usage||(S)EN|0,1| Dangerous goods carrier
+|    name usage||(S)EN|0,1| Hazardous cargo carrier
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 14
 |    span:E[speed units]||(S)EN|1,1| 4 : knots
@@ -626,7 +626,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 15
 |    span:E[speed units]||(S)EN|1,1| 4 : knots
-|    name usage||(S)EN|0,1| High-Speed Craft
+|    name usage||(S)EN|0,1| High-Speed Passenger Vessel
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 10
 |    span:E[speed units]||(S)EN|1,1| 4 : knots
@@ -649,11 +649,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[speed limit]||(S)RE|1,1| 12
 |    span:E[speed units]||(S)EN|1,1| 4 : knots
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Navigational Caution in Gadeok Sudo
+|    headline||(S)TE|0,1| Precautionary and Speed Limited Area
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| This area may be congested or ships may cross navigate, so mariners are advised to navigate with caution.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 가덕수도 항행 주의
+|    headline||(S)TE|0,1| 항행주의 및 속력제한구역
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서는 항로를 횡단하는 소형선박이 많으므로 주의하여 항행하여야 함.
 
@@ -706,11 +706,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |span:E[restriction]|RESTRN|EN|1,*| 8 : entry restricted
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR001010E100.TXT
-|    headline||(S)TE|0,1| Entry Prohibited Line near Gwangan Bridge
+|    headline||(S)TE|0,1| Entry Restricted
 |    span:E[language]||(S)TE|1,1| eng
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR001010K100.TXT
-|    headline||(S)TE|0,1| 광안대교 인근 운항금지선
+|    headline||(S)TE|0,1| 통항제한
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
@@ -726,13 +726,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Navigational Caution from Napdo to Dasado
+|    headline||(S)TE|0,1| Unreliable Navigational Aids
 |    span:E[language]||(S)TE|1,1| eng
-|    text|INFORM/NINFOM|(S)TE|0,1| Due to changes in sand banks and channels, buoys and beacons may not be displayed. Vessel should not navigate the river without the guidance of a pilot. In cases where navigation is hindered by ice,
-lights may be extinguished and buoys removed. Buoys may also be
-removed during a flooded season.
+|    text|INFORM/NINFOM|(S)TE|0,1| Due to changes in sand banks and channels, buoys and beacons may not be displayed. Vessel should not navigate the river without the guidance of a pilot. In cases where navigation is hindered by ice, lights may be extinguished and buoys removed. Buoys may also be removed during a flooded season.
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| 납도에서 다사도 구간 항행 주의
+|    headline||(S)TE|0,1| 불안정한 항로표지
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 사퇴 및 수로의 변동으로 인하여 부표 및 기타표지들은 빈번히 변동되기 쉬우므로 표시하지 않는다. 선박은 도선사의 안내 없이 하천을 항행하지 않아야 한다. 얼음으로 인하여 하천을 항행할 수 없는 경우 등표는 소등하며 부표는 철거된다. 하천이 증수기인 경우에도 역시 부표는 철거된다.
 |===
@@ -749,11 +747,11 @@ removed during a flooded season.
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Moving Sandbars
+|    headline||(S)TE|0,1| Shifting Sandbars
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| There are changes in sandbars due to sand inflow from the Hangang, mariners are advised to take caution in this area.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 사주의 이동 주의
+|    headline||(S)TE|0,1| 사주의 이동
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 부근은 한강에서 유입되는 토사로 인하여 사주의 이동이 있으므로 주의하여야 함.
 |===
@@ -770,11 +768,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near Mukho Hang
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near Mukho Hang are about 3 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 묵호항 안벽 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 묵호항 수심은 안벽으로부터 약 3미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 
@@ -783,11 +781,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near Donghae Hang
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near Donghae Hang are about 3 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 동해항 안벽 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 동해항 수심은 안벽으로부터 약 3미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][S]를 생성
@@ -805,11 +803,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near No 7 Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the No 7 Wharf of Busan Hang are about 5 metres from the quay wall. Mariners are advised to maneuver with caution when approaching this wharf.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 제7부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 부산항 제7부두 수심은 안벽으로부터 약 5미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 
@@ -818,11 +816,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near Uam Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Uam Wharf of Busan Hang are about 5 metres from the quay wall. Mariners are advised to maneuver with caution when approaching this wharf.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 우암부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 부산항 우암부두 수심은 안벽으로부터 약 5미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 
@@ -831,11 +829,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near Singamman Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Singamman Wharf of Busan Hang are about 5 metres from the quay wall. Mariners are advised to maneuver with caution when approaching this wharf.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 신감만부두 안벽 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 부산항 신감만부두 수심은 안벽으로부터 약 5미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 
@@ -844,11 +842,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near Gamman Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Gamman Wharf of Busan Hang are about 5 metres from the quay wall. Mariners are advised to maneuver with caution when approaching this wharf.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 감만부두 안벽 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 부산항 감만부두 수심은 안벽으로부터 약 5미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 
@@ -857,11 +855,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near Jaseongdae Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Jaseongdae Wharf of Busan Hang are about 5 metres from the quay wall. Mariners are advised to maneuver with caution when approaching this wharf.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 자성대부두 안벽 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 부산항 자성대부두 수심은 안벽으로부터 약 5미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 
@@ -870,11 +868,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near Busan Hang International Passenger Terminal
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Busan Hang International Passenger Terminal are about 5 metres from the quay wall. Mariners are advised to maneuver with caution when approaching this wharf.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 신국제여객터미널 안벽 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 부산항 신국제여객터미널 수심은 안벽으로부터 약 5미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 
@@ -883,11 +881,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near No 1 Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the No 1 Wharf of Busan Hang are about 3 metres from the quay wall. Mariners are advised to maneuver with caution when approaching this wharf.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 제1부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 부산항 제1부두 수심은 안벽으로부터 약 3미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 
@@ -896,11 +894,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near No 2 Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the No 2 Wharf of Busan Hang are about 3 metres from the quay wall. Mariners are advised to maneuver with caution when approaching this wharf.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 제2부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 부산항 제2부두 수심은 안벽으로부터 약 3미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 
@@ -919,11 +917,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Marine farms(Unsurveyed Area) and obstruction
+|    headline||(S)TE|0,1| Marine farms(Unsurveyed Area) and obstruction
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Numerous marine farms(Unsurveyed ara) and obstructions exist in the coastal areas, so mariners should approach with caution.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 양식장(미측량구역) 및 장애물 주의
+|    headline||(S)TE|0,1| 양식장(미측량구역) 및 장애물
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 연안해역에서는 양식장(미측량구역) 및 장애물 등이 다수 산재되어 있으므로 접근 시 주의하여야 함.
 5+| span:E[※ 비고] : +
@@ -943,11 +941,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Marine farms and obstruction
+|    headline||(S)TE|0,1| Marine farms and obstruction
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| As numerous marine farms and obstructions may not be displayed on this chart, mariners should approach with caution. Omitted information can be found on large-scale charts.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 양식장 및 장애물 주의
+|    headline||(S)TE|0,1| 양식장 및 장애물
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 해도에서는 양식장 및 장애물 등이 다수 생략되어 있으므로 접근 시 주의하여야 하며, 생략된 정보는 대축척 해도에서 확인할 수 있음.
 5+| span:E[※ 비고] : +
@@ -967,11 +965,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Navigation inside the Saemangeum Seawall
+|    headline||(S)TE|0,1| Risky Navigation Saemangeum
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The inner waters of the Saemangeum Seawall are subject to significant depth fluctuations due to reclamation work and numerous obstructions. In addition, the Sinsi and Garyeok drainage sluice gates are frequently opened to control water levels. Vessels navigationg in the vicinity should exercise caution.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 새만금방조제 내측 항해 주의
+|    headline||(S)TE|0,1| 새만금의 항해위험
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 새만금방조제 내측 해역은 매립공사 등으로 수심 변동이 심하고 항해 장매물이 다수 존재하며, 신시, 가력 배수갑문을 통한 수위조절을 위해 수시로 개방되니 부근 항해 선박은 주의하여야 함.
 |===
@@ -988,11 +986,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Moving Sandbars
+|    headline||(S)TE|0,1| Shifting Sandbars
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths in the vicinity of this area are variable due to drifting sandbars affected by tidal currents, mariners are advised to take caution in this area.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 사주의 이동 주의
+|    headline||(S)TE|0,1| 사주의 이동
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 부근의 수심은 조류의 영향으로 사주가 이동하므로 주의하여야 함.
 |===
@@ -1009,11 +1007,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depth Changes in Pyeongtaek Hang
+|    headline||(S)TE|0,1| Variable Depths
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths of Pyeongtaek Hang are variable due to drifting sand, mariners are advised to take caution in this area.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 평택항 내 수심 변화 주의
+|    headline||(S)TE|0,1| 수심 변동
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 평택항 내에는 토사로 인하여 수심의 변화가 있으므로 주의하여야 함.
 |===
@@ -1030,11 +1028,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depth Changes near Nakdongpo
+|    headline||(S)TE|0,1| Variable Depths
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The sandbars and depths around Nakdongpo are variable due to sand inflow from the Nakdonggang.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 낙동포 부근 수심 변화 주의
+|    headline||(S)TE|0,1| 수심 변동
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 낙동포 부근의 수심과 사주는 낙동강으로부터 유출되는 토사로 인하여 변동이 심함.
 |===
@@ -1051,11 +1049,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depth Changes near Jungangcheontoe
+|    headline||(S)TE|0,1| Variable Depths
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths in the vicinity of Jungangcheontoe are variable due to drifting sandbar, mariners are advised to take caution in this area.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 중앙천퇴 부근 수심 변화 주의
+|    headline||(S)TE|0,1| 수심 변동
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 중앙천퇴 부근 수심은 사주의 이동으로 변동이 있으며 주의하여야 함.
 |===
@@ -1072,13 +1070,13 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Unsurveyed Area of the Quay in Harbour
+|    headline||(S)TE|0,1| Unsurveyed Area
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| As shipbuilding is underway in the unsurveyed area of the quay inside the harbour, mariners are advised to take caution in this area.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 항 내 안벽의 미측구역 주의
+|    headline||(S)TE|0,1| 미측구역
 |    span:E[language]||(S)TE|1,1| kor
-|    text|INFORM/NINFOM|(S)TE|0,1| 중앙천퇴 부근 수심은 사주의 이동으로 변동이 있으며 주의하여야 함.
+|    text|INFORM/NINFOM|(S)TE|0,1| 항 내 안벽의 미측구역은 선박건조가 진행되고 있으므로 주의하여야 합.
 |===
 
 . 험악지의 안전 항해
@@ -1093,12 +1091,12 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Navigate with Care Around Scattered Blocks in Foul Ground
+|    headline||(S)TE|0,1| Foul Ground
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| There are numerous blocks scattered in the Foul (#) ground. While
 navigation poses no significant danger, anchoring and trawling should be avoided.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 험악지의 안전 항해
+|    headline||(S)TE|0,1| 험악지
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| Foul(#) 지역은 다수의 블록이 산재되어 있으므로 통항에는 지장이 없으나
 투묘, 저인망 어업은 피하여야 함.
@@ -1116,12 +1114,12 @@ navigation poses no significant danger, anchoring and trawling should be avoided
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Navigate with Care in Shallow Waters of Foul Ground
+|    headline||(S)TE|0,1| Foul Ground
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| There are numerous blocks scattered in the Foul (#) ground. Vessels
 should navigate with caution in shallow waters.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 얕은 수심 지역의 주의 항해
+|    headline||(S)TE|0,1| 험악지
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| FouI(#) 지역은 다수의 블록이 산재되어 있으므로 수심이 낮은 지역은
 주의하여야 함.
@@ -1135,9 +1133,8 @@ should navigate with caution in shallow waters.
 
 5+^| image:_images/46.svg[]
 5+^h| **입력하지 않음**
-5+| 이 기사의 내용은 전자해도 객체의 설명이라기 보다, 종이해도 보는 법에 가까움
+5+| 이 기사의 내용은 전자해도에서 유효한 설명이 아니며, 종이해도 보는 방법에 대한 안내에 가까움
 |===
-
 
 . 인천항 선거 내 수심 유지 및 통제
 +
@@ -1151,11 +1148,11 @@ should navigate with caution in shallow waters.
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Depth Maintenance and Control in the Incheon Port Basin
+|    headline||(S)TE|0,1| Incheon Port Basin
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The water level in the basin is always maintained between 7 metres and 8.9 metres above Datum Level and the passage of vessels is controlled by the lock gate office.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 인천항 선거 내 수심 유지 및 통제
+|    headline||(S)TE|0,1| 인천항 선거
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 선거 내 수심은 기본수준면상에서 7미터~8.9미터로 유지되고 있으며 선박의 출입은 갑문 관리소에서 통제되고 있음
 
@@ -1171,7 +1168,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Chart datum in the West Sea Lock
+|    headline||(S)TE|0,1| Chart datum : West Sea Lock
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The Datum Level in the inner water of the West Sea Lock is at 1.5 metres above the Mean Sea Level.
 |**information**|INFORM|C|0,*| 
@@ -1191,11 +1188,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Chart Datum in the Ara West Sea Lock
+|    headline||(S)TE|0,1| Chart Datum : Ara West Sea Lock
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The inner Datum Level of the Ara West Sea Lock Gate is 2.7 metres above the Incheon Mean Sea Level
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Guide Signs in the Ara West Sea Lock
+|    headline||(S)TE|0,1| Guide Signs : Ara West Sea Lock
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Notice Board for Navigation in the Gyeongin Ara Waterway Emergency, passage, weather, and information boards, etc, for navigation in the Gyeongin Ara Waterway
 |**information**|INFORM|C|0,*| 
@@ -1256,11 +1253,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near the Coast Guard Wharf 
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Coast Guard Wharf are about 1 metre from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 해경부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 해경부두 수심은 안벽으로부터 약 1미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
@@ -1269,11 +1266,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near the Fisheries Supervision Vessel Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Fisheries Supervision Vessel Wharf are about 1 metre from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 어업지도선부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 어업지도선부두 수심은 안벽으로부터 약 1미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
@@ -1282,11 +1279,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near the Ferry Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Ferry Wharf are about 2 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 여객선부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 여객선부두 수심은 안벽으로부터 약 2미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
@@ -1295,11 +1292,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near the Samhak Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Samhak Wharf are about 2 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 삼학부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 삼학부두 수심은 안벽으로부터 약 2미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
@@ -1308,11 +1305,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near the Daebul Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Daebul Wharf are about 2 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 대불부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 대불부두 수심은 안벽으로부터 약 2미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
@@ -1321,11 +1318,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near the Ssangyong Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Ssangyong Wharf are about 2 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 쌍용부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 쌍용부두 수심은 안벽으로부터 약 2미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
@@ -1334,11 +1331,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near the Yongdang Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Yongdang Wharf are about 2 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 용당부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 용당부두 수심은 안벽으로부터 약 2미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
@@ -1347,11 +1344,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near Hyundai Samho Wharf
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near Hyundai Samho Wharf are about 2 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 현대삼호부두 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 현대삼호부두 수심은 안벽으로부터 약 2미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
@@ -1360,11 +1357,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near New Port
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near New Port are about 2 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 신항 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 신항 수심은 안벽으로부터 약 2미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
@@ -1373,11 +1370,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Caution for Depths Near Nam Hang
+|    headline||(S)TE|0,1| Depths Near Quay Wall
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near Nam Hang are about 2 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 남항 부근 수심 주의
+|    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 남항 수심은 안벽으로부터 약 2미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
@@ -1462,11 +1459,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002030E100.TXT
-|    headline||(S)TE|0,1| Caution for Overhead Power Cable near Youngheung Sudo
+|    headline||(S)TE|0,1| Overhead Power Cables
 |    span:E[language]||(S)TE|1,1| eng
 |**information**|INFORM|C|0,*| 
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002030K100.TXT
-|    headline||(S)TE|0,1| 영흥수도 부근 송전선 주의
+|    headline||(S)TE|0,1| 송전선
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
@@ -1483,11 +1480,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002040E100.TXT
-|    headline||(S)TE|0,1| Navigation Precaution for the Tagubongdo-Haejuseo Section
+|    headline||(S)TE|0,1| Tagubongdo-Haejuseo Section
 |    span:E[language]||(S)TE|1,1| eng
 |**information**|INFORM|C|0,*| 
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002040K100.TXT
-|    headline||(S)TE|0,1| 타구봉도-해주서 구간 항행주의
+|    headline||(S)TE|0,1| 타구봉도-해주서 구간
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
@@ -1504,11 +1501,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002050E100.TXT
-|    headline||(S)TE|0,1| Transit Corridors Designated in Sulu Archipelago and Eastern Sabah Channels
+|    headline||(S)TE|0,1| Transit Corridors
 |    span:E[language]||(S)TE|1,1| eng
 |**information**|INFORM|C|0,*| 
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002050K100.TXT
-|    headline||(S)TE|0,1| 술루 군도 및 사바 동부해협 통항로 지정
+|    headline||(S)TE|0,1| 통항로
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
@@ -1525,10 +1522,10 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002060E100.TXT
-|    headline||(S)TE|0,1| Caution for Dangerous Ground West of Palawan Passage
+|    headline||(S)TE|0,1| DANGEROUS GROUND (10°N 117°E)
 |    span:E[language]||(S)TE|1,1| eng
 |**information**|INFORM|C|0,*| 
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002060K100.TXT
-|    headline||(S)TE|0,1| 팔라완 항로 서쪽 위험구역 주의
+|    headline||(S)TE|0,1| 위험지역 (10°N 117°E)
 |    span:E[language]||(S)TE|1,1| kor
 |===

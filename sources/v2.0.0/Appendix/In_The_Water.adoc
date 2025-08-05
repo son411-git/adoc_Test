@@ -4,7 +4,6 @@
 
 //
 .in The Water의 정의
-
 * 아래 대상 객체는 항해 가능한 수역이나 미측구역에 중첩(OVERLAP)되거나 덮힌(is COVERED BY)경우 span:A[in The Water] = (True)로 입력해야 함
 
 .대상 객체

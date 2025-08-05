@@ -12,6 +12,9 @@ image::../images/InstallationBuoy/InstallationBuoy_image-1.png[width=70%]
 include::common/phrase.adoc[tag=AtoN_Relationship]
 
 //
+* 등대표 보는법은 <<ListOfLights,링크>>를 참고
+
+//
 include::common/phrase.adoc[tag=Buoy_Attr_General]
 
 //
@@ -22,10 +25,6 @@ include::common/phrase.adoc[tag=featureName_for_AtoN]
 
 //
 include::common/phrase.adoc[tag=information]
-
-//
-include::common/phrase.adoc[tag=IALA_Warning]
-
 
 ===== Example
 .Installation Buoy의 인코딩 예시
