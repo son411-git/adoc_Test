@@ -107,23 +107,23 @@
 | span:A[category of light] | S-4 | INT 1 ^|description
 |4 : leading light 
 | B-475.6
-| image:Lights_General_CATLIT_04.png[] 
+| image:../Appendix/Lights_General_CATLIT_04.png[] 
 | 다른 등화와 연결되어 도등 및 지도선을 형성하는 등화
 |5 : aero light 
 | B-476.1
-| image:Lights_General_CATLIT_05.png[] 
+| image:../Appendix/Lights_General_CATLIT_05.png[] 
 | 항공 항법을 위해 설치된 등화, 해상등보다 출력이 높고 해안에서 훨씬 멀리서도 볼 수 있음
 |8 : flood light 
 | B-478.2
-| image:Lights_General_CATLIT_08.png[] 
+| image:../Appendix/Lights_General_CATLIT_08.png[] 
 | 투광등, 구조물이나 구역을 비추는데 사용되는 광폭 등화
 |9 : strip light 
 | B-478.5
-| image:Lights_General_CATLIT_09.png[] 
+| image:../Appendix/Lights_General_CATLIT_09.png[] 
 | 선형등, 광원이 일반적으로 수평인 선형 형태를 가지며, 길이가 수 미터에 달할 수 있는 등화
 |10 : subsidiary light 
 | B-471.8
-| image:Lights_General_CATLIT_10.png[]
+| image:../Appendix/Lights_General_CATLIT_10.png[]
 | 주등대 위 또는 근처에 설치되어 항해에 특별한 용도가 있는 등화 +
 주등대와는 구분하여 입력해야 함
 |11 : spotlight 
@@ -164,11 +164,11 @@ _현재 사용되지 않음 +
 | 나침반을 사용하지 않고도 대략적인 방위를 얻을 수 있는 등화
 |19 : horizontally disposed 
 | B-471.8
-| image:Lights_General_CATLIT_19.png[] 
+| image:../Appendix/Lights_General_CATLIT_19.png[] 
 | 수평으로 배치된 동일한 등질과 위치의 등화군
-|20 : veritically disposed 
+|20 : vertically disposed 
 | B-471.8
-| image:Lights_General_CATLIT_20.png[] 
+| image:../Appendix/Lights_General_CATLIT_20.png[] 
 | 수직으로 배치된 동일한 등질과 위치의 등화군
 4+>| 그림 출처 : S-4 INT3 ed.1 (2023)
 |===

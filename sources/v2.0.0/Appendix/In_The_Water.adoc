@@ -45,7 +45,7 @@
 
 //
 .in The Water 인코딩 예시
-image::inTheWater.png[]
+image::../Appendix/inTheWater.png[]
 
 Case 1 : 간출암 위에 등대를 입력::
 * span:F[Landmark]가 span:F[Depth Area] 위에 있으므로 span:A[in The Water] = (True)

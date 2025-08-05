@@ -13,7 +13,7 @@
 ."대한민국 영해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/1.svg[]
+// 5+^| image:Cautionary_Notes/1.svg[]
 5+^h| Territorial Sea Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -34,7 +34,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."유조선통항금지해역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/2.svg[]
+// 5+^| image:Cautionary_Notes/2.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -60,7 +60,7 @@ span:D[출처 : IHO S-32 수로 사전] +
 ."연안 부근 송전선 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/3.svg[]
+// 5+^| image:Cautionary_Notes/3.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -80,7 +80,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."항행 금지(우선피항선 제외)"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/4.svg[]
+// 5+^| image:Cautionary_Notes/4.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -101,7 +101,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."해상사격훈련구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/5.svg[]
+// 5+^| image:Cautionary_Notes/5.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -121,7 +121,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."풍도 해역의 항해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/6.svg[]
+// 5+^| image:Cautionary_Notes/6.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -141,7 +141,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."해안 부근 기뢰 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/7.svg[]
+// 5+^| image:Cautionary_Notes/7.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -161,7 +161,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."북한 및 러시아 해역 내 기뢰 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/8.svg[]
+// 5+^| image:Cautionary_Notes/8.svg[]
 5+^h| Caution Area (두만강 남쪽 해안 부근에 입력)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -194,7 +194,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."주의구역 A"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/9.svg[]
+// 5+^| image:Cautionary_Notes/9.svg[]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -214,7 +214,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."주의구역 B"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/10.svg[]
+// 5+^| image:Cautionary_Notes/10.svg[]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -234,7 +234,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."주의구역 C"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/11.svg[]
+// 5+^| image:Cautionary_Notes/11.svg[]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -254,7 +254,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."호미곶 추천항로"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/12.svg[]
+// 5+^| image:Cautionary_Notes/12.svg[]
 5+^h| Recommended Route Centreline
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -290,7 +290,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."통항제한구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/13.svg[]
+// 5+^| image:Cautionary_Notes/13.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -314,7 +314,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."특정금지구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/14.svg[]
+// 5+^| image:Cautionary_Notes/14.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -335,7 +335,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."국지적 지자기 이상 현상"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/15.svg[]
+// 5+^| image:Cautionary_Notes/15.svg[]
 5+^h| Local Magnetic Anomaly
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -357,7 +357,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."화산 활동 구역 진입 금지"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/16.svg[]
+// 5+^| image:Cautionary_Notes/16.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -378,7 +378,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."경인아라뱃길 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/17.svg[]
+// 5+^| image:Cautionary_Notes/17.svg[]
 5+^h| Restricted Area (직선구간)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -416,7 +416,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."마산항 속력 제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/18.svg[]
+// 5+^| image:Cautionary_Notes/18.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -432,7 +432,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."부산항 속력 제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/19.svg[]
+// 5+^| image:Cautionary_Notes/19.svg[]
 5+^h| Restricted Area (북내항)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -516,7 +516,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."속력제한구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/20.svg[]
+// 5+^| image:Cautionary_Notes/20.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -537,7 +537,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."광양항로 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/21.svg[]
+// 5+^| image:Cautionary_Notes/21.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -558,7 +558,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."제1구역 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/22.svg[]
+// 5+^| image:Cautionary_Notes/22.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -574,7 +574,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."구역별 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/23.svg[]
+// 5+^| image:Cautionary_Notes/23.svg[]
 5+^h| Restricted Area (제1구역)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -617,7 +617,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."고속여객선 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:_images/24.svg[]
+// 5+^| image:Cautionary_Notes/24.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -639,7 +639,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/25.svg[]
+// 5+^| image:Cautionary_Notes/25.svg[]
 5+^h| Precautionary Area (가덕수도)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -682,11 +682,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/26.svg[]
-5+^| image:_images/27.svg[]
-5+^| image:_images/28.svg[]
-5+^| image:_images/29.svg[]
-5+^| image:_images/30.svg[]
+// 5+^| image:Cautionary_Notes/26.svg[]
+// 5+^| image:Cautionary_Notes/27.svg[]
+// 5+^| image:Cautionary_Notes/28.svg[]
+// 5+^| image:Cautionary_Notes/29.svg[]
+// 5+^| image:Cautionary_Notes/30.svg[]
 5+^h| Tidal Stream Panel Data
 
 5+^| 조류 기사는 span:F[Tidal Stream Panel Data]의 입력지침을 <<TidalStreamPanelData_Rule_Remark,참고>>
@@ -698,7 +698,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/31.svg[]
+// 5+^| image:Cautionary_Notes/31.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -720,7 +720,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/32.svg[]
+// 5+^| image:Cautionary_Notes/32.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -741,7 +741,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/33.svg[]
+// 5+^| image:Cautionary_Notes/33.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -762,7 +762,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/34.svg[]
+// 5+^| image:Cautionary_Notes/34.svg[]
 5+^h| Caution Area (묵호항)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -797,7 +797,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/35.svg[]
+// 5+^| image:Cautionary_Notes/35.svg[]
 5+^h| Caution Area (제7부두)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -911,7 +911,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/36.svg[]
+// 5+^| image:Cautionary_Notes/36.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -935,7 +935,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/37.svg[]
+// 5+^| image:Cautionary_Notes/37.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -959,7 +959,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/38.svg[]
+// 5+^| image:Cautionary_Notes/38.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -980,7 +980,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/39.svg[]
+// 5+^| image:Cautionary_Notes/39.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1001,7 +1001,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/40.svg[]
+// 5+^| image:Cautionary_Notes/40.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1022,7 +1022,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/41.svg[]
+// 5+^| image:Cautionary_Notes/41.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1043,7 +1043,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/42.svg[]
+// 5+^| image:Cautionary_Notes/42.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1064,7 +1064,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/43.svg[]
+// 5+^| image:Cautionary_Notes/43.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1085,7 +1085,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/44.svg[]
+// 5+^| image:Cautionary_Notes/44.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1108,7 +1108,7 @@ navigation poses no significant danger, anchoring and trawling should be avoided
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/45.svg[]
+// 5+^| image:Cautionary_Notes/45.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1131,7 +1131,7 @@ should navigate with caution in shallow waters.
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/46.svg[]
+// 5+^| image:Cautionary_Notes/46.svg[]
 5+^h| **입력하지 않음**
 5+| 이 기사의 내용은 전자해도에서 유효한 설명이 아니며, 종이해도 보는 방법에 대한 안내에 가까움
 |===
@@ -1142,7 +1142,7 @@ should navigate with caution in shallow waters.
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/47.svg[]
+// 5+^| image:Cautionary_Notes/47.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1162,7 +1162,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/48.svg[]
+// 5+^| image:Cautionary_Notes/48.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1182,7 +1182,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/49.svg[]
+// 5+^| image:Cautionary_Notes/49.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1211,7 +1211,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/50.svg[]
+// 5+^| image:Cautionary_Notes/50.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1233,7 +1233,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/51.svg[]
+// 5+^| image:Cautionary_Notes/51.svg[]
 5+^h| Tidal Stream Panel Data
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1247,7 +1247,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/52.svg[]
+// 5+^| image:Cautionary_Notes/52.svg[]
 5+^h| Caution Area (해경부두)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1387,7 +1387,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:_images/53.svg[]
+// 5+^| image:Cautionary_Notes/53.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1410,7 +1410,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:_images/00.svg[]
+// 5+^| image:Cautionary_Notes/00.svg[]
 5+^h| Archipelagic Sea Lane
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1431,7 +1431,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:_images/00.svg[]
+// 5+^| image:Cautionary_Notes/00.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1452,7 +1452,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:_images/00.svg[]
+// 5+^| image:Cautionary_Notes/00.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1473,7 +1473,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:_images/00.svg[]
+// 5+^| image:Cautionary_Notes/00.svg[]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1494,7 +1494,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:_images/00.svg[]
+// 5+^| image:Cautionary_Notes/00.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1515,7 +1515,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:_images/00.svg[]
+// 5+^| image:Cautionary_Notes/00.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
