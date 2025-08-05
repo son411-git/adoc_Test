@@ -1,0 +1,98 @@
+[[Landmark_Structure_Encoding_Combinations]]
+
+= 건축물 및 구조물의 입력 방법
+
+* 다음 표에서 기호 "/"는 해당 객체에 대해 해당 속성이 존재하지 않음을 의미함
+* 공란은 제작자가 해당 속성에 대해 관련 값을 선택할 수 있음을 의미함 
+* 이 표는 가장 일반적인 입력 예시를 포함하고 있으며, 다른 조합도 가능함
+
+.건축물 및 구조물의 속성 입력 조합
+[cols="30,10,10,10,10,10,10,10"]
+|===
+|Feature |INT1 |Feature class |function |category of landmark |product |category of silo/tank |Remark
+
+|행정기관(Administrative) | |Building |18 |/ |/ |/ |
+|은행(Bank office) | |Building |13 |/ |/ |/ |
+|경계 표시(Boundary mark) | |Landmark | |23 |/ |/ |
+|span:D[절(Buddhist temple)] |E16 |Building |25 |/ |/ |/ |✝
+|버스 정류장(Bus station) | |Building |42 |/ |/ |/ |
+|돌무더기(Cairn) |Q100 |Landmark |/ |1 |/ |/ |
+|묘지(Cemetery) |E19 |Landmark | |2 |/ |/ |
+|span:D[예배당(Chapel)] |E11 |Building |21 |/ |/ |/ |✝
+|굴뚝(Chimney) |E22 |Landmark | |3 |/ |/ |
+|span:D[교회(Church)] |E10.1 |Building |20 |/ |/ |/ |✝
+|span:D[교회 돔 또는 큐폴라(Church dome, Cupola)] |E10.4 |Landmark |20 |15 |/ |/ |✝
+|span:D[교회 첨탑(Church spire)] |E10.3 |Landmark |20 |20 |/ |/ |✝
+|span:D[교회 탑(Church tower)] |E10.2 |Landmark |20 |17 |/ |/ |✝
+|시계탑(Clock tower) | |Landmark |38 |17 |/ |/ |
+|기둥(Column) |E24 |Landmark |/ |10 |/ |/ |
+|통신 마스트(Communication mast) | |Landmark |29 |7 |/ |/ |
+|통신탑(Communication tower) | |Landmark |29 |17 |/ |/ |
+|관제탑(Control tower) | |Landmark |39 |17 |/ |/ |
+|냉각탑(Cooling tower) | |Landmark |35 |17 |/ |/ |
+|span:D[십자가, 갈보리(Cross, Calvary)] |E12 |Landmark | |14 |/ |/ |✝
+|세관(Customs office) |F61 |Building |3 |/ |/ |/ |
+|위성 안테나(Dish aerial) |E31 |Landmark | |4 |/ |/ |
+|건물 일부의 돔 또는 큐폴라(Dome or cupola, part of a building) | |Landmark | |15 |/ |/ |
+|학교(Educational facility) | |Building |19 |/ |/ |/ |
+|공장(Factory) | |Building |16 |/ |/ |/ |
+|깃대(Flagstaff, Flagpole) |E27 |Landmark | |5 |/ |/ |
+|배기가스연소탑(Flare stack on land) |E23 |Landmark | |6 |/ |/ |
+|곡물 창고(Grain elevator) | |Silo/Tank |/ |/ |22 |3 |
+|항만 사무소(Harbour-masters office) |F60 |Building |2 |/ |/ |/ |
+|지역 관리 본부(Headquarters for district control) | |Building |14 |/ |/ |/ |
+|보건소(Health office) |F62.1 |Building |4 |/ |/ |/ |
+|병원(Hospital) |F62.2 |Building |5 |/ |/ |/ |
+|호텔(Hotel) |D6 |Building |7 |/ |/ |/ |
+|집(House, Building) |D5 |Building | |/ |/ |/ |
+|큰 바위(Large rock or boulder on land) | |Landmark |/ |21 |/ |/ |
+|탑 등대(Light house - tower) |P1 |Landmark |33 |17 |/ |/ |
+|기타 모양 등대(Light house - other shapes) |P1 |Building |33 |/ |/ |/ |
+|전망대(Lookout station in general) | |Building |28 |/ |/ |/ |
+|전망탑(Lookout tower) | |Landmark |28 |17 |/ |/ |
+|span:D[이슬람 성인 무덤(Marabout)] |E18 |Building |27 |/ |/ |/ |✝
+|일반 마스트(Mast in general) | |Landmark | |7 |/ |/ |
+|기념판(Memorial plaque) | |Landmark | |11 |/ |/ |
+|무선 통신탑(Microwave tower) | |Landmark |34 |17 |/ |/ |
+|span:D[모스크 첨탑(Minaret)] |E17 |Landmark |26 |20 |/ |/ |✝
+|기념비(Monument) |E24 |Landmark | |9 |/ |/ |
+|계류 마스트(Mooring mast) | |Landmark |40 |7 |/ |/ |
+|span:D[모스크(Mosque)] |E17 |Building |26 |/ |/ |/ |✝
+|오벨리스크(Obelisk) |E24 |Landmark |/ |12 |/ |/ |
+|관측탑(Observation tower) | |Landmark |36 |17 |/ |/ |
+|대관람차(Observation wheel) | |Landmark |/ |24 |/ |/ |
+|span:D[불탑(Pagoda)] |E14 |Building |23 |/ |/ |/ |✝
+|항해사 전망대(Pilot lookout) |T2 |Building |12 |/ |/ |/ |
+|항해사 사무소(Pilot office) |T3 |Building |11 |/ |/ |/ |
+|경찰서(Police station) | |Building |9 |/ |/ |/ |
+|우체국(Post office) |F63 |Building |6 |/ |/ |/ |
+|발전소(Power station) | |Building |17 |/ |/ |/ |
+|레이더 돔(Radar dome) |E30.4 |Landmark |32 |15 |/ |/ |
+|레이더 마스트(Radar mast) |E30.1 |Landmark |32 |7 |/ |/ |
+|레이더 스캐너(Radar scanner) |E30.3 |Landmark | |16 |/ |/ |
+|레이더 탑(Radar tower) |E30.2 |Landmark |32 |17 |/ |/ |
+|라디오 마스트(Radio mast) |E28 |Landmark |31 |7 |/ |/ |
+|라디오 탑(Radio tower) |E29 |Landmark |31 |17 |/ |/ |
+|기차역(Railway station) |D13 |Building |8 |/ |/ |/ |
+|span:D[신사(Shinto shrine)] |E15 |Building |24 |/ |/ |/ |✝
+|저장탑(Silo) |E33 |Silo/Tank |/ |/ | |1 |
+|건물 일부의 첨탑(Spire, part of a building) | |Landmark | |20 |/ |/ |
+|경기장(Stadium) | |Building |41 |/ |/ |/ |
+|조각상(Statue) |E24 |Landmark | |13 |/ |/ |
+|탱크(Tank) |E32 |Silo/Tank |/ |/ | |2 |
+|텔레비전 마스트(Television mast) |E28 |Landmark |30 |7 |/ |/ |
+|텔레비전 탑(Television tower) |E29 |Landmark |30 |17 |/ |/ |
+|span:D[사원(Temple)] |E13 |Building |22 |/ |/ |/ |✝
+|타임볼 탑(Timeball tower) | |Landmark |37 |17 |/ |/ |
+|span:D[토리이(Torii)] | |Landmark |/ |25 |/ |/ |✝
+|탑(Tower) |E20 |Landmark | |17 |/ |/ |
+|건물 일부의 탑(Tower, part of a building) | |Landmark | |17 |/ |/ |
+|창고(Transit shed, Warehouse) |F51 |Building |15 |/ |/ |/ |
+|삼각점(Triangulation mark) | |Landmark | |22 |/ |/ |
+|수탑(Water tower) |E21 |Silo/Tank |/ |/ |3 or 8 |4 |
+|수상 경찰서(Water-police station) | |Building |10 |/ |/ |/ |
+|풍차(Windmill) |E25 |Landmark | |18 |/ |/ |
+|풍력 발전기(Windmotor) |E26.1 L5.1 |Wind Turbine |/ |/ |/ |/ |
+8+| Note: ✝ 마크는 종교 관련 건축물, 구조물이며 국내 지침에 따라 입력하지 않음
+|===
+

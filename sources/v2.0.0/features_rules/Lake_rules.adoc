@@ -1,24 +1,45 @@
 // tag::Lake[]
 ===== Remark
 
-- 호수는 항해 불가능 지역으로 #F "Land area"와 중첩
-- 수심이 표기된 호수 즉, 항해 가능한 지역이면 #F "Depth area"로 입력하며, #F "Dredged Area"으로 표시해야 하는 경우, 경계는 #F "Coastline", #F "Shoreline Construction" 해안선 입력(이 경우 호수의 명칭은 #F "Sea Area/Named Water Area" 피처를 이용해서 인코딩하고, #F "Lake" 피처는 입력하지 않음)
-- 전자해도에는 규모가 큰 호수만 입력(시화호 등)
-- S-57 전자해도에서 호수명이 #A "INFORM", #A "NINFOM"에 입력되어 있다면 #A "Feature name" 으로 수정필요
+* 편집 축척에서 호수가 항해 가능하다면, span:F[Depth Area], span:F[Dredged Area] 또는 span:F[Unsurveyed Area]를 사용해 입력하고, 경계는 span:F [Coastline] 또는 span:F[Shoreline Construction]를 사용해 입력하며,
+** 이 경우 호수는 span:F[Lake]로 입력하지 않아야 함하며, 명칭을 입력해야 하는 경우, span:F[Sea Area/Named Water Area]를 사용하며, span:A[category of sea area] = 52 (lake)로 해야 함
+
+//
+* 편집 축척에서 호수가 항해 불가능하다면, span:F[Lake]를 사용해 입력하고, span:F[Land Area]로 덮어야 함. 
+include::common/phrase.adoc[tag=featureName]
+
+//
+* span:F[Land Area] 위에 항해 불가능한 span:F[Lake]가 입력되어 있고, 그 내부에 섬을 입력해야 하는 경우
+** 섬이 편집 축척에서 면(surface) 형태인 경우:
+*** Lake에 "구멍(hole)"을 생성.
+** 섬이 편집 축척에서 점(point) 형태인 경우:
+*** span:F[Land Area][P]로 입력.
+** 기타 주의사항:
+*** span:F[Land Area][S] 위에 span:F[Land Area][S]를 입력하지 않아야 함 (중복 입력 금지).
+
+//
+* span:F[Unsurveyed Area] 위에 항해 불가능한 span:F[Lake]가 입력되어 있고, 그 내부에 섬을 입력해야 하는 경우
+** 섬이 편집 축척에서 면(surface) 형태인 경우:
+*** span:F[Unsurveyed Area]와 span:F[Lake]에 "구멍(hole)"을 생성한 후, span:F[Land Area][S]를 입력.
+** 섬이 편집 축척에서 점(point) 형태인 경우:
+*** span:F[Land Area][P]로 입력.
+** 기타 주의사항:
+*** span:F[Unsurveyed Area]나 span:F[Land Area][S] 위에 span:F[Land Area][S]를 입력하지 않아야 함 (중복 입력 금지).
 
 ===== Example
+.Lake의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 1: default name display
-|    Name Usage||(S)EN|0,1| Sihwaho
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 2 : alternate name display
-|    Name Usage||(S)EN|0,1| 시화호
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Sihwaho
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 시화호
+|    name usage||(S)EN|0,1| 2 : alternate name display
 |===
 
 ---

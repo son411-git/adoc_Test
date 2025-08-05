@@ -1,13 +1,63 @@
 // tag::LightFogDetector[]
 ===== Remark
 
-- 등화의 분류에 따라 #F "Light Fog Detector" (안개탐지등), #F "Light Air Obstruction" (항공장애등), #F "Light Sectored" (분호등화), #F "Light All Around" (일반등화) 피처로 구분하여 입력
+* 안개로 인한 가시성 조건을 자동으로 감지하여 음향 신호를 켜거나 끄는 데 사용되는 등화는 span:F[Light Fog Detector]로 입력
+
+//
+include::common/phrase.adoc[tag=AtoN_Relationship]
+
+//
+* 등대표 보는법은 <<ListOfLights,링크>>를 참고
+
+//
+include::common/phrase.adoc[tag=Buoy_Attr_General]
+
+//
+include::common/phrase.adoc[tag=colourPattern]
+
+//
+include::common/phrase.adoc[tag=featureName_for_AtoN]
+
+//
+include::common/phrase.adoc[tag=information]
 
 ===== Example
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|Colour|COLOUR|EN|0,*| 3: red
+
+|colour|COLOUR|EN|0,*|
+|**feature name**||C|0,*
+|    span:E[language]||(S)TE|1,1
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1
+|    name usage||(S)EN|0,1
+|**fixed date range**||C|0,1
+|    date end|DATEND|(S)TD|0,1
+|    date start|DATSTA|(S)TD|0,1
+|flare bearing||IN|0,1
+|height|HEIGHT|RE|0,1
+|interoperability identifier||URN|0,1
+|**periodic date range**||C|0,*
+|    span:E[date end]|DATEND|(S)TD|1,1
+|    span:E[date start]|DATSTA|(S)TD|1,1
+|**rhythm of light**||C|0,1
+|    span:E[light characteristic]|LITCHR|(S)EN|1,1
+|    signal group|SIGGRP|(S)TE|0,*
+|    signal period|SIGPER|(S)RE|0,1
+|**    signal sequence**|SIGSEQ|(S)C|0,*
+|        span:E[signal duration]||(S)RE|1,1
+|        span:E[signal status]||(S)EN|1,1
+|signal generation|SIGGEN|EN|0,1
+|status|STATUS|EN|0,*
+|vertical datum|VERDAT|EN|0,1
+|vertical length|VERLEN|RE|0,1
+|scale minimum|SCAMIN|IN|0,1
+|**information**|INFORM|C|0,*
+|    file locator||(S)TE|0,1
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
+|    headline||(S)TE|0,1
+|    span:E[language]||(S)TE|1,1
+|    text|INFORM/NINFOM|(S)TE|0,1
 |===
 
 ---

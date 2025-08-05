@@ -1,33 +1,38 @@
 // tag::LandElevation[]
 ===== Remark
 
-- 육상의 높이를 나타내며 표고 정점(Point type), 등고선(Line type)으로 표현
-- 육지고도 #F "Land elevation"는 #F "Land Area"와 중첩되거나 아래 표의 속성을 가지는 침선 피처와 중첩 가능
-[cols="1,4" options="header"]
-|===
-|속성피처|value
-|water level effect| 1: partly suvmerged at high water(만조 때 일부 잠김) +
- 2: always dry(항상 건조) 
-|===
-- 개략 등고선이나 표고일 경우는 no Geometry인 #F "Spatial Quality" 피처를 추가로 입력하고, 그 속성은 #A "Quality of horizontal measurement" = 4(근사값)로 입력하며, 관련된 Feature를 #R "Spatial Association" 관계 설정. +
-  ※ Relation 페이지 참조
-- S-57 전자해도에서 표고 명칭이 #A "INFORM", #A "NINFOM"에 입력되어 있을 경우 #A "Feature name"으로 수정필요
+* span:F[Land Elevation]로 지형을 표현하는 경우  
+** span:F[Land Elevation][P]는 언덕, 산, 절벽의 정상에 한정해야 함
+
+//
+* span:F[Land Elevation][P]는 반드시 다음 조건 중 하나를 만족해야 함:
+** span:F[Land Area][S]에 의해 덮여 있어야 함
+** span:F[Wreck][S] 중에서 span:A[water level effect] = (1 : partly submerged at high water 또는 2 : always dry)인 객체에 의해 덮여 있어야 함
+** span:F[Land Area][P]와 중첩되어야 함
+** span:F[Wreck][P] 중에서 span:A[water level effect]가  span:A[water level effect] = 1 : partly submerged at high water 또는 2 : always dry)인 객체와 중첩되어야 함
+
+//
+* 국내 기준
+** span:F[Land Elevation][C]는 입력하지 않음
+** 삼각점은 span:F[Landmark][P] 중에서 span:A[category of landmark] = (22 : triangulation mark)가 아닌 span:F[Land Elevation][P]로 입력
 
 ===== Example
+.Land Elevation의 인코팅 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Elevation|ELEVAT|RE|1,1| 183
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Gyeryongsan 
-|    Name Usage||(S)EN|0,1| 1: default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 계룡산
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
+|span:E[elevation]|ELEVAT|RE|1,1| 183
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gyeryongsan 
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 계룡산
+|    name usage||(S)EN|0,1| 2 : alternate name display
 |===
 
 ---
+
 // end::LandElevation[]

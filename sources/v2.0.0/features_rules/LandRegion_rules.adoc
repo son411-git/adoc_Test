@@ -1,40 +1,45 @@
 // tag::LandRegion[]
 ===== Remark
 
-- #F "Land region" 피처는 육상의 자연지형을 표현하거나 지명을 표기할 때 사용
-  ※ 해역에서 비슷한 용도로 사용되는 피처 : #F "Sea Area/Named Water Area" 
-- #F "Land Area" 피처에 #A "Feature name"이 있다면 동일한 정보의 #F "Land Region" 피처는 입력하지 않아야 함 +
-   (단독으로 존재하는 섬 이름 등은 #F "Land Area" 피처에 입력)
+* 육지의 자연 경관이나 지리적 이름을 입력할 때는 span:F[Land Region]으로 입력
+* 바다의 경우 span:F[Sea Area/Named Water Area]를 사용하여 입력
+* 모래 언덕, 언덕, 절벽 등은 필요에 따라 span:F[Sloping Ground] 또는 span:F[Slope Topline]를 사용하여 입력
+* span:F[Land Region][S]은 가능하면 다른 객체(예: span:F[Coastline])가 사용하는 가장자리(edge)로 경계를 설정하는 것을 권장함. 
+* span:A[category of land region] 속성에 특정 값이 없는 경우, 곶·갑(Cape), 끝·점(Point), 반도(Peninsula) 등의 일반 용어를 span:A[feature name] 포함할 수 있음. 단, 해당 이름이 하위 span:F[Land Area]에 이미 채워져 있는 경우 span:F[Land Region]은 입력하지 않아야 함
 
-////
-[cols="1,1"]
-|===
-| image:../images/LandRegion/LandRegion_image-1.png[width=200] +
-지명 : 육지지역에 지명, ‘곶’, ‘지점’, ‘반도’를 표현할 때 사용 #A "Category of land region" = undefined
-| image:../images/LandRegion/LandRegion_image-2.png[width=200] +
-습지 : #A "Category of land region" = 2로 표현
-| image:../images/LandRegion/LandRegion_image-3.png[width=200] +
-염전 : #A "Category of land region" = 15로 표현
-| image:../images/LandRegion/LandRegion_image-4.png[width=200] +
-용암류 : #A "Category of land region" = 14로 표현
-|===
-////
+//
+* 해안선 뒤쪽의 습지를 입력하는 경우, span:A[category of land region] = (2 : marsh)로 입력
+* 습지 지역의 바다 쪽 경계가 해안선과 일치하는 경우, 해당 경계는 span:F[coastline]에 span:A[category of coastline] = (8 :marshy shore)로 입력
+
+//
+* 염전을 입력해야 하는 경우, span:A[category of land region = (15 : salt pan)로 입력해야함
+** 염전은 span:F[Land Area] 위에 입력해야 함
+** 염전의 바다 쪽 경계가 해안선과 일치하는 경우, 해당 경계는 Coastline 피처를 사용하여 인코딩해야 하며, 속성 span:F[coastline]에 span:A[category of coastline] = (2 : flat coast)로 입력
+
+//
 ===== Example
+.지명의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Land Region|CATLND|EN|0,*| 15: salt pans
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Salt pans
-|    Name Usage||(S)EN|0,1| 1: default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 염전 
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|Water Level Effect|WATLEV|EN|0,1| 2: always dry 
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Busan
+|    name usage||(S)EN|0,1| 1 : default name display
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산
+|    name usage||(S)EN|0,1| 2 : alternate name display
 |===
 
+.염전의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|category of land region|CATLND|EN|0,*| 15 : salt pan
+|===
 ---
+
 // end::LandRegion[]

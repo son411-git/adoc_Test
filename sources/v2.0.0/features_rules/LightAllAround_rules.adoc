@@ -1,51 +1,60 @@
 // tag::LightAllAround[]
 ===== Remark
 
-- 등화의 분류에 따라 #F "Light Fog Detector" (안개탐지등), #F "Light Air Obstruction" (항공장애등), #F "Light Sectored" (분호등화), #F "Light All Around" (일반등화) 피처로 구분하여 입력
-- #F "Light All Around" 피처 중 주요등대*는 속성 #A "Major light" = true로 설정
-   * 주요등대는 관할기관이 지정한 “광달거리 15M 이상”의 “백색” 등화
-- 등화와 함께 사용되는 구조물의 명칭은 구조물로 사용되는 피처의 #A "Feature Name"에 입력  
-   (교량등의 경우 #F "Light All Around"의 #A "Feature name"에 입력)
-- 등화는 단독으로 사용될 수 없으며, 함께 사용되는 구조물과 #R "Structure/Equipment" 관계 설정 +
-   ※ Relation 페이지 참조
-- #A "Feature Name"에는 항로표지의 관리번호(등대표번호) 입력
-- 관리번호(등대표번호)입력 시, 국내번호는 관리번호 앞에 KR, 국제번호는 M을 덧붙임(KR3259.2, M4187.45)
-- S-57에서 #A "DATEND"가 속성정보로 입력되어 날짜가 지난 경우 속성 삭제 추천
-  (#A "DATEND"는 객체가 존재하는 마지막 날짜를 표기하는 것으로 이후에는 삭제됨을 의미함)
-- 각 속성입력에 있어 정보가 충분하지 않을 경우 Multiplicity는 (unknown)으로 입력가능 
+* 분호나 중시선으로 특정 방위를 갖는 등화는 <<Light Sectored,span:F[Light Sectored]>>로 입력해야 함
+** 단일 또는 다중 분호(Sector)가 있는 등화, 장애물에 의한 분호가 있는 등화, 도등, 중시선 상의 등화, 지향등, 물결무늬 등화
 
+* 안개 감지 등화 및 항공 장애물 등화는 <<Light Fog Detector,span:F[Light Fog Detector]>> 및 <<Light Air Obstruction,span:F[Light Air Obstruction]]>>으로 입력해야 함
+
+//
+:ObjectName: span:F[Light Air Obstruction]을
+:Relation: span:R[Structure/Equipment]
+:linkTo: Structure_Equipment
+include::common/phrase.adoc[tag=Refer]
+
+//
+* 주요 등화는 속성 span:A[major light] = (true)로 입력
+** 주요 등화(Major lights): 육지 발견(landfall), 외해의 위험, 선박 항로와 항만접근로 표시 또는 해양환경의 보호 목적의 항해적으로 중요한 등대 span:D[출처: S-4 B470.2, IALA recommendation O-130 Edition 2 ‘Navigational significance – Category I’]
+** span:A[major light] = (true)로 등화가 "주요" 등화임을 나타내는 것은 ECDIS에서 등화가 표시되는 방식에 영향을 미치며, 등화의 법적 또는 공식적 중요도 분류에 기반하지 않음
+** 일반적으로 주요 등화는 바다에서 사용되며, 통상 15해리 이상의 범위를 가지거나 항구 외곽 접근로에 사용되는 등화로 간주됨.
+** 국내 기준 : 광달거리 **15해리 이상**의 **백색** 등화를 **주요 등화**로 지정하고 있음
+
+//
+
+* 등화의 이름은 매우 중요하며, 등화의 이름이 등화가 위치한 명명된 객체(예: 등대, 부표)와 명백히 동일한 경우, 등화의 이름을 반복 입력할 필요는 없음
+
+include::common/phrase.adoc[tag=featureName_for_AtoN]
+
+//
+* 등화 방식(조명 기술)의 세부 사항(예: 네온)을 입력해야 하는 경우, span:A[information]을 사용해야 함
+
+* span:A[light charateristic] = (11 : spotlight)을 입력하는 경우, 그 목적은 span:A[information]로 입력해야 함
+
+* span:A[vertical datum]은 span:A[height]에만 적용되며, 이 값은 span:F[Vertical Datum of Data]에 입력된 span:A[vertical datum] 값과 다를 경우에만 입력해야 함
+
+*  span:A[vertical datum] = (13 : low water)은 내륙 수로에만 적용되며, 조석이 적용되는 수역에서 등화 높이의 기준 데이터를 나타내기 위해 사용해서는 안 됨
+
+//
+* 등화에 관한 일반적인 사항은 <<Lights_General,링크>>를 참고
+
+//
+* 등대표 보는법은 <<ListOfLights,링크>>를 참고
+
+//
 ===== Example
+.Light All Around의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Light|CATLIT|EN|0,*| 4: leading light
-|#essential Colour|COLOUR|EN|1,*| 4: green
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Haedogyo C
-|    Name Usage||(S)EN|0,1|1: default name display 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 해도교 교량 중앙등
-|    Name Usage||(S)EN|0,1|2 : alternate name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| M4337.2
-|    Name Usage||(S)EN|0,1|1:default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1|kor 
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 2161.5
-|    Name Usage||(S)EN|0,1| 2 : alternate name display 
-|Height|HEIGHT|RE|0,1| 12m
-|Light Visibility|LITVIS|EN|0,1| 2: low intensity 
-|Major Light||BO|0,1| true  
-|**#essential Rhythm of Light**||C|1,1| 
-|    #essential Light Characteristic|LITCHR|(S)EN|1,1|2: flashing 
-|    Signal Group|SIGGRP|(S)TE|0,*| (1)
-|    Signal Period|SIGPER|(S)RE|0,1| 4
-|Status|STATUS|EN|0,*| 7:temporary
-|Value of Nominal Range|VALNMR|RE|0,1| 15
+|span:E[colour]|COLOUR|EN|1,*| 1 : whihe
+|height|HEIGHT|RE|0,1| 155
+|major light||BO|0,1| True
+|**span:E[rhythm of light]**||C|1,1|
+|    span:E[light characteristic]|LITCHR|(S)EN|1,1| 2 : flashing
+|    signal group|SIGGRP|(S)TE|0,*| (1)
+|    signal period|SIGPER|(S)RE|0,1| 8
+|value of nominal range|VALNMR|RE|0,1| 15
 |===
 
 ---
