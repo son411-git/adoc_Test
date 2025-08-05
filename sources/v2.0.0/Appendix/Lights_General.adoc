@@ -102,9 +102,10 @@
 * 등화의 유형과 기능으로 분류해야 하는 경우, span:A[category of light] 를 사용하여 입력해야 함
 
 .category of light의 인코딩 예시
-[cols="^20,^20,^30,<30", options="header"]
+//[cols="^20,^20,^30,<30", options="header"]
+[cols="^a,^a,^a,<a"]
 |===
-| span:A[category of light] | S-4 | INT 1 ^|description
+h| span:A[category of light] h| S-4 h| INT 1 ^h|description
 |4 : leading light 
 | B-475.6
 | image:../Appendix/Lights_General_CATLIT_04.png[] 
