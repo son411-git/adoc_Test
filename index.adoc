@@ -934,10 +934,24 @@ include::sources/v2.0.0/informationTypes/SpatialQuality.adoc[]
 
 == Appendix
 
-include::sources/v2.0.0/Appendix/SkinOfEarth.adoc[leveloffset=2]
+include::sources/v2.0.0/Appendix/Cautionary_Note.adoc[leveloffset=2]
 
-include::sources/v2.0.0/Appendix/ListOfLights.adoc[leveloffset=2]
+include::sources/v2.0.0/Appendix/Colour_Pattern.adoc[leveloffset=2]
+
+include::sources/v2.0.0/Appendix/Doubtful_Dangers.adoc[leveloffset=2]
+
+include::sources/v2.0.0/Appendix/Feature_Name.adoc[leveloffset=2]
 
 include::sources/v2.0.0/Appendix/Height_Elevation_VerticalLength.adoc[leveloffset=2]
 
-include::sources/v2.0.0/Appendix/Feature_Name.adoc[leveloffset=2]
+include::sources/v2.0.0/Appendix/In_The_Water.adoc[leveloffset=2]
+
+include::sources/v2.0.0/Appendix/Landmark_Structure_Encoding_Combinations.adoc[leveloffset=2]
+
+include::sources/v2.0.0/Appendix/Lights_General.adoc[leveloffset=2]
+
+include::sources/v2.0.0/Appendix/ListOfLights.adoc[leveloffset=2]
+
+include::sources/v2.0.0/Appendix/SkinOfEarth.adoc[leveloffset=2]
+
+include::sources/v2.0.0/Appendix/Speed_Limits.adoc[leveloffset=2]
