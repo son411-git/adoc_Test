@@ -1,10 +1,10 @@
 // tag::VirtualAISAidToNavigation[]
 ===== Remark
 
-* 실제 물리적 장치에 의해 신호를 발사하는 span:F[Physical AIS AidToNavigation]과는 구분해야 함
+* 실제 물리적 장치에 의해 신호를 발사하는 span:F[Physical AIS Aid to Navigation]과는 구분해야 함
 
 //REVIEW: Sythetic 과 구분? 항로표지 없이 단독으로 사용되는 Virtual AIS만?
-* 국내 제작지침에 따라 span:F[Physical AIS AidToNavigation]는 더 이상 입력하지 않지만, span:F[VirtualAISAidToNavigation]에 대해서는 입력
+* 국내 제작지침에 따라 span:F[Physical AIS Aid to Navigation]는 더 이상 입력하지 않지만, span:F[Virtual AIS Aid to Navigation]에 대해서는 입력
 
 .V-AIS 와 입력예시
 ====

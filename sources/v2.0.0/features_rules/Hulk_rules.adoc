@@ -34,8 +34,3 @@
 
 ---
 // end::Hulk[]
-
-
-//REVIEW:
-// https://www.guc.or.kr/facility/park_marinepark_gallery.php
-// Gimpo Marine Park 로 변경??

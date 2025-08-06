@@ -7,13 +7,13 @@
 ** span:A[product]로 표현할 수 없는 저장물의 경우 span:A[information]을 사용하여 상세 정보를 입력
 
 //
-* (소축척의 해도에서) 가독성을 위해 여러 개의 span:F[Silo Tank]를 하나의 객체로 인코딩하고, span:A[multiplicity of features] 의 하위 속성을 다음과 같이 입력할 수 있음
+* (소축척의 해도에서) 가독성을 위해 여러 개의 span:F[Silo/Tank]를 하나의 객체로 인코딩하고, span:A[multiplicity of features] 의 하위 속성을 다음과 같이 입력할 수 있음
 ** span:A[multiplicity known] = true 로 설정하고, span:A[number of features]로 개수 입력 span:D[이 때, 개수는 반드시 1 이상이어야 함]
 ** 만일, 일정 목적으로 모여 있는 사일로/탱크의 집합은 span:F[Production/Storage Area]로 인코딩하고, span:F[Silo/Tank]는 그 안에 속하는 개별 사일로/탱크로 입력할 수 있음
 
 **span:E[주의]**:: span:F[Silo/Tank]가 해상에 있는 경우, ECDIS의 **Base Display** 설정에서 보일수 있도록 span:A[in the water]를 반드시 true로 입력해야 함
 
-.여러 개의 span:F[Silo Tank]를 하나의 객체로 인코딩하는 경우
+.여러 개의 span:F[Silo/Tank]를 하나의 객체로 인코딩하는 경우
 image::../images/SiloTank/SILTNK_1.png[]
 
 .울산항 탱크 터미널 

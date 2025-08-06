@@ -1,11 +1,11 @@
 // tag::TwoWayRoute[]
 ===== Remark
-* 이름이 *없다면* span:F[Two Way Route]를 NoGeometry로 입력, +
-  이름이 *있다면* span:F[Two Way Route]를 Surface로 입력
-** 이에 따른 항로명은 span:F[Two Way Route]의 span:A[Feature name]에 입력
+* 이름이 *없다면* span:F[Two-Way Route]를 NoGeometry로 입력, +
+  이름이 *있다면* span:F[Two-Way Route]를 Surface로 입력
+** 이에 따른 항로명은 span:F[Two-Way Route]의 span:A[Feature name]에 입력
 
 * span:F[Two-Way Route]는 반드시 하나 이상의 span:F[Two-Way Route Part]와 연관 관계를 설정해야 함
-** 항로의 각도에 따라 별도의 피처를 생성하여 두 개 이상의 양길항로부가 하나의 항로를 나타낼 경우, span:F[Two Way Route]와 span:R[Two Way Route Aggregation] 관계 설정(<<TWRT_AGGR,※참고>>)
+** 항로의 각도에 따라 별도의 피처를 생성하여 두 개 이상의 양길항로부가 하나의 항로를 나타낼 경우, span:F[Two-Way Route]와 span:R[Two-Way Route Aggregation] 관계 설정(<<TWRT_AGGR,※참고>>)
 
 ===== Example
 .Two-Way Routet의 인코딩 예시

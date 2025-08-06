@@ -14,7 +14,7 @@
 ** span:F[Crane]
 ** span:F[Fortified Structure]
 ** span:F[Landmark]
-** span:F[Silo Tank]
+** span:F[Silo/Tank]
 ** span:F[Wind Turbine]
 
 //

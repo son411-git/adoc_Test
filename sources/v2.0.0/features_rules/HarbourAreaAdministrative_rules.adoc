@@ -3,7 +3,7 @@
 
 * 관할권이 있는 항만 구역은 span:F[Harbour Area (Administrative)]로 입력
 * 국내 기준 : span:F[Harbour Area (Administrative)]는 항만법 시행령에서 지정된 무역·연안항을 입력할 때 사용
-* 관할권이 없는 항만 구역을 입력하는 경우 span:F[Sea Area Named/Water Area]로 입력
+* 관할권이 없는 항만 구역을 입력하는 경우 span:F[Sea Area/Named Water Area]로 입력
 include::common/phrase.adoc[tag=information]
 
 ===== Example

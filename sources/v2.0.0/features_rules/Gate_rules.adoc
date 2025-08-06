@@ -9,6 +9,9 @@
 
 include::common/phrase.adoc[tag=information]
 
+.아라서해갑문 (출처 : 브이월드)
+image::../images/LockBasin/LockBasin_image-1.png[align="center"]
+
 ===== Example
 .Gate의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]

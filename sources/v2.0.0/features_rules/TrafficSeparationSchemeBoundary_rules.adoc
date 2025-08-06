@@ -1,7 +1,7 @@
 // tag::TrafficSeparationSchemeBoundary[]
 ===== Remark
 * 통항분리제도를 구성하는 요소 중 수역의 바깥쪽 경계를 의미
-** 통항분리대, 구역를 뜻하는 span:F[Separation Zone of Line]과는 구별해서 사용해야 함
+** 통항분리대, 구역를 뜻하는 span:F[Separation Zone or Line]과는 구별해서 사용해야 함
 ** 선박이 진출입하는 쪽에는 입력하지 않아야 함
 
 //

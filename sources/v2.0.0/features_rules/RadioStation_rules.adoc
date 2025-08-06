@@ -6,7 +6,7 @@
 ** DGNSS 기지국을 입력할 때는 span:A[category of radio station] = 10 span:D[differential GNSS]으로 입력
 ** Loran-C는 해도에 사용하지 않으나, 꼭 필요한 경우 span:A[category of radio station] = 9 span:D[loran C]로 입력
 
-**주의**:: AIS는 span:F[Physical AIS Aid to Navigational] 또는 span:F[Virtual AIS Aid to Navigational]으로 입력해야 함
+**주의**:: AIS는 span:F[Physical AIS Aid to Navigation] 또는 span:F[Virtual AIS Aid to Navigation]으로 입력해야 함
 
 //REVIEW: Frequency Pair 속성에 관한 지침을 추가할 필요 있음
 //REVIEW: 등대표 번호 입력
