@@ -19,8 +19,10 @@
 . 등화의 리듬
 +
 * span:A[rhythm of light]을 입력할 때, 하위 속성인 span:A[signal group], span:A[signal period], span:A[signal sequence]는 **부동광이 아닌 경우** 즉, span:A[light characteristic] ≠ (1 : fixed)에만 적용되며, span:A[signal group], span:A[signal period]는 필수 항목임
-* 이러한 하위 속성의 사용법은 아래 <<Lights_General_T1,표 - Rhythm of Lights의 속성입력 >>에 정의되어 있으며, 가장 일반적인 입력 예시를 포함함. ** 필요 시, 다른 속성 조합의 입력도 가능함
-* 최근에 설치된 일부 등화는 야간에 항해자에게 "연성부동섬광(FFL,Fixed and flasing light)"로 보일 수 있지만, 실제로는 수직으로 배치된 두 개의 별도 등화, 즉 하나는 span:A[light characteristic] = (1 : fixed)이고 다른 하나는 (2 :flashing)로 구성되어 있을 수 있음
+* 이러한 하위 속성의 사용법은 아래 <<Lights_General_T1,표 - Rhythm of Lights의 속성 입력>>에 정의되어 있으며, 가장 일반적인 입력 예시를 포함함. 
+** 필요 시, 다른 속성 조합의 입력도 가능함
+* 최근에 설치된 일부 등화는 야간에 항해자에게 "연성부동섬광(FFL,Fixed and flasing light)"로 보일 수 있지만, +
+실제로는 수직으로 배치된 두 개의 별도 등화, 즉 하나는 span:A[light characteristic] = (1 : fixed)이고 다른 하나는 (2 :flashing)로 구성되어 있을 수 있음
 ** 실제로 두 개의 등화가 별도로 존재하는 것으로 확인된 경우, 이를 단일 span:F[Light All Around]에 span:A[light characteristic] = (13 : fixed and flash)로 입력하지 말고, 각각 별도의 span:F[Light All Around]로 입력해야 함
 ** 이 경우 하나는 span:A[light characteristic] = (1 : fixed)로, 다른 하나는 span:A[light characteristic] = (2 : flashing)으로 입력해야 함
 
@@ -222,7 +224,6 @@ _현재 사용되지 않음 +
 | 2 : daytime light +
 4 : night light
 <| span:A[infomation/text] +
-"안개가 끼면 등질이 변경됨" +
 "Character of the light changes in fog"
 |===
 
