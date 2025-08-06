@@ -45,7 +45,8 @@ include::common/phrase.adoc[tag=featureName_for_AtoN]
 .Light All Around의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-|Attribute |Acronym |Type |Mult. |Value
+5+^h| Fl.8s155m15M
+h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |span:E[colour]|COLOUR|EN|1,*| 1 : whihe
 |height|HEIGHT|RE|0,1| 155

@@ -1,25 +1,34 @@
 // tag::LocalMagneticAnomaly[]
 ===== Remark
 
-- 해당 구역의 표준 값에서 3°이상 벗어나는 경우에만 해도에 표기
-- 영역을 정의할 수 없는 경우 point type으로 표현
-- S-57 전자해도에 입력된 내용 중 보고연도에 대한 내용은 #A "Reported date"로 수정필요
-- 복합속성 #A "Value of local magnetic anomaly"에는 이상편차 값을 필수로 입력하며, 값을 모르는 경우 (unknown)입력(현재 국내 전자해도에는 입력할 수 있는 정보가 없음)
+* span:F[Local Magnetic Anomaly]는 지구의 정상 자기장에 영향을 주는 국지적인 현상으로, 자기 편차 값을 비정상적으로 만듦. 
+** 영구적인 이상은 지구 지각에 있는 강자성 물질의 농도나, 드물게 해저의 난파선 또는 인공 구조물 때문에 발생함. 
+* span:F[Local Magnetic Anomaly]는 정상 자기 값에서 3도(˚)(도) 이상 벗어나지 않으면 해도에 표시하지 않아야 함
+** 이는 지구 자기장이 하루나 계절에 따라 최대 1도(˚)까지 변동할 수 있고, 일부 지역에서는 등자선(isogonals) 데이터가 해도 값의 정확도를 ±2도(˚) 이상 보장하지 못할 수 있기 때문임.
+
+* 면(Suface) 형태를 정의할 수 없는 경우, 해당 객체는 점(point) 형태로 표현해야 함.
+
+* 동쪽과 서쪽 모두에서 동일한 크기의 국지적 자기 이상을 나타내야 하는 경우, span:A[value of local magnetic anomaly]를 하나만 입력해야 함
+** 값은 하위 속성 span:A[magnetic anomaly value]에 도(˚) 단위로 소숫점 첫째자리 까지 채워야 함. 이 경우 하위 속성 span:A[reference direction]은 입력하지 않아야 함
+
+* 단일 방향의 국지적 자기 이상을 나타내야 하는 경우, span:A[value of local magnetic anomaly]를 하나만 입력해야 함
+** 값은 span:A[magnetic anomaly value]에, 방향은 하위 속성 span:A[reference direction]을 사용하여 인코딩해야 함.
+
+* 동쪽과 서쪽에서 크기가 다른 국지적 자기 이상을 나타내야 하는 경우, span:A[value of local magnetic anomaly]를 두 번 입력해야 함. 
+** 값과 방향을 각각 span:A[magnetic anomaly value]와 span:A[reference direction]에 입력해야 함
+
+* 국지적 자기 이상의 값이 알려지지 않은 경우, span:A[value of local magnetic anomaly]를 하나만 입력해야 함
+** span:A[magnetic anomaly value] = (Unknown) 으로 채우고, 필요한 경우, 국지적 자기 이상와 관련된 기사는 span:A[information]에 입력
 
 ===== Example
+.Local Magnetic Anomaly의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Reported Date|SORDAT|TD|0,1| 2011----
-|**Value of Local Magnetic Anomaly**||C|1,2| 
-|    #essential Magnetic Anomaly Value|VALLMA|(S)RE|1,1| (unknown)  
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| Local Magnetic Anomaly was reported in This Area
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 이 지역은 국지적 지자기 이상현상이 보고됨
+|reported date|SORDAT|TD|0,1| 2011----
+|**value of local magnetic anomaly**||C|1,2| 
+|    span:E[magnetic anomaly value]|VALLMA|(S)RE|1,1| Unknown
 |===
 
 ---

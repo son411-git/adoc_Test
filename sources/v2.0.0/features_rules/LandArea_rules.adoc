@@ -10,7 +10,7 @@
 * 육지의 자연 경관을 설명해야 하는 경우, span:F[Land Region] 사용해야 함
 * span:F[Land Area]는 일반적으로 면(surface) 형태이지만, 점(point) 유형(예: 작은 섬, 노출암) 또는 곡선(curve) 유형(예: 작은 섬, 연안 사주, 지협)일 수도 있음
 * span:F[Land Area][P]는 면(surface) 형태의 span:F[Lake], span:F[River], span:F[Dock Area], span:F[Lock Basin], span:F[Canal]에 의해 덮이는 경우에 만,  span:F[Land Area][S] 위에 입력할 수 있음. 그 이외의 경우에는 span:F[Land Area][P]와 span:F[Land Area][S]를 중복하여 입력해서는 안 됨
-* 국내 기준 : span:F[LLand Area][C]는 입력하지 않음
+* 국내 기준 : span:F[Land Area][C]는 입력하지 않음
 
 //
 * span:F[Land Area][S]의 경계는 다음 중 적어도 하나의 객체를 공유해야함

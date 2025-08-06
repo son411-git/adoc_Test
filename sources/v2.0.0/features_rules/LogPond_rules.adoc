@@ -1,5 +1,13 @@
 // tag::LogPond[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* 수입한 원목을 방역·보관할 수 있는 저목장(목재 집하장)을 입력해야 하는 경우, span:F[Log Pond]를 사용해야 함.
+* 계절적 목재 집하장은 span:A[periodic date range]를 사용하여 입력해야 함.
+* 저목장의 지주, 말뚝, 또는 기타 장벽 지지 구조물을 별도로 입력할 필요는 없음.
+
+//
+include::common/phrase.adoc[tag=NotUsedFeature]
+
 ---
+
 // end::LogPond[]

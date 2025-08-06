@@ -1,18 +1,17 @@
 // tag::LightFloat[]
 ===== Remark
 
-* span:F[Light Float]의 부표, 입표 등과 동일하게 처리되며, 필요시 등화는 별도로 입력해야 함.
-
 * 해양자료수집시스템(Ocean Data Acquisition System,ODAS)부표 는 **반드시** span:F[Special Purpose/General Buoy]로 입력되어야 하며 해저 또는 부유체에 의해 수중에 위치한 ODAS는 span:F[Obstruction]으로 입력되어야 함
+
+//
+.Light Float
+image::../images/LightFloat/LightFloat_image-1.png[width=50%,align="center"]
 
 //
 include::common/phrase.adoc[tag=AtoN_Relationship]
 
 //
 * 등대표 보는법은 <<ListOfLights,링크>>를 참고
-
-//
-include::common/phrase.adoc[tag=Buoy_Attr_General]
 
 //
 include::common/phrase.adoc[tag=colourPattern]
