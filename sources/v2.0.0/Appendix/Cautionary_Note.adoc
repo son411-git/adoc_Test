@@ -13,7 +13,7 @@
 ."대한민국 영해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/1.svg[]
+5+^| image:../images/Cautionary_Notes/대한민국영해.svg[]
 5+^h| Territorial Sea Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -34,7 +34,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."유조선통항금지해역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/2.svg[]
+5+^| image:../images/Cautionary_Notes/유조선통항금지해역.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -60,7 +60,7 @@ span:D[출처 : IHO S-32 수로 사전] +
 ."연안 부근 송전선 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/3.svg[]
+5+^| image:../images/Cautionary_Notes/연안부근_송전선주의.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -80,7 +80,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."항행 금지(우선피항선 제외)"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/4.svg[]
+5+^| image:../images/Cautionary_Notes/항행금지_우선피항선제외.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -101,7 +101,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."해상사격훈련구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/5.svg[]
+5+^| image:../images/Cautionary_Notes/해상사격훈련구역.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -121,7 +121,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."풍도 해역의 항해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/6.svg[]
+5+^| image:../images/Cautionary_Notes/풍도해역의항해.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -141,7 +141,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."해안 부근 기뢰 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/7.svg[]
+5+^| image:../images/Cautionary_Notes/해안부근기뢰주의.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -161,7 +161,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."북한 및 러시아 해역 내 기뢰 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/8.svg[]
+5+^| image:../images/Cautionary_Notes/북한및러시아해역내기뢰주의.svg[]
 5+^h| Caution Area (두만강 남쪽 해안 부근에 입력)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -194,7 +194,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."주의구역 A"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/9.svg[]
+5+^| image:../images/Cautionary_Notes/주의구역A.svg[]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -214,7 +214,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."주의구역 B"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/10.svg[]
+5+^| image:../images/Cautionary_Notes/주의구역B.svg[]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -234,7 +234,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."주의구역 C"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/11.svg[]
+5+^| image:../images/Cautionary_Notes/주의구역C.svg[]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -254,7 +254,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."호미곶 추천항로"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/12.svg[]
+5+^| image:../images/Cautionary_Notes/호미곶추천항로.svg[]
 5+^h| Recommended Route Centreline
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -290,7 +290,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."통항제한구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/13.svg[]
+5+^| image:../images/Cautionary_Notes/통항제한구역.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -314,7 +314,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."특정금지구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/14.svg[]
+5+^| image:../images/Cautionary_Notes/특정금지구역.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -335,7 +335,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."국지적 지자기 이상 현상"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/15.svg[]
+5+^| image:../images/Cautionary_Notes/국지적지자기이상현상.svg[]
 5+^h| Local Magnetic Anomaly
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -357,7 +357,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."화산 활동 구역 진입 금지"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/16.svg[]
+5+^| image:../images/Cautionary_Notes/화산활동구역진입금지.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -378,7 +378,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."경인아라뱃길 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/17.svg[]
+5+^| image:../images/Cautionary_Notes/경인아라뱃길속력제한.svg[]
 5+^h| Restricted Area (직선구간)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -416,7 +416,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."마산항 속력 제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/18.svg[]
+5+^| image:../images/Cautionary_Notes/마산항속력제한.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -432,7 +432,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."부산항 속력 제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/19.svg[]
+5+^| image:../images/Cautionary_Notes/부산항속력제한.svg[]
 5+^h| Restricted Area (북내항)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -516,7 +516,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."속력제한구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/20.svg[]
+5+^| image:../images/Cautionary_Notes/속력제한구역.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -537,7 +537,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."광양항로 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/21.svg[]
+5+^| image:../images/Cautionary_Notes/광양항로속력제한.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -558,7 +558,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."제1구역 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/22.svg[]
+5+^| image:../images/Cautionary_Notes/제1구역속력제한.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -574,7 +574,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."구역별 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/23.svg[]
+5+^| image:../images/Cautionary_Notes/구역별속력제한.svg[]
 5+^h| Restricted Area (제1구역)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -617,7 +617,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."고속여객선 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-// 5+^| image:Cautionary_Notes/24.svg[]
+5+^| image:../images/Cautionary_Notes/고속여객선속력제한.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -639,7 +639,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/25.svg[]
+5+^| image:../images/Cautionary_Notes/진해만및부근속력제한.svg[]
 5+^h| Precautionary Area (가덕수도)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -682,11 +682,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/26.svg[]
-// 5+^| image:Cautionary_Notes/27.svg[]
-// 5+^| image:Cautionary_Notes/28.svg[]
-// 5+^| image:Cautionary_Notes/29.svg[]
-// 5+^| image:Cautionary_Notes/30.svg[]
+5+^| image:../images/Cautionary_Notes/조류기사1.svg[]
+5+^| image:../images/Cautionary_Notes/조류기사2.svg[]
+5+^| image:../images/Cautionary_Notes/조류기사3.svg[]
+5+^| image:../images/Cautionary_Notes/조류기사4.svg[]
+5+^| image:../images/Cautionary_Notes/조류기사5.svg[]
 5+^h| Tidal Stream Panel Data
 
 5+^| 조류 기사는 span:F[Tidal Stream Panel Data]의 입력지침을 <<TidalStreamPanelData_Rule_Remark,참고>>
@@ -698,7 +698,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/31.svg[]
+5+^| image:../images/Cautionary_Notes/광안대교인근운항금지선.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -720,7 +720,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/32.svg[]
+5+^| image:../images/Cautionary_Notes/납도에서다사도구간항행주의.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -741,7 +741,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/33.svg[]
+5+^| image:../images/Cautionary_Notes/한강부근사주의이동주의.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -762,7 +762,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/34.svg[]
+5+^| image:../images/Cautionary_Notes/묵호항및동해항안벽부근수심주의.svg[]
 5+^h| Caution Area (묵호항)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -797,7 +797,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/35.svg[]
+5+^| image:../images/Cautionary_Notes/부산항안벽부근수심주의.svg[]
 5+^h| Caution Area (제7부두)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -911,7 +911,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/36.svg[]
+5+^| image:../images/Cautionary_Notes/양식장(미측량구역)및장애물주의.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -935,7 +935,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/37.svg[]
+5+^| image:../images/Cautionary_Notes/양식장및장애물주의.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -959,7 +959,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/38.svg[]
+5+^| image:../images/Cautionary_Notes/새만금방조제내측항해주의.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -980,7 +980,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/39.svg[]
+5+^| image:../images/Cautionary_Notes/사주의이동주의.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1001,7 +1001,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/40.svg[]
+5+^| image:../images/Cautionary_Notes/평택항내수심변화주의.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1022,7 +1022,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/41.svg[]
+5+^| image:../images/Cautionary_Notes/낙동포부근수심변화주의.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1043,7 +1043,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/42.svg[]
+5+^| image:../images/Cautionary_Notes/중앙천퇴부근수심변화주의.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1064,7 +1064,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/43.svg[]
+5+^| image:../images/Cautionary_Notes/항내안벽의미측구역주의.svg[]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1085,7 +1085,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/44.svg[]
+5+^| image:../images/Cautionary_Notes/험악지의안전항해.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1108,7 +1108,7 @@ navigation poses no significant danger, anchoring and trawling should be avoided
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/45.svg[]
+5+^| image:../images/Cautionary_Notes/험악지의얕은수심주의.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1131,7 +1131,7 @@ should navigate with caution in shallow waters.
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/46.svg[]
+5+^| image:../images/Cautionary_Notes/소축척해도의참고기사.svg[]
 5+^h| **입력하지 않음**
 5+| 이 기사의 내용은 전자해도에서 유효한 설명이 아니며, 종이해도 보는 방법에 대한 안내에 가까움
 |===
@@ -1142,7 +1142,7 @@ should navigate with caution in shallow waters.
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/47.svg[]
+5+^| image:../images/Cautionary_Notes/인천항선거내수심유지및통제.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1155,6 +1155,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    headline||(S)TE|0,1| 인천항 선거
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 선거 내 수심은 기본수준면상에서 7미터~8.9미터로 유지되고 있으며 선박의 출입은 갑문 관리소에서 통제되고 있음
+|===
 
 . 서해갑문 내 수심기준면
 +
@@ -1162,7 +1163,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/48.svg[]
+5+^| image:../images/Cautionary_Notes/서해갑문내수심기준면.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1175,6 +1176,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    headline||(S)TE|0,1| 서해갑문 내 수심기준면
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 서해갑문의 내부수역에서 수심기준면은 평균해면상의 1.5미터임.
+|===
 
 . 아라서해 갑문 내 수심기준면 및 안내표지판
 +
@@ -1182,7 +1184,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/49.svg[]
+5+^| image:../images/Cautionary_Notes/아라서해갑문내수심기준면및안내표지판.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1211,7 +1213,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/50.svg[]
+5+^| image:../images/Cautionary_Notes/중수도전용선박.svg[]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1233,12 +1235,85 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/51.svg[]
+5+^| image:../images/Cautionary_Notes/오류지곶에서장산곶사이의조류.svg[]
 5+^h| Tidal Stream Panel Data
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 5+^| 조류 기사는 span:F[Tidal Stream Panel Data]의 입력지침을 <<TidalStreamPanelData_Rule_Remark,참고>>
+|===
+
+. 부산신항 안벽 부근 수심 주의
++
+."부산신항 안벽 부근 수심 주의"의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+
+5+^| image:../images/Cautionary_Notes/부산신항안벽부근수심주의.svg[]
+5+^h| Caution Area (부산신항 제1부두)
+
+h|Attribute h|Acronym h|Type h|Mult. h|Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Depths Near Quay Wall
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| 
+|**information**|INFORM|C|0,*| The depths marked near the Wharfs No 1 at Busan New Port are about 6 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
+|    headline||(S)TE|0,1| 안벽 부근 수심
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 신항 제1부두 수심은 안벽으로부터 약 6미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
+
+5+^h| Caution Area (부산신항 제2부두)
+
+h|Attribute h|Acronym h|Type h|Mult. h|Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Depths Near Quay Wall
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Wharfs No 2 at Busan New Port are about 6 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
+|**information**|INFORM|C|0,*| 
+|    headline||(S)TE|0,1| 안벽 부근 수심
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 신항 제2부두 수심은 안벽으로부터 약 6미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
+
+5+^h| Caution Area (부산신항 제3부두)
+
+h|Attribute h|Acronym h|Type h|Mult. h|Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Depths Near Quay Wall
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Wharfs No 3 at Busan New Port are about 6 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
+|**information**|INFORM|C|0,*| 
+|    headline||(S)TE|0,1| 안벽 부근 수심
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 신항 제3부두 수심은 안벽으로부터 약 6미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
+
+5+^h| Caution Area (부산신항 제4부두)
+
+h|Attribute h|Acronym h|Type h|Mult. h|Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Depths Near Quay Wall
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Wharfs No 4 at Busan New Port are about 6 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
+|**information**|INFORM|C|0,*| 
+|    headline||(S)TE|0,1| 안벽 부근 수심
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 신항 제4부두 수심은 안벽으로부터 약 6미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
+
+5+^h| Caution Area (부산신항 다목적부두)
+
+h|Attribute h|Acronym h|Type h|Mult. h|Value
+
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Depths Near Quay Wall
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| The depths marked near the Multi-purpose Wharf at Busan New Port are about 6 metres from the quay wall. Mariners are advised to maneuver with caution when approaching these wharfs.
+|**information**|INFORM|C|0,*| 
+|    headline||(S)TE|0,1| 안벽 부근 수심
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 신항 다목적부두 수심은 안벽으로부터 약 6미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 |===
 
 . 목포항 안벽 부근 수심 주의
@@ -1247,7 +1322,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/52.svg[]
+5+^| image:../images/Cautionary_Notes/목포항안벽부근수심주의.svg[]
 5+^h| Caution Area (해경부두)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1387,7 +1462,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-// 5+^| image:Cautionary_Notes/53.svg[]
+5+^| image:../images/Cautionary_Notes/교통안전특정해역의항해.svg[]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1407,10 +1482,17 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 . ASL - 군도 수로
 +
 ."ASL - 군도 수로"의 인코딩 예시
-[cols="30,25,10,10,25", options="header"]
+[cols="30,25,10,10,25"]
 |===
 
-// 5+^| image:Cautionary_Notes/00.svg[]
+5+^| ASL - 군도 수로 +
+유엔해양법협약(UNCLOS)에서 정의한 바와 같이 ASL은 해도 상에 지정되어 있으며 ASL을 통항하는 선박은 지정된 선에서 25해리 이상 벗어나면 안 됨. ASL선은 가장 깊은 해역 또는 추천항로를 나타내지 않음. +
+
+  +
+  
+ASL - ARCHIPELAGIC SEA LANES +
+Archipelagic Sea Lanes, as defined in UNCLOS, have been designated in the area of this chart. Vessels exercising archipelagic sea lanes passage shall not deviate more than 25 miles from the charted axis line. The axis line of the ASL does not indicate the deepest water nor any recommended route or track.
+
 5+^h| Archipelagic Sea Lane
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1428,10 +1510,17 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 . 유전지대
 +
 ."유전지대"의 인코딩 예시
-[cols="30,25,10,10,25", options="header"]
+[cols="30,25,10,10,25"]
 |===
 
-// 5+^| image:Cautionary_Notes/00.svg[]
+5+^| 유전지대 +
+이 구역에는 다수의 구조물(등화가 없는 물체, 수중 장애물, 유정, 그리고 이를 표시하기 위한 항로표지 및 부표)이 존재함. 이러한 구조물들은 복잡성과 잦은 변동으로 인해 전부 해도에 기재되지 않았으므로 이 부근을 항해하는 선박들은 특히 주의를 요함. +
+
+  +
+
+OIL AND GAS FIELDS +
+Numerous structures, usually marked by aids to navigation, other unlit objects, submerged obstructions and wellheads, sometimes marked by buoys, exist in the areas indicated. These features are not all charted due to their complexity and frequent change. Paticular caution should be exercised by vessels navigating in the vicinity.
+
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1449,10 +1538,18 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 . 영흥수도 부근 송전선 주의
 +
 ."영흥수도 부근 송전선 주의"의 인코딩 예시
-[cols="30,25,10,10,25", options="header"]
+[cols="30,25,10,10,25"]
 |===
 
-// 5+^| image:Cautionary_Notes/00.svg[]
+5+^| 주의 +
+
+영흥수도 위를 횡단하는 송전선은 레이더 화면에 비정상적으로 확대되어 보이므로 이 수도를 항해하는 선박은 주의하여야 함. +
+
+  +
+
+CAUTION +
+The overhead power cable spanning the YEONGHEUNG SUDO is widened unusually on the radar scope, so mariners are required to navigate with caution in this area.
+
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1470,10 +1567,17 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 . 타구봉도-해주서 구간 항행주의
 +
 ."타구봉도-해주서 구간 항행주의"의 인코딩 예시
-[cols="30,25,10,10,25", options="header"]
+[cols="30,25,10,10,25"]
 |===
 
-// 5+^| image:Cautionary_Notes/00.svg[]
+5+^| 주의구역 +
+타구봉도-해주서 구간을 항행하는 모든 선박은 가능한 수심이 충분한 시기에 항행하여야 하며 다른 선박과 교행이나 추월을 하지 않아야 한다. 다만, 선박이 해양사고를 피하기 위한 경우나 그 밖의 부득이한 경우에는 그러지 아니하다. +
+
+  +
+
+PRECAUTIONARY AREA +
+All vessels navigating between Tabubongdo and Haejuseo should navigate when there is sufficient navigable depth and should not cross or overtake other vessels. However, this shall not apply in cases where a vessel is to avoid a maritime accident or other unavoidable situations.
+
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1491,10 +1595,18 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 . 술루 군도 및 사바 동부해협 통항로 지정
 +
 ."술루 군도 및 사바 동부해협 통항로 지정"의 인코딩 예시
-[cols="30,25,10,10,25", options="header"]
+[cols="30,25,10,10,25"]
 |===
 
-// 5+^| image:Cautionary_Notes/00.svg[]
+5+^| 통항로 +
+이 해역을 통과하는 선박에 대한 해적 및 무장 강도 활동을 예방하고 억제하기 위해 Mindanao 서부해안에는 Sulu 군도와 Sabah 동부해협을 통과하는 통항로가 지정되어 있으며, 이 통항로를 이용하려는 선박은 인도네시아, 말레이시아 또는 필리핀 당국에 알려야 함. +
+
+  +
+
+
+TRANSIT CORRIDOS +
+Transit corridors have been established off the west coast of Mindanao, through Sulu Archipelago and in the channels east of Sabah to prevent or suppress acts of piracy and armed robbery against vessels transiting these ares. Vessels intending to use these corridors should notify the Indonesian, Malaysian or Philippine authorities.
+
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1512,10 +1624,19 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 . 팔라완 항로 서쪽 위험구역 주의
 +
 ."팔라완 항로 서쪽 위험구역 주의"의 인코딩 예시
-[cols="30,25,10,10,25", options="header"]
+[cols="30,25,10,10,25"]
 |===
 
-// 5+^| image:Cautionary_Notes/00.svg[]
+5+^| DANGEROUS GROUND (10°N 117°E) +
+
+"DANGEROUS GROUND"로 알려진 Palawan 항로 서쪽 해역에는 다수의 위험물이 존재함. 해도상의 표기된 퇴와 모래톱의 위치는 신뢰할 수 없으며, 해도에 기재되지 않은 모래톱과 산호초가 있을 수 있으므로 이 해역을 통과하는 것을 권고하지 않음. +
+
+  +
+
+DANGEROUS GROUND (10°N 117°E) +
+
+A large number of dangers exist in the area west of the Palawan Passage known as Dangerous Ground. The positions of charted banks and shoals cannot be relied on and the existence of uncharted shoals and patches of coral are likely. Vessels are warned not to attempt to pass through this area.
+
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
