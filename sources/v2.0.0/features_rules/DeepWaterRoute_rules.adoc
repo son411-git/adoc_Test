@@ -15,11 +15,10 @@
 ** span:R[Deep Water Route Aggregation]의 구성 객체는 같은 span:A[scale minimum] 값을 가져야 함
 
 //
-include::common/information.adoc[]
+include::common/phrase.adoc[tag=information]
 
 //
 * IMO가 지정한 깊은 수심 항로는 IMO 간행물 "Ships' Routeing" Part C에 나열되어 있으며 해당하지 않으면 span:A[IMO adopted] = (false)를 입력
-include::common/information.adoc[]
 
 ===== Example
 .Deep Water Route의 인코딩 예시
