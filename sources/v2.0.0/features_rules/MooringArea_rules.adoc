@@ -1,6 +1,16 @@
 // tag::MooringArea[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* span:F[Mooring Area]의 경계가 규제 당국(예: 항만 당국)에 의해 정의된 경우, 최대 축척 데이터셋에 반드시 입력해야 함. 
+** 소축척 데이터셋에서는 span:F[Mooring Area][P]로 입력할 수 있음
+계류 구역을 인코딩해야 하는 경우, Mooring Area 특징을 반드시 사용해야 함.
+비고:
+
+//
+include::common/phrase.adoc[tag=information]
+
+//
+include::common/phrase.adoc[tag=NotUsedFeature]
 
 ---
 // end::MooringArea[]

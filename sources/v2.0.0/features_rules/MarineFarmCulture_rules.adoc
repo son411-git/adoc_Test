@@ -1,20 +1,32 @@
 // tag::MarineFarmCulture[]
 ===== Remark
 
-- 양식장의 종류를 카테고리에서 선택하며, 카테고리와 중복되는 양식장 명칭을 추가 입력할 필요 없음 +
-  S-57 전자해도 #A "INFROM",#A "NINFOM"에 양식장 명칭이 입력된 경우 삭제필요
-- #A "Value of sounding"을 입력할 경우 #A "Exposition of sounding"과 #A "Quality of vertical measurement"도 함께 입력해야 함
+* 양식장은 물고기(패류 포함)를 양식하기 위해 사용되는 케이지, 그물, 뗏목, 부표, 또는 지주의 집합임. 
+** 이는 항해를 방해할 수 있으며, 부표나 등화로 표시될 가능성이 있음. 
+* 양식장은 항상 연안에 국한되지 않음. 패류 양식장은 얕은 수역에서 발견됨.
+ ** 선박의 흘수와 조수 간만의 차이에 따라, 만조 시 패류 양식장 위를 항해할 수 있는 경우가 일반적이지만, 선박이 정박하거나 좌초하면 양식장이 손상될 수 있음.
+
+//
+* 양식장의 최소 수심을 입력해야 하는 경우, span:A[exposition of sounding], span:A[quality of vertical measurement] 및 span:A[value of sounding]을 사용해야 함. 
+* 편집 축척에서 span:F[Marine Farm/Culture]가 물 속에 존재할 경우, span:A[value of sounding]의 값은 양식장을 구성하거나 지지하는 구조물 또는 양식장 영역 내의 최소 수심(알려진 경우)을 나타냄. 
+* span:A[water level effect]는 영역의 가장 얕은 부분의 수위를 인코딩하는 데 사용해야 하며, 이는 부분적으로 또는 완전히 수중에 있을 경우 적용됨.
+
+include::common/phrase.adoc[tag=speedLimits]
+
+* span:A[height]는 span:A[water level effect] = (1 : partly submerged at high water) 또는 (2 : always dry)인 경우 입력해야 함.
+* span:A[vertical length]는 양식장이 해저면에서 얼마나 높이 위치하는지를 입력하는데 사용됨
 
 ===== Example
+.Marine Farm/Culture의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Marine Farm/Culture|CATMFA|EN|0,1| 4: seaweed
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 6: least depth known
-|Value of Sounding|VALSOU|RE|0,1| 3.5
-|#essential Water Level Effect|WATLEV|EN|1,1| 3: always under water
-|Scale Minimum|SCAMIN|IN|0,1| 119999
+|category of marine farm/culture|CATMFA|EN|0,1| 3 : fish
+|exposition of sounding|EXPSOU|EN|0,1| 2 : shoaler than the range of depth of the surrounding depth area
+|quality of vertical measurement|QUASOU|EN|0,*| 6 : least depth known
+|value of sounding|VALSOU|RE|0,1| 7.9
+|span:E[water level effect]|WATLEV|EN|1,1| 3 : alwawys under water/submerged 
 |===
 
 ---

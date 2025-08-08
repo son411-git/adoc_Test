@@ -1,6 +1,30 @@
 // tag::MarinePollutionRegulationsArea[]
 ===== Remark
-사용하지 않는 객체입니다.
+
+* IMO MARPOL, IMO 협약, 및 다양한 국가 규정에 정의된 해양 오염 규제가 적용되는 구역을 입력해야 하는 경우, span:F[Marine Pollution Regulations Area] 특징을 반드시 사용해야 함.
+비고:
+
+* span:A[regulation citation]에 관련 국가 규정의 인용문을 입력 
+* span:A[feature name]에 관련 국가 규정의 제목을 입력
+* 규정의 제목을 ECDIS에 표시할 필요 없으므로 span:A[name usage]를 입력하지 않아야 함
+
+//
+include::common/phrase.adoc[tag=information]
+
+//
+include::common/phrase.adoc[tag=NotUsedFeature]
+
+===== Example
+.Marine Farm/Culture의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| IMO MARPOL Annex IV— Regulations for the Prevention of Pollution by Sewerage from Ships
+|regulation citation||TE|0,1| 33 CFR 33
+|===
 
 ---
 // end::MarinePollutionRegulationsArea[]
