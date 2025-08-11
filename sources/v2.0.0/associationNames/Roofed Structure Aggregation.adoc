@@ -1,0 +1,24 @@
+.Roofed Structure Aggregation의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between a roofed structure over navigable water and its supporting features.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+| Aggregation
+| The Roofed Structure
+| span:F[Structure Over Navigable Water]
+| 0, 1
+
+| Association
+| The Support
+| span:F[Pylon/Bridge Support]
+| 0, *
+
+|===
+
+===== Remark
+
+* span:R[Roofed Structure Aggregation]은 span:F[Pylon/Bridge Support]룰 적어도 하나 반드시 포함해야 하며, 이는 span:F[Structure Over Navigable Water]와 연관되어야 함.
+
+include::../features_rules/common/phrase.adoc[tag=NotUsedFeature]

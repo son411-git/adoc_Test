@@ -1,0 +1,46 @@
+.Additional Information의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between at least one instance of a geo feature and an instance of an information type.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+// ---------
+4+h| Case 1 - 비정기 근무일, 서비스 시간, 연락처 정보 및 일반적인 정보가 있는 경우
+
+.2+| Association
+| The Information
+| span:F[Contact Details], span:F[Non-Standard Working Day], span:F[Service Hours], span:F[Nautical Information]
+| 0, 1
+| 
+| span:F[Airport/Airfield], span:F[Anchor Berth], span:F[Anchorage Area], span:F[Berth], span:F[Bridge], span:F[Building], span:F[Checkpoint], span:F[Coast Guard Station], span:F[Conveyor], span:F[Crane], span:F[Dock Area], span:F[Dry Dock], span:F[Floating Dock], span:F[Gate], span:F[Helipad], span:F[Landmark], span:F[Lock Basin], span:F[Mooring Area], span:F[Production/Storage Area], span:F[Radio Calling-In Point], span:F[Runway], span:F[Seaplane Landing Area], span:F[Span Fixed], span:F[Span Opening]
+| 0, *
+
+// ---------
+4+h| Case 2 - 연락처 정보와 일반적인 정보가 있는 경우
+
+.2+| Association
+| The Information
+| span:F[Contact Details], span:F[Nautical Information]
+| 0, 1
+| 
+| span:F[Administration Area], span:F[Cable Area], span:F[Cable Overhead], span:F[Cable Submarine], span:F[Cardinal Beacon], span:F[Cardinal Buoy], span:F[Daymark], span:F[Dolphin], span:F[Emergency Wreck Marking Buoy], span:F[Fishing Facility], span:F[Fog Signal], span:F[Harbour Area (Administrative)], span:F[Harbour Facility], span:F[Installation Buoy], span:F[Isolated Danger Beacon], span:F[Isolated Danger Buoy], span:F[Land Region], span:F[Lateral Beacon], span:F[Lateral Buoy], span:F[Light All Around], span:F[Light Float], span:F[Light Sectored], span:F[Light Vessel], span:F[Marine Farm/Culture], span:F[Mooring Buoy], span:F[Mooring Trot], span:F[Offshore Platform], span:F[Offshore Production Area], span:F[Pilot Boarding Place], span:F[Pilotage District], span:F[Pipeline Overhead], span:F[Pipeline Submarine/On Land], span:F[Radar Range], span:F[Radar Station], span:F[Radio Station], span:F[Railway], span:F[Rescue Station], span:F[Safe Water Beacon], span:F[Safe Water Buoy], span:F[Signal Station Traffic], span:F[Signal Station Warning], span:F[Silo/Tank], span:F[Small Craft Facility], span:F[Special Purpose/General Beacon], span:F[Special Purpose/General Buoy], span:F[Submarine Pipeline Area], span:F[Tunnel], span:F[Vessel Traffic Service Area], span:F[Wind Turbine]
+| 0, *
+
+// ---------
+4+h| Case 3 - 일반적인 정보가 있는 경우
+
+.2+| Association
+| The Information
+| span:F[Contact Details], span:F[Non-Standard Working Day], span:F[Service Hours], span:F[Nautical Information]
+| 0, 1
+| 
+| span:F[Archipelagic Sea Lane], span:F[Archipelagic Sea Lane Area], span:F[Archipelagic Sea Lane Axis], span:F[Bollard], span:F[Built-Up Area], span:F[Canal], span:F[Cargo Transhipment Area], span:F[Causeway], span:F[Caution Area], span:F[Coastline], span:F[Collision Regulations Limit], span:F[Contiguous Zone], span:F[Continental Shelf Area], span:F[Current – Non-Gravitational], span:F[Custom Zone], span:F[Dam], span:F[Deep Water Route], span:F[Deep Water Route Centreline], span:F[Deep Water Route Part], span:F[Depth Area], span:F[Depth Contour], span:F[Depth – No Bottom Found], span:F[Discoloured Water], span:F[Distance Mark], span:F[Dredged Area], span:F[Dumping Ground], span:F[Dyke], span:F[Exclusive Economic Zone], span:F[Fairway], span:F[Fairway System], span:F[Fence/Wall], span:F[Ferry Route], span:F[Fishery Zone], span:F[Fishing Ground], span:F[Fortified Structure], span:F[Foul Ground], span:F[Free Port Area], span:F[Gridiron], span:F[Hulk], span:F[Ice Area], span:F[Information Area], span:F[Inshore Traffic Zone], span:F[Island Group], span:F[Lake], span:F[Land Area], span:F[Land Elevation], span:F[Light Air Obstruction], span:F[Light Fog Detector], span:F[Local Magnetic Anomaly], span:F[Log Pond], span:F[Magnetic Variation], span:F[Marine Pollution Regulations Area], span:F[Military Practice Area], span:F[Navigation Line], span:F[Obstruction], span:F[Oil Barrier], span:F[Physical AIS Aid to Navigation], span:F[Pile], span:F[Pontoon], span:F[Precautionary Area], span:F[Pylon/Bridge Support], span:F[Radar Line], span:F[Radar Reflector], span:F[Radar Transponder Beacon], span:F[Range System], span:F[Rapids], span:F[Recommended Route Centreline], span:F[Recommended Track], span:F[Recommended Traffic Lane Part], span:F[Restricted Area], span:F[Retroreflector], span:F[River], span:F[Road], span:F[Sandwave], span:F[Sea Area/Named Water Area], span:F[Seabed Area], span:F[Seagrass], span:F[Shoreline Construction], span:F[Slope Topline], span:F[Sloping Ground], span:F[Sounding], span:F[Spring], span:F[Straight Territorial Sea Baseline], span:F[Structure Over Navigable Water], span:F[Submarine Transit Lane], span:F[Swept Area], span:F[Territorial Sea Area], span:F[Tidal Stream Panel Data], span:F[Tidal Stream – Flood/Ebb], span:F[Tideway], span:F[Separation Zone or Line], span:F[Traffic Separation Scheme], span:F[Traffic Separation Scheme Boundary], span:F[Traffic Separation Scheme Crossing], span:F[Traffic Separation Scheme Lane Part], span:F[Traffic Separation Scheme Roundabout], span:F[Two-Way Route], span:F[Two-Way Route Part], span:F[Underwater/Awash Rock], span:F[Unsurveyed Area], span:F[Vegetation], span:F[Virtual AIS Aid to Navigation], span:F[Water Turbulence], span:F[Waterfall], span:F[Weed/Kelp], span:F[Wreck]
+| 0, *
+
+
+|===
+
+===== Remark
+
+* span:R[Additional Information]을 구성하는 객체는 **The Information** 역할에 포함된 하나 이상의 해당 **Information Type(정보 유형)**과 연관된 다음 목록에 포함된 **Feature Type(객체 유형)** 중 최소 하나를 반드시 포함해야 함

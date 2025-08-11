@@ -1,0 +1,24 @@
+.Pilotage District Association의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between a span:F[Pilotage District] and its component span:F[Pilot Boarding Place].
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+| Aggregation
+| The Collection
+| span:F[Pilotage District]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Pilot Boarding Place]
+| 0, *
+
+|===
+
+===== Remark
+
+* span:R[Pilotage District Association]은 span:F[Pilotage District]를 최소 하나를 반드시 포함해야 하며, 이는 span:F[Pilot Boarding Place]와 관계를 맺어야 함
+
+include::../features_rules/common/phrase.adoc[tag=NotUsedFeature]

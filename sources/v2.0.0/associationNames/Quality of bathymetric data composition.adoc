@@ -1,0 +1,23 @@
+.Quality of Bathymetric Data Composition의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* The mandatory association between the quality-related characteristics of bathymetric data and the horizontal position and vertical uncertainties of the data.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+.2+| Association
+| The Quality Information
+| span:F[Spatial Quality]
+| 0, 1
+
+| 
+| span:F[Quality of Bathymetric Data]
+| 0, *
+
+|===
+
+===== Remark
+
+* span:R[Quality of Bathymetric Data Composition]은 span:F[Quality of Bathymetric Data]룰 적어도 하나 반드시 포함해야 하며, 이는 span:F[Spatial Quality]와 관계를 맺어야 함
+
+include::../features_rules/common/phrase.adoc[tag=NotUsedFeature]

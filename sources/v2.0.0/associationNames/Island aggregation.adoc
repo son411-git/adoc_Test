@@ -1,0 +1,24 @@
+.Island Aggregation의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between a named group of islands.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+| Aggregation
+| The Collection
+| span:F[Island Group]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Land Area], span:F[Island Group]
+| 0, *
+
+|===
+
+===== Remark
+
+* span:R[Island Aggregation]은 span:F[Land Area] 또는 span:F[Island Group] 중 최소 하나를 반드시 포함해야 하며, 이는 span:F[Island Group]과 관계를 맺어야 함
+
+include::../features_rules/common/phrase.adoc[tag=NotUsedFeature]

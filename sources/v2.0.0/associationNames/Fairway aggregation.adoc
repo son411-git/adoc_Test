@@ -1,0 +1,23 @@
+.Fairway Aggregation의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between related fairways comprising a span:F[Fairway System].
+
+| Aggregation
+| The Collection
+| span:F[Fairway System]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Fairway]
+| 0, *
+ 
+|===
+
+===== Remark
+
+* span:R[Fairway Aggregation]은 span:F[Fairway]를 최소 두개 포함해야 하며, 이는 span:F[Fairway System]와 관계를 맺어야 함. 그러나 데이터셋 셀 경계에서 항로 시스템이 분할되어 span:R[Fairway Aggregation]에 하나의 span:F[Fairway]만 포함될 수 있음.
+
+* span:F[Fairway System]와 연관된 항로표지에 대한 연관관계를 입력할 때에는 span:R[Aids To Navigation Association]을 이용해야 함(<<ATON_ASSO,※참고>>)

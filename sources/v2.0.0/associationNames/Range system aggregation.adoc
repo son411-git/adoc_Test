@@ -1,0 +1,24 @@
+.Range System Aggregation의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between navigational tracks and the navigational aids that define the tracks.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+| Aggregation
+| The Collection
+| span:F[Range System]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Cardinal Beacon], span:F[Building], span:F[Daymark], span:F[Dolphin], span:F[Fortified Structure], span:F[Isolated Danger Beacon], span:F[Landmark], span:F[Lateral Beacon], span:F[Light All Around], span:F[Light Sectored], span:F[Navigation Line], span:F[Pile], span:F[Radar Transponder Beacon], span:F[Range System], span:F[Recommended Route Centreline], span:F[Recommended Track], span:F[Safe Water Beacon], span:F[Silo/Tank], span:F[Special Purpose/General Beacon]
+| 0, *
+
+|===
+
+===== Remark
+
+* span:R[Range System Aggregation]를 구성하는 모든 객체들은 span:A[scale minimum]에 동일한 값을 채워야 함
+
+* span:R[Range System Aggregation]은 **The Component** 역할에 span:F[Navigation Line], span:F[Range System], span:F[Recommended Route Centreline], span:F[Recommended Track] 중 최소 하나를 반드시 포함해야 하며, 이는 span:F[Range System]과 관계를 맺어야 함

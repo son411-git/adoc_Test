@@ -1,0 +1,56 @@
+.Aids to Navigation Association의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between navigational aids and the traffic systems (such as routeing measures) that they define.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+// ---------
+4+h| Case 1 - 항로 체계와 항로표지의 연관
+
+| Aggregation
+
+| The Collection
+| span:F[Archipelagic Sea Lane], span:F[Deep Water Route], span:F[Fairway System], span:F[Traffic Separation Scheme], span:F[Two-Way Route]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Cardinal Beacon], span:F[Cardinal Buoy], span:F[Daymark], span:F[Emergency Wreck Marking Buoy], span:F[Isolated Danger Beacon], span:F[Isolated Danger Buoy], span:F[Lateral Beacon], span:F[Lateral Buoy], span:F[Light Float], span:F[Light Vessel], span:F[Pile], span:F[Safe Water Beacon], span:F[Safe Water Buoy], span:F[Special Purpose/General Beacon], span:F[Special Purpose/General Buoy]
+| 0, *
+
+// ---------
+4+h| Case 2 - 항로 체계와 해안/구조물 객체의 연관
+
+| Aggregation
+
+| The Collection
+| span:F[Deep Water Route], span:F[Fairway System], span:F[Traffic Separation Scheme], span:F[Two-Way Route]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Building], span:F[Crane], span:F[Dolphin], span:F[Fishing Facility], span:F[Fortified Structure], span:F[Landmark], span:F[Mooring Buoy], span:F[Offshore Platform], span:F[Silo/Tank], span:F[Wind Turbine]
+| 0, *
+
+
+// ---------
+4+h| Case 3 - 항로 체계와 항해 가능 수역 위 구조물의 연관
+
+| Aggregation
+
+| The Collection
+| span:F[Fairway System], span:F[Traffic Separation Scheme], span:F[Two-Way Route]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Bridge], span:F[Conveyor], span:F[Floating Dock], span:F[Hulk], span:F[Pipeline Overhead], span:F[Pontoon], span:F[Pylon/Bridge Support], span:F[Shoreline Construction], span:F[Span Fixed], span:F[Span Opening], span:F[Structure Over Navigable Water]
+| 0, *
+
+
+|===
+
+===== Remark
+
+* span:R[Aids to Navigation Association]을 구성하는 객체는 **The Component** 역할에 포함된 객체 중 최소 하나를 반드시 포함해야 하며, 이는 **The Collection** 역할에 포함된 해당 객체 중 하나와 연관되어야 함

@@ -1,0 +1,30 @@
+.Mooring Trot Aggregation의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between a span:F[Mooring Trot] and its component parts.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+| Aggregation
+| The Collection
+| span:F[Mooring Trot]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Berth], span:F[Cable Submarine], span:F[Mooring Buoy], span:F[Obstruction]
+| 0, *
+
+|===
+
+===== Remark
+
+* 일반적으로 span:F[Mooring Trot]은 다음으로 구성됨:
+** 최소 하나의 span:F[Berth]
+** 최소 두 개의 span:F[Cable Submarine]
+** 최소 두 개의 span:F[Mooring Buoy]
+** 최소 두 개의 span:F[Obstruction]
+//
+* span:R[Mooring Trot Aggregation]은 **The Component** 역할에 나열된 객체 중 최소 하나를 반드시 포함해야 하며, 이는 span:F[Mooring Trot]과 관계를 맺어야 함
+
+include::../features_rules/common/phrase.adoc[tag=NotUsedFeature]

@@ -5,15 +5,14 @@
 4+h|*Definition:* A feature association for the binding between a two-way route and its component features. 
 h| Role Type h| Role h|Assiciated With h| Multiplicity
 
-
 | Aggregation
 | The Collection 
-| Two-Way Route 
+| span:F[Two-Way Route]
 | 0, 1
 
 | Association
 | The Component
-| Two-Way Route Part
+| span:F[Two-Way Route Part]
 | 0, *
 
 |===

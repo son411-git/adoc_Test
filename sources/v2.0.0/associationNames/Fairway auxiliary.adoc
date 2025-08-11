@@ -1,0 +1,24 @@
+.Fairway Auxiliary의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between a fairway and related features auxiliary to the fairway.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+| Aggregation
+| The Collection
+| span:F[Fairway]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Cardinal Beacon], span:F[Cardinal Buoy], span:F[Caution Area], span:F[Daymark], span:F[Dredged Area], span:F[Isolated Danger Beacon], span:F[Isolated Danger Buoy], span:F[Lateral Beacon], span:F[Lateral Buoy], span:F[Light Float], span:F[Light Vessel], span:F[Landmark], span:F[Pile], span:F[Range System], span:F[Recommended Route Centreline], span:F[Recommended Track], span:F[Restricted Area], span:F[Safe Water Beacon], span:F[Safe Water Buoy], span:F[Special Purpose/General Beacon], span:F[Special Purpose/General Buoy], span:F[Swept Area]
+| 0, *
+
+|===
+
+===== Remark
+
+* span:R[Fairway Auxiliary Association]을 구성하는 객체는 **The Auxiliary Feature** 역할에 포함된 객체 중 중 최소 하나를 반드시 포함해야 하며, 이는 하나의 span:F[Fairway]와 관계를 맺어야 함
+
+include::../features_rules/common/phrase.adoc[tag=NotUsedFeature]

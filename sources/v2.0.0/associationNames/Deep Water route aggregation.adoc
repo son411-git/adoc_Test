@@ -1,0 +1,23 @@
+.Deep Water Route Aggregation의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:*. A feature association for the binding between a span:F[Deep Water Route] and its component features.
+
+| Aggregation
+| The Collection
+| span:F[Deep Water Route]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Deep Water Route Centreline], span:F[Deep Water Route Part]
+| 0, *
+ 
+|===
+
+===== Remark
+
+* span:R[Deep Water Route Aggregation]은 span:F[Deep Water Route Centreline] 또는 span:F[Deep Water Route Part] 중 최소 하나를 반드시 포함해야 하며, 이는 span:F[Deep Water Route]와 관계를 맺어야 함
+
+* span:F[Deep Water Route]와 연관된 항로표지에 대한 연관관계를 입력할 때에는 span:R[Aids To Navigation Association]을 이용해야 함(<<ATON_ASSO,※참고>>)

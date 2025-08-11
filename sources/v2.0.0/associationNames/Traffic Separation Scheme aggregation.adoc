@@ -143,11 +143,13 @@ PrecautionaryArea: # Surface Type
     speedLimit: 12
     speedUnit: 4 # (Knots)
   information:
+    headline: PRECAUTIONARY AREA
     language: eng
-    text: PRECAUTIONARY AREA(This area may be congested or ships may cross navigate, so mariners are advised to navigate with caution.)
+    text: This area may be congested or ships may cross navigate, so mariners are advised to navigate with caution.
   information:
+    headline:
     language: kor
-    text: 주의해역(이 구역은 선박이 밀집되거나 교차 항해의 우려가 있으므로 주의하여 항행하여야 함.)
+    text: 이 구역은 선박이 밀집되거나 교차 항해의 우려가 있으므로 주의하여 항행하여야 함.
 ----
 ====
 

@@ -1,0 +1,24 @@
+.Bridge Aggregation의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between a span:F[Bridge] and its component features.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+| Aggregation
+| The Collection
+| span:F[Bridge]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Span Fixed], span:F[Span Opening], span:F[Pontoon], span:F[Pylon/Bridge Support]
+| 0, *
+
+|===
+
+===== Remark
+
+* span:R[Bridge Aggregation]를 구성하는 특징은 span:F[Span Fixed] 또는 span:F[Span Opening] 중 최소 하나를 반드시 포함해야 하며, 이는 span:F[Bridge]와 연관되어야 함
+
+* 편집 축척에서 항해 불가능한 수역 위의 교량이 개별 구성 객체를 입력할 필요가 없는 경우, span:F[Bridge][C] 또는 span:F[Bridge][S]로 입력해야 함

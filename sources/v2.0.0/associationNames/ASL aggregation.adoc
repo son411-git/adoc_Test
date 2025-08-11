@@ -1,0 +1,26 @@
+.ASL Aggregation의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between an span:F[Archipelagic Sea Lane] and its component features.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+| Aggregation
+| The Collection
+| span:F[Archipelagic Sea Lane]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Archipelagic Sea Lane Area], span:F[Archipelagic Sea Lane Axis]
+| 0, *
+
+|===
+
+===== Remark
+
+* span:R[ASL Aggregation]은 **The Component** 역할에 나열된 특징 중 최소 하나를 반드시 포함해야 하며, 이는 span:F[Archipelagic Sea Lane]과 관계를 맺어야 함
+
+* span:F[Archipelagic Sea Lane]과 연관된 항로표지에 대한 연관관계를 입력할 때에는 span:R[Aids To Navigation Association]을 이용해야 함(<<ATON_ASSO,※참고>>)
+
+include::../features_rules/common/phrase.adoc[tag=NotUsedFeature]

@@ -1,0 +1,25 @@
+.Update Aggregation의 정의
+
+[%header, cols="a,a,a,a"]
+|===
+4+h|*Definition:* A feature association for the binding between an Update Information feature and its component Update Information features.
+h| Role Type h| Role h|Assiciated With h| Multiplicity
+
+| Aggregation
+| The Collection 
+| span:F[Update Information]
+| 0, 1
+
+| Association
+| The Component
+| span:F[Update Information]
+| 0, *
+
+|===
+* span:R[Update Aggregation]은 span:F[Update Information]을 최소한 두 개 이상 반드시 포함해야 하며, 이는 span:A[update type] = (3 : modify)로 입력된 span:F[Update Information][N]와 연관되어야 함.
+
+
+[WARNING]
+====
+자세한 인코딩 지침은 준비 중 입니다.
+====
