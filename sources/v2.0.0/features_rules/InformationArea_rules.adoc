@@ -2,9 +2,10 @@
 ===== Remark
 
 해도 간행 정보::
-* 기준 축척 종이해도의 간행정보 및 보정도 정보를 입력하는데 사용
-* 개정 시 종이해도의 간행 정보를 업데이트하고 보정도와 관련된 span:F[Information Area]는 삭제
-* span:F[Information Area]에 해도명과 발행일을 입력하고 해도의 적용 자료 등 추가 정보는 span:A[information] 또는 span:F[Nautical Information]에 입력하여 span:R[Additional Information Association]을 설정
+* 국내 기준 : 25년 TF 2차 회의 - 후속 조치 회의 결과 (2025.08.07)
+** 과거에는 종이해도를 변환하여 전자해도를 제작하였기 때문에 종이해도 및 보정도의 정보가 필요하였으나
+** 현재는 전자해도로 종이해도를 제작하는 방식이기 때문에 더이상 종이해도 및 보정도의 정보가 전자해도에 필요하지 않음
+** 따라서 span:F[Information Area]는 기준 축척 종이해도의 간행정보 및 보정도 정보를 입력하는데 사용하지 않음
 
 //
 
@@ -25,42 +26,6 @@
 
 ===== Example
 
-//REVIEW 1
-// 기존에는 Information Area의 feature name에 "(No.3412)상왕등도에서 어청도" 등을 입력하고 
-//Nautical Information의 text에 "2003년부터 2023년까지 대한민국 국립해양조사원 측량"등을 입력했음
-
-.종이해도 간행 정보의 인코딩 예시
-[cols="30,25,10,10,25", options="header"]
-|===
-|Attribute |Acronym |Type |Mult. |Value
-
-|reported date|SORDAT|TD|0,1| 20241101
-|**information**|INFORM|C|0,*|
-|    span:E[language]||(S)TE|1,1| eng
-|    text|INFORM/NINFOM|(S)TE|0,1| (No.3412)SANGWANGDEUNGDO TO EOCHEONGDO(From ROK KHOA surveys from 2003 to 2023)
-|**information**|INFORM|C|0,*|
-|    span:E[language]||(S)TE|1,1| kor
-|    text|INFORM/NINFOM|(S)TE|0,1| (No.3412)상왕등도에서 어청도(2003년부터 2023년까지 대한민국 국립해양조사원 측량)
-|===
-
-//REVIEW 2
-// 기존에는 Information Area의 feature name에 "보정도(1:75,000)" 등을 입력했음
-
-.보정도의 인코딩 예시
-[cols="30,25,10,10,25", options="header"]
-|===
-|Attribute |Acronym |Type |Mult. |Value
-
-|reported date|SORDAT|TD|0,1| 20250509
-|**information**|INFORM|C|0,*|
-|    span:E[language]||(S)TE|1,1| eng
-|    text|INFORM/NINFOM|(S)TE|0,1| Block for Chart(No.3412) 
-|**information**|INFORM|C|0,*|
-|    span:E[language]||(S)TE|1,1| kor
-|    text|INFORM/NINFOM|(S)TE|0,1| 보정도(1:75,000)
-|===
-
-//REVIEW 3
 // 기존에는 Information Area의 feature name에 "교통안전 특정해역의 항해" 등을 입력하고 
 //Nautical Information의 file reference에 "101KR000030K100.TXT"등을 입력했음
 

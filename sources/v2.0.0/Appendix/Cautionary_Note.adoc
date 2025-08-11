@@ -917,7 +917,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Marine farms(Unsurveyed Area) and obstruction
+|    headline||(S)TE|0,1| Marine Farms(Unsurveyed Area) and Obstruction
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Numerous marine farms(Unsurveyed ara) and obstructions exist in the coastal areas, so mariners should approach with caution.
 |**information**|INFORM|C|0,*| 
@@ -926,7 +926,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 연안해역에서는 양식장(미측량구역) 및 장애물 등이 다수 산재되어 있으므로 접근 시 주의하여야 함.
 5+| span:E[※ 비고] : +
 1. 축척 1:50,000까지 적용
-2. 데이터셋에 span:F[Marine Farm Culture]나 span:F[Obstruction]이 있다면, 이들 객체는 span:F[Information Area][S]의 지오메트리 범위에 최소한으로 포함되어야 함
+2. 데이터셋에 span:F[Marine Farm/Culture]나 span:F[Obstruction]이 있다면, 이들 객체는 span:F[Information Area][S]의 지오메트리 범위에 최소한으로 포함되어야 함
 |===
 
 . 양식장 및 장애물 주의
@@ -941,7 +941,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Marine farms and obstruction
+|    headline||(S)TE|0,1| Marine Farms and Obstruction
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| As numerous marine farms and obstructions may not be displayed on this chart, mariners should approach with caution. Omitted information can be found on large-scale charts.
 |**information**|INFORM|C|0,*| 
@@ -950,7 +950,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 해도에서는 양식장 및 장애물 등이 다수 생략되어 있으므로 접근 시 주의하여야 하며, 생략된 정보는 대축척 해도에서 확인할 수 있음.
 5+| span:E[※ 비고] : +
 1. 축척 1:75,000부터 적용
-2. 데이터셋에서 span:F[Marine Farm Culture] 또는 span:F[Obstruction]을 확인하거나, 대축척 해도에서 생략된 이러한 객체를 식별해야하며, 확인된 객체는 span:F[Information Area][S]의 지오메트리 범위에 최소한으로 포함되어야 함
+2. 데이터셋에서 span:F[Marine Farm/Culture] 또는 span:F[Obstruction]을 확인하거나, 대축척 해도에서 생략된 이러한 객체를 식별해야하며, 확인된 객체는 span:F[Information Area][S]의 지오메트리 범위에 최소한으로 포함되어야 함
 |===
 
 . 새만금방조제 내측 항해 주의
@@ -965,11 +965,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Risky Navigation Saemangeum
+|    headline||(S)TE|0,1| Saemangeum Seawall Inner Waters
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| The inner waters of the Saemangeum Seawall are subject to significant depth fluctuations due to reclamation work and numerous obstructions. In addition, the Sinsi and Garyeok drainage sluice gates are frequently opened to control water levels. Vessels navigationg in the vicinity should exercise caution.
 |**information**|INFORM|C|0,*| 
-|    headline||(S)TE|0,1| 새만금의 항해위험
+|    headline||(S)TE|0,1| 새만금방조제 내측 해역
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 새만금방조제 내측 해역은 매립공사 등으로 수심 변동이 심하고 항해 장매물이 다수 존재하며, 신시, 가력 배수갑문을 통한 수위조절을 위해 수시로 개방되니 부근 항해 선박은 주의하여야 함.
 |===
@@ -1236,11 +1236,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |===
 
 5+^| image:../images/Cautionary_Notes/오류지곶에서장산곶사이의조류.svg[]
-5+^h| Tidal Stream Panel Data
+5+^| 조류 기사는 span:F[Tidal Stream Panel Data]의 입력지침을 <<TidalStreamPanelData_Rule_Remark,※참고>>
 
-h|Attribute h|Acronym h|Type h|Mult. h|Value
-
-5+^| 조류 기사는 span:F[Tidal Stream Panel Data]의 입력지침을 <<TidalStreamPanelData_Rule_Remark,참고>>
 |===
 
 . 부산신항 안벽 부근 수심 주의
@@ -1584,11 +1581,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002040E100.TXT
-|    headline||(S)TE|0,1| Tagubongdo-Haejuseo Section
+|    headline||(S)TE|0,1| Precautionary Area
 |    span:E[language]||(S)TE|1,1| eng
 |**information**|INFORM|C|0,*| 
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002040K100.TXT
-|    headline||(S)TE|0,1| 타구봉도-해주서 구간
+|    headline||(S)TE|0,1| Precautionary Area
 |    span:E[language]||(S)TE|1,1| kor
 |===
 

@@ -1,6 +1,14 @@
 // tag::TidalStreamPanelData[]
 ===== Remark
 [[TidalStreamPanelData_Rule_Remark]]
+
+
+
+
+
+
+
+//
 * 국내 기준 : 25년 TF 2차 회의 - 후속 조치 회의 결과 (2025.08.07)
 ** 기존의 입력 방식(지점의 조류개황을 입력하는 방식)은 IHO의 전자해도 표준과 지침을 따르지않고 있기때문에 해도수로과 및 해양관측과에서 속성 입력을 위한 적절한 자료가 준비될 때까지 +
 S-57 : span:F[TS_PAD] 및 S-101 Ed 1.0.0 & 2.0.0 : span:F[Tidal Stream Panel Data]는 입력하지 않음 +
