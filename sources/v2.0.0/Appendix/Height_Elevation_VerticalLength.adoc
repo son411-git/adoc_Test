@@ -3,7 +3,7 @@
 = 높이의 구분
 
 .Height, Elevation, VerticalLength
-image::../Appendix/HEV.png[]
+image::../images/Height_Elevation_VerticalLength/HEV.png[]
 
 * 일반적으로 높이에 대한 수직기준면은 평균해면(MSL)을 사용한다.
 ** 평균해면이 아닌 다른 기준면을 사용하는 경우에는 이를 span:a[vertical datum]같은 속성으로 이를 명시해주어야 한다.
