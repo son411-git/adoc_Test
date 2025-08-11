@@ -17,7 +17,8 @@
 |Type 
 |span:F[Navigation Line] + 
 span:A[category of navigation line] 
-|span:F[Recommended Track] + span:A[based on fixed marks] 
+|span:F[Recommended Track] + 
+span:A[based on fixed marks] 
 |Navigational Aids
 
 |1
@@ -77,19 +78,14 @@ span:A[category of navigation line]
 
 //
 ===== Example
+.Navigation Line의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|#essential Category of Navigation Line|CATNAV|EN|1,1| 2: transit line
-|**#essential Orientation**||C|1,1| 
-|    #essential Orientation Value|ORIENT|(S)RE|1,1| 13 
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    Text|INFORM/NINFOM|(S)TE|0,1| Measured Distance 3689.90m 013Deg
-|**Information**|INFORM|C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 속도시험거리 3689.90m 013도
+|span:E[category of navigation line]|CATNAV|EN|1,1| 3 : leading line bearing a recommended track
+|**span:E[orientation]**||C|1,1| 
+|    span:E[orientation value]|ORIENT|(S)RE|1,1| 270
 |===
 
 ---
