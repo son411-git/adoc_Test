@@ -1,66 +1,115 @@
 // tag::TidalStreamPanelData[]
 ===== Remark
 [[TidalStreamPanelData_Rule_Remark]]
-//REVIEW: 으악
-span:deletion[으악]
+* 국내 기준 : 25년 TF 2차 회의 - 후속 조치 회의 결과 (2025.08.07)
+** 기존의 입력 방식(지점의 조류개황을 입력하는 방식)은 IHO의 전자해도 표준과 지침을 따르지않고 있기때문에 해도수로과 및 해양관측과에서 속성 입력을 위한 적절한 자료가 준비될 때까지 +
+S-57 : span:F[TS_PAD] 및 S-101 Ed 1.0.0 & 2.0.0 : span:F[Tidal Stream Panel Data]는 입력하지 않음 +
+** 다만, 기존의 주의기사는 S-57 : CTNARE(P), S-101 Ed 1.0.0 & 2.0.0 : Information Area(P)로 입력
 
-// - 현재 국내 전자해도에서는 #A "information"에 조류 주의기사를 입력하고 있음(향후 텍스트로 입력된 주의기사를 각각의 속성으로 입력할 수 있도록 기준 협의 필요)
-// - 종이해도에 조류표 및 조위관측소로 표시되는 정보는 #F "Tidal Stream Panel data" 피처로 인코딩
-// - #A "Tidal stream value"은 필수 복합속성으로 반드시 입력
-// - #A "Tidal stream value"은 #A "Orientation", #A "Time relative to tide", #A "Velocity maximum"이 한 세트로 구성
-// - 필수 입력 요소에 대해 알 수 없다면 (Unknown) 입력
-// - 외부참조파일을 입력할 경우 명명기준 확인
-//   (101CCCCXXXXXXXX.EEE) - 101 : Product명, CCCC: Agency code, XXXXXXXX.EEE:파일명
-
+.임시 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+5+^h| Information Area(P)
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| Tidal Streams at Buso Sudo
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Based on Busan New Port, for Flood tide stream, turn of tidal current occurs about 1.5 hrs after LW and maximum current speed occurs about 4.3 hrs. For Ebb tide stream, turn of tidal current occurs about 0.2 hrs before HW and maximum current speed occurs about 3.5 hrs after HW.
+|**information**|INFORM|C|0,*|
+|    headline||(S)TE|0,1| 부도수도의 조류
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 부산항신항 기준, 창조류는 저조 후 1.5시 경 전류하여 4.3시 경 최강유속, 낙조류는 고조 전 0.2시 경 전류하여 고조 후 3.5시 경 최강유속이 나타난다.
+|===
 
 ===== Example
-.Tidal Stream Panel Data의 인코딩 예시
+.Tidal Stream Panel Data의 인코딩 예시 (시행 전)
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|**feature name**||C|0,*|
-|    span:E[language]||(S)TE|1,1| eng
-|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| A
-|    name usage||(S)EN|0,1| 1 span:D[default name display]
-|interoperability identifier||URN|0,1|
-|span:E[station name]||TE|1,1| _(Unknown)_
-|station number||TE|0,1| 
+|span:E[station name]||TE|1,1| Plymouth (Devonport)
+|station number||TE|0,1| 0014
 |**span:E[tidal stream panel values]**||C|1,*|
-|    span:E[reference tide]||(S)EN|1,1| _(Unknown)_
-|    span:E[reference tide type]||(S)EN|1,1| _(Unknown)_
-|    stream depth||(S)RE|0,1|
+|    span:E[reference tide]||(S)EN|1,1| 1 : high water
+|    span:E[reference tide type]||(S)EN|1,1| 1 : springs
 |**    span:E[tidal stream value]**||(S)C|1,*|
 |**        span:E[orientation]**||(S)C|1,1|
-|            orientation uncertainty||(S)RE|0,1|
-|            span:E[orientation value]|ORIENT|(S)RE|1,1| 84.5 span:D[degrees]
-|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 1.8 span:D[knots]
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 113 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 0.1 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| -6
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 332 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 0.6 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| -5
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 331 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 1.1 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| -4
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 342 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 1.0 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| -3
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 347 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 0.7 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| -2
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 333 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 0.5 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| -1
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 317 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 0.3 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| 0
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 178 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 0.3 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| 1
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 146 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 0.6 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| 2
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 140 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 1.0 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| 3
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 143 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 1.1 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| 4
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 143 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 0.8 span:D[knots]
+|        span:E[time relative to tide]||(S)RE|1,1| 5
+
+|**    span:E[tidal stream value]**||(S)C|1,*|
+|**        span:E[orientation]**||(S)C|1,1|
+|            span:E[orientation value]|ORIENT|(S)RE|1,1| 138 span:D[degrees]
+|        span:E[speed maximum]|CURVEL|(S)RE|1,1| 0.3 span:D[knots]
 |        span:E[time relative to tide]||(S)RE|1,1| 6
-|**information**|INFORM|C|0,*|
-|    span:E[language]||(S)TE|1,1| eng
-|    text|INFORM/NINFOM|(S)TE|0,1| See Current Tables.
-|**information**|INFORM|C|0,*|
-|    span:E[language]||(S)TE|1,1| kor
-|    text|INFORM/NINFOM|(S)TE|0,1| 부근 조류예보표를 참조할 것.
 
 |===
 
 ---
 // end::TidalStreamPanelData[]
-
-
-실질적으로는 어떠한 정보도 제공 못하는 입력 방식이 필요한지?
-
-계속해서 관측하는 것도 아니어서 station name, number가 있을리 없고
-
-예시에는 tidal stream panel values를 억지로 넣어뒀지만, 실제론 입력 예가 없음
-reference tide 및 tide type도 당연히 없고
-
-"조류예보표를 참조할 것" 이라는 말 말고는 아무 의미가 없는데
-조류예보표의 어디를 찾아보라는 설명도 없고
-
-"조류예보표"라는 명칭의 항해용 간행물 따위는 없음
-
-대체 어쩌란 말인가
-
-이렇게 입력할 꺼면 그냥 다 빼는게 맞음
