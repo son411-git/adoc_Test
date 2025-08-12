@@ -1,7 +1,7 @@
 // tag::MarinePollutionRegulationsArea[]
 ===== Remark
 
-* IMO MARPOL, IMO 협약, 및 다양한 국가 규정에 정의된 해양 오염 규제가 적용되는 구역을 입력해야 하는 경우, span:F[Marine Pollution Regulations Area] 특징을 반드시 사용해야 함.
+* IMO MARPOL, IMO 협약, 및 다양한 국가 규정에 정의된 해양 오염 규제가 적용되는 구역을 입력해야 하는 경우, span:F[Marine Pollution Regulations Area]을 반드시 사용해야 함.
 비고:
 
 * span:A[regulation citation]에 관련 국가 규정의 인용문을 입력 

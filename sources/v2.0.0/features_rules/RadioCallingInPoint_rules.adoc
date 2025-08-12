@@ -8,9 +8,9 @@
 ** 진입 또는 진출 어느 한 시점에만 보고하는 경우 span:A[traffic flow] = 1 span:D[inbound] 또는 2 span:D[outbound]로 구분하여 입력하고, span:A[orientation value]에 진행 방향을 입력
 ** 진입/진출 시 모두 보고해야 하는 경우 span:A[traffic flow] = 4 span:D[two-way]로 입력하고, span:A[orientation value]에 해당 방향을 입력 (입/출 방향이 정확히 반대인 경우, 180° 미만의 값을 입력)
 ** 통항흐름이 분기하는 경우에는, span:A[orientation value] 값을 2개 입력해서 각 분기 방향을 나타냄
-* 통신 채널은 span:A[communication channel] 또는 이와 연관된 span:F[Contact Details] 피처에 입력
+* 통신 채널은 span:A[communication channel] 또는 이와 연관된 span:F[Contact Details]에 입력
 ** 통신 채널을 입력할 때, 동일한 채널을 사용하는 span:F[Radio Calling In Point]가 하나만 있는 경우, span:A[communication channel]에 채널을 입력
-** 동일한 채널을 사용하는 span:F[Radio Calling In Point]가 여러 개 있는 경우, span:F[Contact Details] 피처에 속성 span:A[communication channel]에 채널을 입력하고, span:F[Radio Calling In Point]와 span:F[Contact Details] 간 연관관계를 설정
+** 동일한 채널을 사용하는 span:F[Radio Calling In Point]가 여러 개 있는 경우, span:F[Contact Details]에 속성 span:A[communication channel]에 채널을 입력하고, span:F[Radio Calling In Point]와 span:F[Contact Details] 간 연관관계를 설정
 
 //
 * VTS와 같은 관제구역이 있다면, 관제 구역은 span:F[Vessel Traffic Service Area]로 입력하고, span:F[Radio Calling In Point]는 관제구역의 경계에 위치하도록 입력

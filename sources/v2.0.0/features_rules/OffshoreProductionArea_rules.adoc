@@ -20,7 +20,7 @@
 
 //
 * 풍력발전단지의 경우, span:F[Offshore Production Area]를 사용하여 전체 단지를 나타내고, 개별 풍력발전기는 span:F[Wind Turbine]으로 입력
-* 파력/조류 발전단지의 개별 설비는 span:F[Obstruction] 또는 관련 표면 구조물 피처(span:F[Offshore Platform], span:F[Special Purpose/General Beacon] 등)를 사용하여 입력
+* 파력/조류 발전단지의 개별 설비는 span:F[Obstruction] 또는 관련 표면 구조물 객체(span:F[Offshore Platform], span:F[Special Purpose/General Beacon] 등)를 사용하여 입력
 ** 수면 하에 위치한 터빈의 경우, span:F[Obstruction]으로 입력
 
 // 

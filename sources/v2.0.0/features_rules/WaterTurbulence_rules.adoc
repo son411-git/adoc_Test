@@ -1,7 +1,7 @@
 // tag::WaterTurbulence[]
 ===== Remark
 * 쇄파(breakers)를 인코딩하는 경우 쇄파를 야기하는 것(예: span:F[Underwater/Awash Rock])과 동일한 위치에 인코딩
-* 면 형태의 span:F[Water Turbulence] 피처는 span:F[Depth Area] 또는 span:F[Unsurveyed Area] 피처와 중첩되어야만 함
+* 면 형태의 span:F[Water Turbulence]는 span:F[Depth Area] 또는 span:F[Unsurveyed Area]와 중첩되어야만 함
 * 점,선,면 형태 모두 인코딩 가능하지만 일반적으로 점 형태로 입력
 
 ===== Example

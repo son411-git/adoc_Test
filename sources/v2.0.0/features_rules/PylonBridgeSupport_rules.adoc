@@ -1,7 +1,7 @@
 // tag::PylonBridgeSupport[]
 ===== Remark
 
-* span:F[Pylon/Bridge Support]는 교각이나 철탑을 나타내는 피처
+* span:F[Pylon/Bridge Support]는 교각이나 철탑을 나타내는 객체
 
 * 항해가 가능한 지역의 교량에 교각이 있다면, 경간에 의해 가려지더라도 span:F[Pylon/Bridge Support]를 입력해야 함
 ** (일반적인 교량의) 교각의 경우 span:A[category of pylon] = 5 span:D[bridge pier]로 입력

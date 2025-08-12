@@ -14,7 +14,7 @@
 //
 * 염전을 입력해야 하는 경우, span:A[category of land region = (15 : salt pan)로 입력해야함
 ** 염전은 span:F[Land Area] 위에 입력해야 함
-** 염전의 바다 쪽 경계가 해안선과 일치하는 경우, 해당 경계는 Coastline 피처를 사용하여 인코딩해야 하며, 속성 span:F[coastline]에 span:A[category of coastline] = (2 : flat coast)로 입력
+** 염전의 바다 쪽 경계가 해안선과 일치하는 경우, 해당 경계는 Coastline 객체를 사용하여 인코딩해야 하며, 속성 span:F[coastline]에 span:A[category of coastline] = (2 : flat coast)로 입력
 
 //
 ===== Example

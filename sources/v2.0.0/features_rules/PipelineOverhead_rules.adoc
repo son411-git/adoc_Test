@@ -1,7 +1,7 @@
 // tag::PipelineOverhead[]
 ===== Remark
 
-* 항해가 가능한 수역을 지나는 가공관을 입력해야하는 경우, 반드시 span:F[Pipeline Overhead] 피처를 사용해야 함
+* 항해가 가능한 수역을 지나는 가공관을 입력해야하는 경우, 반드시 span:F[Pipeline Overhead]를 사용해야 함
 //
 * 통과 가능 높이는 span:A[vertical clearance fixed]로 입력
 include::common/phrase.adoc[tag=verticalDatum_for_clearance]
@@ -10,7 +10,7 @@ include::common/phrase.adoc[tag=verticalDatum_for_clearance]
 * 사용하지 않는 가공관은 span:A[status] = 4 span:D[not in use]로 입력하고, span:A[category of pipeline/pipe] 및 span:A[product] 속성은 입력하지 않음
 
 //
-* 가능하다면, 가공관을 지지하는 구조물은 span:F[Pylon/Bridge Support] 피처로 인코딩하고, span:A[category of pylon] = 6 span:D[pipeline pylon]으로 입력해야 함
+* 가능하다면, 가공관을 지지하는 구조물은 span:F[Pylon/Bridge Support]로 인코딩하고, span:A[category of pylon] = 6 span:D[pipeline pylon]으로 입력해야 함
 
 ===== Example
 .Pipeline Overhead의 인코딩 예시

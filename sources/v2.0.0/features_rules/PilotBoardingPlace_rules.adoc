@@ -7,7 +7,7 @@
 // REVIEW:: 기상 상황에 따른 대체 지점에 대한 명칭 입력 방법에 대한 검토 필요
 
 //
-* 도선을 위한 연락정보는 span:I[Contact Details] 피처에 입력하고, span:F[Pilot Boarding Place]와 연관관계를 설정
+* 도선을 위한 연락정보는 span:F[Contact Details]에 입력하고, span:F[Pilot Boarding Place]와 연관관계를 설정
 
 
 ===== Example

@@ -16,7 +16,7 @@
 * span:A[horizontal position uncertainty]와 span:A[vertical uncertainty]는 span:F[Spatial Quality] 또는 span:F[Quality of Bathymetric Data]를 사용하여 입력하며, 지역의 수심 데이터 품질에 대한 전체적인 지표를 제공함
 * span:A[spatial accuracy]는 시간에 따라 변하는 지역에서 수직 및 수평 위치 불확실성을 지정하며, span:R[Quality of Bathymetric Data Composition] 또는 span:F[Quality of Bathymetric Data]의 span:A[zone of confidence]를 통해 입력할 수 있음
 * span:F[Spatial Quality]는 span:F[Obstruction], span:F[Sounding], span:F[Underwater/Awash Rock], span:F[Wreck]의 지리적 형상과 연관되어, span:F[Quality of Bathymetric Data]와 다른 정확도를 나타낼 수 있음
-* span:A[quality of horizontal measurement]는 span:F[Spatial Quality]에서 수심 특징의 낮은 정확도 품질을 나타내기 위해 span:A[horizontal position accuracy]와 함께 사용할 수 있음
+* span:A[quality of horizontal measurement]는 span:F[Spatial Quality]에서 수심의 낮은 정확도 품질을 나타내기 위해 span:A[horizontal position accuracy]와 함께 사용할 수 있음
 
 //
 * 면(surface) 형태의 공간 품질 속성을 연관시키는 것은 현재 사용 사례가 없으므로 금지됨

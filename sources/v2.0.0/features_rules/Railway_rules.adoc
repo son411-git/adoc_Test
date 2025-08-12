@@ -5,7 +5,7 @@
 * 사용하지 않는 철도는 span:F[Railway]의 속성 #A "Status" = 4 span:D[not in use]으로 인코딩
 
 //
-* span:F[Railway]와 관련된 기차역은 span:F[Building] 피처에 속성 #A "function" = 8 span:D[railway station]로 인코딩
+* span:F[Railway]와 관련된 기차역은 span:F[Building]에 속성 #A "function" = 8 span:D[railway station]로 인코딩
 
 ===== Example
 

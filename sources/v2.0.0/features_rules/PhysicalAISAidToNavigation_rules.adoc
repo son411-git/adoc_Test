@@ -13,7 +13,7 @@
 include::common/phrase.adoc[tag=Refer]
 
 //
-* AIS 신호가 다른 위치에서 송신되는 경우(Sythnetic V-AIS), 실제 신호를 보내는 기지국은 span:F[Radio Station] 피처로 입력하며, span:A[category of radio station] = 20 span:D[AIS base station]으로 입력
+* AIS 신호가 다른 위치에서 송신되는 경우(Sythnetic V-AIS), 실제 신호를 보내는 기지국은 span:F[Radio Station]로 입력하며, span:A[category of radio station] = 20 span:D[AIS base station]으로 입력
 //REVIEW:: 기존 내용이 이상함; 번역은 이게 더 적절한거 같은데.. 
 
 //
