@@ -5,6 +5,7 @@
 * 무선국의 종류에 따라 span:F[Radar Station]의 속성 span:A[category of radar station]을 입력
 
 ===== Example
+.Radar Station의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value

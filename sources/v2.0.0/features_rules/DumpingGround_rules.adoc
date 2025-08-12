@@ -24,6 +24,7 @@
 * 법령 및 고시 등에 투기장 내 제한 속력이 명시되어 있거나, 별도의 속력 제한 구역의 범위가 일치하면 span:F[Restricted Area]를 별도로 입력하지 않고 span:F[Dumping Ground]에 span:A[vessel speed limit]를 직접 입력
 
 ===== Example
+.Dumping Ground의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value

@@ -1,16 +1,17 @@
 // tag::PilotBoardingPlace[]
 ===== Remark
 
-* 도선사 승/하선 지점은 반드시 span:F[Pilot Boarding Place] 피처를 사용하여 입력
+* 도선사 승/하선 지점은 반드시 span:F[Pilot Boarding Place]를 사용하여 입력
 ** 도선사 승/하선 지점이 다를 경우, 각각 별도의 span:F[Pilot Boarding Place]로 입력
 ** 기상 상황에 따라 도선사 승/하선 지점이 변경되는 경우, 기존 명칭에 '(Bad Weather)'를 추가하여 입력하고, span:A[information]에 상세한 정보를 입력
 // REVIEW:: 기상 상황에 따른 대체 지점에 대한 명칭 입력 방법에 대한 검토 필요
 
 //
-* 도선을 위한 연락정보는 span:I[Contact Details] 피처에 입력하고, span:F[Pilot Boarding Place] 피처와 연관관계를 설정
+* 도선을 위한 연락정보는 span:I[Contact Details] 피처에 입력하고, span:F[Pilot Boarding Place]와 연관관계를 설정
 
 
 ===== Example
+.Pilot Boarding Place의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value

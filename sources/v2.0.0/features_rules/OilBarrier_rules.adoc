@@ -8,6 +8,7 @@
 ** 오탁 방지막인 경우, span:A[category of oil barrier] = 2 span:D[floating oil barrier]로 입력
 
 ===== Example
+.Oil Barrier의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value

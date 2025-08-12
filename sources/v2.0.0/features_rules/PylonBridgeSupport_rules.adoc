@@ -23,6 +23,7 @@ include::common/phrase.adoc[tag=Refer]
 * span:A[water level effect] = 1 span:D[partly submerged at high water], 2 span:D[always dry] 또는 6 span:D[subject to inundation or flooding]인 경우 span:F[Land area]로 덮혀야 함
 
 ===== Example
+.Pylon/Bridge Support의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value

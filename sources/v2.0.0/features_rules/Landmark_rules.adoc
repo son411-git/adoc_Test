@@ -67,6 +67,7 @@ image::../images/Landmark/Landmark_image-3.png[align="center"]
 
 //
 ===== Example
+.Landmark의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value

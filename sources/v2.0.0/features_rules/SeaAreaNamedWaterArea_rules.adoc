@@ -4,6 +4,7 @@
 * span:A[category of sea area] 이나 span:A[feature name] 중 어느 하나는 반드시 입력해야 함
 
 ===== Example
+.Sea Area/Named Water Area의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
