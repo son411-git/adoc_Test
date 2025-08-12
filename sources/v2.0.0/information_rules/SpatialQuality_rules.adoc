@@ -1,0 +1,46 @@
+// tag::SpatialQuality[]
+===== Remark
+
+
+* span:A[quality of horizontal measurement] 또는 span:A[spatial accuracy] 중 적어도 하나는 반드시 입력해야 함
+* span:A[fixed date range]를 사용할 경우, 하위 속성 span:A[date end] 또는 span:A[date start] 중 적어도 하나는 반드시 채워야 함
+* 공간 속성 유형은 지도적 형상(예: 점, 선, 면)을 반드시 포함해야 함.
+
+//
+* 각 span:F[Spatial Quality]는 적용되는 지리 객체(geo feature)와  연관된 경우 span:R[Spatial Association]로 맺어져야 하고, span:F[Quality of Bathymetric Data]와 연관된 경우 span:R[Quality of Bathymetric Data Composition]로 반드시 맺어져야 함
+* span:A[spatial accuracy]가 두 개 이상 입력된 경우, 하위 속성 span:A[fixed date range]는 반드시 입력해야 함
+* span:F[Obstruction], span:F[Sounding], span:F[Underwater/Awash Rock], span:F[Wreck]과 연관된 span:F[Spatial Quality]에서 span:A[height] 또는 span:A[value of sounding] = (Undefined)인 경우, 연관된 span:F[Spatial Quality]는 반드시 span:A[vertical uncertainty/uncertainty fixed] = (Undefined)로 입력해야 함
+
+//
+* 공간 품질 속성은 span:F[Spatial Quality]에 포함되며, 점(point), 다중점(multipoint), 선(curve) 형태와 메타 span:F[Quality of Bathymetric Data]에 연관될 수 있음.
+* span:A[horizontal position uncertainty]와 span:A[vertical uncertainty]는 span:F[Spatial Quality] 또는 span:F[Quality of Bathymetric Data]를 사용하여 입력하며, 지역의 수심 데이터 품질에 대한 전체적인 지표를 제공함
+* span:A[spatial accuracy]는 시간에 따라 변하는 지역에서 수직 및 수평 위치 불확실성을 지정하며, span:R[Quality of Bathymetric Data Composition] 또는 span:F[Quality of Bathymetric Data]의 span:A[zone of confidence]를 통해 입력할 수 있음
+* span:F[Spatial Quality]는 span:F[Obstruction], span:F[Sounding], span:F[Underwater/Awash Rock], span:F[Wreck]의 지리적 형상과 연관되어, span:F[Quality of Bathymetric Data]와 다른 정확도를 나타낼 수 있음
+* span:A[quality of horizontal measurement]는 span:F[Spatial Quality]에서 수심 특징의 낮은 정확도 품질을 나타내기 위해 span:A[horizontal position accuracy]와 함께 사용할 수 있음
+
+//
+* 면(surface) 형태의 공간 품질 속성을 연관시키는 것은 현재 사용 사례가 없으므로 금지됨
+* 선(curve) 형태는 수직 차원을 지원하지 않으므로 선에 대한 span:A[vertical uncertainty]는 금지됨
+* 단일 span:F[Quality of Bathymetric Data]에 span:F[Spatial Quality]와 span:A[zone of confidence] 두 옵션을 모두 사용하는 것은 금지됨
+* span:A[quality of horizontal measurement]는 span:F[Quality of Bathymetric Data]와 연관된 span:F[Spatial Quality]에 대해 채워져서는 안 됨.
+* span:F[Spatial Quality]에서 span:A[quality of horizontal measurement]를 사용할 경우, span:F[Quality of Bathymetric Data]와 연관되어서는 안 됨.
+
+//
+* span:A[horizontal position uncertainty]와 span:A[vertical uncertainty]의 사용은 수평/수직 불확실성 값이 단일 span:F[Quality of Bathymetric Data]에 특정되거나 여러 객체와 관련 있는지에 따라 결정해야 함. 특정 값은 시간에 따라 변하는 수심 또는 수층 내 다양한 품질과 관련되며, 공통 값은 변하지 않는 지역의 일반적인 품질 불확실성에 특정함
+* span:F[Quality of Bathymetric Data]의 span:A[category of temporal variation]이 (2 : likely to change and significant shoaling expected) 또는 (3 : likely to change but significant shoaling not expected)로 설정된 경우, span:A[spatial accuracy]는 span:F[Spatial Quality]를 사용하여 입력해야 하며, 이는 span:F[Quality of Bathymetric Data]의 span:A[zone of confidence]와 일치해야 함
+* span:A[fixed date range]는 시간에 따른 공간 정확도 저하를 정의하며, span:A[date start]와 span:A[date end]는 연관된 span:F[Quality of Bathymetric Data]의 span:A[zone of confidence]와 동일해야 함
+* span:A[vertical uncertainty]는 지정된 날짜 범위 내 span:F[Quality of Bathymetric Data]의 수심 불확실성을 지정하며, span:A[depth range minimum value]가 있는 경우 소해 수심(swept depth)의 불확실성만 나타냄
+* span:A[horizontal position uncertainty]는 지정된 날짜 범위 내 span:F[Quality of Bathymetric Data]의 위치 불확실성을 지정함
+* span:F[Spatial Quality]와 span:F[Obstruction], span:F[Underwater/Awash Rock], span:F[Wreck]의 연관은 수평/수직 정확도가 기본 품질과 다를 경우 사용됨
+
+===== Example
+.Spatial Quality의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|quality of horizontal measurement|QUAPOS|EN|0,1| 4 : approximate
+|===
+
+---
+// end::SpatialQuality[]

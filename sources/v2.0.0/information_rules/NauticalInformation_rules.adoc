@@ -1,0 +1,36 @@
+// tag::NauticalInformation[]
+===== Remark
+
+* span:F[Nautical Information]를 사용할 경우, span:A[information] 또는 span:A[pictorial representation] 중 적어도 하나는 반드시 채워야 함
+
+* span:A[fixed date range]를 사용할 경우, 하위 속성 span:A[date end] 또는 span:A[date start] 중 적어도 하나는 반드시 채워야 함
+
+* span:A[information]를 사용할 경우, 하위 속성 span:A[file reference] 또는 span:A[text] 중 적어도 하나는 반드시 채워야 함
+
+* 여러 지리 객체(geo features)에 동일하게 적용되지만, 해당 객체의 기술 속성(descriptive attributes)으로 설명할 수 없는 경우, span:F[Nautical Information]을 사용해야 함
+* 하나의 지리 객체(geo feature)에서, 해당 객체의 기술 속성(descriptive attributes)으로 설명할 수 없는 경우, span:A[information] 또는 span:A[pictorial representation]을 사용하여 입력해야 함. span:F[Nautical Information]은 사용하지 않아야 함
+
+//
+* 각 span:F[Nautical Information]은 해당 정보가 적용되는 객체와 span:R[Additional Information]을 통해 반드시 연관되어야 함
+
+//
+* 연관된 객체가 span:A[pictorial representation]을 가질 수 없는 경우, span:F[Nautical Information]에 그림 파일 참조(span:A[pictorial representation])를 넣어서는 안 됨
+
+//
+* span:F[Nautical Information]에 입력된 span:A[fixed date range]와 span:A[periodic date range]는 span:F[Nautical Information]에만 적용되며, 연관된 다른 객체(feature)에는 적용되지 않음.
+
+===== Example
+.Nautical Information의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| Republic of Korea Air Force(ROKAF) Practice Area
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 대한민국 공군 훈련구역
+|===
+
+---
+// end::NauticalInformation[]

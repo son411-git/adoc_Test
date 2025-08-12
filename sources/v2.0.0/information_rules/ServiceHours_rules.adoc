@@ -1,0 +1,29 @@
+// tag::ServiceHours[]
+===== Remark
+
+* 서비스 운영 시간표(예: 도개교의 개방 및 폐쇄 시간)를 입력해야 하는 경우, span:F[Service Hours]를 반드시 사용해야 함. 각 span:F[Service Hours]는 적용되는 객체와 span:R[Additional Information]을 통해 반드시 연관되어야 함
+
+//
+* span:A[time intervals by day of week]의 하위 속성 span:A[day of week is range]는 span:A[time intervals by day of week]가 요일 범위를 뜻하는지 또는 개별 요일을 뜻하는지를 나타냄
+* 요일 또는 요일 범위는 하위 속성 span:A[day of week]를 사용하여 인코딩됨. span:A[day of week is range] = (True)로 채워진 경우, span:A[day of week]는 정확히 두 개의 값이 반드시 입력되어야 함
+* span:A[day of week]가 채워지지 않은 경우, 이는 매일(월요일부터 일요일까지) 동일한 일정이 적용됨을 나타냄. 여러 범위 또는 범위와 개별 요일을 혼합하는 것은 허용되지 않음(이런 경우 span:A[time intervals by day of week]를 추가로 입력해야 함)
+* span:R[Additional Information]을 통해 동일한 객체에 겹쳐진 시간 간격을 연결하는 것은 허용되지 않음
+* span:F[Service Hours]에 입력된 span:A[fixed date range]와 span:A[periodic date range]는 span:F[Service Hours]에만 적용되며, 연관된 다른 객체에는 적용되지 않음
+
+===== Example
+
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|**span:E[schedule by day of week]**||C|1,*|
+|    category of schedule||(S)EN|0,1| 1 : normal operation
+|**    span:E[time intervals by day of week]**||(S)C|1,*|
+|        day of week||(S)EN|0,7|
+|        day of week is range||(S)BO|0,1|
+|        time of day start||(S)TI|0,*|000000+0900
+|        time of day end||(S)TI|0,*|240000+0900
+|===
+
+---
+// end::ServiceHours[]

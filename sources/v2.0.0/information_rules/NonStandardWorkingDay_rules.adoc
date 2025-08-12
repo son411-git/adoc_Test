@@ -1,0 +1,30 @@
+// tag::NonStandardWorkingDay[]
+===== Remark
+
+* 행사, 축제 또는 공휴일이 매년 발생하는 날짜를 입력해야 하는 경우, span:F[Non-Standard Working Day]를 사용해야 함.
+
+* span:F[Non-Standard Working Day]을 사용할 경우, span:A[date fixed] 또는 span:A[date variable] 중 하나 이상을 반드시 채워야 함.
+
+* span:A[fixed date range]를 사용할 경우, 하위 속성 span:A[date end] 또는 span:A[date start] 중 적어도 하나는 반드시 채워야 함
+
+* span:A[information]를 사용할 경우, 하위 속성 span:A[file reference] 또는 span:A[text] 중 적어도 하나는 반드시 채워야 함
+
+//
+* 각 span:F[Non-Standard Working Day]는 해당 정보가 적용되는 객체와 span:R[Additional Information]을 통해 반드시 연관되어야 함
+
+//
+date fixed:: 매년 그레고리력에서 동일한 날짜에 반복되는 축제나 공휴일의 날짜를 입력함.
+
+date variable:: 
+그레고리력에서 고정되지 않은 날짜를 입력함. 예) "11월 넷째 목요일", "부활절 일요일".
+
+//
+* span:F[Non-Standard Working Day]에 입력된 span:A[fixed date range]와 span:A[periodic date range]는 span:F[Non-Standard Working Day]에만 적용되며, 연관된 다른 객체(feature)에는 적용되지 않음.
+
+* span:A[information]은 해당 날짜·요일과 관련된 특별 조건이나 규정을 입력하는 데 사용함.
+
+//
+include::../features_rules/common/phrase.adoc[tag=NotUsedFeature]
+
+---
+// end::NonStandardWorkingDay[]

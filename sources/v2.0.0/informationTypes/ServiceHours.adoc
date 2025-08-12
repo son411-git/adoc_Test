@@ -25,3 +25,5 @@ h|Attribute h|Acronym h|Type h|Mult.
 |    span:E[language]||(S)TE|1,1
 |    text|INFORM/NINFOM|(S)TE|0,1
 |===
+
+include::../information_rules/ServiceHours_rules.adoc[tag=ServiceHours]

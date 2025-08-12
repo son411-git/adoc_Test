@@ -17,3 +17,5 @@ h|Attribute h|Acronym h|Type h|Mult.
 |        span:E[uncertainty fixed]||(S)RE|1,1
 |        uncertainty variable factor||(S)RE|0,1
 |===
+
+include::../information_rules/SpatialQuality_rules.adoc[tag=SpatialQuality]

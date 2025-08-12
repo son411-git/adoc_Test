@@ -1,0 +1,40 @@
+// tag::ContactDetails[]
+===== Remark
+
+* 연락처 정보(통신 채널, 호출 부호, 무선 주파수 등)를 입력해야 하는 경우, span:F[Contact Details]를 반드시 사용해야 함. 각 span:F[Contact Details]는 적용되는 객체와 span:R[Additional Information]을 통해 반드시 연관되어야 함
+
+//
+* 선박이 신호를 수신하는 주파수는 span:A[frequency pair]의 하위 속성 span:A[frequency shore station transmits]를 사용하여 반드시 입력해야 함
+* 선박이 해안으로 신호를 보내는 주파수는 span:A[frequency pair]의 하위 속성 span:A[frequency shore station receives]를 사용하여 반드시 입력해야 함
+* span:A[frequency pair]에 채워지는 값은 헤르츠(Hz) 단위로 반드시 명시해야 함
+** 예를 들어, 950 MHz의 신호 주파수는 950000000으로 입력해야 함
+
+===== Example
+.Contact Details의 인코딩 예시
+[cols="30,25,10,10,25", options="header"]
+|===
+|Attribute |Acronym |Type |Mult. |Value
+
+|call sign|CALSGN|TE|0,1|동해해경
+|communication channel|COMCHA|TE|0,*|VHF0016
+|communication channel|COMCHA|TE|0,*|VHF0009
+|contact instructions||TE|0,1|호출용(shore station receives) - VHF CH16, 통신용(shore station transmits) - VHF CH09
+|**frequency pair**||C|0,*|
+|    frequency shore station receives||(S)IN|0,1|156800
+|    span:E[frequency shore station transmits]|SIGFRQ|(S)IN|1,1|156450
+|mmsi code||TE|0,1|	004401010
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-33-680-2442
+|    telecommunication service||(S)EN|0,1|1 : voice
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-33-680-2442
+|    telecommunication service||(S)EN|0,1|2 : facsimile
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|rcceast@korea.kr
+|    telecommunication service||(S)EN|0,1|8 : email
+
+---
+// end::ContactDetails[]

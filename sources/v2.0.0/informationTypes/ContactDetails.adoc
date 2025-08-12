@@ -24,3 +24,5 @@ h|Attribute h|Acronym h|Type h|Mult.
 |    span:E[telecommunication identifier]||(S)TE|1,1
 |    telecommunication service||(S)EN|0,1
 |===
+
+include::../information_rules/ContactDetails_rules.adoc[tag=ContactDetails]

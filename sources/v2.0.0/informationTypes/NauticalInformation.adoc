@@ -19,3 +19,5 @@ h|Attribute h|Acronym h|Type h|Mult.
 |    text|INFORM/NINFOM|(S)TE|0,1
 |pictorial representation|PICREP|TE|0,1
 |===
+
+include::../information_rules/NauticalInformation_rules.adoc[tag=NauticalInformation]
