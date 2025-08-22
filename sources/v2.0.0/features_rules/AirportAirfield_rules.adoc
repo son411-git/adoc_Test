@@ -8,6 +8,9 @@ span:F[Airport/Airfield][S], span:F[Runway][C,S], span:F[Building][P,S], span:F[
 ** 이 조합에는 최소한 하나의 span:F[Airport/Airfield] 또는 span:F[Runway][C,S]가 포함되어야 함
 * 헬기 이착륙장은 span:F[Helipad]로 입력
 
+.국내 공항 위치
+image::../images/AirportAirfield/AirportAirfield_image-1.png[align="center"]
+
 ===== Example
 
 .Airport/Airfield의 인코딩 예시
