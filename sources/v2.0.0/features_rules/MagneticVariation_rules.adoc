@@ -16,8 +16,8 @@
 [cols="^a,^a"]
 
 |===
-| image:../images/MagneticVariation/MagneticVariation_D.png[]
-| image:../images/MagneticVariation/MagneticVariation_D_SV.png[]
+| image:../images/MagneticVariation/MagneticVariation_D.png[width=40%]
+| image:../images/MagneticVariation/MagneticVariation_D_SV.png[width=40%]
 |===
 * 자기 편차도는 현재 주기(epoch)의 전 세계 자기 편차 값을 등자선(isogonals)으로 보여줌. 
 ** 데이터셋에 입력할 경우, 선(Curve) 형태의 두 자료를 면(Surface)로 가공하여 입력해야 함
