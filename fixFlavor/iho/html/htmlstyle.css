@@ -1478,6 +1478,7 @@ span.F { color: #377E47; font-weight: 550; font-style: italic; } /* Feature: 녹
 span.A { color: #404040; font-weight: 550; font-style: italic; } /* Attribute: 핑크 */
 span.R { color: #e5721b; font-weight: 550; font-style: italic; } /* Relation: 주황색 */
 span.E { color: #d32f2f; font-weight: 550; }                     /* 필수: 빨간색 */
+span.M { color: #ab549c; font-weight: 550; }                     /* 선택: 주황색 */
 span.D { color: #999999; font-weight: 300; font-style: italic; } /* Enum 값 설명 */
 span.D::before{
   content: "(";

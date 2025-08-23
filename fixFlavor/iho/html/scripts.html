@@ -157,12 +157,6 @@ nav {
     if (ul) { ul.style.display = 'none'; li.classList.add('collapsed'); }
   });
 
-  // ✅ 로고 교체
-  const logo = document.querySelector('.coverpage-logo');
-  if (logo) {
-    logo.innerHTML = '<img src="sources/v2.0.0/images/khoa_mi.png">';
-  }
-
   // ✅ docnumber 제거
   document.querySelectorAll('span.docnumber').forEach(span => {
     span.innerHTML = '';
