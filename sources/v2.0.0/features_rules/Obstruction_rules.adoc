@@ -213,28 +213,12 @@ include::common/phrase.adoc[tag=SurroundingDepth]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Obstruction|CATOBS|EN|0,1| 6: foul area  
-|Exposition of Sounding|EXPSOU|EN|0,1| 2: shoaler than the range of depth of the surrounding depth area
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Iron structure
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 철제구조물 
-|    Name Usage||(S)EN|0,1| 2 : alternate name display
-|Nature of Surface|NATSUR|EN|0,*| 9: rock
-|Quality of Vertical Measurement|QUASOU|EN|0,*| 6: least depth known
-|Reported Date|SORDAT|TD|0,1| 20121130 
-|Status|STATUS|EN|0,*| 
-|Value of Sounding|VALSOU|RE|0,1| 23.5
-|#essential Water Level Effect|WATLEV|EN|1,1| 3: always under water
-|**Information**|INFORM|C|0,*|  
-|    #essential Language||(S)TE|1,1| eng 
-|    Text|INFORM/NINFOM|(S)TE|0,1| Old
-|**Information**|INFORM|C|0,*|  
-|    #essential Language||(S)TE|1,1| kor
-|    Text|INFORM/NINFOM|(S)TE|0,1| 구성과 자료
+|category of obstruction|CATOBS|EN|0,1| 6 span:D[foul area]
+|quality of vertical measurement|QUASOU|EN|0,*| 6 span:D[least depth known]
+|value of sounding|VALSOU|RE|0,1| 9.2 span:D[m]
+|span:E[water level effect]|WATLEV|EN|1,1| 3 span:D[always underwater/submerged]
+|span:E[surrounding depth]||RE|1,1| 5.0 span:D[m]
+
 |===
 
 ---
