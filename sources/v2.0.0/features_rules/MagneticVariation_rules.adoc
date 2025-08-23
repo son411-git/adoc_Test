@@ -13,15 +13,11 @@
 ** 예: 2025, 2030... 주기(epoch)
 
 .자기 편차도
-[cols="^a,^a", options="header"]
+[cols="^a,^a"]
 
 |===
 | image:../images/MagneticVariation/MagneticVariation_D.png[]
 | image:../images/MagneticVariation/MagneticVariation_D_SV.png[]
-| WMM Main Field Declination Map +
-(Epoch 2025)
-| WMM Annual change Declination Map +
-(Epoch 2025)
 |===
 * 자기 편차도는 현재 주기(epoch)의 전 세계 자기 편차 값을 등자선(isogonals)으로 보여줌. 
 ** 데이터셋에 입력할 경우, 선(Curve) 형태의 두 자료를 면(Surface)로 가공하여 입력해야 함
@@ -32,17 +28,17 @@
 
 ===== Example
 .Magnetic Variation의 인코딩 예시
-[cols="30,25,10,10,25", options="header"]
+[cols="30,25,10,10,25",options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
 |span:E[reference year for magnetic variation]|RYRMGV|TD|1,1| 2025----
 |span:E[value of annual change in magnetic variation]|VALACM|RE|1,1| -2.0
 |span:E[value of magnetic variation]|VALMAG|RE|1,1| -9.00
-|**information**|INFORM|C|0,*
-|    file locator||(S)TE|0,1
-|    file reference|TXTDSC/NTXTDS|(S)TE|0,1
-|    headline||(S)TE|0,1
+|**information**|INFORM|C|0,*|
+|    file locator||(S)TE|0,1|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1|
+|    headline||(S)TE|0,1|
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| World Magnetic Model for 2025(20250101)
 |===
