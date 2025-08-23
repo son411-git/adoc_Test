@@ -1,24 +1,20 @@
 = S-101 객체 입력 지침서
-:toc: left
-// 아래 한 줄만 추가해도 inline HTML 이 살아납니다.
-:safe: unsafe      
-:sectnums:
-:toclevels: 3
+
+:safe: unsafe
 :doctype: standard
-:icons: font
-:sectanchors:
 :status: draft
 :draft:
-
-// 이미지  폴더 경로 지정
+:toc: left
+:toclevels: 3
+:sectnums:
+:sectanchors:
 :imagesdir: sources/v2.0.0/images
-:coverpage-logo: image::cway7_logo.png[]
-:data-uri-image: false
+:icons: font
+
 // 공용 속성 경로 지정
+// include::sources/v2.0.0/common_attr.adoc[tag=requiredAttr]
 
 include::sources/v2.0.0/First.adoc[]
-
-include::sources/v2.0.0/common_attr.adoc[tag=requiredAttr]
 
 == Features Types
 // Features 객체별 include
@@ -364,10 +360,12 @@ include::sources/v2.0.0/features/LateralBeacon.adoc[]
 .Attributes
 include::sources/v2.0.0/features/LateralBuoy.adoc[]
 
+[[Light Air Obstruction]]
 ==== Light Air Obstruction
 .Attributes
 include::sources/v2.0.0/features/LightAirObstruction.adoc[]
 
+[[Light All Around]]
 ==== Light All Around
 .Attributes
 include::sources/v2.0.0/features/LightAllAround.adoc[]
@@ -376,6 +374,7 @@ include::sources/v2.0.0/features/LightAllAround.adoc[]
 .Attributes
 include::sources/v2.0.0/features/LightFloat.adoc[]
 
+[[Light Fog Detector]]
 ==== Light Fog Detector
 .Attributes
 include::sources/v2.0.0/features/LightFogDetector.adoc[]
@@ -941,6 +940,8 @@ include::sources/v2.0.0/Appendix/Colour_Pattern.adoc[leveloffset=2]
 include::sources/v2.0.0/Appendix/Doubtful_Dangers.adoc[leveloffset=2]
 
 include::sources/v2.0.0/Appendix/Feature_Name.adoc[leveloffset=2]
+
+include::sources/v2.0.0/Appendix/TideAndDatum.adoc[leveloffset=2]
 
 include::sources/v2.0.0/Appendix/Height_Elevation_VerticalLength.adoc[leveloffset=2]
 

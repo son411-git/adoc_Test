@@ -5,3 +5,5 @@ sources/v2.0.0/features/*.xml
 merged.adoc
 index.err.html
 index.presentation.xml
+
+output/
