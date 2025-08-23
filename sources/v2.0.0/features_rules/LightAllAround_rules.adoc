@@ -4,7 +4,7 @@
 * 분호나 중시선으로 특정 방위를 갖는 등화는 <<Light Sectored,span:F[Light Sectored]>>로 입력해야 함
 ** 단일 또는 다중 분호(Sector)가 있는 등화, 장애물에 의한 분호가 있는 등화, 도등, 중시선 상의 등화, 지향등, 물결무늬 등화
 
-* 안개 감지 등화 및 항공 장애물 등화는 <<Light Fog Detector,span:F[Light Fog Detector]>> 및 <<Light Air Obstruction,span:F[Light Air Obstruction]]>>으로 입력해야 함
+* 안개 감지 등화 및 항공 장애물 등화는 <<Light Fog Detector,span:F[Light Fog Detector]>> 및 <<Light Air Obstruction,span:F[Light Air Obstruction]>>으로 입력해야 함
 
 //
 :ObjectName: span:F[Light Air Obstruction]을
