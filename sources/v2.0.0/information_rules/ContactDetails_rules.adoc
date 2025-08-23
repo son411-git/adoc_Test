@@ -35,6 +35,6 @@
 |    contact instructions||(S)TE|0,1|
 |    span:E[telecommunication identifier]||(S)TE|1,1|rcceast@korea.kr
 |    telecommunication service||(S)EN|0,1|8 : email
-
+|===
 ---
 // end::ContactDetails[]
