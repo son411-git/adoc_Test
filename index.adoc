@@ -1,5 +1,4 @@
 = S-101 객체 입력 지침서
-
 :safe: unsafe
 :doctype: standard
 :status: draft
@@ -360,12 +359,10 @@ include::sources/v2.0.0/features/LateralBeacon.adoc[]
 .Attributes
 include::sources/v2.0.0/features/LateralBuoy.adoc[]
 
-[[Light Air Obstruction]]
 ==== Light Air Obstruction
 .Attributes
 include::sources/v2.0.0/features/LightAirObstruction.adoc[]
 
-[[Light All Around]]
 ==== Light All Around
 .Attributes
 include::sources/v2.0.0/features/LightAllAround.adoc[]
@@ -374,7 +371,6 @@ include::sources/v2.0.0/features/LightAllAround.adoc[]
 .Attributes
 include::sources/v2.0.0/features/LightFloat.adoc[]
 
-[[Light Fog Detector]]
 ==== Light Fog Detector
 .Attributes
 include::sources/v2.0.0/features/LightFogDetector.adoc[]

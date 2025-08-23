@@ -13,7 +13,7 @@
 ."대한민국 영해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/대한민국영해.svg[]
+5+^| image:../images/Cautionary_Notes/대한민국영해.png[width=60%]
 5+^h| Territorial Sea Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -34,7 +34,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."유조선통항금지해역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/유조선통항금지해역.svg[]
+5+^| image:../images/Cautionary_Notes/유조선통항금지해역.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -60,7 +60,7 @@ span:D[출처 : IHO S-32 수로 사전] +
 ."연안 부근 송전선 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/연안부근_송전선주의.svg[]
+5+^| image:../images/Cautionary_Notes/연안부근_송전선주의.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -80,7 +80,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."항행 금지(우선피항선 제외)"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/항행금지_우선피항선제외.svg[]
+5+^| image:../images/Cautionary_Notes/항행금지_우선피항선제외.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -101,7 +101,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."해상사격훈련구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/해상사격훈련구역.svg[]
+5+^| image:../images/Cautionary_Notes/해상사격훈련구역.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -121,7 +121,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."풍도 해역의 항해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/풍도해역의항해.svg[]
+5+^| image:../images/Cautionary_Notes/풍도해역의항해.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -141,7 +141,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."해안 부근 기뢰 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/해안부근기뢰주의.svg[]
+5+^| image:../images/Cautionary_Notes/해안부근기뢰주의.png[width=60%]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -161,7 +161,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."북한 및 러시아 해역 내 기뢰 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/북한및러시아해역내기뢰주의.svg[]
+5+^| image:../images/Cautionary_Notes/북한및러시아해역내기뢰주의.png[width=60%]
 5+^h| Caution Area (두만강 남쪽 해안 부근에 입력)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -194,7 +194,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."주의구역 A"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/주의구역A.svg[]
+5+^| image:../images/Cautionary_Notes/주의구역A.png[width=60%]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -214,7 +214,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."주의구역 B"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/주의구역B.svg[]
+5+^| image:../images/Cautionary_Notes/주의구역B.png[width=60%]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -234,7 +234,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."주의구역 C"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/주의구역C.svg[]
+5+^| image:../images/Cautionary_Notes/주의구역C.png[width=60%]
 5+^h| Precautionary Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -254,7 +254,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."호미곶 추천항로"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/호미곶추천항로.svg[]
+5+^| image:../images/Cautionary_Notes/호미곶추천항로.png[width=60%]
 5+^h| Recommended Route Centreline
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -290,7 +290,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."통항제한구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/통항제한구역.svg[]
+5+^| image:../images/Cautionary_Notes/통항제한구역.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -314,7 +314,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."특정금지구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/특정금지구역.svg[]
+5+^| image:../images/Cautionary_Notes/특정금지구역.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -335,7 +335,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."국지적 지자기 이상 현상"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/국지적지자기이상현상.svg[]
+5+^| image:../images/Cautionary_Notes/국지적지자기이상현상.png[width=60%]
 5+^h| Local Magnetic Anomaly
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -357,7 +357,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."화산 활동 구역 진입 금지"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/화산활동구역진입금지.svg[]
+5+^| image:../images/Cautionary_Notes/화산활동구역진입금지.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -378,7 +378,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."경인아라뱃길 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/경인아라뱃길속력제한.svg[]
+5+^| image:../images/Cautionary_Notes/경인아라뱃길속력제한.png[width=60%]
 5+^h| Restricted Area (직선구간)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -416,7 +416,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."마산항 속력 제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/마산항속력제한.svg[]
+5+^| image:../images/Cautionary_Notes/마산항속력제한.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -432,7 +432,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."부산항 속력 제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/부산항속력제한.svg[]
+5+^| image:../images/Cautionary_Notes/부산항속력제한.png[width=60%]
 5+^h| Restricted Area (북내항)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -516,7 +516,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."속력제한구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/속력제한구역.svg[]
+5+^| image:../images/Cautionary_Notes/속력제한구역.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -537,7 +537,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."광양항로 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/광양항로속력제한.svg[]
+5+^| image:../images/Cautionary_Notes/광양항로속력제한.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -558,7 +558,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."제1구역 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/제1구역속력제한.svg[]
+5+^| image:../images/Cautionary_Notes/제1구역속력제한.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -574,7 +574,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."구역별 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/구역별속력제한.svg[]
+5+^| image:../images/Cautionary_Notes/구역별속력제한.png[width=60%]
 5+^h| Restricted Area (제1구역)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -617,7 +617,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 ."고속여객선 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
-5+^| image:../images/Cautionary_Notes/고속여객선속력제한.svg[]
+5+^| image:../images/Cautionary_Notes/고속여객선속력제한.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -639,7 +639,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/진해만및부근속력제한.svg[]
+5+^| image:../images/Cautionary_Notes/진해만및부근속력제한.png[width=60%]
 5+^h| Precautionary Area (가덕수도)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -682,11 +682,11 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/조류기사1.svg[]
-5+^| image:../images/Cautionary_Notes/조류기사2.svg[]
-5+^| image:../images/Cautionary_Notes/조류기사3.svg[]
-5+^| image:../images/Cautionary_Notes/조류기사4.svg[]
-5+^| image:../images/Cautionary_Notes/조류기사5.svg[]
+5+^| image:../images/Cautionary_Notes/조류기사1.png[width=60%]
+5+^| image:../images/Cautionary_Notes/조류기사2.png[width=60%]
+5+^| image:../images/Cautionary_Notes/조류기사3.png[width=60%]
+5+^| image:../images/Cautionary_Notes/조류기사4.png[width=60%]
+5+^| image:../images/Cautionary_Notes/조류기사5.png[width=60%]
 5+^h| Tidal Stream Panel Data
 
 5+^| 조류 기사는 span:F[Tidal Stream Panel Data]의 입력지침을 <<TidalStreamPanelData_Rule_Remark,참고>>
@@ -698,7 +698,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/광안대교인근운항금지선.svg[]
+5+^| image:../images/Cautionary_Notes/광안대교인근운항금지선.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -720,7 +720,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/납도에서다사도구간항행주의.svg[]
+5+^| image:../images/Cautionary_Notes/납도에서다사도구간항행주의.png[width=60%]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -741,7 +741,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/한강부근사주의이동주의.svg[]
+5+^| image:../images/Cautionary_Notes/한강부근사주의이동주의.png[width=60%]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -762,7 +762,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/묵호항및동해항안벽부근수심주의.svg[]
+5+^| image:../images/Cautionary_Notes/묵호항및동해항안벽부근수심주의.png[width=60%]
 5+^h| Caution Area (묵호항)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -797,7 +797,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/부산항안벽부근수심주의.svg[]
+5+^| image:../images/Cautionary_Notes/부산항안벽부근수심주의.png[width=60%]
 5+^h| Caution Area (제7부두)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -911,7 +911,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/양식장(미측량구역)및장애물주의.svg[]
+5+^| image:../images/Cautionary_Notes/양식장(미측량구역)및장애물주의.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -935,7 +935,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/양식장및장애물주의.svg[]
+5+^| image:../images/Cautionary_Notes/양식장및장애물주의.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -959,7 +959,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/새만금방조제내측항해주의.svg[]
+5+^| image:../images/Cautionary_Notes/새만금방조제내측항해주의.png[width=60%]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -980,7 +980,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/사주의이동주의.svg[]
+5+^| image:../images/Cautionary_Notes/사주의이동주의.png[width=60%]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1001,7 +1001,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/평택항내수심변화주의.svg[]
+5+^| image:../images/Cautionary_Notes/평택항내수심변화주의.png[width=60%]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1022,7 +1022,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/낙동포부근수심변화주의.svg[]
+5+^| image:../images/Cautionary_Notes/낙동포부근수심변화주의.png[width=60%]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1043,7 +1043,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/중앙천퇴부근수심변화주의.svg[]
+5+^| image:../images/Cautionary_Notes/중앙천퇴부근수심변화주의.png[width=60%]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1064,7 +1064,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/항내안벽의미측구역주의.svg[]
+5+^| image:../images/Cautionary_Notes/항내안벽의미측구역주의.png[width=60%]
 5+^h| Caution Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1085,7 +1085,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/험악지의안전항해.svg[]
+5+^| image:../images/Cautionary_Notes/험악지의안전항해.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1108,7 +1108,7 @@ navigation poses no significant danger, anchoring and trawling should be avoided
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/험악지의얕은수심주의.svg[]
+5+^| image:../images/Cautionary_Notes/험악지의얕은수심주의.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1131,7 +1131,7 @@ should navigate with caution in shallow waters.
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/소축척해도의참고기사.svg[]
+5+^| image:../images/Cautionary_Notes/소축척해도의참고기사.png[width=60%]
 5+^h| **입력하지 않음**
 5+| 이 기사의 내용은 전자해도에서 유효한 설명이 아니며, 종이해도 보는 방법에 대한 안내에 가까움
 |===
@@ -1142,7 +1142,7 @@ should navigate with caution in shallow waters.
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/인천항선거내수심유지및통제.svg[]
+5+^| image:../images/Cautionary_Notes/인천항선거내수심유지및통제.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1163,7 +1163,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/서해갑문내수심기준면.svg[]
+5+^| image:../images/Cautionary_Notes/서해갑문내수심기준면.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1184,7 +1184,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/아라서해갑문내수심기준면및안내표지판.svg[]
+5+^| image:../images/Cautionary_Notes/아라서해갑문내수심기준면및안내표지판.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1213,7 +1213,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/중수도전용선박.svg[]
+5+^| image:../images/Cautionary_Notes/중수도전용선박.png[width=60%]
 5+^h| Restricted Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1235,7 +1235,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/오류지곶에서장산곶사이의조류.svg[]
+5+^| image:../images/Cautionary_Notes/오류지곶에서장산곶사이의조류.png[width=60%]
 5+^| 조류 기사는 span:F[Tidal Stream Panel Data]의 입력지침을 <<TidalStreamPanelData_Rule_Remark,※참고>>
 
 |===
@@ -1246,7 +1246,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/부산신항안벽부근수심주의.svg[]
+5+^| image:../images/Cautionary_Notes/부산신항안벽부근수심주의.png[width=60%]
 5+^h| Caution Area (부산신항 제1부두)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1319,7 +1319,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/목포항안벽부근수심주의.svg[]
+5+^| image:../images/Cautionary_Notes/목포항안벽부근수심주의.png[width=60%]
 5+^h| Caution Area (해경부두)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
@@ -1459,7 +1459,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 [cols="30,25,10,10,25", options="header"]
 |===
 
-5+^| image:../images/Cautionary_Notes/교통안전특정해역의항해.svg[]
+5+^| image:../images/Cautionary_Notes/교통안전특정해역의항해.png[width=60%]
 5+^h| Information Area
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
