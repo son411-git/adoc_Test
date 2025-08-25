@@ -517,11 +517,11 @@ Marado
 |category of radio station|CATRAS|EN|0,*| 10 span:D[Differential GNSS] 
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
-|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Songdo No C
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Marado
 |    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
-|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 송도 수중방파제 C호
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 마라도
 |    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |**information**|INFORM|C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
@@ -559,7 +559,7 @@ NACHIDO_ROCK
 .인코딩 예시
 [%header%autowidth.stretch,cols="a,a,a,a,a"]
 |===
-5+^h| Pile
+5+^h| Virtual AIS Aid To Navigation
 |Attribute |Acronym |Type |Mult. |Value
 
 |**feature name**||C|0,*|
@@ -568,25 +568,9 @@ NACHIDO_ROCK
 |    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**information**|INFORM|C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| KR4630
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 4630
-
-5+^h| Radio Station
-|Attribute |Acronym |Type |Mult. |Value
-
-|category of radar station|CATRAS|EN|0,*| 10 span:D[Differential GNSS] 
-|**feature name**||C|0,*|
-|    span:E[language]||(S)TE|1,1| eng
-|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Songdo No C
-|    name usage||(S)EN|0,1| 1 span:D[default name display]
-|**feature name**||C|0,*|
-|    span:E[language]||(S)TE|1,1| kor
-|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 송도 수중방파제 C호
-|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
-|**information**|INFORM|C|0,*|
-|    span:E[language]||(S)TE|1,1| eng
-|    text|INFORM/NINFOM|(S)TE|0,1| KR4207
-|**information**|INFORM|C|0,*|
-|    span:E[language]||(S)TE|1,1| kor
-|    text|INFORM/NINFOM|(S)TE|0,1| 4207
 
 |===
