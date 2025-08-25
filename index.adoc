@@ -951,4 +951,6 @@ include::sources/v2.0.0/Appendix/ListOfLights.adoc[leveloffset=2]
 
 include::sources/v2.0.0/Appendix/SkinOfEarth.adoc[leveloffset=2]
 
+include::sources/v2.0.0/Appendix/SourceIndication.adoc[leveloffset=2]
+
 include::sources/v2.0.0/Appendix/Speed_Limits.adoc[leveloffset=2]
