@@ -3,8 +3,8 @@
 
 * 실제 물리적 장치에 의해 신호를 발사하는 span:F[Physical AIS Aid to Navigation]과는 구분해야 함
 
-//REVIEW: Sythetic 과 구분? 항로표지 없이 단독으로 사용되는 Virtual AIS만?
-* 국내 제작지침에 따라 span:F[Physical AIS Aid to Navigation]는 더 이상 입력하지 않지만, span:F[Virtual AIS Aid to Navigation]에 대해서는 입력
+//
+* 항로표지 정보의 입력은 <<ListOfLights,링크>>를 참고
 
 .V-AIS 와 입력예시
 ====
@@ -142,13 +142,19 @@ span:A[information]에 기능에 대한 설명을 입력
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
-|estimated range of transmission|ESTRNG|RE|0,1| 25
+
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| NACHIDO_ROCK
 |    name usage||(S)EN|0,1| 1 span:D[default name display]
 |mmsi code||TE|0,1| 994406032
 |span:E[virtual ais aid to navigation type]||EN|1,1| 9 span:D[isolated danger]
+|**information**|INFORM|C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| KR4630
+|**information**|INFORM|C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 4630
 |===
 
 ---

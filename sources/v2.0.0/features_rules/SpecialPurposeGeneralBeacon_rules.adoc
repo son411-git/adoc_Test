@@ -13,9 +13,9 @@ include::common/phrase.adoc[tag=Refer]
 //
 * 등대표, 항행통보 문서 등을 참고하여 명칭과 도색·구조·높이를 입력
 ** 명칭을 span:A[feature name]의 span:A[name]을 입력할 때 '입표', '등표'는 입력하지 않음
-** 등대표의 도색·구조·높이 중 높이는 구조물의 수직길이를 의미하므로, span:A[vertical length]에 입력(<<ListOfLights,※참고>>)
+** 등대표의 도색·구조·높이 중 높이는 구조물의 수직길이를 의미하므로, span:A[vertical length]에 입력
 
-//REVIEW: 등대표 번호 입력에 관한 지침수정
+* 항로표지 정보의 입력은 <<ListOfLights,링크>>를 참고
 
 .IALA - 특수/일반 입표의 속성 예시
 [%header, cols="a,a,a,a"]

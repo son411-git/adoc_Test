@@ -1,6 +1,8 @@
 [[ListOfLights]]
 
-= 등대표 보는법
+= 항로표지
+
+== 등대표 보는법
 
 .등대표 예시
 [%header, cols="a,a,a,a,a,a,a,a"]
@@ -54,4 +56,537 @@ image::../images/ListOfLights/world.jpg[]
 
 **(8)** 기사:: 항로표지에 대한 보충 정보, 무신호 종류, 명호의 각도 등을 표기하며, 특히 명호의 각도는 해상(선박)에서 측정된 방위각으로 표기한다.
 
+== 항로표지의 명칭과 번호
 
+.항로표지 정보의 입력 지침
+[%header,cols="^.^a,^.^a,^.^a,^.^a"]
+|===
+| 객체 | 세부조건 
+| 이름 + 
+~featureName~ + 
+^(OBJNAM/NOBJNM)^
+| 번호 +
+~information~ +
+^(INFORM/NINFOM)^
+.3+h| 구조물 +
+(Structure)
+
+| + 등화
+| 구조물에 입력
+| 구조물에 입력 +
+(보조 등화^[1]^)
+
+| + 기타 장비^[2]^
+| 구조물에 입력
+| 기타 장비에 입력
+
+| 단독 입표 / 부표
+| 구조물에 입력
+| 구조물에 입력
+
+.2+h| 교량 +
+(Bridge)
+
+| + 등화
+| -
+| span:E[등화에 입력]
+| + 기타 장비
+| -
+| 기타 장비에 입력
+
+h|건물^[3]^
+| + 기타 장비 
+| 기타 장비에 입력
+| 기타 장비에 입력
+
+h| V-AIS
+| -
+| V-AIS에 입력
+| V-AIS에 입력
+
+4+<| ^1^ 등화와 보조등화의 번호가 같으면 보조 등화의 번호를 생략 +
+^2^ 전파항로표지, 음파항로표지, 특수항로표지 +
+^3^ function = 33 : light support 가 아닌 경우에만 해당 
+
+|===
+
+* 항로표지의 명칭은 span:R[Structure/Equipment] 관계에서 **Structure** 쪽에 입력합니다.
+* 번호는, 
+** 일반 등화의 경우 span:R[Structure/Equipment] 관계에서 span:E[Structure] 쪽에 입력합니다.
+** 기타 항로 표지(음파,전파,특수)의 경우 span:R[Structure/Equipment] 관계에서 **Equipment** 쪽에 입력합니다.
+** 교량등의 경우 span:R[Structure/Equipment] 관계에서 span:E[Equipment] 쪽에 입력합니다. 
+* span:A[featureName][1] 은 영문명, span:A[featureName][2] 는 국문명으로 입력합니다.
+* span:A[information][1] 은 국제번호, span:A[information][2] 는 국내번호로 입력합니다.
+** 국제번호가 없는 경우, 기존과 같이 'KR'을 접두어로 해서 국내번호를 입력합니다.
+
+. 일반적인 등대
++
+.고정표지
+[%header,cols="a,a,a,a,a,a,a,a",role="smallText"]
+|===
+^| 번&emsp;호 ^| 명&emsp;칭 ^| 위&emsp;치 ^| 등&emsp;질 ^| 등&emsp;고(m) ^| 광달거리 ^| 도색·구조·높이(m) ^| 기&emsp;사
+
+<.<| 1201 +
+ +
+M4460
+<.<| **저진** +
+**도등(전등)** +
+**Jeojin**
+>.<| 38-33.16N +
+128-24.50E
+^.<| F W
+^.<| 62
+^.<| **24**
+^.<| 백 4각 +
+콘크리트조 +
+35
+<.<| 지도선(leading line) +
+방위각 270°
+
+|===
+
+.인코딩 예시
+[%header%autowidth.stretch,cols="a,a,a,a,a"]
+|===
+5+^h| Landmark
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jeojin
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 저진
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| M4460
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 1201
+
+5+^h| Light All Around
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| span:D[Undefined]
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| span:D[Undefined]
+|    name usage||(S)EN|0,1| span:D[Undefined]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| span:D[Undefined]
+|    text|INFORM/NINFOM|(S)TE|0,1| span:D[Undefined]
+|===
+
+. 등화 이외의 장비가 있는 표지
++
+.고정표지
+[%header, cols="a,a,a,a,a,a,a,a",role="smallText"]
+|===
+^| 번&emsp;호 ^| 명&emsp;칭 ^| 위&emsp;치 ^| 등&emsp;질 ^| 등&emsp;고(m) ^| 광달거리 ^| 도색·구조·높이(m) ^| 기&emsp;사
+
+<.<| 3019 +
+ +
+#M4242.6#
+<.<| 복사초 +
+등표 +
+Boksacho
+>.<| 34-05.84N +
+126-10.03E
+^.<| Fl(2) W 10s
+^.<| 18
+^.<| 8
+^.<| 흑홍흑 4각 +
+강관조 +
+29
+<.<|
+
+|===
+
+.레이콘
+[%header,cols="a,a,a,a,a,a,a,a,a",role="smallText"]
+|===
+^| 번&emsp;호 
+^| 해&emsp;안 +
+   구&emsp;분
+^| 무선국 명칭   
+^| 위&emsp;치 
+^| 부&emsp;호 
+^| 주파수 + 
+   (MHz)
+^| 전력 + 
+   (W)
+^| 측정구역 +
+   (M)
+^| 기&emsp;사
+
+<.<| 4126.6
+<.<| 서해안
+<.<| 복사초 +
+등표 +
+Boksacho
+>.<| 34-05.84N +
+126-10.03E
+^.<| K +
+— · —
+^.<| 4M00L1D +
+9375 +
+9410 +
+9415 +
+9445 +
+3050
+^.<| X-Band + 
+0.6 +
+S-Band +
+0.6
+^.<| 14
+<.<| 20초 on, 40초 off
+|===
+
+.AIS
+[%header,cols="a,a,a,a,a,a,a,a,a",role="smallText"]
+|===
+^| 번&emsp;호 
+^| 해&emsp;안 +
+   구&emsp;분
+^| 명&emsp;칭   
+^| 위&emsp;치 
+^| MMSI +
+   번&emsp;호
+^| 주파수 + 
+   (MHz)
+^| 출력 + 
+   (W)
+^| 측정구역 +
+   (M)
+^| 기&emsp;사
+
+<.<| 4601.10 +
+ +
+#M4242.6#
+<.<| 서해안
+<.<| 복사초 +
+등표 +
+Boksacho
+>.<| 34-05.84N +
+126-10.03E
+<.<| 994403005
+<.<| 16K0F1D +
+  161.975 +
+  162.025
+<.<| 12.5
+<.<| 14
+<.<| 3분 주기 발사
+|===
+
+.인코딩 예시
+[%header%autowidth.stretch,cols="a,a,a,a,a"]
+|===
+5+^h| Isolated Danger Beacon
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Boksacho
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 복사초
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| M4242.6
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 3019
+
+5+^h| Light All Around
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| span:D[Undefined]
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| span:D[Undefined]
+|    name usage||(S)EN|0,1| span:D[Undefined]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| span:D[Undefined]
+|    text|INFORM/NINFOM|(S)TE|0,1| span:D[Undefined]
+
+5+^h| Radar Transponder Beacon
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| KR4126.6
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 4126.6 
+
+5+^h| Physical AIS Aid To Navigation
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| M4242.6
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 4601.10
+|===
+
+. 등화 및 기타 장비가 없는 단독 표지
++
+.이동표지
+[%header, cols="a,a,a,a,a,a,a,a",role="smallText"]
+|===
+^| 번&emsp;호 ^| 명&emsp;칭 ^| 위&emsp;치 ^| 등&emsp;질 ^| 등&emsp;고(m) ^| 광달거리 ^| 도색·구조·높이(m) ^| 기&emsp;사
+
+<.<| 1317.8
+<.<| 송도 +
+수중방파제 C호 등표 +
+Pohang Hang
+>.<| 36-02.35N +
+129-22.97E
+^.<| 
+^.<| 
+^.<| 
+^.<| 황 망대형
+<.<|
+
+.인코딩 예시
+[%header%autowidth.stretch,cols="a,a,a,a,a"]
+|===
+5+^h| Special Purpose General Buoy
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Songdo No C
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 송도 수중방파제 C호
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| KR1317.8
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 1317.8
+
+. 교량등
++
+
+.고정표지
+[%header, cols="a,a,a,a,a,a,a,a",role="smallText"]
+|===
+^| 번&emsp;호 ^| 명&emsp;칭 ^| 위&emsp;치 ^| 등&emsp;질 ^| 등&emsp;고(m) ^| 광달거리 ^| 도색·구조·높이(m) ^| 기&emsp;사
+
+<.<| 2008.1 +
+ +
+M4359.5
+<.<| 부산항 대교 +
+교량등 +
+Busan Hang Bridge +
+C1
+>.<| 35-06.23N +
+129-03.79E
+^.<| Iso W 4s
+^.<| 68
+^.<| 7
+^.<| 
+<.<| 중앙등
+|===
+
+.AIS
+[%header,cols="a,a,a,a,a,a,a,a,a",role="smallText"]
+|===
+^| 번&emsp;호 
+^| 해&emsp;안 +
+   구&emsp;분
+^| 명&emsp;칭   
+^| 위&emsp;치 
+^| MMSI +
+   번&emsp;호
+^| 주파수 + 
+   (MHz)
+^| 출력 + 
+   (W)
+^| 측정구역 +
+   (M)
+^| 기&emsp;사
+
+<.<| 4580 +
+ +
+#M4359.5#
+<.<| 남해안
+<.<| 부산항 대교 +
+교량등 +
+Busan Hang Bridge
+>.<| 35-06.33N +
+129-03.90E
+<.<| 994401576
+<.<| 16K0F1D +
+  161.975 +
+  162.025
+<.<| 12.5
+<.<| 20
+<.<| 3분 주기 발사
+|===
+
+.인코딩 예시
+[%header%autowidth.stretch,cols="a,a,a,a,a"]
+|===
+5+^h| Bridge
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Busan Hang Bridge
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산항대교
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+
+5+^h| Light Sectored
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| KR2008.1
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 2008.1
+
+5+^h| Physical AIS Aid To Navigation
+|Attribute |Acronym |Type |Mult. |Value
+
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| M4359.5
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 4580
+|===
+
+
+. 기타 장비만 있는 항로표지
++
+
+.위성항법보정시스템(DGNSS)
+[%header, cols="a,a,a,a,a,a,a,a",role="smallText"]
+|===
+^| 번&emsp;호 ^| 무선국 명칭 ^| 위&emsp;치 ^
+| 전파 형식 + 
+(HG1D) 
+^| 주파수 
++ (㎑) 
+^| 기준국 ID 
++ (RS1, RS2)
+^| 송신국 +
+식별 번호 ^| 기&emsp;사
+
+<.<| 4207 +
+<.<| 마라도 +
+Marado
+>.<| 33-07.05N +
+126-16.16E
+^.<| 500
+^.<| 290
+^.<| 730,731
+^.<| 665
+<.<| 해양 기준국
+|===
+
+.인코딩 예시
+[%header%autowidth.stretch,cols="a,a,a,a,a"]
+|===
+5+^h| Pile
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| span:D[Undefined]
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| span:D[Undefined]
+|    name usage||(S)EN|0,1| span:D[Undefined]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| span:D[Undefined]
+|    text|INFORM/NINFOM|(S)TE|0,1| span:D[Undefined]
+
+5+^h| Radio Station
+|Attribute |Acronym |Type |Mult. |Value
+
+|category of radar station|CATRAS|EN|0,*| 10 span:D[Differential GNSS] 
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Songdo No C
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 송도 수중방파제 C호
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| KR4207
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 4207
+
+|===
+
+. 가상자동위치식별신호표지(V-AIS)
++
+
+.V-AIS
+[%header, cols="a,a,a,a,a,a,a,a",role="smallText"]
+|===
+^| 번&emsp;호 ^| 해안구분 ^| 명&emsp;칭 ^| 위&emsp;치 ^| MMSI ^| 주파수(MHz) ^| 출력(W) ^| 측정 구역(M) | 기&emsp;사
+
+<.^| 4630
+<.^| 서해안
+<.^| Virtual +
+NACHIDO_ROCK
+>.^| 36-30.69N +
+126-08.87E
+^.^| 994406032
+^.^| 16K0F1D +
+161.975 +
+162.025
+^.^| 12.5
+^.^| -
+<.^| 3분 주기 발사
+
+|===
+
+.인코딩 예시
+[%header%autowidth.stretch,cols="a,a,a,a,a"]
+|===
+5+^h| Pile
+|Attribute |Acronym |Type |Mult. |Value
+
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| NACHIDO_ROCK
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| 4630
+
+5+^h| Radio Station
+|Attribute |Acronym |Type |Mult. |Value
+
+|category of radar station|CATRAS|EN|0,*| 10 span:D[Differential GNSS] 
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Songdo No C
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 송도 수중방파제 C호
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| KR4207
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 4207
+
+|===

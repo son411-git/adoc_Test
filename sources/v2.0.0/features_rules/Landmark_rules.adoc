@@ -66,6 +66,9 @@ image::../images/Landmark/Landmark_image-3.png[align="center"]
 * 모든 span:F[Landmark]가 시각적으로 두드러지는 것은 아니지만, 시각적으로 두드러지는 경우 (즉, 바다에서 뚜렷하고 눈에 띄게 보이는 경우), span:A[visual prominence]을 입력해야 함
 
 //
+* 항로표지 정보의 입력은 <<ListOfLights,링크>>를 참고
+
+//
 ===== Example
 .Landmark의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]

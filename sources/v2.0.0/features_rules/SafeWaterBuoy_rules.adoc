@@ -15,10 +15,14 @@
 include::common/phrase.adoc[tag=Refer]
 * 장비(등화, 무신호, AIS 등)를 탑재한 경우, 해당 객체와 span:F[Special Purpose/General Beacon]간 span:R[Structure/Equipment] 관계 설정
 
+//
+* 항로표지 정보의 입력은 <<ListOfLights,링크>>를 참고
+
 //REVIEW: 이런 내용도 필요한가?
 //비고:: span:F[Safe Water Buoy]의 span:A[buoy shape]가 구형span:D[3: spherical], 망대형span:D[4: pillar], 원주형span:D[5: spar]에 해당하지 않는 특대형span:D[7 : super-buoy]으로 입력된 경우 자동검사 S/W에서 오류로 탐지함; +
 //=> 등대표 상에 기술된 내용과 다르지 않다면, 해당 오류는 무시해야 함
 
+//
 **비고**:: span:F[Safe Water Buoy]의 특성이 IALA 부표식과 다른 경우 자동검사 S/W에서 오류로 탐지하기도 하나, 등대표의 내용과 일치한다면 해당 오류는 무시해야 함
 
 

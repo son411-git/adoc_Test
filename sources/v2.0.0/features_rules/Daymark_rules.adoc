@@ -6,6 +6,10 @@
 * 두표가 없거나 형상을 알 수 없으면 span:A[topmark/daymark shape] = (UNKNOWN)으로 입력
 * span:A[topmark/daymark shape]에 해당하지 않는 형상은 span:A[shape information]을 사용하여 묘사해야 함
 
+//
+* 항로표지 정보의 입력은 <<ListOfLights,링크>>를 참고
+
+//
 .경인아라뱃길의 주간표지 예시
 image::../images/Daymark/Daymark_image-1.png[width=100%]
 

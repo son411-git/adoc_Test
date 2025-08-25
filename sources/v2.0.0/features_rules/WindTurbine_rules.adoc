@@ -5,6 +5,9 @@
 ** 해상풍력터빈이 부유식이라면 가능한 span:A[water level effect]를 7 span:D[floating]로 입력
 ** 해상풍력터빈 구조물의 길이, 재질을 알 수 있다면 span:A[vertical length] 및 span:A[nature of construction]을 입력
 
+//
+* 항로표지 정보의 입력은 <<ListOfLights,링크>>를 참고
+
 ===== Example
 .Wind Turbine의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]

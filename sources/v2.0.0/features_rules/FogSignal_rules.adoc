@@ -19,6 +19,9 @@
 ** 신호 활성화에 필요한 연락 정보를 입력하려면 span:F[Contact Details]를 사용해야 하며, span:F[Fog Signal]와 span:R[Additional Information]로 관계 맺어야 함
 
 //
+* 항로표지 정보의 입력은 <<ListOfLights,링크>>를 참고
+
+//
 .등대표 - 무신호(Fog Signal)
 [cols="10,20,20,25,25", options="header"]
 |===

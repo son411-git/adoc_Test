@@ -22,7 +22,8 @@ include::common/phrase.adoc[tag=Refer]
 *** Physical AIS AtoN : 99MID1XXX
 *** Virtual AIS AtoN : 99MID6XXX
 
-
+//
+* 항로표지 정보의 입력은 <<ListOfLights,링크>>를 참고
 
 ===== Example
 

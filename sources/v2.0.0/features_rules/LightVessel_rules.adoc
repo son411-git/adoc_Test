@@ -12,7 +12,7 @@ image::../images/LightVessel/LightVessel_image-1.png[align="center"]
 include::common/phrase.adoc[tag=AtoN_Relationship]
 
 //
-* 등대표 보는법은 <<ListOfLights,링크>>를 참고
+* 항로표지 정보의 입력은 <<ListOfLights,링크>>를 참고
 
 //
 include::common/phrase.adoc[tag=colourPattern]

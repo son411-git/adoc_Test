@@ -4,6 +4,9 @@
 * span:F[Radar Station] 자체가 건물이나 구조물을 의미하지는 않으므로, 필요한 경우 span:F[Building] 등의 객체로 건물이나 구조물을 입력
 * 무선국의 종류에 따라 span:F[Radar Station]의 속성 span:A[category of radar station]을 입력
 
+//
+* 항로표지 정보의 입력은 <<ListOfLights,링크>>를 참고
+
 ===== Example
 .Radar Station의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
