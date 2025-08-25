@@ -1,0 +1,25 @@
+[[SourceIndication]]
+
+= 자료 출처의 입력
+
+. span:A[SORIND], span:A[SORDAT]
++
+* S-101 Ed 2.0.0에서는 span:A[SORIND], span:A[SORDAT]에 완전히 대응되는 속성은 없음
+* 하지만, 신규 HPD Source Profile에 span:A[SORIND], span:A[SORDAT]를 입력할 수 있도록 해서, (역변환을 통한) S-57 전자해도 제작 시 활용할 수 있도록 함
+* Source Profile이기 때문에 S-101 Product DB에서는 관련 속성을 볼 수 없음
+* S-57 Product DB에는 span:A[SORIND]는 span:A[SORIND]로, span:A[SORDAT]는 span:A[SORDAT]로 변환없이 그대로 동기화 됨
+  
+.변경된 SORIND, SORDAT 입력 지침 (향후 편람 개정 시 반영 예정)
+[%header%autowidth.stretch,cols="^.^a,^.^a,^.^a,^.^a,^.^a",frame=ends,grid=cols,stripes="hover",role="smallText"]
+|===  
+|자료의 종류 |구분 |종류·구분번호 |적용예시 | 비고
+|측량원도 |graph |측량원도번호 |KR,KR,graph,H3726100842020 | 삭제
+|해도 |graph |chart해도번호 |KR,KR,graph,chart228| 삭제
+|위성영상 |graph |satellite구분번호 |KR,KR,graph,satellite1234| 삭제
+|항공영상 |graph |aerial구분번호 |KR,KR,graph,aerial1234| 삭제 
+|항행통보 |reprt |NTM연도-호-항 +
+예고 : NTM연도-호-항(P) + 
+일시 : NTM연도-호-항(T)
+| KR,KR,reprt,NTM2013-20-351
+| 유지
+|===
