@@ -1,10 +1,8 @@
 // tag::TrafficSeparationScheme[]
 ===== Remark
-* 통항분리제도가 적용되는 수역은 span:F[Traffic Separation Scheme]으로 입력
-** 명칭이 없는 경우에는 NoGeometry 형태로 입력해도 무방 span:D[법령에 의해 정해진 경우 명칭이 있으므로, 가급적 NoGeometry는 사용하지 않음]
-** 명칭이 있는 경우, 명칭은 span:A[feature name]으로 입력하고, span:F[Traffic Separation Scheme]은 **Surface**형태로 입력해야 함 +
+* 통항분리제도가 적용되는 수역은 span:F[Traffic Separation Scheme][S]으로 입력하고 명칭은 span:A[feature name]으로 입력 +
    _(이 때, 지오메트리는 통항분리제도를 이루는 모든 구성 요소를 포함할 수 있도록 입력)_
-** 통항분리제도가 적용되는 수역이 맏닿아 있더라도, 구분되는(명칭이 서로 다른) 경우 각각 별개로 입력해야 함
+** 통항분리제도가 적용되는 수역이 맞닿아 있더라도, 구분되는(명칭이 서로 다른) 경우 각각 별개로 입력해야 함
 
 //
 :ObjectName: span:F[Traffic Separation Scheme]을

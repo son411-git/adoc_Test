@@ -14,19 +14,15 @@
 ** span:F[Pontoon] 또는 span:F[Dolphin]의 연결 교량인 경우
 ** 해안선 부근, 강, 하천 등 항해가 불가능한 지역인 경우
 
-* 필수 속성
-** span:A[feature name]: 교량의 이름을 입력
-** span:A[opening bridge]: 개방 가능 여부를 나타내는 필수 속성으로, True 또는 False 값을 선택해야 함
-
 //
 * 교량 집합 (span:R[Bridge aggregation])
 
-** span:R[Bridge aggregation]은 대표 객체 span:F[Bridge][C,S,N]를 사용하여 항해 가능한 수역에서 상세히 입력할 때 사용됨. 이는 구성 객체를 통해 교량의 구조를 자세히 표현할 수 있는 경우에 적용됨
+** span:R[Bridge aggregation]은 대표 객체 span:F[Bridge][C,S]를 사용하여 항해 가능한 수역에서 상세히 입력할 때 사용됨. 이는 구성 객체를 통해 교량의 구조를 자세히 표현할 수 있는 경우에 적용됨
 
 * 사용 조건
 ** 항해 가능한 수역에서 구성 객체를 사용하여 교량을 상세히 입력할 수 있는 경우
 ** 교량 집합은 다음을 포함해야 함:
-*** 대표 객체로 span:F[Bridge][C,S,N]
+*** 대표 객체로 span:F[Bridge][C,S]
 *** 최소한 하나의 span:F[Span Fixed] (고정 경간) 또는 span:F[Span Opening] (개방 경간)
 *** 관련이 있는 경우, span:F[Pylon/Bridge Support] (교각) 또는 span:F[Pontoon] (부잔교)을 선택적으로 포함함
 *** 고정 경간은 span:F[Span Fixed], 개방 경간은 span:F[Span Opening], 교각은 span:F[Pylon/Bridge Support]로 span:F[Bridge]와 구분하여 입력
@@ -34,9 +30,6 @@
 * 필수 속성
 ** span:A[opening bridge]: 개방 가능 여부를 나타내는 속성으로, 항해 가능한 수역에 걸쳐져 있을 경우 `True` 또는 `False` 값을 선택해야 함
 *** 집합에 span:F[Span Opening]이 포함된 경우, span:A[opening bridge] = (True)로 설정하고, span:A[category of opening bridge]를 필수로 입력해야 함
-** 교량 이름:
-*** 교량 이름이 알려져 있고 span:A[feature name]에 입력할 경우, span:F[Bridge][C,S]를 사용
-*** 교량 이름이 알려지지 않았거나 입력할 필요가 없는 경우, span:F[Bridge][N]를 사용
 ** span:A[scale minimum]: span:R[Bridge aggregation]에 포함된 모든 객체는 동일한 span:A[scale minimum] 값을 가져야 함
 
 * 공간적 범위:

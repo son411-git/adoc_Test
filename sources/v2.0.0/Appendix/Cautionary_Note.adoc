@@ -69,7 +69,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    headline||(S)TE|0,1| Overhead Power Cables
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| There are many overhead power cables with pylons in the Koreaspan:E[n] coast, so mariners should refer to the large scale chart.
-|**information**|INFORM|C|0,*|
+|**information**|INFORM|C|0,*|s
 |    headline||(S)TE|0,1| 송전선
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 한국연안 부근은 다수의 송전선이 존재하니 항해 시 대축척 해도를 참조 바람.

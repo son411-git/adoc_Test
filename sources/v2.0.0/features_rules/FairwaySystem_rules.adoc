@@ -1,11 +1,8 @@
 // tag::FairwaySystem[]
 ===== Remark
 
-* 굽이진 경로로 구성된 항로는 대표 객체인 span:F[Fairway System]를 별도로 입력
+* 굽이진 경로로 구성된 항로는 대표 객체인 span:F[Fairway System]를 별도로 입력하고 이름은 span:A[feature name]으로 입력
 ** span:F[Fairway]의 공간적 범위는 구성 객체들의 전체 범위를 포함해야함
-* 객체의 명칭이 없으면 span:F[Fairway System][N]으로 입력
-* 객체의 명칭을 알고 있고 ECDIS에서 명칭이 표시되어야 하는 경우, + 
-  span:F[Fairway System][S]로 입력하고 명칭은 span:A[feature name]으로 입력
 ** 만약 항로가 단순해서 하나의 span:F[Fairway]로 전체 항로를 나타낼 수 있다면 해당 객체의 span:A[feature name] 에 입력
 
 image::../images/FairwaySystem/FairwaySystem_image-1.png[width=100%]

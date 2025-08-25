@@ -1,10 +1,7 @@
 // tag::ArchipelagicSeaLane[]
 ===== Remark
 
-* 군도수로항로는 span:F[Archipelagic Sea Lane]로 입력
-* 객체의 이름이 없으면 span:F[Archipelagic Sea Lane][N]으로 입력
-* 객체의 이름을 알고 있고 ECDIS에서 이름이 표시되어야 하는 경우, +
-span:F[Archipelagic Sea Lane][C,S]로 입력하고 이름은 span:A[feature name]으로 입력
+* 군도수로항로는 span:F[Archipelagic Sea Lane]로 입력하고 이름은 span:A[feature name]으로 입력
 
 //
 * 객체 관계

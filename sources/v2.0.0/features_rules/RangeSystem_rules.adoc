@@ -1,7 +1,7 @@
 // tag::RangeSystem[]
 ===== Remark
 
-* span:F[Range system]의 명칭은 목적에 따라 입력
+* 도등 및 지도선 등은 반드시 span:F[Range system][N]를 입력하여 구성객체와 span:R[Range System Aggregation]을 설정
 
 //REVIEW: 관계참조 추가
 

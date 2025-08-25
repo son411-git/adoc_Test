@@ -23,8 +23,8 @@ image::../images/MooringTrot/MooringTrot_image-1.png[align="center"]
 ** span:R[Mooring Trot Aggregation]의 구성 객체는 같은 span:A[scale minimum] 값을 가져야 함
 
 //
-* 계류 트롯의 명칭을 입력해야 하는 경우 span:F[Mooring Trot][S]로 입력하고 span:A[feature name]을 사용해 입력해야 함. 공간적 범위는 계류 트롯의 모든 구성 요소를 포함해야 함.
-* 이름이 없는 계류 트롯을 입력해야 하는 경우, span:F[Mooring Trot][N]으로 입력해야 함
+* 계류 트롯은 span:F[Mooring Trot][S]로 별도로 입력하고 이름은 span:A[feature name]으로 입력
+* span:F[Mooring Trot]의 공간적 범위는 구성 객체들의 전체 범위를 포함해야함
 * span:F[Mooring Trot] 내 개별 선석의 이름 또는 번호는 관련 span:F[Berth]의 span:A[feature name]을 사용해 반드시 입력해야 함.
 
 //
