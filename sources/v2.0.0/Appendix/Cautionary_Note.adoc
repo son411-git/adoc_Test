@@ -788,7 +788,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    headline||(S)TE|0,1| 안벽 부근 수심
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 동해항 수심은 안벽으로부터 약 3미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
-5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][S]를 생성
+5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][P,S]를 생성
 |===
 
 . 부산항 안벽 부근 수심 주의
@@ -902,7 +902,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 부산항 제2부두 수심은 안벽으로부터 약 3미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 
-5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][S]를 생성
+5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][P,S]를 생성
 |===
 
 . 양식장(미측량구역) 및 장애물 주의
@@ -1450,7 +1450,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 남항 수심은 안벽으로부터 약 2미터 떨어진 수심으로 접안하는 선박은 주의하여야 함.
 
-5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][S]를 생성
+5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][P,S]를 생성
 |===
 
 . 교통안전 특정해역의 항해
