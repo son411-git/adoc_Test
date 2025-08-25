@@ -58,6 +58,15 @@ image::../images/ListOfLights/world.jpg[]
 
 == 항로표지의 명칭과 번호
 
+* 항로표지의 명칭은 span:R[Structure/Equipment] 관계에서 **Structure** 쪽에 입력
+* 번호는, 
+** 일반 등화의 경우 span:R[Structure/Equipment] 관계에서 span:E[Structure] 쪽에 입력
+** 기타 항로 표지(음파,전파,특수)의 경우 span:R[Structure/Equipment] 관계에서 **Equipment** 쪽에 입력
+** 교량등의 경우 span:R[Structure/Equipment] 관계에서 span:E[Equipment] 쪽에 입력
+* span:A[featureName][1] 은 영문명, span:A[featureName][2] 는 국문명을 입력
+* span:A[information][1] 은 국제번호, span:A[information][2] 는 국내번호를 입력
+** 국제번호가 없는 경우, 기존과 같이 'KR'을 접두어로 해서 국내번호를 입력
+
 .항로표지 정보의 입력 지침
 [%header,cols="^.^a,^.^a,^.^a,^.^a"]
 |===
@@ -109,15 +118,6 @@ h| V-AIS
 ^3^ function = 33 : light support 가 아닌 경우에만 해당 
 
 |===
-
-* 항로표지의 명칭은 span:R[Structure/Equipment] 관계에서 **Structure** 쪽에 입력합니다.
-* 번호는, 
-** 일반 등화의 경우 span:R[Structure/Equipment] 관계에서 span:E[Structure] 쪽에 입력합니다.
-** 기타 항로 표지(음파,전파,특수)의 경우 span:R[Structure/Equipment] 관계에서 **Equipment** 쪽에 입력합니다.
-** 교량등의 경우 span:R[Structure/Equipment] 관계에서 span:E[Equipment] 쪽에 입력합니다. 
-* span:A[featureName][1] 은 영문명, span:A[featureName][2] 는 국문명으로 입력합니다.
-* span:A[information][1] 은 국제번호, span:A[information][2] 는 국내번호로 입력합니다.
-** 국제번호가 없는 경우, 기존과 같이 'KR'을 접두어로 해서 국내번호를 입력합니다.
 
 . 일반적인 등대
 +
@@ -514,7 +514,7 @@ Marado
 5+^h| Radio Station
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of radar station|CATRAS|EN|0,*| 10 span:D[Differential GNSS] 
+|category of radio station|CATRAS|EN|0,*| 10 span:D[Differential GNSS] 
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Songdo No C
