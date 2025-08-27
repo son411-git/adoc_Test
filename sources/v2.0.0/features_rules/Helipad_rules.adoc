@@ -20,12 +20,12 @@
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Seogeocha-do Emergency Medical Helipad
-|    name usage||(S)EN|0,1| 1 : default name display
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 서거차도 응급의료전용 헬기착륙장
-|    name usage||(S)EN|0,1| 2 : alternate name display
-|nature of construction|NATCON|EN|0,*| 2 : concreted
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|nature of construction|NATCON|EN|0,*| 2 span:d[concreted]
 |===
 
 ---

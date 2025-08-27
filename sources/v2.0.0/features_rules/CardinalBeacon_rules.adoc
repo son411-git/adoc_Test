@@ -47,52 +47,52 @@ image::../images/CardinalBeacon/CardinalBeacon_image-1.png[width=50%]
 | | North | East | South | West
 5+^h|beacon
 |span:E[beacon shape] 
-|1 : stake, pole, perch, post +
-/ 5 : pile beacon
-|1 : stake, pole, perch, post +
-/ 5 : pile beacon
-|1 : stake, pole, perch, post +
-/ 5 : pile beacon
-|1 : stake, pole, perch, post +
-/ 5 : pile beacon
+|1 span:d[stake, pole, perch, post]+
+/ 5 span:d[pile beacon]
+|1 span:d[stake, pole, perch, post]+
+/ 5 span:d[pile beacon]
+|1 span:d[stake, pole, perch, post]+
+/ 5 span:d[pile beacon]
+|1 span:d[stake, pole, perch, post]+
+/ 5 span:d[pile beacon]
 |span:E[category of cardinal mark]
-|1 : north cardinal mark 
-|2 : east cardinal mark 
-|3 : south cardinal mark 
-|4 : west cardinal mark 
+|1 span:d[north cardinal mark]
+|2 span:d[east cardinal mark]
+|3 span:d[south cardinal mark]
+|4 span:d[west cardinal mark]
 |span:E[colour] 
-|2 : black +
- 6 : yellow 
-|2 : black +
- 6 : yellow +
- 2 : black 
-|6 : yellow +
- 2 : black
-|6 : yellow +
- 2 : black +
- 6 : yellow
+|2 span:d[black]+
+ 6 span:d[yellow]
+|2 span:d[black]+
+ 6 span:d[yellow]+
+ 2 span:d[black]
+|6 span:d[yellow]+
+ 2 span:d[black]
+|6 span:d[yellow]+
+ 2 span:d[black]+
+ 6 span:d[yellow]
 |colour pattern 
-|1 : horizontal stripes 
-|1 : horizontal stripes 
-|1 : horizontal stripes 
-|1 : horizontal stripes 
+|1 span:d[horizontal stripes]
+|1 span:d[horizontal stripes]
+|1 span:d[horizontal stripes]
+|1 span:d[horizontal stripes]
 |marks navigational +
 - system of
-|2 : IALA B
-|2 : IALA B
-|2 : IALA B
-|2 : IALA B
+|2 span:d[IALA B]
+|2 span:d[IALA B]
+|2 span:d[IALA B]
+|2 span:d[IALA B]
 5+^h|topmark
 |    colour
-|2 : black
-|2 : black
-|2 : black
-|2 : black
+|2 span:d[black]
+|2 span:d[black]
+|2 span:d[black]
+|2 span:d[black]
 |    span:E[topmark/daymark shape]
-|13 : 2 cones (points upward)
-|11 : 2 cones (base to base)
-|14 : 2 cones (points downward)
-|10 : 2 cones (point to point)
+|13 span:d[2 cones (points upward)]
+|11 span:d[2 cones (base to base)]
+|14 span:d[2 cones (points downward)]
+|10 span:d[2 cones (point to point)]
 5+^h|Light All Around : rhythm of light (if any)
 |Rhythm Character
 |V +
@@ -112,27 +112,27 @@ VQ(9)10s
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[beacon shape]|BCNSHP|EN|1,1| 5 : pile beacon
-|span:E[category of cardinal mark]|CATCAM|EN|1,1| 1 : north cardinal mark
-|span:E[colour]|COLOUR|EN|1,*| 2 : black
-|span:E[colour]|COLOUR|EN|1,*| 6 : yellow
-|colour pattern|COLPAT|EN|0,1| 1 : horizontal stripes
+|span:E[beacon shape]|BCNSHP|EN|1,1| 5 span:d[pile beacon]
+|span:E[category of cardinal mark]|CATCAM|EN|1,1| 1 span:d[north cardinal mark]
+|span:E[colour]|COLOUR|EN|1,*| 2 span:d[black]
+|span:E[colour]|COLOUR|EN|1,*| 6 span:d[yellow]
+|colour pattern|COLPAT|EN|0,1| 1 span:d[horizontal stripes]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Haksanseo 
-|    name usage||(S)EN|0,1|1 : default name display
+|    name usage||(S)EN|0,1|1 span:d[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1|kor 
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|학산서
-|    name usage||(S)EN|0,1|2 : alternate name display  
-|marks navigational - system of|MARSYS|EN|0,1| 2 : IALA B
-|nature of construction|NATCON|EN|0,*| 2 : concreted
+|    name usage||(S)EN|0,1|2 span:d[alternate name display]
+|marks navigational - system of|MARSYS|EN|0,1| 2 span:d[IALA B]
+|nature of construction|NATCON|EN|0,*| 2 span:d[concreted]
 |radar conspicuous|CONRAD|BO|0,1| false 
 |**topmark**|TOPMAR|C|0,1| 
-|    colour|COLOUR|(S)EN|0,*|2 : black 
-|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 13 : 2 cones (points upward)
+|    colour|COLOUR|(S)EN|0,*|2 span:d[black]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 13 span:d[2 cones (points upward)]
 |vertical length|VERLEN|RE|0,1|19.8
-|visual prominence|CONVIS|EN|0,1|1 : visually conspicuous
+|visual prominence|CONVIS|EN|0,1|1 span:d[visually conspicuous]
 |===
 
 .Cardinal Beacon, East의 인코딩 예시
@@ -140,28 +140,28 @@ VQ(9)10s
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[beacon shape]|BCNSHP|EN|1,1| 5 : pile beacon
-|span:E[category of cardinal mark]|CATCAM|EN|1,1| 2 : east cardinal mark
-|span:E[colour]|COLOUR|EN|1,*| 2 : black
-|span:E[colour]|COLOUR|EN|1,*| 6 : yellow
-|span:E[colour]|COLOUR|EN|1,*| 2 : black
-|colour pattern|COLPAT|EN|0,1| 1 : horizontal stripes
+|span:E[beacon shape]|BCNSHP|EN|1,1| 5 span:d[pile beacon]
+|span:E[category of cardinal mark]|CATCAM|EN|1,1| 2 span:d[east cardinal mark]
+|span:E[colour]|COLOUR|EN|1,*| 2 span:d[black]
+|span:E[colour]|COLOUR|EN|1,*| 6 span:d[yellow]
+|span:E[colour]|COLOUR|EN|1,*| 2 span:d[black]
+|colour pattern|COLPAT|EN|0,1| 1 span:d[horizontal stripes]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Kkamagyeo
-|    name usage||(S)EN|0,1|1 : default name display
+|    name usage||(S)EN|0,1|1 span:d[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor 
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|까막여
-|    name usage||(S)EN|0,1|2 : alternate name display 
-|marks navigational - system of|MARSYS|EN|0,1| 2 : IALA B 
-|nature of construction|NATCON|EN|0,*| 7 : metal
+|    name usage||(S)EN|0,1|2 span:d[alternate name display]
+|marks navigational - system of|MARSYS|EN|0,1| 2 span:d[IALA B]
+|nature of construction|NATCON|EN|0,*| 7 span:d[metal]
 |radar conspicuous|CONRAD|BO|0,1| false 
 |**topmark**|TOPMAR|C|0,1| 
-|    colour|COLOUR|(S)EN|0,*|2 : black 
-|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 11 : 2 cones (base to base)
+|    colour|COLOUR|(S)EN|0,*|2 span:d[black]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 11 span:d[2 cones (base to base)]
 |vertical length|VERLEN|RE|0,1|11
-|visual prominence|CONVIS|EN|0,1|1 : visually conspicuous
+|visual prominence|CONVIS|EN|0,1|1 span:d[visually conspicuous]
 |===
 
 ---

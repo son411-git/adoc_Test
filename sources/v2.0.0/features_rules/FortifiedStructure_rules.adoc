@@ -11,16 +11,16 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of fortified structure|CATFOR|EN|0,1 | 2 : fort
+|category of fortified structure|CATFOR|EN|0,1 | 2 span:d[fort]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1 | eng 
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1 | Chojijin Fort
-|    name usage||(S)EN|0,1| 1 : default name display
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1 | kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1 | 초지진
-|    name usage||(S)EN|0,1| 1 : default name display
-|nature of construction|NATCON|EN|0,*| 1 : masonry
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|nature of construction|NATCON|EN|0,*| 1 span:d[masonry]
 |===
 
 ---

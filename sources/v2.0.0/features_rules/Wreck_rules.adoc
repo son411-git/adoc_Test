@@ -299,7 +299,7 @@ include::common/phrase.adoc[tag=SurroundingDepth]
 ===== Example
 
 .Wreck의 인코딩 예시
-[%header, cols="30,25,10,10,25" ]
+[%header, cols="30,25,10,10,25"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 

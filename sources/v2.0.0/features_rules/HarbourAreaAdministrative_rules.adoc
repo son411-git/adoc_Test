@@ -15,11 +15,11 @@ include::common/phrase.adoc[tag=information]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Busan Hang
-|    name usage||(S)EN|0,1| 1 : default name display
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산항
-|    name usage||(S)EN|0,1| 2 : alternate name display
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
 |===
 
 ---

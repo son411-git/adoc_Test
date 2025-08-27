@@ -5,7 +5,7 @@
 * 반대로 span:F[Gate]가 개방된 위치에서 상단 구조물이 있어 수직 간격에 제한이 있는 경우, span:A[vertical clearance open]의 하위 속성 span:A[vertical clearance value]는 필수로 입력하고, span:A[vertical clearance unlimited] = (false) 로 입력
 * span:F[Gate] 는 span:F[Depth Area], span:F[Dredged Area], span:F[Unsurveyed Area] 또는 span:F[Land Area]로 덮여 있어야 함
 * 알려진 경우, span:A[depth range minimum value]는 문턱(gate sill) 위의 최소 깊이를 입력하는데 사용
-* span:A[vertical datum] = ( 13 : low water )은 내륙 수로에만 적용되며, 조위가 적용되는 수역에서 수직 기준면을 나타내는 데 사용되어서는 안됨
+* span:A[vertical datum] = 13 span:d[low water]은 내륙 수로에만 적용되며, 조위가 적용되는 수역에서 수직 기준면을 나타내는 데 사용되어서는 안됨
 
 include::common/phrase.adoc[tag=information]
 
@@ -18,16 +18,16 @@ image::../images/LockBasin/LockBasin_image-1.png[align="center"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of gate|CATGAT|EN|0,1 | 4 : lock gate
+|category of gate|CATGAT|EN|0,1 | 4 span:d[lock gate]
 |depth range minimum value|DRVAL1|RE|0,1 | 10
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1 | Ara Seohae Gate
-|    name usage||(S)EN|0,1| 1 : default name display
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1 | 아라서해갑문
-|    name usage||(S)EN|0,1| 2 : alternate name display
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
 |**horizontal clearance open**||C|0,1|
 |    span:E[horizontal clearance value]|HORCLR|(S)RE|1,1|28.5
 |**vertical clearance open**|VERCOP|C|0,1|

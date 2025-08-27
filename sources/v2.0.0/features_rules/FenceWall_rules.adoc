@@ -15,10 +15,10 @@ include::common/NotUsedFeature.adoc[]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of fence|CATFNC|EN|0,1| 1 : fence
-|colour|COLOUR|EN|0,*| 1 : white
-|colour|COLOUR|EN|0,*| 6 : yellow
-|colour pattern|COLPAT|EN|0,1| 1 : horizontal stripes
+|category of fence|CATFNC|EN|0,1| 1 span:d[fence]
+|colour|COLOUR|EN|0,*| 1 span:d[white]
+|colour|COLOUR|EN|0,*| 6 span:d[yellow]
+|colour pattern|COLPAT|EN|0,1| 1 span:d[horizontal stripes]
 |height|HEIGHT|RE|0,1| 5
 |===
 

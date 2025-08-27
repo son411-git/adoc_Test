@@ -13,7 +13,7 @@
 //
 * 굽이진 경로로 구성된 깊은 수심 항로는, 각 구간을 별도로 분리하여 각각의 span:F[Deep Water Route Part]에 대해 span:A[orientation value]를 입력해야 함
 * span:A[orientation value]는 필수이며 일방통행* 일때는 선박이 진행하는 방향으로 방위각을 입력하고, 양방향일때는 180 미만의 값을 입력해야 함
-** 일방통행 : span:A[traffic flow] = (1 : inbound, 2 : outbound or 3 : one-way)
+** 일방통행 : span:A[traffic flow] = 1 span:d[inbound] / 2 span:d[outbound] / 3 span:d[one-way]
 
 //
 * 법령 및 고시 등에 깊은 수심 항로 내 제한 속력이 명시되어 있거나, 별도의 속력 제한 구역의 범위가 일치하면 span:F[Restricted Area]를 별도로 입력하지 않고 span:F[Deep Water Route Part]에 span:A[vessel speed limit]를 직접 입력

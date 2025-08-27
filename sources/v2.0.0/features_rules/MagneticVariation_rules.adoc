@@ -36,9 +36,6 @@
 |span:E[value of annual change in magnetic variation]|VALACM|RE|1,1| -2.0
 |span:E[value of magnetic variation]|VALMAG|RE|1,1| -9.00
 |**information**|INFORM|C|0,*|
-|    file locator||(S)TE|0,1|
-|    file reference|TXTDSC/NTXTDS|(S)TE|0,1|
-|    headline||(S)TE|0,1|
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| World Magnetic Model for 2025(20250101)
 |===

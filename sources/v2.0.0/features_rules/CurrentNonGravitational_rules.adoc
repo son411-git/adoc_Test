@@ -5,7 +5,7 @@
 ** 강도가 변하면 span:A[speed minimum]도 함께 명시
 * 유향은 방위각으로 소수점 둘째짜리까지 span:A[orientation value]에 입력너무 변동적이면 span:A[orientation value] = (UNKNOWN)으로 설정
 * 계절적 변동은 span:A[periodic date range]로 표시.
-* span:A[periodic date range]에 해당하는 값이 있거나, 간헐적으로 발생하는 해류에는 span:A[status] = (5 : periodic/intermittent) 입력
+* span:A[periodic date range]에 해당하는 값이 있거나, 간헐적으로 발생하는 해류에는 span:A[status] = 5 span:d[periodic/intermittent] 입력
 
 include::common/information.adoc[]
 
@@ -39,7 +39,7 @@ include::common/information.adoc[]
 |**span:E[speed]**||C|1,1|
 |    span:E[speed maximum]|CURVEL|(S)RE|1,1|4.5
 |    speed minimum||(S)RE|0,1|2.5
-|status|STATUS|EN|0,1|5 : periodic/intermittent
+|status|STATUS|EN|0,1|5 span:d[periodic/intermittent]
 
 |===
 

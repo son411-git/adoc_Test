@@ -38,27 +38,27 @@ include::common/phrase.adoc[tag=IALA_Warning]
 |Attribute |Value
 2+^h|buoy
 |span:E[buoy shape]
-| 4 : pillar / 5 : spar
+| 4 span:d[pillar] / 5 span:d[spar]
 |span:E[colour]
-| 5 : blue +
-6 : yellow
+| 5 span:d[blue]+
+6 span:d[yellow]
 |colour pattern
-|2 : vertical stripes 
+|2 span:d[vertical stripes]
 |marks navigational +
 - system of
-| 2 : IALA B
+| 2 span:d[IALA B]
 2+^h|topmark (if any)
 |    colour 
-| 6 : yellow
+| 6 span:d[yellow]
 |    span:E[topmark/daymark shape]
-| 8 : upright cross
+| 8 span:d[upright cross]
 2+^h|Light All Around : rhythm of light (if any)
 |span:E[colour]
-| 5 : blue
+| 5 span:d[blue]
 |span:E[colour]
-| 6 : yellow
+| 6 span:d[yellow]
 | span:E[light characteristic]
-| 17 : occulting alternating
+| 17 span:d[occulting alternating]
 | signal group
 | (1)
 | signal period
@@ -71,15 +71,15 @@ include::common/phrase.adoc[tag=IALA_Warning]
 1
 |signal sequence +
     span:E[signal status]
-| 2 : eclipsed/silent +
-1 : lit/sound +
-2 : eclipsed/silent +
-1 : lit/sound 
+| 2 span:d[eclipsed/silent]+
+1 span:d[lit/sound]+
+2 span:d[eclipsed/silent]+
+1 span:d[lit/sound]
 | value of nominal range
 | 4
 2+^h|Radar Transponder Beacon (if any)
 | category of radar transponder beacon
-| 2 : racon, radar transponder beacon
+| 2 span:d[racon, radar transponder beacon]
 | signal group
 |(D)
 |===
@@ -90,22 +90,22 @@ include::common/phrase.adoc[tag=IALA_Warning]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[buoy shape]|BOYSHP|EN|1,1| 4 : pillar
-|span:E[colour]|COLOUR|EN|1,*| 5 : blue
-|span:E[colour]|COLOUR|EN|1,*| 6 : yellow
-|colour pattern|COLPAT|EN|0,1| 2 : vertical stripes
+|span:E[buoy shape]|BOYSHP|EN|1,1| 4 span:d[pillar]
+|span:E[colour]|COLOUR|EN|1,*| 5 span:d[blue]
+|span:E[colour]|COLOUR|EN|1,*| 6 span:d[yellow]
+|colour pattern|COLPAT|EN|0,1| 2 span:d[vertical stripes]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Yonggipo Hang
-|    name usage||(S)EN|0,1| 1 : default name display
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 용기포항 침선
-|    name usage||(S)EN|0,1| 2 : alternate name display
-|marks navigational - system of|MARSYS|EN|0,1| 2 : IALA B
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|marks navigational - system of|MARSYS|EN|0,1| 2 span:d[IALA B]
 |**topmark**|TOPMAR|C|0,1|
-|    colour|COLOUR|(S)EN|0,*| 6: yellow
-|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 8 : upright cross
+|    colour|COLOUR|(S)EN|0,*| 6 span:d[yellow]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 8 span:d[upright cross]
 |===
 
 ---

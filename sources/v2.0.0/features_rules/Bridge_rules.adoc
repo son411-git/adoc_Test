@@ -55,18 +55,18 @@ image::../images/Bridge/Bridge_image-3.png[width=100%]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|bridge construction|CATBRG|EN|0,1| 1 : arch
-|bridge function|CATBRG|EN|0,*| 1 : vehicular 
-|bridge function|CATBRG|EN|0,*| 3 : pedestrian
-|condition|CONDTN|EN|0,1| 1 : Under Construction
+|bridge construction|CATBRG|EN|0,1| 1 span:d[arch]
+|bridge function|CATBRG|EN|0,*| 1 span:d[vehicular]
+|bridge function|CATBRG|EN|0,*| 3 span:d[pedestrian]
+|condition|CONDTN|EN|0,1| 1 span:d[Under Construction]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Busan Bridge
-|    name usage||(S)EN|0,1|1 : default name display
+|    name usage||(S)EN|0,1|1 span:d[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1|kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산대교
-|    name usage||(S)EN|0,1|2 : alternate name display 
+|    name usage||(S)EN|0,1|2 span:d[alternate name display]
 |opening bridge||(S)BO|0,1|false
 |===
 
@@ -75,19 +75,19 @@ image::../images/Bridge/Bridge_image-3.png[width=100%]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|bridge construction|CATBRG|EN|0,1| 1 : arch
-|bridge function|CATBRG|EN|0,*| 1 : vehicular 
-|bridge function|CATBRG|EN|0,*| 3 : pedestrian
-|category of opening bridge|CATBRG|EN|0,1| 5 : bascule bridge
-|condition|CONDTN|EN|0,1| 1 : Under Construction
+|bridge construction|CATBRG|EN|0,1| 1 span:d[arch]
+|bridge function|CATBRG|EN|0,*| 1 span:d[vehicular]
+|bridge function|CATBRG|EN|0,*| 3 span:d[pedestrian]
+|category of opening bridge|CATBRG|EN|0,1| 5 span:d[bascule bridge]
+|condition|CONDTN|EN|0,1| 1 span:d[Under Construction]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Yeongdo Bridge
-|    name usage||(S)EN|0,1|1 : default name display
+|    name usage||(S)EN|0,1|1 span:d[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1|kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 영도대교
-|    name usage||(S)EN|0,1|2 : alternate name display 
+|    name usage||(S)EN|0,1|2 span:d[alternate name display]
 |opening bridge||(S)BO|0,1|true
 |===
 

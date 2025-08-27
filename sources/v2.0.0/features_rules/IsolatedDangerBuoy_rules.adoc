@@ -38,26 +38,26 @@ include::common/phrase.adoc[tag=IALA_Warning]
 |Attribute |Value
 2+^h|buoy
 |span:E[buoy shape] 
-| 4 : pillar
+| 4 span:d[pillar]
 |span:E[colour]
-| 2 : black +
-3 : red +
-2 : black
+| 2 span:d[black]+
+3 span:d[red]+
+2 span:d[black]
 |colour pattern
-| 1 : horizontal stripes 
+| 1 span:d[horizontal stripes]
 |marks navigational +
 - system of
-| 2 : IALA B
+| 2 span:d[IALA B]
 2+^h|topmark 
 |    colour 
-| 2 : black
+| 2 span:d[black]
 |    span:E[topmark/daymark shape]
-| 4 : 2 spheres
+| 4 span:d[2 spheres]
 2+^h|Light All Around : rhythm of light (if any)
 |span:E[colour]
-| 1 : white
+| 1 span:d[white]
 | span:E[light characteristic]
-| 2 : flashing
+| 2 span:d[flashing]
 | signal group
 | (2)
 |===
@@ -68,23 +68,23 @@ include::common/phrase.adoc[tag=IALA_Warning]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[buoy shape]|BOYSHP|EN|1,1| 4 : pillar
-|span:E[colour]|COLOUR|EN|1,*| 2 : black
-|span:E[colour]|COLOUR|EN|1,*| 3 : red
-|span:E[colour]|COLOUR|EN|1,*| 2 : black
-|colour pattern|COLPAT|EN|0,1| 1 : horizontal stripes 
+|span:E[buoy shape]|BOYSHP|EN|1,1| 4 span:d[pillar]
+|span:E[colour]|COLOUR|EN|1,*| 2 span:d[black]
+|span:E[colour]|COLOUR|EN|1,*| 3 span:d[red]
+|span:E[colour]|COLOUR|EN|1,*| 2 span:d[black]
+|colour pattern|COLPAT|EN|0,1| 1 span:d[horizontal stripes]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Bongnoe
-|    name usage||(S)EN|0,1| 1 : default name display
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 복뢰
-|    name usage||(S)EN|0,1| 2 : alternate name display
-|marks navigational - system of|MARSYS|EN|0,1| 2 : IALA B
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|marks navigational - system of|MARSYS|EN|0,1| 2 span:d[IALA B]
 |**topmark**|TOPMAR|C|0,1|
-|    colour|COLOUR|(S)EN|0,*| 2 : black
-|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 4 : 2 spheres
+|    colour|COLOUR|(S)EN|0,*| 2 span:d[black]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 4 span:d[2 spheres]
 |===
 
 ---

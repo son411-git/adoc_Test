@@ -13,30 +13,30 @@ span:F[Lock Basin]으로 입력
 ** span:F[Shoreline Construction][C] 일 때
 ** span:F[Land area][S]의 경계를 덮고 있는 span:F[Shoreline Construction][S]이 +
 span:A[water level effect] = (UNDEFINED) 이거나, +
-span:A[water level effect] = (1 : partly submerged at high water) 이거나, +
-span:A[water level effect] = (2 : always dry) 일 때
+span:A[water level effect] = 1 span:d[partly submerged at high water] 이거나, +
+span:A[water level effect] = 2 span:d[always dry] 일 때
 
 //
-* span:A[optimum display scale]에 해당하는 화면 축척에서 측량이 불충분하다고 간주되는 span:F[Coastline]은 span:A[quality of horizontal measurement] = (4 : approximate)로 입력해야 함
+* span:A[optimum display scale]에 해당하는 화면 축척에서 측량이 불충분하다고 간주되는 span:F[Coastline]은 span:A[quality of horizontal measurement] = 4 span:d[approximate]로 입력해야 함
 
 //
 * 해안선의 범주나 표면적 특성을 입력할 경우 span:A[category of coastline]와 span:A[nature of surface]를 사용
 * 해안선에는 섬이나 자연 지명을 span:F[Coastline]의 span:A[feature name]으로 입력하지 않아야 함 (span:F[Land Area], span:F[Land Regeion]을 사용)
 
 //
-* 염전 지역의 바다 쪽 가장자리가 span:F[Coastline]과 맞닿는 경우, span:A[category of coastline] = (2 : flat coast)로 입력해야 함
+* 염전 지역의 바다 쪽 가장자리가 span:F[Coastline]과 맞닿는 경우, span:A[category of coastline] = 2 span:d[flat coast]로 입력해야 함
 
 //
-* 대축척에서 절벽이나 경사면은 span:F[Slope Topline] 또는 span:F[Sloping Ground]를 span:A[category of slope] = (6 : cliff) 로  입력하고 span:F[Coastline]는 span:A[category of coastline] = (UNDEFINED)로 입력
+* 대축척에서 절벽이나 경사면은 span:F[Slope Topline] 또는 span:F[Sloping Ground]를 span:A[category of slope] = 6 span:d[cliff] 로  입력하고 span:F[Coastline]는 span:A[category of coastline] = (UNDEFINED)로 입력
 
-* 절벽 해안선이나 경사 해안선이 span:A[optimum display scale]에 해당하는 화면 축척에서 더 이상 구분할 수 없고, span:F[Coastline]과 일치하는 경우 span:A[category of coastline] = (1 : steep coast)로 입력
+* 절벽 해안선이나 경사 해안선이 span:A[optimum display scale]에 해당하는 화면 축척에서 더 이상 구분할 수 없고, span:F[Coastline]과 일치하는 경우 span:A[category of coastline] = 1 span:d[steep coast]로 입력
 
 //
 * 습지 지역 또는 빙하의 바다 쪽 가장자리가 span:F[Coastline]과 일치하는 경우,
-span:A[category of coastline] = (8 : marshy shore) 또는 (9 : glacier)로 입력하고 span:A[quality of horizontal measurement] = (4 : approximate)로 입력
+span:A[category of coastline] = 8 span:d[marshy shore] 또는 9 span:d[glacier]로 입력하고 span:A[quality of horizontal measurement] = 4 span:d[approximate]로 입력
 
 * 조간대의 맹그로브는 span:F[Obstruction]를 사용하여 입력하지만 소축척에서 맹그로브를 겉모양만(apparent) 해안선으로 입력해야 하는 경우, +
-span:A[category of coastline] = (7 : mangrove)와 span:A[quality of horizontal measurement] = (4 : approximate)를 입력
+span:A[category of coastline] = 7 span:d[mangrove]와 span:A[quality of horizontal measurement] = 4 span:d[approximate]를 입력
 
 ===== Example
 
@@ -45,7 +45,7 @@ span:A[category of coastline] = (7 : mangrove)와 span:A[quality of horizontal m
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of coastline|CATCOA|EN|0,1| 2 : flat coast
+|category of coastline|CATCOA|EN|0,1| 2 span:d[flat coast]
 |===
 
 .모래 해안선의 인코딩 예시
@@ -53,7 +53,7 @@ span:A[category of coastline] = (7 : mangrove)와 span:A[quality of horizontal m
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|nature of surface|NATSUR|EN|0,*| 4 : sand
+|nature of surface|NATSUR|EN|0,*| 4 span:d[sand]
 |===
 
 

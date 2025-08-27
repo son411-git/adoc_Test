@@ -2,9 +2,9 @@
 ===== Remark
 
 * 해상의 유빙은 span:F[Ice Area]로 입력하고, 그 아래의 수심이 알려지지 않은 경우 span:F[Unsurveyed Area]로, 수심이 알려진 경우 span:F[Depth Area]로 덮여 있어야 함
-* 육지의 빙하는 span:F[Ice Area]에 span:A[category of ice] = (5 : glacier) 로 입력
-* 입력된 빙하의 바다 쪽 가장자리가 해안선과 일치하는 경우, 이 가장자리는 span:F[Coastline]에 span:A[category of coastline] = (6 : glacier, seaward end) 로 입력
-** 또한, 해안선의 공간 유형은 가시적인 해안선에 대해 span:A[quality of horizontal measurement] = (4 : approximate) 로 입력
+* 육지의 빙하는 span:F[Ice Area]에 span:A[category of ice] = 5 span:d[glacier] 로 입력
+* 입력된 빙하의 바다 쪽 가장자리가 해안선과 일치하는 경우, 이 가장자리는 span:F[Coastline]에 span:A[category of coastline] = 6 span:d[glacier, seaward end] 로 입력
+** 또한, 해안선의 공간 유형은 가시적인 해안선에 대해 span:A[quality of horizontal measurement] = 4 span:d[approximate] 로 입력
 * 빙하 전선(ice front)은 이동하므로, 가능한 경우 한계선이 측량된 날짜를 span:A[reported date]를 사용하여 입력
 include::common/phrase.adoc[tag=information]
 include::common/phrase.adoc[tag=featureName]
@@ -15,16 +15,16 @@ include::common/phrase.adoc[tag=featureName]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[category of ice]|CATICE|EN|1,1| 5 : glacier
+|span:E[category of ice]|CATICE|EN|1,1| 5 span:d[glacier]
 |elevation|ELEVAT|RE|0,1|
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Campbell Glacier Tongue
-|    name usage||(S)EN|0,1| 1 : default name display
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
 |**feature name**||C|0,*|       
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 캠벨빙설
-|    name usage||(S)EN|0,1| 2 : alternate name display
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
 |===
 
 ---

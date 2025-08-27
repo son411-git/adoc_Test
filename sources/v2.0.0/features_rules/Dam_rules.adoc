@@ -2,7 +2,7 @@
 ===== Remark
 
 * 댐, 둑(weir), 홍수 방벽(flood barrage)은 span:F[Dam]으로 입력
-** 점(Point) 형태의 댐은 span:F[Landmark]에 span:A[category of landmark] = (27 : Dam)으로 입력
+** 점(Point) 형태의 댐은 span:F[Landmark]에 span:A[category of landmark] = 27 span:d[Dam]으로 입력
 * span:F[Dam]은 span:F[Land Area]로 덮여 있어야 함
 ** span:F[Dam]이 span:F[Land Area]의 가장자리(edge)를 따라 입력될 경우, +
 그 경계에 span:F[Coastline] 또는 span:F[Shoreline Construction]을 함께 입력해야 함
@@ -10,12 +10,12 @@
 
 //
 * 수중 둑(submerged weir)
-** 수중 둑을 입력할 때는 span:F[Dam]에 span:A[category of dam] = (2 : weir) 와 span:A[water level effect] = (3 : always under water/submerged)으로 입력
+** 수중 둑을 입력할 때는 span:F[Dam]에 span:A[category of dam] = 2 span:d[weir] 와 span:A[water level effect] = 3 span:d[always under water/submerged]으로 입력
 
 //
 * 홍수 방벽(flood barrage)
-* span:A[optimum display scale]에 해당하는 화면 축척에서 항해가 가능한 홍수 방벽을 입력할 때는 span:F[Dam]에 span:A[category of dam] = (3 : flood barrge)로 입력하고, span:F[Land Area]로 덮여 있어야 함
-** 홍수 방벽의 개구부를 입력할 때는 span:F[Gate]에 span:A[category of gate] = (2 : flood barrge gate)로 입력하고, span:F[Depth Area]로 덮여 있어야 함
+* span:A[optimum display scale]에 해당하는 화면 축척에서 항해가 가능한 홍수 방벽을 입력할 때는 span:F[Dam]에 span:A[category of dam] = 3 span:d[flood barrge]로 입력하고, span:F[Land Area]로 덮여 있어야 함
+** 홍수 방벽의 개구부를 입력할 때는 span:F[Gate]에 span:A[category of gate] = 2 span:d[flood barrge gate]로 입력하고, span:F[Depth Area]로 덮여 있어야 함
 
 ===== Example
 .Dam의 인코딩 예시
@@ -23,15 +23,15 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|Category of Dam|CATDAM|EN|0,1| 2: dam 
+|Category of Dam|CATDAM|EN|0,1| 2 span:d[dam]
 |**Feature Name**||C|0,*| 
 |    span:E[Language]||(S)TE|1,1| eng
 |    span:E[Name]|OBJNAM/NOBJNM|(S)TE|1,1| Soyanggang Dam
-|    Name Usage||(S)EN|0,1| 1 : default name display
+|    Name Usage||(S)EN|0,1| 1 span:d[default name display]
 |**Feature Name**||C|0,*| 
 |    span:E[Language]||(S)TE|1,1| kor
 |    span:E[Name]|OBJNAM/NOBJNM|(S)TE|1,1| 소양강 댐
-|    Name Usage||(S)EN|0,1| 2 : alternate name display 
+|    Name Usage||(S)EN|0,1| 2 span:d[alternate name display]
 |===
 
 ---

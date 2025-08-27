@@ -3,7 +3,7 @@
 
 * 해안선과 일치하는 외곽선을 가진 제방을 인코딩해야 하는 경우, span:F[Dyke]과 함께 해안쪽 외곽선을 따라 span:F[Shoreline Construction][C]을 사용해야 하며, span:A[category of shoreline construction]에는 값이 입력되지 않아야 함
 * span:F[Dyke][S]로 입력될 경우, 반드시 span:F[Land Area]로 덮여야 함
-* 대축척 해도에서 제방의 상단은 span:F[Slope Topline]으로 입력될 수 있으며, span:A[category of slope] = (2 : embankment)로 입력해야 함
+* 대축척 해도에서 제방의 상단은 span:F[Slope Topline]으로 입력될 수 있으며, span:A[category of slope] = 2 span:d[embankment]로 입력해야 함
 include::common/NotUsedFeature.adoc[]
 
 ---

@@ -1,10 +1,10 @@
 // tag::CableOverhead[]
 ===== Remark
 
-* 전화선이나 광섬유 케이블과 같은 통신 케이블은 필요 시 span:A[category of cable] = (10 : telecommunications cable)로 입력
+* 전화선이나 광섬유 케이블과 같은 통신 케이블은 필요 시 span:A[category of cable] = 10 span:d[telecommunications cable]로 입력
 * 동일한 지역에 여러 케이블이 있으면 가장 낮은 케이블을 대표로 입력
 * 해상 케이블카의 경우 span:F[Conveyor]를 사용하여 입력
-* 항해 가능한 수역에서 span:F[Cable Overhead]의 지지대는 가능하면 span:F[Pylon/Bridge Support]를 사용하여 입력해야 하며, span:A[category of pylon] = (1 : power transmission pylon/pole) 또는 (2 : telephone/telegraph pylon/pole)로 설정
+* 항해 가능한 수역에서 span:F[Cable Overhead]의 지지대는 가능하면 span:F[Pylon/Bridge Support]를 사용하여 입력해야 하며, span:A[category of pylon] = 1 span:d[power transmission pylon/pole] / 2 span:d[telephone/telegraph pylon/pole]로 설정
 * 국내기준 : span:A[category of cable]은 필수 입력, 선택 가능한 속성이 없을 경우에는 span:A[information] 또는 span:F[Nautical Information]으로 입력
 
 ===== Example
@@ -13,12 +13,12 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of cable|CATCBL|EN|0,1| 1: power line
+|category of cable|CATCBL|EN|0,1| 1 span:d[power line]
 |**vertical clearance fixed**||C|0,1| 
 |    span:E[vertical clearance value]|VERCLR|(S)RE|1,1| 33 
 |**vertical clearance safe**||C|0,1|  
 |    span:E[vertical clearance value]|VERCSA|(S)RE|1,1| 32
-|vertical datum|VERDAT|EN|0,1| 29 : nearly highest high water 
+|vertical datum|VERDAT|EN|0,1| 29 span:d[nearly highest high water]
 |===
 
 ---

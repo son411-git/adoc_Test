@@ -115,7 +115,7 @@ h| V-AIS
 
 4+<| ^1^ 등화와 보조등화의 번호가 같으면 보조 등화의 번호를 생략 +
 ^2^ 전파항로표지, 음파항로표지, 특수항로표지 +
-^3^ function = 33 : light support 가 아닌 경우에만 해당 
+^3^ function = 33 span:d[light support]가 아닌 경우에만 해당 
 
 |===
 

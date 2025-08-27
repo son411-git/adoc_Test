@@ -19,18 +19,18 @@ image::../images/Daymark/Daymark_image-1.png[width=100%]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of special purpose mark|CATSPM|EN|0,*| 25 : speed limit mark
-|span:E[colour]|COLOUR|EN|1,*| 1 : white
+|category of special purpose mark|CATSPM|EN|0,*| 25 span:d[speed limit mark]
+|span:E[colour]|COLOUR|EN|1,*| 1 span:d[white]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Speed Limit at Bend 8 knots
-|    name usage||(S)EN|0,1| 1 : default name display
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 만곡부 속력제한 8 노트
-|    name usage||(S)EN|0,1| 2 : alternate name display  
-|nature of construction|NATCON|EN|0,*| 7 : metal
-|span:E[topmark/daymark shape]|TOPSHP|EN|1,1| 6 : board
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|nature of construction|NATCON|EN|0,*| 7 span:d[metal]
+|span:E[topmark/daymark shape]|TOPSHP|EN|1,1| 6 span:d[board]
 |===
 
 

@@ -14,7 +14,7 @@ image::../images/Fairway/Fairway_image-1.png[width=50%]
 
 * 필요하다면, 굽이진 경로로 구성된 항로는 각 구간을 별도로 분리하여 각각의 span:F[Fairway]에 대해 span:A[orientation value]를 입력해야 함
 ** 일방통행* 일때는 선박이 진행하는 방향으로 방위각을 입력하고, 양방향일때는 180 미만의 값을 입력해야 함
-** 일방통행 : span:A[traffic flow] = (1 : inbound / 2 : outbound / 3 : one-way)
+** 일방통행 : span:A[traffic flow] = 1 span:d[inbound] / 2 span:d[outbound] / 3 span:d[one-way]
 
 //
 include::common/information.adoc[]
@@ -29,11 +29,11 @@ include::common/information.adoc[]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| small craft fairway
-|    name usage||(S)EN|0,1| 1 : defalut name display
+|    name usage||(S)EN|0,1| 1 span:d[defalut name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 소형선박 통항로
-|    name usage||(S)EN|0,1| 2 : alternate name display
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
 |orientation value|ORIENT|RE|0,1| 70
 |===
 

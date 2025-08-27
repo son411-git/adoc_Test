@@ -12,9 +12,9 @@
 * 필요한 경우, 속성 span:A[signal frequency]는 헤르츠(Hz) 단위로 입력 (예 : 950 MHz → 950000000)
 
 //
-* span:F[Fog Signal]이 무선으로 활성화되는 경우, span:A[signal generation] = (5 : radio activated)로 입력해야 함
+* span:F[Fog Signal]이 무선으로 활성화되는 경우, span:A[signal generation] = 5 span:d[radio activated]로 입력해야 함
 
-* span:F[Fog Signal]이 관제소 호출로 활성화되는 경우, span:A[signal generation]은 (6 : call activated)로 입력해야 함
+* span:F[Fog Signal]이 관제소 호출로 활성화되는 경우, span:A[signal generation]은 6 span:d[call activated]로 입력해야 함
 
 ** 신호 활성화에 필요한 연락 정보를 입력하려면 span:F[Contact Details]를 사용해야 하며, span:F[Fog Signal]와 span:R[Additional Information]로 관계 맺어야 함
 
@@ -39,12 +39,12 @@ Seoimal
 
 * 속성 입력 방법
 include::common/featureName_for_AtoN.adoc[]
-** 종류는 Siren 이므로, span:A[category of fog signal] = (3 : siren)을 입력
+** 종류는 Siren 이므로, span:A[category of fog signal] = 3 span:d[siren]을 입력
 ** 주기는 60s 이므로, span:A[signal period] = (60)을 입력
 ** 리듬은 취명과 정명이 각각 두 번씩 반복되므로, span:A[signal group] = ((2))을 입력
 ** 상태는
-  - 취명(빛이나 신호가 발생하는 상태)은 span:A[signal status] = (1 : lit/sound)로 입력
-  - 정명(빛이나 신호가 멈춘 상태)은 span:A[signal status] = (2 : eclipsed/silent)로 입력
+  - 취명(빛이나 신호가 발생하는 상태)은 span:A[signal status] = 1 span:d[lit/sound]로 입력
+  - 정명(빛이나 신호가 멈춘 상태)은 span:A[signal status] = 2 span:d[eclipsed/silent]로 입력
   - span:A[signal status]는 신호 순서에 따라 입력
 ** 각 신호의 지속 시간은 span:A[signal duration]에 소수점 첫째 자리 초(sec) 단위로 순서대로 입력
 
@@ -55,21 +55,21 @@ include::common/featureName_for_AtoN.adoc[]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[category of fog signal]|CATFOG|EN|1,1| 3 : siren
+|span:E[category of fog signal]|CATFOG|EN|1,1| 3 span:d[siren]
 |signal group|SIGGRP|TE|0,1| (2)
 |signal period|SIGPER|RE|0,1| 60
 |**signal sequence**|SIGSEQ|C|0,*|
 |    span:E[signal duration]||(S)RE|1,1| 4
-|    span:E[signal status]||(S)EN|1,1| 1 : lit/sound
+|    span:E[signal status]||(S)EN|1,1| 1 span:d[lit/sound]
 |**signal sequence**|SIGSEQ|C|0,*|
 |    span:E[signal duration]||(S)RE|1,1| 5
-|    span:E[signal status]||(S)EN|1,1| 2 : eclipsed/silent
+|    span:E[signal status]||(S)EN|1,1| 2 span:d[eclipsed/silent]
 |**signal sequence**|SIGSEQ|C|0,*|
 |    span:E[signal duration]||(S)RE|1,1| 4
-|    span:E[signal status]||(S)EN|1,1| 1 : lit/sound
+|    span:E[signal status]||(S)EN|1,1| 1 span:d[lit/sound]
 |**signal sequence**|SIGSEQ|C|0,*|
 |    span:E[signal duration]||(S)RE|1,1| 47
-|    span:E[signal status]||(S)EN|1,1| 2 : eclipsed/silent
+|    span:E[signal status]||(S)EN|1,1| 2 span:d[eclipsed/silent]
 |===
 
 ---

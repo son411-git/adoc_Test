@@ -7,17 +7,17 @@
 //
 * span:F[Land Elevation][P]는 반드시 다음 조건 중 하나를 만족해야 함:
 ** span:F[Land Area][S]에 의해 덮여 있어야 함
-** span:F[Wreck][S] 중에서 span:A[water level effect] = (1 : partly submerged at high water 또는 2 : always dry)인 객체에 의해 덮여 있어야 함
+** span:F[Wreck][S] 중에서 span:A[water level effect] = 1 span:d[partly submerged at high water] 또는 2 span:d[always dry]인 객체에 의해 덮여 있어야 함
 ** span:F[Land Area][P]와 중첩되어야 함
-** span:F[Wreck][P] 중에서 span:A[water level effect]가  span:A[water level effect] = 1 : partly submerged at high water 또는 2 : always dry)인 객체와 중첩되어야 함
+** span:F[Wreck][P] 중에서 span:A[water level effect]가 span:A[water level effect] = 1 span:d[partly submerged at high water]또는 2 span:d[always dry]인 객체와 중첩되어야 함
 
 //
 * 국내 기준
 ** span:F[Land Elevation][C]는 입력하지 않음
-** 삼각점은 span:F[Landmark][P] 중에서 span:A[category of landmark] = (22 : triangulation mark)가 아닌 span:F[Land Elevation][P]로 입력
+** 삼각점은 span:F[Landmark][P] 중에서 span:A[category of landmark] = 22 span:d[triangulation mark]가 아닌 span:F[Land Elevation][P]로 입력
 
 ===== Example
-.Land Elevation의 인코팅 예시
+.Land Elevation의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
@@ -26,11 +26,11 @@
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gyeryongsan 
-|    name usage||(S)EN|0,1| 1 : default name display
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 계룡산
-|    name usage||(S)EN|0,1| 2 : alternate name display
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
 |===
 
 ---

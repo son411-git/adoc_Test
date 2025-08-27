@@ -14,7 +14,7 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of crane|CATCRN|EN|0,1| 4 : travelling crane
+|category of crane|CATCRN|EN|0,1| 4 span:d[travelling crane]
 |lifting capacity|LIFCAP|RE|0,1| 120
 |===
 

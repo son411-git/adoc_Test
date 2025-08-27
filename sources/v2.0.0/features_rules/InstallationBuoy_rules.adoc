@@ -32,18 +32,18 @@ include::common/phrase.adoc[tag=information]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[buoy shape]|BOYSHP|EN|1,1| 7 : superbuoy
-|category of installation buoy|CATINB|EN|0,1| 2 : single buoy mooring
-|span:E[colour]|COLOUR|EN|1,*| 6 : yellow
+|span:E[buoy shape]|BOYSHP|EN|1,1| 7 span:d[superbuoy]
+|category of installation buoy|CATINB|EN|0,1| 2 span:d[single buoy mooring]
+|span:E[colour]|COLOUR|EN|1,*| 6 span:d[yellow]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Ulsan Hang No.B
-|    name usage||(S)EN|0,1| 1 : default name display
+|    name usage||(S)EN|0,1| 1 span:d[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 울산항 SK B호 계선
-|    name usage||(S)EN|0,1| 2 : alternate name display
-|product|PRODCT|EN|0,*| 1 : oil
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|product|PRODCT|EN|0,*| 1 span:d[oil]
 |===
 
 ---

@@ -4,9 +4,9 @@
 * span:F[Landmark] 또는 span:F[Silo/tank]가 아닌 일반적인 건물은 span:F[Building]을 사용하여 입력
 * span:F[Building]이 항로표지의 구조물 객체로 활용되는 경우 span:R[Structure/Equipment]를 사용하여 장비(Equipment) 객체와 연관되어야 함.
 * 선박이나 화물을 보호하기 위해 항해 가능한 수역 위에 세워지거나 물 위로 확장된 보트하우스와 같은 지붕이 있는 건물은 span:F[Structure Over Navigable Water]로 입력 
-* 파손된 건물은 span:A[condition] = (2 : ruined)로 입력
+* 파손된 건물은 span:A[condition] = 2 span:d[ruined]로 입력
 * 항해가 가능한 수역에 위치한 span:F[Building]은 말뚝, 기둥과 같은 지지 구조물 또는 span:F[LandArea]를 입력할 필요가 없으며, span:A[in the water]= (true)를 입력
-* 일반 창고 또는 환적 창고는 span:A[function] = (15 : transit shed/warehouse)로 입력
+* 일반 창고 또는 환적 창고는 span:A[function] = 15 span:d[transit shed/warehouse]로 입력
 * 국내 지침 : 종교 건물은 입력하지 않음 (종교와 관련된 span:A[function]의 속성값 20 ~ 27까지 사용하지 않음)
 
 ===== Example
@@ -19,12 +19,12 @@
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng 
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Busan Regional Customs
-|    name usage||(S)EN|0,1|1 : default name display
+|    name usage||(S)EN|0,1|1 span:d[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산본부세관
-|    name usage||(S)EN|0,1| 2 : alternate name display 
-|function|FUNCTN|EN|0,*| 3 : customs office
+|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|function|FUNCTN|EN|0,*| 3 span:d[customs office]
 |===
 
 ---

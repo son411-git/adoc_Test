@@ -13,13 +13,13 @@
 |Position approximate 
 |B-424.1
 |B7
-|4 : approximate 
+|4 span:d[approximate ]
 |
 | 
 |Position doubtful
 |B-424.2
 |B8 
-|4 : approximate
+|4 span:d[approximate]
 |
 | 
 |Existence doubtful 
@@ -27,21 +27,21 @@
 |I1 
 | 
 | 
-|18 : existence doubtful
+|18 span:d[existence doubtful]
 |Doubtful sounding
 |B-424.4 
 |I2 
 | 
-|3 : doubtful sounding 
+|3 span:d[doubtful sounding]
 |
 |Reported danger 
 |B-424.5 
 |I3.1, I3.2 
-|4 : approximate 
-|8 : value reported +
-(not surveyed) or +
-9 : value reported +
-(not confirmed) 
+|4 span:d[approximate]
+|8 span:d[value reported]
+(not surveyed)] / +
+9 span:d[value reported
+(not confirmed)]
 |
 |===
 

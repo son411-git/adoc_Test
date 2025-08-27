@@ -18,13 +18,13 @@
 
 . 등화의 리듬
 +
-* span:A[rhythm of light]을 입력할 때, 하위 속성인 span:A[signal group], span:A[signal period], span:A[signal sequence]는 **부동광이 아닌 경우** 즉, span:A[light characteristic] ≠ (1 : fixed)에만 적용되며, span:A[signal group], span:A[signal period]는 필수 항목임
+* span:A[rhythm of light]을 입력할 때, 하위 속성인 span:A[signal group], span:A[signal period], span:A[signal sequence]는 **부동광이 아닌 경우** 즉, span:A[light characteristic] = 1 span:d[fixed]가 아닌 경우 에만 적용되며, span:A[signal group], span:A[signal period]는 필수 항목임
 * 이러한 하위 속성의 사용법은 아래 <<Lights_General_T1,표 - Rhythm of Lights의 속성 입력>>에 정의되어 있으며, 가장 일반적인 입력 예시를 포함함. 
 ** 필요 시, 다른 속성 조합의 입력도 가능함
 * 최근에 설치된 일부 등화는 야간에 항해자에게 "연성부동섬광(FFL,Fixed and flasing light)"로 보일 수 있지만, +
-실제로는 수직으로 배치된 두 개의 별도 등화, 즉 하나는 span:A[light characteristic] = (1 : fixed)이고 다른 하나는 (2 :flashing)로 구성되어 있을 수 있음
-** 실제로 두 개의 등화가 별도로 존재하는 것으로 확인된 경우, 이를 단일 span:F[Light All Around]에 span:A[light characteristic] = (13 : fixed and flash)로 입력하지 말고, 각각 별도의 span:F[Light All Around]로 입력해야 함
-** 이 경우 하나는 span:A[light characteristic] = (1 : fixed)로, 다른 하나는 span:A[light characteristic] = (2 : flashing)으로 입력해야 함
+실제로는 수직으로 배치된 두 개의 별도 등화, 즉 하나는 span:A[light characteristic] = 1 span:d[fixed]이고 다른 하나는 2 span:d[flashing]로 구성되어 있을 수 있음
+** 실제로 두 개의 등화가 별도로 존재하는 것으로 확인된 경우, 이를 단일 span:F[Light All Around]에 span:A[light characteristic] = 13 span:d[fixed and flash]로 입력하지 말고, 각각 별도의 span:F[Light All Around]로 입력해야 함
+** 이 경우 하나는 span:A[light characteristic] = 1 span:d[fixed]로, 다른 하나는 span:A[light characteristic] = 2 span:d[flashing]으로 입력해야 함
 
 [[Lights_General_T1]]
 .Rhythm of Light의 속성 입력
@@ -32,70 +32,70 @@
 |===
 |Rhythm of light |span:A[light characteristic] |span:A[signal group]
 |F
-| 1 : fixed
+| 1 span:d[fixed]
 | prohibited
 |Oc
-| 8 : occulting
+| 8 span:d[occulting]
 | (1)
 |Oc(2)
-| 8 : occulting
+| 8 span:d[occulting]
 | (2)
 |Oc(2+3)
-| 8 : occulting
+| 8 span:d[occulting]
 | (2+3)
 |Iso
-| 7 : isophased
+| 7 span:d[isophased]
 | (1)
 |Fl
-| 2 : flashing
+| 2 span:d[flashing]
 | (1)
 |Fl(3)
-| 2 : flashing
+| 2 span:d[flashing]
 | (3)
 |LFl
-| 3 : long-flashing
+| 3 span:d[long-flashing]
 | (1)
 |Q
-| 4 : quick-flashing
+| 4 span:d[quick-flashing]
 | (1)
 |Q(3)
-| 4 : quick-flashing
+| 4 span:d[quick-flashing]
 | (3)
 |VQ
-| 5 : very quick-flashing
+| 5 span:d[very quick-flashing]
 | (1)
 |VQ(3)
-| 5 : very quick-flashing
+| 5 span:d[very quick-flashing]
 | (3)
 |UQ
-| 6 : ultra quick-flashing
+| 6 span:d[ultra quick-flashing]
 | (1)
 |IUQ
-| 11 : interrupted ultra quick flashing
+| 11 span:d[interrupted ultra quick flashing]
 | ()
 |Mo(K)
-| 12 : morse
+| 12 span:d[morse]
 | (K)
 |FFl
-| 13 : fixed and flash
+| 13 span:d[fixed and flash]
 | ()(1)
 |Q(6)+LFl
-| 25 : quick-flash plus long-flash
+| 25 span:d[quick-flash plus long-flash]
 | (6)(1)
 |VQ(6)+LFl
-| 26 : very quick-flash plus long-flash
+| 26 span:d[very quick-flash plus long-flash]
 | (6)(1)
 |Al.WR
-| 28 : alternating
+| 28 span:d[alternating]
 | ()
 |Al.Fl.WR
-| 19 : flash alternating
+| 19 span:d[flash alternating]
 | (1)
 |Al.Fl(2W+1R)
-| 19 : flash alternating
+| 19 span:d[flash alternating]
 | (2+1)
 |Al.Oc(4)WR
-| 19 : flash alternating
+| 19 span:d[flash alternating]
 | (2+1)
 |===
 
@@ -108,68 +108,68 @@
 [cols="^a,^a,^a,<a"]
 |===
 h| span:A[category of light] h| S-4 h| INT 1 ^h|description
-|4 : leading light 
+|4 span:d[leading light]
 | B-475.6
 | image:../images/Lights_General/Lights_General_CATLIT_04.png[] 
 | 다른 등화와 연결되어 도등 및 지도선을 형성하는 등화
-|5 : aero light 
+|5 span:d[aero light]
 | B-476.1
 | image:../images/Lights_General/Lights_General_CATLIT_05.png[] 
 | 항공 항법을 위해 설치된 등화, 해상등보다 출력이 높고 해안에서 훨씬 멀리서도 볼 수 있음
-|8 : flood light 
+|8 span:d[flood light]
 | B-478.2
 | image:../images/Lights_General/Lights_General_CATLIT_08.png[] 
 | 투광등, 구조물이나 구역을 비추는데 사용되는 광폭 등화
-|9 : strip light 
+|9 span:d[strip light]
 | B-478.5
 | image:../images/Lights_General/Lights_General_CATLIT_09.png[] 
 | 선형등, 광원이 일반적으로 수평인 선형 형태를 가지며, 길이가 수 미터에 달할 수 있는 등화
-|10 : subsidiary light 
+|10 span:d[subsidiary light]
 | B-471.8
 | image:../images/Lights_General/Lights_General_CATLIT_10.png[]
 | 주등대 위 또는 근처에 설치되어 항해에 특별한 용도가 있는 등화 +
 주등대와는 구분하여 입력해야 함
-|11 : spotlight 
+|11 span:d[spotlight]
 | -
 | - 
 | 좁은 지역을 비추기 위해 초첨을 맞춘 강력한 등화 +
-span:A[status] = 17 : illuminated)
+span:A[status] = 17 span:d[illuminated]
 
-|12 : front 
+|12 span:d[front]
 | B-470.7
 | Front Lt 
-| 도등에서의 전등, 4 : leading light 와 같이 사용 +
+| 도등에서의 전등, 4 span:d[leading light]와 같이 사용 +
 span:A[category of light] = (4, 12 - front leading light)
-|13 : rear 
+|13 span:d[rear]
 | B-470.7
 | Rear Lt 
-| 도등에서의 후등, 4 : leading light 와 같이 사용 +
+| 도등에서의 후등, 4 span:d[leading light]와 같이 사용 +
 span:A[category of light] = (4, 13 - rear leading light)
-|14 : lower 
+|14 span:d[lower]
 | B-470.7
 | Lower Lt 
-| 도등에서의 하등, 4 : leading light 와 같이 사용 +
+| 도등에서의 하등, 4 span:d[leading light]와 같이 사용 +
 span:A[category of light] = (4, 14 - lower leading light)
-|15 : upper 
+|15 span:d[upper]
 | B-470.7
 | Upper Lt 
-| 도등에서의 상등, 4 : leading light 와 같이 사용 +
+| 도등에서의 상등, 4 span:d[leading light]와 같이 사용 +
 span:A[category of light] = (4, 15 - upper leading light)
-|17 : emergency 
+|17 span:d[emergency]
 | -
 | -  
 | 주등이 고장 날 경우 켜지는 주등의 백업 등
-|18 : bearing light 
+|18 span:d[bearing light]
 | S-4 B-478.1 +
 _현재 사용되지 않음 + 
 (Not currently used)_
 | -
 | 나침반을 사용하지 않고도 대략적인 방위를 얻을 수 있는 등화
-|19 : horizontally disposed 
+|19 span:d[horizontally disposed]
 | B-471.8
 | image:../images/Lights_General/Lights_General_CATLIT_19.png[] 
 | 수평으로 배치된 동일한 등질과 위치의 등화군
-|20 : vertically disposed 
+|20 span:d[vertically disposed]
 | B-471.8
 | image:../images/Lights_General/Lights_General_CATLIT_20.png[] 
 | 수직으로 배치된 동일한 등질과 위치의 등화군
@@ -192,45 +192,45 @@ _현재 사용되지 않음 +
 |===
 | 점등 조건 | span:A[exhibition condition of light] | span:A[status]
 |야간 등화
-| 4 : night light
+| 4 span:d[night light]
 |
 |무인 등화 
 |
-| 17 : unwatched
+| 17 span:d[unwatched]
 |비정기 등화
 | 
-| 2 : occasional
+| 2 span:d[occasional]
 |비정기 등화 (사설)
 |
-| 2 : occasional +
-8 : private
+| 2 span:d[occasional]+
+8 span:d[private]
 |24시간 점등 등화
-| 1 : light shown without +
+| 1 span:d[light shown without]+
     change of character
 |
 |24시간 점등 등화 +
 (주·야간 등질 변경)
-<| 첫번째 등화 = 2 : daytime light +
-두번째 등화 = 4 : night light +
+<| 첫번째 등화 = 2 span:d[daytime light]+
+두번째 등화 = 4 span:d[night light]+
 (주·야간 등질을 각각의 관련 등화에 입력)
 |
 |안개 등화
-| 3 : fog light
-| 2 : occasional
+| 3 span:d[fog light]
+| 2 span:d[occasional]
 .2+|안개 등화 +
 (가시성 조건에 따른 등질 변경)
-| 3 : fog light
-| 2 : occasional
-| 2 : daytime light +
-4 : night light
+| 3 span:d[fog light]
+| 2 span:d[occasional]
+| 2 span:d[daytime light]+
+4 span:d[night light]
 <| span:A[infomation/text] +
 "Character of the light changes in fog"
 |===
 
 . 수동 활성화 등화
 + 
-* 라디오로 활성화되는 등화의 경우, span:A[signal generation] = (5 : radio)로 입력
-* 관리소에 호출하여 활성화되는 등화의 경우, span:A[signal generation] = (6 : call activated)로 입력
+* 라디오로 활성화되는 등화의 경우, span:A[signal generation] = 5 span:d[radio]로 입력
+* 관리소에 호출하여 활성화되는 등화의 경우, span:A[signal generation] = 6 span:d[call activated]로 입력
 * 등화 활성화를 위한 연락처 정보를 입력하려면 span:F[Contact Details]로 입력
 
 :ObjectName: span:F[Contact Details]를

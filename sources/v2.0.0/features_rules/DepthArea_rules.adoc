@@ -19,7 +19,7 @@
 * **-H** 값은 소수 첫째 자리까지 반올림하여 입력
 * **-H** 값보다 낮은 수심이 있는 경우
 ** 과업구역 내 : 수로측량 시행처 문의를 통해 노출암 변경사항을 검토
-** 과업구역 외 : 전자해도 제작 시 해당 객체의 span:A[exposition of sounding] 에 (2 : shoaler than the range of depth of the surrounding depth area)입력
+** 과업구역 외 : 전자해도 제작 시 해당 객체의 span:A[exposition of sounding] 에 2 span:d[shoaler than the range of depth of the surrounding depth area]입력
 * span:A[depth range minimum value]는 -30m 보다 얕을 수 없고, 12500m 보다 깊을 수 없음
 ** -30 < span:A[depth range minimum value] < 12500
 * span:A[depth range maximum value] 는 -30m 보다 얕을 수 없고, 12500m 보다 깊을 수 없음

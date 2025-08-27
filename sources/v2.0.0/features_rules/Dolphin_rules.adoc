@@ -10,8 +10,8 @@
 image::../images/Dolphin/Dolphin_image-1.png[width=70%]
 
 //
-* 사용하지 않는 계류/계선시설 또는 잔해는 span:F[Pile] 로 입력하며 span:A[category of pile] = (8 : mooring post), span:A[condition] = (2 : ruined)로 입력
-* 사용하지 않는 계류/계선시설 또는 잔해가 항해에 위험할 땐 span:F[Obstruction]로 입력하며 span:A[category of obstruction] = (1 : snag/stump)로 입력
+* 사용하지 않는 계류/계선시설 또는 잔해는 span:F[Pile] 로 입력하며 span:A[category of pile] = 8 span:d[mooring post], span:A[condition] = 2 span:d[ruined]로 입력
+* 사용하지 않는 계류/계선시설 또는 잔해가 항해에 위험할 땐 span:F[Obstruction]로 입력하며 span:A[category of obstruction] = 1 span:d[snag/stump]로 입력
 
 
 ===== Example
@@ -20,8 +20,8 @@ image::../images/Dolphin/Dolphin_image-1.png[width=70%]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[category of dolphin]||EN|1,*| 1 : mooring dolphin
-|nature of construction|NATCON|EN|0,*| 2 : concreted
+|span:E[category of dolphin]||EN|1,*| 1 span:d[mooring dolphin]
+|nature of construction|NATCON|EN|0,*| 2 span:d[concreted]
 |===
 
 ---

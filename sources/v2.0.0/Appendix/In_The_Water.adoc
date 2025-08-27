@@ -3,9 +3,10 @@
 = in The Water 입력 조건
 
 //
+
 .in The Water의 정의
-* 아래 대상 객체는 항해 가능한 수역이나 미측구역에 중첩(OVERLAP)되거나 덮힌(is COVERED BY)경우 span:A[in The Water] = (True)로 입력해야 함
-* **대상 객체**가 어떤 Display Mode 일지라도 항상 표시되어야 하는 경우 span:A[in The Water] = (True)를 입력할 수 있음 (Case 2 ~ 4 공통)
+* 아래 대상 객체는 항해 가능한 수역이나 미측구역에 중첩(OVERLAP)되거나 덮힌(is COVERED BY)경우 span:A[in The Water] = (true)로 입력해야 함
+* **대상 객체**가 어떤 Display Mode 일지라도 항상 표시되어야 하는 경우 span:A[in The Water] = (true)를 입력할 수 있음 (Case 2 ~ 4 공통)
 
 //
 .대상 객체
@@ -43,7 +44,7 @@
 ** span:F[Pontoon] 
 ** span:F[Pylon Bridge Support]
 ** span:F[Underwater Awash Rock]
-** span:F[Shoreline Construction] with span:A[water level effect] = (1 : partly submerged at high water or 2 : always dry)
+** span:F[Shoreline Construction] with span:A[water level effect] = 1 span:d[partly submerged at high water] or 2 span:d[always dry]
 
 //
 .in The Water 인코딩 예시

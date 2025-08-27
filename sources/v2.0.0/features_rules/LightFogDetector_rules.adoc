@@ -30,7 +30,7 @@ include::common/phrase.adoc[tag=NotUsedFeature]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|colour|COLOUR|EN|0,*| 3 : red
+|colour|COLOUR|EN|0,*| 3 span:d[red]
 |===
 
 ---
