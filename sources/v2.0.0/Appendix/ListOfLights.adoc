@@ -121,8 +121,8 @@ h| V-AIS
 
 |===
 
-. 일반적인 등대
-+
+.일반적인 등대
+====
 .고정표지
 [%header,cols="a,a,a,a,a,a,a,a",role="smallText"]
 |===
@@ -180,8 +180,10 @@ M4460
 |    text|INFORM/NINFOM|(S)TE|0,1| span:D[Undefined]
 |===
 
-. 등화 이외의 장비가 있는 표지
-+
+====
+
+.등화 이외의 장비가 있는 표지
+====
 .고정표지
 [%header, cols="a,a,a,a,a,a,a,a",role="smallText"]
 |===
@@ -333,11 +335,12 @@ Boksacho
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 4601.10
 |===
+====
 
-. 등화 및 기타 장비가 없는 단독 표지
-+
+.등화 및 기타 장비가 없는 단독 표지
+====
 .이동표지
-[%header, cols="a,a,a,a,a,a,a,a",role="smallText"]
+[%header,cols="a,a,a,a,a,a,a,a"]
 |===
 ^| 번&emsp;호 ^| 명&emsp;칭 ^| 위&emsp;치 ^| 등&emsp;질 ^| 등&emsp;고(m) ^| 광달거리 ^| 도색·구조·높이(m) ^| 기&emsp;사
 
@@ -352,6 +355,8 @@ Pohang Hang
 ^.<| 
 ^.<| 황 망대형
 <.<|
+
+|===
 
 .인코딩 예시
 [%header%autowidth.stretch,cols="a,a,a,a,a"]
@@ -373,15 +378,15 @@ Pohang Hang
 |**information**|INFORM|C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 1317.8
+|===
+====
 
-. 교량등
-+
-
+.교량등
+====
 .고정표지
 [%header, cols="a,a,a,a,a,a,a,a",role="smallText"]
 |===
 ^| 번&emsp;호 ^| 명&emsp;칭 ^| 위&emsp;치 ^| 등&emsp;질 ^| 등&emsp;고(m) ^| 광달거리 ^| 도색·구조·높이(m) ^| 기&emsp;사
-
 <.<| 2008.1 +
  +
 M4359.5
@@ -399,7 +404,7 @@ C1
 |===
 
 .AIS
-[%header,cols="a,a,a,a,a,a,a,a,a",role="smallText"]
+[%header,cols="a,a,a,a,a,a,a,a,a"]
 |===
 ^| 번&emsp;호 
 ^| 해&emsp;안 +
@@ -469,13 +474,12 @@ Busan Hang Bridge
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 4580
 |===
+====
 
-
-. 기타 장비만 있는 항로표지
-+
-
+.기타 장비만 있는 항로표지
+====
 .위성항법보정시스템(DGNSS)
-[%header, cols="a,a,a,a,a,a,a,a",role="smallText"]
+[%header, cols="a,a,a,a,a,a,a,a"]
 |===
 ^| 번&emsp;호 ^| 무선국 명칭 ^| 위&emsp;치 ^
 | 전파 형식 + 
@@ -533,12 +537,12 @@ Marado
 |    text|INFORM/NINFOM|(S)TE|0,1| 4207
 
 |===
+====
 
-. 가상자동위치식별신호표지(V-AIS)
-+
-
+.가상자동위치식별신호표지(V-AIS)
+====
 .V-AIS
-[%header, cols="a,a,a,a,a,a,a,a",role="smallText"]
+[%header, cols="a,a,a,a,a,a,a,a,a"]
 |===
 ^| 번&emsp;호 ^| 해안구분 ^| 명&emsp;칭 ^| 위&emsp;치 ^| MMSI ^| 주파수(MHz) ^| 출력(W) ^| 측정 구역(M) | 기&emsp;사
 
@@ -576,3 +580,4 @@ NACHIDO_ROCK
 |    text|INFORM/NINFOM|(S)TE|0,1| 4630
 
 |===
+====

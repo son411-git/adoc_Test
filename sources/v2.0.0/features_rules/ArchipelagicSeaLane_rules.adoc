@@ -23,7 +23,7 @@ include::common/information.adoc[]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1|eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Philippine ASL
-|    name usage||(S)EN|0,1| |1 span:d[default name display]
+|    name usage||(S)EN|0,1|1 span:d[default name display]
 |span:E[nationality]|NATION|TE|1,1|PH
 |===
 
