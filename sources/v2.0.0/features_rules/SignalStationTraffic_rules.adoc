@@ -8,22 +8,12 @@ include::common/phrase.adoc[tag=Refer]
 
 ===== Example
 
-//REVIEW:: 이것도.. 예시가 이게 괜찮나...
-
 .Signal Station Traffic 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
 |span:E[category of signal station, traffic]|CATSIT|EN|1,*| 2 span:D[port entry and departure]
-|**feature name**||C|0,*|
-|    span:E[language]||(S)TE|1,1| eng
-|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| traffic
-|    name usage||(S)EN|0,1| 1 span:D[default name display]
-|**feature name**||C|0,*|
-|    span:E[language]||(S)TE|1,1| kor
-|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 통항신호등
-|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 
 |===
 

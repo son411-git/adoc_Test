@@ -1,7 +1,7 @@
 // tag::RadioCallingInPoint[]
 ===== Remark
 
-* span:F[Radio Calling In Point]는 선박이 위치를 보고하는 지점으로, 주로 해상교통관제(VTS)에서 사용됨
+* span:F[Radio Calling-In Point]는 선박이 위치를 보고하는 지점으로, 주로 해상교통관제(VTS)에서 사용됨
 * span:A[feature name] 속성은 보고지점을 지정한 주체의 이름을 입력 +
   단, VTS 센터의 경우 'VTS'는 입력하지 않음 (예: '완도 VTS' → '완도')
 * span:A[traffic flow]와 span:A[orientation value]로 선박이 보고하는 시점을 나타냄
@@ -9,12 +9,12 @@
 ** 진입/진출 시 모두 보고해야 하는 경우 span:A[traffic flow] = 4 span:D[two-way]로 입력하고, span:A[orientation value]에 해당 방향을 입력 (입/출 방향이 정확히 반대인 경우, 180° 미만의 값을 입력)
 ** 통항흐름이 분기하는 경우에는, span:A[orientation value] 값을 2개 입력해서 각 분기 방향을 나타냄
 * 통신 채널은 span:A[communication channel] 또는 이와 연관된 span:F[Contact Details]에 입력
-** 통신 채널을 입력할 때, 동일한 채널을 사용하는 span:F[Radio Calling In Point]가 하나만 있는 경우, span:A[communication channel]에 채널을 입력
-** 동일한 채널을 사용하는 span:F[Radio Calling In Point]가 여러 개 있는 경우, span:F[Contact Details]에 속성 span:A[communication channel]에 채널을 입력하고, span:F[Radio Calling In Point]와 span:F[Contact Details] 간 연관관계를 설정
+** 통신 채널을 입력할 때, 동일한 채널을 사용하는 span:F[Radio Calling-In Point]가 하나만 있는 경우, span:A[communication channel]에 채널을 입력
+** 동일한 채널을 사용하는 span:F[Radio Calling-In Point]가 여러 개 있는 경우, span:F[Contact Details]에 속성 span:A[communication channel]에 채널을 입력하고, span:F[Radio Calling-In Point]와 span:F[Contact Details] 간 연관관계를 설정
 
 //
-* VTS와 같은 관제구역이 있다면, 관제 구역은 span:F[Vessel Traffic Service Area]로 입력하고, span:F[Radio Calling In Point]는 관제구역의 경계에 위치하도록 입력
-** 이 때, span:F[Radio Calling In Point]의 span:A[feature name] 속성은 span:F[Vessel Traffic Service Area]의 span:A[feature name] 속성과 동일하게 입력
+* VTS와 같은 관제구역이 있다면, 관제 구역은 span:F[Vessel Traffic Service Area]로 입력하고, span:F[Radio Calling-In Point]는 관제구역의 경계에 위치하도록 입력
+** 이 때, span:F[Radio Calling-In Point]의 span:A[feature name] 속성은 span:F[Vessel Traffic Service Area]의 span:A[feature name] 속성과 동일하게 입력
 
 
 //REVIEW: 관계참조 추가 및 상세 입력방안 지침 필요
@@ -23,12 +23,12 @@
 ===== Example
 
 
-.Radio Calling in Point - 별개의 관제구역이 서로 맞닿는 구역에서의 인코딩 예시
+.Radio Calling-In Point - 별개의 관제구역이 서로 맞닿는 구역에서의 인코딩 예시
 ====
 
 * 완도 VTS 의 경우
 +
-.Radio Calling In Point - 완도 VTS
+.Radio Calling-In Point - 완도 VTS
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value 
@@ -67,7 +67,7 @@
 
 * 진도 VTS의 경우
 +
-.Radio Calling In Point - 진도 VTS
+.Radio Calling-In Point - 진도 VTS
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value 

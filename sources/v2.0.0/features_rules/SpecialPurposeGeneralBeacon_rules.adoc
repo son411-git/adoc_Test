@@ -129,24 +129,16 @@ Pohang Hang
 |    colour|COLOUR|(S)EN|0,*| 6 span:D[yellow]
 |    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 7 span:D[X-shaped]
 |vertical length|VERLEN|RE|0,1| 12 span:D[m]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| M4412.8
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 1328
+
 |===
 
 ---
-
-//REVIEW: 수정 필요
-번호:: _(수정 필요)_
-
-명칭:: '등표'를 제외한 **포항항 포스코 케미칼 취수탑**만 입력
-
-등질, 등고, 광달거리:: 이 세가지 항목은 구조물의 속성이 아님 ( span:F[Light All Around]나 span:F[Light Sectored]로 입력해야 함 ) +
-**[참고]** 등고를 span:F[SpecialPurposeGeneralBeacon]의 span:A[height]나 span:A[elevation]에 입력한 것은 오류
-
-도색·구조·높이:: 도색이 '황'색이므로 span:A[colour]를 6 span:D[yellow]으로 입력 +
-구조는 '원형 철조'이므로 span:A[nature of construction]을 7 span:D[metal]로 입력 +
-높이가 12이므로 span:A[vertical length]를 12span:D[m]로 입력
-
-기타:: 등대표에서 확인할 수 없는 정보는 항행통보 문서 등을 확인하여 입력 +
-입표의 모양(span:A[beacon shape])이나 두표의 존재 여부 등
 
 ====
 

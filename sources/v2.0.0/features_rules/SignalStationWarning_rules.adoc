@@ -8,22 +8,12 @@ include::common/phrase.adoc[tag=Refer]
  
 ===== Example
 
-//REVIEW:: 예시 이대로 괜찮은가?
-
 .Signal Station Waring의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
 |span:E[category of signal station, warning]|CATSIW|EN|1,*| 6 span:D[weather]
-|**feature name**||C|0,*|
-|    span:E[language]||(S)TE|1,1| eng
-|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Weather Signal Station
-|    name usage||(S)EN|0,1| 1 span:D[default name display]
-|**feature name**||C|0,*|
-|    span:E[language]||(S)TE|1,1| eng
-|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 기상신호소
-|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |**information**|INFORM|C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Wind direction, Wind speed, Air temperature, Atmospheric pressure, Humidity

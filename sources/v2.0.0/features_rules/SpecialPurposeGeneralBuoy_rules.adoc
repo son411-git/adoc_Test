@@ -84,13 +84,15 @@ Jangsa
 |**topmark**|TOPMAR|C|0,1|
 |    colour|COLOUR|(S)EN|0,*| 6 span:D[yellow]
 |    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 7 span:D[X-shaped]
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    text|INFORM/NINFOM|(S)TE|0,1| KR1298.1
+|**information**|INFORM|C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    text|INFORM/NINFOM|(S)TE|0,1| 1298.1
 |===
 
 ---
-
-//REVIEW: 수정 필요
-
-번호:: _(수정 필요)_
 
 명칭:: '등부표' 를 제외한 **장사 영덕군A호**만 입력
 

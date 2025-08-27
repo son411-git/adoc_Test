@@ -1,7 +1,10 @@
 // tag::VesselTrafficServiceArea[]
 ===== Remark
 //REVIEW: 대공사
-- ( @Bex : 수정 필요 )
+* VTS 관제구역이 무선보고선과 연관되었다면 span:F[Radio Calling-In Point]를 경계로 사용하는 span:F[Vessel Traffic Service Area]를 반드시 입력
+
+* span:F[Radio Calling-In Point]가 VTS 관제 구역과 직접적으로 연관되지 않은 독립적인 지점이라면, span:F[Vessel Traffic Service Area] 없이도 입력 가능
+** 반대의 경우도 가능
 
 ===== Example
 .Vessel Traffic Service Area의 인코딩 예시

@@ -1,10 +1,6 @@
 // tag::TerritorialSeaArea[]
 ===== Remark
-//REVIEW: 이거 information text랑 외부참조파일 내용이 똑같은데 굳이 파일을 입력할 필요가 있는거에요?
-* 외부참조파일을 입력할 경우 명명기준 확인 +
-  (101CCCCXXXXXXXX.EEE) - 101 : Product명, CCCC: Agency code, XXXXXXXX.EEE:파일명 
-
-span:addition[information 의 text와 외부참조파일의 내용이 (거의) 똑같음; 파일과 텍스트 중 한 쪽만 입력하는 방향으로 수정?]
+* span:A[nationality]는 반드시 입력해야 함
 
 ===== Example
 .Territorial Sea Area의 인코딩 예시
@@ -14,32 +10,14 @@ span:addition[information 의 text와 외부참조파일의 내용이 (거의) �
 
 |span:E[nationality]|NATION|TE|1,*| KR
 |**information**|INFORM|C|0,*|
-|    file locator||(S)TE|0,1|
-|    file reference|TXTDSC/NTXTDS|(S)TE|0,1|
-|    headline||(S)TE|0,1|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010E100.TXT
+|    headline||(S)TE|0,1| Territorial Sea of KOREA
 |    span:E[language]||(S)TE|1,1| eng
-|    text|INFORM/NINFOM|(S)TE|0,1| The straight baselines and the limit of territorial sea shown on this chart are based on the provisions of the Territorial Sea and Contiguous Zone Act and its Enforcement Decree.
 |**information**|INFORM|C|0,*|
-|    file locator||(S)TE|0,1|
-|    file reference|TXTDSC/NTXTDS|(S)TE|0,1|
-|    headline||(S)TE|0,1|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000010K100.TXT
+|    headline||(S)TE|0,1| 대한민국 영해
 |    span:E[language]||(S)TE|1,1| kor
-|    text|INFORM/NINFOM|(S)TE|0,1| 이 해도에 기재된 직선기선 및 영해한계선은 영해 및 접속수역법과 동법 시행령의 규정에 의함.
-
 |===
 
 ---
 // end::TerritorialSeaArea[]
-
-
-* 영문의 경우
-
-파일의 내용:: The straight baselines and the *boundary* of *the* territorial sea shown on this chart are based on the provisions of the Territorial Sea and Contiguous Zone Act and its Enforcement Decree.
-
-기존 예시의 내용:: The straight baselines and the *limit* of territorial sea shown on this chart are based on the provisions of the Territorial Sea and Contiguous Zone Act and its Enforcement Decree.
-
-* 국문의 경우 
-
-파일의 내용:: 이 해도에 기재된 직선기선 및 영해한계선은 영해 및 접속수역법과 동법 시행령의 규정에 의함.
-
-기존 예시의 내용:: 이 해도에 기재된 직선기선 및 영해한계선은 영해 및 접속수역법, 영해 및 접속수역법 시행령의 규정에 의함.

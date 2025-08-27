@@ -42,12 +42,6 @@ image::../images/SiloTank/SILTNK_2.png[]
 |
 |
 
-//REVIEW: 이 내용이 어디서 나온건지?
-// |4
-// |폭발물 관련 정박지
-// |4
-// |
-
 // 4
 |급수탑
 |4 span:D[water tower]

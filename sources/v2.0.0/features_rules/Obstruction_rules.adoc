@@ -33,7 +33,7 @@
 :linkTo: OBSTRN_T2, Obstruction의 default clearance value 입력 기준을
 include::common/phrase.adoc[tag=SurroundingDepth]
 
-//REVIEW:: 해당 내용 있는게 나을 지?
+//REVIEW:: 해당 내용 있는게 나을 지? - 네
 * span:F[Obstruction] 자체가 천해(Shallow water)를 의미하지 않음
 ** span:F[Obstruction] 주변의 수심이 얕은 것을 표현하려면 span:F[Depth Area]와 span:F[Depth Contour]를 이용해서 표현해야 함
 ** 특히, 위험계선을 등심선처럼(완전히 겹치게 그리고, 등심선을 마스킹하는 등) 사용하는 것은 지양해야 하는 표현
