@@ -34,14 +34,13 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|reported date|SORDAT|TD|0,1| 20241101
-|**information**|INFORM|C|0,*| 
-|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000030E100.TXT
-|    text|INFORM/NINFOM|(S)TE|0,1| Navigation in the Specific Sea Areas for Traffic Safety
-|    span:E[language]||(S)TE|1,1| eng
 |**information**|INFORM|C|0,*|
+|    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000030E100.TXT
+|    headline||(S)TE|0,1| Navigation in the Specific Sea Areas for Traffic Safety
+|    span:E[language]||(S)TE|1,1| eng
+|**information**|INFORM|C|0,*| 
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000030K100.TXT
-|    text|INFORM/NINFOM|(S)TE|0,1| 교통안전 특정해역의 항해
+|    headline||(S)TE|0,1| 교통안전 특정해역의 항해
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
