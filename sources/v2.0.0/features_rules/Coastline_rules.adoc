@@ -45,7 +45,7 @@ span:A[category of coastline] = 7 span:d[mangrove]와 span:A[quality of horizont
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of coastline|CATCOA|EN|0,1| 2 span:d[flat coast]
+|category of coastline|CATCOA|EN|0,1| 1 span:d[steep coast]
 |===
 
 .모래 해안선의 인코딩 예시
