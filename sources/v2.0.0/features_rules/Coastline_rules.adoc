@@ -40,7 +40,7 @@ span:A[category of coastline] = 7 span:d[mangrove]와 span:A[quality of horizont
 
 ===== Example
 
-.평탄 해안선의 인코딩 예시
+.절벽 해안선의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
