@@ -65,10 +65,11 @@ span:A[category of special purpose mark] = 24 span:d[reduced wake mark] / 25 spa
 ** span:A[vessel class]를 이용하여 선박의 종류를 입력할 때 아래 예시, 약어표를 참고하여 기술
 *** 일반적으로 별도의 명시 없이 _(n)_톤 이상, 이하의 선박을 지칭하는 경우 총 톤수(GT)를 의미함
 *** ~톤 이상을 나타낼 때는 over, ~톤 이하를 나타낼 때는 under를 사용
+*** ~톤 초과를 나타낼 때는 more than, ~톤 미만을 나타낼 때는 less than을 사용
 
 //
 * 예시
-** 총 톤수 500톤 미만 여객선 => Passenger ships under 500 GT
+** 총 톤수 500톤 미만 여객선 => Passenger ships less than 500 GT
 ** 1,000톤 이상의 선박 => All Ships over 1,000 GT
 ** 위험물 문반선 => Hazardous cargo arrier
 ** 그 외 모든 선박 (명시된 조건이 있고, 그 외에 나머지를 의미할 때에만 사용)=> All other vessels + 

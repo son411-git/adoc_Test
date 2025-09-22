@@ -27,14 +27,14 @@ include::common/phrase.adoc[tags=speedLimits]
 |**vessel speed limit**||C|0,*|
 |    span:E[speed limit]||(S)RE|1,1| 12
 |    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
-|    vessel class||(S)TE|0,1| Passenger ships under 500 GT span:D[총톤수 500톤 미만의 여객선]
+|    vessel class||(S)TE|0,1| Passenger ships less than 500 GT span:D[총톤수 500톤 미만의 여객선]
 |**vessel speed limit**||C|0,*|
 |    span:E[speed limit]||(S)RE|1,1| 10 span:D[knots]
 |    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |    vessel class||(S)TE|0,1| All other vessels span:D[기타 모든 선박]
 |**information**|INFORM|C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
-|    text|INFORM/NINFOM|(S)TE|0,1| The speed of passenger ships under 500 GT should not exceed 12 knots and all other vessels should not exceed 10 knots for in this area.
+|    text|INFORM/NINFOM|(S)TE|0,1| The speed of passenger ships less than 500 GT should not exceed 12 knots and all other vessels should not exceed 10 knots for in this area.
 |**information**|INFORM|C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서는 10 노트 이하로 항행하여야 함. 단, (총톤수) 500톤 미만의 여객선은 12노트 이하로 제한함.
