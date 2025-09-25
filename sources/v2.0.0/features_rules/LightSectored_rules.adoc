@@ -17,7 +17,7 @@ span:A[sector limit]의 하위 속성 span:A[sector limit one] 및 span:A[sector
 
 //
 * span:F[Light Sectored]가 지향등이면 span:A[light sector]의 하위 속성 span:A[directional character]을 사용하여 입력해야 함. 
-* 강도가 다른 분호가 있는 등화의 경우 span:A[light sector] 하위 속성 span:A[light visibility] = 4 span:d[intensified)를 채워야 함
+* 강도가 다른 분호가 있는 등화의 경우 span:A[light sector] 하위 속성 span:A[light visibility] = 4 span:D[intensified)를 채워야 함
 * 지향등은 span:A[orientation]의 입력은 필수이며, span:A[sector limit]의 입력은 선택적임
 
 //
@@ -59,11 +59,11 @@ include::common/phrase.adoc[tag=featureName_for_AtoN]
 //
 * 등화 방식(조명 기술)의 세부 사항(예: 네온)을 입력해야 하는 경우, span:A[information]을 사용해야 함
 
-* span:A[light charateristic] = 11 span:d[spotlight]을 입력하는 경우, 그 목적은 span:A[information]로 입력해야 함
+* span:A[light charateristic] = 11 span:D[spotlight]을 입력하는 경우, 그 목적은 span:A[information]로 입력해야 함
 
 * span:A[vertical datum]은 span:A[height]에만 적용되며, 이 값은 span:F[Vertical Datum of Data]에 입력된 span:A[vertical datum] 값과 다를 경우에만 입력해야 함
 
-* span:A[vertical datum] = 13 span:d[low water]은 내륙 수로에만 적용되며, 조석이 적용되는 수역에서 등화 높이의 기준 데이터를 나타내기 위해 사용해서는 안 됨
+* span:A[vertical datum] = 13 span:D[low water]은 내륙 수로에만 적용되며, 조석이 적용되는 수역에서 등화 높이의 기준 데이터를 나타내기 위해 사용해서는 안 됨
 
 //
 * 등화에 관한 일반적인 사항은 <<Lights_General,링크>>를 참고
@@ -78,9 +78,9 @@ image::../images/LightSectored/LightSectored_image-2.png[align="center"]
 
 * 명호가 항해가 가능한 영역의 일부에서 해상 장애물 너머로 가려져 있는 경우(위 그림 (A) 참조), span:F[Light Sectored]를 사용하여 입력해야 함. 
 ** 명호 (a) - (c)는 각각 span:A[light sector]를 사용하여 입력해야 함.
-** 부분적으로 가려진 분호(암호) (b)는 span:A[light sector]의 하위 속성 span:A[light visibility] = 8 span:d[partially obscured]와 span:A[value of nominal range]를 등화에서 장애물까지의 거리로 설정하여 입력해야 함. 
+** 부분적으로 가려진 분호(암호) (b)는 span:A[light sector]의 하위 속성 span:A[light visibility] = 8 span:D[partially obscured]와 span:A[value of nominal range]를 등화에서 장애물까지의 거리로 설정하여 입력해야 함. 
 * 등화와 장애물 사이에 항해 가능한 수역이 없는 경우(위 그림 19-2 (B)의 (e) 참조), 가려진 부분은 **암호**가 아니므로 별도의 span:A[light sector]로 입력하지 않아야 함. 
-** 단, 명호의 항해 가능 부분에서 희미한 등화가 보이는 경우에는 span:A[light sector]를 사용하고, 하위 속성 span:A[light visibility] = 3 span:d[faint]로 입력해야 함. 
+** 단, 명호의 항해 가능 부분에서 희미한 등화가 보이는 경우에는 span:A[light sector]를 사용하고, 하위 속성 span:A[light visibility] = 3 span:D[faint]로 입력해야 함. 
 ** 해상에서 등화가 보이는 명호 (d)와 (f)는 각각의 span:A[sector characteristics]로 입력해야 함.
 
 //
@@ -106,9 +106,9 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |height|HEIGHT|RE|0,1| 68
 |**span:E[sector characteristics]**||C|1,*|
-|    span:E[light characteristic]|LITCHR|(S)EN|1,1| 2 span:d[flashing]
+|    span:E[light characteristic]|LITCHR|(S)EN|1,1| 2 span:D[flashing]
 |**    span:E[light sector]**||(S)C|1,*|
-|        span:E[colour]|COLOUR|(S)EN|1,*| 1 span:d[white]
+|        span:E[colour]|COLOUR|(S)EN|1,*| 1 span:D[white]
 |**        sector limit**||(S)C|0,1|
 |**            span:E[sector limit one]**|SECTR1|(S)C|1,1|
 |                span:E[sector bearing]|SECTR1/SECTR2|(S)RE|1,1| 198
@@ -127,9 +127,9 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |height|HEIGHT|RE|0,1| 66
 |**span:E[sector characteristics]**||C|1,*|
-|    span:E[light characteristic]|LITCHR|(S)EN|1,1| 7 span:d[isophased]
+|    span:E[light characteristic]|LITCHR|(S)EN|1,1| 7 span:D[isophased]
 |**    span:E[light sector]**||(S)C|1,*|
-|        span:E[colour]|COLOUR|(S)EN|1,*| 1 span:d[white]
+|        span:E[colour]|COLOUR|(S)EN|1,*| 1 span:D[white]
 |**        sector limit**||(S)C|0,1|
 |**            span:E[sector limit one]**|SECTR1|(S)C|1,1|
 |                span:E[sector bearing]|SECTR1/SECTR2|(S)RE|1,1| 306
@@ -137,7 +137,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |                span:E[sector bearing]|SECTR1/SECTR2|(S)RE|1,1| 342
 |        value of nominal range|VALNMR|(S)RE|0,1| 21
 |**    span:E[light sector]**||(S)C|1,*|
-|        span:E[colour]|COLOUR|(S)EN|1,*| 3 span:d[red]
+|        span:E[colour]|COLOUR|(S)EN|1,*| 3 span:D[red]
 |**        sector limit**||(S)C|0,1|
 |**            span:E[sector limit one]**|SECTR1|(S)C|1,1|
 |                span:E[sector bearing]|SECTR1/SECTR2|(S)RE|1,1| 234
@@ -145,7 +145,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |                span:E[sector bearing]|SECTR1/SECTR2|(S)RE|1,1| 306
 |        value of nominal range|VALNMR|(S)RE|0,1| 17
 |**    span:E[light sector]**||(S)C|1,*|
-|        span:E[colour]|COLOUR|(S)EN|1,*| 4 span:d[green]
+|        span:E[colour]|COLOUR|(S)EN|1,*| 4 span:D[green]
 |**        sector limit**||(S)C|0,1|
 |**            span:E[sector limit one]**|SECTR1|(S)C|1,1|
 |                span:E[sector bearing]|SECTR1/SECTR2|(S)RE|1,1| 342
@@ -164,9 +164,9 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |height|HEIGHT|RE|0,1| 76
 |**span:E[sector characteristics]**||C|1,*|
-|    span:E[light characteristic]|LITCHR|(S)EN|1,1| 2 span:d[flashing]
+|    span:E[light characteristic]|LITCHR|(S)EN|1,1| 2 span:D[flashing]
 |**    span:E[light sector]**||(S)C|1,*|
-|        span:E[colour]|COLOUR|(S)EN|1,*| 1 span:d[white]
+|        span:E[colour]|COLOUR|(S)EN|1,*| 1 span:D[white]
 |**        directional character**||(S)C|0,1|
 |**            span:E[orientation]**||(S)C|1,1|
 |                span:E[orientation value]|ORIENT|(S)RE|1,1| 299

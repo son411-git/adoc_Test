@@ -12,7 +12,7 @@
 * span:F[Landmark]에 span:A[height], span:A[elevation], span:A[vertical length]의 입력이 필요한 경우 <<Height_Elevation_VerticalLength,높이의 구분>> 을 참고
 
 //
-* 폐허가 된 span:F[Landmark]는 양호한 상태의 객체와 동일하게 입력하고, 속성 span:A[condition] = 2 span:d[ruined]를 입력해야 함
+* 폐허가 된 span:F[Landmark]는 양호한 상태의 객체와 동일하게 입력하고, 속성 span:A[condition] = 2 span:D[ruined]를 입력해야 함
 //
 include::common/phrase.adoc[tag=featureName_for_AtoN]
 
@@ -26,7 +26,7 @@ include::common/phrase.adoc[tag=AtoN_Relationship]
 * 선원이 span:F[Landmark]를 식별하는 데 도움을 주기 위해, 구조물 상단의 지상 높이, span:A[vertical length]를 추가하는 것이 유용할 수 있음
 
 //
-* span:A[special purpose mark] 는 span:F[Landmark]가 지도선(leading line), 피험선(clearing line)의 전방 또는 후방 표지로 사용되는 경우에만 사용해야 하며, 각각 span:A[special purpose mark] = 16 span:d[leading mark] / 41 span:d[clearing mark]로 입력해야 함
+* span:A[special purpose mark] 는 span:F[Landmark]가 지도선(leading line), 피험선(clearing line)의 전방 또는 후방 표지로 사용되는 경우에만 사용해야 하며, 각각 span:A[special purpose mark] = 16 span:D[leading mark] / 41 span:D[clearing mark]로 입력해야 함
 
 .지도선(leading line)과 피험선(clearing line)의 구분
 [cols="1,1" options="header"]
@@ -35,20 +35,20 @@ include::common/phrase.adoc[tag=AtoN_Relationship]
 |image:../images/Landmark/Landmark_image-1.png[]
 |image:../images/Landmark/Landmark_image-2.png[]
 | span:F[Landmark] +
-span:A[special purpose mark] = 16 span:d[leading mark]
+span:A[special purpose mark] = 16 span:D[leading mark]
 | span:F[Landmark] +
-span:A[special purpose mark] = 41 span:d[clearing mark]
+span:A[special purpose mark] = 41 span:D[clearing mark]
 | span:F[Navigation Line] +
-span:A[category of navigation line] = 3 span:d[leading line bearing a recommended track]
+span:A[category of navigation line] = 3 span:D[leading line bearing a recommended track]
 | span:F[Navigation Line] +
-span:A[category of navigation line] = 1 span:d[clearing line]
+span:A[category of navigation line] = 1 span:D[clearing line]
 | span:F[Recommended Track] +
 span:A[based on fixed marks] = (True) + 
 | -
 |===
 
 //
-* span:A[category of landmark]의 값 중에서 26 span:d[bridge] 및 27 span:d[dam]은 span:F[Landmark][P]인 경우에만 사용해야 하며, 항해 가능한 수역 위에는 입력하지 않아야 함.
+* span:A[category of landmark]의 값 중에서 26 span:D[bridge] 및 27 span:D[dam]은 span:F[Landmark][P]인 경우에만 사용해야 하며, 항해 가능한 수역 위에는 입력하지 않아야 함.
 
 //
 * 항해 가능한 수역에 위치한 span:F[Landmark]의 경우, span:A[in the water] = (True)로 입력해야 함. 
@@ -75,20 +75,20 @@ image::../images/Landmark/Landmark_image-3.png[align="center"]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[category of landmark]|CATLMK|EN|1,*| 17 span:d[tower]
-|colour|COLOUR|EN|0,*| 1 span:d[white]
+|span:E[category of landmark]|CATLMK|EN|1,*| 17 span:D[tower]
+|colour|COLOUR|EN|0,*| 1 span:D[white]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Homigot
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 호미곶
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
-|function|FUNCTN|EN|0,*| 33 span:d[light support]
-|nature of construction|NATCON|EN|0,*| 1 span:d[masonry]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|function|FUNCTN|EN|0,*| 33 span:D[light support]
+|nature of construction|NATCON|EN|0,*| 1 span:D[masonry]
 |vertical length|VERLEN|RE|0,1| 26
-|span:E[visual prominence]|CONVIS|EN|1,1| 1 span:d[visually conspicuous]
+|span:E[visual prominence]|CONVIS|EN|1,1| 1 span:D[visually conspicuous]
 |===
 
 ---

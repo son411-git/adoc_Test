@@ -29,8 +29,8 @@ include::common/phrase.adoc[tag=information]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[colour]|COLOUR|EN|1,*| 3 span:d[red]
-|visual prominence|CONVIS|EN|0,1| 1 span:d[visual prominence]
+|span:E[colour]|COLOUR|EN|1,*| 3 span:D[red]
+|visual prominence|CONVIS|EN|0,1| 1 span:D[visual prominence]
 |===
 
 ---

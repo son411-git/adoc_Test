@@ -13,11 +13,11 @@ include::common/NotUsedFeature.adoc[]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1|eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Busan
-|    name usage||(S)EN|0,1|1 span:d[default name display]
+|    name usage||(S)EN|0,1|1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1|kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|부산
-|    name usage||(S)EN|0,1|2 span:d[alternate name display]
+|    name usage||(S)EN|0,1|2 span:D[alternate name display]
 |===
 
 ---

@@ -2,12 +2,12 @@
 
 = 속력 제한 구역의 입력
 
-**속력 제한** :: 모든 선박 또는 특정 선박 등급에 대해 속력 제한이 설정된 경우, span:F[Restricted Area]를 사용하거나 span:A[restriction]을 가진 <<restriction_related_feature_list,관련 객체>>를 사용하며, span:A[restriction] = 27 span:d[speed restricted]로 입력해야 함
+**속력 제한** :: 모든 선박 또는 특정 선박 등급에 대해 속력 제한이 설정된 경우, span:F[Restricted Area]를 사용하거나 span:A[restriction]을 가진 <<restriction_related_feature_list,관련 객체>>를 사용하며, span:A[restriction] = 27 span:D[speed restricted]로 입력해야 함
 
-* 예 : 속력제한구역을 위해 입력하는 span:F[Restricted Area]와 span:F[PrecautionaryArea]이 중첩된다면 span:F[PrecautionaryArea]에 span:A[restriction] = 27 span:d[speed restricted]를 입력하고 span:A[vessel speed limit]을 사용하여 속력 제한에 관한 하위 속성을 입력할 수 있음
+* 예 : 속력제한구역을 위해 입력하는 span:F[Restricted Area]와 span:F[PrecautionaryArea]이 중첩된다면 span:F[PrecautionaryArea]에 span:A[restriction] = 27 span:D[speed restricted]를 입력하고 span:A[vessel speed limit]을 사용하여 속력 제한에 관한 하위 속성을 입력할 수 있음
 
 //
-**항주파 제한** :: 항만 내에서 선박이 항해하면서 생기는 파도(항주파, wake)으로 인한 피해를 줄이기 위해 항주파 제한이 설정됨. 이는 span:F[Restricted Area]의 span:A[category of restricted area] = 24 span:d[no wake area ]또는  <<restriction_related_feature_list,관련 객체>>의 span:A[restriction] = 13 span:d[no wake]로 지정됨
+**항주파 제한** :: 항만 내에서 선박이 항해하면서 생기는 파도(항주파, wake)으로 인한 피해를 줄이기 위해 항주파 제한이 설정됨. 이는 span:F[Restricted Area]의 span:A[category of restricted area] = 24 span:D[no wake area ]또는  <<restriction_related_feature_list,관련 객체>>의 span:A[restriction] = 13 span:D[no wake]로 지정됨
 
 [[restriction_related_feature_list]]
 .속성 restriction 이 포함된 관련 객체 목록
@@ -46,7 +46,7 @@
 
 //
 * 항주파 또는 속력 제한이 있는 span:F[Restricted Area]를 표시하는 항로표지를 입력해야 하는 경우, span:F[Special Purpose/General Beacon] 또는 span:F[Special Purpose/General Buoy]를 사용해야 하며, +
-span:A[category of special purpose mark] = 24 span:d[reduced wake mark] / 25 span:d[speed limit mark]를 입력하고, 속력 제한과 측정 단위는 복합 속성 span:A[information/text]를 사용하여 입력해야 함 (예: "speed limit is 6 knots")
+span:A[category of special purpose mark] = 24 span:D[reduced wake mark] / 25 span:D[speed limit mark]를 입력하고, 속력 제한과 측정 단위는 복합 속성 span:A[information/text]를 사용하여 입력해야 함 (예: "speed limit is 6 knots")
 
 //
 * 제한 속력, 속력의 단위, 대상 선박 등급은 복합 속성 span:A[vessel speed limit]의 하위 속성 span:A[speed limit], span:A[speed units], span:A[vessel class]를 사용

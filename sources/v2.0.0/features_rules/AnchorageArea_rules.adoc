@@ -2,9 +2,9 @@
 ===== Remark
 
 * 명확한 경계가 없는 추천 정박지는 span:F[Anchorage Area][P]로 입력하고 span:A[category of anchorage] = 1(unrestricted anchorage), span:A[status] = 3(recommended)으로 입력
-* 관계기관에 의해 정의되지 않았으나 정박지로 보고된 곳은 점(Point) 형태로 입력해야하며, span:A[category of anchorage] = 15 span:d[reported anchorage]로 입력 
-* 다수의 소형선이 계류 장소가 있는 정박지구역의 경우 span:F[Mooring Area][S]로 입력하고 span:A[category of mooring area] = 1 span:d[small craft mooring area]로 입력
-* 임시정박지의 경우 span:A[category of anchorage] = 1 span:d[unrestricted anchorage]로 입력하고 span:A[status] = 7 span:d[temporary]로 입력
+* 관계기관에 의해 정의되지 않았으나 정박지로 보고된 곳은 점(Point) 형태로 입력해야하며, span:A[category of anchorage] = 15 span:D[reported anchorage]로 입력 
+* 다수의 소형선이 계류 장소가 있는 정박지구역의 경우 span:F[Mooring Area][S]로 입력하고 span:A[category of mooring area] = 1 span:D[small craft mooring area]로 입력
+* 임시정박지의 경우 span:A[category of anchorage] = 1 span:D[unrestricted anchorage]로 입력하고 span:A[status] = 7 span:D[temporary]로 입력
 
 ===== Example
 
@@ -13,22 +13,22 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of anchorage|CATACH|EN|0,*| 1 span:d[unrestricted anchorage]
+|category of anchorage|CATACH|EN|0,*| 1 span:D[unrestricted anchorage]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Bangdo
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 방도
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |**information**|INFORM|C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng 
 |    text|INFORM/NINFOM|(S)TE|0,1| Anchoring of vessels of 500 tons or less
 |**information**|INFORM|C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 500톤 이하의 선박 정박
-|status|STATUS|EN|0,*| 3 span:d[recommended]
+|status|STATUS|EN|0,*| 3 span:D[recommended]
 |===
 
 ---

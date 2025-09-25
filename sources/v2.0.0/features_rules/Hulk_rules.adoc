@@ -3,9 +3,9 @@
 
 * 영구적으로 계류된 폐선박을 입력하는 경우, span:F[Hulk]로 입력
 * span:F[Hulk][S]는 span:F[Coastline][C] 또는 span:F[Shoreline Construction][C]로 경계가 입력되어서는 안 됨 ** 단, span:F[Land Area]의 경계인 span:F[Coastline][C] 또는 span:F[Shoreline Construction][C]와 접하는 것은 가능함
-* 부유식 생산, 저장 및 하역 선박을 입력하는 경우 span:F[Offshore Platform]을 사용해야 하며, span:A[category of offshore platform] = 8 span:d[floating production, storage and off-loading vessel]으로 입력
-* 부유식 방파제 역할을 하는 span:F[Hulk]를 입력해야 하는 경우, span:A[category of hulk] = 5 span:d[floating breakwater]로 입력
-* 다른 구조물로 된 부유식 방파제를 인코딩해야 하는 경우, span:F[Shoreline Construction]을 사용하며, span:A[category of shoreline construction] = 1 span:d[breakwater] 및 span:A[water level effect] = 7 span:d[floating]으로 입력
+* 부유식 생산, 저장 및 하역 선박을 입력하는 경우 span:F[Offshore Platform]을 사용해야 하며, span:A[category of offshore platform] = 8 span:D[floating production, storage and off-loading vessel]으로 입력
+* 부유식 방파제 역할을 하는 span:F[Hulk]를 입력해야 하는 경우, span:A[category of hulk] = 5 span:D[floating breakwater]로 입력
+* 다른 구조물로 된 부유식 방파제를 인코딩해야 하는 경우, span:F[Shoreline Construction]을 사용하며, span:A[category of shoreline construction] = 1 span:D[breakwater] 및 span:A[water level effect] = 7 span:D[floating]으로 입력
 
 
 ===== Example
@@ -14,22 +14,22 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of hulk|CATHLK|EN|0,*| 2 span:d[historic ship]
-|colour|COLOUR|EN|0,*| 7 span:d[grey]
+|category of hulk|CATHLK|EN|0,*| 2 span:D[historic ship]
+|colour|COLOUR|EN|0,*| 7 span:D[grey]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gimpo Marine Park
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 김포함상공원
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |**fixed date range**||C|0,1|
 |    date end|DATEND|(S)TD|0,1|
 |    date start|DATSTA|(S)TD|0,1| 20100916
 |horizontal length|HORLEN|RE|0,1| 99.6
 |horizontal width|HORWID|RE|0,1| 15.3
-|visual prominence|CONVIS|EN|0,1| 1 span:d[visually conspicuous]
+|visual prominence|CONVIS|EN|0,1| 1 span:D[visually conspicuous]
 |===
 
 ---

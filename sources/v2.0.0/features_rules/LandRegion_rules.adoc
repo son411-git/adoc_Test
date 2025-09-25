@@ -8,13 +8,13 @@
 * span:A[category of land region] 속성에 특정 값이 없는 경우, 곶·갑(Cape), 끝·점(Point), 반도(Peninsula) 등의 일반 용어를 span:A[feature name] 포함할 수 있음. 단, 해당 이름이 하위 span:F[Land Area]에 이미 채워져 있는 경우 span:F[Land Region]은 입력하지 않아야 함
 
 //
-* 해안선 뒤쪽의 습지를 입력하는 경우, span:A[category of land region] = 2 span:d[marsh]로 입력
-* 습지 지역의 바다 쪽 경계가 해안선과 일치하는 경우, 해당 경계는 span:F[coastline]에 span:A[category of coastline] = 8 span:d[marshy shore]로 입력
+* 해안선 뒤쪽의 습지를 입력하는 경우, span:A[category of land region] = 2 span:D[marsh]로 입력
+* 습지 지역의 바다 쪽 경계가 해안선과 일치하는 경우, 해당 경계는 span:F[coastline]에 span:A[category of coastline] = 8 span:D[marshy shore]로 입력
 
 //
-* 염전을 입력해야 하는 경우, span:A[category of land region] = 15 span:d[salt pan]로 입력해야함
+* 염전을 입력해야 하는 경우, span:A[category of land region] = 15 span:D[salt pan]로 입력해야함
 ** 염전은 span:F[Land Area] 위에 입력해야 함
-** 염전의 바다 쪽 경계가 해안선과 일치하는 경우, 해당 경계는 Coastline 객체를 사용하여 인코딩해야 하며, 속성 span:F[coastline]에 span:A[category of coastline] = 2 span:d[flat coast]로 입력
+** 염전의 바다 쪽 경계가 해안선과 일치하는 경우, 해당 경계는 Coastline 객체를 사용하여 인코딩해야 하며, 속성 span:F[coastline]에 span:A[category of coastline] = 2 span:D[flat coast]로 입력
 
 //
 ===== Example
@@ -26,11 +26,11 @@
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Busan
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 부산
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |===
 
 .염전의 인코딩 예시
@@ -38,7 +38,7 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of land region|CATLND|EN|0,*| 15 span:d[salt pan]
+|category of land region|CATLND|EN|0,*| 15 span:D[salt pan]
 |===
 ---
 

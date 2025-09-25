@@ -8,12 +8,12 @@
 
 //
 * span:F[Dumping Ground]은 span:F[Depth Area] 또는 span:F[Unsurveyed Area]로 덮여야 함
-* 준설 공사 구역(Dredging Area)에서 얻은 자재를 처분하기 위한 준설토 투기장은 span:F[Dumping Ground]에 span:A[category of dumping ground] = 5 span:d[spoil ground]로 입력
-* 준설 공사 구역(Dredging Area)는 span:F[Dredged Area]와 혼동하지 않아야 하며, 필요한 경우 span:F[Restricted Area]에 span:A[category of restricted area] = 27 span:d[dredging area]로 입력
-* 건설 등 목적으로 모래, 자갈과 같은 해저 자재를 추출하는 지역은 필요한 경우 span:F[Offshore Production Area]에 span:A[category of offshore production area] = 5 span:d[seabed material extraction area]로 입력
+* 준설 공사 구역(Dredging Area)에서 얻은 자재를 처분하기 위한 준설토 투기장은 span:F[Dumping Ground]에 span:A[category of dumping ground] = 5 span:D[spoil ground]로 입력
+* 준설 공사 구역(Dredging Area)는 span:F[Dredged Area]와 혼동하지 않아야 하며, 필요한 경우 span:F[Restricted Area]에 span:A[category of restricted area] = 27 span:D[dredging area]로 입력
+* 건설 등 목적으로 모래, 자갈과 같은 해저 자재를 추출하는 지역은 필요한 경우 span:F[Offshore Production Area]에 span:A[category of offshore production area] = 5 span:D[seabed material extraction area]로 입력
 
 //
-* 유해 물질을 위한 투기장은 사용이 중지되었더라도 무기한 위험한 것으로 간주되며, span:A[status] = 4 span:d[not in use]와 함께 대축척 전자해도부터 입력되어야 함. 
+* 유해 물질을 위한 투기장은 사용이 중지되었더라도 무기한 위험한 것으로 간주되며, span:A[status] = 4 span:D[not in use]와 함께 대축척 전자해도부터 입력되어야 함. 
 * 해당 구역이 사용되지 않게 된 날짜가 알려진 경우 span:A[date disused]를 사용하여 입력
 
 //
@@ -29,8 +29,8 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of dumping ground|CATDPG|EN|0,*| 4 span:d[explosives dumping ground]
-|status|STATUS|EN|0,*| 4 span:d[not in used]
+|category of dumping ground|CATDPG|EN|0,*| 4 span:D[explosives dumping ground]
+|status|STATUS|EN|0,*| 4 span:D[not in used]
 |===
 ---
 // end::DumpingGround[]

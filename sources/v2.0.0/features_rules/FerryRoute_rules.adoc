@@ -8,7 +8,7 @@
 * NOTE:
 ** 날씨, 조석, 교통 상황에 따라 경로가 변동되는 장거리 여객선 항로는 일반적으로 입력하지 않아야 함
 ** 관련 여객선 터미널은 span:F[Harbour Facility]를 사용하여 표시해야 하며, +
-이때 span:A[category of harbour facility] = 3 span:d[ferry terminal] / 7 span:d[RoRo-terminal] 중 하나로 입력해야 함
+이때 span:A[category of harbour facility] = 3 span:D[ferry terminal] / 7 span:D[RoRo-terminal] 중 하나로 입력해야 함
 
 ===== Example
 .Ferry Route의 인코딩 예시
@@ -16,7 +16,7 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[category of ferry]|CATFRY|EN|1,*| 1 span:d[free moving ferry]
+|span:E[category of ferry]|CATFRY|EN|1,*| 1 span:D[free moving ferry]
 |===
 
 ---

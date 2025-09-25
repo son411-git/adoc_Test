@@ -2,11 +2,11 @@
 ===== Remark
 
 * 공익을 목적으로 하는 서비스 또는 상업적 운영을 하는 항만 시설은 span:F[Harbour Facility]로 입력
-* 어항을 입력하는 경우 span:A[Category of harbour facility] = 4 span:d[fishing harbour] 를 사용
-* 요트항/마리나항을 입력하는 경우 span:A[Category of harbour facility] = 5 span:d[yacht harbour/marina] 를 사용
-* 유조선 터미널을 입력하는 경우 span:A[Category of harbour facility] = 7 span:d[tanker terminal] 를 사용
-* 컨테이너를 적재/하역하거나 저장하는 시설을 갖춘 터미널을 입력하는 경우 span:A[Category of harbour facility] = 10 span:d[container terminal] 를 사용
-* 벌크선 터미널을 입력하는 경우 span:A[Category of harbour facility] = 11 span:d[bulk terminal] 를 사용
+* 어항을 입력하는 경우 span:A[Category of harbour facility] = 4 span:D[fishing harbour] 를 사용
+* 요트항/마리나항을 입력하는 경우 span:A[Category of harbour facility] = 5 span:D[yacht harbour/marina] 를 사용
+* 유조선 터미널을 입력하는 경우 span:A[Category of harbour facility] = 7 span:D[tanker terminal] 를 사용
+* 컨테이너를 적재/하역하거나 저장하는 시설을 갖춘 터미널을 입력하는 경우 span:A[Category of harbour facility] = 10 span:D[container terminal] 를 사용
+* 벌크선 터미널을 입력하는 경우 span:A[Category of harbour facility] = 11 span:D[bulk terminal] 를 사용
 * 선박이 들어갈 수 있는 덮인 구조물(covered structure)을 입력하는 경우, span:F[Harbour Facility]가 아닌 span:F[Structure Over Navigable Water] 를 사용. 
 include::common/phrase.adoc[tag=information]
 
@@ -17,16 +17,16 @@ include::common/phrase.adoc[tag=information]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[category of harbour facility]|CATHAF|EN|1,*| 4 span:d[fishing harbour]
+|span:E[category of harbour facility]|CATHAF|EN|1,*| 4 span:D[fishing harbour]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Dadaepo Hang
 
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 다대포항
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 
 
 |===

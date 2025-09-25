@@ -26,11 +26,11 @@ include::common/phrase.adoc[tag=information]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Masan Fairway
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 마산 항로
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |imo adopted|CATTSS|BO|0,1|false
 |===
 

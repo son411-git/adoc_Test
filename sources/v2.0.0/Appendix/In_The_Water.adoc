@@ -44,7 +44,7 @@
 ** span:F[Pontoon] 
 ** span:F[Pylon Bridge Support]
 ** span:F[Underwater Awash Rock]
-** span:F[Shoreline Construction] with span:A[water level effect] = 1 span:d[partly submerged at high water] or 2 span:d[always dry]
+** span:F[Shoreline Construction] with span:A[water level effect] = 1 span:D[partly submerged at high water] or 2 span:D[always dry]
 
 //
 .in The Water 인코딩 예시

@@ -21,8 +21,8 @@
 ** 공사중, 매립중
 *** 공사 기간, 공사 도면 등을 입수 했다면 해당 객체(예 : span:F[Shoreline Construction] 등)에 span:A[information] 또는 span:F[Nautical Information] 으로 입력해야 함
 *** 그 외의 경우 측량원도에 표기된 공사중, 매립중은 자세한 정보가 입수 될 때까지 span:F[Caution Area]로 입력해야 함
-*** 공사중인 영역의 span:F[Caution Area]은 span:A[condition] = 1 span:d[under construction]으로만 입력하고, span:A[information/text] = (Under Construction) 또는 (공사중) 과 같이 입력하지 않아야 함
-*** 매립중인 영역의 span:F[Caution Area]은 span:A[condition] = 3 span:d[under reclamation]으로만 입력하고, span:A[information/text] = (Under Reclamation) 또는 (매립중) 과 같이 입력하지 않아야 함
+*** 공사중인 영역의 span:F[Caution Area]은 span:A[condition] = 1 span:D[under construction]으로만 입력하고, span:A[information/text] = (Under Construction) 또는 (공사중) 과 같이 입력하지 않아야 함
+*** 매립중인 영역의 span:F[Caution Area]은 span:A[condition] = 3 span:D[under reclamation]으로만 입력하고, span:A[information/text] = (Under Reclamation) 또는 (매립중) 과 같이 입력하지 않아야 함
 
 ** 송전선
 *** span:F[Cable Overhead]를 따라 span:F[Caution Area][C]로 입력하지 않아야 함

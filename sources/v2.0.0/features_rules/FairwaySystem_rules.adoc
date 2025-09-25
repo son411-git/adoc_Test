@@ -24,11 +24,11 @@ include::common/information.adoc[]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| small craft fairway
-|    name usage||(S)EN|0,1| 1 span:d[defalut name display]
+|    name usage||(S)EN|0,1| 1 span:D[defalut name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 소형선박 통항로
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |===
 
 ---

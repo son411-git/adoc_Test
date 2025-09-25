@@ -21,19 +21,19 @@
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gumeongseom
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng 
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| jangdaeseo
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 구멍섬
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 장대서
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |===
 
 ** 따라서, 다르게 알려져 있거나 불리는 이름이 있다는 경우 아래와 같이 괄호( ) 안에 함께 입력해야 함
@@ -46,11 +46,11 @@
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gumeongseom(jangdaeseo)
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 구멍섬(장대서)
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |===
 
 //
@@ -65,8 +65,8 @@
 
 * span:A[name usage]
 ** span:A[name usage]는 다음 두 가지 값 중 하나를 가짐: 
-*** 1 span:d[default name display]
-*** 2 span:d[alternate name display]
+*** 1 span:D[default name display]
+*** 2 span:D[alternate name display]
 ** span:A[name usage] 값이 1이면 기본 언어(eng)로 이름이 표시되고, 값이 2이면 대체 언어(kor)로 이름이 표시됨
 ** span:A[name usage]를 입력하지 않으면 span:A[name]에 값이 있어도 화면에 표시되지 않으며, 항해자는 객체를 선택해 'Pick Report'로만 정보를 확인할 수 있음
 

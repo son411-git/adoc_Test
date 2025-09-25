@@ -13,7 +13,7 @@
 * 알려진 span:F[Dock Area]의 이름은 span:F[Sea Area/Named Water Area]를 사용하여 입력해야 함
 
 // 
-* 습식 도크(비조수 도크)는 바깥 바다와 다른 수심 기준면(sounding datum)을 사용할 수 있으며 해당 영역에 span:F[Sounding Datum]을 span:A[vertical datum] = 24 span:d[local datum] 으로 입력
+* 습식 도크(비조수 도크)는 바깥 바다와 다른 수심 기준면(sounding datum)을 사용할 수 있으며 해당 영역에 span:F[Sounding Datum]을 span:A[vertical datum] = 24 span:D[local datum] 으로 입력
 
 include::common/NotUsedFeature.adoc[]
 
@@ -23,12 +23,12 @@ include::common/NotUsedFeature.adoc[]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of dock|CATDOC|EN|0,1| 2 span:d[wet dock]
+|category of dock|CATDOC|EN|0,1| 2 span:D[wet dock]
 |condition|CONDTN|EN|0,1|
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Ulsan wet dock
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**horizontal clearance fixed**||C|0,1| 
 |    span:E[horizontal clearance value]|HORCLR|(S)RE|1,1| 80
 |    horizontal distance uncertainty|HORACC|(S)RE|0,1|

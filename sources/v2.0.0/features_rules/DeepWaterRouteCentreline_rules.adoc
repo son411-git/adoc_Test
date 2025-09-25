@@ -11,7 +11,7 @@
 * span:A[based on fixed marks]는 필수이며 항로가 하나 이상의 고정 표지를 기반으로 하고 있으면 (true) 로 입력
 * 굽이진 경로로 구성된 깊은 수심 항로는, 각 구간을 별도로 분리하여 각각의 span:F[Deep Water Route Centreline]에 대해 span:A[orientation value]를 입력해야 함
 * span:A[orientation value]는 필수이며 일방통행* 일때는 선박이 진행하는 방향으로 방위각을 입력하고, 양방향일때는 180 미만의 값을 입력해야 함
-** 일방통행 : span:A[traffic flow] = 1 span:d[inbound] / 2 span:d[outbound] / 3 span:d[one-way]
+** 일방통행 : span:A[traffic flow] = 1 span:D[inbound] / 2 span:D[outbound] / 3 span:D[one-way]
 ** ECDIS에서 따라야 할 방향을 올바르게 표시하기 위해 선(Curve)을 그리는 순서도 span:A[orientation value], span:A[traffic flow]에 입력된 방향과 동일해야 함
 
 //

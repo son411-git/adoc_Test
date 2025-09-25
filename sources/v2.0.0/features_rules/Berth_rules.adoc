@@ -18,7 +18,7 @@ image::../images/Berth/Berth_image-1.png[width=50%]
 |**feature name**||C|1,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 2
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 
 |===
 

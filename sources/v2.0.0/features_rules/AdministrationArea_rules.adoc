@@ -12,16 +12,16 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[jurisdiction]|JRSDTN|EN|1,1| 1 span:d[international]
+|span:E[jurisdiction]|JRSDTN|EN|1,1| 1 span:D[international]
 |nationality|NATION|TE|0,*| KR
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Republic of Korea
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 대한민국
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |===
 
 ---

@@ -43,14 +43,14 @@ include::common/phrase.adoc[tag=NotUsedFeature]
 |===
 5+^| Military Practice Area
 |Attribute |Acronym |Type |Mult. |Value
-|category of military practice area|CATMPA|EN|0,*| 4 span:d[firing danger area]
+|category of military practice area|CATMPA|EN|0,*| 4 span:D[firing danger area]
 |**fixed date range**||C|0,1|
 |    date start|DATSTA|(S)TD|0,1| 19941201
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| R-88
 |nationality|NATION|TE|0,1| KR
-|restriction|RESTRN|EN|0,*| 7 span:d[entry prohibited]
+|restriction|RESTRN|EN|0,*| 7 span:D[entry prohibited]
 5+^| Nautical Information
 |Attribute |Acronym |Type |Mult. |Value
 |**information**|INFORM|C|0,*|

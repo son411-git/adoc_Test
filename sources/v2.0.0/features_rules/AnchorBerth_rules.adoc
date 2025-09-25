@@ -12,17 +12,17 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of anchorage|CATACH|EN|0,*| 1 span:d[unrestricted anchorage]
+|category of anchorage|CATACH|EN|0,*| 1 span:D[unrestricted anchorage]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Temporary Anchorage
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 임시정박지
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |radius|RADIUS|RE|0,1| 500
-|status|STATUS|EN|0,*| 7 span:d[temporary]
+|status|STATUS|EN|0,*| 7 span:D[temporary]
 |**information**|INFORM|C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Anchoring of vessels of 500 tons or less

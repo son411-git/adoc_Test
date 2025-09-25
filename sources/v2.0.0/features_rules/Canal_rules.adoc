@@ -11,15 +11,15 @@
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of canal|CATCAN|EN|0,1| 1 span:d[transportation]
+|category of canal|CATCAN|EN|0,1| 1 span:D[transportation]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Gyeongin ARA Waterway
-|    Name Usage||(S)EN|0,1| 1 span:d[default name display]
+|    Name Usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 경인 아라뱃길
-|    Name Usage||(S)EN|0,1| 2 span:d[alternate name di]
+|    Name Usage||(S)EN|0,1| 2 span:D[alternate name di]
 |===
 
 ---

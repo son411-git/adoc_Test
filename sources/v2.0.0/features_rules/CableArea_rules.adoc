@@ -19,7 +19,7 @@
 |restriction|RESTRN|EN|0,*| 27
 |**vessel speed limit**||C|0,*|
 |    span:E[speed limit]||(S)RE|1,1| 12
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |===
 
 ---

@@ -16,7 +16,7 @@ include::common/NotUsedFeature.adoc[]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|0,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 3
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |===
 
 ---

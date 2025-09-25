@@ -29,19 +29,19 @@ include::common/phrase.adoc[tag=information]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[buoy shape]|BOYSHP|EN|1,1| 4 span:d[pillar]
-|colour|COLOUR|EN|0,*| 1 span:d[white]
-|colour|COLOUR|EN|0,*| 5 span:d[blue]
-|colour|COLOUR|EN|0,*| 1 span:d[white]
-|colour pattern|COLPAT|EN|0,1| 1 span:d[horizontal stripes]
+|span:E[buoy shape]|BOYSHP|EN|1,1| 4 span:D[pillar]
+|colour|COLOUR|EN|0,*| 1 span:D[white]
+|colour|COLOUR|EN|0,*| 5 span:D[blue]
+|colour|COLOUR|EN|0,*| 1 span:D[white]
+|colour pattern|COLPAT|EN|0,1| 1 span:D[horizontal stripes]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jumundo
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 주문도 해경계선
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |===
 
 ---

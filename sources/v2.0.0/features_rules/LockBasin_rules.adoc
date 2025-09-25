@@ -12,7 +12,7 @@
 image::../images/LockBasin/LockBasin_image-1.png[align="center"]
 
 * 갑문의 이름은 span:F[Lock Basin]의 span:A[feature name]을 사용하여 입력해야 함
-* 갑문의 출입문은 span:F[Gate]로 입력해야 하며, 속성 span:A[category of gate] = 4 span:d[lock gate]또는 3 span:d[caisson]로 입력해야 함
+* 갑문의 출입문은 span:F[Gate]로 입력해야 하며, 속성 span:A[category of gate] = 4 span:D[lock gate]또는 3 span:D[caisson]로 입력해야 함
 
 //
 include::common/phrase.adoc[tag=information]
@@ -26,11 +26,11 @@ include::common/phrase.adoc[tag=information]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1 | Ara Seohae Gate
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1 | 아라서해갑문
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |horizontal length|HORLEN|RE|0,1| 210
 |horizontal width|HORWID|RE|0,1| 28.5
 |===

@@ -20,11 +20,11 @@
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1|eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|Eastern Regional Coast Guard
-|    name usage||(S)EN|0,1|1 span:d[default name display]
+|    name usage||(S)EN|0,1|1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1|kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1|동해구조조정본부
-|    name usage||(S)EN|0,1|2 span:d[alternate name display]
+|    name usage||(S)EN|0,1|2 span:D[alternate name display]
 |is mrcc|Maritime Rescue and Coordination Centre|BO|0,1|true
 
 5+^h|Contact Details
@@ -40,20 +40,20 @@
 |**telecommunications**||C|0,*|
 |    contact instructions||(S)TE|0,1|
 |    span:E[telecommunication identifier]||(S)TE|1,1|+82-33-680-2442
-|    telecommunication service||(S)EN|0,1|1 span:d[voice]
+|    telecommunication service||(S)EN|0,1|1 span:D[voice]
 |**telecommunications**||C|0,*|
 |    contact instructions||(S)TE|0,1|
 |    span:E[telecommunication identifier]||(S)TE|1,1|+82-33-680-2442
-|    telecommunication service||(S)EN|0,1|2 span:d[facsimile]
+|    telecommunication service||(S)EN|0,1|2 span:D[facsimile]
 |**telecommunications**||C|0,*|
 |    contact instructions||(S)TE|0,1|
 |    span:E[telecommunication identifier]||(S)TE|1,1|rcceast@korea.kr
-|    telecommunication service||(S)EN|0,1|8 span:d[email]
+|    telecommunication service||(S)EN|0,1|8 span:D[email]
 
 5+^h|Service Hours
 |Attribute |Acronym |Type |Mult. |Value
 |**span:E[schedule by day of week]**||C|1,*|
-|    category of schedule||(S)EN|0,1| 1 span:d[normal operation]
+|    category of schedule||(S)EN|0,1| 1 span:D[normal operation]
 |**    span:E[time intervals by day of week]**||(S)C|1,*|
 |        day of week||(S)EN|0,7|
 |        day of week is range||(S)BO|0,1|

@@ -13,7 +13,7 @@
 
 include::common/phrase.adoc[tag=speedLimits]
 
-* span:A[height]는 span:A[water level effect] = 1 span:d[partly submerged at high water] 또는 2 span:d[always dry]인 경우 입력해야 함.
+* span:A[height]는 span:A[water level effect] = 1 span:D[partly submerged at high water] 또는 2 span:D[always dry]인 경우 입력해야 함.
 * span:A[vertical length]는 양식장이 해저면에서 얼마나 높이 위치하는지를 입력하는데 사용됨
 
 ===== Example
@@ -22,11 +22,11 @@ include::common/phrase.adoc[tag=speedLimits]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|category of marine farm/culture|CATMFA|EN|0,1| 3 span:d[fish]
-|exposition of sounding|EXPSOU|EN|0,1| 2 span:d[shoaler than the range of depth of the surrounding depth area]
-|quality of vertical measurement|QUASOU|EN|0,*| 6 span:d[least depth known]
+|category of marine farm/culture|CATMFA|EN|0,1| 3 span:D[fish]
+|exposition of sounding|EXPSOU|EN|0,1| 2 span:D[shoaler than the range of depth of the surrounding depth area]
+|quality of vertical measurement|QUASOU|EN|0,*| 6 span:D[least depth known]
 |value of sounding|VALSOU|RE|0,1| 7.9
-|span:E[water level effect]|WATLEV|EN|1,1| 3 span:d[alwawys under water/submerged]
+|span:E[water level effect]|WATLEV|EN|1,1| 3 span:D[alwawys under water/submerged]
 |===
 
 ---

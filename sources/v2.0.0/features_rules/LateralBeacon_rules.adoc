@@ -55,50 +55,50 @@ image::../images/LateralBeacon/LateralBeacon_image-1.png[width=50%, align="cente
 | |좌현(port) |우현(starboard) |우항로 우선(preffered channel to starboard) |좌항로 우선(preffered channel to port)
 5+^h|beacon
 |span:E[beacon shape] 
-|1 span:d[stake, pole, perch, post]+
-/ 5 span:d[pile beacon]
-|1 span:d[stake, pole, perch, post]+
-/ 5 span:d[pile beacon]
-|1 span:d[stake, pole, perch, post]+
-/ 5 span:d[pile beacon]
-|1 span:d[stake, pole, perch, post]+
-/ 5 span:d[pile beacon]
+|1 span:D[stake, pole, perch, post]+
+/ 5 span:D[pile beacon]
+|1 span:D[stake, pole, perch, post]+
+/ 5 span:D[pile beacon]
+|1 span:D[stake, pole, perch, post]+
+/ 5 span:D[pile beacon]
+|1 span:D[stake, pole, perch, post]+
+/ 5 span:D[pile beacon]
 |span:E[category of lateral mark]
-|1 span:d[port-hand lateral mark]
-|2 span:d[starboard-hand lateral mark]
-|3 span:d[preferred channel to starboard lateral mark]
-|4 span:d[preferred channel to port lateral mark]
+|1 span:D[port-hand lateral mark]
+|2 span:D[starboard-hand lateral mark]
+|3 span:D[preferred channel to starboard lateral mark]
+|4 span:D[preferred channel to port lateral mark]
 |span:E[colour] 
-|4 span:d[green]
-|3 span:d[red]
-|4 span:d[green]+
- 3 span:d[red]+ 
- 4 span:d[green]
-|3 span:d[red]+ 
- 4 span:d[green]+
- 3 span:d[red]
+|4 span:D[green]
+|3 span:D[red]
+|4 span:D[green]+
+ 3 span:D[red]+ 
+ 4 span:D[green]
+|3 span:D[red]+ 
+ 4 span:D[green]+
+ 3 span:D[red]
 |colour pattern 
 |
 |
-|1 span:d[horizontal stripes]
-|1 span:d[horizontal stripes]
+|1 span:D[horizontal stripes]
+|1 span:D[horizontal stripes]
 |marks navigational +
 - system of
-|2 span:d[IALA B]
-|2 span:d[IALA B]
-|2 span:d[IALA B]
-|2 span:d[IALA B]
+|2 span:D[IALA B]
+|2 span:D[IALA B]
+|2 span:D[IALA B]
+|2 span:D[IALA B]
 5+^h|topmark
 |    colour
-|4 span:d[green]
-|3 span:d[red]
-|4 span:d[green]
-|3 span:d[red]
+|4 span:D[green]
+|3 span:D[red]
+|4 span:D[green]
+|3 span:D[red]
 |    span:E[topmark/daymark shape]
-|5 span:d[cylinder]
-|1 span:d[cone (point up)]
-|5 span:d[cylinder]
-|1 span:d[cone (point up)]
+|5 span:D[cylinder]
+|1 span:D[cone (point up)]
+|5 span:D[cylinder]
+|1 span:D[cone (point up)]
 5+^h|Light All Around : rhythm of light (if any)
 |Rhythm Character
 | ~ G
@@ -113,24 +113,24 @@ image::../images/LateralBeacon/LateralBeacon_image-1.png[width=50%, align="cente
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[beacon shape]|BCNSHP|EN|1,1| 5 span:d[pile beacon]
-|span:E[category of lateral mark]|CATLAM|EN|1,1| 1 span:d[port-hand lateral mark]
-|span:E[colour]|COLOUR|EN|1,*| 4 span:d[green]
+|span:E[beacon shape]|BCNSHP|EN|1,1| 5 span:D[pile beacon]
+|span:E[category of lateral mark]|CATLAM|EN|1,1| 1 span:D[port-hand lateral mark]
+|span:E[colour]|COLOUR|EN|1,*| 4 span:D[green]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Dadaepoeo No 1
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 다대포 1호
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
-|marks navigational - system of|MARSYS|EN|0,1| 2 span:d[IALA B]
-|nature of construction|NATCON|EN|0,*| 7 span:d[metal]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|marks navigational - system of|MARSYS|EN|0,1| 2 span:D[IALA B]
+|nature of construction|NATCON|EN|0,*| 7 span:D[metal]
 |**topmark**|TOPMAR|C|0,1|
-|    colour|COLOUR|(S)EN|0,*| 4 span:d[green ]
-|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 5 span:d[cylinder]
+|    colour|COLOUR|(S)EN|0,*| 4 span:D[green ]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 5 span:D[cylinder]
 |vertical length|VERLEN|RE|0,1| 7.4
-|visual prominence|CONVIS|EN|0,1|1 span:d[visually conspicuous]
+|visual prominence|CONVIS|EN|0,1|1 span:D[visually conspicuous]
 |===
 
 .좌항로 우선표지의 인코딩 예시
@@ -138,27 +138,27 @@ image::../images/LateralBeacon/LateralBeacon_image-1.png[width=50%, align="cente
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[beacon shape]|BCNSHP|EN|1,1| 5 span:d[pile beacon]
-|span:E[category of lateral mark]|CATLAM|EN|1,1| 4 span:d[preferred channel to port lateral mark]
-|span:E[colour]|COLOUR|EN|1,*| 3 span:d[red]
-|span:E[colour]|COLOUR|EN|1,*| 4 span:d[green]
-|span:E[colour]|COLOUR|EN|1,*| 3 span:d[red]
-|colour pattern|COLPAT|EN|0,1| 1 span:d[horizontal stripes]
+|span:E[beacon shape]|BCNSHP|EN|1,1| 5 span:D[pile beacon]
+|span:E[category of lateral mark]|CATLAM|EN|1,1| 4 span:D[preferred channel to port lateral mark]
+|span:E[colour]|COLOUR|EN|1,*| 3 span:D[red]
+|span:E[colour]|COLOUR|EN|1,*| 4 span:D[green]
+|span:E[colour]|COLOUR|EN|1,*| 3 span:D[red]
+|colour pattern|COLPAT|EN|0,1| 1 span:D[horizontal stripes]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Nakdonggang
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 낙동강 명지 을숙도 분기점
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
-|marks navigational - system of|MARSYS|EN|0,1| 2 span:d[IALA B]
-|nature of construction|NATCON|EN|0,*| 7 span:d[metal]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|marks navigational - system of|MARSYS|EN|0,1| 2 span:D[IALA B]
+|nature of construction|NATCON|EN|0,*| 7 span:D[metal]
 |**topmark**|TOPMAR|C|0,1|
-|    colour|COLOUR|(S)EN|0,*| 3 span:d[red]
-|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 1 span:d[cone (point up)]
+|    colour|COLOUR|(S)EN|0,*| 3 span:D[red]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 1 span:D[cone (point up)]
 |vertical length|VERLEN|RE|0,1| 7
-|visual prominence|CONVIS|EN|0,1|1 span:d[visually conspicuous]
+|visual prominence|CONVIS|EN|0,1|1 span:D[visually conspicuous]
 |===
 
 ---

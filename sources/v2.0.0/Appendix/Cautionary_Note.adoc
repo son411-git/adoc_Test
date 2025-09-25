@@ -39,7 +39,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 8 span:d[entry restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 8 span:D[entry restricted]
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR000020E100.TXT
 |    headline||(S)TE|0,1| Traffic Prohibited Area for Oil Tankers
@@ -52,7 +52,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 출입 금지(entry prohibited): 항해 및/또는 정박이 금지된 구역. +
 출입 제한(entry restricted): 관련 당국이 지정한 특정 구역으로 특정 조건에 따라 항해가 제한되는 구역. +
 span:D[출처 : IHO S-32 수로 사전] +
-따라서 **8 span:d[entry restricted]** 가 적합함
+따라서 **8 span:D[entry restricted]** 가 적합함
 |===
 
 . 연안 부근 송전선 주의
@@ -85,7 +85,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 8 span:d[entry restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 8 span:D[entry restricted]
 |**information**|INFORM|C|0,*|
 |    headline||(S)TE|0,1| Entry Prohibited
 |    span:E[language]||(S)TE|1,1| eng
@@ -263,13 +263,13 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng 
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Homigot Recommended Route
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| kor 
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 호미곶 추천항로
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 |orientation value|ORIENT|RE|0,1 | 90 
-|traffic flow|TRAFIC|EN|0,1| 4 span:d[two-way]
+|traffic flow|TRAFIC|EN|0,1| 4 span:D[two-way]
 
 5+^h| Nautical Information
 
@@ -298,7 +298,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |**periodic date range**||C|0,*|
 |    span:E[date end]|DATEND|(S)TD|1,1| ----0731
 |    span:E[date start]|DATSTA|(S)TD|1,1| ----0401
-|span:E[restriction]|RESTRN|EN|1,*| 8 span:d[entry restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 8 span:D[entry restricted]
 |**information**|INFORM|C|0,*|
 |    headline||(S)TE|0,1| Entry Restricted
 |    span:E[language]||(S)TE|1,1| eng
@@ -319,7 +319,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 4 span:d[fishing restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 4 span:D[fishing restricted]
 |**information**|INFORM|C|0,*|
 |    headline||(S)TE|0,1| Specifically Prohibited Area
 |    span:E[language]||(S)TE|1,1| eng
@@ -362,7 +362,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 7 span:d[entry prohibited]
+|span:E[restriction]|RESTRN|EN|1,*| 7 span:D[entry prohibited]
 |**information**|INFORM|C|0,*|
 |    headline||(S)TE|0,1| Entry Prohibited (Volcanic Activity)
 |    span:E[language]||(S)TE|1,1| eng
@@ -383,19 +383,19 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 10
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 
 5+^h| Restricted Area (곡선구간, Daymark 확인)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 8
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 
 5+^h| Information Area (경인아라뱃길 전체)
 
@@ -421,10 +421,10 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 10
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |===
 
 . 부산항 속력 제한
@@ -437,70 +437,70 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 8
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |    name usage||(S)EN|0,1| Passenger ships less than 500 GT
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 12
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |    name usage||(S)EN|0,1| Other vessels
 
 5+^h| Restricted Area (북외항)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 8
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |    name usage||(S)EN|0,1| All Ships over 1,000 GT
 
 5+^h| Restricted Area (오륙도방파제 - 조도방파제)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 8
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 
 5+^h| Restricted Area (감천항)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 10
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 
 5+^h| Restricted Area (다대포항)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 7
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 
 5+^h| Restricted Area (신항 내항)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 12
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 
 5+^h| Precautionary Area (가덕수도)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 12
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |**information**|INFORM|C|0,*|
 |    headline||(S)TE|0,1| Precautionary and Speed Limited Area
 |    span:E[language]||(S)TE|1,1| eng
@@ -521,14 +521,14 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 12
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |    name usage||(S)EN|0,1| Hazardous cargo carrier
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 14
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |    name usage||(S)EN|0,1| Other vessels
 |===
 
@@ -542,14 +542,14 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 12
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |    name usage||(S)EN|0,1| Hazardous cargo carrier
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 14
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |    name usage||(S)EN|0,1| Other vessels
 |===
 
@@ -563,10 +563,10 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 10
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |===
 
 . 구역별 속력제한
@@ -579,37 +579,37 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 15
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 
 5+^h| Restricted Area (제2구역)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 12
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 
 5+^h| Restricted Area (제3구역)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 8
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 
 5+^h| Restricted Area (제4구역)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 8
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |===
 
 . 고속여객선 속력제한
@@ -622,14 +622,14 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 15
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |    name usage||(S)EN|0,1| High-Speed Passenger Vessel
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 10
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |    name usage||(S)EN|0,1| Other vessels
 |===
 
@@ -644,10 +644,10 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 12
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |**information**|INFORM|C|0,*|
 |    headline||(S)TE|0,1| Precautionary and Speed Limited Area
 |    span:E[language]||(S)TE|1,1| eng
@@ -661,19 +661,19 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 12
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 
 5+^h| Restricted Area (마산항로)
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 27 span:d[speed restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 27 span:D[speed restricted]
 |**vessel speed limit**||C|0,*| 
 |    span:E[speed limit]||(S)RE|1,1| 15
-|    span:E[speed units]||(S)EN|1,1| 4 span:d[knots]
+|    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |===
 
 . 조류 기사
@@ -703,7 +703,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 8 span:d[entry restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 8 span:D[entry restricted]
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR001010E100.TXT
 |    headline||(S)TE|0,1| Entry Restricted
@@ -925,7 +925,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 연안해역에서는 양식장(미측량구역) 및 장애물 등이 다수 산재되어 있으므로 접근 시 주의하여야 함.
 5+| span:E[※ 비고] : +
-1. 축척 1 span:d[50,000]까지 적용
+1. 축척 1 span:D[50,000]까지 적용
 2. 데이터셋에 span:F[Marine Farm/Culture]나 span:F[Obstruction]이 있다면, 이들 객체는 span:F[Information Area][S]의 지오메트리 범위에 최소한으로 포함되어야 함
 |===
 
@@ -949,7 +949,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 해도에서는 양식장 및 장애물 등이 다수 생략되어 있으므로 접근 시 주의하여야 하며, 생략된 정보는 대축척 해도에서 확인할 수 있음.
 5+| span:E[※ 비고] : +
-1. 축척 1 span:d[75,000]부터 적용
+1. 축척 1 span:D[75,000]부터 적용
 2. 데이터셋에서 span:F[Marine Farm/Culture] 또는 span:F[Obstruction]을 확인하거나, 대축척 해도에서 생략된 이러한 객체를 식별해야하며, 확인된 객체는 span:F[Information Area][S]의 지오메트리 범위에 최소한으로 포함되어야 함
 |===
 
@@ -1218,7 +1218,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
-|span:E[restriction]|RESTRN|EN|1,*| 8 span:d[entry restricted]
+|span:E[restriction]|RESTRN|EN|1,*| 8 span:D[entry restricted]
 |**information**|INFORM|C|0,*|
 |    headline||(S)TE|0,1| Special Vessels in Jung Sudo
 |    span:E[language]||(S)TE|1,1| eng

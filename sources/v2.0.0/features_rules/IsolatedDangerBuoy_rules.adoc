@@ -38,26 +38,26 @@ include::common/phrase.adoc[tag=IALA_Warning]
 |Attribute |Value
 2+^h|buoy
 |span:E[buoy shape] 
-| 4 span:d[pillar]
+| 4 span:D[pillar]
 |span:E[colour]
-| 2 span:d[black]+
-3 span:d[red]+
-2 span:d[black]
+| 2 span:D[black]+
+3 span:D[red]+
+2 span:D[black]
 |colour pattern
-| 1 span:d[horizontal stripes]
+| 1 span:D[horizontal stripes]
 |marks navigational +
 - system of
-| 2 span:d[IALA B]
+| 2 span:D[IALA B]
 2+^h|topmark 
 |    colour 
-| 2 span:d[black]
+| 2 span:D[black]
 |    span:E[topmark/daymark shape]
-| 4 span:d[2 spheres]
+| 4 span:D[2 spheres]
 2+^h|Light All Around : rhythm of light (if any)
 |span:E[colour]
-| 1 span:d[white]
+| 1 span:D[white]
 | span:E[light characteristic]
-| 2 span:d[flashing]
+| 2 span:D[flashing]
 | signal group
 | (2)
 |===
@@ -68,23 +68,23 @@ include::common/phrase.adoc[tag=IALA_Warning]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[buoy shape]|BOYSHP|EN|1,1| 4 span:d[pillar]
-|span:E[colour]|COLOUR|EN|1,*| 2 span:d[black]
-|span:E[colour]|COLOUR|EN|1,*| 3 span:d[red]
-|span:E[colour]|COLOUR|EN|1,*| 2 span:d[black]
-|colour pattern|COLPAT|EN|0,1| 1 span:d[horizontal stripes]
+|span:E[buoy shape]|BOYSHP|EN|1,1| 4 span:D[pillar]
+|span:E[colour]|COLOUR|EN|1,*| 2 span:D[black]
+|span:E[colour]|COLOUR|EN|1,*| 3 span:D[red]
+|span:E[colour]|COLOUR|EN|1,*| 2 span:D[black]
+|colour pattern|COLPAT|EN|0,1| 1 span:D[horizontal stripes]
 |**feature name**||C|0,*| 
 |    span:E[language]||(S)TE|1,1| eng
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Bongnoe
-|    name usage||(S)EN|0,1| 1 span:d[default name display]
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
 |**feature name**||C|0,*|
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 복뢰
-|    name usage||(S)EN|0,1| 2 span:d[alternate name display]
-|marks navigational - system of|MARSYS|EN|0,1| 2 span:d[IALA B]
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|marks navigational - system of|MARSYS|EN|0,1| 2 span:D[IALA B]
 |**topmark**|TOPMAR|C|0,1|
-|    colour|COLOUR|(S)EN|0,*| 2 span:d[black]
-|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 4 span:d[2 spheres]
+|    colour|COLOUR|(S)EN|0,*| 2 span:D[black]
+|    span:E[topmark/daymark shape]|TOPSHP|(S)EN|1,1| 4 span:D[2 spheres]
 |===
 
 ---

@@ -20,7 +20,7 @@ include::common/phrase.adoc[tag=information]
 |===
 |Attribute |Acronym |Type |Mult. |Value
 
-|span:E[marks navigational - system of]|MARSYS|EN|1,1| 2 span:d[IALA B]
+|span:E[marks navigational - system of]|MARSYS|EN|1,1| 2 span:D[IALA B]
 |span:E[orientation value]|ORIENT|RE|1,1| 40
 |===
 
