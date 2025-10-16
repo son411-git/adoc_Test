@@ -108,7 +108,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002010E100.TXT
-|    headline||(S)TE|0,1| Firing and Bombing Exercise Areas in the Coasts of Korea
+|    headline||(S)TE|0,1| Military Practice Areas
 |    span:E[language]||(S)TE|1,1| eng
 |**information**|INFORM|C|0,*|
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002010K100.TXT
