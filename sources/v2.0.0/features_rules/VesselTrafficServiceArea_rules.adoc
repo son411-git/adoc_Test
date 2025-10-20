@@ -3,24 +3,134 @@
 //REVIEW: 대공사
 * VTS 관제구역이 무선보고선과 연관되었다면 span:F[Radio Calling-In Point]를 경계로 사용하는 span:F[Vessel Traffic Service Area]를 반드시 입력
 
+* VTS 관제구역이 무선보고선과 연관되었다면 span:A[communication Channel]은 span:F[Contact Details]에 입력
+
 * span:F[Radio Calling-In Point]가 VTS 관제 구역과 직접적으로 연관되지 않은 독립적인 지점이라면, span:F[Vessel Traffic Service Area] 없이도 입력 가능
 ** 반대의 경우도 가능
+ 
+** 이 때, span:F[Vessel Traffic Service Area]의 span:A[feature name] 속성은 span:F[Radio Calling-In Point]의 span:A[feature name] 속성과 동일한 VTS센터명를 입력해야 함 
+* span:A[feature name] 속성은 보고지점을 지정한 주체의 이름을 입력 (예 : '완도') +
+  단, span:F[Vessel Traffic Service Area]의 경우 묘화에서 명칭 앞에 'VTS'가 접두사로 붙으므로 'VTS'는 입력하지 않지만 (예: '완도 VTS' → '완도'), + 
+  span:F[Radio Calling-In Point]의 경우에는 'VTS'를 포함하여 입력 (예: '완도 VTS') 
+
+//
+** 동일한 채널을 사용하는 span:F[Radio Calling-In Point]가 여러 개 있는 경우, span:F[Contact Details]에 속성 span:A[communication channel]에 채널을 입력하고, +
+    span:F[Vessel Traffic Service Area], span:F[Radio Calling-In Point]와 span:F[Contact Details] 간 연관관계를 설정
+
+*  span:F[Vessel Traffic Service Area], span:F[Radio Calling-In Point] 는 제품에서 span:F[LandArea]를 포함하거나 중첩되지 않아야 함
+
 
 ===== Example
-.Vessel Traffic Service Area의 인코딩 예시
+.Vessel Traffic Service Area - 별개의 관제구역이 서로 맞닿는 구역에서의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
+5+^h| 진도 VTS 관제구역 (Vessel Traffic Service Area) 
 |Attribute |Acronym |Type |Mult. |Value
 
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jindo VTS Area
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jindo
 |    Name Usage||(S)EN|0,1| 1 : default name display
 |**Feature Name**||C|0,*| 
 |    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 진도 해상교통관제구역
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 진도
 |    Name Usage||(S)EN|0,1| 2: alternate name display
+
+
+5+^h| 제주 VTS 관제구역 (Vessel Traffic Service Area) 
+|Attribute |Acronym |Type |Mult. |Value
+
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jeju
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 제주
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+
+
+5+^h| 진도 '진입' 무선보고선 (Radio Calling-In Point) 
+|Attribute |Acronym |Type |Mult. |Value
+
+|communication channel|COMCHA|TE|0,*| span:D[Contact Details에 입력]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jindo VTS
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 진도 VTS
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|orientation value|ORIENT|RE|0,2|290
+|span:E[traffic flow]|TRAFIC|EN|1,1| 1 span:D[inbound]
+
+
+5+^h| 제주 '진입' 무선보고선 (Radio Calling-In Point) 
+|Attribute |Acronym |Type |Mult. |Value
+
+|communication channel|COMCHA|TE|0,*| span:D[Contact Details에 입력]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jeju VTS
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 제주 VTS
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|orientation value|ORIENT|RE|0,2|290
+|span:E[traffic flow]|TRAFIC|EN|1,1| 1 span:D[inbound]
+
+
+5+^h| 진도 - 제주 '양방향' 무선보고선 (Radio Calling-In Point) 
+5+^| 결과적으로 이 Radio Calling-In Point는 두 개의 Contact Details를 가집니다.
+|Attribute |Acronym |Type |Mult. |Value
+
+|communication channel|COMCHA|TE|0,*| span:D[Contact Details에 입력]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jindo VTS; Jeju VTS
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 진도 VTS; 제주 VTS
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|orientation value|ORIENT|RE|0,2|290
+|span:E[traffic flow]|TRAFIC|EN|1,1| 4 span:D[two-way]
+
+
+5+^h| 진도 관제통신 - Contact Details 
+|Attribute |Acronym |Type |Mult. |Value
+
+|call sign|CALSGN|TE|0,1| Jindo VTS
+|communication channel|COMCHA|TE|0,*|[VHF0067]
+|contact instructions||TE|0,1|Ship's Name,Ship's Position,Destination,Maxinmum Air Draught,Other Information Necessary for the Safety of Navigation
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-61-288-2650
+|    telecommunication service||(S)EN|0,1|1 span:D[voice]
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-61-288-2950
+|    telecommunication service||(S)EN|0,1|2 span:D[facsimile]
+
+
+5+^h| 제주 관제통신 - Contact Details 
+|Attribute |Acronym |Type |Mult. |Value
+
+|call sign|CALSGN|TE|0,1| Jeju VTS
+|communication channel|COMCHA|TE|0,*|[VHF0009]
+|contact instructions||TE|0,1|Ship's Name,Ship's Position,Destination,Estimated Time of Arrival (ETA) (only for vessels intending to enter an anchorage or berth within the VTS area),Other Information Necessary for the Safety of Navigation
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-64-801-2550
+|    telecommunication service||(S)EN|0,1|1 span:D[voice]
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-64-801-2850
+|    telecommunication service||(S)EN|0,1|2 span:D[facsimile]
 |===
 
 ---
+
 // end::VesselTrafficServiceArea[]

@@ -69,7 +69,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    headline||(S)TE|0,1| Overhead Power Cables
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| There are many overhead power cables with pylons in the Koreaspan:E[n] coast, so mariners should refer to the large scale chart.
-|**information**|INFORM|C|0,*|s
+|**information**|INFORM|C|0,*|
 |    headline||(S)TE|0,1| 송전선
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 한국연안 부근은 다수의 송전선이 존재하니 항해 시 대축척 해도를 참조 바람.
@@ -905,7 +905,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][P,S]를 생성
 |===
 
-. 양식장(미측량구역) 및 장애물 주의
+. 양식장(미측량구역) 및 장애물 주의 (1:50,000까지)
 +
 ."양식장(미측량구역) 및 장애물 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
@@ -929,7 +929,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 2. 데이터셋에 span:F[Marine Farm/Culture]나 span:F[Obstruction]이 있다면, 이들 객체는 span:F[Information Area][S]의 지오메트리 범위에 최소한으로 포함되어야 함
 |===
 
-. 양식장 및 장애물 주의
+. 양식장 및 장애물 주의 (1:75,000부터)
 +
 ."양식장 및 장애물 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]

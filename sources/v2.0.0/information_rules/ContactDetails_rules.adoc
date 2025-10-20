@@ -9,32 +9,121 @@
 * span:A[frequency pair]에 채워지는 값은 헤르츠(Hz) 단위로 반드시 명시해야 함
 ** 예를 들어, 950 MHz의 신호 주파수는 950000000으로 입력해야 함
 
+//
+* 호출 부호는 span:A[call sign] 속성으로 입력
+* VTS센터와 선박 간 통신 채널은 span:A[communication channel] 로 입력하며 VHF 채널 7일 경우, [VHF####] 형식으로 대괄호를 포함하여 입력해야 함
+* 선박의 보고 내용(신고 내용)은 span:A[contact instructions] 으로 입력 
+* 기타 통신 수단(전화번호, 팩스번호 등)은 span:A[telecommunications]의 하위 속성으로 입력
+** 통신 수단 식별자는 span:A[telecommunication identifier] 속성으로 입력하며 국가번호를 포함한 전체 번호를 입력
+** 통신 서비스 종류는 span:A[telecommunication service] 속성으로 입력하며, 음성 통화는 1 span:D[voice], 팩스는 2 span:D[facsimile]로 입력
 ===== Example
-.Contact Details의 인코딩 예시
+
+
+.Contact Details - 별개의 관제구역이 서로 맞닿는 구역에서의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
+
+5+^h| 진도 관제통신 - Contact Details 
 |Attribute |Acronym |Type |Mult. |Value
 
-|call sign|CALSGN|TE|0,1|동해해경
-|communication channel|COMCHA|TE|0,*|VHF0016
-|communication channel|COMCHA|TE|0,*|VHF0009
-|contact instructions||TE|0,1|호출용(shore station receives) - VHF CH16, 통신용(shore station transmits) - VHF CH09
-|**frequency pair**||C|0,*|
-|    frequency shore station receives||(S)IN|0,1|156800
-|    span:E[frequency shore station transmits]|SIGFRQ|(S)IN|1,1|156450
-|mmsi code||TE|0,1|	004401010
+|call sign|CALSGN|TE|0,1| Jindo VTS
+|communication channel|COMCHA|TE|0,*|[VHF0067]
+|contact instructions||TE|0,1|Ship's Name,Ship's Position,Destination,Maxinmum Air Draught,Other Information Necessary for the Safety of Navigation
 |**telecommunications**||C|0,*|
 |    contact instructions||(S)TE|0,1|
-|    span:E[telecommunication identifier]||(S)TE|1,1|+82-33-680-2442
-|    telecommunication service||(S)EN|0,1|1 : voice
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-61-288-2650
+|    telecommunication service||(S)EN|0,1|1 span:D[voice]
 |**telecommunications**||C|0,*|
 |    contact instructions||(S)TE|0,1|
-|    span:E[telecommunication identifier]||(S)TE|1,1|+82-33-680-2442
-|    telecommunication service||(S)EN|0,1|2 : facsimile
-|**telecommunications**||C|0,*|
-|    contact instructions||(S)TE|0,1|
-|    span:E[telecommunication identifier]||(S)TE|1,1|rcceast@korea.kr
-|    telecommunication service||(S)EN|0,1|8 : email
-|===
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-61-288-2950
+|    telecommunication service||(S)EN|0,1|2 span:D[facsimile]
 
+
+5+^h| 제주 관제통신 - Contact Details 
+|Attribute |Acronym |Type |Mult. |Value
+
+|call sign|CALSGN|TE|0,1| Jeju VTS
+|communication channel|COMCHA|TE|0,*|[VHF0009]
+|contact instructions||TE|0,1|Ship's Name,Ship's Position,Destination,Estimated Time of Arrival (ETA) (only for vessels intending to enter an anchorage or berth within the VTS area),Other Information Necessary for the Safety of Navigation
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-64-801-2550
+|    telecommunication service||(S)EN|0,1|1 span:D[voice]
+|**telecommunications**||C|0,*|
+|    contact instructions||(S)TE|0,1|
+|    span:E[telecommunication identifier]||(S)TE|1,1|+82-64-801-2850
+|    telecommunication service||(S)EN|0,1|2 span:D[facsimile]
+
+5+^h| 진도 - 제주 '양방향' 무선보고선 (Radio Calling-In Point) 
+5+^| 결과적으로 이 Radio Calling-In Point는 두 개의 Contact Details를 가집니다.
+|Attribute |Acronym |Type |Mult. |Value
+
+|communication channel|COMCHA|TE|0,*| span:D[Contact Details에 입력]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jindo VTS; Jeju VTS
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 진도 VTS; 제주 VTS
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|orientation value|ORIENT|RE|0,2|290
+|span:E[traffic flow]|TRAFIC|EN|1,1| 4 span:D[two-way]
+
+5+^h| 진도 '진입' 무선보고선 (Radio Calling-In Point) 
+|Attribute |Acronym |Type |Mult. |Value
+
+|communication channel|COMCHA|TE|0,*| span:D[Contact Details에 입력]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jindo VTS
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 진도 VTS
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|orientation value|ORIENT|RE|0,2|290
+|span:E[traffic flow]|TRAFIC|EN|1,1| 1 span:D[inbound]
+
+5+^h| 제주 '진입' 무선보고선 (Radio Calling-In Point) 
+|Attribute |Acronym |Type |Mult. |Value
+
+|communication channel|COMCHA|TE|0,*| span:D[Contact Details에 입력]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jeju VTS
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*|
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 제주 VTS
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
+|orientation value|ORIENT|RE|0,2|290
+|span:E[traffic flow]|TRAFIC|EN|1,1| 1 span:D[inbound]
+
+5+^h| 진도 VTS 관제구역 (Vessel Traffic Service Area) 
+|Attribute |Acronym |Type |Mult. |Value
+
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jindo
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 진도
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+
+5+^h| 제주 VTS 관제구역 (Vessel Traffic Service Area) 
+|Attribute |Acronym |Type |Mult. |Value
+
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| eng
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jeju
+|    Name Usage||(S)EN|0,1| 1 : default name display
+|**Feature Name**||C|0,*| 
+|    #essential Language||(S)TE|1,1| kor
+|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 제주
+|    Name Usage||(S)EN|0,1| 2: alternate name display
+
+
+|===
 // end::ContactDetails[]
