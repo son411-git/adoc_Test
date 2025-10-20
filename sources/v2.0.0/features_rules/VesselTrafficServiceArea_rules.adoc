@@ -27,27 +27,27 @@
 5+^h| 진도 VTS 관제구역 (Vessel Traffic Service Area) 
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jindo
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 진도
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jindo
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 진도
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 
 
 5+^h| 제주 VTS 관제구역 (Vessel Traffic Service Area) 
 |Attribute |Acronym |Type |Mult. |Value
 
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| eng
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| Jeju
-|    Name Usage||(S)EN|0,1| 1 : default name display
-|**Feature Name**||C|0,*| 
-|    #essential Language||(S)TE|1,1| kor
-|    #essential Name|OBJNAM/NOBJNM|(S)TE|1,1| 제주
-|    Name Usage||(S)EN|0,1| 2: alternate name display
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| eng
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| Jeju
+|    name usage||(S)EN|0,1| 1 span:D[default name display]
+|**feature name**||C|0,*| 
+|    span:E[language]||(S)TE|1,1| kor
+|    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 제주
+|    name usage||(S)EN|0,1| 2 span:D[alternate name display]
 
 
 5+^h| 진도 '진입' 무선보고선 (Radio Calling-In Point) 
@@ -95,7 +95,7 @@
 |    span:E[language]||(S)TE|1,1| kor
 |    span:E[name]|OBJNAM/NOBJNM|(S)TE|1,1| 진도 VTS; 제주 VTS
 |    name usage||(S)EN|0,1| 2 span:D[alternate name display]
-|orientation value|ORIENT|RE|0,2|290
+|orientation value|ORIENT|RE|0,2|110
 |span:E[traffic flow]|TRAFIC|EN|1,1| 4 span:D[two-way]
 
 
