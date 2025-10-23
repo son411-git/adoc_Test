@@ -917,9 +917,9 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Marine Farms(Unsurveyed Area) and Obstruction
+|    headline||(S)TE|0,1| Marine Farms(Unsurveyed Area) and Obstructions
 |    span:E[language]||(S)TE|1,1| eng
-|    text|INFORM/NINFOM|(S)TE|0,1| Numerous marine farms(Unsurveyed ara) and obstructions exist in the coastal areas, so mariners should approach with caution.
+|    text|INFORM/NINFOM|(S)TE|0,1| Numerous marine farms(Unsurveyed area) and obstructions exist in the coastal areas, so mariners should approach with caution.
 |**information**|INFORM|C|0,*| 
 |    headline||(S)TE|0,1| 양식장(미측량구역) 및 장애물
 |    span:E[language]||(S)TE|1,1| kor
@@ -941,7 +941,7 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Marine Farms and Obstruction
+|    headline||(S)TE|0,1| Marine Farms and Obstructions
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| As numerous marine farms and obstructions may not be displayed on this chart, mariners should approach with caution. Omitted information can be found on large-scale charts.
 |**information**|INFORM|C|0,*| 
