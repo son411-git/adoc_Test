@@ -19,7 +19,7 @@ S-57 : span:F[TS_PAD] 및 S-101 Ed 1.0.0 & 2.0.0 : span:F[Tidal Stream Panel Dat
 |===
 5+^h| Information Area(P)
 |**information**|INFORM|C|0,*|
-|    headline||(S)TE|0,1| Tidal Streams at Buso Sudo
+|    headline||(S)TE|0,1| Tidal Streams at Budo Sudo
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Based on Busan New Port, for Flood tide stream, turn of tidal current occurs about 1.5 hrs after LW and maximum current speed occurs about 4.3 hrs. For Ebb tide stream, turn of tidal current occurs about 0.2 hrs before HW and maximum current speed occurs about 3.5 hrs after HW.
 |**information**|INFORM|C|0,*|
