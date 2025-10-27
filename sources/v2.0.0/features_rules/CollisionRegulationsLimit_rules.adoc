@@ -4,7 +4,7 @@
 * 국제 해상 충돌 예방 규칙 (COLREGs) 경계선은 span:F[Collision Regulations Limit] 로 입력
 * span:A[regulation citation]에 관련 국가 규정의 인용문을 입력 
 * span:A[feature name]에 관련 국가 규정의 제목을 입력
-* 규정의 제목을 ECDIS에 표시할 필요 없으므로 span:A[name usage]를 입력하지 않아야 함
+* 규정의 제목을 ECDIS에 표시할 필요가 없으므로 span:A[name usage]를 입력하지 않아야 함
 
 include::common/NotUsedFeature.adoc[]
 

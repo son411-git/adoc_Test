@@ -6,6 +6,8 @@
 //
 * 어업자원보호법 제1조(관할수역) 참고
 
+*객체의 이름을 ECDIS에 표시할 필요가 없으므로 span:A[name usage]를 입력하지 않아야 함
+
 ===== Example
 .Fishery Zone의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
