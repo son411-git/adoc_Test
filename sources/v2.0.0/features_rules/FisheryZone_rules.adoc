@@ -6,7 +6,11 @@
 //
 * 어업자원보호법 제1조(관할수역) 참고
 
-*객체의 이름을 ECDIS에 표시할 필요가 없으므로 span:A[name usage]를 입력하지 않아야 함
+//
+* 국내지침
+** 객체의 이름을 ECDIS에 표시할 필요가 없으므로 span:A[name usage]를 입력하지 않아야 함
+** 5단계부터 1단계까지 입력
+** 해상에만 입력되도록 HPD Product 에서 수정
 
 ===== Example
 .Fishery Zone의 인코딩 예시
