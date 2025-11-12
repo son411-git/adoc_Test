@@ -1,3 +1,15 @@
+== 개정이력
+
+[cols="a,a", options="header"]
+|===
+|일자 |수정 내용 
+|2025-10-20 | VTS 관련 Contact Details 속성 추가 및 인코딩 가이드라인 보완
+|2025-10-23 | 양식장 주의기사에 관련한 오타 수정
+|2025-10-24 | Restricted Area 객체의 설명 보완
+|2025-10-26 | TidalStreamPanelData의 예시 중 오타 수정
+|2025-10-27 | nameUsage 속성의 입력에 관한 수정
+|===
+
 == GENERAL
 //
 *Definition*
