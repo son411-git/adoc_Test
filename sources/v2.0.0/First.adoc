@@ -99,6 +99,6 @@ Multiplicity는 각 속성이 가질 수 있는 값의 개수(수량적 제약)�
 //
 *Encoding guidelines (Remark / Example)*
 
-* 본문에서 객체는 span:F[Feature], 속성은 span:A[Attribute], 객체 관계는 span:R[Relation]의 색상으로 으로 표현하였습니다. 
+* 본문에서 객체는 span:F[Feature], 속성은 span:A[Attribute], 객체 관계는 span:R[Relation]의 색상으로 표현하였습니다. 
 * **Remark**는 S-101 DCEG를 국내 환경에 맞게 조정하면서, 국내에서 사용되지 않는 객체에 대한 설명은 번역하지 않았습니다.
 * **Example**는 주요 속성의 입력 예시입니다. 필요하면 작업자의 판단으로 각 속성과 타입에 맞게 입력해야 합니다.
