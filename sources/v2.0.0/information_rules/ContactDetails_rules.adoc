@@ -11,7 +11,8 @@
 
 //
 * 호출 부호는 span:A[call sign] 속성으로 입력
-* VTS센터와 선박 간 통신 채널은 span:A[communication channel] 로 입력하며 VHF 채널 7일 경우, [VHF####] 형식으로 대괄호를 포함하여 입력해야 함
+* VTS센터와 선박 간 통신 채널은 span:A[communication channel] 로 입력하며 [VHFXXXX] 형식으로 입력해야 함
+** 예 : VHF 채널 7일 경우, [VHF0007] 형식으로 대괄호를 포함하여 입력해야 함
 * 선박의 보고 내용(신고 내용)은 span:A[contact instructions] 으로 입력 
 * 기타 통신 수단(전화번호, 팩스번호 등)은 span:A[telecommunications]의 하위 속성으로 입력
 ** 통신 수단 식별자는 span:A[telecommunication identifier] 속성으로 입력하며 국가번호를 포함한 전체 번호를 입력

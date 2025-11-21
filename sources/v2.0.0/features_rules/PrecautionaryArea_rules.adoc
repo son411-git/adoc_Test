@@ -16,9 +16,11 @@
 
 |imo adopted|CATTSS|BO|0,1| false
 |**span:E[information]**|INFORM|C|1,*|
+|    headline||(S)TE|0,1| Precautionary Area
 |    span:E[language]||(S)TE|1,1| eng
 |    text|INFORM/NINFOM|(S)TE|0,1| Due to plenty of crossing small boats on the fairway, vessels are requested to navigate with caution within this area.
 |**span:E[information]**|INFORM|C|1,*|
+|    headline||(S)TE|0,1| 주의구역
 |    span:E[language]||(S)TE|1,1| kor
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서는 항로를 횡단하는 소형선박이 많으므로 주의하여 항행하여야 함.
 

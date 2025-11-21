@@ -8,8 +8,8 @@
 
 * span:E[주의] 아래 내용은 KHOA INT2 (2025.06.24) span:D[INT2_2_Ed2025_KHOA_250624], 외부참조파일(*.txt)을 기준으로 작성되었으며, 내용이 서로 다를 경우 최신의 KHOA INT2에 작성된 내용을 우선으로 하였음
 
-. 대한민국 영해
-+
+* 대한민국 영해
+
 ."대한민국 영해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -29,8 +29,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
-. 유조선통항금지해역
-+
+* 유조선통항금지해역
+
 ."유조선통항금지해역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -55,8 +55,8 @@ span:D[출처 : IHO S-32 수로 사전] +
 따라서 **8 span:D[entry restricted]** 가 적합함
 |===
 
-. 연안 부근 송전선 주의
-+
+* 연안 부근 송전선 주의
+
 ."연안 부근 송전선 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -75,8 +75,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 한국연안 부근은 다수의 송전선이 존재하니 항해 시 대축척 해도를 참조 바람.
 |===
 
-. 항행 금지(우선피항선 제외)
-+
+* 항행 금지(우선피항선 제외)
+
 ."항행 금지(우선피항선 제외)"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -96,8 +96,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서 우선피항선을 제외한 선박은 어떠한 형태로든 항행을 금지함.
 |===
 
-. 해상사격훈련구역
-+
+* 해상사격훈련구역
+
 ."해상사격훈련구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -116,8 +116,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
-. 풍도 해역의 항해
-+
+* 풍도 해역의 항해
+
 ."풍도 해역의 항해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -136,8 +136,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 풍도 북서쪽 해역을 항해하는 선박들은 본선의 진행방향을 기준으로 하여 통항분리선의 오른쪽으로 항해할 것을 권고함.
 |===
 
-. 해안 부근 기뢰 주의
-+
+* 해안 부근 기뢰 주의
+
 ."해안 부근 기뢰 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -156,8 +156,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 해안 부근에는 기뢰에 의한 위험성이 있으므로 항해하는 선박은 주의하여야 함.
 |===
 
-. 북한 및 러시아 해역 내 기뢰 주의
-+
+* 북한 및 러시아 해역 내 기뢰 주의
+
 ."북한 및 러시아 해역 내 기뢰 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -189,8 +189,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 제9호 러시아 해역은 2차 세계 대전중 기뢰가 부설 되었던 곳으로 선박의 정박 및 어로 활동을 금지함. (1939~45)
 |===
 
-. 주의구역 A
-+
+* 주의구역 A
+
 ."주의구역 A"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -209,8 +209,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역 내에서는 항주파에 의해 주변의 계류중인 선박들에 영향을 미칠 수 있으므로 주의하여 항행하여야 함.
 |===
 
-. 주의구역 B
-+
+* 주의구역 B
+
 ."주의구역 B"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -229,8 +229,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서는 항로를 횡단하는 소형선박이 많으므로 주의하여 항행하여야 함.
 |===
 
-. 주의구역 C
-+
+* 주의구역 C
+
 ."주의구역 C"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -249,8 +249,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역의 통항을 위해서는 대각도 변침이 요구되므로 각별히 주의하여야 함. 
 |===
 
-. 호미곶 추천항로
-+
+* 호미곶 추천항로
+
 ."호미곶 추천항로"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -285,8 +285,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 포항항에서 입출항하는 총톤수 1,000톤 이상의 선박은 호미곶 추천항로를 따라 항행할 것을 권고함.
 |===
 
-. 통항제한구역
-+
+* 통항제한구역
+
 ."통항제한구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -309,8 +309,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 농무기(매년 4.1~7.31) 선박통항 제한 구역: 총톤수 50톤 이상의 유조선, 모든 액화가스 및 케미칼운송 선박, 모래운반선(예부선 포함)
 |===
 
-. 특정금지구역
-+
+* 특정금지구역
+
 ."특정금지구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -330,8 +330,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 특정금지구역 내에서 외국인은 어업활동을 하여서는 아니된다.
 |===
 
-. 국지적 지자기 이상 현상
-+
+* 국지적 지자기 이상 현상
+
 ."국지적 지자기 이상 현상"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -352,8 +352,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1|
 |===
 
-. 화산 활동 구역 진입 금지
-+
+* 화산 활동 구역 진입 금지
+
 ."화산 활동 구역 진입 금지"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -373,8 +373,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 화산활동의 위험때문에 항해자는 해도에 표시된 특정구역 내로 진입을 금지함.
 |===
 
-. 경인아라뱃길 속력제한
-+
+* 경인아라뱃길 속력제한
+
 ."경인아라뱃길 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -411,8 +411,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 경인아라뱃길을 운항하는 선박은 10노트 이하로 항행하여야 함. (단, 만곡부 8노트 이하, 교행 시 6노트 이하)
 |===
 
-. 마산항 속력 제한
-+
+* 마산항 속력 제한
+
 ."마산항 속력 제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -427,8 +427,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |===
 
-. 부산항 속력 제한
-+
+* 부산항 속력 제한
+
 ."부산항 속력 제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -511,8 +511,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 구역에서는 항로를 횡단하는 소형선박이 많으므로 주의하여 항행하여야 함.
 |===
 
-. 속력제한구역
-+
+* 속력제한구역
+
 ."속력제한구역"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -532,8 +532,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    name usage||(S)EN|0,1| Other vessels
 |===
 
-. 광양항로 속력제한
-+
+* 광양항로 속력제한
+
 ."광양항로 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -553,8 +553,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    name usage||(S)EN|0,1| Other vessels
 |===
 
-. 제1구역 속력제한
-+
+* 제1구역 속력제한
+
 ."제1구역 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -569,8 +569,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |===
 
-. 구역별 속력제한
-+
+* 구역별 속력제한
+
 ."구역별 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -612,8 +612,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |===
 
-. 고속여객선 속력제한
-+
+* 고속여객선 속력제한
+
 ."고속여객선 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -633,8 +633,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    name usage||(S)EN|0,1| Other vessels
 |===
 
-. 진해만 및 부근 속력제한
-+
+* 진해만 및 부근 속력제한
+
 ."진해만 및 부근 속력제한"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -676,8 +676,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[speed units]||(S)EN|1,1| 4 span:D[knots]
 |===
 
-. 조류 기사
-+
+* 조류 기사
+
 ."조류 기사"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -692,8 +692,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 5+^| 조류 기사는 span:F[Tidal Stream Panel Data]의 입력지침을 <<TidalStreamPanelData_Rule_Remark,참고>>
 |===
 
-. 광안대교 인근 운항금지선
-+
+* 광안대교 인근 운항금지선
+
 ."광안대교 인근 운항금지선"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -714,8 +714,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
-. 납도에서 다사도 구간 항행 주의
-+
+* 납도에서 다사도 구간 항행 주의
+
 ."납도에서 다사도 구간 항행 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -735,8 +735,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 사퇴 및 수로의 변동으로 인하여 부표 및 기타표지들은 빈번히 변동되기 쉬우므로 표시하지 않는다. 선박은 도선사의 안내 없이 하천을 항행하지 않아야 한다. 얼음으로 인하여 하천을 항행할 수 없는 경우 등표는 소등하며 부표는 철거된다. 하천이 증수기인 경우에도 역시 부표는 철거된다.
 |===
 
-. 한강 부근 사주의 이동 주의
-+
+* 한강 부근 사주의 이동 주의
+
 ."한강 부근 사주의 이동 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -756,8 +756,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 부근은 한강에서 유입되는 토사로 인하여 사주의 이동이 있으므로 주의하여야 함.
 |===
 
-. 묵호항 및 동해항 안벽 부근 수심 주의
-+
+* 묵호항 및 동해항 안벽 부근 수심 주의
+
 ."묵호항 및 동해항 안벽 부근 수심 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -791,8 +791,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][P,S]를 생성
 |===
 
-. 부산항 안벽 부근 수심 주의
-+
+* 부산항 안벽 부근 수심 주의
+
 ."부산항 안벽 부근 수심 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -905,8 +905,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][P,S]를 생성
 |===
 
-. 양식장(미측량구역) 및 장애물 주의 (1:50,000까지)
-+
+* 양식장(미측량구역) 및 장애물 주의 (1:50,000까지)
+
 ."양식장(미측량구역) 및 장애물 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -929,8 +929,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 2. 데이터셋에 span:F[Marine Farm/Culture]나 span:F[Obstruction]이 있다면, 이들 객체는 span:F[Information Area][S]의 지오메트리 범위에 최소한으로 포함되어야 함
 |===
 
-. 양식장 및 장애물 주의 (1:75,000부터)
-+
+* 양식장 및 장애물 주의 (1:75,000부터)
+
 ."양식장 및 장애물 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -953,8 +953,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 2. 데이터셋에서 span:F[Marine Farm/Culture] 또는 span:F[Obstruction]을 확인하거나, 대축척 해도에서 생략된 이러한 객체를 식별해야하며, 확인된 객체는 span:F[Information Area][S]의 지오메트리 범위에 최소한으로 포함되어야 함
 |===
 
-. 새만금방조제 내측 항해 주의
-+
+* 새만금방조제 내측 항해 주의
+
 ."새만금방조제 내측 항해 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -974,8 +974,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 새만금방조제 내측 해역은 매립공사 등으로 수심 변동이 심하고 항해 장매물이 다수 존재하며, 신시, 가력 배수갑문을 통한 수위조절을 위해 수시로 개방되니 부근 항해 선박은 주의하여야 함.
 |===
 
-. 사주의 이동 주의
-+
+* 사주의 이동 주의
+
 ."사주의 이동 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -995,8 +995,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 이 부근의 수심은 조류의 영향으로 사주가 이동하므로 주의하여야 함.
 |===
 
-. 평택항 내 수심 변화 주의
-+
+* 평택항 내 수심 변화 주의
+
 ."평택항 내 수심 변화 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1016,8 +1016,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 평택항 내에는 토사로 인하여 수심의 변화가 있으므로 주의하여야 함.
 |===
 
-. 낙동포 부근 수심 변화 주의
-+
+* 낙동포 부근 수심 변화 주의
+
 ."낙동포 부근 수심 변화 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1037,8 +1037,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 낙동포 부근의 수심과 사주는 낙동강으로부터 유출되는 토사로 인하여 변동이 심함.
 |===
 
-. 중앙천퇴 부근 수심 변화 주의
-+
+* 중앙천퇴 부근 수심 변화 주의
+
 ."중앙천퇴 부근 수심 변화 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1058,8 +1058,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 중앙천퇴 부근 수심은 사주의 이동으로 변동이 있으며 주의하여야 함.
 |===
 
-. 항 내 안벽의 미측구역 주의
-+
+* 항 내 안벽의 미측구역 주의
+
 ."항 내 안벽의 미측구역 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1079,8 +1079,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 항 내 안벽의 미측구역은 선박건조가 진행되고 있으므로 주의하여야 합.
 |===
 
-. 험악지의 안전 항해
-+
+* 험악지의 안전 항해
+
 ."험악지의 안전 항해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1102,8 +1102,8 @@ navigation poses no significant danger, anchoring and trawling should be avoided
 투묘, 저인망 어업은 피하여야 함.
 |===
 
-. 험악지의 얕은 수심 주의
-+
+* 험악지의 얕은 수심 주의
+
 ."험악지의 항해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1125,8 +1125,8 @@ should navigate with caution in shallow waters.
 주의하여야 함.
 |===
 
-. 소축척 해도의 참고 기사
-+
+* 소축척 해도의 참고 기사
+
 ."소축척 해도의 참고 기사"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1136,8 +1136,8 @@ should navigate with caution in shallow waters.
 5+| 이 기사의 내용은 전자해도에서 유효한 설명이 아니며, 종이해도 보는 방법에 대한 안내에 가까움
 |===
 
-. 인천항 선거 내 수심 유지 및 통제
-+
+* 인천항 선거 내 수심 유지 및 통제
+
 ."인천항 선거 내 수심 유지 및 통제"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1157,8 +1157,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 선거 내 수심은 기본수준면상에서 7미터~8.9미터로 유지되고 있으며 선박의 출입은 갑문 관리소에서 통제되고 있음
 |===
 
-. 서해갑문 내 수심기준면
-+
+* 서해갑문 내 수심기준면
+
 ."서해갑문 내 수심"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1178,8 +1178,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 서해갑문의 내부수역에서 수심기준면은 평균해면상의 1.5미터임.
 |===
 
-. 아라서해 갑문 내 수심기준면 및 안내표지판
-+
+* 아라서해 갑문 내 수심기준면 및 안내표지판
+
 ."아라서해 갑문 내 수심기준면 및 안내표지판"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1207,8 +1207,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1|경인아라뱃길 운항을 위한 안태표지판 경인아라뱃길 운항을 위한 긴급, 통항, 기상, 안내 전광판 등
 |===
 
-. 중수도 전용선박
-+
+* 중수도 전용선박
+
 ."중수도 전용선박"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1229,8 +1229,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 총톤수 200톤 미만 선박, 추진기가 없는 선박, 범선은 중수도를 이용할 수 있음. 단, 위험물 운반 선박은 제외함.
 |===
 
-. 오류지곶에서 장산곶 사이의 조류
-+
+* 오류지곶에서 장산곶 사이의 조류
+
 ."오류지곶에서 장산곶 사이의 조류"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1240,8 +1240,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 |===
 
-. 부산신항 안벽 부근 수심 주의
-+
+* 부산신항 안벽 부근 수심 주의
+
 ."부산신항 안벽 부근 수심 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1313,8 +1313,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    text|INFORM/NINFOM|(S)TE|0,1| 신항 다목적부두 수심은 안벽으로부터 약 6미터 떨어진 위치의 수심이므로 접안하는 선박은 주의하여야 함.
 |===
 
-. 목포항 안벽 부근 수심 주의
-+
+* 목포항 안벽 부근 수심 주의
+
 ."목포항 안벽 부근 수심 주의"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1453,8 +1453,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 5+| span:E[※ 비고] : 안벽에서 수심이 떨어진 거리만큼 바다 방향으로 span:F[Caution Area][P,S]를 생성
 |===
 
-. 교통안전 특정해역의 항해
-+
+* 교통안전 특정해역의 항해
+
 ."교통안전 특정해역의 항해"의 인코딩 예시
 [cols="30,25,10,10,25", options="header"]
 |===
@@ -1476,8 +1476,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 
 // Excel : 외부참조파일_2025.04.09.xlsx 추가
 
-. ASL - 군도 수로
-+
+* ASL - 군도 수로
+
 ."ASL - 군도 수로"의 인코딩 예시
 [cols="30,25,10,10,25"]
 |===
@@ -1504,8 +1504,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
-. 유전지대
-+
+* 유전지대
+
 ."유전지대"의 인코딩 예시
 [cols="30,25,10,10,25"]
 |===
@@ -1532,8 +1532,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
-. 영흥수도 부근 송전선 주의
-+
+* 영흥수도 부근 송전선 주의
+
 ."영흥수도 부근 송전선 주의"의 인코딩 예시
 [cols="30,25,10,10,25"]
 |===
@@ -1561,8 +1561,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
-. 타구봉도-해주서 구간 항행주의
-+
+* 타구봉도-해주서 구간 항행주의
+
 ."타구봉도-해주서 구간 항행주의"의 인코딩 예시
 [cols="30,25,10,10,25"]
 |===
@@ -1585,12 +1585,12 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| eng
 |**information**|INFORM|C|0,*| 
 |    file reference|TXTDSC/NTXTDS|(S)TE|0,1| 101KR002040K100.TXT
-|    headline||(S)TE|0,1| Precautionary Area
+|    headline||(S)TE|0,1| 주의구역
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
-. 술루 군도 및 사바 동부해협 통항로 지정
-+
+* 술루 군도 및 사바 동부해협 통항로 지정
+
 ."술루 군도 및 사바 동부해협 통항로 지정"의 인코딩 예시
 [cols="30,25,10,10,25"]
 |===
@@ -1618,8 +1618,8 @@ h|Attribute h|Acronym h|Type h|Mult. h|Value
 |    span:E[language]||(S)TE|1,1| kor
 |===
 
-. 팔라완 항로 서쪽 위험구역 주의
-+
+* 팔라완 항로 서쪽 위험구역 주의
+
 ."팔라완 항로 서쪽 위험구역 주의"의 인코딩 예시
 [cols="30,25,10,10,25"]
 |===
