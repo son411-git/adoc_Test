@@ -1,8 +1,8 @@
 // tag::Lake[]
 ===== Remark
 
-* 편집 축척에서 호수가 항해 가능하다면, span:F[Depth Area], span:F[Dredged Area] 또는 span:F[Unsurveyed Area]를 사용해 입력하고, 경계는 span:F [Coastline] 또는 span:F[Shoreline Construction]를 사용해 입력하며,
-** 이 경우 호수는 span:F[Lake]로 입력하지 않아야 함하며, 명칭을 입력해야 하는 경우, span:F[Sea Area/Named Water Area]를 사용하며, span:A[category of sea area] = 52 (lake)로 해야 함
+* 편집 축척에서 호수가 항해 가능하다면, span:F[Depth Area], span:F[Dredged Area] 또는 span:F[Unsurveyed Area]를 사용해 입력하고, 경계는 span:F[Coastline] 또는 span:F[Shoreline Construction]를 사용해 입력하며,
+** 이 경우 호수는 span:F[Lake]로 입력하지 않아야하며, 명칭을 입력해야 하는 경우, span:F[Sea Area/Named Water Area]를 사용하며, span:A[category of sea area] = 52 (lake)로 해야 함
 
 //
 * 편집 축척에서 호수가 항해 불가능하다면, span:F[Lake]를 사용해 입력하고, span:F[Land Area]로 덮어야 함. 

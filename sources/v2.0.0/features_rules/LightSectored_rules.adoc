@@ -17,7 +17,7 @@ span:A[sector limit]의 하위 속성 span:A[sector limit one] 및 span:A[sector
 
 //
 * span:F[Light Sectored]가 지향등이면 span:A[light sector]의 하위 속성 span:A[directional character]을 사용하여 입력해야 함. 
-* 강도가 다른 분호가 있는 등화의 경우 span:A[light sector] 하위 속성 span:A[light visibility] = 4 span:D[intensified)를 채워야 함
+* 강도가 다른 분호가 있는 등화의 경우 span:A[light sector] 하위 속성 span:A[light visibility] = 4 span:D[intensified]를 채워야 함
 * 지향등은 span:A[orientation]의 입력은 필수이며, span:A[sector limit]의 입력은 선택적임
 
 //

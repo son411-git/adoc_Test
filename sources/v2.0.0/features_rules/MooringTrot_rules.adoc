@@ -6,15 +6,15 @@
 .Mooring Trot의 구성
 image::../images/MooringTrot/MooringTrot_image-1.png[align="center"]
 
-    (a) 지면 장치(ground tackle) : span:F[Obstruction]을 사용하며, span:A[category of obstruction] = 9 span:D[ground tackle]로 입력해야 함
+(a) 지면 장치(ground tackle) : span:F[Obstruction]을 사용하며, span:A[category of obstruction] = 9 span:D[ground tackle]로 입력해야 함
 
-    (b) 계류 케이블(mooring cables) : span:F[Cable Submarine]을 사용하며, span:A[category of cable] = 6 span:D[mooring cable]로 입력해야 함
+(b) 계류 케이블(mooring cables) : span:F[Cable Submarine]을 사용하며, span:A[category of cable] = 6 span:D[mooring cable]로 입력해야 함
 
-    (c) 부표(buoys) : span:F[Mooring Buoy]을 사용해 입력해야 함
+(c) 부표(buoys) : span:F[Mooring Buoy]을 사용해 입력해야 함
 
-    (d) 계류 정박지(mooring berths) : span:F[Berth]을 사용해 입력해야 함
+(d) 계류 정박지(mooring berths) : span:F[Berth]을 사용해 입력해야 함
 
-    (e) 접속 케이블(junction cables) : span:F[Cable Submarine]을 사용하며, span:A[category of cable] = 9 span:D[junction cable]로 입력해야 함
+(e) 접속 케이블(junction cables) : span:F[Cable Submarine]을 사용하며, span:A[category of cable] = 9 span:D[junction cable]로 입력해야 함
 
 //
 * 객체 관계

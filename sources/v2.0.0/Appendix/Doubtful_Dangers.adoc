@@ -38,10 +38,8 @@
 |B-424.5 
 |I3.1, I3.2 
 |4 span:D[approximate]
-|8 span:D[value reported]
-(not surveyed)] / +
-9 span:D[value reported
-(not confirmed)]
+|8 span:D[value reported, not surveyed] / +
+9 span:D[value reported, not confirmed]
 |
 |===
 
