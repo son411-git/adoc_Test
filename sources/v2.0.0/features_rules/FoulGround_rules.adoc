@@ -33,7 +33,6 @@
 span:A[category of obstruction] = 6 span:D[foul area] +
 span:A[quality of vertical measurement] = 6 span:D[least depth known] +
 span:A[value of sounding] = (10) +
-span:A[water level effect] = 3 span:D[always under water/submerged] +
 * span:F[Foul Ground]로 입력하면 전자해도에서 장애물 수심 표시되지 않고 '#'로 표시되므로 span:F[Obstruction]으로 입력
 3+^h| Surface
 | ENC
@@ -44,7 +43,6 @@ span:A[water level effect] = 3 span:D[always under water/submerged] +
 | span:F[foul ground] +
 span:A[value of sounding] = (10) +
 span:A[quality of vertical measurement] = 6 span:D[least depth known] +
-span:A[water level effect] = 3 span:D[always under water/submerged]
 |===
 
 //
