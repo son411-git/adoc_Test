@@ -9,6 +9,7 @@
 |2025-10-26 | TidalStreamPanelData의 예시 중 오타 수정
 |2025-10-27 | nameUsage 속성의 입력에 관한 수정
 |2025-11-21 | Precautionary Area, TSS 오타 및 문장 수정
+|2025-08-25 | Foul Ground 객체 설명 중 water level effect 관련 내용 삭제
 |===
 
 == GENERAL
